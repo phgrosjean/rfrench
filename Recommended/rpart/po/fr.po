@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpart 3.1-24\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-20 07:25+0000\n"
-"PO-Revision-Date: 2014-03-18 11:12+0100\n"
+"PO-Revision-Date: 2021-02-06 16:24+0100\n"
 "Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.6.4\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: poisson.c:34
 msgid "Invalid time point"
@@ -32,7 +32,7 @@ msgstr "Règle d'erreur incorrecte"
 
 #: rpart.c:91 xpred.c:89
 msgid "Invalid value for 'method'"
-msgstr "valeur incorrecte pour 'method'"
+msgstr "Valeur incorrecte pour 'method'"
 
 #: rpart.c:193
 msgid "unknown error"
@@ -70,5 +70,4 @@ msgstr "l'expression 'expr1' n'a pas renvoyé un vecteur!"
 #~ msgstr "Mémoire saturée"
 
 #~ msgid "the expression expr1 returned a list of %d elements, %d required"
-#~ msgstr ""
-#~ "l'expression 'expr1' a renvoyé une liste de %d éléments, %d sont requis"
+#~ msgstr "l'expression 'expr1' a renvoyé une liste de %d éléments, %d sont requis"
