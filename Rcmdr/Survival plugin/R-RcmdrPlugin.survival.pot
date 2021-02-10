@@ -1,0 +1,287 @@
+"Project-Id-Version: RcmdrPlugin.survival 0.6.1\n"
+"Report-Msgid-Bugs-To: jfox@mcmaster.ca\n"
+"POT-Creation-Date: 2009-01-30 20:53\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+
+msgid "Cox-Regression Model"
+msgstr ""
+
+msgid "Start and stop times must be ordered."
+msgstr ""
+
+msgid "You must select one or two time variables."
+msgstr ""
+
+msgid "You must select an event indicator."
+msgstr ""
+
+msgid "\"%s\" is not a valid name."
+msgstr ""
+
+msgid "<all valid cases>"
+msgstr ""
+
+msgid "Right-hand side of model empty."
+msgstr ""
+
+msgid "Model"
+msgstr ""
+
+msgid "Enter name for model:"
+msgstr ""
+
+msgid "Time or start/end times\n(select one or two)"
+msgstr ""
+
+msgid "Event indicator\n(select one)"
+msgstr ""
+
+msgid "Strata\n(select zero or more)"
+msgstr ""
+
+msgid "Clusters\n(optional)"
+msgstr ""
+
+msgid "Efron"
+msgstr ""
+
+msgid "Breslow"
+msgstr ""
+
+msgid "Exact"
+msgstr ""
+
+msgid "Method for Ties"
+msgstr ""
+
+msgid "Default"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "Robust Standard Errors"
+msgstr ""
+
+msgid "Survival Data Definition"
+msgstr ""
+
+msgid "Plot Cox-Model Survival Functions"
+msgstr ""
+
+msgid "Default behavior"
+msgstr ""
+
+msgid "Plot Confidence Intervals"
+msgstr ""
+
+msgid "Plot at predictor means"
+msgstr ""
+
+msgid "Plot by factor levels at covariate means"
+msgstr ""
+
+msgid "Plot at specified values of predictors"
+msgstr ""
+
+msgid "Type of Plot"
+msgstr ""
+
+msgid "Confidence level must be a number between 0 and 1."
+msgstr ""
+
+msgid "Number of valid entries in prediction data (%d)\nnot equal to number of rows (%d) * number of columns (%d)."
+msgstr ""
+
+msgid "Level of confidence:"
+msgstr ""
+
+msgid "Plot marginal survival"
+msgstr ""
+
+msgid "Specify Values of Predictors:"
+msgstr ""
+
+msgid "Number of rows:"
+msgstr ""
+
+msgid "Compare Survival Functions"
+msgstr ""
+
+msgid "You must select strata."
+msgstr ""
+
+msgid "Survival Function"
+msgstr ""
+
+msgid "Log"
+msgstr ""
+
+msgid "Log-log"
+msgstr ""
+
+msgid "Plain"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Confidence Intervals"
+msgstr ""
+
+msgid "Plot confidence Intervals"
+msgstr ""
+
+msgid "Kaplan-Meier"
+msgstr ""
+
+msgid "Fleming-Harrington"
+msgstr ""
+
+msgid "Fleming-Harrington 2"
+msgstr ""
+
+msgid "Mark censoring times"
+msgstr ""
+
+msgid "Method"
+msgstr ""
+
+msgid "Greenwood"
+msgstr ""
+
+msgid "Tsiatis"
+msgstr ""
+
+msgid "Variance Method"
+msgstr ""
+
+msgid "Confidence level"
+msgstr ""
+
+msgid "Quantiles to estimate"
+msgstr ""
+
+msgid "Survival Regression Model"
+msgstr ""
+
+msgid "Weibull"
+msgstr ""
+
+msgid "Exponential"
+msgstr ""
+
+msgid "Gaussian"
+msgstr ""
+
+msgid "Logistic"
+msgstr ""
+
+msgid "Log-normal"
+msgstr ""
+
+msgid "Log-logistic"
+msgstr ""
+
+msgid "Distribution"
+msgstr ""
+
+msgid "Reshape Wide Survival Data to Long"
+msgstr ""
+
+msgid "No time-varying covariates specified."
+msgstr ""
+
+msgid "You must enter the name of a data set."
+msgstr ""
+
+msgid "is not a valid name."
+msgstr ""
+
+msgid "Data set"
+msgstr ""
+
+msgid "You must select a time-to-event variable."
+msgstr ""
+
+msgid "Covariate set has %d entries; should have %d entries"
+msgstr ""
+
+msgid "Covariate set must have at least 2 entries."
+msgstr ""
+
+msgid "Time to event\n(select one)"
+msgstr ""
+
+msgid "Select set of\ntime-dependent covariates"
+msgstr ""
+
+msgid "Select"
+msgstr ""
+
+msgid "Enter name for data set:"
+msgstr ""
+
+msgid "Name for covariate"
+msgstr ""
+
+msgid "tcltk package missing"
+msgstr ""
+
+msgid "all elements of cov must be of the same length and"
+msgstr ""
+
+msgid "cov.times must have one more entry than each element of cov."
+msgstr ""
+
+msgid "event indicator must have values {0, 1}, {1, 2} or {FALSE, TRUE}"
+msgstr ""
+
+msgid "Factors only"
+msgstr ""
+
+msgid "All variables"
+msgstr ""
+
+msgid "Candidates for clusters"
+msgstr ""
+
+msgid "Time-dependent covariates"
+msgstr ""
+
+msgid "<none defined>"
+msgstr ""
+
+msgid "Convert variable to date..."
+msgstr ""
+
+msgid "Date Conversion"
+msgstr ""
+
+msgid "Variable to convert"
+msgstr ""
+
+msgid "date"
+msgstr ""
+
+msgid "Date format"
+msgstr ""
+
+msgid "Name for date variable"
+msgstr ""
+
+msgid "Class of date variable"
+msgstr ""
+
+msgid "object"
+msgstr ""
+

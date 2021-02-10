@@ -1,0 +1,162 @@
+Traduction de R en français, minidictionnaire:
+----------------------------------------------
+Rem : respectons la syntaxe française. plaçons un espace devant les ponctuations
+telles que :, ;, !, ? (sauf . et ,)
+/ : espace avant / après (sauf si c'est un chemin d'accès, par exemple, c:/temp)
+par contre, nous conservons les conventions du langage S pour les guillements,
+soit '' ou "", mais non transformés et sans espaces.
+
+
+aborting : annulation
+allocation : affectation mémoire
+anova : ANOVA
+argument : argument (et non paramètre)
+array : tableau
+assigment : affectation
+attribute : attribut
+backslash : caractère barre oblique inversée
+binary operator : opérateur binaire
+bind : lien (binding : lier)
+bitmap : bitmap
+boxplot : boite à dispersion
+breaks : limites de classes (histogrammes, plus parlant que simplement 'limites')
+browser : explorateur
+bytecode : pseudo-code (code a octets est officiel mais peu utilisé)
+cached value : valeur cachée en mémoire
+call : appel
+callback : rappel (callback)
+case insensitive matching : correspondance indépendante de la casse
+channel : canal
+character : caractère (sans h)
+closure : fermeture (closure)
+coerce : convertir automatiquement
+coercion : conversion automatique
+collation : collation
+colortype : colorimétrie
+connection : connexion
+console : console
+database : base de données
+dataframe : tableau de données, mais on précise (data frame) si nécessaire
+deparse : reconstruction de code (deparse)
+deprecated : obsolète
+device : périphérique
+dispatch: dispatcheur
+download: téléchargement
+driver : pilote
+encoding : encodage
+environment : environnement (voir aussi workspace)
+factor : variable facteur ou facteur
+fifo : fifo (préférable à... peps, peu connu)
+filename : nom de fichier
+file stream : corps du fichier
+fit : ajustement ou ajuster
+flush : vider ou vidage
+formula : formule de modèle ou formule tout court
+frame : cadre ou trame selon le contexte
+handler : manipulateur de données (voir aussi interrupt handler)
+hashing : hachage
+Hessian : Hessien
+history : historique des commandes
+image : image d'environnement (fichier image où les objets R sont sauvés)
+implemented : implémenté
+index : indice (presque toujours, et non index)
+interrupt handler : traitement de l'interruption
+invalid : incorrect (à préférer à 'non valide')
+IO : E/S
+kriging : krigeage
+label : étiquette
+lag : décalage
+layout : mise en page
+lazy loading : chargement partiel (explicit loading : chargement complet)
+leading minor : mineur dominant
+length : longueur (réserver taille pour size)
+library : bibliothèque
+locale : environnement linguistique
+locator : mode de localisation à la souris (pour les graphes)
+logical : booléen
+log-likelyhood : log de vraisemblance
+magic number : nombre magique
+metafile : metafile
+mirror site : site miroir
+mismatch : incohérence
+mode : mode
+modulus : modulus
+multibyte : multioctets
+NA : NA ou valeur manquante, selon le contexte
+named args : arguments nommés
+namespace : espace de noms
+non-vector type : type non vectoriel
+offset : décalage
+opcode : code d'opération
+outlier : valeur extrême
+overflow : débordement au dépassement de capacité par le haut
+package : package (non traduit cf. significations pour paquet ou paquetage)
+pager : afficheur
+pair list : liste appariée
+parse : analyse de code (to parse : analyser le code)
+path : chemin d'accès
+pattern : motif
+pipe : conduite
+pixmap : pixmap (format de fichier image)
+platform : architecture
+polyline : ligne brisée
+port : port (sur un serveur TCP/IP par exemple)
+profiling : profilage (to profile : profiler)
+promise : promesse (promise)
+prompt : invite ou invite de commande
+proxy : proxy
+push back : repoussage
+quote symbol : symbole de chaîne de caractères (et non de citation)
+raw : raw, si c'est le type de données, sinon brut
+range : plage, étendue ou intervalle, selon le contexte
+redraw : retraçage (des affichages)
+regular expression : expression régulière
+report: (to report : signaler)
+repository : entrepôt
+restore : restaurer
+return : retour ou renvoi selon le contexte
+RNG : RNG ou générateur de nombres pseudo-aléatoires
+routine : sous-programme ou procédure
+search path : chemin de recherche
+seed : valeurs d'initialisation
+seek : mode d'accès aléatoire
+self-starting function : fonction auto-initialisée
+sequence : suite (selon contexte) ou séquence
+shingke : latte (dans lattice)
+sink : sortie par défaut
+size : taille
+slash : caractère barre oblique
+slot : slot (sous partie d'un objet S4, terme spécifique de S)
+snapshot : instantané graphique
+socket : connecteur logiciel (ou socket -usage courant- dans les longs messages)
+source : source (to source : sourcer, préférable à entrée par défaut)
+specified : fourni (voir choisi ou donné, selon le contexte)
+stack : pile
+standard deviation : écart type
+subscript : indice
+subset : sous-ensemble (subsetting : indiçage, ou réalisation d'un sous-ensemble)
+table : tableau de contingence
+tag : marque
+thermometer : jauge (contexte de graphes)
+thread :  contexte (threaded code : code contextuel)
+timeout : délais maximal
+timer : horloge ou temporisation, selon le contexte
+timezone : fuseau horaire
+top level : niveau le plus haut
+traceback : historique des fonctions appelées ('traceback')
+trimmed mean : moyenne tronquée
+truncation : troncature
+type : type
+unary operator : opérateur unaire
+unbind : délier
+underflow : dépassement de capacité par le bas
+unmatched : déparié
+url : URL
+viewport : vue
+vignette : vignette
+warning : avis (avertissement est bien aussi, mais trop long)
+weight : pondération
+working directory : répertoire de travail
+workspace : environnement de travail (workspace = environment dans R)
+ou session s'il s'agit à la fois de l'historique et de l'environnement
+wrapup : emballer ou emballage

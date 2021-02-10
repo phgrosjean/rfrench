@@ -1,0 +1,320 @@
+# French translations for the RcmdrPlugin.survival package
+# Traductions francaises pour le package RcmdrPlugin.survival
+# This file is distributed under the same license as the RcmdrPlugin.survival package
+# Philippe Grosjean <phgrosjean@sciviews.org>, 2009
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
+"Language-Team: French <R-core@r-project.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Language: French\n"
+
+msgid "Cox-Regression Model"
+msgstr "Modèle de régression de Cox"
+
+msgid "Start and stop times must be ordered."
+msgstr "Les temps de début et de fin doivent être ordonnés."
+
+msgid "You must select one or two time variables."
+msgstr "Vous devez sléectionner une ou deux variables."
+
+msgid "You must select an event indicator."
+msgstr "Vous devez sélection un indicateur d'événement."
+
+msgid "\"%s\" is not a valid name."
+msgstr "\"%s\" n'est pas un nom correct."
+
+msgid "<all valid cases>"
+msgstr "<tous cas corrects>"
+
+msgid "Right-hand side of model empty."
+msgstr "Partie de droite du modèle vide."
+
+msgid "Model"
+msgstr "Modèle"
+
+msgid "Enter name for model:"
+msgstr "Nom du modèle :"
+
+msgid ""
+"Time or start/end times\n"
+"(select one or two)"
+msgstr ""
+"Temps ou début/fin\n"
+"(sélectionnez-en un ou deux)"
+
+msgid ""
+"Event indicator\n"
+"(select one)"
+msgstr ""
+"Indicateur d'événement\n"
+"(sélectionnez-en un)"
+
+msgid ""
+"Strata\n"
+"(select zero or more)"
+msgstr ""
+"Strate\n"
+"(Sélectionnez-en une ou rien)"
+
+msgid ""
+"Clusters\n"
+"(optional)"
+msgstr ""
+"Groupes\n"
+"(optionnel)"
+
+msgid "Efron"
+msgstr "Efron"
+
+msgid "Breslow"
+msgstr "Breslow"
+
+msgid "Exact"
+msgstr "Exact"
+
+msgid "Method for Ties"
+msgstr "Méthode pour les ex-aequos"
+
+msgid "Default"
+msgstr "Par défaut"
+
+msgid "Yes"
+msgstr "Oui"
+
+msgid "No"
+msgstr "Non"
+
+msgid "Robust Standard Errors"
+msgstr "Ecarts types robustes"
+
+msgid "Survival Data Definition"
+msgstr "Définition des données de survie"
+
+msgid "Plot Cox-Model Survival Functions"
+msgstr "Graphe des fonction du modèle de survie de Cox"
+
+msgid "Default behavior"
+msgstr "Comportement par défaut"
+
+msgid "Plot Confidence Intervals"
+msgstr "Graphe des intervalles de confiance"
+
+msgid "Plot at predictor means"
+msgstr "Graphe aux moyennes des prédictions"
+
+msgid "Plot by factor levels at covariate means"
+msgstr "Graphe par niveaux de la variable facteur aux moyennes de la covariable"
+
+msgid "Plot at specified values of predictors"
+msgstr "Graphe à des valeurs spécifiées des prédictions"
+
+msgid "Type of Plot"
+msgstr "Type de graphe"
+
+msgid "Confidence level must be a number between 0 and 1."
+msgstr "Le niveau de confiance doit être un nombre compris entre 0 et 1."
+
+msgid ""
+"Number of valid entries in prediction data (%d)\n"
+"not equal to number of rows (%d) * number of columns (%d)."
+msgstr ""
+"Le nombre d'entrées correctes dans les données de prédiction (%d)\n"
+"n'est pas égal au nombre de lignes (%d) * le nombre de colonnes (%d)."
+
+msgid "Level of confidence:"
+msgstr "Niveau de confiance :"
+
+msgid "Plot marginal survival"
+msgstr "Graphe de la survie marginale"
+
+msgid "Specify Values of Predictors:"
+msgstr "Spécifier les valeurs des prédictions :"
+
+msgid "Number of rows:"
+msgstr "Nombre de lignes :"
+
+msgid "Compare Survival Functions"
+msgstr "Comper des fonctions de survie"
+
+msgid "You must select strata."
+msgstr "Vous devez sélectionner des strates."
+
+msgid "Survival Function"
+msgstr "Fonction de survie"
+
+msgid "Log"
+msgstr "Log"
+
+msgid "Log-log"
+msgstr "Log-Log"
+
+msgid "Plain"
+msgstr "Normale"
+
+msgid "None"
+msgstr "Aucune"
+
+msgid "Confidence Intervals"
+msgstr "Intervalles de confiance"
+
+msgid "Plot confidence Intervals"
+msgstr "Graphe des intervalles de confiance"
+
+msgid "Kaplan-Meier"
+msgstr "Kaplan-Meier"
+
+msgid "Fleming-Harrington"
+msgstr "Fleming-Harrington"
+
+msgid "Fleming-Harrington 2"
+msgstr "Fleming-Harrington 2"
+
+msgid "Mark censoring times"
+msgstr "Mrquer les temps censorés"
+
+msgid "Method"
+msgstr "Méthode"
+
+msgid "Greenwood"
+msgstr "Greenwood"
+
+msgid "Tsiatis"
+msgstr "Tsiatis"
+
+msgid "Variance Method"
+msgstr "Méthode de la variance"
+
+msgid "Confidence level"
+msgstr "Niveau de confiance"
+
+msgid "Quantiles to estimate"
+msgstr "Quantiles à estimer"
+
+msgid "Survival Regression Model"
+msgstr "Modèle de régression de survie"
+
+msgid "Weibull"
+msgstr "Weibull"
+
+msgid "Exponential"
+msgstr "Exponentiel"
+
+msgid "Gaussian"
+msgstr "Gaussien"
+
+msgid "Logistic"
+msgstr "Logistique"
+
+msgid "Log-normal"
+msgstr "Log-normal"
+
+msgid "Log-logistic"
+msgstr "Log-logistique"
+
+msgid "Distribution"
+msgstr "Distribution"
+
+msgid "Reshape Wide Survival Data to Long"
+msgstr "Reformatter des données de survie large en longueur"
+
+msgid "No time-varying covariates specified."
+msgstr "Aucune covariable variant avec le temps n'est spécifiée."
+
+msgid "You must enter the name of a data set."
+msgstr "Vous devez entrer le nom d'un jeu de données."
+
+msgid "is not a valid name."
+msgstr "n'est pas un nom correct."
+
+msgid "Data set"
+msgstr "Jeu de données"
+
+msgid "You must select a time-to-event variable."
+msgstr "Vous devez sélectionner une variable \"temps de l'événement\""
+
+msgid "Covariate set has %d entries; should have %d entries"
+msgstr "La covariabloe choisie a %d entrées ; Elle devrait en avoir %d"
+
+msgid "Covariate set must have at least 2 entries."
+msgstr "La covariable choisie doit avoir au moins 2 entrées."
+
+msgid ""
+"Time to event\n"
+"(select one)"
+msgstr ""
+"Temps de l'événement\n"
+"(sélectionnez-en un)"
+
+msgid ""
+"Select set of\n"
+"time-dependent covariates"
+msgstr "Sélectionnez l'ensemble des/ncovariables dépendant du temps"
+
+msgid "Select"
+msgstr "Sélectionnez"
+
+msgid "Enter name for data set:"
+msgstr "Nom du jeu de données :"
+
+msgid "Name for covariate"
+msgstr "Nom de la covariable"
+
+msgid "tcltk package missing"
+msgstr "Package tcltk manquant"
+
+msgid "all elements of cov must be of the same length and"
+msgstr "tous les éléments de cov doivent être de même longueur et"
+
+msgid "cov.times must have one more entry than each element of cov."
+msgstr "cov.times doit contenir une ou plus d'entrées que chaque élément de cov."
+
+msgid "event indicator must have values {0, 1}, {1, 2} or {FALSE, TRUE}"
+msgstr "l'indicateur d'événement doit avoir des valeurs {0, 1}, {1, 2} ou {FALSE, TRUE}"
+
+msgid "Factors only"
+msgstr "Variables facteurs seulement"
+
+msgid "All variables"
+msgstr "Toutes les variables"
+
+msgid "Candidates for clusters"
+msgstr "Candidats pour les regroupements"
+
+msgid "Time-dependent covariates"
+msgstr "Covariables dépendant du temps"
+
+msgid "<none defined>"
+msgstr "<aucun défini>"
+
+msgid "Convert variable to date..."
+msgstr "Convertir la variable en date ..."
+
+msgid "Date Conversion"
+msgstr "Conversion en date"
+
+msgid "Variable to convert"
+msgstr "Variable à convertir"
+
+msgid "date"
+msgstr "date"
+
+msgid "Date format"
+msgstr "Format de date"
+
+msgid "Name for date variable"
+msgstr "Nom de la variable date"
+
+msgid "Class of date variable"
+msgstr "Classe de la variable date"
+
+msgid "object"
+msgstr "objet"
+
