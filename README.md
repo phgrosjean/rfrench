@@ -22,7 +22,7 @@ Cette traduction est disponible depuis la version 2.2.1 de R. L'équipe de tradu
 - Santos Carvajal-Gonzalez <Santos.Carvajal-Gonzalez@pfizer.com>
 - Vincent Goulet <vincent.goulet@act.ulaval.ca>
 - Ted Harding <ted.harding@nessie.mcc.ac.uk>
-- Christian W. (FR) <w9204-99@yahoo.com>
+- Christian W. (FR) <w9204-rs@yahoo.com>
 
 **Interface avec le R core team et synchronisation :**
 
@@ -57,7 +57,7 @@ This French translation is available since R version 2.2.1. The translation team
 - Santos Carvajal-Gonzalez <Santos.Carvajal-Gonzalez@pfizer.com>
 - Vincent Goulet <vincent.goulet@act.ulaval.ca>
 - Ted Harding <ted.harding@nessie.mcc.ac.uk>
-- Christian W. (FR) <w9204-99@yahoo.com>
+- Christian W. (FR) <w9204-rs@yahoo.com>
 
 **Interface with the R core team and synching:**
 
