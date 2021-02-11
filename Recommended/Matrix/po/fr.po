@@ -1008,7 +1008,7 @@ msgstr "dtrMatrix doit être carrée"
 
 #: dtrMatrix.c:192
 msgid "\"dtrMatrix\" objects in '%*%' must have matching (square) dimension"
-msgstr "les objets \"dtrMatrix\" dans '%*%' doivent avoir des dimensions (carrées) cohérentes"
+msgstr "les objets \"dtrMatrix\" dans '%%*%%' doivent avoir des dimensions (carrées) cohérentes"
 
 #: dtrMatrix.c:282
 msgid "cannot set diag() as long as 'diag = \"U\"'"
