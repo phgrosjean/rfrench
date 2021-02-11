@@ -918,7 +918,7 @@ msgid "Documentation for package %s"
 msgstr "Documentation pour le package %s"
 
 msgid "package %s required by %s could not be found"
-msgstr "le package %s nécessaire pour %s, mais est introuvable"
+msgstr "le package %s est nécessaire pour %s, mais est introuvable"
 
 msgid "version %s of %s masked by %s in %s"
 msgstr "la version %s de %s est masquée par %s dans %s"
@@ -957,7 +957,7 @@ msgid "can only save to a binary connection"
 msgstr "la sauvegarde n'est possible que vers une connexion binaire"
 
 msgid "image could not be renamed and is left in %s"
-msgstr "l'image d'environnement ne peut être renommée et est laissée dans %s"
+msgstr "l'image de l'environnement ne peut être renommée et est laissée dans %s"
 
 msgid "[Previously saved workspace restored]"
 msgstr "[Sauvegarde de la session précédente restaurée]"
@@ -972,13 +972,13 @@ msgid "invalid 'category' argument"
 msgstr "argument 'category' incorrect"
 
 msgid "must specify names of formal arguments for 'vectorize'"
-msgstr "les noms d'arguments formels doivent être spécifiés pour 'vectorize'"
+msgstr "les noms des arguments formels doivent être spécifiés pour 'vectorize'"
 
 msgid "FUN"
 msgstr "FUN"
 
 msgid "may not have argument(s) named"
-msgstr "ne peut avoir d’argument(s) nommé(s)"
+msgstr "peut ne pas avoir d’argument(s) nommé(s)"
 
 msgid "'arg' must be NULL or a character vector"
 msgstr "'arg' doit être NULL ou une chaîne de caractères"
@@ -990,7 +990,7 @@ msgid "'arg' must be of length >= 1"
 msgstr "'arg'' doit être de longueur >= 1"
 
 msgid "'arg' should be one of %s"
-msgstr "'arg' doit être un de %s"
+msgstr "'arg' doit être une valeur de %s"
 
 msgid "there is more than one match in 'match.arg'"
 msgstr "plus d'une correspondance dans 'match.arg'"
@@ -1023,7 +1023,7 @@ msgid "'trim' must be numeric of length one"
 msgstr "'trim' doit être une valeur numérique de longueur un"
 
 msgid "trimmed means are not defined for complex data"
-msgstr "les moyennes tronquées ne sont pas définies pour des données complexes"
+msgstr "les moyennes tronquées ne sont pas définies pour les données complexes"
 
 msgid "'by' must match numbers of columns"
 msgstr "'by' doit correspondre au nombre de colonnes"
@@ -1032,7 +1032,7 @@ msgid "'by' must match number of columns"
 msgstr "'by' doit correspondre au nombre de colonnes"
 
 msgid "'by' must specify one or more columns as numbers, names or logical"
-msgstr "'by' doit spécifier lune ou plusieurs colonnes comme des entiers, des noms ou des valeurs logiques"
+msgstr "'by' doit spécifier une ou plusieurs colonnes par des entiers, des noms ou des valeurs logiques"
 
 msgid "long vectors are not supported"
 msgstr "les vecteurs longs ne sont pas supportés"
@@ -1047,7 +1047,7 @@ msgid "additional arguments ignored in message()"
 msgstr "arguments supplémentaires ignorés dans message()"
 
 msgid "tracing functions requires the 'methods' package, but unable to load the 'methods' namespace"
-msgstr "les fonctions de traçage nécessite le package 'methods', mais impossible de charger l'espace de noms de 'methods'"
+msgstr "les fonctions de traçage nécessitent le package 'methods', mais impossible de charger l'espace de noms de 'methods'"
 
 msgid "invalid to change the storage mode of a factor"
 msgstr "le mode de stockage d'un objet \"factor\" ne peut être modifié"
@@ -1056,7 +1056,7 @@ msgid ""
 "namespace %s is not available and has been replaced\n"
 "by .GlobalEnv when processing object %s"
 msgstr ""
-"l'espace de nom %s n'est pas disponible et a été remplacé\n"
+"l'espace de noms %s n'est pas disponible et a été remplacé\n"
 "par .GlobalEnv lors du traitement de l'objet %s"
 
 msgid "namespace is already attached"
@@ -1075,7 +1075,7 @@ msgid "%s not found"
 msgstr "%s introuvable"
 
 msgid "namespace %s %s is already loaded, but %s %s is required"
-msgstr "le package %s %s est déjà chargé, mais %s %s est requis"
+msgstr "l'espace de noms %s %s est déjà chargé, mais %s %s est requis"
 
 msgid "- loading"
 msgstr "- chargement en cours"
@@ -1087,10 +1087,10 @@ msgid "failed to assign RegisteredNativeSymbol for %s to %s since %s is already 
 msgstr "impossible d'assigner RegisteredNativeSymbol pour %s à %s parce que %s est déjà défini dans l'espace de noms %s"
 
 msgid "failed to assign NativeSymbolInfo for %s to %s since %s is already defined in the %s namespace"
-msgstr "impossible d'attribuer NativeSymbolInfo pour %s à %s depuis %s est déjà défini dans l'espace de nom %s"
+msgstr "impossible d'attribuer NativeSymbolInfo pour %s à %s car %s est déjà défini dans l'espace de noms %s"
 
 msgid "failed to assign NativeSymbolInfo for %s since %s is already defined in the %s namespace"
-msgstr "impossible d'attribuer NativeSymbolInfo pour %s depuis %s est déjà défini dans l'espace de nom %s"
+msgstr "impossible d'attribuer NativeSymbolInfo pour %s car %s est déjà défini dans l'espace de noms %s"
 
 msgid "package %s does not have a namespace"
 msgstr "le package %s n'a pas d'espace de noms"
@@ -1099,7 +1099,7 @@ msgid "package %s was installed before R 4.0.0: please re-install it"
 msgstr "le package %s a été installé avant R 4.0.0 : veuillez le réinstaller, s'il-vous-plait"
 
 msgid "namespace %s %s is being loaded, but %s %s is required"
-msgstr "l'espace de noms %s %s est en train de charger, mais %s %s est requis"
+msgstr "l'espace de noms %s %s est en train de se charger, mais %s %s est requis"
 
 msgid "package %s has no 'package.rds' in Meta/"
 msgstr "le package %s n'a aucun 'package.rds' dans Meta/"
@@ -1111,7 +1111,7 @@ msgid "package %s has a license that you need to accept after viewing"
 msgstr "le package %s a une licence que vous devez accepter après l'avoir lue"
 
 msgid "package %s has a license that you need to accept:"
-msgstr "le package %s a une licence que vous devez accepter après l'avoir lue :"
+msgstr "le package %s a une licence que vous devez accepter :"
 
 msgid "according to the DESCRIPTION file it is"
 msgstr "d’après le fichier DESCRIPTION, c’est"
@@ -1171,7 +1171,7 @@ msgid "--- procesing classes"
 msgstr "-- traitement des classes"
 
 msgid "'exportClassPattern' specified in 'NAMESPACE' but no matching classes in package %s"
-msgstr "'exportClassPattern' spécifié dans le fichier 'NAMESPACE', mais aucune classe ne correspond dans le package %s"
+msgstr "'exportClassPattern' est spécifié dans le fichier 'NAMESPACE', mais aucune classe ne correspond dans le package %s"
 
 msgid "in package %s classes %s were specified for export but not defined"
 msgstr "dans le package %s, les classes %s sont spécifiées pour l'exportation, mais ne sont pas définies"
@@ -1192,7 +1192,7 @@ msgid "failed to find metadata object for %s"
 msgstr "objet métadonnées introuvable pour %s"
 
 msgid "in package %s methods %s were specified for export but not defined"
-msgstr "dans le package %s, les méthodes %s sont spécifées à l'exportation, mais aucune n'est définie"
+msgstr "dans le package %s, les méthodes %s sont spécifées pour l'exportation, mais aucune n'est définie"
 
 msgid "-- done processing S4 stuff for"
 msgstr "-- fin de traitement de S4 pour"
@@ -1213,7 +1213,7 @@ msgid "not loading a namespace"
 msgstr "un espace de noms n'est pas chargé"
 
 msgid "namespace %s is imported by %s so cannot be unloaded"
-msgstr "l'espace de noms %s est importé par %s et ne peut, donc, pas être déchargé"
+msgstr "l'espace de noms %s est importé par %s et ne peut donc pas être déchargé"
 
 msgid "not a namespace"
 msgstr "ceci n'est pas un espace de noms"
@@ -1237,7 +1237,7 @@ msgid "invalid import target"
 msgstr "cible d'importation incorrecte"
 
 msgid "found methods to import for function %s but not the generic itself"
-msgstr "des méthodes sont disponibles à l'importation pour la fonction %s mais pas pour la fonction générique elle-même"
+msgstr "des méthodes à importer sont disponibles pour la fonction %s mais pas pour la fonction générique elle-même"
 
 msgid "replacing previous import %s by %s when loading %s"
 msgstr "remplacement de l'importation précédente %s par %s lors du chargement de %s"
@@ -1258,7 +1258,7 @@ msgid "package %s has no 'NAMESPACE' file"
 msgstr "le package %s n'a aucun fichier 'NAMESPACE'"
 
 msgid "empty name in directive '%s' in 'NAMESPACE' file"
-msgstr "nom vide dans la directive '%s' dans le fichier 'NAMESPACE'"
+msgstr "nom vide dans la directive '%s' du fichier 'NAMESPACE'"
 
 msgid "duplicate symbol names %s in useDynLib(\"%s\")"
 msgstr "noms de symboles dupliqués %s dans useDynlib(\"%s\")"
@@ -1315,10 +1315,10 @@ msgid "first argument must be a QR decomposition"
 msgstr "le premier argument doit être une décomposition QR"
 
 msgid "invalid nrow(qr$qr)"
-msgstr "nrow(qr$qr) incorrecte"
+msgstr "nrow(qr$qr) incorrect"
 
 msgid "invalid ncol(qr$qr)"
-msgstr "ncol(qr$qr) incorrecte"
+msgstr "ncol(qr$qr) incorrect"
 
 msgid "invalid ncol(qr$rank)"
 msgstr "ncol(qr$rank) incorrect"
@@ -1369,7 +1369,7 @@ msgid "missing values for 'group'"
 msgstr "valeurs manquantes pour 'group'"
 
 msgid "not a data frame"
-msgstr "pas un tableau de données"
+msgstr "n'est pas un tableau de données"
 
 msgid "length of 'center' must equal the number of columns of 'x'"
 msgstr "la longueur de 'center' doit être égale au nombre de colonnes de 'x'"
@@ -1393,7 +1393,7 @@ msgid "'to' must be a finite number"
 msgstr "'to' doit être un nombre fini"
 
 msgid "invalid '(to - from)/by'"
-msgstr "(to - from) / by incorrect"
+msgstr "(to - from) / by est incorrect"
 
 msgid "wrong sign in 'by' argument"
 msgstr "signe incorrect de l'argument 'by'"
