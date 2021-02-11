@@ -43,7 +43,7 @@ msgid "See help(\"Deprecated\")"
 msgstr "Voir help(\"Deprecated\")"
 
 msgid "deprecatedWarning"
-msgstr "deprecatedWarning"
+msgstr "avis de dépréciation"
 
 msgid "argument to 'La.svd' must be numeric or complex"
 msgstr "l'argument pour 'La.svd' doit être numérique ou complexe"
@@ -70,7 +70,7 @@ msgid "'kind' must be a character string of length 1 (RNG to be used)."
 msgstr "'kind' doit être une chaîne de caractères de longueur 1 (RNG à utiliser)."
 
 msgid "'%s' is not a valid abbreviation of an RNG"
-msgstr "'%s' n'est pas une abbréviation valide d'un RNG"
+msgstr "'%s' n'est pas l'abbréviation valide d'un RNG"
 
 msgid "'normal.kind' must be a character string of length 1"
 msgstr "'normal.kind' doit être une chaîne de caractères de longueur 1"
@@ -82,7 +82,7 @@ msgid "'sample.kind' must be a character string of length 1"
 msgstr "'sample.kind' doit être une chaîne de caractères de longueur 1"
 
 msgid "malformed version string"
-msgstr "chaîne de caractères de version incorrecte"
+msgstr "chaîne incorrecte de caractères de la version"
 
 msgid "target is %s, current is %s"
 msgstr "la cible est %s, l'actuel est %s"
@@ -133,7 +133,7 @@ msgid "invalid 'name' argument"
 msgstr "argument 'name' incorrect"
 
 msgid "package %s is required by %s, which may no longer work correctly"
-msgstr "le package %s est requis par %s, qui ne fonctionne probablement plus correctement"
+msgstr "le package %s est nécessaire pour %s, qui ne fonctionne probablement plus correctement"
 
 msgid "package %s is required by %s so will not be detached"
 msgstr "le package '%s est nécessaire pour %s et n'est donc pas détachable"
@@ -151,7 +151,7 @@ msgid "%s namespace cannot be unloaded:"
 msgstr "l'espace de noms %s ne peut être déchargé :"
 
 msgid "%s converted to character string"
-msgstr "%s convertis en chaînes de caractères"
+msgstr "%s converti en chaîne de caractères"
 
 msgid "replaced regular expression pattern '[' by  '\\\\['"
 msgstr "le motif d'expression régulière '[' est remplacé par '\\\\['"
@@ -187,7 +187,7 @@ msgid "invalid 'dims'"
 msgstr "'dims' incorrect"
 
 msgid "condition handlers must be specified with a condition class"
-msgstr "le gestionnaire de condition doit être spécifié avec une classe de condition"
+msgstr "les gestionnaires de condition doivent être spécifiés avec une classe de condition"
 
 msgid "no 'restart' '%s' found"
 msgstr "aucun 'restart' '%s' trouvé"
@@ -199,28 +199,28 @@ msgid "not a valid restart specification"
 msgstr "mauvaise spécification de redémarrage"
 
 msgid "condition handlers must be functions"
-msgstr "le manipulateur de données (handler) doit être une fonction"
+msgstr "les gestionnaires de condition doivent être des fonctions"
 
 msgid "pushing duplicate `%s` handler on top of the stack"
-msgstr "le manipulateur de données `%s`est poussé au dessus de la pile"
+msgstr "un doublon du gestionnaire `%s`est poussé au-dessus de la pile"
 
 msgid "argument 'where' of length 0"
 msgstr "argument 'where' de longueur nulle"
 
 msgid "can only write character objects"
-msgstr "seuls des objets de mode caractères peuvent être écrits"
+msgstr "seuls les objets de mode caractères peuvent être écrits"
 
 msgid "'headers' must have names and must not be NA"
 msgstr "'headers' doit être nommé et ne peut pas être NA"
 
 msgid "argument 'object' must deparse to a single character string"
-msgstr "la reconstruction de code (deparse)  de l'argument 'object' doit résulter en une chaîne de caractères unique"
+msgstr "la reconstruction de code (deparse) de l'argument 'object' doit résulter en une chaîne de caractères unique"
 
 msgid "'name' must be a single character string"
 msgstr "'name' doit être une chaîne de caractères unique"
 
 msgid "'origin' must be one of 'start', 'current' or 'end'"
-msgstr "'origin' doit être un de 'start', 'current' ou 'end'"
+msgstr "'origin' doit être soit 'start', 'current' ou 'end'"
 
 msgid "can only truncate an open connection"
 msgstr "seule une connexion ouverte peut être tronquée"
@@ -229,7 +229,7 @@ msgid "invalid 'endian' argument"
 msgstr "argument 'endian' incorrect"
 
 msgid "can only write vector objects"
-msgstr "seuls des objects vectoriels peuvent être écrits"
+msgstr "seuls les objects vectoriels peuvent être écrits"
 
 msgid "'timeout' must be NULL or a non-negative number"
 msgstr "'timeout' doit être soit NULL, soit un nombre non négatif"
@@ -262,7 +262,7 @@ msgid "missing values in 'row.names' are not allowed"
 msgstr "les valeurs manquantes dans 'row.names' ne sont pas autorisées"
 
 msgid "invalid 'dimnames' given for data frame"
-msgstr "'dimnames' incorrect pour ce tableau de données"
+msgstr "'dimnames' incorrect pour le tableau de données"
 
 msgid "cannot coerce class %s to a data.frame"
 msgstr "impossible de convertir automatiquement la classe %s en un tableau de données (data.frame)"
@@ -274,10 +274,10 @@ msgid "options(\"stringsAsFactors\") not set to TRUE or FALSE"
 msgstr "options(\"stringsAsFactors\") n'est pas TRUE ou FALSE"
 
 msgid "mismatch of row names in arguments of 'data.frame', item %d"
-msgstr "erreur dans le nom des lignes dans les arguments de 'data.frame', élément %d"
+msgstr "erreur du nom des lignes dans les arguments de 'data.frame', élément %d"
 
 msgid "some row.names duplicated: %s --> row.names NOT used"
-msgstr "quelques 'row.names' sont dupliqués : %s --> row.names nest PAS utilisé"
+msgstr "quelques 'row.names' sont dupliqués : %s --> row.names n'est PAS utilisé"
 
 msgid "row names contain missing values"
 msgstr "les noms de lignes contiennent des valeurs manquantes"
@@ -289,7 +289,7 @@ msgid "arguments imply differing number of rows: %s"
 msgstr "les arguments impliquent des nombres de lignes différents : %s"
 
 msgid "'row.names' should specify one of the variables"
-msgstr "'row.names' doit spécifier l'une des variables"
+msgstr "'row.names' doit spécifier une des variables"
 
 msgid "row names supplied are of the wrong length"
 msgstr "les noms de lignes donnés ne sont pas de la bonne longueur"
@@ -325,7 +325,7 @@ msgid "need 0, 1, or 2 subscripts"
 msgstr "il faut 0, 1 ou 2 indices"
 
 msgid "missing values are not allowed in subscripted assignments of data frames"
-msgstr "les valeurs manquantes ne sont pas permises dans les affectations indiçées des tableaux de données"
+msgstr "les valeurs manquantes ne sont pas permises dans les affectations indicées des tableaux de données"
 
 msgid "non-existent rows not allowed"
 msgstr "les lignes inexistantes ne sont pas permises"
@@ -346,7 +346,7 @@ msgid "replacing element in non-existent column: %s"
 msgstr "remplacement d'élément dans une colonne non existante : %s"
 
 msgid "only a single element should be replaced"
-msgstr "seulement un élement devrait être remplacé"
+msgstr "seul un élement devrait être remplacé"
 
 msgid "names do not match previous names"
 msgstr "les noms ne correspondent pas aux noms précédents"
@@ -376,7 +376,7 @@ msgid "list of length %d not meaningful"
 msgstr "une liste de longueur %d n'a aucun sens"
 
 msgid "only defined on a data frame with all numeric-alike variables"
-msgstr "seulement défini pour des tableaux de données dont toutes les variables sont numériques ou apparentées"
+msgstr "défini seulement pour des tableaux de données dont toutes les variables sont numériques ou apparentées"
 
 msgid "cannot xtfrm data frames"
 msgstr "impossible d’utiliser xtfrm sur un tableau de données (data frame)"
@@ -388,13 +388,13 @@ msgid "'origin' must be supplied"
 msgstr "'origin' doit être spécifié"
 
 msgid "do not know how to convert '%s' to class %s"
-msgstr "incapable de convertir '%s' dans la classe %s"
+msgstr "impossible de convertir '%s' dans la classe %s"
 
 msgid "binary + is not defined for \"Date\" objects"
 msgstr "l'addition binaire (+) n'est pas définie pour les objets \"Date\""
 
 msgid "can only subtract from \"Date\" objects"
-msgstr "il est seulement possible de soustraire d'objets \"Date\""
+msgstr "il est seulement possible de soustraire à des objets \"Date\""
 
 msgid "unary - is not defined for \"Date\" objects"
 msgstr "l'opération moins unaire (-) n'est pas définie pour les objets \"Date\""
@@ -406,7 +406,7 @@ msgid "unary %s not defined for \"Date\" objects"
 msgstr "l'opération unaire %s n'est pas définie pour les objets \"Date\""
 
 msgid "%s not defined for \"Date\" objects"
-msgstr "%s pas défini pour des objets \"Date\""
+msgstr "%s n'est pas défini pour les objets \"Date\""
 
 msgid "'from' must be specified"
 msgstr "'from' doit être spécifié"
@@ -427,7 +427,7 @@ msgid "'length.out' must be of length 1"
 msgstr "'length.out' doit être de longueur 1"
 
 msgid "exactly two of 'to', 'by' and 'length.out' / 'along.with' must be specified"
-msgstr "exactement deux arguments parmi 'to', 'by' et 'length.out' / 'along.with' doivent être donnés"
+msgstr "deux arguments exactement parmi 'to', 'by' et 'length.out' / 'along.with' doivent être donnés"
 
 msgid "'by' must be of length 1"
 msgstr "'by' doit être de longueur 1"
@@ -457,28 +457,28 @@ msgid "'lag' and 'differences' must be integers >= 1"
 msgstr "'lag' et 'differences' doivent être des entiers >= 1"
 
 msgid "unable to deduce timezone name from"
-msgstr "impossible de déduire timezone de"
+msgstr "impossible de déduire le nom de la timezone de"
 
 msgid "wrong class"
-msgstr "mauvaise classe"
+msgstr "classe incorrecte"
 
 msgid "binary '+' is not defined for \"POSIXt\" objects"
 msgstr "l'opérateur binaire '+' n'est pas défini pour les objets \"POSIXt\""
 
 msgid "can only subtract from \"POSIXt\" objects"
-msgstr "il est seulement possible de soustraire depuis des objets \"POSIXlt\""
+msgstr "il est seulement possible de soustraire aux objets \"POSIXlt\""
 
 msgid "unary '-' is not defined for \"POSIXt\" objects"
 msgstr "l'opérateur unaire '-' n'est pas défini pour les objets \"POSIXt\""
 
 msgid "can only subtract numbers from \"POSIXt\" objects"
-msgstr "il est seulement possible de soustraire des nombres depuis des objets \"POSIXlt\""
+msgstr "il est seulement possible de soustraire des nombres aux objets \"POSIXlt\""
 
 msgid "unary '%s' not defined for \"POSIXt\" objects"
 msgstr "l'opérateur unaire '%s' n'est pas défini pour les objets \"POSIXt\""
 
 msgid "'%s' not defined for \"POSIXt\" objects"
-msgstr "'%s' non défini pour des objets \"POSIXt\""
+msgstr "'%s' non défini pour les objets \"POSIXt\""
 
 msgid "'tzone' attributes are inconsistent"
 msgstr "les attributs 'tzone' ne correspondent pas"
@@ -493,10 +493,10 @@ msgid "invalid units specified"
 msgstr "unités incorrectes"
 
 msgid "unary '%s' not defined for \"difftime\" objects"
-msgstr "l'opérateur unaire '%s' n'est pas défini pour des objets \"difftime\""
+msgstr "l'opérateur unaire '%s' n'est pas défini pour les objets \"difftime\""
 
 msgid "'%s' not defined for \"difftime\" objects"
-msgstr "'%s' non defini pour des objets \"difftime\""
+msgstr "'%s' non defini pour les objets \"difftime\""
 
 msgid "both arguments of * cannot be \"difftime\" objects"
 msgstr "les deux arguments de * ne peuvent simultanément être des objets \"difftime\""
@@ -511,13 +511,13 @@ msgid "'to' must be a \"POSIXt\" object"
 msgstr "'to' doit être un objet \"POSIXt\""
 
 msgid "component subscript must be a character string"
-msgstr "l’indiçage de composant doit être une chaîne de caractères"
+msgstr "l’indiçage de composants doit être une chaîne de caractères"
 
 msgid "no Olson database found"
 msgstr "aucune base de donnée Olson trouvée"
 
 msgid "'file' must be a character string or connection"
-msgstr "'file' doit être une chîne de caractères ou une connection"
+msgstr "'file' doit être une chaîne de caractères ou une connection"
 
 msgid ""
 "Invalid DCF format.\n"
@@ -527,7 +527,7 @@ msgid ""
 msgstr ""
 "Format DCF incorrect.\n"
 "Des lignes normales doivent avoir un attribut.\n"
-"Les lignes litigieuses commencent par:\n"
+"Les lignes litigieuses commencent par :\n"
 "%s"
 
 msgid ""
@@ -538,26 +538,26 @@ msgid ""
 msgstr ""
 "Format DCF incorrect.\n"
 "Les lignes qui continuent les précédentes ne peuvent initier une nouvelle entrée.\n"
-"Les lignes litigieuses commencent par:\n"
+"Les lignes litigieuses commencent par :\n"
 "%s"
 
 msgid "failed to load the methods package for debugging by signature"
-msgstr "incapable de charge le package methods pour le déboggage par signature"
+msgstr "impossible de charger le package methods pour le déboggage par signature"
 
 msgid "failed to load methods package for undebugging by signature"
-msgstr "incapable de charge le package methods pour arrêter le déboggage par signature"
+msgstr "impossible de charger le package methods pour arrêter le déboggage par signature"
 
 msgid "failed to load methods package for handling signature"
-msgstr "incapable de charge le package methods pour manipuler la signature"
+msgstr "impossible de charger le package methods pour manipuler la signature"
 
 msgid "'x' must be a square matrix"
 msgstr "'x' doit être une matrice carrée"
 
 msgid "'determinant' not currently defined for complex matrices"
-msgstr "'determinant' n'est pas défini pour des matrices de complexes"
+msgstr "'determinant' n'est pas défini pour les matrices de complexes"
 
 msgid "'nrow' or 'ncol' cannot be specified when 'x' is a matrix"
-msgstr "'nrow' et 'ncol' ne peuvent pas être spécifiés lorsque 'x' est une matrice"
+msgstr "'nrow' ou 'ncol' ne peuvent pas être spécifiés lorsque 'x' est une matrice"
 
 msgid "'x' is an array, but not one-dimensional."
 msgstr "'x' est un tableau, mais pas à une dimension."
@@ -581,10 +581,10 @@ msgid "multiple DLLs match '%s'. Using '%s'"
 msgstr "plusieurs DLLs correspondent à '%s'. Utilisation de '%s'"
 
 msgid "must specify DLL via a %s object. See getLoadedDLLs()"
-msgstr "la DLL doit être spécifiée via un objet %s. Voyez getLoadedDLLs()"
+msgstr "la DLL doit être spécifiée via un objet %s. Voir getLoadedDLLs()"
 
 msgid "function is not in a namespace, so cannot locate associated DLL"
-msgstr "la fonction n'est pas dans l'espace de noms, impossible de localiser la DLL associée"
+msgstr "la fonction n'est pas dans un espace de noms, impossible de localiser la DLL associée"
 
 msgid "looking for DLL for native routine call, but no DLLs in namespace of call"
 msgstr "recherche d'une DLL pour un appel natif de sous-programme, mais aucune DLL n'est trouvée dans l'espace de noms de l'appel"
@@ -605,7 +605,7 @@ msgid "number of levels differs"
 msgstr "le nombre de niveaux diffère"
 
 msgid "%s not meaningful for factors"
-msgstr "%s n'est pas pertinent pour des variables facteurs"
+msgstr "%s n'est pas significatif pour les variables facteurs"
 
 msgid "level sets of factors are different"
 msgstr "les niveaux des facteurs diffèrent"
@@ -614,16 +614,16 @@ msgid "invalid factor level, NA generated"
 msgstr "niveau de facteur incorrect, NAs générés"
 
 msgid "'%s' is not meaningful for ordered factors"
-msgstr "'%s' n'a pas de sens pour des facteurs ordonnés"
+msgstr "'%s' n'a pas de sens pour les facteurs ordonnés"
 
 msgid "'%s' not defined for ordered factors"
-msgstr "'%s' n'est pas défini pour des facteurs ordonnés"
+msgstr "'%s' n'est pas défini pour les facteurs ordonnés"
 
 msgid "'%s' is only meaningful for ordered factors if all arguments have the same level sets"
-msgstr "'%s' n'a de sens pour des facteurs ordonnés que si tous les arguments ont les mêmes niveaux"
+msgstr "'%s' n'a de sens pour les facteurs ordonnés que si tous les arguments ont le même niveau"
 
 msgid "no files to copy to"
-msgstr "aucun fichier vers où copier"
+msgstr "aucun fichier à copier"
 
 msgid "attempt to copy a directory to itself"
 msgstr "impossible de copier un répertoire sur lui-même"
@@ -638,19 +638,19 @@ msgid "cannot overwrite a non-directory with a directory"
 msgstr "impossible de remplacer un fichier par un répertoire"
 
 msgid "file can not be copied both 'from' and 'to'"
-msgstr "un fichier à copier ne peut à la fois être 'from' et 'to'"
+msgstr "un fichier à copier ne peut être à la fois 'from' et 'to'"
 
 msgid "no files to link from"
-msgstr "aucun fichier vers où pointer un lien"
+msgstr "aucun fichier source pour le lien"
 
 msgid "no files/directory to link to"
-msgstr "aucun fichier / répertoire vers où pointer un lien"
+msgstr "aucun fichier / répertoire cible pour le lien"
 
 msgid "no files to link to"
-msgstr "aucuns fichiers vers où pointer"
+msgstr "aucun fichier cible pour le lien"
 
 msgid "'package' must be of length 1"
-msgstr "'package' doit être de longueur unaire"
+msgstr "'package' doit être de longueur un"
 
 msgid "no file found"
 msgstr "fichier introuvable"
@@ -662,7 +662,7 @@ msgid "invalid 'time' argument"
 msgstr "argument 'time' incorrect"
 
 msgid "'vec' must be sorted non-decreasingly and not contain NAs"
-msgstr "'vec' doit être trié par ordre croissant et ne peut contenir de NAs"
+msgstr "'vec' doit être trié par ordre croissant et ne peut pas contenir de NAs"
 
 msgid "'fun' is not a function"
 msgstr "'fun' n’est pas une fonction"
@@ -677,19 +677,19 @@ msgid "class of 'x' was discarded"
 msgstr "la classe de 'x' est éliminée"
 
 msgid "'flag' must be a string, i.e., of length 1"
-msgstr "'flag' doit être une chaîne de caractère unique, c’est-à-dire un vecteur de longueur 1"
+msgstr "'flag' doit être une chaîne de caractères, c’est-à-dire un vecteur de longueur 1"
 
 msgid "'flag' should contain only characters from [0+- #'I]"
 msgstr "'flag' ne peut contenir que des [0+- #’I]"
 
 msgid "'mode' must be \"double\" (\"real\"), \"integer\" or \"character\""
-msgstr "'mode' doit être un de \"double\" (\"real\"), \"integer\" ou \"character\""
+msgstr "'mode' doit être une valeur parmi \"double\" (\"real\"), \"integer\" ou \"character\""
 
 msgid "coercing argument to \"character\" for format=\"s\""
 msgstr "conversion automatique de l'argument en \"character\" pour format=\"s\""
 
 msgid "'format' must be one of {\"f\",\"e\",\"E\",\"g\",\"G\", \"fg\", \"s\"}"
-msgstr "'format' doit être un de {\"f\",\"e\",\"E\",\"g\",\"G\", \"fg\", \"s\"}"
+msgstr "'format' doit être une valeur parmi {\"f\",\"e\",\"E\",\"g\",\"G\", \"fg\", \"s\"}"
 
 msgid "'digits' reduced to %d"
 msgstr "'digits' réduit à %d"
@@ -701,10 +701,10 @@ msgid "'zero.print' has length > 1"
 msgstr "'zero.print' a une longueur > 1"
 
 msgid "'zero.print' must be character, logical or NULL"
-msgstr "'zero.print' doit être une chaîne de caractères, une valeur logique ou NULL"
+msgstr "'zero.print' doit être une chaîne de caractères, une valeur booléenne ou NULL"
 
 msgid "'zero.print' is truncated to fit into formatted zeros; consider 'replace=TRUE'"
-msgstr "'zero.print' est tronqué pour rentré dans le formatage de zéros ; considérez 'replace=TRUE'"
+msgstr "'zero.print' est tronqué pour rentrer dans le formatage de zéros ; considérez 'replace=TRUE'"
 
 msgid "'big.mark' and 'decimal.mark' are both '%s', which could be confusing"
 msgstr "'big.mark' et 'decimal.mark' sont tous deux '%s', cela peut porter à confusion"
@@ -713,7 +713,7 @@ msgid "'input.d.mark' has no characters"
 msgstr "‘input.d.mark’ ne contient aucun caractère"
 
 msgid "'subset' must be logical"
-msgstr "'subset' doit être une valeur logique"
+msgstr "'subset' doit être une valeur booléenne"
 
 msgid "value for %s not found"
 msgstr "valeur pour %s introuvable"
@@ -725,13 +725,13 @@ msgid "argument '%s' will be ignored"
 msgstr "l'argument '%s' sera ignoré"
 
 msgid "match distance components must be non-negative"
-msgstr "les composantes 'match distance' ne peuvent être négatives"
+msgstr "les composantes correspondantes de distance ne peuvent être négatives"
 
 msgid "unknown match distance components ignored"
 msgstr "composantes de distance sans correspondance ignorées"
 
 msgid "unknown cost components ignored"
-msgstr "composantes de de coût inconnues et donc ignorées"
+msgstr "composantes de coût inconnues et donc ignorées"
 
 msgid "cost components must be non-negative"
 msgstr "les composantes de coût ne peuvent être négatives"
@@ -749,7 +749,7 @@ msgid "must have replacement values for matches"
 msgstr "des valeurs de remplacement doivent être fournies pour les correspondances"
 
 msgid "value does not provide any replacement values"
-msgstr "la valeur ne propose aucunes valeurs de remplacement"
+msgstr "la valeur ne propose aucune des valeurs de remplacement"
 
 msgid "must have replacements for non-matches"
 msgstr "des remplacements doivent être fournis pour les non-correspondances"
@@ -758,7 +758,7 @@ msgid "must have replacements for matches"
 msgstr "des remplacements doivent être fournis pour les correspondances"
 
 msgid "No factors specified"
-msgstr "Aucunes variables 'factor's spécifiées"
+msgstr "Aucune variable 'factor' spécifiée"
 
 msgid "norm '%s' currently always uses exact = FALSE"
 msgstr "norm '%s' utilise systématiquement 'exact = FALSE' pour l'instant"
@@ -798,7 +798,7 @@ msgstr ""
 "%s"
 
 msgid "packageConflictError"
-msgstr "packageConflictError"
+msgstr "Erreur de conflit de package"
 
 msgid "Attaching package: %s"
 msgstr "Attachement du package : %s"
@@ -825,7 +825,7 @@ msgid ""
 "Package %s version %s cannot be unloaded:\n"
 " %s"
 msgstr ""
-"Le package %s version %s ne peut pas être chargé :\n"
+"Le package %s version %s ne peut pas être déchargé :\n"
 "%s"
 
 msgid ""
