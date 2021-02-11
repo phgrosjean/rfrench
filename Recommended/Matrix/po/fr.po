@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Matrix 1.1-1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-02 17:39+0200\n"
-"PO-Revision-Date: 2021-02-10 18:49+0100\n"
+"POT-Creation-Date: 2021-01-29 17:44+0100\n"
+"PO-Revision-Date: 2021-02-11 11:00+0100\n"
 "Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -456,7 +456,7 @@ msgstr "chm_sparse_to_SEXP(<real>, *) : 'Rkind' incorrect (real kind code)"
 msgid "unknown xtype in cholmod_sparse object"
 msgstr "xtype inconnu dans cholmod_sparse object"
 
-#: chm_common.c:420 chm_common.c:651 chm_common.c:929 chm_common.c:979
+#: chm_common.c:420 chm_common.c:651 chm_common.c:932 chm_common.c:982
 msgid "complex sparse matrix code not yet written"
 msgstr "le code n'est pas encore écrit pour les matrices éparses complexes"
 
@@ -500,65 +500,65 @@ msgstr "Avertissement Cholmod '%s' dans le fichier %s, ligne %d"
 msgid "Unable to initialize cholmod: error code %d"
 msgstr "Impossible d'initialiser cholmod : code d'erreur %d"
 
-#: chm_common.c:873
+#: chm_common.c:876
 msgid "unknown 'Rkind'"
 msgstr "'Rkind' inconnu"
 
-#: chm_common.c:880 chm_common.c:965
+#: chm_common.c:883 chm_common.c:968
 msgid "unknown xtype"
 msgstr "xtype inconnu"
 
-#: chm_common.c:935 chm_common.c:988
+#: chm_common.c:938 chm_common.c:991
 msgid "code for cholmod_dense with holes not yet written"
 msgstr "le code pour cholmod_dense en présence de trous n'est pas encore écrit"
 
-#: chm_common.c:984
+#: chm_common.c:987
 msgid "don't know if a dense pattern matrix makes sense"
 msgstr "je ne sais pas si une matrice pattern dense a un sens"
 
-#: chm_common.c:1049
+#: chm_common.c:1052
 msgid "invalid class of object to as_cholmod_factor"
 msgstr "class d'objet incorrecte pour as_cholmod_factor"
 
-#: chm_common.c:1063
+#: chm_common.c:1066
 msgid "Supernodal LDL' decomposition not available"
 msgstr "La décomposition 'supernodal LDL' n'est pas disponible"
 
-#: chm_common.c:1065
+#: chm_common.c:1068
 msgid "Supernodal/simplicial class inconsistent with type flags"
 msgstr "Classe supernodal/simplicial incohérente avec le drapeau de type"
 
-#: chm_common.c:1083
+#: chm_common.c:1086
 msgid "Number of supernodes must be positive when is_super is TRUE"
 msgstr "Le nombre de supernoeuds doit être positif losque is_super est TRUE"
 
-#: chm_common.c:1086
+#: chm_common.c:1089
 msgid "Lengths of super and pi must be equal"
 msgstr "Les longueurs de super et pi doivent être égales"
 
-#: chm_common.c:1090
+#: chm_common.c:1093
 msgid "Lengths of super and px must be equal"
 msgstr "Les longueurs de super et px doivent être égales"
 
-#: chm_common.c:1103
+#: chm_common.c:1106
 msgid "failure in as_cholmod_factor"
 msgstr "erreur dans as_cholmod_factor"
 
-#: chm_common.c:1149
+#: chm_common.c:1152
 msgid "CHOLMOD factorization was unsuccessful"
 msgstr "La factorisation CHOLMOD a échoué"
 
-#: chm_common.c:1162
+#: chm_common.c:1165
 #, c-format
 msgid "f->xtype of %d not recognized"
 msgstr "f->xtype de %d non reconnu"
 
-#: chm_common.c:1227
+#: chm_common.c:1230
 #, c-format
 msgid "chm_diagN2U(<non-square matrix>): nrow=%d, ncol=%d"
 msgstr "chm_diagN2U(<matrice non carrée>): nrow=%d, ncol=%d"
 
-#: chm_common.c:1270
+#: chm_common.c:1273
 #, c-format
 msgid "chm_diagN2U(x, uploT = %d): uploT should be +- 1"
 msgstr "chm_diagN2U(x, uploT = %d): uploT doit être +- 1"
@@ -939,15 +939,15 @@ msgstr "L'argument b doit être une matrice numérique"
 msgid "chm_factor_name(): did not get string of length 11"
 msgstr "chm_factor_name() : une chaîne de caractère de langueur 11 n'est pas obtenue"
 
-#: dsCMatrix.c:100
+#: dsCMatrix.c:101
 msgid "Cholesky factorization failed; unusually, please report to Matrix-authors"
 msgstr "La factorisation Cholesky a échoué ; inhabituel, veuillez reporter le problème aux auteurs du package Matrix"
 
-#: dsCMatrix.c:106
+#: dsCMatrix.c:107
 msgid "internal_chm_factor: Cholesky factorization failed"
 msgstr "internal_chm_factor : la factorisation Cholesky a échoué"
 
-#: dsCMatrix.c:253
+#: dsCMatrix.c:254
 msgid "Non-symmetric matrix passed to dsCMatrix_to_dgTMatrix"
 msgstr "Matrice non symétrique passé à dsCMatrix_to_dgTMatrix"
 
@@ -977,11 +977,11 @@ msgstr "La routine Lapack dsytrf a renvoyé le code d'erreur %d"
 msgid "x must be a \"double\" (numeric) matrix"
 msgstr "x doit être une matrice (numérique) de réels (doubles)"
 
-#: dsyMatrix.c:188
+#: dsyMatrix.c:187
 msgid "matrix_trf(x, *): matrix is not square"
 msgstr "dmatrix_trf(x, *) : la matrice n'est pas carrée"
 
-#: dsyMatrix.c:195
+#: dsyMatrix.c:194
 msgid "matrix_trf(*, uplo): uplo must be string"
 msgstr "matrix_trf(*, uplo) : uplo doit être une chaîne de caractères"
 
@@ -1026,11 +1026,11 @@ msgstr "le slot x n’est pas un nombre \"double\""
 msgid "x slot is not of correct length"
 msgstr "le slot x est de longueur incorrecte"
 
-#: init.c:376
+#: init.c:377
 msgid "missing 'Matrix' namespace: should never happen"
 msgstr "espace de nom 'Matrix' manquant : ceci ne devrait jamais se produire"
 
-#: init.c:387
+#: init.c:388
 msgid "Matrix namespace not determined correctly"
 msgstr "L’espace de nom Matrix n'est pas correctement déterminé"
 
@@ -1055,7 +1055,7 @@ msgstr "length(q) doit valoir zéro ou ncol(R)"
 msgid "sparseQR_Qmult(): nrow(y) = %d != %d = nrow(V)"
 msgstr "sparseQR_Qmult(): nrow(y) = %d != %d = nrow(V)"
 
-#: sparseQR.c:136 sparseQR.c:185 sparseQR.c:220
+#: sparseQR.c:136 sparseQR.c:186 sparseQR.c:221
 #, c-format
 msgid "%s(): structurally rank deficient case: possibly WRONG zeros"
 msgstr "%s() : cas structurellement déficient de rang : probablement des zéros ERRONES"

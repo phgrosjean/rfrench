@@ -2,7 +2,11 @@
 #cd <root dir containing src>
 #tar -zcvf fr-po.tar.gz --exclude .git,.DS_Store src/library/*/po/*fr.po
 # send this file to R code team
-# Translations of Recommended packages should be send to their maintainers
+# Translations of Recommended packages should be send to their maintainers, I compress them like this:
+#tar -zcvf Matrix-fr-po.tar.gz --exclude .git,.DS_Store Matrix/po/*fr.po
+# Always use the latest .po files:
+# - cluster: https://svn.r-project.org/R-packages/trunk/cluster/
+# - Matrix: https://r-forge.r-project.org/scm/viewvc.php/pkg/Matrix/po/?root=matrix
 
 # Make pot files, translate in French, and then, install French translation
 # Note: this only considers R code, not C code!

@@ -1,12 +1,12 @@
 # Translation of src/library/Recommended/cluster/po/R-cluster.pot to German
 # Copyright (C) 2013 The R Foundation
 # This file is distributed under the same license as the R package.
-# Philippe.Grosjean@umons.ac.be, 2014--
+# Philippe.Grosjean@umons.ac.be, 2014-2021
 msgid ""
 msgstr ""
 "Project-Id-Version: cluster 1.14.5\n"
-"POT-Creation-Date: 2018-04-06 23:26\n"
-"PO-Revision-Date: 2021-02-10 13:58+0100\n"
+"POT-Creation-Date: 2021-01-30 22:00\n"
+"PO-Revision-Date: 2021-02-11 11:00+0100\n"
 "Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -211,6 +211,9 @@ msgstr "j’ai %d observations, mais pas plus de %d ne sont acceptées"
 msgid "Number of clusters 'k' must be in {1,2, .., n-1}; hence n >= 2"
 msgstr "Le nombre de groupes 'k' doit être dans {1,2, …, n-1} ; où n >= 2"
 
+msgid "Set either 'variant' or 'pamonce', but not both"
+msgstr "Spécifiez soit 'variant’, soit 'pamonce’, mais pas les deux en même temps"
+
 msgid "'medoids' must be NULL or vector of %d distinct indices in {1,2, .., n}, n=%d"
 msgstr "'medoids' doit être NULL ou un vecteur de %d valeurs d'indice distinctes dans {1, 2, …, n}, n=%d"
 
@@ -254,11 +257,11 @@ msgid "NA-values are not allowed in clustering vector"
 msgstr "Les valeurs manquantes NA ne sont pas autorisées dans le vecteur d'agrégation"
 
 msgid ""
-"Error in Fortran routine for the spanning ellipsoid,\n"
+"Error in C routine for the spanning ellipsoid,\n"
 " rank problem??"
 msgstr ""
-"Erreur dans la routine Fortran pour obtenir l'ellipsoïde de dispersion,\n"
-" problème de rang??"
+"Erreur dans la routine C pour obtenir l'ellipsoïde de dispersion,\n"
+" problème de rang ??"
 
 msgid "'col.clus' should have length 4 when color is TRUE"
 msgstr "'col.clus' doit avoir une longueur de 4 lorsque color est TRUE"
@@ -274,6 +277,12 @@ msgstr "objet de partitionnement incorrect"
 
 msgid "full silhouette is only available for results of 'clara(*, keep.data = TRUE)'"
 msgstr "la silhouette complète n'est disponible que pour les résultats de 'clara(*, keep.data = TRUE)'"
+
+msgid "specified both 'full' and 'subset'; will use 'subset'"
+msgstr "'full' et 'subset' tous deux spécifiés ; utilisation de 'subset’"
+
+msgid "'full' must be FALSE, TRUE, or a number in [0, 1]"
+msgstr "'full' doit être FALSE, TRUE, ou un nombre dans l’intervalle [0, 1]"
 
 msgid "'x' must only have integer codes"
 msgstr "'x' doit n'avoir que des codes entiers"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Matrix 1.1-1\n"
-"POT-Creation-Date: 2020-04-02 16:19\n"
-"PO-Revision-Date: 2021-02-10 19:06+0100\n"
+"POT-Creation-Date: 2021-01-29 17:44\n"
+"PO-Revision-Date: 2021-02-11 11:04+0100\n"
 "Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -449,6 +449,12 @@ msgstr "<abIndex>  -->  <seqMat> n'est pas encore implémenté"
 msgid "<seqMat>  -->  <abIndex>  is not yet implemented"
 msgstr "<seqMat>  -->  <abIndex> n'est pas encore implémenté"
 
+msgid "'giveCsparse' has been deprecated; setting 'repr = \"T\"' for you"
+msgstr "'giveCsparse' est obsolète ; J’ai mis 'repr = \"T\"' pour vous"
+
+msgid "'giveCsparse' has been deprecated; will use 'repr' instead"
+msgstr "‘giveCsparse’ est obsolète ; utilisation de 'repr' à la place"
+
 msgid "'diagonals' matrix must have %d columns (= length(k) )"
 msgstr "une matrice 'diagonals' doit avoir %d colonnes (= length(k) )"
 
@@ -467,6 +473,9 @@ msgstr ""
 
 msgid "the %d-th (sub)-diagonal (k = %d) is too short; filling with NA's"
 msgstr "la %d-ième (sous)-diagonale (k = %d) est trop courte ; elle est replie avec des NAs"
+
+msgid "invalid 'repr'; must be \"C\", \"T\", or \"R\""
+msgstr "'repr' incorrect ; Il doit être \"C\", \"T\", ou \"R\""
 
 msgid "resulting x-slot has different type than x's or y's"
 msgstr "le slot x résultant a un type différent que les x ou les y"
@@ -772,11 +781,17 @@ msgstr "les indices doivent être numériques, logiques ou sparseVector pour l'i
 msgid "'times >= 0' is required"
 msgstr "'times >= 0' est requis"
 
+msgid "'giveCsparse' has been deprecated; setting 'repr = \"%s\"' for you"
+msgstr "'giveCsparse' est obsolète ; j’ai mis 'repr = \"%s\"' pour vous"
+
 msgid "(un)packing only applies to dense matrices, class(x)='%s'"
 msgstr "la (dé)compaction ne s'applique qu'à des matrices denses, class(x)='%s'"
 
 msgid "'x' is not symmetric nor triangular"
 msgstr "'x' n'est ni symétrique ni triangulaire"
+
+msgid "'x' is not symmetric -- chol() undefined."
+msgstr "'x' n'est pas symétrique -- chol() non défini."
 
 msgid ""
 "extra argument %s will be disregarded in\n"
