@@ -2134,7 +2134,7 @@ msgstr "trop de caractères pour une connexion textuelle"
 
 #: src/main/connections.c:3035
 msgid "cannot allocate memory for text connection"
-msgstr "impossible d'allouer de la mémoire pour une connexion textuelle"
+msgstr "impossible d'allouer la mémoire pour une connexion textuelle"
 
 #: src/main/connections.c:3085
 msgid "seek is not relevant for text connection"
@@ -2158,7 +2158,7 @@ msgstr "mode indisponible"
 
 #: src/main/connections.c:3417
 msgid "'con' is not an output textConnection"
-msgstr "'con' n'est pas une connexion en sortie"
+msgstr "'con' n'est pas une connexion textuelle en sortie"
 
 #: src/main/connections.c:3571 src/main/connections.c:3620
 #: src/main/connections.c:3631 src/main/connections.c:3715
@@ -2227,7 +2227,7 @@ msgstr "Erreur d'écriture vers la connexion"
 #: src/main/scan.c:950 src/main/scan.c:954 src/main/serialize.c:2373
 #: src/main/source.c:293
 msgid "cannot read from this connection"
-msgstr "impossible de lire depuis la connexion"
+msgstr "impossible de lire depuis cette connexion"
 
 #: src/main/connections.c:3951 src/main/connections.c:3973
 msgid "cannot allocate buffer in readLines"
@@ -2236,7 +2236,7 @@ msgstr "impossible d'allouer un tampon dans readLines"
 #: src/main/connections.c:3991
 #, c-format
 msgid "line %d appears to contain an embedded nul"
-msgstr "la ligne %d contient un caractère nul"
+msgstr "la ligne %d semble contenir un caractère nul"
 
 #: src/main/connections.c:4009
 #, c-format
@@ -2302,7 +2302,7 @@ msgstr "problème lors de l'écriture vers la connexion"
 
 #: src/main/connections.c:4547
 msgid "size changing is not supported for raw vectors"
-msgstr "changement de taille indisponible pour des vecteurs de type raw"
+msgstr "changement de taille indisponible pour les vecteurs de type raw"
 
 #: src/main/connections.c:4691 src/main/connections.c:4695
 #: src/main/connections.c:4742
@@ -2311,11 +2311,11 @@ msgstr "entrée UTF-8 incorrecte dans readChar()"
 
 #: src/main/connections.c:4698 src/main/connections.c:4708
 msgid "truncating string with embedded nuls"
-msgstr "la chaîne de caractère est tronquée car un caractère nul s’y trouve"
+msgstr "la chaîne de caractères est tronquée car un caractère nul s’y trouve"
 
 #: src/main/connections.c:4809
 msgid "can only read in bytes in a non-UTF-8 MBCS locale"
-msgstr "seuls des octets dand un environnement linguistique différent de UTF-8 MBCS peuvent être lus"
+msgstr "seule la lecture par octet est possible dans un environnement linguistique différent de UTF-8 MBCS"
 
 #: src/main/connections.c:4815 src/main/connections.c:4936
 #, c-format
@@ -2328,11 +2328,11 @@ msgstr "'object' est trop court"
 
 #: src/main/connections.c:4944
 msgid "writeChar: more bytes requested than are in the string - will zero-pad"
-msgstr "writeChar : demande de plus de caractères que ceux disponibles dans la chaîne - comblement avec des zéros"
+msgstr "writeChar : demande plus d'octets que ceux disponibles dans la chaîne - comblement avec des zéros"
 
 #: src/main/connections.c:4969
 msgid "writeChar: more characters requested than are in the string - will zero-pad"
-msgstr "writeChar : demande de plus de caractères que ceux disponibles dans la chaîne - comblement avec des 0"
+msgstr "writeChar : demande plus de caractères que ceux disponibles dans la chaîne - comblement avec des 0"
 
 #: src/main/connections.c:5026
 msgid "maximum number of pushback lines exceeded"
@@ -2345,11 +2345,11 @@ msgstr "impossible d'allouer de l'espace pour pushBack"
 
 #: src/main/connections.c:5064
 msgid "can only push back on open readable connections"
-msgstr "repoussage seulement possible sur des connexions ouvertes en lecture"
+msgstr "repoussage seulement possible sur les connexions ouvertes en lecture"
 
 #: src/main/connections.c:5066
 msgid "can only push back on text-mode connections"
-msgstr "repoussage seulement possible sur des connexions en mode texte"
+msgstr "repoussage seulement possible sur les connexions en mode texte"
 
 #: src/main/connections.c:5130 src/main/connections.c:5200
 msgid "sink stack is full"
@@ -2396,15 +2396,15 @@ msgstr "Schéma d’URL non supporté par cette méthode"
 
 #: src/main/connections.c:5666
 msgid "file stream does not have gzip magic number"
-msgstr "le corps du fichier n'a pas le nombre magique de gzip"
+msgstr "le corps du fichier n'a pas de nombre magique gzip"
 
 #: src/main/connections.c:5677
 msgid "file stream does not have valid gzip header"
-msgstr "le corps du fichier n'a pas une entête gzip correcte"
+msgstr "le corps du fichier n'a pas d'entête gzip correcte"
 
 #: src/main/connections.c:5742
 msgid "writing error whilst flushing 'gzcon' connection"
-msgstr "erreur d'écriture lors du vidage de tampon d'une connexion 'gzcon'"
+msgstr "erreur d'écriture lors du vidage du tampon d'une connexion 'gzcon'"
 
 #: src/main/connections.c:5844
 #, c-format
@@ -2433,15 +2433,15 @@ msgstr "ceci est déjà une connexion 'gzcon'"
 
 #: src/main/connections.c:5921
 msgid "can only use read- or write- binary connections"
-msgstr "seulement les connexions binaires en lecture ou écriture sont utilisables"
+msgstr "seules les connexions binaires en lecture ou écriture sont utilisables"
 
 #: src/main/connections.c:5924
 msgid "using a text-mode 'file' connection may not work correctly"
-msgstr "l'utilisation d'un 'fichier' en mode texte peut ne pas fonctionner correctement"
+msgstr "l'utilisation d'une connexion 'fichier' en mode texte peut ne pas fonctionner correctement"
 
 #: src/main/connections.c:5927
 msgid "cannot create a 'gzcon' connection from a writable textConnection; maybe use rawConnection"
-msgstr "impossible de créer une connexion 'gzcon' à partir d'une textConnection ouverte en écriture ; Essayez peut-être une rawConnection"
+msgstr "impossible de créer une connexion 'gzcon' à partir d'une textConnection ouverte en écriture ; essayez peut-être une rawConnection"
 
 #: src/main/connections.c:5930 src/main/connections.c:5934
 #: src/main/connections.c:5942 src/main/connections.c:5957
@@ -2458,7 +2458,7 @@ msgstr "mauvais indicateurs d'écriture"
 
 #: src/main/connections.c:6173
 msgid "a server socket connection cannot be writeable"
-msgstr "un connecteurs logiciels (socket) serveur ne peut qu’être en lecture seule"
+msgstr "un connecteur logiciel (socket) serveur ne peut qu’être en lecture seule"
 
 #: src/main/connections.c:6175
 msgid "not a socket connection"
@@ -2513,7 +2513,7 @@ msgstr "il n'y a pas autant d'appels actifs à l'explorateur"
 
 #: src/main/context.c:602
 msgid "not that many functions on the call stack"
-msgstr "il n'y a pas autant de fonctions dans la pile de trame"
+msgstr "il n'y a pas autant de fonctions dans la pile d'appels"
 
 #: src/main/context.c:606
 msgid "debug flag in compiled function has no effect"
@@ -2603,11 +2603,11 @@ msgstr "impossible de tracer NULL"
 
 #: src/main/debug.c:146
 msgid "'tracemem' is not useful for promise and environment objects"
-msgstr "'tracemem' est inutilisable pour des objets de type 'promise' ou 'environement'"
+msgstr "'tracemem' est inutilisable pour les objets de type 'promise' ou 'environement'"
 
 #: src/main/debug.c:149
 msgid "'tracemem' is not useful for weak reference or external pointer objects"
-msgstr "'tracemem' est inutilisable pour des objets de type référence lâche ou pointeur externe"
+msgstr "'tracemem' est inutilisable pour les objets de type référence lâche ou pointeur externe"
 
 #: src/main/debug.c:180 src/main/debug.c:187
 msgid "R was not compiled with support for memory profiling"
@@ -2768,7 +2768,7 @@ msgstr "état des graphiques incorrect"
 
 #: src/main/dotcode.c:1477
 msgid "NULL value for DLLInfoReference when looking for DLL"
-msgstr "Valeur NULL pour DLLInfoReference lors de la recherche de la DLL"
+msgstr "Valeur NULL pour DLLInfoReference lors de la recherche de DLL"
 
 #: src/main/dotcode.c:1576
 #, c-format
@@ -2798,12 +2798,12 @@ msgstr "utilisation de NA/NaN/Inf pour une valeur complexe dans l'appel d'une fo
 #: src/main/dotcode.c:1756 src/main/dotcode.c:1772 src/main/dotcode.c:1783
 #, c-format
 msgid "invalid mode (%s) to pass to Fortran (arg %d)"
-msgstr "mode incorrect (%s) à passer vers le Fortran (argument %d)"
+msgstr "mode incorrect (%s) à passer au Fortran (argument %d)"
 
 #: src/main/dotcode.c:1777
 #, c-format
 msgid "invalid mode (%s) to pass to C or Fortran (arg %d)"
-msgstr "mode incorrect (%s) à passer vers le C ou le Fortran (argument %d)"
+msgstr "mode incorrect (%s) à passer au C ou au Fortran (argument %d)"
 
 #: src/main/dotcode.c:1788
 msgid "pairlists are passed as SEXP as from R 2.15.0"
@@ -2868,7 +2868,7 @@ msgstr "erreur %d lors de l'extraction d'un fichier zip"
 
 #: src/main/dounzip.c:414
 msgid "unz connections can only be opened for reading"
-msgstr "ouverture des connexions unz seulement possibles en lecture"
+msgstr "ouverture des connexions unz seulement possible en lecture"
 
 #: src/main/dounzip.c:425
 msgid "invalid description of 'unz' connection"
@@ -2903,7 +2903,7 @@ msgstr "argument formel invalide pour 'function'"
 
 #: src/main/dstruct.c:100
 msgid "invalid body argument for 'function'"
-msgstr "argument formel invalide pour 'function'"
+msgstr "argument interne invalide pour 'function'"
 
 #: src/main/edit.c:111
 msgid "invalid argument to edit()"
@@ -2958,7 +2958,7 @@ msgstr ""
 
 #: src/main/engine.c:41
 msgid "Graphics API version mismatch"
-msgstr "Version de l'API graphiques incompatible"
+msgstr "Version de l'API Graphics incompatible"
 
 #: src/main/engine.c:114 src/main/engine.c:119 src/main/engine.c:183
 msgid "unable to allocate memory (in GEregister)"
@@ -2970,7 +2970,7 @@ msgstr "trop de systèmes graphiques enregistrés"
 
 #: src/main/engine.c:207
 msgid "no graphics system to unregister"
-msgstr "aucun système graphiques à enregistrer"
+msgstr "aucun système graphique à déregistrer"
 
 #: src/main/engine.c:444 src/main/engine.c:449 src/main/engine.c:457
 #: src/main/engine.c:464 src/main/engine.c:478 src/modules/X11/devX11.c:1166
@@ -2993,11 +2993,11 @@ msgstr "manque de mémoire lors de la coupure d'une ligne brisée"
 
 #: src/main/engine.c:1113
 msgid "Clipping polygon that does not need clipping"
-msgstr "Un polygone de détourage ne nécessite pas un détourage lui-même"
+msgstr "Un polygone de détourage ne nécessite pas de détourage lui-même"
 
 #: src/main/engine.c:1500
 msgid "path rendering is not implemented for this device"
-msgstr "résolution de chemin d'accès non implémenté pour ce périphérique"
+msgstr "résolution de chemin d'accès non implémentée pour ce périphérique"
 
 #: src/main/engine.c:1520
 msgid "Invalid graphics path"
@@ -3014,11 +3014,11 @@ msgstr "capture en mode point (raster) non disponible pour ce périphérique"
 #: src/main/engine.c:1782
 #, c-format
 msgid "font face %d not supported for font family '%s'"
-msgstr "la police de caractère %d n'est pas disponible pour la famille de fontes '%s'"
+msgstr "la police de caractères %d n'est pas disponible pour la famille de fontes '%s'"
 
 #: src/main/engine.c:2102
 msgid "no graphics device is active"
-msgstr "aucun périphérique graphiques actif"
+msgstr "aucun périphérique graphique actif"
 
 #: src/main/engine.c:2179
 #, c-format
@@ -3056,7 +3056,7 @@ msgstr "liste de retraçage des affichages incomplète"
 
 #: src/main/engine.c:3024
 msgid "invalid display list"
-msgstr "liste de périphériques d'affichages incorrecte"
+msgstr "liste des périphériques d'affichage incorrecte"
 
 #: src/main/engine.c:3136
 #, c-format
@@ -3111,7 +3111,7 @@ msgstr "impossible d'ajouter des liens à un environnement verrouillé"
 
 #: src/main/envir.c:836
 msgid "cannot unbind in the base namespace"
-msgstr "impossible de délier dans l'environnement de base"
+msgstr "impossible de délier dans l'espace de noms de base"
 
 #: src/main/envir.c:838
 msgid "unbind in the base environment is unimplemented"
@@ -3124,7 +3124,7 @@ msgstr "impossible d'éliminer les liens d'un environnement verrouillé"
 #: src/main/envir.c:1226 src/main/envir.c:1259 src/main/envir.c:2018
 #, c-format
 msgid "argument to '%s' is not an environment"
-msgstr "l'argument à '%s' n'est pas un environnment"
+msgstr "l'argument de '%s' n'est pas un environnment"
 
 #: src/main/envir.c:1417
 #, c-format
@@ -3171,7 +3171,7 @@ msgstr "impossible d'ajouter des liens de '%s' à l'environnement de base"
 
 #: src/main/envir.c:1857
 msgid "only the first element is used as variable name"
-msgstr "seulement le premier élément est utilisé comme nom de variable"
+msgstr "seul le premier élément est utilisé comme nom de variable"
 
 #: src/main/envir.c:1889
 msgid "first argument must be a named list"
@@ -3187,19 +3187,19 @@ msgstr "l'argument 'envir' doit être un environnement"
 
 #: src/main/envir.c:1928
 msgid "cannot remove variables from base namespace"
-msgstr "impossible d'effacer des variables de l'espace de noms de base"
+msgstr "impossible d'effacer les variables de l'espace de noms de base"
 
 #: src/main/envir.c:1930
 msgid "cannot remove variables from the base environment"
-msgstr "impossible d'éliminer des variables de l'environnement de base"
+msgstr "impossible d'éliminer les variables de l'environnement de base"
 
 #: src/main/envir.c:1932
 msgid "cannot remove variables from the empty environment"
-msgstr "impossible d'éliminer des variables de l'environnement vide"
+msgstr "impossible d'éliminer les variables de l'environnement vide"
 
 #: src/main/envir.c:1940
 msgid "cannot remove variables from this database"
-msgstr "impossible d'éliminer des variables de cette base de données"
+msgstr "impossible d'éliminer les variables de cette base de données"
 
 #: src/main/envir.c:2021 src/main/envir.c:3352 src/main/envir.c:3373
 #: src/main/envir.c:3394 src/main/envir.c:3431 src/main/envir.c:3452
@@ -3231,7 +3231,7 @@ msgstr "utilisation incorrecte de 'missing'"
 
 #: src/main/envir.c:2388
 msgid "'missing' can only be used for arguments"
-msgstr "'missing' peut seulement être utilisé pour des arguments"
+msgstr "'missing' peut seulement être utilisé pour les arguments"
 
 #: src/main/envir.c:2474
 msgid "'pos' must be an integer"
@@ -3264,7 +3264,7 @@ msgstr "aucun environnement fermant (enclosing)"
 #: src/main/envir.c:3227
 #, c-format
 msgid "no item called \"%s\" on the search list"
-msgstr "ancun élément du nom de \"%s\" dans la liste de recherche"
+msgstr "ancun élément de nom \"%s\" dans la liste de recherche"
 
 #: src/main/envir.c:3253
 msgid "using 'as.environment(NULL)' is defunct"
@@ -3321,7 +3321,7 @@ msgstr "impossible d'éliminer un lien actif"
 
 #: src/main/envir.c:3749
 msgid "bad namespace name"
-msgstr "espace de nom erroné"
+msgstr "espace de noms erroné"
 
 #: src/main/envir.c:3761
 msgid "namespace already registered"
@@ -3333,16 +3333,16 @@ msgstr "espace de noms non enregistré"
 
 #: src/main/envir.c:3834
 msgid "bad variable name"
-msgstr "mauvais noms de variables"
+msgstr "mauvais nom de variable"
 
 #: src/main/envir.c:3876
 msgid "bad namespace"
-msgstr "espace de nom erroné"
+msgstr "espace de noms erroné"
 
 #: src/main/envir.c:3912
 #, c-format
 msgid "'%s' is not an exported object from 'namespace:%s'"
-msgstr "'%s' n’est un object exporté depuis 'namespace:%s'"
+msgstr "'%s' n’est pas un object exporté depuis 'namespace:%s'"
 
 #: src/main/envir.c:3961
 msgid "bad import environment argument"
@@ -3354,7 +3354,7 @@ msgstr "argument d'environnement 'export' erroné"
 
 #: src/main/envir.c:3970
 msgid "length of import and export names must match"
-msgstr "les longueurs de 'import' et 'export' doivent correspondre"
+msgstr "les longueurs des noms de 'import' et 'export' doivent correspondre"
 
 #: src/main/envir.c:3993
 #, c-format
@@ -3369,7 +3369,7 @@ msgstr "encodage inconnu : %d"
 #: src/main/envir.c:4179
 #, c-format
 msgid "embedded nul in string: '%s'"
-msgstr "caractère nul au milieu de la chaîne : '%s'"
+msgstr "caractère nul dans la chaîne : '%s'"
 
 #: src/main/errors.c:208 src/main/errors.c:245
 msgid "interrupts suspended; signal ignored"
