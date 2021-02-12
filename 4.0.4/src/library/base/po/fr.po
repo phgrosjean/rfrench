@@ -309,7 +309,7 @@ msgstr "'CreateProcess' a échoué au lancement de '%s'"
 
 #: src/gnuwin32/run.c:523
 msgid "Child process not responding.  R will terminate it."
-msgstr "Le processus fils ne répond pas, R va s'arrêter."
+msgstr "Le processus fils ne répond pas, R va l'arrêter."
 
 #: src/gnuwin32/run.c:615
 #, c-format
@@ -363,7 +363,7 @@ msgstr "argument '%s' incorrect"
 #: src/gnuwin32/sys-win32.c:317 src/unix/sys-unix.c:800 src/unix/sys-unix.c:835
 #, c-format
 msgid "command '%s' timed out after %ds"
-msgstr "l'exécution de la commande '%s' renvoie un statut %d"
+msgstr "temporisation expirée de la commande '%s' après %ds"
 
 #: src/gnuwin32/sys-win32.c:320 src/unix/sys-unix.c:673
 #, c-format
@@ -418,7 +418,7 @@ msgstr "file.show() : fichier '%s' inexistant\n"
 #: src/gnuwin32/system.c:880
 #, c-format
 msgid "Workspace name '%s' is too long\n"
-msgstr "Le nom de DLL '%s' est trop long\n"
+msgstr "Le nom de l'environnement de travail '%s' est trop long\n"
 
 #: src/gnuwin32/system.c:896 src/unix/system.c:454
 #, c-format
@@ -452,7 +452,7 @@ msgstr "AVIS : --max-mem-size = %4.1fM : trop petite et ignorée\n"
 #: src/gnuwin32/system.c:1103
 #, c-format
 msgid "WARNING: --max-mem-size=%4.0fM: too large and taken as %uM\n"
-msgstr "AVIS : --max-mem-size = %4.0fM : trop petite et considérée comme %uM\n"
+msgstr "AVIS : --max-mem-size = %4.0fM : trop grande et considérée comme %uM\n"
 
 #: src/gnuwin32/system.c:1119
 #, c-format
@@ -467,7 +467,7 @@ msgstr "l'option '%s' nécessite un argument non vide"
 #: src/gnuwin32/system.c:1160 src/unix/system.c:437
 #, c-format
 msgid "WARNING: '-e %s' omitted as input is too long\n"
-msgstr "AVIS : '-e %s' omis comme entrée trop longue\n"
+msgstr "AVIS : '-e %s' omis car l'entrée est trop longue\n"
 
 #: src/gnuwin32/system.c:1164 src/unix/system.c:450
 #, c-format
@@ -476,7 +476,7 @@ msgstr "AVIS : option inconnue '%s'\n"
 
 #: src/gnuwin32/system.c:1176 src/unix/system.c:465
 msgid "cannot use -e with -f or --file"
-msgstr "utilisation de -e avec -f ou --file interdite"
+msgstr "utilisation interdite de -e avec -f ou --file"
 
 #: src/gnuwin32/system.c:1194
 msgid "creation of tmpfile failed -- set TMPDIR suitably?"
@@ -531,7 +531,7 @@ msgstr "AVIS : aucune valeur donnée pour '--max-ppsize'"
 
 #: src/main/CommandLineArgs.c:246
 msgid "WARNING: '--max-ppsize' value is negative: ignored"
-msgstr "AVIS : valeur de '--max-ppsize' strictement négative : ignorée"
+msgstr "AVIS : valeur de '--max-ppsize' négative : ignorée"
 
 #: src/main/CommandLineArgs.c:248
 msgid "WARNING: '--max-ppsize' value is too small: ignored"
@@ -561,7 +561,7 @@ msgstr "impossible de lire les valeurs d'initialisation tant que 'user_unif_nsee
 
 #: src/main/RNG.c:318
 msgid "seed length must be in 0...625; ignored"
-msgstr "la longueur du vecteur de valeurs d'initialisation doit être comprise entre 0 et 625 : ignoré"
+msgstr "la longueur du vecteur des valeurs d'initialisation doit être comprise entre 0 et 625 : ignoré"
 
 #: src/main/RNG.c:326
 #, c-format
@@ -587,7 +587,7 @@ msgstr "'.Random.seed[1]' n'est pas un type Normal correct, et sera donc ignoré
 
 #: src/main/RNG.c:385
 msgid "'.Random.seed[1] = 5' but no user-supplied generator, so ignored"
-msgstr "'.Random.seed[1] = 5' mais aucun générateur de nombres fourni par l'utilisateur, il sera donc ignoré"
+msgstr "'.Random.seed[1] = 5' mais pas de générateur de nombres fourni par l'utilisateur, il sera donc ignoré"
 
 #: src/main/RNG.c:390
 msgid "'.Random.seed[1]' is not a valid RNG kind so ignored"
@@ -640,7 +640,7 @@ msgstr "la limite pour le nombre de fichiers ouverts est trop basse"
 #: src/main/Rdynload.c:210
 #, c-format
 msgid "R_MAX_NUM_DLLS bigger than %d may exhaust open files limit"
-msgstr "R_MAX_NUM_DLLS plus large que %d peut épuiser le nombre de fichiers ouverts possibles"
+msgstr "R_MAX_NUM_DLLS plus large que %d peut limiter le nombre de fichiers ouverts possibles"
 
 #: src/main/Rdynload.c:233
 msgid "could not allocate space for DLL table"
@@ -689,8 +689,8 @@ msgstr "l'objet partagé '%s' n'a pas été chargé"
 #, c-format
 msgid "cannot allocate memory for registered native symbol (%d byte)"
 msgid_plural "cannot allocate memory for registered native symbol (%d bytes)"
-msgstr[0] "impossible d'allouer de la mémoire pour le symbole natif enregistré (%d byte)"
-msgstr[1] "impossible d'allouer de la mémoire pour les symboles natifs enregistrés (%d bytes)"
+msgstr[0] "impossible d'allouer la mémoire pour le symbole natif enregistré (%d byte)"
+msgstr[1] "impossible d'allouer la mémoire pour les symboles natifs enregistrés (%d bytes)"
 
 #: src/main/Rdynload.c:1154 src/main/Rdynload.c:1377
 msgid "must pass package name or DllInfo reference"
@@ -736,7 +736,7 @@ msgstr "le fichier '%s' ne peut être ouvert en lecture"
 #: src/main/Rstrptime.h:526 src/main/Rstrptime.h:1008
 #, c-format
 msgid "use of %s for input is not supported"
-msgstr "l'utilisation de %s pour entrée n'est pas permise"
+msgstr "l'utilisation de %s en entrée n'est pas permise"
 
 #: src/main/Rstrptime.h:1293
 msgid "input string is too long"
@@ -748,7 +748,7 @@ msgstr "chaîne de caractères multioctets incorrecte en entrée"
 
 #: src/main/Rstrptime.h:1298
 msgid "format string is too long"
-msgstr "chaîne de caractères de formattage trop longue"
+msgstr "chaîne de caractères du format trop longue"
 
 #: src/main/Rstrptime.h:1300
 msgid "invalid multibyte format string"
@@ -773,7 +773,7 @@ msgstr "expression régulière incorrecte dans cet environnement linguistique"
 #: src/main/agrep.c:207 src/main/agrep.c:624
 #, c-format
 msgid "regcomp error:  '%s'"
-msgstr "erreur rgcomp : '%s'"
+msgstr "erreur regcomp : '%s'"
 
 #: src/main/agrep.c:239 src/main/agrep.c:875 src/main/grep.c:555
 #: src/main/grep.c:645 src/main/grep.c:751 src/main/grep.c:931
@@ -781,7 +781,7 @@ msgstr "erreur rgcomp : '%s'"
 #: src/main/grep.c:3117 src/main/grep.c:3304
 #, c-format
 msgid "input string %d is invalid in this locale"
-msgstr "la chaîne de caractères entrée %d est incorrecte dans cet environnement linguistique"
+msgstr "la chaîne de caractères en entrée %d est incorrecte dans cet environnement linguistique"
 
 #: src/main/agrep.c:526 src/main/agrep.c:766 src/main/grep.c:466
 #: src/main/grep.c:1137 src/main/grep.c:1139 src/main/grep.c:1457
@@ -794,12 +794,12 @@ msgstr "l'argument '%s' sera ignoré"
 #: src/main/agrep.c:615
 #, c-format
 msgid "input string x[%d] is invalid in this locale"
-msgstr "la chaîne de caractères entrée x[%d] est incorrecte dans cet environnement linguistique"
+msgstr "la chaîne de caractères en entrée x[%d] est incorrecte dans cet environnement linguistique"
 
 #: src/main/agrep.c:662
 #, c-format
 msgid "input string y[%d] is invalid in this locale"
-msgstr "la chaîne de caractères entrée y[%d] est incorrecte dans cet environnement linguistique"
+msgstr "la chaîne de caractères en entrée y[%d] est incorrecte dans cet environnement linguistique"
 
 #: src/main/agrep.c:835 src/main/grep.c:3273
 #, c-format
@@ -852,8 +852,8 @@ msgid ""
 "values must be length %d,\n"
 " but FUN(X[[%d]]) result is length %d"
 msgstr ""
-"les valeurs doivent être d'une longueur %d,\n"
-" mais FUN(X[[%d]]) a une longueur %d"
+"les valeurs doivent être de longueur %d,\n"
+" mais FUN(X[[%d]]) rend une longueur %d"
 
 #: src/main/apply.c:176
 #, c-format
@@ -862,7 +862,7 @@ msgid ""
 " but FUN(X[[%d]]) result is type '%s'"
 msgstr ""
 "les valeurs doivent être de type '%s',\n"
-" mais FUN(X[[%d]]) est de type '%s'"
+" mais FUN(X[[%d]]) rend le type '%s'"
 
 #: src/main/apply.c:253
 #, c-format
@@ -884,15 +884,15 @@ msgstr "argument non numérique pour une fonction mathématique"
 
 #: src/main/arithmetic.c:212
 msgid "probable complete loss of accuracy in modulus"
-msgstr "perte totale de précision probable dans modulus"
+msgstr "perte totale de précision probable dans les modulos"
 
 #: src/main/arithmetic.c:330
 msgid "NAs produced by integer overflow"
-msgstr "NA produit par débordement d'entier par le haut"
+msgstr "NA produits par débordement d'entier par le haut"
 
 #: src/main/arithmetic.c:529
 msgid "operator needs one or two arguments"
-msgstr "l'opérateur a besoin d'un ou de deux arguments"
+msgstr "l'opérateur a besoin d'un ou deux arguments"
 
 #: src/main/arithmetic.c:545
 msgid "non-numeric argument to binary operator"
@@ -924,12 +924,12 @@ msgstr "la taille d'un objet plus long n'est pas multiple de la taille d'un obje
 
 #: src/main/arithmetic.c:748
 msgid "invalid argument to unary operator"
-msgstr "argument incorrect pour un opérateur unitaire"
+msgstr "argument incorrect pour l'opérateur unaire"
 
 #: src/main/arithmetic.c:780 src/main/arithmetic.c:806
 #: src/main/arithmetic.c:827
 msgid "invalid unary operator"
-msgstr "opérateur unitaire incorrect"
+msgstr "opérateur unaire incorrect"
 
 #: src/main/arithmetic.c:1324
 msgid "unimplemented real function of 1 argument"
