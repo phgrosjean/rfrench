@@ -3420,7 +3420,7 @@ msgstr "Dans %s :"
 #, c-format
 msgid "There was %d warning (use warnings() to see it)"
 msgid_plural "There were %d warnings (use warnings() to see them)"
-msgstr[0] "Il y a eu %d avis (utilisez warnings() pour les visionner)"
+msgstr[0] "Il y a eu %d avis (utilisez warnings() pour le visionner)"
 msgstr[1] "Il y a eu %d avis (utilisez warnings() pour les visionner)"
 
 #: src/main/errors.c:663
@@ -3492,7 +3492,7 @@ msgstr "nombre d'arguments incorrect"
 
 #: src/main/errors.c:1374 src/main/logic.c:189
 msgid "invalid argument type"
-msgstr "type de l'argument incorrect"
+msgstr "type d'argument incorrect"
 
 #: src/main/errors.c:1376
 msgid "time-series/vector length mismatch"
@@ -3508,7 +3508,7 @@ msgstr "erreur inconnue (veuillez signaler ceci aux développeurs !)"
 
 #: src/main/errors.c:1389
 msgid "inaccurate integer conversion in coercion"
-msgstr "conversion automatique d'entier approximative"
+msgstr "conversion automatique d'entiers approximative"
 
 #: src/main/errors.c:1392
 msgid "unknown warning (report this!)"
@@ -3516,7 +3516,7 @@ msgstr "avis inconnu (veuillez signaler ceci aux développeurs !)"
 
 #: src/main/errors.c:1467
 msgid "No function to return from, jumping to top level"
-msgstr "Aucun function d'où sortir, branchement vers le niveau le plus haut"
+msgstr "Aucune function de où revenir, branchement vers le niveau le plus haut"
 
 #: src/main/errors.c:1483
 msgid "top level inconsistency?"
@@ -3524,7 +3524,7 @@ msgstr "niveau le plus haut incohérent ?"
 
 #: src/main/errors.c:1739
 msgid "bad handler data"
-msgstr "mauvais manipulateur de données"
+msgstr "mauvaise donnée de manipulateur"
 
 #: src/main/errors.c:1900
 msgid "error message not a string"
@@ -3557,12 +3557,12 @@ msgstr "le message d'erreur doit être une chaîne de caractères"
 #: src/main/eval.c:393
 #, c-format
 msgid "source files skipped by Rprof; please increase '%s'"
-msgstr "fichiers source évités par Rprof ; veuillez augmenter '%s'"
+msgstr "fichiers source ignorés par Rprof ; veuillez augmenter '%s'"
 
 #: src/main/eval.c:414
 #, c-format
 msgid "Rprof: cannot open profile file '%s'"
-msgstr "Rprof : impossible d'ouvrir le fichier '%s'"
+msgstr "Rprof : impossible d'ouvrir le fichier de profil '%s'"
 
 #: src/main/eval.c:515
 msgid "R profiling is not available on this system"
@@ -3570,7 +3570,7 @@ msgstr "'le profilage de R n'est pas disponible sur ce système"
 
 #: src/main/eval.c:539
 msgid "promise already under evaluation: recursive default argument reference or earlier problems?"
-msgstr "la promesse est déjà en cours d'évaluation : référence récursive d'argument par défaut ou problème antérieur ?"
+msgstr "la promesse est déjà en cours d'évaluation : référence récursive d'argument par défaut ou problèmes antérieurs ?"
 
 #: src/main/eval.c:544
 msgid "restarting interrupted promise evaluation"
@@ -3642,7 +3642,7 @@ msgstr "les renvois multi-arguments sont inderdits"
 
 #: src/main/eval.c:2586
 msgid "invalid (NULL) left side of assignment"
-msgstr "partie gauche de l'assignation (NULL) incorrect"
+msgstr "partie gauche de l'assignation (NULL) incorrecte"
 
 #: src/main/eval.c:2627
 msgid "target of assignment expands to non-language object"
@@ -3663,7 +3663,7 @@ msgstr "impossible d'effectuer des assignations complexes dans l'environnement d
 
 #: src/main/eval.c:2883 src/main/eval.c:2910
 msgid "invalid function in complex assignment"
-msgstr "fonction incorrecte dans un assignation complexe"
+msgstr "fonction incorrecte dans une assignation complexe"
 
 #: src/main/eval.c:2981
 msgid "invalid (do_set) left-hand side to assignment"
@@ -3685,7 +3685,7 @@ msgstr "argument '%s' incorrect de type '%s'"
 
 #: src/main/eval.c:3324
 msgid "numeric 'envir' arg not of length one"
-msgstr "argument numérique 'envir' n'ayant une longueur unitaire"
+msgstr "la longueur de l'argument numérique 'envir' n'est pas unitaire"
 
 #: src/main/eval.c:3349 src/main/eval.c:3373
 msgid "restarts not supported in 'eval'"
@@ -3719,7 +3719,7 @@ msgstr "pile de noeuds débordée vers le haut"
 
 #: src/main/eval.c:4971
 msgid "bad opcode"
-msgstr "mauvais code d'opération (opcode)"
+msgstr "mauvais code opération (opcode)"
 
 #: src/main/eval.c:6073
 #, c-format
@@ -3728,19 +3728,19 @@ msgstr "type %s incorrect dans 'x %s y'"
 
 #: src/main/eval.c:6509
 msgid "bytecode version mismatch; using eval"
-msgstr "incohérence de version de pseudo-code ; utilisation de eval"
+msgstr "incohérence de version du bytecode ; utilisation de eval"
 
 #: src/main/eval.c:6515
 msgid "bytecode version is too old"
-msgstr "la version du pseudo-code est trop longue"
+msgstr "la version du bytecode est trop ancienne"
 
 #: src/main/eval.c:6516
 msgid "bytecode version is too new"
-msgstr "la version du pseudo-code est trop récente"
+msgstr "la version du bytecode est trop récente"
 
 #: src/main/eval.c:6561
 msgid "byte code version mismatch"
-msgstr "incohérence de versions du pseudo-code"
+msgstr "incohérence des versions de bytecode"
 
 #: src/main/eval.c:6814
 msgid "invalid sequence argument in for loop"
@@ -3785,7 +3785,7 @@ msgstr "symbole non valide"
 
 #: src/main/eval.c:8116
 msgid "argument is not a byte code object"
-msgstr "l'argument n'est pas un objet pseudo-code"
+msgstr "l'argument n'est pas un objet bytecode"
 
 #: src/main/eval.c:8187 src/main/eval.c:8206 src/main/eval.c:8240
 msgid "constant buffer must be a generic vector"
@@ -3797,11 +3797,11 @@ msgstr "nombre de constantes erroné"
 
 #: src/main/eval.c:8280
 msgid "profile timer in use"
-msgstr "temporisation de profilage en utilisation"
+msgstr "temporisation de profilage activée"
 
 #: src/main/eval.c:8282
 msgid "already byte code profiling"
-msgstr "déjà en train de profiler du pseudo-code"
+msgstr "déjà en train de profiler le bytecode"
 
 #: src/main/eval.c:8300
 msgid "setting profile timer failed"
@@ -3809,16 +3809,16 @@ msgstr "le démarrage d'une temporisation de profilage a échoué"
 
 #: src/main/eval.c:8318
 msgid "not byte code profiling"
-msgstr "profilage d'autre chose que du pseudo-code"
+msgstr "profilage d'autre chose que du bytecode"
 
 #: src/main/eval.c:8334 src/main/eval.c:8338 src/main/eval.c:8342
 msgid "byte code profiling is not supported in this build"
-msgstr "le profilage de pseudo-code ne fonctionne pas dans cette compilation"
+msgstr "le profilage du bytecode ne fonctionne pas dans cette compilation"
 
 #: src/main/gevents.c:45
 #, c-format
 msgid "'%s' events not supported in this device"
-msgstr "l'événement '%s' n'est pas supporté sur ce périphérique"
+msgstr "'%s' événements non supportés sur ce périphérique"
 
 #: src/main/gevents.c:69
 msgid "internal error"
@@ -3826,7 +3826,7 @@ msgstr "erreur interne"
 
 #: src/main/gevents.c:76
 msgid "this graphics device does not support event handling"
-msgstr "le périphérique graphique ne supporte pas les événements graphiques"
+msgstr "ce périphérique graphique ne supporte pas les événements graphiques"
 
 #: src/main/gevents.c:142
 msgid "invalid prompt"
@@ -3838,7 +3838,7 @@ msgstr "l'utilisation récursive de 'getGraphicsEvent' n'est pas permise"
 
 #: src/main/gevents.c:164
 msgid "no graphics event handlers set"
-msgstr "aucun manipulateur graphiques (handler) défini"
+msgstr "aucun manipulateur graphique (handler) défini"
 
 #: src/main/gram.y:298 src/main/gram.y:314 src/main/gram.y:2566
 #: src/main/gram.y:2581
@@ -3851,7 +3851,7 @@ msgstr "EOF lors de la lecture de caractères MBCS à la ligne %d"
 #: src/main/gram.y:2578
 #, c-format
 msgid "invalid multibyte character in parser at line %d"
-msgstr "caractères multioctets incorrects dans l'analyse de code (parser) à la ligne %d"
+msgstr "caractère multioctets incorrect dans l'analyse de code (parser) à la ligne %d"
 
 #: src/main/gram.y:549
 #, c-format
@@ -3877,7 +3877,7 @@ msgstr "échec d'allocation de l’état de la source de référence"
 
 #: src/main/gram.y:1957
 msgid "contextstack overflow"
-msgstr "pile de noeuds débordée vers le haut"
+msgstr "pile des contextes débordée vers le haut"
 
 #: src/main/gram.y:2212 src/main/gram.y:2218
 #, c-format
@@ -3892,7 +3892,7 @@ msgstr "fin d'entrée inattendue"
 #: src/main/gram.y:2221
 #, c-format
 msgid "unexpected string constant"
-msgstr "constante de type chaîne de caractères inattendue"
+msgstr "constante inattendue de type chaîne de caractères"
 
 #: src/main/gram.y:2224
 #, c-format
@@ -3927,7 +3927,7 @@ msgstr "argument formel répété '%s' à la ligne %d"
 #: src/main/gram.y:2477
 #, c-format
 msgid "integer literal %s contains decimal; using numeric value"
-msgstr "le littéral entier %s contient des décimales ; utilisation de la valeur numérique"
+msgstr "le littéral d'entier %s contient des décimales ; utilisation de la valeur numérique"
 
 #: src/main/gram.y:2480
 #, c-format
@@ -3937,7 +3937,7 @@ msgstr "la valeur non entière %s est qualifiée avec L ; utilisation de la vale
 #: src/main/gram.y:2492
 #, c-format
 msgid "integer literal %s contains unnecessary decimal point"
-msgstr "le littéral entier %s contient un séparateur décimal inutile"
+msgstr "le littéral d'entier %s contient un séparateur décimal inutile"
 
 #: src/main/gram.y:2668 src/main/gram.y:2691 src/main/gram.y:2728
 #: src/main/gram.y:2765
@@ -3993,11 +3993,11 @@ msgstr "séquence \\U{xxxxxxxx} valant %6x incorrecte (ligne %d)"
 #: src/main/gram.y:2820
 #, c-format
 msgid "'\\%c' is an unrecognized escape in character string starting \"%s\""
-msgstr "'\\%c' est un code escape non reconnu dans une chaîne de caractères débutant \"%s\""
+msgstr "'\\%c' est un code d'échappement non reconnu dans une chaîne de caractères débutant \"%s\""
 
 #: src/main/gram.y:2886 src/main/gram.y:3012
 msgid "mixing Unicode and octal/hex escapes in a string is not allowed"
-msgstr "le mélange de texte Unicode et des caractères à échappement octaux ou décimaux n'est pas autorisée dans une chaîne de caractères"
+msgstr "le mélange de texte Unicode et de caractères d'échappement octaux ou décimaux n'est pas autorisée dans une chaîne de caractères"
 
 #: src/main/gram.y:2890 src/main/gram.y:3016
 #, c-format
@@ -4005,7 +4005,7 @@ msgid ""
 "string at line %d containing Unicode escapes not in this locale\n"
 "is too long (max 10000 chars)"
 msgstr ""
-"la chaîne de caractères à la ligne %d contient des séquences d'échappement Unicode absents de cet environnement linguistique\n"
+"la chaîne de caractères à la ligne %d contenant des séquences d'échappement Unicode absentes de cet environnement linguistique\n"
 "est trop longue (1000 caractères maximum)"
 
 #: src/main/gram.y:2926
@@ -4017,7 +4017,7 @@ msgstr "chaîne de caractères littérale (raw) incorrecte à la ligne %d"
 #: src/main/gram.y:3656
 #, c-format
 msgid "contextstack overflow at line %d"
-msgstr "pile d'entiers débordée vers le haut à la ligne %d"
+msgstr "pile des contextes débordée vers le haut à la ligne %d"
 
 #: src/main/gram.y:3746
 #, c-format
@@ -4085,7 +4085,7 @@ msgid ""
 "PCRE JIT compilation error\n"
 "\t'%s'"
 msgstr ""
-"Erreur de compilation JIT du motif PCRE\n"
+"Erreur de compilation JIT de PCRE\n"
 "\t'%s'"
 
 #: src/main/grep.c:420
@@ -4101,7 +4101,7 @@ msgstr ""
 #: src/main/grep.c:1266 src/main/grep.c:2087 src/main/grep.c:3029
 #, c-format
 msgid "input string %d is invalid UTF-8"
-msgstr "la chaîne de caractères entrée %d est incorrecte comme encodage UTF-8"
+msgstr "la chaîne de caractères en entrée %d est incorrecte comme encodage UTF-8"
 
 #: src/main/grep.c:614 src/main/grep.c:707
 #, c-format
@@ -4237,7 +4237,7 @@ msgstr "Exécution arrêtée\n"
 
 #: src/main/main.c:511
 msgid "Error: segfault from C stack overflow\n"
-msgstr "Erreur : pile C débordée vers le haut\n"
+msgstr "Erreur : segfault dû à pile C débordée vers le haut\n"
 
 #: src/main/main.c:942
 msgid "unable to open the base package\n"
@@ -4262,7 +4262,7 @@ msgstr "impossible de sortir de l'explorateur"
 
 #: src/main/main.c:1367
 msgid "one of \"yes\", \"no\", \"ask\" or \"default\" expected."
-msgstr "réponse attendue parmi \"yes\", \"no\", \"ask\" ou \"default”."
+msgstr "une valeur attendue parmi \"yes\", \"no\", \"ask\" ou \"default”."
 
 #: src/main/main.c:1372
 msgid "save=\"ask\" in non-interactive use: command-line default will be used"
@@ -4282,7 +4282,7 @@ msgstr "'runLast' incorrect, FALSE est utilisé"
 
 #: src/main/main.c:1419
 msgid "cannot allocate space for toplevel callback element"
-msgstr "impossible d'assigner de l'espace pour l'élément de rappel (callback) de niveau le plus haut"
+msgstr "impossible d'assigner de l'espace pour l'élément de rappel (callback) du niveau le plus haut"
 
 #: src/main/main.c:1497
 msgid "negative index passed to R_removeTaskCallbackByIndex"
@@ -4299,7 +4299,7 @@ msgstr "la tâche de niveau le plus haut n'a pas renvoyé une valeur logique"
 
 #: src/main/mapply.c:58
 msgid "zero-length inputs cannot be mixed with those of non-zero length"
-msgstr "des entrées de longueur nulle ne peuvent être mélangés avec celles de longueur non nulle"
+msgstr "les entrées de longueur nulle ne peuvent être mélangés avec celles de longueur non nulle"
 
 #: src/main/mapply.c:76
 msgid "argument 'MoreArgs' of 'mapply' is not a list"
@@ -4327,7 +4327,7 @@ msgstr "l'argument %d correspond à plusieurs arguments formels"
 #: src/main/match.c:278
 #, c-format
 msgid "partial argument match of '%s' to '%s'"
-msgstr "correspondance partielle d'argument de '%s' par rapport à '%s'"
+msgstr "correspondance partielle d'arguments de '%s' par rapport à '%s'"
 
 #: src/main/match.c:375
 #, c-format
@@ -4362,11 +4362,11 @@ msgstr "le troisième argument doit être 'TRUE' ou 'FALSE'"
 
 #: src/main/memory.c:2110
 msgid "vector memory exhausted (limit reached?)"
-msgstr "vecteurs de mémoire épuisés (limite atteinte ?)"
+msgstr "mémoire des vecteurs épuisée (limite atteinte ?)"
 
 #: src/main/memory.c:2116
 msgid "cons memory exhausted (limit reached?)"
-msgstr "mémoires 'cons' épuisées (limite atteinte ?)"
+msgstr "mémoire 'cons' épuisée (limite atteinte ?)"
 
 #: src/main/memory.c:2121
 msgid "memory exhausted (limit reached?)"
