@@ -6016,7 +6016,7 @@ msgstr "trop peu d'arguments"
 
 #: src/main/sprintf.c:223
 msgid "at most one asterisk '*' is supported in each conversion specification"
-msgstr "un maximum d'une astérisque '*' est supportée dans chaque spécification de conversion"
+msgstr "un maximum d'une astérisque '*' est supporté dans chaque spécification de conversion"
 
 #: src/main/sprintf.c:234
 msgid "argument for '*' conversion specification must be a number"
@@ -6055,7 +6055,7 @@ msgstr "utilisez le format %s pour les objets caractères"
 #: src/main/sprintf.c:428
 #, c-format
 msgid "likely truncation of character string to %d characters"
-msgstr "troncature probable d'une chaîne à %d caractères"
+msgstr "troncature probable de chaîne à %d caractères"
 
 #: src/main/sprintf.c:437
 msgid "unsupported type"
@@ -6095,7 +6095,7 @@ msgstr "affectation en dehors des limites vecteur / liste (extension de %d vers 
 
 #: src/main/subassign.c:267
 msgid "bad names attribute"
-msgstr "attribut de nom erroné"
+msgstr "attribut de noms erroné"
 
 #: src/main/subassign.c:477
 #, c-format
@@ -6135,11 +6135,11 @@ msgstr "types (de %s à %s) incompatibles dans l'affectation d'un sous-ensemble 
 
 #: src/main/subassign.c:1386 src/main/subassign.c:1408
 msgid "invalid subscript in list assign"
-msgstr "nombre incorrect d'indices pour l'affectation d'une liste"
+msgstr "indice incorrect dans l'affectation de liste"
 
 #: src/main/subassign.c:1401
 msgid "invalid number of subscripts to list assign"
-msgstr "nombre incorrect d'indices pour l'affectation d'une liste"
+msgstr "nombre incorrect d'indices pour l'affectation de liste"
 
 #: src/main/subassign.c:1503
 msgid "SubAssignArgs: invalid number of arguments"
@@ -6147,11 +6147,11 @@ msgstr "SubAssignArgs : nombre d'arguments incorrect"
 
 #: src/main/subassign.c:1665
 msgid "result is zero-length and so cannot be a language object"
-msgstr "le résultat a une longueur nulle et donc, ne peut être un objet de language"
+msgstr "le résultat a une longueur nulle et donc, ne peut être un objet de langage"
 
 #: src/main/subassign.c:1771
 msgid "[[<- defined for objects of type \"S4\" only for subclasses of environment"
-msgstr "[[<- défini pour des objets de type \"S4\" pour des sous-classes de l'environnement seulement"
+msgstr "[[<- défini pour des objets de type \"S4\" pour les sous-classes de l'environnement seulement"
 
 #: src/main/subassign.c:1785
 msgid "improper dimensions"
@@ -6180,7 +6180,7 @@ msgstr "[[ ]] nombre d'indices incorrect"
 #: src/main/subassign.c:1997
 #, c-format
 msgid "incompatible types (from %s to %s) in [[ assignment"
-msgstr "types (de %s a %s) incompatibles dans l'affectation [["
+msgstr "types (de %s à %s) incompatibles dans l'affectation [["
 
 #: src/main/subassign.c:2043
 #, c-format
@@ -6243,7 +6243,7 @@ msgstr "nombre de colonnes incorrect dans un indice de matrice"
 
 #: src/main/subscript.c:400 src/main/subscript.c:419 src/main/subscript.c:444
 msgid "negative values are not allowed in a matrix subscript"
-msgstr "valeurs négatives interdites dans un indice de matrice"
+msgstr "valeurs négatives interdites pour un indice de matrice"
 
 #: src/main/subscript.c:526
 msgid "(subscript) logical subscript too long"
@@ -6255,7 +6255,7 @@ msgstr "les indices négatifs ne peuvent être mélangés qu'à des 0"
 
 #: src/main/subscript.c:737
 msgid "subscript too large for 32-bit R"
-msgstr "indices subscript trop larges pour un R 32-bits"
+msgstr "indices trop grands pour un R 32-bits"
 
 #: src/main/subscript.c:949
 msgid "no 'dimnames' attribute for array"
@@ -6275,11 +6275,11 @@ msgstr "indiçage matriciel non géré pour ce type"
 
 #: src/main/subset.c:500
 msgid "array subscripting not handled for this type"
-msgstr "indiçage matriciel non géré pour ce type"
+msgstr "indiçage de tableau non géré pour ce type"
 
 #: src/main/subset.c:854
 msgid "incorrect number of dimensions"
-msgstr "nombre de dimensions incorrect"
+msgstr "nombre incorrect de dimensions"
 
 #: src/main/subset.c:952
 msgid "no index specified"
@@ -6291,12 +6291,12 @@ msgstr "cette classe S4 n'est pas indiçable"
 
 #: src/main/subset.c:969
 msgid "wrong arguments for subsetting an environment"
-msgstr "mauvais arguments pour extraire une partie d'un environnement"
+msgstr "mauvais arguments pour extraire une partie d'environnement"
 
 #: src/main/summary.c:33
 #, c-format
 msgid "invalid 'type' (%s) of argument"
-msgstr "'type' (%s) de l'argument incorrect"
+msgstr "'type' incorrect (%s) de l'argument"
 
 #: src/main/summary.c:116
 msgid "integer overflow - use sum(as.numeric(.))"
@@ -6305,7 +6305,7 @@ msgstr "dépassement d'entier - utiliser sum(as.numeric(.))"
 #: src/main/summary.c:662
 #, c-format
 msgid "internal error ('op = %d' in do_summary).\t Call a Guru"
-msgstr "erreur interne ('op = %d' in do_summary).\t Appelez un expert"
+msgstr "erreur interne ('op = %d' dans do_summary).\t Appelez un expert"
 
 #: src/main/summary.c:818
 msgid "Integer overflow - use sum(as.numeric(.))"
@@ -6346,7 +6346,7 @@ msgstr "impossible de déterminer la date de modification du fichier '%s'"
 
 #: src/main/sysutils.c:175
 msgid "encoding of a filename cannot be 'bytes'"
-msgstr "l'encodage d'un nom de fichier ne peut être 'bytes'"
+msgstr "l'encodage d'un nom de fichier ne peut pas être 'bytes'"
 
 #: src/main/sysutils.c:178 src/main/sysutils.c:890 src/main/sysutils.c:905
 #: src/main/sysutils.c:1112 src/main/sysutils.c:1178
@@ -6411,7 +6411,7 @@ msgstr "'Sys.unsetenv' indisponible sur ce système"
 #: src/main/sysutils.c:644
 #, c-format
 msgid "unsupported conversion from '%s' to '%s' in codepage %d"
-msgstr "conversion de '%s' vers '%s' dans la page de code %d indisponible"
+msgstr "conversion indisponible de '%s' vers '%s' dans la page de code %d"
 
 #: src/main/sysutils.c:660
 msgid "'x' must be a character vector"
@@ -6429,7 +6429,7 @@ msgstr "'%s' doit être appelé sur un CHARSXP"
 #: src/main/sysutils.c:857 src/main/sysutils.c:1101 src/main/sysutils.c:1167
 #: src/main/sysutils.c:1252
 msgid "translating strings with \"bytes\" encoding is not allowed"
-msgstr "la traduction de chaînes de caractères dans l'encodage \"bytes\" n'est pas permis"
+msgstr "la traduction de chaînes de caractères dans l'encodage \"bytes\" n'est pas permise"
 
 #: src/main/sysutils.c:871
 msgid "internal error: no translation needed"
@@ -6454,7 +6454,7 @@ msgstr "incapable de traduire '%s' en UTF-8"
 #: src/main/sysutils.c:1283
 #, c-format
 msgid "unsupported conversion to '%s' from codepage %d"
-msgstr "conversion vers '%s' depuis la page de code %d indisponible"
+msgstr "conversion indisponible vers '%s' depuis la page de code %d"
 
 #: src/main/sysutils.c:1716
 #, c-format
@@ -6542,7 +6542,7 @@ msgstr "tableau de données non numériques dans rowsum"
 
 #: src/main/unique.c:1672
 msgid "this cannot happen"
-msgstr "cela ne peut se produire"
+msgstr "cela ne peut pas se produire"
 
 #: src/main/unique.c:1743
 msgid "'names' must be a character vector"
@@ -6576,7 +6576,7 @@ msgstr "étiquette incorrecte dans l'extraction du nom"
 #, c-format
 msgid "%d argument passed to '%s' which requires %d"
 msgid_plural "%d arguments passed to '%s' which requires %d"
-msgstr[0] "%d argument passés à '%s' qui en exige %d"
+msgstr[0] "%d argument passé à '%s' qui en exige %d"
 msgstr[1] "%d arguments passés à '%s' qui en exige %d"
 
 #: src/main/util.c:503
@@ -6603,7 +6603,7 @@ msgstr "'all.y' doit être TRUE ou FALSE"
 
 #: src/main/util.c:698
 msgid "number of rows in the result exceeds maximum vector length"
-msgstr "le nombre de lignes dans le résultat dépasse la longueur maximal d’un vecteur"
+msgstr "le nombre de lignes dans le résultat dépasse la longueur maximale d’un vecteur"
 
 #: src/main/util.c:790
 msgid "missing value is invalid"
@@ -6683,7 +6683,7 @@ msgstr "'breaks' n'est pas trié"
 #: src/main/util.c:2597 src/main/util.c:2660
 #, c-format
 msgid "long vector '%s' is not supported"
-msgstr "le vectuer long '%s' n'est pas supporté"
+msgstr "le vecteur long '%s' n'est pas supporté"
 
 #: src/main/util.c:2714
 msgid "'eps.correct' must be 0, 1, or 2"
@@ -6700,7 +6700,7 @@ msgid ""
 "Type 'license()' or 'licence()' for distribution details.\n"
 "\n"
 msgstr ""
-"R est un logiciel libre livré sans AUCUNE GARANTIE.\n"
+"R est un logiciel libre livré ABSOLUMENT sans AUCUNE GARANTIE.\n"
 "Vous pouvez le redistribuer sous certaines conditions.\n"
 "Tapez 'license()' ou 'licence()' pour plus de détails.\n"
 "\n"
@@ -6724,7 +6724,7 @@ msgid ""
 "Type 'q()' to quit R.\n"
 "\n"
 msgstr ""
-"Tapez 'demo()' pour des démonstrations, 'help()' pour l'aide\n"
+"Tapez 'demo()' pour les démonstrations, 'help()' pour l'aide\n"
 "en ligne ou 'help.start()' pour obtenir l'aide au format HTML.\n"
 "Tapez 'q()' pour quitter R.\n"
 "\n"
@@ -6753,7 +6753,7 @@ msgstr "Il doit y avoir au moins trois points de contrôle"
 #: src/modules/X11/dataentry.c:1876 src/modules/X11/devX11.c:1255
 #, c-format
 msgid "X11 protocol error: %s"
-msgstr "Erreur de protocole X11 : %s"
+msgstr "Erreur du protocole X11 : %s"
 
 #: src/modules/X11/devX11.c:467
 msgid "cannot set grayscale: reverting to monochrome"
@@ -6959,7 +6959,7 @@ msgstr "savePlot() ne fonctionne pas dans cette compilation"
 
 #: src/modules/X11/devX11.c:3399
 msgid "unable to contact X11 display"
-msgstr "incapable de rentrer en contact avec l'affichage X11"
+msgstr "impossible de contacter l'affichage X11"
 
 #: src/modules/X11/devX11.c:3448
 #, c-format
@@ -6978,7 +6978,7 @@ msgstr "pour https:// URLs utilisez method = \"wininet\""
 #: src/modules/internet/internet.c:788
 #, c-format
 msgid "scheme not supported in URL '%s'"
-msgstr "schéma non supporté dans '%s'"
+msgstr "schéma non supporté dans l'URL '%s'"
 
 #: src/modules/internet/internet.c:356 src/modules/internet/internet.c:360
 #: src/modules/internet/internet.c:366 src/modules/internet/internet.c:391
@@ -7032,7 +7032,7 @@ msgstr "impossible d'ouvrir l'URL '%s'"
 
 #: src/modules/internet/internet.c:810
 msgid "could not allocate memory for http headers"
-msgstr "impossible d'allouer de la mémoire pour l’entête http"
+msgstr "impossible d'allouer la mémoire pour les entêtes http"
 
 #: src/modules/internet/internet.c:823 src/modules/internet/internet.c:989
 #: src/modules/internet/libcurl.c:217
@@ -7075,7 +7075,7 @@ msgstr "download.file(method = \"libcurl\") ne fonctionne pas sur cette architec
 
 #: src/modules/internet/libcurl.c:540
 msgid "lengths of 'url' and 'destfile' must match"
-msgstr "les longueurs de 'url' and 'destfile' doivent correspondre"
+msgstr "les longueurs de 'url' et 'destfile' doivent correspondre"
 
 #: src/modules/internet/libcurl.c:560 src/modules/internet/libcurl.c:578
 msgid "out of memory"
@@ -7114,7 +7114,7 @@ msgstr "url(method = “libcurl”) ne fonctionne pas sur cette architecture"
 
 #: src/modules/internet/nanoftp.c:385
 msgid "removing FTP proxy info"
-msgstr "suppression des informations de proxy FTP"
+msgstr "suppression des informations du proxy FTP"
 
 #: src/modules/internet/nanoftp.c:387
 #, c-format
@@ -7135,7 +7135,7 @@ msgstr "échec de connexion au serveur"
 
 #: src/modules/internet/nanoftp.c:869
 msgid "failed to get response from server"
-msgstr "aucune réponse du serveur"
+msgstr "aucune réponse reçue du serveur"
 
 #: src/modules/internet/nanoftp.c:1132
 msgid "RxmlNanoFTPGetConnection: failed to create socket"
@@ -7143,7 +7143,7 @@ msgstr "RxmlNanoFTPGetConnection : erreur de création de connecteur logiciel (s
 
 #: src/modules/internet/nanoftp.c:1178
 msgid "failed to create a data connection"
-msgstr "échec de création d'une connexion de données"
+msgstr "échec de la création d'une connexion de données"
 
 #: src/modules/internet/nanoftp.c:1186
 msgid "failed to bind a port"
@@ -7156,7 +7156,7 @@ msgstr "écoute impossible sur le port %d"
 
 #: src/modules/internet/nanohttp.c:443
 msgid "removing HTTP proxy info"
-msgstr "suppression des informations de proxy HTTP"
+msgstr "suppression des informations du proxy HTTP"
 
 #: src/modules/internet/nanohttp.c:445
 #, c-format
@@ -7171,7 +7171,7 @@ msgstr "incapable de résoudre '%s'"
 #: src/modules/internet/nanohttp.c:1161
 #, c-format
 msgid "connected to '%s' on port %d."
-msgstr "connexion à '%s' sur le port %d."
+msgstr "connecté à '%s' sur le port %d."
 
 #: src/modules/internet/nanohttp.c:1166
 #, c-format
@@ -7200,12 +7200,12 @@ msgstr "échec d'allocation d'un connecteur logiciel (socket)"
 #: src/modules/internet/sockconn.c:247 src/modules/internet/sockconn.c:251
 #: src/modules/internet/sockconn.c:258 src/modules/internet/sockconn.c:266
 msgid "allocation of server socket connection failed"
-msgstr "échec d'allocation d'un connecteur logiciel (socket)"
+msgstr "échec d'allocation d'un connecteur logiciel (socket) serveur"
 
 #: src/modules/internet/sockconn.c:275
 #, c-format
 msgid "creation of server socket failed: port %d cannot be opened"
-msgstr "échec de création d’un connecteur logiciel (socket) : le port %d ne peut être ouvert"
+msgstr "échec de création d’un connecteur logiciel (socket) serveur : le port %d ne peut être ouvert"
 
 #: src/modules/lapack/Lapack.c:66 src/modules/lapack/Lapack.c:85
 #, c-format
@@ -7267,7 +7267,7 @@ msgstr "code d'erreur [%d] dans le sous-programme Lapack 'dgetrf()'"
 #: src/modules/lapack/Lapack.c:396
 #, c-format
 msgid "exact singularity: U[%d,%d] = 0 in LU-decomposition {Lapack 'dgetrf()'}"
-msgstr "singularité: U[%d,%d] = 0 dans une décomposition LU {Lapack 'dgetrf()'}"
+msgstr "singularité exacte: U[%d,%d] = 0 dans une décomposition LU {Lapack 'dgetrf()'}"
 
 #: src/modules/lapack/Lapack.c:408
 #, c-format
@@ -7361,7 +7361,7 @@ msgstr "'jobu' doit être une chaîne de caractères"
 
 #: src/modules/lapack/Lapack.c:766
 msgid "matrices of 2^31 or more elements are not supported"
-msgstr "les matrices de 2^31 ou plus d'éléments ne sont pas supportées"
+msgstr "les matrices de 2^31 éléments ou plus ne sont pas supportées"
 
 #: src/modules/lapack/Lapack.c:831
 msgid "'x' must be a square complex matrix"
@@ -7388,7 +7388,7 @@ msgstr "le mineur dominant d'ordre %d n'est pas défini positif"
 
 #: src/modules/lapack/Lapack.c:978
 msgid "the matrix is either rank-deficient or indefinite"
-msgstr "la matrice n'est ni déficiente de rang ou indéfinie"
+msgstr "la matrice est soit déficiente de rang ou indéfinie"
 
 #: src/modules/lapack/Lapack.c:1006
 msgid "'size' argument must be a positive integer"
@@ -7521,7 +7521,7 @@ msgstr "la précision complète ne sera peut être pas atteinte dans '%s'\n"
 #: src/nmath/nmath.h:169
 #, c-format
 msgid "underflow occurred in '%s'\n"
-msgstr "dépassement de mémoire vers le bas dans '%s'\n"
+msgstr "dépassement mémoire vers le bas dans '%s'\n"
 
 #: src/nmath/pbeta.c:64
 #, c-format
@@ -7698,10 +7698,10 @@ msgid "WARNING: Only editing the first in the list of files"
 msgstr "AVIS : édition uniquement du premier fichier de la liste"
 
 #~ msgid "(list) object cannot be coerced to type '%s'"
-#~ msgstr "l'objet (list) ne peut être converti automatiquement en un type '%s'"
+#~ msgstr "l'objet (list) ne peut être converti automatiquement en type '%s'"
 
 #~ msgid "(symbol) object cannot be coerced to type '%s'"
-#~ msgstr "l'objet (symbol) ne peut être converti automatiquement en un type '%s'"
+#~ msgstr "l'objet (symbol) ne peut être converti automatiquement en type '%s'"
 
 #~ msgid "'con' is not a rawConnection"
 #~ msgstr "'con' n'est pas une connexion 'rawConnection'"
@@ -7719,7 +7719,7 @@ msgstr "AVIS : édition uniquement du premier fichier de la liste"
 #~ msgstr "pile d'entiers débordée vers le haut"
 
 #~ msgid "unable to allocate buffer for long string at line %d"
-#~ msgstr "impossible d'allouer de la mémoire pour une longue chaîne de caractères à la ligne %d"
+#~ msgstr "impossible d'allouer la mémoire pour une longue chaîne de caractères à la ligne %d"
 
 #~ msgid "invalid split pattern '%s'"
 #~ msgstr "motif de découpage '%s' incorrect"
@@ -7752,10 +7752,10 @@ msgstr "AVIS : édition uniquement du premier fichier de la liste"
 #~ msgstr "le traitement de l'interruption ne doit rien retourner"
 
 #~ msgid "non-conformable time-series"
-#~ msgstr "séries temporelles de tailles inadéquates"
+#~ msgstr "séries temporelles de taille inadéquate"
 
 #~ msgid "class '%s' has no 'names' slot"
-#~ msgstr "La classe '%s' n'a pas d  slot 'names'"
+#~ msgstr "La classe '%s' n'a pas de slot 'names'"
 
 #~ msgid "class '%s' has no 'names' slot; assigning a names attribute will create an invalid object"
 #~ msgstr "La classe '%s' n'a pas de slot 'names'; l'affectation d'un attribut 'names' créera un object incorrect"
@@ -7770,7 +7770,7 @@ msgstr "AVIS : édition uniquement du premier fichier de la liste"
 #~ msgstr "séries temporelles de tailles non conformes"
 
 #~ msgid "use 'is()' instead of 'inherits()' on S4 objects"
-#~ msgstr "utilisez 'is()' à la place de 'inherits()' pour des objets S4"
+#~ msgstr "utilisez 'is()' à la place de 'inherits()' pour les objets S4"
 
 #~ msgid "incorrect type for second argument"
 #~ msgstr "type incorrect pour le second argument"
@@ -8025,13 +8025,13 @@ msgstr "AVIS : édition uniquement du premier fichier de la liste"
 #~ msgstr "mauvais nombre de valeurs renvoyées par call_R"
 
 #~ msgid "can't use R profiling while byte code profiling"
-#~ msgstr "'profilage R inutilisable lorsque du pseudo-code est profilé"
+#~ msgstr "'profilage R inutilisable lorsque du bytecode est profilé"
 
 #~ msgid "bad switch names"
 #~ msgstr "noms des options de branchage non appropriés"
 
 #~ msgid "constBuf must be a generic vector"
-#~ msgstr "constBuf code doit être un vecteur générique"
+#~ msgstr "constBuf doit être un vecteur générique"
 
 #~ msgid "bad constCount value"
 #~ msgstr "mauvaise valeur de constCount"
@@ -8235,4 +8235,4 @@ msgstr "AVIS : édition uniquement du premier fichier de la liste"
 #~ msgstr "les liens symboliques ne sont pas supportés sur cette architecture"
 
 #~ msgid "'R_get_primname' called on a non-primitive"
-#~ msgstr "'R_get_primname' appelé sur une fonction qui n'est pas primitive"
+#~ msgstr "'R_get_primname' appelé sur une fonction qui n'est pas une primitive"
