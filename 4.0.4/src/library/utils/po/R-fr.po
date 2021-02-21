@@ -41,19 +41,19 @@ msgid "reference to unknown chunk %s"
 msgstr "référence à un tronçon inconnu %s"
 
 msgid "no Sweave file with name %s found"
-msgstr "un fichier Sweave de nom %s est introuvable"
+msgstr "le fichier Sweave de nom %s est introuvable"
 
 msgid "more than one syntax specification found, using the first one"
 msgstr "plusieurs spécifications de syntaxe possibles ; la première est utilisée"
 
 msgid "object %s does not have class \"SweaveSyntax\""
-msgstr "l'objet %s n'est pas de la classe \"SweaveSyntax\""
+msgstr "l'objet %s n'est pas de classe \"SweaveSyntax\""
 
 msgid "recursive Sweave input %s in stack"
 msgstr "entrée Sweave récursive %s dans la pile"
 
 msgid "target syntax not of class %s"
-msgstr "la syntaxe de la cible n'est pas de la classe %s"
+msgstr "la syntaxe de la cible n'est pas de classe %s"
 
 msgid "target syntax contains no translation table"
 msgstr "la syntaxe de la cible ne contient pas de table de traduction"
@@ -75,7 +75,7 @@ msgid "Output file:"
 msgstr "Fichier en sortie :"
 
 msgid "Compacting PDF document"
-msgstr "Document PDF compacté"
+msgstr "Document PDF compression en cours"
 
 msgid "path to %s contains spaces,"
 msgstr "le chemin vers %s contient des espaces,"
@@ -96,7 +96,7 @@ msgid "value of 'strip.white' option should be lowercase"
 msgstr "la valeur de l'option 'strip.white' doit être en minuscules"
 
 msgid "elements of 'what' after the first will be ignored"
-msgstr "les éléments suivants de 'what' seront ignorés"
+msgstr "les éléments de 'what' après le premier, seront ignorés"
 
 msgid "Yes"
 msgstr "Oui"
@@ -111,7 +111,7 @@ msgid "Unrecognized response"
 msgstr "Réponse non reconnue"
 
 msgid "No suitable spell-checker program found"
-msgstr "Aucun programme de vérification orthographique utilisable n'est trouvé"
+msgstr "Aucun programme utilisable de vérification orthographique n'a été trouvé"
 
 msgid "Filter '%s' is not available."
 msgstr "Le filtre '%s' n'est pas disponible."
@@ -137,7 +137,7 @@ msgstr ""
 "%s"
 
 msgid "No suitable spell check program found."
-msgstr "Aucun programme de vérification orthographique utilisable n'est trouvé."
+msgstr "Aucun programme utilisable de vérification orthographique n'a été trouvé."
 
 msgid ""
 "Use <code> %s </code> \n"
@@ -180,19 +180,19 @@ msgid "method is only applicable to %s objects"
 msgstr "la méthode n'est applicable qu'à des objets %s"
 
 msgid "all arguments must be of class %s"
-msgstr "tous les arguments doivent être de la classe %s"
+msgstr "tous les arguments doivent être de classe %s"
 
 msgid "all fields have to be named"
 msgstr "tous les champs doivent être nommés"
 
 msgid "%s has to be one of %s"
-msgstr "%s doit être l'un de %s"
+msgstr "%s doit être une valeur de %s"
 
 msgid "subscript out of bounds"
-msgstr "indices hors range"
+msgstr "indices hors limites"
 
 msgid "%s should be one of %s"
-msgstr "%s doit être l'un de %s"
+msgstr "%s doit être une valeur de %s"
 
 msgid "Argument '%s' is deprecated; rather set '%s' instead."
 msgstr "L'argument '%s' est obsolète; utilisez '%s' plutôt."
@@ -211,7 +211,7 @@ msgid "no date field in DESCRIPTION file of package %s"
 msgstr "pas de champ date dans le fichier DESCRIPTION du package %s"
 
 msgid "could not determine year for %s from package DESCRIPTION file"
-msgstr "impossible de déterminer l'année de %s du fichier DESCRIPTION du package"
+msgstr "impossible de déterminer l'année de %s à partir du fichier DESCRIPTION du package"
 
 msgid "To cite package %s in publications use:"
 msgstr "Pour citer le package %s dans une publication, utilisez :"
@@ -223,7 +223,7 @@ msgid "'FUN' must be a function or NULL"
 msgstr "'FUN' doit être une fonction ou NULL"
 
 msgid "cannot handle S4 methods yet"
-msgstr "incapable de traiter les méthodes S4 actuellement"
+msgstr "impossible de traiter les méthodes S4 actuellement"
 
 msgid "'package' must be a character string or NULL"
 msgstr "'package' doit être une chaîne de caratcères ou NULL"
@@ -235,7 +235,7 @@ msgid "datasets have been moved from package 'stats' to package 'datasets'"
 msgstr "les jeux de données ont été transférés du package 'stats' au package 'datasets'"
 
 msgid "data index for package %s is invalid and will be ignored"
-msgstr "l'index de données pour le package %s est incorrect et sera ignoré"
+msgstr "l'index des données pour le package %s est incorrect et sera ignoré"
 
 msgid "file 'filelist' is missing for directory %s"
 msgstr "fichier 'filelist' introuvable pour le répertoire %s"
@@ -253,7 +253,7 @@ msgid "kind '%s' not yet implemented"
 msgstr "le type '%s' n'est pas encore implémenté"
 
 msgid "wrong number of table row entries"
-msgstr "nombre d'entrées lignes du tableau incorrect"
+msgstr "nombre incorrect d'entrées lignes du tableau"
 
 msgid "wrong argument to 'dataentry'"
 msgstr "argument de 'dataentry' incorrect"
@@ -274,7 +274,7 @@ msgid "did not assign() anything"
 msgstr "rien n'a été assign()é"
 
 msgid "Cannot debug primitive functions unless they are implicit generics (requires loading the methods package)"
-msgstr "Impossible de débogguer des fonctions primitives à moins qu’elles ne soient implicitement des fonctions génériques (chargement du package methods nécessaire)"
+msgstr "Impossible de débogguer les fonctions primitives à moins qu’elles ne soient implicitement des fonctions génériques (chargement nécessaire du package methods)"
 
 msgid "error in trying to evaluate the expression for argument %s (%s)"
 msgstr "erreur lors de la tentative d'évaluation d'expression pour l'argument %s (%s)"
@@ -283,7 +283,7 @@ msgid "Browsing in the environment with call:"
 msgstr "Navigation dans l'environnement avec l'appel :"
 
 msgid "'dump' is not an object of class %s"
-msgstr "'dump'  n'est pas un objet de la classe %s"
+msgstr "'dump'  n'est pas un objet de classe %s"
 
 msgid "Message:"
 msgstr "Message :"
@@ -298,10 +298,10 @@ msgid "Enter an environment number, or 0 to exit"
 msgstr "Entrer un numéro d'environnement, ou 0 pour sortir"
 
 msgid "recover called non-interactively; frames dumped, use debugger() to view"
-msgstr "appel de recover non-interactif ; frames enregistrés, utiliser debugger() pour les visualiser"
+msgstr "appel de recover non-interactif ; trames enregistrées, utiliser debugger() pour les visualiser"
 
 msgid "No suitable frames for recover()"
-msgstr "Aucun frame ne convient pour recover()"
+msgstr "Aucune trame ne convient pour recover()"
 
 msgid "No demo found for topic %s"
 msgstr "Démo sur le thème %s introuvable"
@@ -326,7 +326,7 @@ msgid "can only handle vector and factor elements"
 msgstr "seuls les vecteurs et les facteurs peuvent être traîtés"
 
 msgid "invalid factor levels in '%s'"
-msgstr "niveau de facteur incorrect dans '%s'"
+msgstr "niveaux de facteur incorrects dans '%s'"
 
 msgid "added factor levels in '%s'"
 msgstr "niveaux de facteur ajoutés dans '%s'"
@@ -353,7 +353,7 @@ msgid "Line number missing"
 msgstr "Numéro de ligne manquant"
 
 msgid "'fix' requires a name"
-msgstr "'fix' necessite un nom"
+msgstr "'fix' nécessite un nom"
 
 msgid "too many list items (at most up to %d)"
 msgstr "trop d'entrées de listes (%d maximum)"
@@ -433,7 +433,7 @@ msgid "Help on topic %s was found in the following packages:"
 msgstr "L'aide sur le thème %s a été trouvée dans les packages suivants :"
 
 msgid "Choose one"
-msgstr "Choisissez un item"
+msgstr "Choisissez un élément"
 
 msgid "Using the first match ..."
 msgstr "Utilisation de la première correspondance ..."
@@ -503,7 +503,7 @@ msgstr ""
 "%s vous-même"
 
 msgid "If the browser launched by '%s' is already running, it is *not* restarted, and you must switch to its window."
-msgstr "Si '%s' est déjà lancé, il ne sera pas relancé, et vous devez passer à sa fenêtre."
+msgstr "Si le navigateur lancé par '%s' est déjà en cours d'exécution il *ne sera pas* relancé, et vous devez ouvrir sa fenêtre."
 
 msgid "Otherwise, be patient ..."
 msgstr "Sinon, soyez patient..."
@@ -542,7 +542,7 @@ msgid "menu() cannot be used non-interactively"
 msgstr "menu() ne peut être utilisé en mode non interactif"
 
 msgid "Enter an item from the menu, or 0 to exit"
-msgstr "Entrer un des items du menu, ou 0 pour sortir"
+msgstr "Entrer un élément du menu, ou 0 pour sortir"
 
 msgid "%d errors caught in %s.  The error messages and their frequencies are"
 msgstr "%d erreurs repérées dans %s. Les messages d’erreurs et leurs fréquences sont"
