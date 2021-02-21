@@ -31,15 +31,15 @@ msgstr "argument '%s' incorrect"
 
 #: io.c:350 io.c:835
 msgid "invalid quote symbol set"
-msgstr "set de symboles pour mettre du texte entre guillemets incorrect"
+msgstr "ensemble incorrect de symboles pour mettre du texte entre guillemets"
 
 #: io.c:362 io.c:858 io.c:1078
 msgid "cannot open the connection"
-msgstr "impossible d’ouvrir la connection"
+msgstr "impossible d’ouvrir la connexion"
 
 #: io.c:365 io.c:369
 msgid "cannot read from this connection"
-msgstr "impossible de lire depuis la connection"
+msgstr "impossible de lire depuis cette connexion"
 
 #: io.c:416 io.c:434
 #, c-format
@@ -92,7 +92,7 @@ msgstr "'file' n’est pas une connexion"
 
 #: io.c:1074
 msgid "cannot write to this connection"
-msgstr "impossible d’écrire dans cette connexion"
+msgstr "impossible d’écrire sur cette connexion"
 
 #: io.c:1104
 msgid "'dec' must be a single character"
@@ -149,7 +149,7 @@ msgstr "'hostname' doit être une chaîne de caractères de longueur 1"
 #: utils.c:91
 #, c-format
 msgid "nsl() was unable to resolve host '%s'"
-msgstr "nsl() était incapable de résoudre l’hôte '%s'"
+msgstr "nsl() n'a pas pu résoudre l’hôte '%s'"
 
 #: utils.c:98
 msgid "unknown format returned by 'gethostbyname'"
@@ -166,12 +166,12 @@ msgstr "type inconnu"
 #: windows/dialogs.c:213 windows/dialogs.c:237 windows/dialogs.c:275
 #: windows/dialogs.c:310
 msgid "menu functions can only be used in the GUI"
-msgstr "les fonctions de menu ne peuvent être utilisées que sous l’interface graphique (GUI)"
+msgstr "les fonctions de menu ne peuvent être utilisées qu'avec l’interface graphique (GUI)"
 
 #: windows/dialogs.c:245
 #, c-format
 msgid "unable to retrieve items for %s (%s)"
-msgstr "impossible de récupérer les items pour %s (%s)"
+msgstr "impossible de récupérer les éléments pour %s (%s)"
 
 #: windows/dialogs.c:283
 #, c-format
@@ -244,11 +244,11 @@ msgstr "'%s' élément %d n’est pas un identifiant de fenêtre (handle)"
 
 #: windows/widgets.c:105
 msgid "Select one or more"
-msgstr "Sélectionnez un ou plusieurs items"
+msgstr "Sélectionnez un ou plusieurs éléments"
 
 #: windows/widgets.c:105
 msgid "Select one"
-msgstr "Sélectionnes un item"
+msgstr "Sélectionnez un élément"
 
 #: windows/widgets.c:188 windows/widgets.c:256
 msgid "'default' must be a character string"
