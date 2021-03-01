@@ -34,7 +34,7 @@ msgid "directory '%s' does not exist"
 msgstr "le répertoire '%s' n'existe pas"
 
 msgid "neither code nor data objects found"
-msgstr "ni du code, ni des objets de données ne sont trouvés"
+msgstr "aucun code, ni objets de données trouvés"
 
 msgid "Undocumented code objects:"
 msgstr "Objets code non documentés :"
@@ -61,31 +61,31 @@ msgid "directory '%s' does not contain Rd objects"
 msgstr "le répertoire '%s' ne contient aucun objet Rd"
 
 msgid "Functions or methods with usage in documentation object '%s' but not in code:"
-msgstr "Fonctions ou méthodes avec 'usage' dans la documentation de l'objet '%s', mais pas dans le code :"
+msgstr "Fonctions ou méthodes avec 'usage' dans la documentation de l'objet '%s', mais absents dans le code :"
 
 msgid "Data with usage in documentation object '%s' but not in code:"
-msgstr "Jeux de données avec 'usage' dans la documentation de l'objet '%s', mais pas dans le code :"
+msgstr "Jeux de données avec 'usage' dans la documentation de l'objet '%s', mais absents dans le code :"
 
 msgid "Variables with usage in documentation object '%s' but not in code:"
-msgstr "Variables avec 'usage' dans la documentation de l'objet '%s', mais pas dans le code :"
+msgstr "Variables avec 'usage' dans la documentation de l'objet '%s', mais absents dans le code :"
 
 msgid "Argument names in code not in docs:"
-msgstr "Noms d'arguments dans le code mais pas dans la doc :"
+msgstr "Noms d'arguments dans le code mais absents dans la documentation :"
 
 msgid "Argument names in docs not in code:"
-msgstr "Noms d'arguments dans la doc mais pas dans le code :"
+msgstr "Noms d'arguments dans la documentation mais absents dans le code :"
 
 msgid "Mismatches in argument names (first 3):"
-msgstr "Incohérence dans les noms d'arguments (les 3 premiers) :"
+msgstr "Incohérences dans le nom des arguments (les 3 premiers) :"
 
 msgid "Mismatches in argument names:"
-msgstr "Incohérence dans le nom des arguments :"
+msgstr "Incohérences dans le nom des arguments :"
 
 msgid "Mismatches in argument default values (first 3):"
-msgstr "Incohérence dans les valeurs par défaut des arguments (les 3 premiers) :"
+msgstr "Incohérences dans les valeurs par défaut des arguments (les 3 premiers) :"
 
 msgid "Mismatches in argument default values:"
-msgstr "Incohérence dans les valeurs par défaut des arguments :"
+msgstr "Incohérences dans les valeurs par défaut des arguments :"
 
 msgid "Codoc mismatches from documentation object '%s':"
 msgstr "Erreurs 'codoc' pour la documentation de l'objet '%s' :"
@@ -97,7 +97,7 @@ msgid "Docs: %s"
 msgstr "Docs : %s"
 
 msgid "S4 class codoc mismatches from documentation object '%s':"
-msgstr "Erreurs 'codoc' de class S4 pour la documentation de l'objet '%s' :"
+msgstr "Erreurs 'codoc' de classe S4 pour la documentation de l'objet '%s' :"
 
 msgid "Slots for class '%s'"
 msgstr "Slots de la classe '%s'"
@@ -127,7 +127,7 @@ msgid "Bad \\usage lines found in documentation object '%s':"
 msgstr "Mauvaises lignes \\usage trouvées dans la documentation de l'objet '%s' :"
 
 msgid "S3 methods shown with full name in documentation object '%s':"
-msgstr "Methodes S3 indiquées avec le nom complet dans la documentation de l'objet '%s' :"
+msgstr "Méthodes S3 indiquées avec le nom complet dans la documentation de l'objet '%s' :"
 
 msgid "you must specify 'package', 'dir' or 'file'"
 msgstr "vous devez spécifier 'package', 'dir' ou 'file'"
@@ -143,10 +143,10 @@ msgstr ""
 "%s"
 
 msgid "declared S3 method '%s' not found"
-msgstr "methode S3 '%s' déclarée mais introuvable"
+msgstr "méthode S3 '%s' déclarée mais introuvable"
 
 msgid "cannot check R code installed as image"
-msgstr "impossible de vérifier du code R installé comme une image"
+msgstr "impossible de vérifier le code R installé en tant qu'image"
 
 msgid "parse error in file '%s':"
 msgstr "erreur d'analyse de code dans le fichier '%s' :"
@@ -197,10 +197,10 @@ msgid "Malformed Depends or Suggests or Imports or Enhances field."
 msgstr "Champ 'Depends', 'Suggests', 'Imports' ou 'Enhances' incorrect."
 
 msgid "Offending entries:"
-msgstr "Entrée erronées :"
+msgstr "Entrées erronées :"
 
 msgid "Entries must be names of packages optionally followed by '<=' or '>=', white space, and a valid version number in parentheses."
-msgstr "Les entrées doivent être des noms de packages, éventuellement suivis de '<=' ou '>=', un espace, et un numéro de version correct entre parenthèses."
+msgstr "Les entrées doivent être des noms de packages, éventuellement suivis de '<=' ou '>=', un espace, et d'un numéro de version correct entre parenthèses."
 
 msgid "Entries with infeasible comparison operator:"
 msgstr "Entrées avec des opérateurs de comparaison inadéquats :"
@@ -227,7 +227,7 @@ msgid "Packages with priorities 'base' or 'recommended' or 'defunct-base' must a
 msgstr "Les packages avec priorité 'base' ou 'recommended' ou 'defunct-base' doivent être déjà connus de R."
 
 msgid "Malformed Title field: should not end in a period."
-msgstr "Champ Title incorrect : il ne devrait pas se terminer par un point."
+msgstr "Champ Title incorrect : il ne doit pas se terminer par un point."
 
 msgid "Malformed Description field: should contain one or more complete sentences."
 msgstr "Champ Description incorrect : il doit contenir une ou plusieurs phrases complètes."
@@ -242,28 +242,28 @@ msgid "Cannot extract Author field from Authors@R field:"
 msgstr "Impossible d'extraire le champ Author du champ Authors@R :"
 
 msgid "Authors@R field gives no person with name and roles."
-msgstr "Le champ Authors@R ne renvoie aucune personne avec un nom et un rôle."
+msgstr "Le champ Authors@R ne fournit aucune personne avec un nom et ses rôles."
 
 msgid "Authors@R field gives persons with no name:"
-msgstr "Le champ Authors@R ne renvoie aucune personne avec un nom :"
+msgstr "Le champ Authors@R fournit des personnes sans nom :"
 
 msgid "Authors@R field gives persons with no role:"
-msgstr "Le champ Authors@R ne renvoie aucune personne avec un nom et un rôle d’auteur :"
+msgstr "Le champ Authors@R fournit des personnes sans rôle :"
 
 msgid "Authors@R field gives no person with name and author role"
-msgstr "Le champ Authors@R ne renvoie aucune personne avec un nom et un rôle d'auteur"
+msgstr "Le champ Authors@R ne fournit aucune personne avec un nom et un rôle d'auteur"
 
 msgid "Cannot extract Maintainer field from Authors@R field:"
 msgstr "Impossible d'extraire le champ 'Maintainer' du champ 'Authors@R' :"
 
 msgid "Authors@R field gives more than one person with maintainer role:"
-msgstr "Le champ Authors@R renvoie plus d’une personne avec un rôle de mainteneur :"
+msgstr "Le champ Authors@R fournit plus d’une personne avec le rôle de mainteneur :"
 
 msgid "Authors@R field gives no person with maintainer role, valid email address and non-empty name."
-msgstr "Le champ Authors@R ne renvoie personne avec un rôle de mainteneur, une adresse email valide et un nom."
+msgstr "Le champ Authors@R ne fournit personne avec le rôle de mainteneur, une adresse email et un nom valides."
 
 msgid "Authors@R field gives persons with invalid ORCID identifiers:"
-msgstr "Le champ Authors@R renvoie des personnes avec des identifiants ORCID incorrects :"
+msgstr "Le champ Authors@R fournit des personnes avec des identifiants ORCID incorrects :"
 
 msgid "Encoding '%s' is not portable"
 msgstr "L’encodage '%s' n'est pas portable"
@@ -281,37 +281,37 @@ msgid "Standardized license specification:"
 msgstr "Spécification de licence standard :"
 
 msgid "Deprecated license: %s"
-msgstr "Licence dépréciée : %s"
+msgstr "Licence obsolète : %s"
 
 msgid "Invalid license file pointers: %s"
-msgstr "Pointeur de fichier licence incorrect : %s"
+msgstr "Pointeurs de fichiers licence incorrects : %s"
 
 msgid "License components with restrictions not permitted:"
-msgstr "Les composants avec restrictions de licence ne sont pas autorisés :"
+msgstr "Composants avec restrictions de licence non autorisés :"
 
 msgid "License components which are templates and need '+ file LICENSE':"
-msgstr "Les composants avec restrictions de licence qui sont des modèles et qui nécessitent '+ file LICENSE' :"
+msgstr "Composants de licence qui sont des modèles et qui nécessitent '+ file LICENSE' :"
 
 msgid "Non-portable flags in variable '%s':"
-msgstr "Indicateur non portable dans la variable '%s' :"
+msgstr "Indicateurs non portables dans la variable '%s' :"
 
 msgid "Non-portable flags in file '%s':"
-msgstr "Indicateur non portable dans le fichier '%s' :"
+msgstr "Indicateurs non portables dans le fichier '%s' :"
 
 msgid "Variables overriding user/site settings:"
-msgstr "Des variables remplacent les valeurs utilisateur/site :"
+msgstr "Variables remplaçant les valeurs utilisateur/site :"
 
 msgid "invalid 'OS.type' \"%s\".  Should not happen"
-msgstr "un 'OS.type' incorrect \"%s\" est trouvé. Cela ne devrait pas se produire"
+msgstr "'OS.type' incorrect \"%s\" trouvé. Cela ne devrait pas se produire"
 
 msgid "Missing link or links in documentation object '%s':"
 msgstr "Lien(s) manquant(s) dans la documentation de l'objet '%s' :"
 
 msgid "Non-file package-anchored link(s) in documentation object '%s':"
-msgstr "Lien(s) non liés à un ou des fichiers dans la documentation de l'objet '%s' :"
+msgstr "Lien(s) non liés à un ou des fichiers du package dans la documentation de l'objet '%s' :"
 
 msgid "See section 'Cross-references' in the 'Writing R Extensions' manual."
-msgstr "Voyez l'information dans la section 'Cross-references' du manuel 'Writing R Extensions'."
+msgstr "Voyez la section 'Cross-references' du manuel 'Writing R Extensions'."
 
 msgid "Call sequence:"
 msgstr "Séquence d'appel :"
@@ -338,22 +338,22 @@ msgid "Package startup functions should have two arguments with names starting w
 msgstr "Les fonctions de démarrage de package doivent avoir deux arguments avec des noms commençant par %s et %s, respectivement."
 
 msgid "Package startup functions should not change the search path."
-msgstr "Les fonctions de démarrage de package ne devraient pas changer le chemin de recherche."
+msgstr "Les fonctions de démarrage de package ne doivent pas changer le chemin de recherche."
 
 msgid "Package startup functions should use %s to generate messages."
-msgstr "Les fonctions de démarrage de package devraient utiliser %s pour générer des messages."
+msgstr "Les fonctions de démarrage de package doivent utiliser %s pour générer des messages."
 
 msgid "Package startup functions should not call %s."
-msgstr "Les fonctionne de démarrage de package ne devraient pas appeler %s."
+msgstr "Les fonctions de démarrage de package ne doivent pas appeler %s."
 
 msgid "See section %s in '%s'."
-msgstr "Voir section %s dans '%s'."
+msgstr "Voir la section %s dans '%s'."
 
 msgid "Package detach functions should have one argument with name starting with %s."
 msgstr "Les fonctions detach du package doivent avoir un argument avec un nom commençant par %s."
 
 msgid "Package detach functions should not call %s."
-msgstr "Les fonctions detach du package ne devraient pas appeler %s."
+msgstr "Les fonctions detach du package ne doivent pas appeler %s."
 
 msgid "unable to create"
 msgstr "impossible de créer"
@@ -368,31 +368,31 @@ msgid "'::' or ':::' imports not declared from:"
 msgstr "importations '::' ou ':::' non déclarées depuis :"
 
 msgid "'::' or ':::' import not declared from: %s"
-msgstr "importations '::' ou ':::' non déclarées depuis : %s"
+msgstr "importation '::' ou ':::' non déclarée depuis : %s"
 
 msgid "'library' or 'require' calls not declared from:"
 msgstr "appels 'library' ou 'require' non déclarés depuis :"
 
 msgid "'library' or 'require' call not declared from: %s"
-msgstr "appels 'library' ou 'require' non déclarés depuis : %s"
+msgstr "appel 'library' ou 'require' non déclaré depuis : %s"
 
 msgid "'loadNamespace' or 'requireNamespace' calls not declared from:"
 msgstr "appels 'loadNamespace' ou 'requireNamespace' non déclarés depuis :"
 
 msgid "'loadNamespace' or 'requireNamespace' call not declared from: %s"
-msgstr "appels 'loadNamespace' ou 'requireNamespace' non déclarés depuis : %s"
+msgstr "appel 'loadNamespace' ou 'requireNamespace' non déclaré depuis : %s"
 
 msgid "'library' or 'require' calls to packages already attached by Depends:"
 msgstr "appels 'library' ou 'require' vers des packages déjà attachés depuis Depends :"
 
 msgid "'library' or 'require' call to %s which was already attached by Depends."
-msgstr "appels 'library' ou 'require' à %s qui est déjà attaché depuis Depends."
+msgstr "appel 'library' ou 'require' à %s qui est déjà attaché depuis Depends."
 
 msgid "'library' or 'require' calls in package code:"
 msgstr "appels 'library' ou 'require' dans le code du package :"
 
 msgid "'library' or 'require' call to %s in package code."
-msgstr "appels 'library' ou 'require' à %s dans le code du package."
+msgstr "appel 'library' ou 'require' à %s dans le code du package."
 
 msgid "Namespaces in Imports field not imported from:"
 msgstr "Espaces de noms dans le champ Imports non importés depuis :"
@@ -413,10 +413,10 @@ msgid "Missing or unexported object: %s"
 msgstr "Objet manquant ou non exporté : %s"
 
 msgid "':::' calls which should be '::':"
-msgstr "appels ':::' qui devrait être '::' :"
+msgstr "appels ':::' qui doivent être '::' :"
 
 msgid "':::' call which should be '::': %s"
-msgstr "appel ':::' qui devrait être '::' : %s"
+msgstr "appel ':::' qui doit être '::' : %s"
 
 msgid "Missing objects imported by ':::' calls:"
 msgstr "Objets manquants importés par appels ':::' :"
@@ -434,10 +434,10 @@ msgid "Unavailable namespaces imported from by ':::' calls:"
 msgstr "Espaces de noms non disponibles importés par des appels ':::' :"
 
 msgid "Unavailable namespace imported from by a ':::' call: %s"
-msgstr "Espace de nom non disponible importé par un appel ':::' : %s"
+msgstr "Espace de noms non disponible importé par un appel ':::' : %s"
 
 msgid "'data(package=)' calls not declared from:"
-msgstr "appel 'data(package=)' non déclaré depuis :"
+msgstr "appels 'data(package=)' non déclarés depuis :"
 
 msgid "'data(package=)' call not declared from: %s"
 msgstr "appel 'data(package=)' non déclaré depuis : %s"
@@ -458,7 +458,7 @@ msgid "Argument items with no description in Rd object '%s':"
 msgstr "Arguments sans description dans l'objet Rd '%s' :"
 
 msgid "Auto-generated content requiring editing in Rd object '%s':"
-msgstr "Contenu automatique de l'objet Rd '%s' à éditer :"
+msgstr "Contenu généré automatiquement nécessitant la modification de l'objet Rd '%s' :"
 
 msgid "no Rd sections specified"
 msgstr "aucune section Rd n'est spécifiée"
@@ -470,7 +470,7 @@ msgid ""
 "%s\n"
 "in NAMESPACE."
 msgstr ""
-"Les génériques 'g' dans 'env' %s avec '%s' erreurs : %s\n"
+"Génériques 'g' dans 'env' %s avec '%s' erreurs : %s\n"
 "Requiert sans doute quelque chose comme\n"
 "\n"
 "%s\n"
@@ -513,16 +513,16 @@ msgid "Macro file %s should only contain Rd macro definitions and comments"
 msgstr "Le fichier macro %s ne peut contenir que des définitions de macros Rd et des commentaires"
 
 msgid "Rd macro package '%s' is not installed."
-msgstr "Macro Rd '%s' du package non installée."
+msgstr "Package de macro Rd '%s' non installé."
 
 msgid "No Rd macros in package '%s'."
-msgstr "Pas de macros Rd dans le package ‘%s’."
+msgstr "Pas de macros Rd dans le package '%s'."
 
 msgid "Previous alias or file overwritten by alias:"
-msgstr "Alias précédent ou fichier remplacé par l’alias :"
+msgstr "Alias précédent ou fichier remplacé par l'alias :"
 
 msgid "more than one \\examples section, using the first"
-msgstr "plus d'une section \\example, utilisation de la première"
+msgstr "plus d'une section \\examples, utilisation de la première"
 
 msgid "Converting Rd files to LaTeX ..."
 msgstr "Conversion des fichiers Rd en LaTeX ..."
@@ -555,7 +555,7 @@ msgid "Error in running tools::texi2pdf()"
 msgstr "Erreur lors de l'exécution de tools::texi2pdf()"
 
 msgid "invalid value for '%s' : %s"
-msgstr "valeur inexacte pour '%s' : %s"
+msgstr "valeur incorrecte pour '%s' : %s"
 
 msgid "Only one Rd section per %s is supported."
 msgstr "Seulement une section Rd par %s est supportée."
@@ -564,7 +564,7 @@ msgid "DESCRIPTION file is for package '%s', not '%s'"
 msgstr "Le fichier DESCRIPTION est pour le package '%s', pas '%s'"
 
 msgid "Vignette product %s does not have a known filename extension (%s)"
-msgstr "Le fichier porduit pour la vignette %s n'a pas une extension de fichier connue (%s)"
+msgstr "Le fichier produit pour la vignette %s n'a pas une extension de fichier connue (%s)"
 
 msgid "Failed to locate %s output file %s or %s for vignette with name %s and engine %s. The following files exist in working directory %s: %s"
 msgstr "Impossible de localiser %s le fichier de sortie %s ou %s pour la vignette de nom %s et le moteur %s. Les fichiers suivants existent dans le répertoire %s : %s"
@@ -579,19 +579,19 @@ msgid "unable to create temp directory %s"
 msgstr "impossible de créer le répertoire temporaire %s"
 
 msgid "Vignette '%s' is non-ASCII but has no declared encoding"
-msgstr "La vignette '%s' n’est pas ASCII mais n’a pas déclaré d’encodage"
+msgstr "La vignette '%s' n'est pas ASCII et n’a pas d’encodage déclaré"
 
 msgid "Running"
 msgstr "Exécution"
 
 msgid "Vignette %s overwrites the following %s output by vignette %s: %s"
-msgstr "La vignette %s réécrit sur la sortie %s de la  vignette suivante %s : %s"
+msgstr "La vignette %s réécrit sur la sortie %s de la vignette suivante %s : %s"
 
 msgid "Detected vignette source files (%s) with shared names (%s) and therefore risking overwriting each other's output files"
 msgstr "Fichiers sources pour des vignettes (%s) détectés avec des noms identiques (%s) et qui risquent donc de se réécrire les uns sur les autres pour les fichiers de sortie"
 
 msgid "Error: Vignette '%s' is non-ASCII but has no declared encoding"
-msgstr "Erreur : la vignette '%s' n’est pas ASCII mais n’a pas d’encodage déclaré"
+msgstr "Erreur : la vignette '%s' n’est pas ASCII et n’a pas d’encodage déclaré"
 
 msgid "--- re-building %s using %s"
 msgstr "--- reconstruction de %s à l’aide de %s"
@@ -623,7 +623,7 @@ msgid "file '%s' not found"
 msgstr "le fichier '%s' est introuvable"
 
 msgid "vignette filename '%s' does not match any of the '%s' filename patterns"
-msgstr "le nom de fichier '%s' pour la vignette ne correspond pas au pattern de nom de fichier '%s'"
+msgstr "le nom de fichier '%s' pour la vignette ne correspond pas au motif des noms de fichier '%s'"
 
 msgid "+-+"
 msgstr "+-+"
