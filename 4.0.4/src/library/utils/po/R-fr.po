@@ -602,10 +602,10 @@ msgid "cannot create directory '%s'"
 msgstr "impossible de créer le répertoire '%s'"
 
 msgid "'code_files' must be a character vector"
-msgstr "'code_files' devrait être un vecteur de type caractère"
+msgstr "'code_files' doit être un vecteur de type caractère"
 
 msgid "'list' must be a character vector naming R objects"
-msgstr "'list' devrait être un vecteur de type caractère nommant des objets R"
+msgstr "'list' doit être un vecteur de type caractère nommant des objets R"
 
 msgid "no R objects specified or available"
 msgstr "aucun objet R spécifié ou disponible"
@@ -626,13 +626,13 @@ msgid "invalid 'filters' argument."
 msgstr "argument 'filters' incorrect."
 
 msgid "specifying 'contriburl' or 'available' requires a single type, not type = \"both\""
-msgstr "'contriburl' ou 'available' requière un type unique, pas type = \"both\""
+msgstr "'contriburl' ou 'available' requiert un type unique, pas type = \"both\""
 
 msgid "package '%s' in library '%s' will not be updated"
 msgstr "le package '%s' dans la bibliothèque '%s' ne sera pas mis à jour"
 
 msgid "invalid 'oldPkgs'; must be a character vector or a result from old.packages()"
-msgstr "'oldPkgs' incorrect ; il faut des chaines de caractères ou des données renvoyées par old.packages()"
+msgstr "'oldPkgs' incorrect ; il faut des chaînes de caractères ou des données renvoyées par old.packages()"
 
 msgid "ill-formed 'instPkgs' matrix"
 msgstr "matrice 'instPkgs' incorrecte"
@@ -641,7 +641,7 @@ msgid "no installed packages for (invalid?) 'lib.loc=%s'"
 msgstr "aucun package installé pour 'lib.loc=%s' (incorrect ?)"
 
 msgid "no new packages are available"
-msgstr "aucuns nouveaux packages ne sont disponibles"
+msgstr "aucun nouveau package disponible"
 
 msgid "metadata of %s is corrupt"
 msgstr "les métadonnées de %s sont incorrectes"
@@ -668,10 +668,10 @@ msgid "download of package %s failed"
 msgstr "le téléchargement du package %s a échoué"
 
 msgid "--- Please select a CRAN mirror for use in this session ---"
-msgstr "--- SVP sélectionnez un miroir CRAN pour cette session ---"
+msgstr "--- Sélectionnez svp un miroir CRAN pour cette session ---"
 
 msgid "trying to use CRAN without setting a mirror"
-msgstr "essai d'utilisation de CRAN sans fixer un miroir"
+msgstr "essai d'utilisation de CRAN sans miroir défini"
 
 msgid "'download.file()' error code '%d'"
 msgstr "'download.file()', code d’erreur '%d'"
@@ -686,13 +686,13 @@ msgid "mirror non-interactively"
 msgstr "site miroir en mode non interactif"
 
 msgid "cannot set repositories non-interactively"
-msgstr "impossible de fixer les entrepôts en mode non interactif"
+msgstr "impossible de définir les entrepôts en mode non interactif"
 
 msgid "invalid options(\"pkgType\"); must be a character string"
-msgstr "options(\"pkgType\") incorrecte ; Doit être une chaîne de caractères"
+msgstr "options(\"pkgType\") incorrecte ; doit être une chaîne de caractères"
 
 msgid "--- Please select repositories for use in this session ---"
-msgstr "--- SVP sélectionnez les entrepôts à utiliser pour cette session ---"
+msgstr "--- Sélectionnez svp les entrepôts à utiliser pour cette session ---"
 
 msgid "%s must be supplied"
 msgstr "%s doit être fourni"
@@ -753,7 +753,7 @@ msgid "source repository is unavailable to check versions"
 msgstr "le dépôt source est indisponible pour vérifier les versions"
 
 msgid "cannot install macOS binary packages on Windows"
-msgstr "impossible d'installer les packages MacOS binaire sous Windows"
+msgstr "impossible d'installer les packages MacOS binaires sous Windows"
 
 msgid "cannot install macOS binary packages on this platform"
 msgstr "impossible d'installer les packages MacOS binaires sur cette plateforme"
@@ -787,7 +787,7 @@ msgid ""
 "installation of one or more packages failed,\n"
 "  probably %s"
 msgstr ""
-"l'installation de un package ou plus a échoué,\n"
+"l'installation d'un ou plusieurs packages a échoué,\n"
 " probablement %s"
 
 msgid ""
@@ -798,7 +798,7 @@ msgstr ""
 "\t%s"
 
 msgid "The namespace for package \"%s\" is locked; no changes in the global variables list may be made."
-msgstr "L'espace de nom pour le package \"%s\" est verrouillé ; aucun changement dans la liste des variables globales ne peut être réalisé."
+msgstr "L'espace de noms pour le package \"%s\" est verrouillé ; aucun changement dans la liste des variables globales ne peut être réalisé."
 
 msgid "'env' must be an environment"
 msgstr "'env' doit être un environnement"
@@ -807,7 +807,7 @@ msgid "no object named '%s' to show"
 msgstr "aucun objet de nom '%s' à afficher"
 
 msgid "'file' must be \"\" or an open connection object"
-msgstr "'file' doit être \"\" ou un objet connexion"
+msgstr "'file' doit être \"\" ou un objet de connexion ouverte"
 
 msgid "must have 'max' > 'min'"
 msgstr "doit avoir 'max' > 'min'"
@@ -828,7 +828,7 @@ msgid "cannot determine import name"
 msgstr "impossible de déterminer le nom d’importation"
 
 msgid "no documentation of type %s and topic %s (or error in processing help)"
-msgstr "pas de documentation de type %s et de thème %s (ou erreur de traitement de l'aide)"
+msgstr "pas de documentation de type %s ni de thème %s (ou erreur de traitement de l'aide)"
 
 msgid "the object of class %s in the function call %s could not be used as a documentation topic"
 msgstr "l'objet de la classe %s dans l'appel de fonction %s n'a pas pu être utilisé comme thème de documentation"
@@ -837,10 +837,10 @@ msgid "no methods for %s and no documentation for it as a function"
 msgstr "aucune méthode pour %s et aucune documentation à son sujet en tant que fonction"
 
 msgid "no method defined for function %s and signature %s"
-msgstr "aucune méthode définie pour la fonction %s et pour la signature %s"
+msgstr "aucune méthode définie pour la fonction %s ni pour la signature %s"
 
 msgid "no documentation for function %s and signature %s"
-msgstr "pas de documentation pour la fonction %s et pour la signature %s"
+msgstr "pas de documentation pour la fonction %s ni pour la signature %s"
 
 msgid "No DIF data on clipboard"
 msgstr "Pas de données DIF dans le presse-papier"
@@ -855,16 +855,16 @@ msgid "More rows than specified in header; maybe use 'transpose=TRUE'"
 msgstr "Plus de lignes que spécifié dans l'entête ; utilisez peut-être 'transpose=TRUE'"
 
 msgid "Unrecognized special data value"
-msgstr "Valeur spéciale de données non reconnue"
+msgstr "Valeur spéciale de donnée non reconnue"
 
 msgid "More columns than specified in header; maybe use 'transpose=TRUE'"
 msgstr "Plus de colonnes que spécifié dans l'entête ; utilisez peut-être 'transpose=TRUE'"
 
 msgid "Unrecognized value indicator"
-msgstr "Indicateur de données non reconnu"
+msgstr "Indicateur de valeur non reconnu"
 
 msgid "no lines available in input"
-msgstr "pas de lignes disponibles dans l'entrée"
+msgstr "aucune ligne disponible dans l'entrée"
 
 msgid "header and 'col.names' are of different lengths"
 msgstr "l'entête et 'col.names' sont de longueurs différentes"
@@ -897,10 +897,10 @@ msgid "invalid 'row.names' length"
 msgstr "longueur de 'row.names' incorrecte"
 
 msgid "duplicate 'row.names' are not allowed"
-msgstr "la duplication de 'row.names' est interdite"
+msgstr "doublons interdits dans 'row.names'"
 
 msgid "missing values in 'row.names' are not allowed"
-msgstr "valeurs manquantes dans 'row.names' non autorisées"
+msgstr "valeurs manquantes dans 'row.names' non autorisé"
 
 msgid "missing lengths for some fields"
 msgstr "longueur manquante pour certains champs"
@@ -927,7 +927,7 @@ msgid "first five rows are empty: giving up"
 msgstr "les premières cinq lignes sont vides : abandon"
 
 msgid "relist() requires recursively unlisted objects."
-msgstr "relist() demande des objets délistés de manière récursive."
+msgstr "relist() nécessite des objets délistés de manière récursive."
 
 msgid "The 'flesh' argument does not contain a skeleton attribute."
 msgstr "L'argument 'flesh' ne contient pas d'attribut 'skeleton'."
@@ -936,7 +936,7 @@ msgid "Either ensure you unlist a relistable object, or specify the skeleton sep
 msgstr "Faites en sorte de délister un objet relistable, ou spécifiez le squelette séparément."
 
 msgid "cannot coerce 'x' to roman"
-msgstr "impossible de convertir 'x' en roman"
+msgstr "impossible de convertir 'x' en chiffre romain"
 
 msgid "Could not create file %s, aborting"
 msgstr "Impossible de créer le fichier %s, arrêt"
@@ -960,7 +960,7 @@ msgid "socket not established"
 msgstr "socket non connecté"
 
 msgid "argument is not a function or language object:"
-msgstr "l’argument n’est pas une fonction ou un objet de langage :"
+msgstr "l’argument n’est pas une fonction ni un objet de langage :"
 
 msgid "str.data.frame() called with non-data.frame -- coercing to one."
 msgstr "str.data.frame() appelé avec un non data.frame -- forçage du type."
@@ -1017,7 +1017,7 @@ msgid "invalid 'tarfile' argument"
 msgstr "argument 'tarfile' incorrect"
 
 msgid "'compressed' must be logical or character"
-msgstr "'compressed' devrait être un vecteur de type caractère ou booléen (logical)"
+msgstr "'compressed' doit être un vecteur de type caractère ou booléen (logical)"
 
 msgid "No %s command found"
 msgstr "Commande %s introuvable"
@@ -1035,7 +1035,7 @@ msgid "failed to create directory %s"
 msgstr "impossible de créer le répertoire %s"
 
 msgid "invalid octal digit"
-msgstr "nombre octal incorrect"
+msgstr "chiffre octal incorrect"
 
 msgid "removing drive '%s'"
 msgstr "retrait du disque '%s'"
@@ -1059,7 +1059,7 @@ msgid "incomplete block on file"
 msgstr "bloc incomplet dans le fichier"
 
 msgid "incomplete block: rather use gzfile(.) created connection?"
-msgstr "bloc incomplet : utilisez plutôt une connexion créée à l’aide de gzfile(.) ?"
+msgstr "bloc incomplet : utiliser plutôt une connexion créée à l’aide de gzfile(.) ?"
 
 msgid "invalid name field in tarball"
 msgstr "nom de champ incorrect dans l'archive tarball"
@@ -1080,13 +1080,13 @@ msgid "file '%s' did not have execute permissions: corrected"
 msgstr "le fichier '%s' n'a pas de droit d'exécution : le problème est corrigé"
 
 msgid "file size is limited to 8GB"
-msgstr "la taille du fichier est limitée à 8GB"
+msgstr "la taille du fichier est limitée à 8Go"
 
 msgid "invalid uid value replaced by that for user 'nobody'"
-msgstr "valeur uid incorrecte remplacée par celle pour l'utilisateur 'nobody'"
+msgstr "valeur uid incorrecte remplacée par celle de l'utilisateur 'nobody'"
 
 msgid "invalid gid value replaced by that for user 'nobody'"
-msgstr "valeur gid incorrecte remplacée par celle pour l'utilisateur 'nobody'"
+msgstr "valeur gid incorrecte remplacée par celle de l'utilisateur 'nobody'"
 
 msgid ""
 "vignette %s found more than once,\n"
@@ -1114,7 +1114,7 @@ msgid "Enter one or more numbers separated by spaces and then ENTER, or 0 to can
 msgstr "Entrez un ou plusieurs nombres séparés par des espaces et ensuite ENTER, ou 0 pour annuler"
 
 msgid "Invalid input, please try again"
-msgstr "Entrée incorrecte, essayez a nouveau SVP"
+msgstr "Entrée incorrecte, essayez à nouveau svp"
 
 msgid "'quote' must be 'TRUE', 'FALSE' or numeric"
 msgstr "'quote' doit être 'TRUE', 'FALSE' ou une valeur numérique"
@@ -1132,7 +1132,7 @@ msgid "invalid 'col.names' specification"
 msgstr "spécification de 'col.names' incorrecte"
 
 msgid "appending column names to file"
-msgstr "ajout du nom des colonnes dans le fichier"
+msgstr "ajout des noms de colonnes dans le fichier"
 
 msgid "attempt to set '%s' ignored"
 msgstr "une tentative de modification de '%s' a échoué"
@@ -1177,7 +1177,7 @@ msgid "'curl' call had nonzero exit status"
 msgstr "l’appel de 'curl' a un statut de sortie non nul"
 
 msgid "download had nonzero exit status"
-msgstr "le téléchargement a a eu un statut de sortie non nul"
+msgstr "le téléchargement a eu un statut de sortie non nul"
 
 msgid "'tar' returned non-zero exit code %d"
 msgstr "'tar' a renvoyé un code de sortie non nul %d"
@@ -1239,7 +1239,7 @@ msgid "unable to copy temporary installation %s to %s"
 msgstr "impossible de copier l'installation temporaire %s vers %s"
 
 msgid "Only '*.zip' and '*.tar.gz' files can be installed."
-msgstr "Seulement les fichiers '*.zip' et '*.tar.gz' peuvent être installés."
+msgstr "Seuls les fichiers '*.zip' et '*.tar.gz' peuvent être installés."
 
 msgid "winDialog() cannot be used non-interactively"
 msgstr "winDialog() ne peut être utilisé en mode non interactif"
@@ -1279,8 +1279,8 @@ msgstr[1] "%d objets correspondent."
 
 msgid "%d error caught in %s: %s"
 msgid_plural "%d times caught the same error in %s: %s"
-msgstr[0] "%d erreur repérée dans %s : %s"
-msgstr[1] "erreur repérée %d fois dans %s : %s"
+msgstr[0] "%d erreur détectée dans %s : %s"
+msgstr[1] "erreur détectée %d fois dans %s : %s"
 
 msgid "object '%s' not found"
 msgid_plural "objects '%s' not found"
@@ -1294,16 +1294,16 @@ msgid_plural ""
 "Removing packages from %s\n"
 "(as %s is unspecified)"
 msgstr[0] ""
-"Elimination du package de %s\n"
+"Suppression du package de %s\n"
 "(car %s n'est pas spécifié)"
 msgstr[1] ""
-"Elimination des packages de %s\n"
+"Suppression des packages de %s\n"
 "(car %s n'est pas spécifié)"
 
 msgid "package %s is a base package, and should not be updated"
 msgid_plural "packages %s are base packages, and should not be updated"
-msgstr[0] "le package %s est un package de base et ne devrait pas être mis à jour"
-msgstr[1] "les packages %s sont des packages de base et ne devraient pas être mis à jour"
+msgstr[0] "le package %s est un package de base et ne doit pas être mis à jour"
+msgstr[1] "les packages %s sont des packages de base et ne doivent pas être mis à jour"
 
 msgid ""
 "A version of this package for your version of R might be available elsewhere,\n"
@@ -1313,10 +1313,10 @@ msgid_plural ""
 "see the ideas at\n"
 msgstr[0] ""
 "Une version de ce package pour votre version de R est peut-être disponible ailleurs,\n"
-"Voyez des idées à\n"
+"Voyez les idées à\n"
 msgstr[1] ""
 "Des versions de ces packages pour votre version de R sont peut-être disponibles ailleurs,\n"
-"Voyez des idées à\n"
+"Voyez les idées à\n"
 
 msgid "package %s is not available %s"
 msgid_plural "packages %s are not available %s"
@@ -1330,8 +1330,8 @@ msgstr[1] "les dépendances '%s' ne sont pas disponibles"
 
 msgid "also installing the dependency %s"
 msgid_plural "also installing the dependencies %s"
-msgstr[0] "installation de la dépendance %s"
-msgstr[1] "installation des dépendances %s"
+msgstr[0] "installation de la dépendance supplémentaire %s"
+msgstr[1] "installation des dépendances supplémentaires %s"
 
 msgid "package %s is in use and will not be installed"
 msgid_plural "packages %s are in use and will not be installed"
@@ -1353,8 +1353,8 @@ msgstr[1] ""
 
 msgid "'lib' element %s is not a writable directory"
 msgid_plural "'lib' elements %s are not writable directories"
-msgstr[0] "l'élément %s de 'lib' n'est pas un répertoire ouvrable en écriture"
-msgstr[1] "les éléments %s de 'lib' ne sont pas des répertoires ouvrables en écriture"
+msgstr[0] "l'élément %s de 'lib' n'est pas un répertoire accessible en écriture"
+msgstr[1] "les éléments %s de 'lib' ne sont pas des répertoires accessibles en écriture"
 
 msgid "There is a binary version available but the source version is later"
 msgid_plural "There are binary versions available but the source versions are later"
@@ -1368,8 +1368,8 @@ msgstr[1] "Voulez-vous installer depuis les sources les packages qui nécessiten
 
 msgid "Package which is only available in source form, and may need compilation of C/C++/Fortran"
 msgid_plural "Packages which are only available in source form, and may need compilation of C/C++/Fortran"
-msgstr[0] "Package disponible seulement sous forme de sources, et pouvant nécessiter une compilation de C/C++/Fortran"
-msgstr[1] "Packages disponibles seulement sous forme de sources, et peuvant nécessiter la compilation de C/C++/Fortran"
+msgstr[0] "Package disponible seulement sous forme de sources, et pouvant nécessiter une compilation C/C++/Fortran"
+msgstr[1] "Packages disponibles seulement sous forme de sources, et pouvant nécessiter la compilation C/C++/Fortran"
 
 msgid "installing the source package %s"
 msgid_plural "installing the source packages %s"
@@ -1393,8 +1393,8 @@ msgstr[1] "dernier enregistrement incomplet, %d lignes ignorées"
 
 msgid "invalid roman numeral: %s"
 msgid_plural "invalid roman numerals: %s"
-msgstr[0] "nombre roman incorrect : %s"
-msgstr[1] "nombres romans incorrects : %s"
+msgstr[0] "nombre romain incorrect : %s"
+msgstr[1] "nombres romains incorrects : %s"
 
 #~ msgid "bad argument"
 #~ msgstr "argument incorrect"
@@ -1403,7 +1403,7 @@ msgstr[1] "nombres romans incorrects : %s"
 #~ msgstr "package %s introuvable"
 
 #~ msgid "could not find package %s"
-#~ msgstr "impossible de trouver le packages %s"
+#~ msgstr "impossible de trouver le package %s"
 
 #~ msgid "Do you want to attempt to install these from sources?"
 #~ msgstr "Voulez-vous essayer d'installer ceux-ci depuis les sources ?"
@@ -1421,7 +1421,7 @@ msgstr[1] "nombres romans incorrects : %s"
 #~ msgstr "type == \"both\" ne peut être utilisé si 'available' ou 'contriburl' est fourni"
 
 #~ msgid "method 'lynx' is untested and deprecated as from R 3.1.0"
-#~ msgstr "la méthode 'lynx' est non testée et dépréciée depuis R 3.1.0"
+#~ msgstr "la méthode 'lynx' est non testée et obsolète depuis R 3.1.0"
 
 #~ msgid ""
 #~ "If nothing happens, you should open\n"
