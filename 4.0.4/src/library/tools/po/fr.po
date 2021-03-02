@@ -25,7 +25,7 @@ msgstr "l'argument 'files' doit être une chaîne de caractères"
 #: Rmd5.c:63
 #, c-format
 msgid "md5 failed on file '%ls'"
-msgstr "md5 a échoué sur le fichier ‘%ls'"
+msgstr "md5 a échoué sur le fichier '%ls'"
 
 #: Rmd5.c:65
 #, c-format
@@ -77,7 +77,7 @@ msgstr "marque erronée (espace additionel ?) à %s:%d:%d"
 #: gramRd.c:3125
 #, c-format
 msgid "Macro '%s' previously defined."
-msgstr "La macro '%s' est déjà précédemment définie."
+msgstr "La macro '%s' est déjà définie précédemment."
 
 #: gramRd.c:3135
 #, c-format
@@ -92,17 +92,17 @@ msgstr "Pas de définition de macro pour '%s'."
 #: gramRd.c:3239
 #, c-format
 msgid "Not enough arguments passed to user macro '%s'"
-msgstr "Pas assez d’arguments passés à la macro '%s'"
+msgstr "Pas assez d’arguments passés à la macro utilisateur '%s'"
 
 #: gramRd.c:3379 gramRd.c:3383
 #, c-format
 msgid "newline within quoted string at %s:%d"
-msgstr "retour de ligne à l'intérieur d'une chaîne de caractères entre guillemets à %s:%d"
+msgstr "retour à la ligne dans une chaîne de caractères entre guillemets à %s:%d"
 
 #: gramRd.c:3402
 #, c-format
 msgid "unable to allocate buffer for long macro at line %d"
-msgstr "impossible d'allouer de la mémoire tampon pour une longue macro à la lign %d"
+msgstr "impossible d'allouer la mémoire tampon pour une longue macro à la ligne %d"
 
 #: gramRd.c:3432
 msgid "macros nested too deeply: infinite recursion?"
@@ -116,7 +116,7 @@ msgstr "Macro %s introuvable"
 #: gramRd.c:4036
 #, c-format
 msgid "Unexpected end of input (in %c quoted string opened at %s:%d:%d)"
-msgstr "Fin d'entrée inattendue (dans la chaîne entre guillements %c ouvertes à %s:%d:%d)"
+msgstr "Fin d'entrée inattendue (dans la chaîne entre guillements %c ouverte à %s:%d:%d)"
 
 #: gramRd.c:4535
 msgid "cannot open the connection"
