@@ -19,31 +19,31 @@ msgstr ""
 "X-Generator: Poedit 2.4.2\n"
 
 msgid "namespace found within local environments"
-msgstr "espace de nom trouvé parmi des environnements locaux"
+msgstr "espace de noms trouvé parmi les environnements locaux"
 
 msgid "not a proper evaluation environment"
 msgstr "ceci n'est pas un environnement adéquat pour l'évaluation"
 
 msgid "non-namespace found within namespace environments"
-msgstr "autre chose qu’un espace de noms trouvé parmi des environnements d’espaces de noms"
+msgstr "autre chose qu’un espace de noms trouvé parmi les environnements d’espaces de noms"
 
 msgid "namespace found within global environments"
-msgstr "espace de nom trouvé à l’intérieur d’environnements globaux"
+msgstr "espace de noms trouvé à l’intérieur d’environnements globaux"
 
 msgid "bad assignment: %s"
 msgstr "affectation incorrecte: %s"
 
 msgid "cannot constant fold literal promises"
-msgstr "les promesses littérales ne peuvent repliées de manière constante (?constant fold)"
+msgstr "les promesses littérales ne peuvent se replier en constante"
 
 msgid "cannot constant fold literal bytecode objects"
-msgstr "les objects 'bytecode' littéraux ne peuvent repliés de manière constante (?constant fold)"
+msgstr "les objects 'bytecode' littéraux ne peuvent se replier en constante"
 
 msgid "no offset recorded for label \"%s\""
-msgstr "aucun décallage enregistré pour le libellé \"%s\""
+msgstr "aucun décalage enregistré pour le libellé \"%s\""
 
 msgid "cannot compile byte code literals in code"
-msgstr "impossible de compiler des littéraux en byte code dans le code"
+msgstr "impossible de compiler des littéraux bytecode dans le code"
 
 msgid "cannot compile promise literals in code"
 msgstr "impossible de compiler des promesses littérales dans le code"
@@ -58,19 +58,19 @@ msgid "bad assignment 1"
 msgstr "mauvaise affectation 1"
 
 msgid "bad assignment 2"
-msgstr "mauvaise affectation 1"
+msgstr "mauvaise affectation 2"
 
 msgid "invalid function in complex assignment"
-msgstr "function incorrecte dans une affectation complexe"
+msgstr "fonction incorrecte dans une affectation complexe"
 
 msgid "missing arguments are not allowed"
-msgstr "les arguments manquants ne sont pas autorisés"
+msgstr "les arguments absents ne sont pas autorisés"
 
 msgid "empty alternative in numeric switch"
-msgstr "alternative vide dans une construction 'switch' numérique"
+msgstr "alternative vide dans une instruction 'switch' numérique"
 
 msgid "no visible global function definition for '%s'"
-msgstr "pas de définition globale de fonction visible pour '%s'"
+msgstr "pas de définition de fonction globale visible pour '%s'"
 
 msgid "no visible binding for global variable '%s'"
 msgstr "pas de lien pour la variable globale '%s'"
@@ -82,10 +82,10 @@ msgid "wrong number of arguments to '%s'"
 msgstr "nombre incorrect d'arguments pour '%s'"
 
 msgid "more than one default provided in switch() call"
-msgstr "plus d'une valeur par défaut fournie dans une construction switch()"
+msgstr "plus d'une valeur par défaut fournie dans une instruction switch()"
 
 msgid "'switch' with no alternatives"
-msgstr "'switch' sans alternatives"
+msgstr "'switch' sans alternative"
 
 msgid "Error: compilation failed -"
 msgstr "Erreur : la compilation a échoué -"
@@ -106,7 +106,7 @@ msgid "'env' must be a top level environment"
 msgstr "'env' doit être un environnement de premier niveau"
 
 msgid "input and output file names are the same"
-msgstr "les noms de fichier d'entrée et de sortie sont les mêmes"
+msgstr "les noms des fichiers d'entrée et de sortie sont les mêmes"
 
 msgid "empty input file; no output written"
 msgstr "fichier d'entrée vide ; rien n'est écrit en sortie"
@@ -115,13 +115,13 @@ msgid "file '%s' does not exist"
 msgstr "le fichier '%s' n'existe pas"
 
 msgid "'%s' is not a valid compiler option"
-msgstr "'%s' n'est pas une option de compilation reconnue"
+msgstr "'%s' n'est pas une option de compilation valide"
 
 msgid "invalid environment variable value: %s==%s"
-msgstr "valeur de la variable d’environnement incorrecte : %s==%s"
+msgstr "valeur de la variable d'environnement incorrecte : %s==%s"
 
 msgid "invalid compiler options: optimize(==%d)<2 and jitEnabled(==%d)>2"
-msgstr "option de compilation incorrecte : optimize(==%d)<2 et jitEnabled(==%d)>2"
+msgstr "options de compilation incorrectes : optimize(==%d)<2 et jitEnabled(==%d)>2"
 
 msgid "function is not compiled"
 msgstr "la fonction n'est pas compilée"
