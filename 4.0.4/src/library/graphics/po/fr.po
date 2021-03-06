@@ -37,11 +37,11 @@ msgstr "mauvaise unité spécifiée dans '%s'"
 
 #: graphics.c:1818 graphics.c:1840
 msgid "attempt to plot on null device"
-msgstr "tentative de dessin dans un périphérique null"
+msgstr "tentative de dessiner dans un périphérique null"
 
 #: graphics.c:1870
 msgid "outer margins too large (figure region too small)"
-msgstr "marges externes trop larges (région de figure trop petite)"
+msgstr "marges externes trop larges (zone de dessin trop petite)"
 
 #: graphics.c:1872
 msgid "figure region too large"
@@ -58,7 +58,7 @@ msgstr "zone de graphe trop large"
 #: graphics.c:1932
 #, c-format
 msgid "nonfinite axis limits [GScale(%g,%g,%d, .); log=%d]"
-msgstr "limites d'axes non finis [GScale(%g,%g,%d, .) ; log=%d]"
+msgstr "limites infinies des axes [GScale(%g,%g,%d, .) ; log=%d]"
 
 #: graphics.c:1962
 #, c-format
@@ -87,7 +87,7 @@ msgstr "Aucun périphérique graphique n'est actif"
 
 #: graphics.c:3060
 msgid "zero-length arrow is of indeterminate angle and so skipped"
-msgstr "un flèche de longueur nulle n'a pas d'angle déterminé et est ignorée"
+msgstr "une flèche de longueur nulle n'a pas d'angle déterminé et est ignorée"
 
 #: graphics.c:3141
 #, c-format
@@ -109,12 +109,12 @@ msgstr "le paramètre graphique 'family' a une longueur maximale de 200 octets"
 #: par.c:160
 #, c-format
 msgid "invalid value specified for graphical parameter \"%s\""
-msgstr "valeur spécifiée pour le paramètre graphique \"%s\" incorrect"
+msgstr "valeur spécifiée incorrecte pour le paramètre graphique \"%s\""
 
 #: par.c:167
 #, c-format
 msgid "graphical parameter \"%s\" has the wrong length"
-msgstr "le paramètre graphique \"%s\" est de la mauvaise longueur"
+msgstr "mauvaise longueur du paramètre graphique \"%s\""
 
 #: par.c:262 par.c:673
 #, c-format
@@ -123,15 +123,15 @@ msgstr "le paramètre graphique \"%s\" ne peut être changé"
 
 #: par.c:434
 msgid "parameter \"mfg\" has the wrong length"
-msgstr "le paramètre \"mfg\" est de la mauvaise longueur"
+msgstr "mauvaise longueur du paramètre \"mfg\""
 
 #: par.c:442
 msgid "parameter \"i\" in \"mfg\" is out of range"
-msgstr "le paramètre \"i\" dans \"mfg\" est hors échelle"
+msgstr "le paramètre \"i\" dans \"mfg\" est hors intervalle"
 
 #: par.c:444
 msgid "parameter \"j\" in \"mfg\" is out of range"
-msgstr "le paramètre \"j\" dans \"mfg\" est hors échelle"
+msgstr "le paramètre \"j\" dans \"mfg\" est hors intervalle"
 
 #: par.c:449
 msgid "value of 'nr' in \"mfg\" is wrong and will be ignored"
@@ -148,7 +148,7 @@ msgstr "appel de par(new=TRUE) sans graphe"
 #: par.c:665 par.c:1063
 #, c-format
 msgid "graphical parameter \"%s\" is obsolete"
-msgstr "paramètre graphique \"%s\" incorrect"
+msgstr "paramètre graphique \"%s\" obsolète"
 
 #: par.c:669 par.c:1067
 #, c-format
@@ -157,7 +157,7 @@ msgstr "\"%s\" n'est pas un paramètre graphique"
 
 #: par.c:1120
 msgid "invalid argument passed to par()"
-msgstr "paramètre passé à par() invalide"
+msgstr "paramètre invalide passé à par()"
 
 #: par.c:1164
 #, c-format
@@ -180,7 +180,7 @@ msgstr "choix de couleur incorrect"
 
 #: plot.c:126
 msgid "only NA allowed in logical plotting symbol"
-msgstr "seul NA est permi dans les symboles logiques de graphes"
+msgstr "seul NA est permi dans les symboles logiques des graphes"
 
 #: plot.c:128
 msgid "invalid plotting symbol"
@@ -209,7 +209,7 @@ msgstr "valeur 'vfont' incorrecte [typeface = %d, fontindex = %d]"
 
 #: plot.c:391
 msgid "invalid graphics parameter"
-msgstr "paramètres de dessin incorrects"
+msgstr "paramètre de dessin incorrect"
 
 #: plot.c:473
 msgid "at least 3 arguments required"
@@ -272,7 +272,7 @@ msgstr "'%s' choisi de taille nulle"
 
 #: plot.c:862
 msgid "'gap.axis' must be of length one"
-msgstr "'gap.axis' doit être de longueur unitaire"
+msgstr "'gap.axis' doit avoire une longueur unitaire"
 
 #: plot.c:892
 msgid "'gap.axis' must be NA or a finite number"
@@ -323,7 +323,7 @@ msgstr "quatrième argument incorrect"
 
 #: plot.c:1628
 msgid "cannot mix zero-length and non-zero-length coordinates"
-msgstr "impossible de mélanger des coordonnées de longueur nulle avec des autres"
+msgstr "impossible de mélanger des coordonnées de longueur nulle avec des coordonnées de longueur non nulle"
 
 #: plot.c:1853
 msgid "Empty raster"
@@ -343,7 +343,7 @@ msgstr "choix incorrect de pointe de flêche"
 
 #: plot.c:2179
 msgid "no coordinates were supplied"
-msgstr "aucunes coordonnées spécifiées"
+msgstr "aucune coordonnée spécifiée"
 
 #: plot.c:2802
 msgid "invalid a=, b= specification"
@@ -455,7 +455,7 @@ msgstr "données 'boxplot' incorrectes (nécessite 5 colonnes)"
 
 #: plot.c:3892
 msgid "'boxplots[, 5]' outside [0,1] -- may look funny"
-msgstr "'boxplots[, 5]' en dehors de [0,1] -- peut paraitre bizarre"
+msgstr "'boxplots[, 5]' en dehors de [0,1] -- aspect étrange possible"
 
 #: plot.c:3894
 msgid "invalid 'boxplots[, 1:4]'"
@@ -538,7 +538,7 @@ msgstr "contour() : seglist longue / circulaire -- est-ce que %s > %d ?"
 
 #: plot3d.c:1935
 msgid "no 'levels'"
-msgstr "Pas de ‘levels'"
+msgstr "pas de 'levels'"
 
 #: plot3d.c:1939
 msgid "missing 'x' values"
@@ -559,11 +559,11 @@ msgstr "des valeurs croissantes sont attendues pour 'y'"
 #: plot3d.c:1953
 #, c-format
 msgid "non-finite level values: levels[%d] = %g"
-msgstr "Valeurs de niveaux non finis : levels[%d] = %g"
+msgstr "valeurs de niveaux non finies : levels[%d] = %g"
 
 #: plot3d.c:1966
 msgid "all z values are equal"
-msgstr "toutes les valeurs en z sont égales"
+msgstr "toutes les valeurs z sont égales"
 
 #: plot3d.c:1968
 msgid "all z values are NA"
@@ -579,16 +579,16 @@ msgstr "le vecteur long '%s' n'est pas supporté"
 #~ msgstr "le type de graphe '%s' sera tronqué au premier caractère"
 
 #~ msgid "relative range of values (%4.0f * EPS) is small (axis %d)"
-#~ msgstr "plage relative des valeurs (%4.0f * EPS) trop petite (axe %d)"
+#~ msgstr "la plage relative des valeurs (%4.0f * EPS) est trop petite (axe %d)"
 
 #~ msgid "invalid NA contour values"
 #~ msgstr "valeurs de contours NA incorrectes"
 
 #~ msgid "unable to allocate memory (in GPolygon)"
-#~ msgstr "impossible d'allouer de la mémoire (dans GPolygon)"
+#~ msgstr "impossible d'allouer la mémoire (dans GPolygon)"
 
 #~ msgid "invalid number of points in identify()"
-#~ msgstr "nombre de points incorrect dans identify()"
+#~ msgstr "nombre incorrect de points dans identify()"
 
 #~ msgid "Event GE_ScalePS requires a single numeric value"
 #~ msgstr "L'événement GE_ScalePS exige une valeur numérique unique"
@@ -597,10 +597,10 @@ msgstr "le vecteur long '%s' n'est pas supporté"
 #~ msgstr "'padj' de longueur nulle spécifié"
 
 #~ msgid "unable to allocate memory (in GPath)"
-#~ msgstr "impossible d'allouer de la mémoire (dans GPath)"
+#~ msgstr "impossible d'allouer la mémoire (dans GPath)"
 
 #~ msgid "invalid x or y (in GPath)"
-#~ msgstr "x ou y incorrect (dans GPath)"
+#~ msgstr "x ou y incorrects (dans GPath)"
 
 #~ msgid "zero length 'labels'"
 #~ msgstr "'labels' de taille nulle"
@@ -630,4 +630,4 @@ msgstr "le vecteur long '%s' n'est pas supporté"
 #~ msgstr "'font' fourni de taille nulle"
 
 #~ msgid "unable to allocate memory (in xspline)"
-#~ msgstr "impossible d'allouer de la mémoire (dans xspline)"
+#~ msgstr "impossible d'allouer la mémoire (dans xspline)"
