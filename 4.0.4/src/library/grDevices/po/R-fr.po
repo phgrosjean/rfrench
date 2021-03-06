@@ -310,7 +310,7 @@ msgid "'bandwidth' must be positive"
 msgstr "'bandwidth' doit être positif"
 
 msgid "Must have the ('Recommended') package \"KernSmooth\" installed"
-msgstr "Le package ('Recommended') \"KernSmooth\" doit être installé"
+msgstr "Le package ('recommandé') \"KernSmooth\" doit être installé"
 
 msgid "'r' must be a \"range\", hence of length 2"
 msgstr "'r' doit être un intervalle, donc être de longueur 2"
@@ -340,7 +340,7 @@ msgid "'file' is missing with no default"
 msgstr "'file' est manquant sans valeur par défaut"
 
 msgid "unrecognized format of gs -help"
-msgstr "format inconnu de gs - help "
+msgstr "format inconnu de gs -help "
 
 msgid "device '%s' is not available"
 msgstr "le périphérique '%s' n'est pas disponible"
@@ -404,7 +404,7 @@ msgid "invalid value for 'rescale'"
 msgstr "valeur incorrecte pour 'rescale'"
 
 msgid "Calls like '%s' are unsafe and should be replaced by '%s'"
-msgstr "Des appels comme '%s' ne sont pas sûrs et devraient être remplacés par '%s'"
+msgstr "Les appels comme '%s' ne sont pas sûrs et devraient être remplacés par '%s'"
 
 msgid "can only bring windows devices to the front"
 msgstr "seules les fenêtres des périphériques graphiques peuvent être amenées au premier plan"
@@ -413,10 +413,10 @@ msgid "'type' not applicable to the R console"
 msgstr "'type' ne s'applique pas à la console R"
 
 msgid "can only manipulate windows devices"
-msgstr "seuls les périphériques 'windows' peuvent être manipulés"
+msgstr "seuls les périphériques ayant une fenêtre peuvent être manipulés"
 
 msgid "can only copy from 'windows' devices"
-msgstr "il n'est possible de copier qu'à partir d'un périphérique 'windows'"
+msgstr "il n'est possible de copier qu'à partir d'un périphérique ayant une fenêtre"
 
 msgid "subscript out of range"
 msgstr "indice hors plage"
