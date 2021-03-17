@@ -22,13 +22,13 @@ msgid "invalid 'at' location in 'axis'"
 msgstr "position 'at' incorrecte dans 'axis'"
 
 msgid "invalid to specify axis labels when 'at' is NULL"
-msgstr "il n'est pas possible de spécifier les étiquettes des axes quand 'at' est NULL"
+msgstr "impossible de spécifier les étiquettes des axes quand 'at' est NULL"
 
 msgid "'labels' and 'at' locations must have same length"
 msgstr "'labels' et 'at' doivent être de même longueur"
 
 msgid "logical 'label' supplied of length 0"
-msgstr "la valeur logique 'label' est de longueur nulle"
+msgstr "longueur nulle de la valeur booléenne fournie pour 'label'"
 
 msgid "end points must not be identical"
 msgstr "les points extrêmes ne peuvent être identiques"
@@ -46,7 +46,7 @@ msgid "'arrow' must be an arrow object or NULL"
 msgstr "'arrow' doit être un objet 'arrow' ou NULL"
 
 msgid "how did we get here?"
-msgstr "comment en sommes-nous arrivés ici ?"
+msgstr "comment sommes-nous arrivés ici ?"
 
 msgid "must start new page if showing leaves separately"
 msgstr "il faut démarrer une nouvelle page pour afficher les feuilles séparément"
@@ -76,7 +76,7 @@ msgid "'row' can only be a range of existing rows"
 msgstr "'row' ne peut qu'être une plage de lignes existantes"
 
 msgid "invalid 'row' specification"
-msgstr "specification incorrecte de 'row'"
+msgstr "spécification incorrecte de 'row'"
 
 msgid "cannot specify more than one of 'side=[\"left\", \"right\"]', 'col', 'col.before', or 'col.after'"
 msgstr "il n'est pas possible de spécifier plus d'un 'side=[\"left\", \"right\"]', 'col', 'col.before', ou 'col.after'"
@@ -91,13 +91,13 @@ msgid "invalid 'f'"
 msgstr "'f' incorrect"
 
 msgid "'gpar' element '%s' must not be length 0"
-msgstr "l'élément '%s' de 'gpar' doit être de longueur unitaire"
+msgstr "l'élément '%s' de 'gpar' ne peut avoir une longueur nulle"
 
 msgid "mixture of missing and non-missing values for %s"
-msgstr "mélange de valeurs et de valeurs manquantes pour %s"
+msgstr "mélange de valeurs absentes et présentes pour %s"
 
 msgid "'gamma' 'gpar' element is defunct"
-msgstr "'gamma' 'gpar' n'existe plus"
+msgstr "l'élément 'gamma' 'gpar' n'existe plus"
 
 msgid "invalid 'linemitre' value"
 msgstr "valeur 'linemitre' incorrecte"
@@ -127,16 +127,16 @@ msgid "viewport overwritten (grab MAY not be faithful)"
 msgstr "vue superposée (il se peut que grab ne soit pas fidèle)"
 
 msgid "grob pushed viewports and did not pop/up them (grab MAY not be faithful)"
-msgstr "grob a switché la vue et ne l'a pas restaurée (il se peut que grab ne soit pas fidèle)"
+msgstr "grob a empilé les vues et ne les a pas restaurées (il se peut que grab ne soit pas fidèle)"
 
 msgid "only valid to push viewports"
-msgstr "les vues peuvent seulement être repoussées"
+msgstr "les vues peuvent seulement être poussées"
 
 msgid "must specify at least one viewport"
 msgstr "il faut sélectionner au moins une vue"
 
 msgid "Down viewport failed to record on display list"
-msgstr "Erruer lors de l'enregistrement de la zone active (down viewport) dans la liste d'affichage"
+msgstr "Erreur lors de l'enregistrement de la zone active (down viewport) dans la liste d'affichage"
 
 msgid "Down viewport incorrectly recorded on display list"
 msgstr "Zone active (down viewport) incorrecte insérée dans la liste d'affichage"
@@ -157,7 +157,7 @@ msgid "invalid modification of the display list"
 msgstr "modification incorrecte dans la liste d'affichage (display list)"
 
 msgid "'expr' must return a grob or gList"
-msgstr "'exp' doit retourner un objet 'grob' ou 'gList'"
+msgstr "'expr' doit retourner un objet 'grob' ou 'gList'"
 
 msgid "invalid 'grob' argument"
 msgstr "argument 'grob' incorrect"
@@ -178,13 +178,13 @@ msgid "unable to coerce to \"gList\""
 msgstr "impossible de convertir automatiquement vers un objet \"gList\""
 
 msgid "only 'grobs' allowed in \"gList\""
-msgstr "seuls des 'grob's sont permis dans \"gList\""
+msgstr "seuls les 'grob's sont permis dans \"gList\""
 
 msgid "invalid element to add to \"gList\""
 msgstr "élément incorrect à ajouter à \"gList\""
 
 msgid "can only set 'children' for a \"gTree\""
-msgstr "il est seulement possible de définir 'children' dans l'objet \"gTree\""
+msgstr "il n'est possible de définir 'children' que pour un objet \"gTree\""
 
 msgid "'children' must be a \"gList\""
 msgstr "'children' doit être une \"gList\""
@@ -229,7 +229,7 @@ msgid "'gPath' (%s) not found"
 msgstr "'gPath' (%s) introuvable"
 
 msgid "it is only valid to remove a child from a \"gTree\""
-msgstr "seule l'élimination d'un noeud enfant est autorisée dans un objet \"gTree\""
+msgstr "seule la suppression d'un noeud enfant est autorisée dans un objet \"gTree\""
 
 msgid "it is only valid to edit a child of a \"gTree\""
 msgstr "seule l'édition d'un noeud enfant est autorisée dans un objet \"gTree\""
@@ -259,7 +259,7 @@ msgid "Invalid revert target"
 msgstr "Cible incorrecte pour 'revert'"
 
 msgid "can only reorder 'children' for a \"gTree\""
-msgstr "il est seulement possible de définir 'children' dans  un objet \"gTree\""
+msgstr "il n'est possible que de réordonner 'children' dans  un objet \"gTree\""
 
 msgid "Invalid 'order'"
 msgstr "'order' incorrect"
@@ -295,7 +295,7 @@ msgid "invalid vertical justification"
 msgstr "justification verticale incorrecte"
 
 msgid "'respect' must be logical or an 'nrow' by 'ncol' matrix"
-msgstr "'respect' doit être une valeur logique ou une matrice 'nrow' par 'ncol'"
+msgstr "'respect' doit être un booléen ou une matrice 'nrow' par 'ncol'"
 
 msgid "invalid 'print' argument"
 msgstr "argument 'print' incorrect"
@@ -388,13 +388,13 @@ msgid "'x', 'y', 'width', and 'height' must all be units of length 1"
 msgstr "'x', 'y', 'width' et 'height' doivent tous être des unités de longueur 1"
 
 msgid "'x' and 'y' must all be units of length 1"
-msgstr "'x' et 'y' doivent tous les deux être de longueur unitaire"
+msgstr "'x' et 'y' doivent tous être de longueur unitaire"
 
 msgid "'r' must be a 'unit' object"
 msgstr "'r' doit être un objet 'unit'"
 
 msgid "'x', 'y', 'width', and 'height' must have length 1"
-msgstr "'x', 'y', 'width' et 'height' doivent tous de longueur 1"
+msgstr "'x', 'y', 'width' et 'height' doivent être de longueur 1"
 
 msgid "'x' and 'units' must have length > 0"
 msgstr "'x' et 'units' doivent avoir une longueur positive"
@@ -406,34 +406,34 @@ msgid "Not a unit object"
 msgstr "Ce n’est pas un objet 'unit'"
 
 msgid "'Summary' function '%s' not meaningful for units"
-msgstr "la function 'Summary' '%s' n'est pas applicable pour des unités"
+msgstr "la function 'Summary' '%s' n'est pas applicable aux unités"
 
 msgid "operator '%s' not meaningful for units"
-msgstr "l'opérateur '%s' est inapplicable aux unités"
+msgstr "l'opérateur '%s' n'est pas applicable aux unités"
 
 msgid "'*' or '/' cannot be used as a unary operator"
 msgstr "'*' ou '/' ne peuvent pas être utilisés comme opérateurs unaires"
 
 msgid "only one operand may be a unit"
-msgstr "seul un opérant peut être une unité"
+msgstr "un seul opérande peut être une unité"
 
 msgid "non-unit operand must be numeric"
-msgstr "les opérants qui ne sont pas des unités doivent être numériques"
+msgstr "les opérandes qui ne sont pas des unités doivent être numériques"
 
 msgid "can't divide with a unit"
 msgstr "impossible de diviser avec une unité"
 
 msgid "both operands must be units"
-msgstr "les deux opérands doivent être des unités"
+msgstr "les deux opérandes doivent être des unités"
 
 msgid "index out of bounds (\"unit\" subsetting)"
 msgstr "indice hors plage (indiçage d'unités)"
 
 msgid "Cannot create zero-length unit vector (\"unit\" subsetting)"
-msgstr "Impossible de créer un vecteur d’unité de longueur nulle (sous-ensemble d’\"unit\")"
+msgstr "Impossible de créer un vecteur unitaire de longueur nulle (sous-ensemble d’\"unit\")"
 
 msgid "index must be of length 1"
-msgstr "l’index doit être de longueur unitaire"
+msgstr "l'index doit être de longueur unitaire"
 
 msgid "replacement must be of length 1"
 msgstr "le remplacement doit être de longueur unitaire"
