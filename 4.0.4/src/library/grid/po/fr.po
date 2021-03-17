@@ -40,11 +40,11 @@ msgstr "Le masquage à l’aide d’un chemin de découpage ('clipping path') n�
 
 #: grid.c:916 grid.c:921 grid.c:1040 grid.c:1045
 msgid "cannot pop the top-level viewport ('grid' and 'graphics' output mixed?)"
-msgstr "impossible de rendre la vue de plus haut niveau active (sorties 'grid' et 'graphics' mixées ?)"
+msgstr "impossible d'activer la vue de plus haut niveau (sorties 'grid' et 'graphics' mixées ?)"
 
 #: grid.c:1246
 msgid "attempt to plot on null device"
-msgstr "tentative de dessin dans un périphérique 'null'"
+msgstr "tentative de dessiner dans un périphérique 'null'"
 
 #: grid.c:1693
 msgid "there is no layout defined"
@@ -52,11 +52,11 @@ msgstr "aucune mise en page définie"
 
 #: grid.c:1913
 msgid "polygon edge not found (zero-width or zero-height?)"
-msgstr "extrémité de polygone non trouvé (longueur ou largeur nulle?)"
+msgstr "arête de polygone non trouvée (longueur ou largeur nulle?)"
 
 #: grid.c:1922
 msgid "polygon edge not found"
-msgstr "extrémités de polygone non trouvés"
+msgstr "arête de polygone non trouvée"
 
 #: grid.c:2076
 msgid "require at least two points to draw arrow"
@@ -120,11 +120,11 @@ msgstr "Unité incorrecte"
 
 #: unit.c:1570
 msgid "'units' must be character"
-msgstr "les unités dans 'units' doivent être une chaîne de caractères"
+msgstr "les unités de 'units' doivent être une chaîne de caractères"
 
 #: unit.c:1573
 msgid "'units' must be of length > 0"
-msgstr "Les unités dans 'units' doivent être de longueur > 0"
+msgstr "les unités de 'units' doivent être de longueur > 0"
 
 #: unit.c:1584
 msgid "data must be either NULL, have length 1, or match the length of the final unit vector"
@@ -136,7 +136,7 @@ msgstr "pas de chaîne de caractères fournie pour l’unité 'strwidth/height'"
 
 #: unit.c:1600
 msgid "no 'grob' supplied for 'grobwidth/height' unit"
-msgstr "pas de 'grob' fourni pour 'grobwidth/height'"
+msgstr "pas de 'grob' fourni pour l'unité 'grobwidth/height'"
 
 #: unit.c:1618
 msgid "'gPath' must have depth 1 in 'grobwidth/height' units"
@@ -144,11 +144,11 @@ msgstr "'gPath' doit avoir une profondeur de 1 dans les unités 'grobwidth/heigh
 
 #: unit.c:1623
 msgid "non-NULL value supplied for plain unit"
-msgstr "valeur non nulle fournie pour l’unité"
+msgstr "valeur non nulle fournie pour l’unité simple"
 
 #: unit.c:1676 unit.c:1710 unit.c:1759
 msgid "old version of unit class is no longer allowed"
-msgstr "une vieille version de la classe unité n’est plus autorisée"
+msgstr "l'ancienne version de la classe unité n’est plus autorisée"
 
 #: unit.c:1682
 msgid "object is not coercible to a unit"
@@ -156,7 +156,7 @@ msgstr "l’object n’est pas convertible en une unité"
 
 #: unit.c:1708
 msgid "object is not a unit"
-msgstr "l’object n’est pas une unité"
+msgstr "l'object n'est pas une unité"
 
 #: unit.c:1840
 msgid "units can only be multiplied with numerics and integers"
