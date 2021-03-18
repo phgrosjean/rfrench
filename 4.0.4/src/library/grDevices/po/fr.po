@@ -26,46 +26,46 @@ msgstr "'%s' doit être numérique et de longueur %d"
 #: colors.c:69
 #, c-format
 msgid "color intensity %s, not in [0,1]"
-msgstr "l'intensité de couleur %s, hors intervalle [0,1]"
+msgstr "intensité de couleur %s, hors intervalle [0,1]"
 
 #: colors.c:71
 #, c-format
 msgid "color intensity %g, not in [0,1]"
-msgstr "l'intensité de couleur %g, hors intervalle [0,1]"
+msgstr "intensité de couleur %g, hors intervalle [0,1]"
 
 #: colors.c:78
 #, c-format
 msgid "color intensity %s, not in 0:255"
-msgstr "l'intensité de couleur %s, hors intervalle 0:255"
+msgstr "intensité de couleur %s, hors intervalle 0:255"
 
 #: colors.c:80
 #, c-format
 msgid "color intensity %d, not in 0:255"
-msgstr "l'intensité de couleur %d, hors intervalle 0:255"
+msgstr "intensité de couleur %d, hors intervalle 0:255"
 
 #: colors.c:87
 #, c-format
 msgid "alpha level %s, not in [0,1]"
-msgstr "valeur de transparence alpha %s, hors intervalle [0,1]"
+msgstr "niveau de transparence alpha %s, hors intervalle [0,1]"
 
 #: colors.c:89
 #, c-format
 msgid "alpha level %g, not in [0,1]"
-msgstr "valeur de transparence alpha %g, hors intervalle [0,1]"
+msgstr "niveau de transparence alpha %g, hors intervalle [0,1]"
 
 #: colors.c:96
 #, c-format
 msgid "alpha level %s, not in 0:255"
-msgstr "valeur de transparence alpha %s, hors intervalle 0:255"
+msgstr "niveau de transparence alpha %s, hors intervalle 0:255"
 
 #: colors.c:98
 #, c-format
 msgid "alpha level %d, not in 0:255"
-msgstr "valeur de transparence alpha %d, hors intervalle 0:255"
+msgstr "niveau de transparence alpha %d, hors intervalle 0:255"
 
 #: colors.c:113
 msgid "inputs must be finite"
-msgstr "les entrées doivent ne peuvent être infinies"
+msgstr "les entrées ne peuvent pas être infinies"
 
 #: colors.c:128
 msgid "bad hsv to rgb color conversion"
@@ -98,7 +98,7 @@ msgstr "valeur '%s' incorrecte"
 
 #: colors.c:1337
 msgid "invalid hex digit in 'color' or 'lty'"
-msgstr "nombre hexadécimal incorrect dans 'color' ou 'lty'"
+msgstr "chiffre hexadécimal incorrect dans 'color' ou 'lty'"
 
 #: colors.c:1347 colors.c:1357
 msgid "invalid RGB specification"
@@ -107,7 +107,7 @@ msgstr "spécification RGB incorrecte"
 #: colors.c:1390
 #, c-format
 msgid "invalid color name '%s'"
-msgstr "nom de couleur '%s' incorrecte"
+msgstr "nom de couleur '%s' incorrect"
 
 #: colors.c:1440 colors.c:1449
 #, c-format
@@ -125,7 +125,7 @@ msgstr "les valeurs numériques des couleurs doivent être >= 0, valeurs %d renc
 
 #: colors.c:1492
 msgid "invalid argument type"
-msgstr "type de l'argument incorrect"
+msgstr "type incorrect d'argument"
 
 #: colors.c:1503
 msgid "unknown palette (need >= 2 colors)"
@@ -139,7 +139,7 @@ msgstr "le nombre maximum de couleurs est %d"
 #: devPS.c:562
 #, c-format
 msgid "afm file '%s' could not be opened"
-msgstr "le fichier metafile '%s' ne peut être créé"
+msgstr "le fichier afm '%s' ne peut être ouvert"
 
 #: devPS.c:630
 msgid "unknown AFM entity encountered"
@@ -149,7 +149,7 @@ msgstr "entité AFM inconnue rencontrée"
 #: devPicTeX.c:479
 #, c-format
 msgid "invalid string in '%s'"
-msgstr "argument chaîne de caractère incorrect dans '%s'"
+msgstr "chaîne de caractères incorrecte dans '%s'"
 
 #: devPS.c:780
 #, c-format
@@ -164,21 +164,21 @@ msgstr "encodage inconnu '%s' dans 'PostScriptMetricInfo'"
 #: devPS.c:854 devPS.c:865
 #, c-format
 msgid "font metrics unknown for Unicode character U+%04x"
-msgstr "taille de police inconnue pour le caractère Unicode U+%04x"
+msgstr "taille inconnue de police pour le caractère Unicode U+%04x"
 
 #: devPS.c:873
 #, c-format
 msgid "font metrics unknown for character 0x%x"
-msgstr "taille de police inconnue pour le caractère 0x%x"
+msgstr "taille inconnue de police pour le caractère 0x%x"
 
 #: devPS.c:887
 #, c-format
 msgid "invalid character (%04x) sent to 'PostScriptCIDMetricInfo' in a single-byte locale"
-msgstr "chaîne de caractères incorrecte (%04x) envoyée à 'PostScriptCIDMetricInfo' dans une version localisée simple-octet"
+msgstr "caractère incorrect (%04x) envoyé à 'PostScriptCIDMetricInfo' dans une version localisée à un octet"
 
 #: devPS.c:895
 msgid "invalid character sent to 'PostScriptCIDMetricInfo' in a single-byte locale"
-msgstr "chaîne de caractères incorrecte envoyée à 'PostScriptCIDMetricInfo' dans une version localisée simple-octet"
+msgstr "caractère incorrect envoyé à 'PostScriptCIDMetricInfo' dans une version localisée à un octet"
 
 #: devPS.c:1007
 msgid "failed to allocate CID font info"
@@ -202,7 +202,7 @@ msgstr "échec d'allocation de la famille de police de Type 1"
 
 #: devPS.c:1113 devPS.c:1124
 msgid "failed to allocate font list"
-msgstr "échec d'allocation de la liste de polices"
+msgstr "échec d'allocation de la liste des polices"
 
 #: devPS.c:1175
 msgid "failed to allocated encoding list"
@@ -210,7 +210,7 @@ msgstr "échec d'allocation de la liste d'encodage"
 
 #: devPS.c:1324
 msgid "truncated string which was too long for copy"
-msgstr "chaîne de caractères tronquée car trop longue pour copie"
+msgstr "chaîne de caractères tronquée car trop longue pour la copie"
 
 #: devPS.c:1364
 #, c-format
@@ -224,12 +224,12 @@ msgstr "nom de police incorrect ou plus d'un nom de police"
 #: devPS.c:1617 devPS.c:1652
 #, c-format
 msgid "font family '%s' not found in PostScript font database"
-msgstr "famille de police '%s' introuvable dans la base de données de polices PostScript"
+msgstr "famille de police '%s' introuvable dans la base de données des polices PostScript"
 
 #: devPS.c:1736 devPS.c:1818 devPS.c:1845
 #, c-format
 msgid "font encoding for family '%s' not found in font database"
-msgstr "encodage de police '%s' introuvable dans la base de données de polices"
+msgstr "encodage de la police pour la famille '%s' non trouvé dans la base de données des polices"
 
 #: devPS.c:1763 devPS.c:1790
 #, c-format
@@ -255,7 +255,7 @@ msgstr "l’objet '.ps.prolog' n'est pas un vecteur de mode caractère"
 
 #: devPS.c:2678 devPS.c:7547 devWindows.c:807
 msgid "invalid line end"
-msgstr "extrémité de ligne incorrecte"
+msgstr "fin de ligne incorrecte"
 
 #: devPS.c:2697 devPS.c:7567 devWindows.c:820
 msgid "invalid line join"
@@ -297,7 +297,7 @@ msgstr "spécification de police incorrecte"
 
 #: devPS.c:3245
 msgid "failed to initialise default PostScript font"
-msgstr "échec d'initialisation des polices PostScript par défaut"
+msgstr "échec d'initialisation de la police PostScript par défaut"
 
 #: devPS.c:3311
 msgid "failed to initialise additional PostScript fonts"
@@ -305,7 +305,7 @@ msgstr "échec d'initialisation des polices PostScript supplémentaires"
 
 #: devPS.c:3327
 msgid "invalid foreground/background color (postscript)"
-msgstr "couleurs de premier/arrière plans incorrectes (postscript)"
+msgstr "couleur d'avant/arrière plan incorrecte (postscript)"
 
 #: devPS.c:3332
 msgid "'command' is too long"
@@ -322,12 +322,12 @@ msgstr "type de page incorrect '%s' (postscript)"
 
 #: devPS.c:3510 devPS.c:4648 devWindows.c:2356
 msgid "semi-transparency is not supported on this device: reported only once per page"
-msgstr "la semi-transparence n'est pas supportée sur ce périphérique : reporté seulement une fois par page"
+msgstr "la semi-transparence n'est pas supportée par ce périphérique : reporté seulement une fois par page"
 
 #: devPS.c:3621 devPS.c:3632
 #, c-format
 msgid "cannot open 'postscript' pipe to '%s'"
-msgstr "impossible d'ouvrir une conduite 'postscript' vers '%s'"
+msgstr "impossible d'ouvrir le chaînage 'postscript' vers '%s'"
 
 #: devPS.c:3643 devPS.c:5067 devPS.c:5080 devPS.c:8270 qdPDF.c:98
 #, c-format
@@ -340,7 +340,7 @@ msgid ""
 "error from postscript() in running:\n"
 "    %s"
 msgstr ""
-"erreur de la part de postscript() en exécutant :\n"
+"erreur dans postscript() en exécutant :\n"
 "    %s"
 
 #: devPS.c:3818
@@ -361,17 +361,17 @@ msgstr "encodage inconnu '%s' dans 'mbcsToSbcs'"
 #: devPS.c:4370
 #, c-format
 msgid "conversion failure on '%s' in 'mbcsToSbcs': dot substituted for <%02x>"
-msgstr "erreur de conversion de '%s' dans 'mbcsToSbcs' : le point est substitué pour <%02x>"
+msgstr "erreur de conversion de '%s' dans 'mbcsToSbcs' : le point est substitué par <%02x>"
 
 #: devPS.c:4448
 #, c-format
 msgid "failed open converter to encoding '%s'"
-msgstr "erreur d'ouverture du convertisseur vers l'encodage '%s'"
+msgstr "erreur d'ouverture du convertisseur pour l'encodage '%s'"
 
 #: devPS.c:4466 devPS.c:5394 devPS.c:9231
 #, c-format
 msgid "failed in text conversion to encoding '%s'"
-msgstr "erreur dans la conversion du texte vers l'encodage '%s'"
+msgstr "erreur dans la conversion du texte pour l'encodage '%s'"
 
 #: devPS.c:4662
 msgid "ran out of colors in xfig()"
@@ -380,7 +380,7 @@ msgstr "trop de couleurs pour xfig()"
 #: devPS.c:4691
 #, c-format
 msgid "unimplemented line texture %08x: using Dash-double-dotted"
-msgstr "texture de lignes non implémentée %08x : utilise 'Dash-double-dotted'"
+msgstr "texture de ligne non implémentée %08x : 'Dash-double-dotted' est utilisé"
 
 #: devPS.c:4763
 #, c-format
@@ -389,7 +389,7 @@ msgstr "famille de police postscript '%s' inconnue, utilisation d'Helvetica"
 
 #: devPS.c:4835
 msgid "invalid foreground/background color (xfig)"
-msgstr "couleurs de premier/arrière plans incorrectes (xfig)"
+msgstr "couleur d'avant/arrière plan incorrecte (xfig)"
 
 #: devPS.c:4868
 msgid "only Type 1 fonts supported for XFig"
@@ -397,7 +397,7 @@ msgstr "seules les fontes Type 1 sont supportées pour XFig"
 
 #: devPS.c:4881
 msgid "failed to initialise default XFig font"
-msgstr "échec d'initialisation des polices XFig par défaut"
+msgstr "échec d'initialisation de la police XFig par défaut"
 
 #: devPS.c:4918
 #, c-format
@@ -415,7 +415,7 @@ msgstr "nom de fichier vide"
 
 #: devPS.c:5126 devPS.c:5178 devPS.c:6757 devPS.c:6801 devPS.c:8331
 msgid "write failed"
-msgstr "écriture non exécutée"
+msgstr "échec d'écriture"
 
 #: devPS.c:5383
 #, c-format
@@ -424,7 +424,7 @@ msgstr "impossible d'utiliser l'encodage '%s'"
 
 #: devPS.c:5706
 msgid "failed to increase definition string (shut down PDF device)"
-msgstr "impossible d'accroître la chaîne de caractère de définition (fermez le périphérique pdf)"
+msgstr "impossible d'accroître la chaîne de caractères de définition (fermez le périphérique pdf)"
 
 #: devPS.c:5748
 msgid "failed to increase 'maxDefns'"
@@ -456,7 +456,7 @@ msgstr "échec de chargement du fichier d'encodage par défaut"
 
 #: devPS.c:7086
 msgid "failed to initialise default PDF font"
-msgstr "échec d'initialisation des polices PDF par défaut"
+msgstr "échec d'initialisation de la police PDF par défaut"
 
 #: devPS.c:7141
 msgid "failed to initialise additional PDF fonts"
@@ -464,15 +464,15 @@ msgstr "échec d'initialisation des polices PDF supplémentaires"
 
 #: devPS.c:7154
 msgid "failed to allocate rasters"
-msgstr "échec d'allocation d'images en mode pixel"
+msgstr "échec d'allocation des images en mode pixel"
 
 #: devPS.c:7161
 msgid "failed to allocate masks"
-msgstr "échec d'allocation pour des masques"
+msgstr "échec d'allocation des masques"
 
 #: devPS.c:7170
 msgid "failed to allocate definitions"
-msgstr "échec d'allocation de définitions"
+msgstr "échec d'allocation des définitions"
 
 #: devPS.c:7239
 #, c-format
@@ -481,7 +481,7 @@ msgstr "type de papier '%s' incorrect (pdf)"
 
 #: devPS.c:7263
 msgid "invalid foreground/background color (pdf)"
-msgstr "couleurs de premier/arrière plans incorrectes (pdf)"
+msgstr "couleur d'avant/arrière plan incorrecte (pdf)"
 
 #: devPS.c:7371
 msgid "invalid 'alpha' value in PDF"
@@ -493,15 +493,15 @@ msgstr "la version du PDF est augmentée à 1.4"
 
 #: devPS.c:7440 devPS.c:7488
 msgid "unknown 'colormodel', using 'srgb'"
-msgstr "'colormodel' inconnu, utilisation de 'rgb'"
+msgstr "'colormodel' inconnu, utilisation de 'srgb'"
 
 #: devPS.c:7733
 msgid "failed to load sRGB colorspace file"
-msgstr "échec de chargement de l'espace de couleur sRGB"
+msgstr "échec de chargement du fichier de l'espace de couleur sRGB"
 
 #: devPS.c:8040
 msgid "corrupt encodings in PDF device"
-msgstr "encodage corrompus dans le périphérique PDF"
+msgstr "encodages corrompus dans le périphérique PDF"
 
 #: devPS.c:8121
 msgid "increasing the PDF version to 1.3"
@@ -510,7 +510,7 @@ msgstr "la version du PDF est augmentée à 1.3"
 #: devPS.c:8254
 #, c-format
 msgid "cannot open 'pdf' pipe to '%s'"
-msgstr "impossible d'ouvrir une conduite 'pdf' vers '%s'"
+msgstr "impossible d'ouvrir le chaînage 'pdf' vers '%s'"
 
 #: devPS.c:8260
 msgid "file = \"|cmd\" implies 'onefile = TRUE'"
@@ -528,7 +528,7 @@ msgstr ""
 #: devPS.c:8424
 #, c-format
 msgid "Cannot open temporary file '%s' for compression (reason: %s); compression has been turned off for this device"
-msgstr "Impossible d’ouvrir le fichier temporaire de compression '%s' (raison : %s) ; La compression a été désactivée pour ce périphérique"
+msgstr "Impossible d’ouvrir le fichier temporaire de compression '%s' (raison : %s) ; la compression a été désactivée pour ce périphérique"
 
 #: devPS.c:9001 devPS.c:9363 devPS.c:9410
 msgid "failed to find or load PDF font"
@@ -567,7 +567,7 @@ msgstr "la police de caractères \"%s\" est introuvable pour la famille \"%s\""
 
 #: devQuartz.c:683
 msgid "font family name is too long"
-msgstr "nom de famille pour la police de caractères trop long"
+msgstr "nom de famille trop long pour la police de caractères"
 
 #: devQuartz.c:723
 #, c-format
@@ -609,7 +609,7 @@ msgstr "'%%' n'est pas autorisé dans le nom du fichier"
 
 #: devWindows.c:627
 msgid "invalid font specification"
-msgstr "spécification de police incorrecte"
+msgstr "spécification incorrecte de police"
 
 #: devWindows.c:666
 msgid "font family not found in Windows font database"
@@ -641,28 +641,28 @@ msgstr "impossible d'allouer un bitmap"
 #: devWindows.c:1846 devWindows.c:1876 devWindows.c:2196
 #, c-format
 msgid "unable to open file '%s' for writing"
-msgstr "impossible d'ouvrir le fichier '%s' pour écriture"
+msgstr "impossible d'ouvrir le fichier '%s' en écriture"
 
 #: devWindows.c:1859
 msgid "filename too long in jpeg() call"
-msgstr "nom de fichier trop long dans l'appel à jpeg()"
+msgstr "nom de fichier trop long dans l'appel de jpeg()"
 
 #: devWindows.c:1889
 msgid "filename too long in tiff() call"
-msgstr "nom de fichier trop long dans l'appel tiff()"
+msgstr "nom de fichier trop long dans l'appel de tiff()"
 
 #: devWindows.c:1921
 msgid "filename too long in win.metafile() call"
-msgstr "nom de fichier trop long dans l'appel à win.metafile()"
+msgstr "nom de fichier trop long dans l'appel de win.metafile()"
 
 #: devWindows.c:1931
 #, c-format
 msgid "unable to open metafile '%s' for writing"
-msgstr "impossible d'ouvrir le fichier metafile '%s' pour écriture"
+msgstr "impossible d'ouvrir le métafichier '%s' en écriture"
 
 #: devWindows.c:1933
 msgid "unable to open clipboard to write metafile"
-msgstr "impossible d'ouvrir le presse-papier pour écrire les données metafile"
+msgstr "impossible d'ouvrir le presse-papier pour écrire les données de métafichier"
 
 #: devWindows.c:2144
 msgid "Insufficient memory for resize. Killing device"
@@ -674,12 +674,12 @@ msgstr "Mémoire insuffisante pour modifier la taille. L'\"alpha blending\" est 
 
 #: devWindows.c:2181
 msgid "a clipboard metafile can store only one figure."
-msgstr "un presse-papier metafile ne peut stocker qu'une seule figure."
+msgstr "un métafichier du presse-papier ne peut stocker qu'une seule figure."
 
 #: devWindows.c:2187
 #, c-format
 msgid "metafile '%s' could not be created"
-msgstr "le fichier metafile '%s' ne peut être créé"
+msgstr "le métafichier '%s' ne peut être créé"
 
 #: devWindows.c:3127 devWindows.c:3802
 msgid "R Graphics"
@@ -691,7 +691,7 @@ msgstr "tentative d'utilisation du localisateur (locator) après dev.hold()"
 
 #: devWindows.c:3172
 msgid "graphics device closed during call to locator or identify"
-msgstr "périphérique graphique fermé pendant l’appel de locator() ou d’identify()"
+msgstr "périphérique graphique fermé pendant l'appel de locator() ou d'identify()"
 
 #: devWindows.c:3438
 msgid "option 'windowsTimeouts' should be integer"
@@ -711,7 +711,7 @@ msgstr "argument nom de fichier incorrect dans 'savePlot'"
 
 #: devWindows.c:3470
 msgid "invalid type argument in 'savePlot'"
-msgstr "type d'argument incorrect dans 'savePlot'"
+msgstr "type incorrect d'argument dans 'savePlot'"
 
 #: devWindows.c:3497
 msgid "unknown type in savePlot"
@@ -720,7 +720,7 @@ msgstr "type inconnu dans savePlot"
 #: devWindows.c:3542 devWindows.c:3574 devWindows.c:3602 devWindows.c:3633
 #: devWindows.c:3654
 msgid "processing of the plot ran out of memory"
-msgstr "la réalisation du graphe manque de mémoire"
+msgstr "débordement mémoire pendant la réalisation du graphe"
 
 #: devWindows.c:3618
 msgid "Impossible to open "
@@ -740,7 +740,7 @@ msgstr "argument incorrect"
 
 #: devices.c:89 devices.c:97 devices.c:105
 msgid "NA argument is invalid"
-msgstr "un arguments NA est incorrect"
+msgstr "argument NA non autorisé"
 
 #: qdBitmap.c:79
 #, c-format
@@ -749,7 +749,7 @@ msgstr "QuartzBitmap_Output - impossible d'ouvrir le fichier '%s'"
 
 #: qdBitmap.c:94
 msgid "not a supported scheme, no image data written"
-msgstr "le schéma n'est pas supporté, aucune donnée d'image n'est écrite"
+msgstr "schéma non supporté, aucune donnée d'image n'est écrite"
 
 #: stubs.c:104
 #, c-format
@@ -778,7 +778,7 @@ msgstr "argument '%s' incorrect"
 #~ msgstr "CharInfo ne peut être analysé"
 
 #~ msgid "unable to start NULL device"
-#~ msgstr "impossible de démarrer le périphérique NULL"
+#~ msgstr "impossible de démarrer un périphérique NULL"
 
 #~ msgid "printing via file = \"\" is not implemented in this version"
 #~ msgstr "imprimer via file = \"\" n'est pas implémenté dans cette version"
@@ -787,10 +787,10 @@ msgstr "argument '%s' incorrect"
 #~ msgstr "file = \"|cmd\" n'est pas implémenté dans cette version"
 
 #~ msgid "%s not available for this device"
-#~ msgstr "%s n'est pas disponible pour ce périphérique graphique"
+#~ msgstr "%s n'est pas disponible pour ce périphérique"
 
 #~ msgid "%s not yet implemented for this device"
-#~ msgstr "%s n'est pas implémenté pour ce périphérique graphique"
+#~ msgstr "%s n'est pas encore implémenté pour ce périphérique"
 
 #~ msgid "Too many raster images"
 #~ msgstr "Trop d'images en mode pixel"
@@ -805,7 +805,7 @@ msgstr "argument '%s' incorrect"
 #~ msgstr "paramètre 'maxRasters' incorrect dans %s"
 
 #~ msgid "only gray colors are allowed in this color model"
-#~ msgstr "seuls des niveaux de gris sont autorisés dans le modèle de couleur"
+#~ msgstr "seuls des niveaux de gris sont autorisés dans ce modèle de couleur"
 
 #~ msgid "cannot open 'postscript' file argument '%s'"
 #~ msgstr "impossible d'ouvrir le fichier en argument de 'postscript' '%s'"

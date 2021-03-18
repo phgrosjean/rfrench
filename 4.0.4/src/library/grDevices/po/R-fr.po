@@ -52,7 +52,7 @@ msgid "'bias' must be positive"
 msgstr "'bias' doit être positif"
 
 msgid "'alpha' must be false if 'space' is specified"
-msgstr "'alpha' doit être faux si 'space' est fourni"
+msgstr "'alpha' doit être à false si 'space' est fourni"
 
 msgid "at least 3 columns needed"
 msgstr "il faut au moins 3 colonnes"
@@ -97,13 +97,13 @@ msgid "'to' must be a \"colorConverter\" object or a string"
 msgstr "'to' doit être un objet \"colorConverter\" ou une chaîne de caractères"
 
 msgid "'from.ref.white' disagrees with definition of %s"
-msgstr "'from.ref.white' en désaccord avec la définition de %s"
+msgstr "'from.ref.white' ne correspond pas à la définition de %s"
 
 msgid "'to.ref.white' disagrees with definition of %s"
-msgstr "'to.ref.white' en désaccord avec la définition de %s"
+msgstr "'to.ref.white' ne correspond pas à la définition de %s"
 
 msgid "color spaces use different reference whites"
-msgstr "les espaces de couleurs utilisent différents blancs de référence"
+msgstr "les espaces de couleurs utilisent différentes références de blanc"
 
 msgid "'name' must be a character vector"
 msgstr "'name' doit être un vecteur de type chaîne de caractère"
@@ -115,13 +115,13 @@ msgid "cannot supply 'which' and 'device' at the same time"
 msgstr "fixer 'which' et 'device' en même temps n'est pas autorisé"
 
 msgid "cannot copy from the null device"
-msgstr "impossible de copier du périphérique null"
+msgstr "impossible de copier à partir du périphérique null"
 
 msgid "cannot copy to the null device"
 msgstr "impossible de copier vers le périphérique null"
 
 msgid "cannot copy device to itself"
-msgstr "impossible de copier le périphérique vers lui-même"
+msgstr "impossible de copier du périphérique vers lui-même"
 
 msgid "'device' should be a function"
 msgstr "'device' doit être une fonction"
@@ -133,7 +133,7 @@ msgid "can only print from a screen device"
 msgstr "seul un périphérique écran peut être imprimé"
 
 msgid "need to specify one of 'width' and 'height'"
-msgstr "il faut spécifier 'width' ou 'height'"
+msgstr "il faut spécifier soit 'width' ou 'height'"
 
 msgid "dev.control() called without an open graphics device"
 msgstr "dev.control() appelé sans périphérique graphique ouvert"
@@ -145,28 +145,28 @@ msgid "dev.displaylist() called without an open graphics device"
 msgstr "dev.displaylist() appelé sans périphérique graphique ouvert"
 
 msgid "invalid setting for 'getOption(\"device\")'"
-msgstr "paramètres incorrects por 'getOption(\"device\")'"
+msgstr "paramètres incorrects pour 'getOption(\"device\")'"
 
 msgid "device '%s' not found"
 msgstr "le périphérique '%s' est introuvable"
 
 msgid "no suitable unused file name for pdf()"
-msgstr "pas de nom de fichier utilisable pour pdf()"
+msgstr "pas de nom de fichier disponible pour pdf()"
 
 msgid "dev.new(): using pdf(file=\"%s\")"
 msgstr "deV.new() : utilisation de pdf(file=\"%s\")"
 
 msgid "no suitable unused file name for postscript()"
-msgstr "pas de nom de fichier utilisable disponible pour postscript()"
+msgstr "pas de nom de fichier disponible pour postscript()"
 
 msgid "dev.new(): using postscript(file=\"%s\")"
 msgstr "dev.new() : utilisation de postscript(file=\"%s\")"
 
 msgid "wrong 'type'; should never happen, please report!"
-msgstr "'type' incorrect ; Cela ne devrait pas se produire, veuillez reporter l’erreur, s’il-vous-plait !"
+msgstr "'type' incorrect ; cela ne devrait pas se produire, veuillez reporter l’erreur, s’il vous plait !"
 
 msgid "Invalid pattern type"
-msgstr "Type de pattern incorrect"
+msgstr "Type de motif incorrect"
 
 msgid "Invalid 'extend' value"
 msgstr "Valeur de 'extend' incorrecte"
@@ -211,25 +211,25 @@ msgid "invalid family name in font specification"
 msgstr "nom de famille incorrect dans la spécification de la police"
 
 msgid "invalid metric information in font specification"
-msgstr "information de métrique incorrecte dans la spécification de police"
+msgstr "information de métrique incorrecte dans la spécification de la police"
 
 msgid "invalid encoding in font specification"
-msgstr "encodage incorrect dans la spécification de police"
+msgstr "encodage incorrect dans la spécification de la police"
 
 msgid "Not a CID font"
 msgstr "Ce n'est pas une police CID"
 
 msgid "invalid CMap name in font specification"
-msgstr "nom CMap incorrect dans la spécification de police"
+msgstr "nom CMap incorrect dans la spécification de la police"
 
 msgid "invalid 'cmapEncoding' in font specification"
-msgstr "'cmapEncoding' incorrect dans la spécification de police"
+msgstr "'cmapEncoding' incorrect dans la spécification de la police"
 
 msgid "invalid PDF resource in font specification"
-msgstr "ressource PDF incorrecte dans la spécification de police"
+msgstr "ressource PDF incorrecte dans la spécification de la police"
 
 msgid "Invalid font database name"
-msgstr "Nom de base de données de polices incorrect"
+msgstr "Nom de base de données des polices incorrect"
 
 msgid "font %s already in use"
 msgstr "police %s déjà utilisée"
@@ -244,7 +244,7 @@ msgid "font encoding mismatch '%s'/'%s'"
 msgstr "incohérence d'encodage pour la police '%s/%s'"
 
 msgid "'file' must be a non-empty character string"
-msgstr "'file' doit être une chaîne de caractère non vide"
+msgstr "'file' doit être une chaîne de caractères non vide"
 
 msgid "GhostScript was not found"
 msgstr "GhostScript est introuvable"
@@ -280,7 +280,7 @@ msgid "invalid raster subassignment"
 msgstr "sous-assignement d'image en mode point incorrect"
 
 msgid "operator not meaningful for raster objects"
-msgstr "opérateur incohérent pour des objets de type 'raster'"
+msgstr "opérateur incohérent pour les objets de type 'raster'"
 
 msgid "no current device to record from"
 msgstr "aucun périphérique à partir duquel enregistrer"
@@ -292,10 +292,10 @@ msgid "invalid \"recordedplot\":"
 msgstr "\"recordedplot\" illisible :"
 
 msgid "snapshot recorded in different R version (pre 3.3.0)"
-msgstr "chargement d'un instantané graphique à partir d'une version différente de R (pré 3.3.0)"
+msgstr "instantané graphique généré à partir d'une version différente de R (pré 3.3.0)"
 
 msgid "snapshot recorded in different R version (%s)"
-msgstr "chargement d'un instantané graphique à partir d'une version différente de R (%s)"
+msgstr "instantané graphique généré à partir d'une version différente de R (%s)"
 
 msgid "snapshot contains invalid graphics call"
 msgstr "appel de l’API graphique incorrect dans l’instantané graphique"
@@ -310,10 +310,10 @@ msgid "'bandwidth' must be positive"
 msgstr "'bandwidth' doit être positif"
 
 msgid "Must have the ('Recommended') package \"KernSmooth\" installed"
-msgstr "Le package ('Recommended') \"KernSmooth\" doit être installé"
+msgstr "Le package ('recommandé') \"KernSmooth\" doit être installé"
 
 msgid "'r' must be a \"range\", hence of length 2"
-msgstr "'r' doit indiquer une étendue des valeurs, donc être de longueur 2"
+msgstr "'r' doit être un intervalle, donc être de longueur 2"
 
 msgid "invalid first argument"
 msgstr "premier argument incorrect"
@@ -340,7 +340,7 @@ msgid "'file' is missing with no default"
 msgstr "'file' est manquant sans valeur par défaut"
 
 msgid "unrecognized format of gs -help"
-msgstr "format de gs - help inconnu"
+msgstr "format inconnu de gs -help "
 
 msgid "device '%s' is not available"
 msgstr "le périphérique '%s' n'est pas disponible"
@@ -404,7 +404,7 @@ msgid "invalid value for 'rescale'"
 msgstr "valeur incorrecte pour 'rescale'"
 
 msgid "Calls like '%s' are unsafe and should be replaced by '%s'"
-msgstr "Des appels comme '%s' ne sont pas sûrs et devraient être remplacés par '%s'"
+msgstr "Les appels comme '%s' ne sont pas sûrs et devraient être remplacés par '%s'"
 
 msgid "can only bring windows devices to the front"
 msgstr "seules les fenêtres des périphériques graphiques peuvent être amenées au premier plan"
@@ -413,10 +413,10 @@ msgid "'type' not applicable to the R console"
 msgstr "'type' ne s'applique pas à la console R"
 
 msgid "can only manipulate windows devices"
-msgstr "seuls les périphériques 'windows' peuvent être manipulés"
+msgstr "seuls les périphériques ayant une fenêtre peuvent être manipulés"
 
 msgid "can only copy from 'windows' devices"
-msgstr "il n'est possible de copier qu'à partir d'un périphérique 'windows'"
+msgstr "il n'est possible de copier qu'à partir d'un périphérique ayant une fenêtre"
 
 msgid "subscript out of range"
 msgstr "indice hors plage"
