@@ -20,7 +20,7 @@ msgstr ""
 
 #: class_support.c:29
 msgid "calling the C routine used as an initializer for 'externalptr' objects"
-msgstr "appel de la routine C utilisï¿½e comme initialisation pour des objets 'externalptr'"
+msgstr "appel de la routine C utilisï¿½e pour initialiser les objets 'externalptr'"
 
 #: do_substitute_direct.c:41
 msgid "invalid list for substitution"
@@ -37,12 +37,12 @@ msgstr "le message de condition doit ï¿½tre de longueur unitaire"
 
 #: methods_list_dispatch.c:213
 msgid "could not find the skeleton calls for 'methods' (package detached?): expect very bad things to happen"
-msgstr "impossible de trouver le squelette des appels pour 'methods' (package dï¿½tachï¿½ ?) : attendez-vous ï¿½ ce que des erreurs graves se produisent"
+msgstr "impossible de trouver le squelette des appels pour 'methods' (package dï¿½tachï¿½ ?) : des erreurs graves peuvent survenir"
 
 #: methods_list_dispatch.c:279
 #, c-format
 msgid "no \"allMethods\" slot found in object of class \"%s\" used as methods list for function '%s'"
-msgstr "pas de \"allMethods\" slot trouvï¿½ dans l'objet de classe \"%s\" utilisï¿½ comme liste de mï¿½thodes pour la fonction '%s'"
+msgstr "pas de slot \"allMethods\" trouvï¿½ dans l'objet de classe \"%s\" utilisï¿½ comme liste de mï¿½thodes pour la fonction '%s'"
 
 #: methods_list_dispatch.c:402
 #, c-format
@@ -51,7 +51,7 @@ msgstr "La mï¿½thode de sï¿½lection du langage S a gï¿½nï¿½rï¿½ une erreur lors 
 
 #: methods_list_dispatch.c:404
 msgid "Function name for method selection called internally"
-msgstr "Nom de fonction pour la sï¿½lection de mï¿½thode appelï¿½ en interne"
+msgstr "Nom de fonction pour la sï¿½lection de mï¿½thode appelï¿½e en interne"
 
 #: methods_list_dispatch.c:498
 #, c-format
@@ -94,7 +94,7 @@ msgstr "l'utilisation de l'environnement NULL n'est plus autorisï¿½e"
 #: methods_list_dispatch.c:617
 #, c-format
 msgid "invalid environment in checking for missing argument, '%s', in methods dispatch: got an object of class \"%s\""
-msgstr "environnmenet incorrect lors de la vï¿½rification de l'argument manquant, '%s', dans le dispatcheur de mï¿½thodes : un objet de classe \"%s\" est renvoyï¿½"
+msgstr "environnement incorrect lors de la vï¿½rification de l'argument manquant, '%s', dans le dispatcheur de mï¿½thodes : un objet de classe \"%s\" est renvoyï¿½"
 
 #: methods_list_dispatch.c:640
 #, c-format
@@ -104,7 +104,7 @@ msgstr "erreur d'ï¿½valuation de l'argument '%s' lors de la sï¿½lection d'une mï
 #: methods_list_dispatch.c:657
 #, c-format
 msgid "object of class \"%s\" used as methods list for function '%s' ( no 'argument' slot)"
-msgstr "l'objet de classe \"%s\" utilisï¿½ comme mï¿½thode pour la fonction '%s' (pas de slot 'argument')"
+msgstr "objet de classe \"%s\" utilisï¿½ comme mï¿½thode pour la fonction '%s' (pas de slot 'argument')"
 
 #: methods_list_dispatch.c:668
 #, c-format
@@ -114,7 +114,7 @@ msgstr "(lors de la sï¿½lection d'une mï¿½thode pour la fonction '%s') '...' et 
 #: methods_list_dispatch.c:671
 #, c-format
 msgid "(in selecting a method for function '%s') the 'environment' argument for dispatch must be an R environment; got an object of class \"%s\""
-msgstr "(lors de la sï¿½lection d'une mï¿½thode pour la fonction '%s') l'argument 'environnement' pour le dispatching doit ï¿½tre un environnement R ; Un objet de classe \"%s\" est renvoyï¿½"
+msgstr "(lors de la sï¿½lection d'une mï¿½thode pour la fonction '%s') l'argument 'environnement' pour le dispatching doit ï¿½tre un environnement R ; un objet de classe \"%s\" est renvoyï¿½"
 
 #: methods_list_dispatch.c:702
 #, c-format
@@ -139,7 +139,7 @@ msgstr "'%s' doit ï¿½tre une chaï¿½ne de caractï¿½res unique (un vecteur de cara
 #: methods_list_dispatch.c:894
 #, c-format
 msgid "'%s' must be a non-empty string; got an empty string"
-msgstr "'%s' doit ï¿½tre une chaï¿½ne de caractï¿½res non vide ; Une chaï¿½ne de caractï¿½res vide est renvoyï¿½e"
+msgstr "'%s' doit ï¿½tre une chaï¿½ne de caractï¿½res non vide ; une chaï¿½ne de caractï¿½res vide est renvoyï¿½e"
 
 #: methods_list_dispatch.c:898
 #, c-format
