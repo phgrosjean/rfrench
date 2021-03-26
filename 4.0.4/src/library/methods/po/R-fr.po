@@ -1034,29 +1034,29 @@ msgid "the definition of class %s in package %s is locked, methods may not be re
 msgstr "la définition de classe %s dans le package %s est verrouillée, les méthodes ne peuvent être redéfinies"
 
 msgid "arguments to methods() must be named, or one named list"
-msgstr "les arguments à methods() doivent être nommés, ou dans une liste nommée"
+msgstr "les arguments de methods() doivent être nommés, ou être dans une liste nommée"
 
 msgid ""
 "topic %s is not a method name in class %s\n"
 "The class definition follows"
 msgstr ""
-"l'item %s n'est pas un nom de méthode dans la classe %s\n"
+"l'item %s n'est pas un nom de méthode de la classe %s\n"
 "La définition de classe est la suivante"
 
 msgid "the definition of class %s in package %s is locked so fields may not be modified"
-msgstr "la définition de classe %s dans le package %s est verrouillée, les champs ne peuvent être redéfinis"
+msgstr "la définition de classe %s dans le package %s est verrouillée, les champs ne peuvent plus être redéfinis"
 
 msgid "the overriding class (\"%s\") of field %s is not a subclass of the existing field definition (\"%s\")"
-msgstr "la redéfinition de classe (\"%s\") pour le champ %s n'est pas une sous-classe de la définition de champ existante (\"%s\")"
+msgstr "la redéfinition de classe (\"%s\") pour le champ %s n'est pas une sous-classe de la définition existante du champ  (\"%s\")"
 
 msgid "invalid assignment for reference class field %s, should be from class %s or a subclass (was class %s)"
-msgstr "le remplaçant pour le champ de la classe de référence %s doit être de la classe %s ou d'une sous-classe (une classe %s est obtenue à la place)"
+msgstr "le remplaçant pour le champ de la classe de référence %s doit être de la classe %s ou d'une sous-classe (et non une classe %s)"
 
 msgid "invalid replacement: reference class field %s is read-only"
 msgstr "remplacement incorrect : le champ de la classe de référence %s est en lecture seule"
 
 msgid "the 'contains' argument should be the names of superclasses:  got an element of class %s"
-msgstr "l'argument 'contains' doit renseigner les noms de superclasses : un objet de classe %s est fourni"
+msgstr "l'argument 'contains' doit renseigner les noms des superclasses : un objet de classe %s est fourni"
 
 msgid "no definition found for inherited class: %s"
 msgstr "aucune définition de la classe héritée n'est trouvée : %s"
@@ -1068,7 +1068,7 @@ msgid "class %s for field %s is not defined"
 msgstr "la classe %s pour le champ %s n'est pas définie"
 
 msgid "field %s was supplied as an object of class %s; must be a class name or a binding function"
-msgstr "le champ %s est fourni comme étant un objet de classe %s ; il doit être un nom de classe ou une fonction de lien"
+msgstr "le champ %s est fourni comme objet de classe %s ; ce doit être un nom de classe ou une fonction de lien"
 
 msgid "code for methods in class %s was not checked for suspicious field assignments (recommended package %s not available?)"
 msgstr "le code des méthodes de la classe %s n'a pas été vérifié pour les affectations de champs suspectes (package recommandé %s indisponible ?)"
@@ -1077,7 +1077,7 @@ msgid "class %s is defined but is not a reference class"
 msgstr "la classe %s est définie mais n'est pas une classe de référence"
 
 msgid "class must be a reference class representation or a character string; got an object of class %s"
-msgstr "la classe doit être une représentation de classe de référence ou une chaine de caractères ; Un objet de classe %s est obtenu à la place"
+msgstr "la classe doit être une représentation de classe de référence ou une chaine de caractères ; un objet de classe %s est obtenu à la place"
 
 msgid "not a reference class: %s"
 msgstr "ceci n'est pas une classe de référence : %s"
@@ -1089,7 +1089,7 @@ msgid ""
 msgstr ""
 "une affectation locale vers le nom de champ ne change pas ce champ :\n"
 "    %s\n"
-"Vouliez-vous utiliser \"<<-\" ? (dans la méthode %s de la classe %s)"
+" Vouliez-vous utiliser \"<<-\" ? (dans la méthode %s de la classe %s)"
 
 msgid ""
 "non-local assignment to non-field names (possibly misspelled?)\n"
@@ -1110,16 +1110,16 @@ msgstr ""
 "(dans la méthode %s de la classe %s)"
 
 msgid "arguments must all be character string names of fields"
-msgstr "les arguments doivent tous être des noms sous forme de chaînes de caractères des champs"
+msgstr "les arguments doivent tous être des noms de champs sous forme de chaînes de caractères"
 
 msgid "field %s is already locked"
-msgstr "le champ \"%s est déjà verrouillé"
+msgstr "le champ %s est déjà verrouillé"
 
 msgid "field %s of class %s has a non-default binding and cannot be locked"
 msgstr "le champ %s de la classe %s a un lien non standard et ne peut être verrouillé"
 
 msgid "Reference superclasses must come from the same package for the environment to be defined:  got %s and %s"
-msgstr "Une super classe de référence doit provenir du même package pour que l’environnement soit défini : j’ai %s et %s"
+msgstr "Les super classes de référence doivent venir du même package pour que l’environnement soit défini : j’ai %s et %s"
 
 msgid "Class %s is not a subclass of %s; functional semantics not defined for this class"
 msgstr "La classe %s n'est pas une sous-classe de %s ; sémantiques fonctionnelles non définies pour cette classe"
@@ -1140,34 +1140,34 @@ msgid "argument 'signature' is not meaningful for tracing reference methods"
 msgstr "l'argument 'signature' n'a aucune signification pour tracer les méthodes de référence"
 
 msgid "%s is not a method for reference class %s"
-msgstr "%s n'est pas une méthode pour la référence de classe %s"
+msgstr "%s n'est pas une méthode pour la classe de référence %s"
 
 msgid "argument 'what' should be the name of a function"
-msgstr "l'argument 'what' devrait être le nom d'une fonction"
+msgstr "l'argument 'what' doit être un nom de fonction"
 
 msgid "tracing the internal function %s is not allowed"
 msgstr "le traçage de la fonction interne %s n'est pas autorisé"
 
 msgid "no function definition for %s found"
-msgstr "aucune définition de fonction n'est trouvée pour %s"
+msgstr "aucune définition de fonction trouvée pour %s"
 
 msgid "cannot untrace method for %s; no method defined for this signature: %s"
-msgstr "impossible d'éliminer le traçage de méthode pour %s ; Aucune méthode n'est définie pour cette signature : %s"
+msgstr "impossible d'éliminer le traçage de méthode pour %s ; aucune méthode définie pour cette signature : %s"
 
 msgid "the method for %s for this signature was not being traced"
-msgstr "la méthode pour %s pour cette signature ne sera pas déboguée (tracée)"
+msgstr "la méthode pour %s pour cette signature n'a pas été déboguée (tracée)"
 
 msgid "making a traced version of a special; arguments may be altered"
-msgstr "création d'une version de déboguage d'une fonction spéciale ; Les arguments peuvent être altérés"
+msgstr "création d'une version de débogage d'une fonction spéciale ; les arguments peuvent être altérés"
 
 msgid "the editing in trace() can only change the body of the function; got an object of class %s"
-msgstr "l'édition dans trace() ne peut changer que le corps de la fonction ; Un objet de classe %s est obtenu"
+msgstr "l'édition dans trace() ne peut changer que le corps de la fonction ; un objet de classe %s est obtenu"
 
 msgid "the editing in trace() can only change the body of the function, not the arguments or defaults"
-msgstr "l'édition dans trace() ne peut changer que le corps de la fonction, pas les arguments ou les valeurs par défaut"
+msgstr "l'édition dans trace() ne peut changer que le corps de la fonction, pas les arguments ni les valeurs par défaut"
 
 msgid "cannot use 'at' argument without a trace expression"
-msgstr "impossible d'utiliser l'argument 'at' sans une expression de déboguage"
+msgstr "impossible d'utiliser l'argument 'at' sans une expression de débogage"
 
 msgid "cannot use 'at' argument unless the function body has the form '{ ... }'"
 msgstr "impossible d'utiliser l'argument 'at', à moins que le corps de la fonction n'ait la forme '{ ... }'"
@@ -1179,13 +1179,13 @@ msgid "setting a method over the binding of symbol %s in environment/package %s"
 msgstr "création d'une méthode à travers un lien du symbole %s dans l'environnement/le package %s"
 
 msgid "Environment of class %s is locked; using global environment for new class"
-msgstr "L'environnement de laclasse %s est verrouillé ; Utilisation de l'environnement global pour la nouvelle classe"
+msgstr "L'environnement de la classe %s est verrouillé ; utilisation de l'environnement global pour la nouvelle classe"
 
 msgid "none of the objects in the source code could be found:  need to attach or specify the package"
-msgstr "aucuns des objets utilisés dans le code source ne peuvent être trouvés : il faut attacher ou spécifier un package"
+msgstr "aucun des objets utilisés dans le code source ne peut être trouvé : il faut attacher ou spécifier le package"
 
 msgid "objects found in multiple packages: using %s and ignoring %s"
-msgstr "objects trouvés dans plusieurs packages : utilisation de celui dans %s sans tenir compte de %s"
+msgstr "objets trouvés dans plusieurs packages : utilisation de celui dans %s sans tenir compte de %s"
 
 msgid "package %s is not attached and no namespace found for it"
 msgstr "le package %s n'est pas attaché et ne possède aucun espace de noms"
@@ -1203,7 +1203,7 @@ msgid "cannot insert these (not found in source): %s"
 msgstr "insertion de ceci impossible (introuvable dans les sources) : %s"
 
 msgid "cannot insert methods for these functions (methods table not found in source): %s"
-msgstr "impossible d'insérer les méthodes pour ces fonctions (table de méthodes introuvable dans le source) : %s"
+msgstr "impossible d'insérer les méthodes pour ces fonctions (table des méthodes introuvable dans le source) : %s"
 
 msgid "Non-function objects are not currently inserted (not traceable): %s"
 msgstr "Les objets qui ne sont pas des fonctions ne peuvent pas être insérés pour l'instant (ils ne sont pas traçables) : %s"
@@ -1215,7 +1215,7 @@ msgid "Modified functions inserted through trace(): %s"
 msgstr "Fonctions modifiées insérées par l'intermédiaire de trace() : %s"
 
 msgid "%s() is not a generic function in the target environment -- methods will not be inserted"
-msgstr "%s() n'est pas une fonction générique dans l'environnement cible -- Les méthodes ne sont pas insérées"
+msgstr "%s() n'est pas une fonction générique dans l'environnement cible -- les méthodes ne sont pas insérées"
 
 msgid "Methods inserted for function %s(): %s"
 msgstr "Méthodes insérées pour la fonction %s() : %s"
@@ -1224,13 +1224,13 @@ msgid "no definition for object %s found in tracing environment"
 msgstr "la définition de l'objet %s est introuvable dans l'environnement de traçage"
 
 msgid "multiple generics match pattern, using table %s"
-msgstr "plusieurs génériques correespondent au masque, utilisation de la table %s"
+msgstr "plusieurs génériques correespondent au motif, utilisation de la table %s"
 
 msgid "does not seem to be a method table for generic %s in tracing environment"
-msgstr "ne semble pas être une table de méthode pour le générique %s dans l'environnement de traçage"
+msgstr "ne semble pas être une table de méthodes pour le générique %s dans l'environnement de traçage"
 
 msgid "no method in methods table for %s for signature %s"
-msgstr "pas de méthode définie dans la table de méthodes pour %s pour la signature %s"
+msgstr "pas de méthode définie dans la table des méthodes pour %s pour la signature %s"
 
 msgid "unloading 'methods' package ..."
 msgstr "déchargement du package 'methods' ..."
@@ -1239,7 +1239,7 @@ msgid "apparently bad method or class metadata in saved environment;"
 msgstr "apparemment des métadonnées erronées de classe ou de méthode sont sauvées dans l'environnement ;"
 
 msgid "move the file or remove the class/method"
-msgstr "déplacez le fichier ou éliminez la classe / méthode"
+msgstr "déplacez le fichier ou supprimez la classe / méthode"
 
 msgid "no definition for class %s"
 msgid_plural "no definition for classes %s"
@@ -1248,8 +1248,8 @@ msgstr[1] "aucune définition des classes %s n'est trouvée"
 
 msgid "in the method signature for function %s invalid argument name in the signature: %s"
 msgid_plural "in the method signature for function %s invalid argument names in the signature: %s"
-msgstr[0] "dans la signature de méthode pour la fonction %s, il y a un noms d'argument incorrect dans cette signature : %s"
-msgstr[1] "dans la signature de méthode pour la fonction %s, il y a des noms d'arguments incorrects dans cette signature : %s"
+msgstr[0] "dans la signature de méthode pour la fonction %s, il y a un nom d'argument incorrect dans la signature : %s"
+msgstr[1] "dans la signature de méthode pour la fonction %s, il y a des noms d'arguments incorrects dans la signature : %s"
 
 msgid "Reported %d ambiguous selection out of %d for function %s\n"
 msgid_plural "Reported %d ambiguous selections out of %d for function %s\n"
