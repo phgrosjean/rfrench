@@ -54,7 +54,7 @@ msgstr "approx() : tentative d'interpolation de valeurs NA"
 
 #: approx.c:128
 msgid "approx(x,y, .., na.rm=FALSE): NA values in x are not allowed"
-msgstr "approx(x,y, .., na.rm=FALSE) : valeurs manquantes sur l’axe x non autorisées"
+msgstr "approx(x,y, .., na.rm=FALSE) : valeurs manquantes non autorisées dans x"
 
 #: arima.c:81 arima.c:192 arima.c:377 arima.c:608 optim.c:39
 msgid "invalid argument type"
@@ -66,12 +66,12 @@ msgstr "impossible de transformer plus de 100 pars dans arima0"
 
 #: arima.c:1016
 msgid "maximum supported lag is 350"
-msgstr "décalage maximum supporté de 350"
+msgstr "le décalage maximum supporté est de 350"
 
 #: bandwidths.c:126
 #, c-format
 msgid "non-finite x[%d] in bandwidth calculation"
-msgstr "valeurs infinies x[%d] dans le calcul de largeur de bande"
+msgstr "valeurs infinies x[%d] dans le calcul de la largeur de bande"
 
 #: complete_cases.c:26
 #, c-format
@@ -84,7 +84,7 @@ msgstr "aucune entrée n'a déterminé le nombre de cas"
 
 #: complete_cases.c:223
 msgid "not all arguments have the same length"
-msgstr "les arguments n'ont pas tous la même taille"
+msgstr "tous les arguments n'ont pas la même taille"
 
 #: cov.c:569
 msgid "missing observations in cov/cor"
@@ -112,7 +112,7 @@ msgstr "'x' est vide"
 
 #: cov.c:817
 msgid "the standard deviation is zero"
-msgstr "l'écart type est nul"
+msgstr "l'écart-type est nul"
 
 #: deriv.c:158
 msgid "invalid form in unary minus check"
@@ -143,7 +143,7 @@ msgstr "expression incorrecte dans '%s'"
 
 #: deriv.c:1085 model.c:99
 msgid "invalid variable names"
-msgstr "noms des variables incorrects"
+msgstr "noms de variables incorrects"
 
 #: deriv.c:1094
 msgid "invalid tag"
@@ -212,7 +212,7 @@ msgid ""
 "  (ldst=%d, key=%d, ipn=%d, itp=%d, ist[ii=%d]=%d).\n"
 "Increase workspace or consider using 'simulate.p.value=TRUE'"
 msgstr ""
-"FEXACT erreur 30.  Taille de pile dépassée f3xact,\n"
+"FEXACT erreur 30.  Taille de pile dépassée dans f3xact,\n"
 "  (ldst=%d, key=%d, ipn=%d, itp=%d, ist[ii=%d]=%d).\n"
 "Augmentez la taille de l’environnement de travail ou considérez d’utiliser 'simulate.p.value=TRUE'"
 
@@ -288,7 +288,7 @@ msgstr "'n' doit avoir typeof(.) \"integer\" ou \"double\""
 #: fourier.c:298
 #, c-format
 msgid "nextn() = %<PRIu64> > 2^53 may not be exactly representable in R (as \"double\")"
-msgstr "nextn() = %<PRIu64> > 2^53 peut ne pas être représentable exactement en R (comme \"double\")"
+msgstr "nextn() = %<PRIu64> > 2^53 peut ne pas être représenté exactement dans R (comme \"double\")"
 
 #: integrate.c:84 integrate.c:86 integrate.c:128
 #, c-format
@@ -430,7 +430,7 @@ msgstr "la variable %d n'a pas de niveaux"
 
 #: model.c:547
 msgid "the response appeared on the right-hand side and was dropped"
-msgstr "la réponse est apparue dans le membre de droite et y a été éliminée"
+msgstr "la réponse est apparue dans le membre de droite et a été éliminée"
 
 #: model.c:567
 #, c-format
@@ -453,12 +453,12 @@ msgstr "les noms des termes seront tronqués"
 
 #: model.c:645
 msgid "complex variables are not currently allowed in model matrices"
-msgstr "les variables complexes ne sont pas encore acceptées dans les matrices de modèle"
+msgstr "les variables complexes ne sont pas acceptées actuellement dans les matrices de modèle"
 
 #: model.c:669
 #, c-format
 msgid "variables of type '%s' are not allowed in model matrices"
-msgstr "les variables de type '%s' ne sont pas autorisées dans des matrices de modèle"
+msgstr "les variables de type '%s' ne sont pas autorisées dans les matrices de modèle"
 
 #: model.c:894
 msgid "invalid formula in 'update'"
@@ -503,7 +503,7 @@ msgstr "'specials' doit être NULL ou un vecteur de chaîne de caractères"
 
 #: model.c:1801
 msgid "'data' argument is of the wrong type"
-msgstr "l'argument 'data' est d'un mauvais type"
+msgstr "l'argument 'data' est de type incorrect"
 
 #: model.c:1873
 #, c-format
@@ -621,7 +621,7 @@ msgstr "'fn' n'est pas une fonction"
 
 #: optim.c:241 optim.c:435
 msgid "'parscale' is of the wrong length"
-msgstr "'parscale' est de la mauvaise longueur"
+msgstr "'parscale' est de longueur incorrecte"
 
 #: optim.c:270
 msgid "'maxit' is not an integer"
@@ -637,7 +637,7 @@ msgstr "'gr' n'est pas une fonction"
 
 #: optim.c:315 optim.c:340 optim.c:370 optim.c:449
 msgid "'ndeps' is of the wrong length"
-msgstr "'ndeps' est de la mauvaise longueur"
+msgstr "'ndeps' est de longueur incorrecte"
 
 #: optim.c:400
 msgid "unknown 'method'"
@@ -671,7 +671,7 @@ msgstr "'xmin' n'est pas plus petit que 'xmax'"
 
 #: optimize.c:315
 msgid "-Inf replaced by maximally negative value"
-msgstr "-Inf remplacé par la valeur négative la plus large possible"
+msgstr "-Inf remplacé par la valeur négative la plus grande possible"
 
 #: optimize.c:328
 msgid "invalid function value in 'zeroin'"
@@ -736,7 +736,7 @@ msgstr "limite d'itération incorrecte dans nlm"
 
 #: optimize.c:645
 msgid "minimization function has no good digits in nlm"
-msgstr "la fonction de minimisation n'a pas des nombres acceptables dans nlm"
+msgstr "la fonction de minimisation n'a pas de nombres acceptables dans nlm"
 
 #: optimize.c:647
 msgid "no analytic gradient to check in nlm!"
@@ -786,12 +786,12 @@ msgid ""
 "or steptol is too large.\n"
 msgstr ""
 "Soit x est un mimimum local approximatif de la fonction,\n"
-"soit la fonction est trop non linéaire pour cet algorithme,\n"
+"soit la fonction est trop non-linéaire pour cet algorithme,\n"
 "soit steptol est trop large.\n"
 
 #: optimize.c:680
 msgid "Iteration limit exceeded.  Algorithm failed.\n"
-msgstr "Limite d'itérations dépassée. L'algorithme a échoué.\n"
+msgstr "Limite d'itération dépassée. L'algorithme a échoué.\n"
 
 #: optimize.c:683
 msgid ""
@@ -814,15 +814,15 @@ msgstr "valeur NA incorrecte dans le paramètre"
 
 #: optimize.c:800
 msgid "hessian supplied is of the wrong length or mode, so ignored"
-msgstr "le Hessien fourni est de la mauvaise longueur ou mode, et est ignoré"
+msgstr "le Hessien fourni a une longueur ou un mode incorrect, il est ignoré"
 
 #: optimize.c:804
 msgid "gradient supplied is of the wrong length or mode, so ignored"
-msgstr "le gradient fourni est de mauvaise longueur ou mode, et est ignoré"
+msgstr "le gradient fourni une longueur ou un mode incorrect, il est ignoré"
 
 #: pacf.c:87
 msgid "bad Starma struct"
-msgstr "la Starma struct est incorrecte"
+msgstr "la struct Starma est incorrecte"
 
 #: pacf.c:233
 #, c-format
@@ -845,7 +845,7 @@ msgstr "Rf_divset : alg = %d doit être 1, 2, 3, ou 4"
 
 #: port.c:149
 msgid "port algorithms 3 or higher are not supported"
-msgstr "les algorithmes port 3 ou plus ne sont pas supportés"
+msgstr "les algorithmes port 3 ou supérieur ne sont pas supportés"
 
 #: port.c:317
 #, c-format
@@ -967,7 +967,7 @@ msgstr "valeur manquante dans les %d dernières observations"
 
 #, fuzzy
 #~ msgid "'x' is a factor"
-#~ msgstr "'x' n'est pas une matrice"
+#~ msgstr "'x' est un factor"
 
 #, fuzzy
 #~ msgid "'y' is a factor"
