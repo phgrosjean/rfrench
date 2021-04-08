@@ -25,16 +25,16 @@ msgid "length of 'derivs' is larger than length of 'x'"
 msgstr "la longueur de 'derivs' est plus grande que la longueur de 'x'"
 
 msgid "empty 'derivs'"
-msgstr "'derivs' vide"
+msgstr "'derivs' est vide"
 
 msgid "'ord' must be positive integer, at most the number of knots"
-msgstr "'ord' doit être un entier positif, au nombre de noeuds au mieux"
+msgstr "'ord' doit être un entier positif, égal au nombre de noeuds au mieux"
 
 msgid "need at least %s (=%d) knots"
 msgstr "il faut au moins %s (=%d) noeuds"
 
 msgid "the 'x' data must be in the range %g to %g unless you set '%s'"
-msgstr "les données 'x' doivent être dans la plage %g to %g à moins de spécifier '%s'"
+msgstr "les données 'x' doivent être dans la plage %g à %g à moins de spécifier '%s'"
 
 msgid "%s needs package 'Matrix' correctly installed"
 msgstr "%s a besoin du package 'Matrix' installé correctement"
@@ -61,7 +61,7 @@ msgid "the range of 'x' values exceeds one period"
 msgstr "la plage de 'x' est plus large qu'une période"
 
 msgid "knot positions must be non-decreasing"
-msgstr "les positions des noeuds ne peut être décroissante"
+msgstr "les positions des noeuds ne doivent pas être décroissantes"
 
 msgid "lengths of 'x' and 'y' must be the same"
 msgstr "les longueurs de 'x' et 'y' doivent être les mêmes"
@@ -73,7 +73,7 @@ msgid "knot positions must be strictly increasing"
 msgstr "les positions des noeuds doivent être strictement croissantes"
 
 msgid "currently implemented only for cubic splines"
-msgstr "implémenté uniquement pour les salines cubiques pour l’instant"
+msgstr "implémenté pour l’instant uniquement pour les splines cubiques"
 
 msgid "spline must be monotone"
 msgstr "la courbe spline doit être monotone"
@@ -85,4 +85,4 @@ msgid "'df' was too small; have used %d"
 msgstr "'df' était trop petit ; nous avons utilisé %d"
 
 msgid "some 'x' values beyond boundary knots may cause ill-conditioned bases"
-msgstr "quelques valeurs de 'x' au delà des limites de noeuds peut causer des bases mal conditionnées"
+msgstr "certaines valeurs de 'x' au delà des limites de noeuds peuvent causer des bases mal conditionnées"
