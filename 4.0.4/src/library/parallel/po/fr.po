@@ -21,7 +21,7 @@ msgstr ""
 #: fork.c:215
 #, c-format
 msgid "unable to terminate child process: %s"
-msgstr "impossible de terminer un processus fils : %s"
+msgstr "impossible de terminer le processus fils : %s"
 
 #: fork.c:242
 #, c-format
@@ -52,7 +52,7 @@ msgstr "impossible de créer une nouvelle branche, raison possible : %s"
 
 #: fork.c:743
 msgid "only children can send data to the master process"
-msgstr "seuls des processus enfants peuvent envoyer des données à un processus maître"
+msgstr "seuls les processus fils peuvent envoyer des données au processus maître"
 
 #: fork.c:745
 msgid "there is no pipe to the master process"
@@ -68,7 +68,7 @@ msgstr "erreur d'écriture, fermeture du canal vers le processus maître"
 
 #: fork.c:774
 msgid "only the master process can send data to a child process"
-msgstr "seul le processus maître peut envoyer des données vers un processus fils"
+msgstr "seul le processus maître peut envoyer des données à un processus fils"
 
 #: fork.c:782
 #, c-format
@@ -82,7 +82,7 @@ msgstr "erreur d'écriture"
 #: fork.c:874
 #, c-format
 msgid "cannot wait for child %d as it does not exist"
-msgstr "impossible d’attendre le processus fils %d parce qu’il n’existe pas"
+msgstr "impossible d’attendre le processus fils %d car il n’existe pas"
 
 #: fork.c:933 fork.c:1053
 #, c-format
@@ -95,7 +95,7 @@ msgstr "'mckill' a échoué"
 
 #: fork.c:1156
 msgid "'mcexit' can only be used in a child process"
-msgstr "'mcexit' peut seulement être utilisé avec un processus fils"
+msgstr "'mcexit' ne peut être utilisé que dans un processus fils"
 
 #: fork.c:1188
 msgid "'mcexit' failed"
@@ -107,7 +107,7 @@ msgstr "spécification d'affinité CPU incorrecte"
 
 #: fork.c:1237
 msgid "requested CPU set is too large for this system"
-msgstr "le set de CPU demandé est trop large pour ce système"
+msgstr "le set de CPU demandé est trop grand pour ce système"
 
 #: fork.c:1260
 msgid "retrieving CPU affinity set failed"
