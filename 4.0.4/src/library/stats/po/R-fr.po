@@ -34,7 +34,7 @@ msgid "cannot fit models without level ('alpha' must not be 0 or FALSE)"
 msgstr "ajustement du modèle impossible sans un niveau ('alpha' ne doit pas être zéro ni FALSE)"
 
 msgid "'alpha', 'beta' and 'gamma' must be within the unit interval"
-msgstr "'alpha', 'beta' et 'gamma' doivent être dans un intervale d'une unité"
+msgstr "'alpha', 'beta' et 'gamma' doivent être dans un intervalle d'une unité"
 
 msgid "data must be non-zero for multiplicative Holt-Winters"
 msgstr "les données ne peuvent être à zéro dans un modèle de Holt-Winters multiplicatif"
@@ -52,7 +52,7 @@ msgid "optimization failure"
 msgstr "échec d'optimisation"
 
 msgid "time series has no or less than 2 periods"
-msgstr "la série temporelle a moins de 2 périodes"
+msgstr "la série temporelle a moins de 2 périodes ou aucune"
 
 msgid "the series is entirely NA"
 msgstr "la série ne contient que des NAs"
@@ -67,7 +67,7 @@ msgid "'x' must be numeric"
 msgstr "'x' doit être numérique"
 
 msgid "the first value of the time series must not be missing"
-msgstr "la première valeur de la série temporelle ne peut pas être manquante"
+msgstr "la première valeur de la série temporelle ne peut pas être absente"
 
 msgid "all parameters were fixed"
 msgstr "tous les paramètres étaient fixés"
@@ -183,13 +183,13 @@ msgid "wrong k / cs.ind"
 msgstr "k / cs.ind incorrect"
 
 msgid "option \"show.signif.stars\" is invalid: assuming TRUE"
-msgstr "l'option \"show.signif.stars\" est incorrecte : TRUE est supposée"
+msgstr "l'option \"show.signif.stars\" est incorrecte : TRUE est supposé"
 
 msgid "'anova' object must have colnames"
 msgstr "l'objet 'anova' doit avoir des noms de colonnes"
 
 msgid "'conf.level' must be a single number between 0 and 1"
-msgstr "'conf.level' doit être un nombre compris entre 0 et 1"
+msgstr "'conf.level' doit être un nombre unique entre 0 et 1"
 
 msgid "not enough 'x' observations"
 msgstr "nombre d'observations 'x' insuffisant"
@@ -228,13 +228,13 @@ msgid "the 'split' argument must be a list"
 msgstr "l'argument 'split' doit être une liste"
 
 msgid "'coef' must define a contrast, i.e., sum to 0"
-msgstr "'coef' doit définir un constrate, i.e., sa somme doit être 0"
+msgstr "'coef' doit définir un contraste, i.e., sa somme doit être 0"
 
 msgid "'coef' must have same length as 'contrast.obj'"
 msgstr "'coef' doit être de la même longueur que 'contrast.obj'"
 
 msgid "each element of '%s' must be logical"
-msgstr "tous les éléments de '%s' doivent être booléens"
+msgstr "tous les éléments de '%s' doivent être des booléens"
 
 msgid "the contrast defined is empty (has no TRUE elements)"
 msgstr "le contraste défini est vide (il n'a aucun élément TRUE)"
@@ -258,7 +258,7 @@ msgid "'ties' is not \"ordered\", a function, or list(<string>, <function>)"
 msgstr "'ties' n’est pas \"ordered\", une function, ou une list(<string>, <function>)"
 
 msgid "collapsing to unique 'x' values"
-msgstr "suppression des ex-aequos de 'x'"
+msgstr "suppression des ex-aequos de 'x' à valeurs uniques"
 
 msgid "invalid interpolation method"
 msgstr "méthode d'interpolation incorrecte"
@@ -321,7 +321,7 @@ msgid "some AR parameters were fixed: setting transform.pars = FALSE"
 msgstr "certains des paramètres AR étaient fixés : transform.pars = FALSE"
 
 msgid "too few non-missing observations"
-msgstr "trop peu d'observations non manquantes"
+msgstr "trop peu d'observations non-manquantes"
 
 msgid "'init' is of the wrong length"
 msgstr "'init' n'a pas la bonne longueur"
@@ -339,16 +339,16 @@ msgid "non-stationary AR part from CSS"
 msgstr "partie AR non stationnaire dans CSS"
 
 msgid "non-stationary seasonal AR part from CSS"
-msgstr "partie AR saisonnière non stationnaire dans CSS"
+msgstr "partie AR saisonnière non-stationnaire dans CSS"
 
 msgid "'xreg' and 'newxreg' have different numbers of columns"
 msgstr "'xreg' et 'newxreg' ont des nombres de colonnes différents"
 
 msgid "MA part of model is not invertible"
-msgstr "La partie MA du modèle est non inversible"
+msgstr "La partie MA du modèle est non-inversible"
 
 msgid "seasonal MA part of model is not invertible"
-msgstr "la partie MA saisonnière du modèle est non inversible"
+msgstr "la partie MA saisonnière du modèle est non-inversible"
 
 msgid "NAs in '%s'"
 msgstr "NAs dans '%s'"
@@ -357,19 +357,19 @@ msgid "invalid 'SSinit'"
 msgstr "'SSinit' incorrect"
 
 msgid "converting non-invertible initial MA values"
-msgstr "conversion des valeurs MA initales non inversibles"
+msgstr "conversion des valeurs MA initales non-inversibles"
 
 msgid "some ARMA parameters were fixed: setting transform.pars = FALSE"
-msgstr "certains paramètre ARMA étaient fixés : transform.pars = FALSE"
+msgstr "certains paramètres ARMA étaient fixés : transform.pars = FALSE"
 
 msgid "'xreg' is collinear"
-msgstr "'xreg' est collinéaire"
+msgstr "'xreg' est colinéaire"
 
 msgid "NAs present: setting 'delta' to -1"
 msgstr "Présence de NAs : 'delta' fixé à -1"
 
 msgid "transformed ARMA parameters were fixed"
-msgstr "les paramètres ARMA tranformés étaient fixés"
+msgstr "les paramètres ARMA tranformés ont été fixés"
 
 msgid "need at least 2 data points"
 msgstr "il faut au moins 2 points"
@@ -387,7 +387,7 @@ msgid "increasing bw.SJ() search interval (%d) to [%.4g,%.4g]"
 msgstr "augmentation de l'intervalle de recherche (%d) bw.SJ() à [%.4g,%.4g]"
 
 msgid "minimum occurred at one end of the range"
-msgstr "le minimum se trouve à une des extrémités de l'intervalle"
+msgstr "le minimum se trouve à l'une des extrémités de l'intervalle"
 
 msgid "'x' must be a list with at least 2 elements"
 msgstr "'x' doit être une liste d'au moins 2 éléments"
@@ -414,7 +414,7 @@ msgid "incorrect length of 'x'"
 msgstr "la longueur de 'x' est incorrecte"
 
 msgid "'p' must be a single number between 0 and 1"
-msgstr "'p' doit être un nombre compris entre 0 et 1"
+msgstr "'p' doit être un nombre unique compris entre 0 et 1"
 
 msgid "length of choices must be 2"
 msgstr "la longueur des choix doit être 2"
@@ -429,7 +429,7 @@ msgid "biplots are not defined for complex PCA"
 msgstr "les biplots ne sont pas définis pour une ACP complexe"
 
 msgid "unequal number of rows in 'cancor'"
-msgstr "nombre de lignes inégaux dans 'cancor'"
+msgstr "nombre de lignes différent dans 'cancor'"
 
 msgid "dimension 0 in 'x' or 'y'"
 msgstr "dimension 0 dans 'x' ou 'y'"
@@ -447,7 +447,7 @@ msgid "'x' and 'y' must have at least 2 levels"
 msgstr "'x' et 'y' doivent avoir au moins 2 niveaux"
 
 msgid "all entries of 'x' must be nonnegative and finite"
-msgstr "toutes les valeurs de 'x' doivent être positives ou nulles et définies"
+msgstr "toutes les valeurs de 'x' doivent être positives ou nulles et finies"
 
 msgid "at least one entry of 'x' must be positive"
 msgstr "au moins une valeur de 'x' doit être positive"
