@@ -52,10 +52,10 @@ msgid "Quit"
 msgstr "Quitter"
 
 msgid "Save workspace"
-msgstr "Sauver l'environnement"
+msgstr "Enregistrer l'environnement"
 
 msgid "Don't save workspace"
-msgstr "Ne pas sauver l'environnement"
+msgstr "Ne pas enregistrer l'environnement"
 
 msgid "t test"
 msgstr "test t"
