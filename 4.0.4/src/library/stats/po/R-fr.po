@@ -544,10 +544,10 @@ msgid "contrasts can be applied only to factors with 2 or more levels"
 msgstr "les contrastes ne peuvent être appliqués qu'aux facteurs ayant au moins deux niveaux"
 
 msgid "wrong number of contrast matrix rows"
-msgstr "nombre de lignes de la matrice de contrastes incorrect"
+msgstr "nombre de lignes incorrect de la matrice de contraste"
 
 msgid "singular contrast matrix"
-msgstr "matrice de contrastes singulière"
+msgstr "matrice de contraste singulière"
 
 msgid "numeric contrasts or contrast name expected"
 msgstr "contrastes numériques ou nom de contraste attendus"
@@ -556,7 +556,7 @@ msgid "%s needs package 'Matrix' correctly installed"
 msgstr "%s nécessite le package 'Matrix' correctement installé"
 
 msgid "not enough degrees of freedom to define contrasts"
-msgstr "nombre de degrés de liberté insuffisant pour définir des contrastes"
+msgstr "nombre de degrés de liberté insuffisant pour définir les contrastes"
 
 # S'agit il du numéro du groupe de base hors intervalle  
 #  ou du 
@@ -578,7 +578,7 @@ msgid "'x' is empty"
 msgstr "'x' est vide"
 
 msgid "both 'x' and 'y' must be non-empty"
-msgstr "'x' et 'y' ne peuvent être vides"
+msgstr "'x' et 'y' ne peuvent être vides simultanément"
 
 msgid "cannot handle 'pairwise.complete.obs'"
 msgstr "impossible de gérer 'pairwise.complete.obs'"
@@ -599,7 +599,7 @@ msgid "not enough finite observations"
 msgstr "pas assez d'observations non indéfinies"
 
 msgid "Cannot compute exact p-value with ties"
-msgstr "Impossible de calculer la p-value exacte avec des ex-aequos"
+msgstr "Impossible de calculer la p-valeur exacte avec des ex-aequos"
 
 msgid "'formula' missing or invalid"
 msgstr "'formula' manquante ou incorrecte"
@@ -635,7 +635,7 @@ msgid "elements of 'k' must be between 1 and %d"
 msgstr "les éléments de 'k' doivent être compris entre 1 et %d"
 
 msgid "dendrogram entries must be 1,2,..,%d (in any order), to be coercible to \"hclust\""
-msgstr "les entrées du dendrogramme doivent être 1,2,..,%d (dans n’importe quel ordre), pour être convertibles en “hclust”"
+msgstr "les entrées du dendrogramme doivent être 1,2,..,%d (dans n’importe quel ordre), pour être convertibles en \"hclust\""
 
 msgid "dendrogram node with non-positive #{branches}"
 msgstr "un noeud du dendrogramme a un nombre de branches < 1"
@@ -711,7 +711,7 @@ msgid "need at least 2 points to select a bandwidth automatically"
 msgstr "il faut au moins 2 points pour choisir automatiquement la largeur de fenêtre"
 
 msgid "unknown bandwidth rule"
-msgstr "règle de choix de la largeur de fenêtre inconnue"
+msgstr "règle inconnue pour le choix de la largeur de fenêtre"
 
 msgid "non-finite 'bw'"
 msgstr "'bw' indéfinie"
@@ -744,10 +744,10 @@ msgid "'x' is not a vector or matrix"
 msgstr "'x' n'est pas un vecteur ou une matrice"
 
 msgid "invalid distance method"
-msgstr "méthode de calcul de distance incorrecte"
+msgstr "méthode incorrecte du calcul de distance "
 
 msgid "ambiguous distance method"
-msgstr "méthode de calcul de distance ambigüe"
+msgstr "méthode ambigüe du calcul de distance "
 
 msgid "non-square matrix"
 msgstr "la matrice n'est pas carrée"
@@ -825,7 +825,7 @@ msgid "negative values not allowed for the 'quasiPoisson' family"
 msgstr "les valeurs négatives sont interdites pour la famille 'quasiPoisson'"
 
 msgid "cannot find valid starting values: please specify some"
-msgstr "impossible de trouver des valeurs initiales correctes : prière d'en fournir"
+msgstr "impossible de trouver des valeurs initiales correctes : veuillez en fournir"
 
 msgid "y values must be 0 <= y <= 1"
 msgstr "les valeurs de y doivent être 0 <= y <= 1"
@@ -834,7 +834,7 @@ msgid "non-integer #successes in a %s glm!"
 msgstr "nombre de succès non entier dans un glm %s !"
 
 msgid "non-integer counts in a %s glm!"
-msgstr "effectifs non entier dans un glm %s !"
+msgstr "effectifs non entiers dans un glm %s !"
 
 msgid ""
 "for the '%s' family, y must be a vector of 0 and 1's\n"
@@ -877,7 +877,7 @@ msgid "argument 'sides' must be 1 or 2"
 msgstr "l'argument 'sides' doit valoir 1 ou 2"
 
 msgid "'circular' must be logical and not NA"
-msgstr "'circular' doit être une valeur logique et pas NA"
+msgstr "'circular' doit être une valeur booléenne et pas NA"
 
 msgid "length of 'init' must equal length of 'filter'"
 msgstr "la longueur de 'init' doit être égale à la longueur de 'filter'"
@@ -892,7 +892,7 @@ msgid "'x' has been rounded to integer: %s"
 msgstr "'x' a été arrondi à un entier : %s"
 
 msgid "if 'x' is not a matrix, 'y' must be given"
-msgstr "si 'x' n'est pas une matrice, 'y' doit être donné"
+msgstr "si 'x' n'est pas une matrice, 'y' doit être fourni"
 
 msgid "'mult' must be integer >= 2, typically = 30"
 msgstr "'mult' doit être un entier >= 2, typiquement = 30"
@@ -904,10 +904,10 @@ msgid "'or' must be a single number between 0 and Inf"
 msgstr "'or' doit être un nombre entre 0 et Inf"
 
 msgid "need 2 or more non-zero row marginals"
-msgstr "il faut au moins deux lignes marginales"
+msgstr "il faut au moins deux lignes marginales non nulles"
 
 msgid "need 2 or more non-zero column marginals"
-msgstr "il faut au moins deux colonnes marginales"
+msgstr "il faut au moins deux colonnes marginales non nulles"
 
 msgid "names(hybridPars) should be NULL or be identical to the default's"
 msgstr "names(hybridPars) doit être NULL ou identique aux valeurs par défaut"
@@ -952,10 +952,10 @@ msgid "'formula' has '.' in both left and right hand sides"
 msgstr "'formula' a '.' dans ses deux membres"
 
 msgid "incorrect variable names in rhs of formula"
-msgstr "noms de variables incorrects dans le membre de droite de la formule"
+msgstr "noms de variables incorrects dans le membre droit de la formule"
 
 msgid "incorrect variable names in lhs of formula"
-msgstr "noms de variables incorrects dans le membre de gauche de la formule"
+msgstr "noms de variables incorrects dans le membre gauche de la formule"
 
 msgid "cannot use dots in formula with given data"
 msgstr "impossible d'utiliser des points dans la formule avec les données indiquées"
@@ -991,7 +991,7 @@ msgid "number of offsets is %d should equal %d (number of observations)"
 msgstr "le nombre de décalages est %d et il devrait valoir %d (nombre d'observations)"
 
 msgid "fitting to calculate the null deviance did not converge -- increase 'maxit'?"
-msgstr "le calcul de dédéviation nulle n'a pas convergé lors de l'ajustement -- augmentez 'maxit' ?"
+msgstr "le calcul de déviance nulle n'a pas convergé lors de l'ajustement -- augmentez 'maxit' ?"
 
 msgid "value of 'epsilon' must be > 0"
 msgstr "la valeur de 'epsilon' doit être > 0"
@@ -1009,7 +1009,7 @@ msgid "invalid fitted means in empty model"
 msgstr "moyennes ajustées incorrectes dans le modèle vide"
 
 msgid "length of 'start' should equal %d and correspond to initial coefs for %s"
-msgstr "la longueur de 'start' devrait être égale à %d et correspondre aux coefs initiaux pour %s"
+msgstr "la longueur de 'start' doit être égale à %d et correspondre aux coefs initiaux pour %s"
 
 msgid "NAs in V(mu)"
 msgstr "NA dans V(mu)"
@@ -1030,7 +1030,7 @@ msgid "singular fit encountered"
 msgstr "ajustement singulier rencontré"
 
 msgid "no valid set of coefficients has been found: please supply starting values"
-msgstr "impossible de trouver un jeu de coefficients correct : prière de fournir des valeurs initiales"
+msgstr "impossible de trouver un jeu de coefficients correct : veuillez fournir des valeurs initiales"
 
 msgid "step size truncated due to divergence"
 msgstr "le pas a été tronqué à cause de la divergence"
@@ -1057,7 +1057,7 @@ msgid "glm.fit: fitted rates numerically 0 occurred"
 msgstr "glm.fit: des taux ont été ajustés numériquement à 0"
 
 msgid "the following arguments to 'anova.glm' are invalid and dropped:"
-msgstr "les arguments de 'anova.glm' suivants sont incorrects et ignorés :"
+msgstr "les arguments suivants de 'anova.glm' sont incorrects et ignorés :"
 
 msgid ","
 msgstr ","
@@ -1090,13 +1090,13 @@ msgid "invalid dissimilarities"
 msgstr "dissimilarités incorrectes"
 
 msgid "size cannot be NA nor exceed 65536"
-msgstr "la taille ne peut être NA et ne peut excéder 65536"
+msgstr "la taille ne peut être NA ni excéder 65536"
 
 msgid "must have n >= 2 objects to cluster"
 msgstr "il faut n >= 2 objets pour une classification"
 
 msgid "invalid length of members"
-msgstr "longueur des membres incorrecte"
+msgstr "longueur incorrecte des membres"
 
 msgid "argument 'x' cannot be coerced to class %s"
 msgstr "l'argument 'x' ne peut pas être converti automatiquement en objet de classe %s"
@@ -1123,7 +1123,7 @@ msgid "all elements of 'which' must be between 1 and %d"
 msgstr "tous les éléments de 'which' doivent être compris entre 1 et %d"
 
 msgid "invalid parameter values"
-msgstr "valeurs des paramètres incorrectes"
+msgstr "valeurs incorrectes des paramètres"
 
 msgid "a limit is NA or NaN"
 msgstr "une limite est NA ou NaN"
@@ -1150,7 +1150,7 @@ msgid "'coef' must be a vector"
 msgstr "'coef' doit être un vecteur"
 
 msgid "'coef' does not have the correct length"
-msgstr "la longueur de 'coef' est incorrecte"
+msgstr "longueur incorrecte de 'coef'"
 
 msgid "coefficients do not add to 1"
 msgstr "la somme des coefficients n'est pas égale à 1"
@@ -1204,7 +1204,7 @@ msgid "'x' is a list, so ignoring argument 'g'"
 msgstr "'x' est une liste, donc l’argument 'g' est ignoré"
 
 msgid "some elements of 'x' are not numeric and will be coerced to numeric"
-msgstr "certains éléments de 'x' sont non numériques et seront convertis en nombres"
+msgstr "certains éléments de 'x' ne sont pas numériques et seront convertis en nombres"
 
 msgid "not enough 'x' data"
 msgstr "pas assez de données 'x'"
@@ -1219,13 +1219,13 @@ msgid "'y' must be numeric or a function or a string naming a valid function"
 msgstr "'y' doit être numérique ou une fonction ou bien une chaîne de caractères donnant le nom d'une fonction adéquate"
 
 msgid "ties should not be present for the Kolmogorov-Smirnov test"
-msgstr "aucun ex-aequo ne devrait être présent pour le test de Kolmogorov-Smirnov"
+msgstr "aucun ex-aequo ne doit être présent pour le test de Kolmogorov-Smirnov"
 
 msgid ""
 "numeric y must be supplied.\n"
 "For density estimation use density()"
 msgstr ""
-"y doit être fourni.\n"
+"y numérique doit être fourni.\n"
 "Pour l'estimation de la densité, utilisez density()"
 
 msgid "'k' is not an integer"
@@ -1235,7 +1235,7 @@ msgid "method = '%s' is not supported. Using 'qr'"
 msgstr "method = '%s' n'est pas supporté. Utilisation de 'qr'"
 
 msgid "number of offsets is %d, should equal %d (number of observations)"
-msgstr "le nombre de décalages est %d, il devrait valoir %d (nombre d'observations)"
+msgstr "le nombre de décalages est %d, il doit valoir %d (nombre d'observations)"
 
 msgid "'x' must be a matrix"
 msgstr "'x' doit être une matrice"
@@ -1265,7 +1265,7 @@ msgid ""
 "lm object does not have a proper 'qr' component.\n"
 " Rank zero or should not have used lm(.., qr=FALSE)."
 msgstr ""
-"l'object lm n'a pas de composante 'qr' adéquate.\\n\n"
+"l'object lm n'a pas de composante 'qr' adéquate.\n"
 " Rang nul ou appel inapproprié de lm(..., qr=FALSE)."
 
 msgid "simulate() is not yet implemented for multivariate lm()"
@@ -1278,7 +1278,7 @@ msgid "calling anova.lm(<fake-lm-object>) ..."
 msgstr "appel à anova.lm(<faux-objet-lm>) ..."
 
 msgid "ANOVA F-tests on an essentially perfect fit are unreliable"
-msgstr "Les tests F d'ANOVA sur un ajustement pratiquement parfait ne sont pas fiables"
+msgstr "Les tests F d'ANOVA ne sont pas fiables sur un ajustement pratiquement parfait"
 
 msgid "calling predict.lm(<fake-lm-object>) ..."
 msgstr "appel à predict.lm(<faux-objet-lm>) ..."
@@ -1308,7 +1308,7 @@ msgid "invalid model QR matrix"
 msgstr "matrice QR du modèle incorrecte"
 
 msgid "non-NA residual length does not match cases used in fitting"
-msgstr "le nombre de résidus non manquants ne correspond pas a l'effectif utilisé pour l'ajustement"
+msgstr "le nombre de résidus non manquants ne correspond pas à l'effectif utilisé pour l'ajustement"
 
 #  parenthese ouvrante où ? 
 msgid "too few cases i with h_ii > 0), n < k"
@@ -1372,13 +1372,13 @@ msgid "'logLik.lm' does not support multiple responses"
 msgstr "'logLik.lm' n'est pas implémenté pour les réponses multiples"
 
 msgid "no \"nobs\" attribute is available"
-msgstr "aucun attribut \"nobs\" n'est disponible"
+msgstr "aucun attribut \"nobs\" disponible"
 
 msgid "no 'nobs' method is available"
 msgstr "pas de méthode 'nobs' disponible"
 
 msgid "'margin' must contain names or numbers corresponding to 'table'"
-msgstr "'margin' doit contenir les noms ou des nombres correspondant à 'table'"
+msgstr "'margin' doit contenir des noms ou des nombres correspondant à 'table'"
 
 msgid "'start' and 'table' must be same length"
 msgstr "'start' et 'table' doivent avoir la même longueur"
@@ -1405,7 +1405,7 @@ msgid "need multiple responses"
 msgstr "réponses multiples nécessaires"
 
 msgid "object must be of class %s or %s"
-msgstr "l'objet doit être de la classe %s ou %s"
+msgstr "l'objet doit être de classe %s ou %s"
 
 msgid "residuals have rank %d < %d"
 msgstr "les résidus sont de rang %d < %d"
@@ -1420,10 +1420,10 @@ msgid "'x' must be a 3-dimensional array"
 msgstr "'x' doit être un tableau de dimension 3"
 
 msgid "if 'x' is not an array, 'y' must be given"
-msgstr "si 'x' n'est pas un tableau, 'y' doit être donné"
+msgstr "si 'x' n'est pas un tableau, 'y' doit être fourni"
 
 msgid "if 'x' is not an array, 'z' must be given"
-msgstr "si 'x' n'est pas un tableau, 'z' doit être donné"
+msgstr "si 'x' n'est pas un tableau, 'z' doit être fourni"
 
 msgid "'x', 'y', and 'z' must have the same length"
 msgstr "'x', 'y', et 'z' doivent avoir la même longueur"
@@ -1465,13 +1465,13 @@ msgid "Design is unbalanced - use se.contrast() for se's"
 msgstr "Le plan n'est pas équilibré - utilisez se.contrast() pour les erreur-types"
 
 msgid "design is unbalanced so cannot proceed"
-msgstr "le plan n'est pas balancé et ne peut être utilisé"
+msgstr "le plan n'est pas équilibré et ne peut être utilisé"
 
 msgid ""
 "Standard error information not returned as design is unbalanced. \n"
 "Standard errors can be obtained through 'se.contrast'."
 msgstr ""
-"Erreur-type non retournée car le plan est déséquilibré. \n"
+"Erreur-type non retournée car le plan n'est pas équilibré. \n"
 "Les erreur-types sont obtenues avec 'se.contrast'."
 
 msgid "SEs for type '%s' are not yet implemented"
@@ -1484,7 +1484,7 @@ msgid "non-factors ignored: %s"
 msgstr "les données autres que des facteurs sont ignorées : %s"
 
 msgid "eff.aovlist: non-orthogonal contrasts would give an incorrect answer"
-msgstr "eff.aovlist : des contrastes non orthogonaux donneraient un résultat incorrect"
+msgstr "eff.aovlist : les contrastes non orthogonaux pourraient donner un résultat incorrect"
 
 msgid "cannot create a formula from a zero-column data frame"
 msgstr "impossible de créer une formule à partir d'un tableau de données à zéro colonne"
@@ -1493,10 +1493,10 @@ msgid "invalid formula: %s"
 msgstr "'formula' incorrecte : %s"
 
 msgid "invalid formula %s: not a call"
-msgstr "formule %s incorrecte : ce n’est pas un appel"
+msgstr "formule %s incorrecte : ce n'est pas un appel"
 
 msgid "invalid formula %s: assignment is deprecated"
-msgstr "formule %s incorrecte : l’assignation est obsolète"
+msgstr "formule %s incorrecte : l'assignation est obsolète"
 
 msgid "invalid formula %s: extraneous call to `%s` is deprecated"
 msgstr "formule %s incorrecte : l'appel externe à `%s` est obsolète"
