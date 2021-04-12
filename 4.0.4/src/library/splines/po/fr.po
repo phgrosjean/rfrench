@@ -25,9 +25,9 @@ msgstr "'ord' doit �tre un entier positif"
 #: splines.c:222
 #, c-format
 msgid "derivs = %d >= ord = %d, but should be in {0,..,ord-1}"
-msgstr "derivs = %d >= ord = %d, mais devraient �tre dans {0,..,ord-1}"
+msgstr "derivs = %d >= ord = %d, mais doit �tre dans {0,..,ord-1}"
 
 #: splines.c:225
 #, c-format
 msgid "derivs[%d] = %d >= ord = %d, but should be in {0,..,ord-1}"
-msgstr "derivs[%d] = %d >= ord = %d, mais devraient �tre dans {0,..,ord-1}"
+msgstr "derivs[%d] = %d >= ord = %d, mais doit �tre dans {0,..,ord-1}"

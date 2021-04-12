@@ -38,7 +38,7 @@ msgstr "cette variable n’existe pas"
 
 #: tcltk.c:322 tcltk.c:342 tcltk.c:417 tcltk.c:482 tcltk.c:536
 msgid "invalid tclObj -- perhaps saved from another session?"
-msgstr "tclObj incorrect -- sans doute sauvé depuis une autre session ?"
+msgstr "tclObj incorrect -- sans doute enregistré depuis une autre session ?"
 
 #: tcltk.c:646
 msgid "argument list is too long in tcltk internal function 'callback_closure'"
@@ -46,7 +46,7 @@ msgstr "la liste d'arguments est trop longue dans la fonction interne tcltk 'cal
 
 #: tcltk.c:679
 msgid "argument is not of correct type"
-msgstr "l'argument n'est pas d'un type correct"
+msgstr "type incorrect d'argument"
 
 #: tcltk.c:731
 msgid "no DISPLAY variable so Tk is not available"
