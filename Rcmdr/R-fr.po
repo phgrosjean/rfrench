@@ -223,7 +223,7 @@ msgid "R Commander Version"
 msgstr "R Commander Version"
 
 msgid "First and last 5 warnings:"
-msgstr "Premiers et derniers 5 avis :"
+msgstr "Premier et 5 derniers avis :"
 
 msgid "ERROR:"
 msgstr "ERREUR :"
@@ -326,14 +326,14 @@ msgid ""
 "Please confirm."
 msgstr ""
 "Effacement de %s ?\n"
-"Confirmation."
+"Veuillez confirmer."
 
 msgid ""
 "Delete %d variables?\n"
 "Please confirm."
 msgstr ""
 "Effacement de %d variables ?\n"
-"Confirmation."
+"Veuillez confirmer."
 
 msgid "Read Data From Text File"
 msgstr "Lire des données depuis un fichier texte"
@@ -464,7 +464,7 @@ msgid "Variable (pick one)"
 msgstr "Variable (une)"
 
 msgid "Supply level names"
-msgstr "Noms des niveaux"
+msgstr "Fournir les noms des niveaux"
 
 msgid "Use numbers"
 msgstr "Utiliser les nombres"
@@ -657,13 +657,13 @@ msgid "Treatment (dummy) contrasts"
 msgstr "Contraste de traitement (\"dummy\")"
 
 msgid "Sum (deviation) contrasts"
-msgstr "Somme des contrastes"
+msgstr "Somme (déviation) des contrastes"
 
 msgid "Helmert contrasts"
 msgstr "Contrastes de Helmert"
 
 msgid "Polynomial contrasts"
-msgstr "Contraste polynômiaux"
+msgstr "Contrastes polynômiaux"
 
 msgid "Other (specify)"
 msgstr "Autre (spécifiez)"
@@ -721,7 +721,7 @@ msgid "No values specified."
 msgstr "Aucune valeur n'est spécifiée."
 
 msgid "Variable value(s)"
-msgstr "Quantiles"
+msgstr "Valeur des variables"
 
 msgid "t Quantiles"
 msgstr "quantiles t"
@@ -849,7 +849,7 @@ msgid "{\"Script Files\" {\".R\"}} {\"All Files\" {\"*\"}}"
 msgstr "{\"Fichiers scripts\" {\".R\"}} {\"Tous les fichiers\" {\"*\"}}"
 
 msgid "Save current log file?"
-msgstr "Enregistrer le fichier des sorties ?"
+msgstr "Enregistrer le fichier actuel des sorties ?"
 
 msgid "Script saved to"
 msgstr "Script enregistré dans"
@@ -879,16 +879,16 @@ msgid "Commander Options"
 msgstr "Options de R Commander"
 
 msgid "Log commands to script window"
-msgstr "Enregistrer les commandes dans la fenêtre de script"
+msgstr "Enregistrer les commandes de la fenêtre de script"
 
 msgid "Log-font size (points)"
 msgstr "Taille de police (points)"
 
 msgid "Log width (characters)"
-msgstr "Largeur de la fenêtre (caractères)"
+msgstr "Largeur de la fenêtre d'enregistrement (caractères)"
 
 msgid "Log height (lines)"
-msgstr "Hauteur de la fenêtre enregistrement (lignes)"
+msgstr "Hauteur de la fenêtre d'enregistrement (lignes)"
 
 msgid "Send output to R Console"
 msgstr "Envoi des résultats dans la console R"
@@ -909,7 +909,7 @@ msgid "Double-click presses OK button"
 msgstr "Le double-clic correspond au bouton OK"
 
 msgid "Sort variable names alphabetically"
-msgstr "Trier les noms de variables par ordre alphabétique"
+msgstr "Trier les noms des variables par ordre alphabétique"
 
 msgid "Show edit button"
 msgstr "Afficher le bouton « Éditer »"
@@ -953,7 +953,7 @@ msgid ""
 "with mouse"
 msgstr ""
 "Identifier les observations\n"
-"à la souris"
+"avec la souris"
 
 msgid "Spikes"
 msgstr "Traits verticaux"
@@ -1016,7 +1016,7 @@ msgid "Options"
 msgstr "Options"
 
 msgid "Boxplot"
-msgstr "Boite de dispersion"
+msgstr "Boîte de dispersion"
 
 msgid "Identify outliers with mouse"
 msgstr "Identifier les extrêmes à la souris"
@@ -1031,7 +1031,7 @@ msgid "y-variable (pick one)"
 msgstr "variable y (une)"
 
 msgid "Identify points"
-msgstr "Identifier les points à la souris"
+msgstr "Identifier les points"
 
 msgid "Jitter x-variable"
 msgstr "Décalages aléatoires x"
@@ -1040,7 +1040,7 @@ msgid "Jitter y-variable"
 msgstr "Décalages aléatoires y"
 
 msgid "Marginal boxplots"
-msgstr "Boite à dispersion marginales"
+msgstr "Boite à dispersions marginales"
 
 msgid "Least-squares line"
 msgstr "Ligne des moindres carrés"
@@ -1061,7 +1061,7 @@ msgid "Scatterplot Matrix"
 msgstr "Matrice de nuages de points"
 
 msgid "Select variables (three or more)"
-msgstr "Sélectionnez les variables (trois au plus)"
+msgstr "Sélectionnez les variables (trois ou plus)"
 
 msgid "Least-squares lines"
 msgstr "Lignes des moindres carrés"
@@ -1076,7 +1076,7 @@ msgid "Histograms"
 msgstr "Histogrammes"
 
 msgid "Boxplots"
-msgstr "Boites de dispersion"
+msgstr "Boîtes de dispersion"
 
 msgid "Normal QQ plots"
 msgstr "Graphes quantiles-quantiles normaux"
@@ -1125,7 +1125,7 @@ msgstr ""
 "Continuer quand même ?"
 
 msgid "Label for y-axis"
-msgstr "Etiquelle de l'axe y"
+msgstr "Etiquette de l'axe y"
 
 msgid "Plot legend (position with mouse click)"
 msgstr "Tracer la légende (la positionner à la souris)"
@@ -1144,10 +1144,10 @@ msgid ""
 "df for F must be positive numbers."
 msgstr ""
 "les dll au numérateur et au dénominateur\n"
-"doivent être des nombre positifs pour F."
+"doivent être des nombres positifs pour F."
 
 msgid "Identify observations with mouse"
-msgstr "Identifier les observations à la souris"
+msgstr "Identifier les observations avec la souris"
 
 msgid "Distribution"
 msgstr "Distribution"
@@ -1261,7 +1261,7 @@ msgid "Save Graph as Bitmap"
 msgstr "Enregistrer le graphe en bitmap"
 
 msgid "There is no current graphics device to save."
-msgstr "Aucun périphérique graphique d'où sauvegarder."
+msgstr "Aucun périphérique graphique à sauvegarder."
 
 msgid "Graphics File Type"
 msgstr "Type de fichier image"
