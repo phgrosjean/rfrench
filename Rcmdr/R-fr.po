@@ -1312,7 +1312,7 @@ msgid "Text size (points)"
 msgstr "Taille du texte (points)"
 
 msgid "There is no current RGL graphics device to save."
-msgstr "Aucun périphérique graphique RGL d'où sauvegarder."
+msgstr "Aucun périphérique graphique RGL pour sauvegarder."
 
 msgid "{\"PNG Bitmap Files\" {\".png\" \".PNG\"}} {\"All Files\" {\"*\"}}"
 msgstr "{\"Fichiers PNG\" {\".png\" \".PNG\"}} {\"Tous les fichiers\" {\"*\"}}"
@@ -1333,7 +1333,7 @@ msgid "There is no dataset associated with this model."
 msgstr "Pas de données associées à ce modèle."
 
 msgid "The dataset associated with this model, %s, is not in memory."
-msgstr "Le jeu de données, %s, associé à ce modèles n'est pas en mémoire."
+msgstr "Le jeu de données, %s, associé à ce modèle n'est pas en mémoire."
 
 msgid "Current Model:"
 msgstr "Modèle actif :"
@@ -1379,7 +1379,7 @@ msgid "Simulated confidence envelope"
 msgstr "Simuler l'enveloppe de confiance"
 
 msgid "Identify points with mouse"
-msgstr "Identifier les points à la souris"
+msgstr "Identifier les points avec la souris"
 
 msgid "Test Linear Hypothesis"
 msgstr "Tester l'hypothèse de linéarité"
@@ -1405,7 +1405,7 @@ msgid "Number of Rows:"
 msgstr "Nombre de lignes :"
 
 msgid "Enter hypothesis matrix and right-hand side vector:"
-msgstr "Entrer la matrice d'hypothèse et le vecteur du membre de droite :"
+msgstr "Entrer la matrice d'hypothèse et le vecteur du membre droit :"
 
 msgid "There are fewer than two models."
 msgstr "Moins de deux modèles."
@@ -1423,7 +1423,7 @@ msgid "You must select two models."
 msgstr "Vous devez sélectionner deux modèles."
 
 msgid "Models are not of the same class."
-msgstr "Les modèles ne sont pas de même classe."
+msgstr "Les modèles ne sont pas de la même classe."
 
 msgid "Breusch-Pagan Test"
 msgstr "Test Breusch-Pagan"
@@ -1432,7 +1432,7 @@ msgid "Score Test for Nonconstant Error Variance"
 msgstr "Test de score pour la variance d'erreur non constante"
 
 msgid "Studentized test statistic"
-msgstr "Test sur les statistiques studentisées"
+msgstr "Statistiques de test studentisées"
 
 msgid "Explanatory variables"
 msgstr "Variables explicatives"
@@ -1480,7 +1480,7 @@ msgid "Confidence Intervals"
 msgstr "Intervalles de confiance"
 
 msgid "Confidence Intervals for Individual Coefficients"
-msgstr "Intervalles de confiance pour les coefficients"
+msgstr "Intervalles de confiance pour les coefficients individuels"
 
 msgid "Confidence level must be a number between 0 and 1."
 msgstr "Le niveau de confiance doit être un nombre entre 0 et 1."
@@ -1635,7 +1635,7 @@ msgid "No"
 msgstr "Non"
 
 msgid "Assume equal variances?"
-msgstr "Variances égales ?"
+msgstr "Variances supposées égales ?"
 
 msgid "Confidence Level"
 msgstr "Niveau de confiance"
@@ -1677,7 +1677,7 @@ msgid "You must select a groups factor."
 msgstr "Vous devez sélectionner un facteur de regroupement."
 
 msgid "Factor has fewer than 3 levels; pairwise comparisons omitted."
-msgstr "Le facteur a moins de 3 niveaux ; Les comparaisons multiples sont omises."
+msgstr "Le facteur a moins de 3 niveaux ; les comparaisons multiples sont omises."
 
 msgid "Pairwise comparisons of means"
 msgstr "Comparaisons multiples des moyennes"
@@ -1713,10 +1713,10 @@ msgid "Linear Model"
 msgstr "Modèle linéaire"
 
 msgid "Left-hand side of model empty."
-msgstr "Membre de gauche vide pour ce modèle."
+msgstr "Membre gauche vide pour ce modèle."
 
 msgid "Right-hand side of model empty."
-msgstr "Membre de droite vide pour ce modèle."
+msgstr "Membre droit vide pour ce modèle."
 
 msgid "Generalized Linear Model"
 msgstr "Modèle linéaire généralisé"
@@ -1728,7 +1728,7 @@ msgid "Link function"
 msgstr "Fonction de lien"
 
 msgid "Proportional-Odds Logit Model"
-msgstr "Modèle Logit"
+msgstr "Modèle Logit Proportional-Odds"
 
 msgid "Response variable must be a factor"
 msgstr "La variable réponse doit être un facteur"
@@ -1833,7 +1833,7 @@ msgstr ""
 "n'est pas égal au nombre de niveaux (%d)."
 
 msgid "Negative probabilities not allowed."
-msgstr "Des probabilités négatives n'ont pas de sens."
+msgstr "Les probabilités négatives n'ont pas de sens."
 
 msgid "Probabilities rescaled to sum to 1."
 msgstr "Les probabilités sont mises à l'échelle pour que leur somme fasse 1."
@@ -1854,7 +1854,7 @@ msgid "Statistic"
 msgstr "Statistique"
 
 msgid "Correlation Matrix"
-msgstr "Matrice de corrélations"
+msgstr "Matrice de corrélation"
 
 msgid "Pearson product-moment"
 msgstr "Coefficient de Pearson"
@@ -1955,7 +1955,7 @@ msgid "Two Variances F-Test"
 msgstr "Test F de deux variances"
 
 msgid "Bartlett's Test"
-msgstr "Test de Batlett"
+msgstr "Test de Bartlett"
 
 msgid "Levene's Test"
 msgstr "Test de Levene"
@@ -1973,7 +1973,7 @@ msgid "There is no active model."
 msgstr "Aucun modèle actif."
 
 msgid "argument must be a square, symmetric, numeric covariance matrix"
-msgstr "l'argument doit être une matrice de covariances carrée et symétrique"
+msgstr "l'argument doit être une matrice de covariance, carrée, numérique et symétrique"
 
 msgid "there are fewer than 3 items in the scale"
 msgstr "moins de 3 items dans l'échelle"
@@ -2000,7 +2000,7 @@ msgid "groups variable must be a factor."
 msgstr "la variable de regroupement doit être de type facteur."
 
 msgid "cannot plot both multiple surfaces and residuals"
-msgstr "impossible de tracer à la fois des surfaces multiples et les résidus"
+msgstr "impossible de tracer à la fois les surfaces multiples et les résidus"
 
 msgid "not supplied"
 msgstr "non fourni"
@@ -2058,7 +2058,7 @@ msgid "Groups variable (pick one)"
 msgstr "Variable de regroupement (une)"
 
 msgid "Position legend with mouse click"
-msgstr "Positionner la légende à la souris"
+msgstr "Positionner la légende avec la souris"
 
 msgid "<No groups selected>"
 msgstr "<Pas de groupes sélectionnés>"
@@ -2080,7 +2080,7 @@ msgstr ""
 "pour un modèle de cette classe."
 
 msgid "The model is not of class \"%s\"."
-msgstr "Le modèle n'est pas de la classe \"%s\"."
+msgstr "Le modèle n'est pas de classe \"%s\"."
 
 msgid "Open script file..."
 msgstr "Ouvrir un script..."
@@ -2206,7 +2206,7 @@ msgid "Numerical summaries..."
 msgstr "Statistiques descriptives..."
 
 msgid "Frequency distribution..."
-msgstr "Distribution de fréquences..."
+msgstr "Distribution des fréquences..."
 
 msgid "Table of statistics..."
 msgstr "Tableau de statistiques..."
@@ -2248,7 +2248,7 @@ msgid "Two-variances F-test..."
 msgstr "Test F de deux variances..."
 
 msgid "Bartlett's test..."
-msgstr "Test de Bartlett…"
+msgstr "Test de Bartlett..."
 
 msgid "Levene's test..."
 msgstr "Test de Levene..."
@@ -2299,7 +2299,7 @@ msgid "Multinomial logit model..."
 msgstr "Modèle Logit multinomial..."
 
 msgid "Proportional-odds logit model..."
-msgstr "Modèle Logit..."
+msgstr "Modèle Logit Proportional-odds ..."
 
 msgid "Statistics"
 msgstr "Statistiques"
