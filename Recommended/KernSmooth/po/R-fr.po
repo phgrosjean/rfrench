@@ -20,7 +20,7 @@ msgid ""
 "'gridsize'"
 msgstr ""
 "La grille de regroupement par classe est trop grossière pour la (faible) "
-"bande passante : essayez en augmentant 'gridsize'"
+"largeur de fenêtre : essayez en augmentant 'gridsize'"
 
 msgid "Level should be between 0 and 5"
 msgstr "Le niveau doit être compris entre 0 et 5"
@@ -30,8 +30,7 @@ msgstr "l'estimateur d'échelle vaut zéro pour les données fournies en entrée
 
 msgid "'bandwidth' must be a scalar or an array of length 'gridsize'"
 msgstr ""
-"'bandwidth' doit être un scalaire ou un tableau multidimensionnel de "
-"longueur 'gridsize'"
+"'bandwidth' doit être un scalaire ou un tableau de longueur 'gridsize'"
 
 msgid ""
 "KernSmooth 2.23 loaded\n"
