@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: R 4.0.4\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2021-02-01 13:58\n"
-"PO-Revision-Date: 2021-02-10 17:38+0100\n"
+"PO-Revision-Date: 2021-04-12 17:08+0200\n"
 "Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
@@ -22,7 +22,7 @@ msgid "'a' is overridden by 'reg'"
 msgstr "'a' est ignoré au bénéfice de 'reg'"
 
 msgid "only using the first two of %d regression coefficients"
-msgstr "utilisation des deux premiers coefficients de régression de %d "
+msgstr "utilisation des deux premiers coefficients de régression de %d"
 
 msgid "'a' and 'b' are overridden by 'coef'"
 msgstr "'a' et 'b' sont ignorés au bénéfice de 'coef'"
@@ -100,7 +100,7 @@ msgid "'at' must have same length as 'z$n', i.e. %d"
 msgstr "'at' doit avoir la même longueur que 'z$n', c'est-à-dire %d"
 
 msgid "invalid boxplot widths"
-msgstr "largeur incorrecte des boîtes à moustaches "
+msgstr "largeur incorrecte des boîtes à moustaches"
 
 msgid "some notches went outside hinges ('box'): maybe set notch=FALSE"
 msgstr "quelques indentations (\"notches\") dépassent des jointures (\"hinges\") ('box') : utilisez peut-être notch=FALSE"
@@ -130,7 +130,7 @@ msgid "invalid conditioning formula"
 msgstr "formule conditionnelle incorrecte"
 
 msgid "incompatible variable lengths"
-msgstr "longueur incompatible des variables "
+msgstr "longueur incompatible des variables"
 
 msgid "'number' must be integer >= 1"
 msgstr "'number' doit être un entier >= 1"
@@ -353,7 +353,7 @@ msgid "invalid table 'x'"
 msgstr "tableau 'x' incorrect"
 
 msgid "the formula '%s' is treated as '%s'"
-msgstr "La formule '%s' est traitée comme '%s'"
+msgstr "la formule '%s' est traitée comme '%s'"
 
 msgid "cannot handle more than one 'x' coordinate"
 msgstr "impossible de traiter plus d'une coordonnée 'x'"
@@ -365,7 +365,7 @@ msgid "invalid plot type"
 msgstr "type de graphique incorrect"
 
 msgid "plot type '%s' will be truncated to first character"
-msgstr "Le type de graphique '%s' sera tronqué au premier caractère"
+msgstr "le type de graphique '%s' sera tronqué au premier caractère"
 
 msgid "invalid plot type '%s'"
 msgstr "type de graphique '%s' incorrect"

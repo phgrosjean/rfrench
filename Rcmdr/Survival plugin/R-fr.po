@@ -10,23 +10,24 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
 "Language-Team: French <R-core@r-project.org>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Poedit-Language: French\n"
+"X-Generator: Poedit 2.4.2\n"
 
 msgid "Cox-Regression Model"
-msgstr "ModËle de rÈgression de Cox"
+msgstr "Mod√®le de r√©gression de Cox"
 
 msgid "Start and stop times must be ordered."
-msgstr "Les temps de dÈbut et de fin doivent Ítre ordonnÈs."
+msgstr "Les temps de d√©but et de fin doivent √™tre ordonn√©s."
 
 msgid "You must select one or two time variables."
-msgstr "Vous devez slÈectionner une ou deux variables."
+msgstr "Vous devez sl√©ectionner une ou deux variables."
 
 msgid "You must select an event indicator."
-msgstr "Vous devez sÈlection un indicateur d'ÈvÈnement."
+msgstr "Vous devez s√©lection un indicateur d'√©v√©nement."
 
 msgid "\"%s\" is not a valid name."
 msgstr "\"%s\" n'est pas un nom correct."
@@ -35,34 +36,34 @@ msgid "<all valid cases>"
 msgstr "<tous cas corrects>"
 
 msgid "Right-hand side of model empty."
-msgstr "Partie de droite du modËle vide."
+msgstr "Partie de droite du mod√®le vide."
 
 msgid "Model"
-msgstr "ModËle"
+msgstr "Mod√®le"
 
 msgid "Enter name for model:"
-msgstr "Nom du modËle :"
+msgstr "Nom du mod√®le :"
 
 msgid ""
 "Time or start/end times\n"
 "(select one or two)"
 msgstr ""
-"Temps ou dÈbut/fin\n"
-"(sÈlectionnez-en un ou deux)"
+"Temps ou d√©but/fin\n"
+"(s√©lectionnez-en un ou deux)"
 
 msgid ""
 "Event indicator\n"
 "(select one)"
 msgstr ""
-"Indicateur d'ÈvÈnement\n"
-"(sÈlectionnez-en un)"
+"Indicateur d'√©v√©nement\n"
+"(s√©lectionnez-en un)"
 
 msgid ""
 "Strata\n"
 "(select zero or more)"
 msgstr ""
 "Strate\n"
-"(SÈlectionnez-en une ou rien)"
+"(S√©lectionnez-en une ou rien)"
 
 msgid ""
 "Clusters\n"
@@ -81,10 +82,10 @@ msgid "Exact"
 msgstr "Exact"
 
 msgid "Method for Ties"
-msgstr "MÈthode pour les ex-aequos"
+msgstr "M√©thode pour les ex-aequos"
 
 msgid "Default"
-msgstr "Par dÈfaut"
+msgstr "Par d√©faut"
 
 msgid "Yes"
 msgstr "Oui"
@@ -96,38 +97,38 @@ msgid "Robust Standard Errors"
 msgstr "Ecarts types robustes"
 
 msgid "Survival Data Definition"
-msgstr "DÈfinition des donnÈes de survie"
+msgstr "D√©finition des donn√©es de survie"
 
 msgid "Plot Cox-Model Survival Functions"
-msgstr "Graphe des fonction du modËle de survie de Cox"
+msgstr "Graphe des fonction du mod√®le de survie de Cox"
 
 msgid "Default behavior"
-msgstr "Comportement par dÈfaut"
+msgstr "Comportement par d√©faut"
 
 msgid "Plot Confidence Intervals"
 msgstr "Graphe des intervalles de confiance"
 
 msgid "Plot at predictor means"
-msgstr "Graphe aux moyennes des prÈdictions"
+msgstr "Graphe aux moyennes des pr√©dictions"
 
 msgid "Plot by factor levels at covariate means"
 msgstr "Graphe par niveaux de la variable facteur aux moyennes de la covariable"
 
 msgid "Plot at specified values of predictors"
-msgstr "Graphe ‡ des valeurs spÈcifiÈes des prÈdictions"
+msgstr "Graphe √† des valeurs sp√©cifi√©es des pr√©dictions"
 
 msgid "Type of Plot"
 msgstr "Type de graphe"
 
 msgid "Confidence level must be a number between 0 and 1."
-msgstr "Le niveau de confiance doit Ítre un nombre compris entre 0 et 1."
+msgstr "Le niveau de confiance doit √™tre un nombre compris entre 0 et 1."
 
 msgid ""
 "Number of valid entries in prediction data (%d)\n"
 "not equal to number of rows (%d) * number of columns (%d)."
 msgstr ""
-"Le nombre d'entrÈes correctes dans les donnÈes de prÈdiction (%d)\n"
-"n'est pas Ègal au nombre de lignes (%d) * le nombre de colonnes (%d)."
+"Le nombre d'entr√©es correctes dans les donn√©es de pr√©diction (%d)\n"
+"n'est pas √©gal au nombre de lignes (%d) * le nombre de colonnes (%d)."
 
 msgid "Level of confidence:"
 msgstr "Niveau de confiance :"
@@ -136,7 +137,7 @@ msgid "Plot marginal survival"
 msgstr "Graphe de la survie marginale"
 
 msgid "Specify Values of Predictors:"
-msgstr "SpÈcifier les valeurs des prÈdictions :"
+msgstr "Sp√©cifier les valeurs des pr√©dictions :"
 
 msgid "Number of rows:"
 msgstr "Nombre de lignes :"
@@ -145,7 +146,7 @@ msgid "Compare Survival Functions"
 msgstr "Comper des fonctions de survie"
 
 msgid "You must select strata."
-msgstr "Vous devez sÈlectionner des strates."
+msgstr "Vous devez s√©lectionner des strates."
 
 msgid "Survival Function"
 msgstr "Fonction de survie"
@@ -178,10 +179,10 @@ msgid "Fleming-Harrington 2"
 msgstr "Fleming-Harrington 2"
 
 msgid "Mark censoring times"
-msgstr "Mrquer les temps censorÈs"
+msgstr "Mrquer les temps censor√©s"
 
 msgid "Method"
-msgstr "MÈthode"
+msgstr "M√©thode"
 
 msgid "Greenwood"
 msgstr "Greenwood"
@@ -190,16 +191,16 @@ msgid "Tsiatis"
 msgstr "Tsiatis"
 
 msgid "Variance Method"
-msgstr "MÈthode de la variance"
+msgstr "M√©thode de la variance"
 
 msgid "Confidence level"
 msgstr "Niveau de confiance"
 
 msgid "Quantiles to estimate"
-msgstr "Quantiles ‡ estimer"
+msgstr "Quantiles √† estimer"
 
 msgid "Survival Regression Model"
-msgstr "ModËle de rÈgression de survie"
+msgstr "Mod√®le de r√©gression de survie"
 
 msgid "Weibull"
 msgstr "Weibull"
@@ -223,61 +224,61 @@ msgid "Distribution"
 msgstr "Distribution"
 
 msgid "Reshape Wide Survival Data to Long"
-msgstr "Reformatter des donnÈes de survie large en longueur"
+msgstr "Reformatter des donn√©es de survie large en longueur"
 
 msgid "No time-varying covariates specified."
-msgstr "Aucune covariable variant avec le temps n'est spÈcifiÈe."
+msgstr "Aucune covariable variant avec le temps n'est sp√©cifi√©e."
 
 msgid "You must enter the name of a data set."
-msgstr "Vous devez entrer le nom d'un jeu de donnÈes."
+msgstr "Vous devez entrer le nom d'un jeu de donn√©es."
 
 msgid "is not a valid name."
 msgstr "n'est pas un nom correct."
 
 msgid "Data set"
-msgstr "Jeu de donnÈes"
+msgstr "Jeu de donn√©es"
 
 msgid "You must select a time-to-event variable."
-msgstr "Vous devez sÈlectionner une variable \"temps de l'ÈvÈnement\""
+msgstr "Vous devez s√©lectionner une variable time-to-event."
 
 msgid "Covariate set has %d entries; should have %d entries"
-msgstr "La covariabloe choisie a %d entrÈes ; Elle devrait en avoir %d"
+msgstr "La covariabloe choisie a %d entr√©es ; Elle devrait en avoir %d"
 
 msgid "Covariate set must have at least 2 entries."
-msgstr "La covariable choisie doit avoir au moins 2 entrÈes."
+msgstr "La covariable choisie doit avoir au moins 2 entr√©es."
 
 msgid ""
 "Time to event\n"
 "(select one)"
 msgstr ""
-"Temps de l'ÈvÈnement\n"
-"(sÈlectionnez-en un)"
+"Temps de l'√©v√©nement\n"
+"(s√©lectionnez-en un)"
 
 msgid ""
 "Select set of\n"
 "time-dependent covariates"
-msgstr "SÈlectionnez l'ensemble des/ncovariables dÈpendant du temps"
+msgstr "S√©lectionnez l'ensemble des/ncovariables d√©pendant du temps"
 
 msgid "Select"
-msgstr "SÈlectionnez"
+msgstr "S√©lectionnez"
 
 msgid "Enter name for data set:"
-msgstr "Nom du jeu de donnÈes :"
+msgstr "Nom du jeu de donn√©es :"
 
 msgid "Name for covariate"
 msgstr "Nom de la covariable"
 
 msgid "tcltk package missing"
-msgstr "Package tcltk manquant"
+msgstr "package tcltk manquant"
 
 msgid "all elements of cov must be of the same length and"
-msgstr "tous les ÈlÈments de cov doivent Ítre de mÍme longueur et"
+msgstr "tous les √©l√©ments de cov doivent √™tre de m√™me longueur et"
 
 msgid "cov.times must have one more entry than each element of cov."
-msgstr "cov.times doit contenir une ou plus d'entrÈes que chaque ÈlÈment de cov."
+msgstr "cov.times doit contenir une ou plus d'entr√©es que chaque √©l√©ment de cov."
 
 msgid "event indicator must have values {0, 1}, {1, 2} or {FALSE, TRUE}"
-msgstr "l'indicateur d'ÈvÈnement doit avoir des valeurs {0, 1}, {1, 2} ou {FALSE, TRUE}"
+msgstr "l'indicateur d'√©v√©nement doit avoir des valeurs {0, 1}, {1, 2} ou {FALSE, TRUE}"
 
 msgid "Factors only"
 msgstr "Variables facteurs seulement"
@@ -289,10 +290,10 @@ msgid "Candidates for clusters"
 msgstr "Candidats pour les regroupements"
 
 msgid "Time-dependent covariates"
-msgstr "Covariables dÈpendant du temps"
+msgstr "Covariables d√©pendant du temps"
 
 msgid "<none defined>"
-msgstr "<aucun dÈfini>"
+msgstr "<aucun d√©fini>"
 
 msgid "Convert variable to date..."
 msgstr "Convertir la variable en date ..."
@@ -301,7 +302,7 @@ msgid "Date Conversion"
 msgstr "Conversion en date"
 
 msgid "Variable to convert"
-msgstr "Variable ‡ convertir"
+msgstr "Variable √† convertir"
 
 msgid "date"
 msgstr "date"
@@ -318,3 +319,100 @@ msgstr "Classe de la variable date"
 msgid "object"
 msgstr "objet"
 
+msgid "Estimate survival function..."
+msgstr "Estimer la fonction de survie..."
+
+msgid "Compare survival functions..."
+msgstr "Comparer les fonctions de survie..."
+
+msgid "Survival analysis"
+msgstr "Analyse de survie"
+
+msgid "Survival data definition..."
+msgstr "D√©finition des donn√©es de survie..."
+
+msgid "Convert wide to long data..."
+msgstr "Convertir des donn√©es larges en donn√©es longues..."
+
+msgid "Survival data"
+msgstr "Donn√©es de survie"
+
+msgid "Cox regression model..."
+msgstr "Mod√®le de r√©gression de Cox..."
+
+msgid "Parametric survival model..."
+msgstr "Mod√®le param√©trique de survie..."
+
+msgid "Test proportional hazards"
+msgstr "Test des risques proportionnels"
+
+msgid "Cox-model survival function..."
+msgstr "Fonction de survie du mod√®le de Cox..."
+
+msgid "Plot terms in Cox model"
+msgstr "Graphe des termes du mod√®le de survie de Cox"
+
+msgid "Plot survival-regression dfbetas"
+msgstr "Graphique de la r√©gression de survie dfbetas"
+
+msgid "Plot survival-regression dfbeta"
+msgstr "Graphique de la r√©gression de survie dfbeta"
+
+msgid "Plot null Martingale residuals"
+msgstr "Graphique des r√©sidus de Martingale nuls"
+
+msgid "Cox-model partial-residual plots"
+msgstr "Graphiques des r√©sidus partiels du mod√®le de Cox"
+
+msgid ""
+"Event indicator\n"
+"(select one or none)"
+msgstr ""
+"Indicateur d'√©v√©nement\n"
+"(s√©lectionnez-en un ou aucun)"
+
+msgid "Type of Censoring"
+msgstr "Type de censure"
+
+msgid "Right"
+msgstr "Droite"
+
+msgid "Left"
+msgstr "Gauche"
+
+msgid "Interval"
+msgstr "Intervalle"
+
+msgid "Counting"
+msgstr "Contage"
+
+msgid "Interval type 2"
+msgstr "Intervalle de type 2"
+
+msgid "You must select an event indicator if censoring is 'interval'."
+msgstr "Vous devez s√©lectionner un indicateur d'√©v√©nement si la censure est 'interval'."
+
+msgid "You should not select an event indicator if censoring is 'interval2'."
+msgstr "Vous ne devez pas s√©lectionner un indicateur d'√©v√©nement si la censure est 'interval2'."
+
+msgid "start-end times only for counting-process or interval censoring."
+msgstr "les heures de d√©but et de fin uniquement pour le processus de comptage ou la censure par intervalle."
+
+msgid "start-end times required for counting-process or interval censoring."
+msgstr "les temps de d√©but et de fin requis pour le processus de comptage ou la censure par intervalle."
+
+msgid ""
+"Strata\n"
+"(select one or more)"
+msgstr ""
+"Strate\n"
+"(S√©lectionnez-en une ou plusieurs)"
+
+msgid "Summary"
+msgstr "R√©sum√©"
+
+msgid "Detailed"
+msgstr "D√©taill√©"
+
+msgid "Data"
+msgstr "Jeu de donn√©es"

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Matrix 1.1-1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-29 17:44+0100\n"
-"PO-Revision-Date: 2021-02-11 11:00+0100\n"
+"POT-Creation-Date: 2021-02-11 12:54+0100\n"
+"PO-Revision-Date: 2021-04-12 18:57+0200\n"
 "Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -321,7 +321,7 @@ msgstr "length(Dimnames[%d]) diffère de Dim[%d] qui est %d"
 msgid "'uplo' must be UPP or LOW"
 msgstr "'uplo' doit être UPP ou LOW"
 
-#: Mutils.c:504 dgeMatrix.c:420 dtrMatrix.c:287
+#: Mutils.c:504 dgeMatrix.c:420 dtrMatrix.c:288
 msgid "replacement diagonal has wrong length"
 msgstr "la diagonale de remplacement a une longueur incorrecte"
 
@@ -1007,14 +1007,15 @@ msgid "dtrMatrix must be square"
 msgstr "dtrMatrix doit être carrée"
 
 #: dtrMatrix.c:192
-msgid "\"dtrMatrix\" objects in '%*%' must have matching (square) dimension"
-msgstr "les objets \"dtrMatrix\" dans '%%*%%' doivent avoir des dimensions (carrées) cohérentes"
+#, c-format
+msgid "dimension mismatch in matrix multiplication of \"dtrMatrix\": %d != %d"
+msgstr "dimensions incompatibles pour la multiplication matricielle avec \"dtrMatrix\" : %d != %d"
 
-#: dtrMatrix.c:282
+#: dtrMatrix.c:283
 msgid "cannot set diag() as long as 'diag = \"U\"'"
 msgstr "impossible d'utiliser diag() puisque 'diag = \"U\"'"
 
-#: dtrMatrix.c:316
+#: dtrMatrix.c:317
 msgid "cannot add diag() as long as 'diag = \"U\"'"
 msgstr "impossible d'ajouter diag() puisque 'diag = \"U\"'"
 
@@ -1081,6 +1082,9 @@ msgstr "x[] <- val: val devrait être des entiers ou des valeurs logiques, il es
 #: t_Csparse_subassign.c:201
 msgid "programming error in Csparse_subassign() should never happen"
 msgstr "erreur de programmation dans Csparse_subassign() qui ne devrait jamais se produire"
+
+#~ msgid "\"dtrMatrix\" objects in '%*%' must have matching (square) dimension"
+#~ msgstr "les objets \"dtrMatrix\" dans '%%*%%' doivent avoir des dimensions (carrées) cohérentes"
 
 #~ msgid "not a CsparseMatrix"
 #~ msgstr "ceci n'est pas un CsparseMatrix"

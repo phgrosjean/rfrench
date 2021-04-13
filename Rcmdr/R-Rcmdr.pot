@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Rcmdr 1.3-0\n"
-"Report-Msgid-Bugs-To: bugs@r-project.org\n"
-"POT-Creation-Date: 2007-05-31 21:05\n"
+"Project-Id-Version: Rcmdr 2.7-0\n"
+"Report-Msgid-Bugs-To: jfox@mcmaster.ca\n"
+"POT-Creation-Date: 2020-08-25 10:45:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: LL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
-
 
 msgid "KMeans Clustering"
 msgstr ""
@@ -230,8 +230,8 @@ msgstr ""
 msgid "New Data Set"
 msgstr ""
 
-msgid "Dataset"
-msgstr ""
+#msgid "Dataset"
+#msgstr ""
 
 msgid "You must enter the name of a data set."
 msgstr ""
@@ -266,8 +266,8 @@ msgstr ""
 msgid "Variable to recode (pick one)"
 msgstr ""
 
-msgid "variable"
-msgstr ""
+#msgid "variable"
+#msgstr ""
 
 msgid "You must select a variable."
 msgstr ""
@@ -2318,16 +2318,16 @@ msgstr ""
 msgid "Residual quantile-comparison plot..."
 msgstr ""
 
-msgid "Component+residual plots"
+msgid "Component+residual plots..."
 msgstr ""
 
-msgid "Added-variable plots"
+msgid "Added-variable plots..."
 msgstr ""
 
-msgid "Influence plot"
+msgid "Influence plot..."
 msgstr ""
 
-msgid "Effect plots"
+msgid "Effect plots..."
 msgstr ""
 
 msgid "Models"
@@ -2685,8 +2685,8 @@ msgstr ""
 msgid "Sample from Normal Distribution"
 msgstr ""
 
-msgid "NormalSamples"
-msgstr ""
+#msgid "NormalSamples"
+#msgstr ""
 
 msgid "Sample means"
 msgstr ""
@@ -2715,80 +2715,80 @@ msgstr ""
 msgid "Sample from t Distribution"
 msgstr ""
 
-msgid "tSamples"
-msgstr ""
+#msgid "tSamples"
+#msgstr ""
 
 msgid "Sample from Chi-squared Distribution"
 msgstr ""
 
-msgid "ChisquareSamples"
-msgstr ""
+#msgid "ChisquareSamples"
+#msgstr ""
 
 msgid "Sample from F Distribution"
 msgstr ""
 
-msgid "FSamples"
-msgstr ""
+#msgid "FSamples"
+#msgstr ""
 
 msgid "Sample from Exponential Distribution"
 msgstr ""
 
-msgid "ExponentialSamples"
-msgstr ""
+#msgid "ExponentialSamples"
+#msgstr ""
 
 msgid "Sample from Uniform Distribution"
 msgstr ""
 
-msgid "UniformSamples"
-msgstr ""
+#msgid "UniformSamples"
+#msgstr ""
 
 msgid "Sample from Beta Distribution"
 msgstr ""
 
-msgid "BetaSamples"
-msgstr ""
+#msgid "BetaSamples"
+#msgstr ""
 
 msgid "Sample from Cauchy Distribution"
 msgstr ""
 
-msgid "CauchySamples"
-msgstr ""
+#msgid "CauchySamples"
+#msgstr ""
 
 msgid "Sample from Logistic Distribution"
 msgstr ""
  
-msgid "LogisticSamples"
-msgstr ""
+#msgid "LogisticSamples"
+#msgstr ""
 
 msgid "Sample from Log-Normal Distribution"
 msgstr ""
 
-msgid "LogNormalSamples"
-msgstr ""
+#msgid "LogNormalSamples"
+#msgstr ""
 
 msgid "Sample from Gamma Distribution"
 msgstr ""
 
-msgid "GammaSamples"
-msgstr ""
+#msgid "GammaSamples"
+#msgstr ""
 
 msgid "Sample from Weibull Distribution"
 msgstr ""
 
-msgid "WeibullSamples"
-msgstr ""
+#msgid "WeibullSamples"
+#msgstr ""
 
 msgid "Sample from Gumbel Distribution"
 msgstr ""
 
-msgid "GumbelSamples"
-msgstr ""
+#msgid "GumbelSamples"
+#msgstr ""
 
 msgid "Sample from Binomial Distribution"
 msgstr ""
 
-msgid "BinomialSamples"
-msgstr ""
+#msgid "BinomialSamples"
+#msgstr ""
 
 msgid "Poisson mean cannot be negative." 
 msgstr ""
@@ -2796,26 +2796,26 @@ msgstr ""
 msgid "Sample from Poisson Distribution"
 msgstr ""
 
-msgid "PoissonSamples"
-msgstr ""
+#msgid "PoissonSamples"
+#msgstr ""
 
 msgid "Sample from Geometric Distribution"
 msgstr ""
 
-msgid "GeometricSamples"
-msgstr ""
+#msgid "GeometricSamples"
+#msgstr ""
 
 msgid "Sample from Hypergeometric Distribution"
 msgstr ""
 
-msgid "HypergeometricSamples"
-msgstr ""
+#msgid "HypergeometricSamples"
+#msgstr ""
 
 msgid "Sample from Negative Binomial Distribution"
 msgstr ""
 
-msgid "NegativeBinomialSamples"
-msgstr ""
+#msgid "NegativeBinomialSamples"
+#msgstr ""
 
 msgid "Sample from normal distribution..." 
 msgstr ""
@@ -3191,8 +3191,8 @@ msgstr ""
 msgid "factor"
 msgstr ""
 
-msgid "StackedData"
-msgstr ""
+#msgid "StackedData"
+#msgstr ""
 
 msgid "You must select at least two variables."
 msgstr ""
@@ -3344,4 +3344,2075 @@ msgid "Axis text size"
 msgstr ""
 
 msgid "Axis-labels text size"
+msgstr ""
+
+# message added to version 1.3-3 (because of inadvertent omission)
+
+msgid "Scale (inverse rate)"
+msgstr ""
+
+# messages added to version 1.3-5
+
+msgid " has been coerced to a data frame"
+msgstr ""
+
+msgid "the dataset %s is no longer available"
+msgstr ""
+
+msgid "the model %s is no longer available"
+msgstr ""
+
+# message added to version 1.3-10
+
+msgid "The Commander GUI is launched only in interactive sessions"
+msgstr ""
+
+# messages added to version 1.3-15
+
+# Note: translate these messages only if the corresponding
+#  translated documents are supplied
+
+# For the following, you must supply a file named Commander-xx.Rd containing
+# a translation of the file Commander.Rd, where xx is the code for your
+# language. The \name{} and \alias{} fields in the .Rd file should both be
+# Commander-xx, where again xx is the language code.
+# Example: "Commander-es"
+
+# Note: Some translated Commander-xx.Rd files have not been compiling properly. As
+# an alternative, you can supply a PDF file named Commander-xx.pdf, and this will
+# be accessed when the user selects Help -> Commander help.
+
+# If you supply neither Commander-xx.Rd nor Commander-xx.pdf, then
+# the string "Commander" should not be translated. 
+
+msgid "Commander"
+msgstr ""
+
+# For the following you must supply a PDF document containing a translation
+# of "Getting-Started-with-the-Rcmdr.pdf". I suggest using a translation
+# including -xx, where xx is the code for your language.
+# Example: "Empezando-con-Rcmdr-es"
+
+msgid "Getting-Started-with-the-Rcmdr"
+msgstr ""
+
+# messages added to version 1.4-0
+
+msgid "Type of Tests"
+msgstr ""
+
+msgid "Sequential (\"Type I\")"
+msgstr ""
+
+msgid "Partial obeying marginality (\"Type II\")"
+msgstr ""
+
+msgid "Partial ignoring marginality (\"Type III\")"
+msgstr ""
+
+msgid "Type III tests require careful attention to contrast coding."
+msgstr ""
+
+msgid "There is no appropriate anova method for a model of this class."
+msgstr ""
+
+msgid "Duplicate menu names:"
+msgstr ""
+
+msgid "Strip chart..."
+msgstr ""
+
+msgid "Strip Chart"
+msgstr ""
+
+msgid "Factors (pick zero or more)"
+msgstr ""
+
+msgid "Duplicate Values"
+msgstr ""
+
+msgid "Stack"
+msgstr ""
+
+msgid "Jitter"
+msgstr ""
+
+msgid "Remove Rows from Active Data Set"
+msgstr ""
+
+msgid "Remove row(s) from active data set..."
+msgstr ""
+
+msgid "No rows to remove"
+msgstr ""
+
+msgid "Indices or quoted names of row(s) to remove"
+msgstr ""
+
+msgid "Akaike Information Criterion (AIC)"
+msgstr ""
+
+msgid "Bayesian Information Criterion (BIC)"
+msgstr ""
+
+msgid "Change working directory..."
+msgstr ""
+
+msgid "Log x-axis"
+msgstr ""
+
+msgid "Log y-axis"
+msgstr ""
+
+msgid "from text file, clipboard, or URL..."
+msgstr ""
+
+msgid "Read Text Data From File, Clipboard, or URL"
+msgstr ""
+
+msgid "Location of Data File"
+msgstr ""
+
+msgid "Local file system"
+msgstr ""
+
+msgid "Clipboard"
+msgstr ""
+
+msgid "Internet URL"
+msgstr ""
+
+msgid "Friedman rank-sum test..."
+msgstr ""
+
+msgid "Friedman Rank Sum Test"
+msgstr ""
+
+msgid "Repeated-Measures Variables (pick two or more)"
+msgstr ""
+
+msgid "Undo"
+msgstr ""
+
+msgid "Redo"
+msgstr ""
+
+msgid "ANOVA table..."
+msgstr ""
+
+# messages added to version 1.4-2
+
+msgid "Location not specified."
+msgstr ""
+
+# messages added to version 1.5-0
+
+#     "Models -> Stepwise model selection" dialog and menu item
+
+msgid "Stepwise model selection..."
+msgstr ""
+
+msgid "Stepwise Model Selection"
+msgstr ""
+
+msgid "Direction"
+msgstr ""
+
+msgid "backward/forward"
+msgstr ""
+
+msgid "forward/backward"
+msgstr ""
+
+msgid "backward"
+msgstr ""
+
+msgid "forward"
+msgstr ""
+
+msgid "Criterion"
+msgstr ""
+
+msgid "BIC"
+msgstr ""
+
+msgid "AIC"
+msgstr ""
+
+#      "Models -> Subset model selection" dialog and menu item
+
+msgid "Subset model selection..."
+msgstr ""
+
+msgid "Subset Model Selection"
+msgstr ""
+
+msgid "Criterion for Model Plot"
+msgstr ""
+
+msgid "Mallows Cp"
+msgstr ""
+
+msgid "Adjusted R-sq."
+msgstr ""
+
+msgid "R-squared"
+msgstr ""
+
+msgid "Number of best models\nof each size:"
+msgstr ""
+
+msgid "Maximum size:"
+msgstr ""
+
+#  	"Data -> Merge data sets" menu item and dialog
+
+msgid "Merge data sets..."
+msgstr ""
+
+msgid "Merge Data Sets"
+msgstr ""
+
+msgid "First Data Set (pick one)"
+msgstr ""
+
+msgid "Second Data Set (pick one)"
+msgstr ""
+
+msgid "Merge rows"
+msgstr ""
+
+msgid "Merge columns"
+msgstr ""
+
+msgid "Direction of Merge"
+msgstr ""
+
+msgid "You cannot merge a data set with itself."
+msgstr ""
+
+msgid "Name for merged data set:"
+msgstr ""
+
+msgid "Merge only common\nrows or columns"
+msgstr ""
+
+#  	"Data -> Active data set -> Aggregate variables in active data set" menu item and dialog
+
+msgid "Aggregate variables in active data set..."
+msgstr ""
+
+msgid "Aggregate Observations"
+msgstr ""
+
+msgid "Variables to aggregate\n(pick one or more)"
+msgstr ""
+
+msgid "Aggregate by\n(pick one or more)"
+msgstr ""
+
+msgid "Sum"
+msgstr ""
+
+msgid "You must select at least one variable to aggregate."
+msgstr ""
+
+msgid "You must select at least one variable to aggregate by."
+msgstr ""
+
+msgid "Variables to aggregate and those to aggregate by must be different."
+msgstr ""
+
+msgid "Name for aggregated data set:"
+msgstr ""
+
+#     miscellaneous 
+
+msgid "{\"R Data Files\" {\".rda\" \".Rda\" \".RDA\" \".RData\"}} {\"All Files\" {\"*\"}}"
+msgstr ""
+
+msgid "No data set selected."
+msgstr ""
+
+msgid "Help on selected data set"
+msgstr ""
+
+msgid "Population mean != mu0"
+msgstr ""
+
+msgid "Population proportion != p0"
+msgstr ""
+
+msgid "Models do not have the same family."
+msgstr ""
+
+msgid "Pairwise p-values\nfor Pearson or Spearman correlations"
+msgstr ""
+
+msgid "The Windows version of the R Commander works best under RGui\nwith the single-document interface (SDI); see ?Commander."
+msgstr ""
+
+# messages added to version 1.6-0
+
+	# for Levene test
+
+msgid "median"
+msgstr ""
+
+msgid "Center"
+msgstr ""
+
+	# for scatterplot
+
+msgid "Smooth line"
+msgstr ""
+
+msgid "Show spread"
+msgstr ""
+
+	# for AV plots
+	
+msgid "Identify points with mouse?\nRight-click to exit."
+msgstr ""
+
+	# for interactive point identification
+	
+msgid "Use left mouse button to identify points,\n"
+msgstr ""
+
+msgid "right button to exit."
+msgstr ""
+
+msgid "esc key to exit."
+msgstr ""
+
+	# menus
+	
+msgid "Start R help system"
+msgstr ""
+
+# messages added to version 1.6-4 
+#  to correct order of file extensions
+
+msgid "{\"All Files\" {\"*\"}} {\"Script Files\" {\".R\"}}"
+msgstr ""
+
+msgid "{\"All Files\" {\"*\"}} {\"Output Files\" {\".txt\"}}"
+msgstr ""
+
+msgid "{\"All Files\" {\"*\"}} {\"Text Files\" {\".txt\" \".TXT\" \".dat\" \".DAT\" \".csv\" \".CSV\"}}"
+msgstr ""
+
+msgid "{\"All Files\" {\"*\"}} {\"SPSS portable files\" {\".por\" \".POR\"}} {\"SPSS save files\" {\".sav\" \".SAV\"}}"
+msgstr ""
+
+msgid "{\"All Files\" {\"*\"}} {\"Minitab portable files\" {\".mtp\" \".MTP\"}}"
+msgstr ""
+
+msgid "{\"All Files\" {\"*\"}} {\"STATA datasets\" {\".dta\" \".DTA\"}}"
+msgstr ""
+
+msgid "{\"All Files\" {\"*\"}} {\"MS Access database\" {\".mdb\" \".MDB\"}} {\"MS Access 2007 database\" {\".accdb\" \".ACCDB\"}} {\"dBase-like file\" {\".dbf\" \".DBF\"}} {\"MS Excel 2007 file\" {\".xlsx\" \".XLSX\"}} {\"MS Excel file\" {\".xls\" \".XLS\"}}"
+msgstr ""
+
+msgid "{\"All Files\" {\"*\"}} {\"R Data Files\" {\".RData\" \".rda\" \".Rda\" \".RDA\"}}"
+msgstr ""
+
+msgid "{\"All Files\" {\"*\"}} {\"PNG Files\" {\".png\" \".PNG\"}}"
+msgstr ""
+
+msgid "{\"All Files\" {\"*\"}} {\"JPEG Files\" {\".jpg\" \".JPG\" \".jpeg\" \".JPEG\"}}"
+msgstr ""
+
+msgid "{\"All Files\" {\"*\"}} {\"PDF Files\" {\".pdf\" \".PDF\"}}"
+msgstr ""
+
+msgid "{\"All Files\" {\"*\"}} {\"Postscript Files\" {\".ps\" \".PS\"}}"
+msgstr ""
+
+msgid "{\"All Files\" {\"*\"}} {\"Encapsulated Postscript Files\" {\".eps\" \".EPS\"}}"
+msgstr ""
+
+# messages added to version 1.7-0
+
+msgid "Reset"
+msgstr ""
+
+msgid "Coefficient of Variation"
+msgstr ""
+
+msgid "Skewness"
+msgstr ""
+
+msgid "Kurtosis"
+msgstr ""
+
+msgid "Type 1"
+msgstr ""
+
+msgid "Type 2"
+msgstr ""
+
+msgid "Type 3"
+msgstr ""
+
+msgid "Missing Data"
+msgstr ""
+
+msgid "Use complete cases"
+msgstr ""
+
+msgid "Use pairwise-complete cases"
+msgstr ""
+
+# messages added to version 1.7-4
+
+msgid "Component scores are not available when subset is specified."
+msgstr ""
+
+msgid "Factor scores are not available when subset is specified."
+msgstr ""
+
+# messages added to version 1.8-0
+
+msgid "Confirmatory Factor Analysis"
+msgstr ""
+
+msgid "Fewer than 2 variables selected to load on factor."
+msgstr ""
+
+msgid "Define factor"
+msgstr ""
+
+msgid "Select variables\nloading on factor"
+msgstr ""
+
+msgid "Covariance"
+msgstr ""
+
+msgid "Correlation"
+msgstr ""
+
+msgid "Matrix to Analyze"
+msgstr ""
+
+msgid "Correlated"
+msgstr ""
+
+msgid "Orthogonal"
+msgstr ""
+
+msgid "Factor Correlations"
+msgstr ""
+
+msgid "There are too many factors."
+msgstr ""
+
+msgid "Identifying Constraints"
+msgstr ""
+
+msgid "Factor variances set to 1"
+msgstr ""
+
+msgid "First loading on each factor set to 1"
+msgstr ""
+
+msgid "Confirmatory factor analysis..."
+msgstr ""
+
+# messages added to version 1.8-1
+
+	# the following messages were omitted from version 1.8-0
+
+msgid "Robust standard errors"
+msgstr ""
+
+msgid "No factors defined."
+msgstr ""
+
+# message added to version 1.8-2
+
+msgid "Default-font size (points)"
+msgstr ""
+
+# message added to version 1.8-4
+
+msgid "data set edit error."
+msgstr ""
+
+# messages added to version 1.9-0
+
+msgid "Identify Outliers"
+msgstr ""
+
+msgid "Automatically"
+msgstr ""
+
+msgid "With mouse"
+msgstr ""
+
+msgid "Width"
+msgstr ""
+
+msgid "Height"
+msgstr ""
+
+msgid "[disabled]"
+msgstr ""
+
+msgid "inches"
+msgstr ""
+
+msgid "inch"
+msgstr ""
+
+msgid "cm"
+msgstr ""
+
+msgid "pixels"
+msgstr ""
+
+msgid "Units"
+msgstr ""
+
+msgid "Fixed aspect ratio (height:width)"
+msgstr ""
+
+msgid "Resolution"
+msgstr ""
+
+msgid "from SAS xport file..."
+msgstr ""
+
+msgid "Data Set Name"
+msgstr ""
+
+msgid "Select Dataset"
+msgstr ""
+
+msgid "Datasets in file (pick one)"
+msgstr ""
+
+msgid "{\"All Files\" {\"*\"}} {\"SAS xport files\" {\".xpt\" \".XPT\" \".xport\" \".XPORT\"}}"
+msgstr ""
+
+msgid "Convert variable names\nto lower case"
+msgstr ""
+
+msgid "from Excel file..."
+msgstr ""
+
+msgid "Import Excel Data Set"
+msgstr ""
+
+msgid "{\"All Files\" {\"*\"}} {\"MS Excel 2007 file\" {\".xlsx\" \".XLSX\"}} {\"MS Excel file\" {\".xls\" \".XLS\"}}"
+msgstr ""
+
+msgid "Interquartile Range"
+msgstr ""
+
+msgid "Interquartile range"
+msgstr ""
+
+msgid "Lines"
+msgstr ""
+
+msgid "Choose at least one of points or lines."
+msgstr ""
+
+msgid "Plot Type (one or both)"
+msgstr ""
+
+
+# messages added to version 1.9-1 (missing from 1.9-0)
+
+msgid "Plot legend"
+msgstr ""
+
+   # the following were missing from Xyplot()
+
+msgid "Conditions '|' (pick zero or more)"
+msgstr ""
+
+msgid "Groups 'groups=' (pick zero or more)"
+msgstr ""
+
+msgid "Different panels for different y ~ x combinations"
+msgstr ""
+
+msgid "Layout"
+msgstr ""
+
+msgid "number of columns:"
+msgstr ""
+
+msgid "number of rows:"
+msgstr ""
+
+
+# messages added to version 2.0-0
+
+msgid "Plot Options"
+msgstr ""
+
+msgid "Plot Labels"
+msgstr ""
+
+msgid "Graph title"
+msgstr ""
+
+msgid "Plot Labels and Points"
+msgstr ""
+
+msgid "Apply"
+msgstr ""
+
+msgid "Pairwise p-values"
+msgstr ""
+
+msgid "Observations to Use"
+msgstr ""
+
+msgid "Complete observations"
+msgstr ""
+
+msgid "Pairwise-complete observations"
+msgstr ""
+
+msgid "R Script"
+msgstr ""
+
+msgid "Output"
+msgstr ""
+
+msgid "R Commander website" 
+msgstr ""
+
+msgid "R website"
+msgstr ""
+
+msgid "Using R Markdown"
+msgstr ""
+
+msgid "Table"
+msgstr ""
+
+    # point identification in graphs (additional messages)
+
+msgid "Interactively with mouse"
+msgstr ""
+
+msgid "Do not identify"
+msgstr ""
+
+msgid "number of points to identify must be an integer"
+msgstr ""
+
+msgid "Number of points to identify"
+msgstr ""
+
+msgid "Added-Variable Plots"
+msgstr ""
+
+msgid "Component+Residual Plots"
+msgstr ""
+
+msgid "Influence Plot"
+msgstr ""
+
+    # support for R Markdown and knitr
+
+msgid "Generate HTML report"
+msgstr ""
+
+msgid "Generate PDF report"
+msgstr ""
+
+msgid "R Markdown"
+msgstr ""
+
+msgid "knitr Document"
+msgstr ""
+
+msgid "Open R Markdown file..."
+msgstr ""
+
+msgid "Open knitr file..."
+msgstr ""
+
+msgid "Save R Markdown file..."
+msgstr ""
+
+msgid "Save knitr file..."
+msgstr ""
+
+msgid "Save knitr file?"
+msgstr ""
+
+msgid "Save current Rmd file?"
+msgstr ""
+
+msgid "Save current Rnw file?"
+msgstr ""
+
+msgid "Save R Markdown file as..."
+msgstr ""
+
+msgid "Save knitr file as..."
+msgstr ""
+
+msgid "R Markdown file saved to"
+msgstr ""
+
+msgid "knitr file saved to"
+msgstr ""
+
+msgid "{\"All Files\" {\"*\"}} {\"R Markdown Files\" {\".Rmd\" \".rmd\"}}"
+msgstr ""
+
+msgid "{\"All Files\" {\"*\"}} {\"knitr Files\" {\".Rmd\" \".rmd\" \".Snw\" \".snw\"}}"
+msgstr ""
+
+msgid "Delete previously created knitr\ngraphics files (recommended)?"
+msgstr ""
+
+    # setting and saving options
+
+msgid "Ask to exit Commander"
+msgstr ""
+
+msgid "Ask to save documents on exit"
+msgstr ""
+
+msgid "Quit R on exit"
+msgstr ""
+
+msgid "Number messages"
+msgstr ""
+
+msgid "Retain messages"
+msgstr ""
+
+msgid "Use R Markown"
+msgstr ""
+
+msgid "Use knitr"
+msgstr ""
+
+msgid "Select file"
+msgstr ""
+
+msgid "R Markdown template file"
+msgstr ""
+
+msgid "R knitr template file"
+msgstr ""
+
+msgid "Suppress icon images"
+msgstr ""
+
+msgid "Retain dialog selections"
+msgstr ""
+
+msgid "Use rgl package"
+msgstr ""
+
+msgid "Dialog text font size (points)"
+msgstr ""
+
+msgid "Script and output font size (points)"
+msgstr ""
+
+msgid "Dialog font"
+msgstr ""
+
+msgid "Script and output font"
+msgstr ""
+
+msgid "Script text color"
+msgstr ""
+
+msgid "Command text color"
+msgstr ""
+
+msgid "Output text color"
+msgstr ""
+
+msgid "Error text color"
+msgstr ""
+
+msgid "Warning text color"
+msgstr ""
+
+msgid "Dialog subtitles text color"
+msgstr ""
+
+msgid "Script window width (characters)"
+msgstr ""
+
+msgid "Script window height (lines)"
+msgstr ""
+
+msgid "Output window height (lines)"
+msgstr ""
+
+msgid "Messages window height (lines)"
+msgstr ""
+
+msgid "Fonts"
+msgstr ""
+
+msgid "Other Options"
+msgstr ""
+
+msgid "Save Commander Options"
+msgstr ""
+
+msgid "R Profile saved to"
+msgstr ""
+
+msgid "The following commands will be saved in the file .Rprofile."
+msgstr ""
+
+msgid "You may edit this file before saving it."
+msgstr ""
+
+msgid "Save Rcmdr options..."
+msgstr ""
+
+    # density estimate dialog
+
+msgid "Nonparametric Density Estimate"
+msgstr ""
+
+msgid "Gaussian"
+msgstr ""
+
+msgid "Epanechnikov"
+msgstr ""
+
+msgid "Tukey biweight"
+msgstr ""
+
+msgid "Kernel Function"
+msgstr ""
+
+msgid "Bandwidth"
+msgstr ""
+
+msgid "Multiply bandwidth by"
+msgstr ""
+
+msgid "Density estimate..."
+msgstr ""
+
+msgid "Bandwidth must be <auto> or a positive number"
+msgstr ""
+
+# index plot dialog
+
+msgid "Style of plot"
+msgstr ""
+
+# export data set dialog
+
+msgid "Write variable names"
+msgstr ""
+
+msgid "Write row names"
+msgstr ""
+
+msgid "Quotes around character values"
+msgstr ""
+
+# numerical summaries dialog
+
+msgid "Quantiles:"
+msgstr ""
+
+# for splines and polynomials in model formulas
+
+msgid "spline requires a numeric variable"
+msgstr ""
+
+msgid "cannot select more than one variable"
+msgstr ""
+
+msgid "polynomial requires a numeric variable"
+msgstr ""
+
+msgid "B-spline\n"
+msgstr ""
+
+msgid "natural\nspline"
+msgstr ""
+
+msgid "orthogonal\npolynomial"
+msgstr ""
+
+msgid "raw\npolynomial"
+msgstr ""
+
+msgid "Model Formula"
+msgstr ""
+
+msgid "Operators (click to formula):"
+msgstr ""
+
+msgid "Splines/Polynomials:\n(select variable and click)"
+msgstr ""
+
+msgid "df for splines:"
+msgstr ""
+
+msgid "deg. for polynomials:"
+msgstr ""
+
+# messages added to version 2.0-1
+
+   # messages related to editing/processing R Markdown and knitr documents
+
+msgid "R Commander Editor"
+msgstr ""
+
+msgid "Edit R Markdown document"
+msgstr ""
+
+msgid "Edit knitr document"
+msgstr ""
+
+msgid "Remove last Markdown command block"
+msgstr ""
+
+msgid "Remove last knitr command block"
+msgstr ""
+
+msgid "Remove last command block"
+msgstr ""
+
+msgid "Exit editor"
+msgstr ""
+
+msgid "Editor help"
+msgstr ""
+
+msgid "Delete previously created R Markdown\ngraphics files (recommended)?"
+msgstr ""
+
+msgid "Discard edits?"
+msgstr ""
+
+   # support for back-to-back stem-and-leaf displays
+
+msgid "Plot back-to-back by:"
+msgstr ""
+
+msgid "Plot back-to-back by"
+msgstr ""
+
+# messages added for version 2.1-0
+
+# the next two messages no longer needed and can be disregarded if not already translated
+
+#msgid  "the RcmdrMisc package is missing and should be installed\n  many features will not work"
+#msgstr ""
+
+#msgid "the car package is missing and should be installed\n  many features will not work"
+#msgstr ""
+
+  # for numerical summaries dialog
+
+msgid "Standard Error of Mean"
+msgstr ""
+
+  # for CFA dialog
+
+msgid "Fit Indices"
+msgstr ""
+
+  # for read Excel file dialog
+
+msgid "Variable names in first row of spreadsheet"
+msgstr ""
+
+msgid "Row names in first column of spreadsheet"
+msgstr ""
+
+  # for selecting weights in LM and GLM dialogs
+
+msgid "<no variable selected>"
+msgstr ""
+
+msgid "Weights"
+msgstr""
+
+  # new effect-plots dialog
+
+msgid "Model Effect Plots"
+msgstr ""
+
+msgid "Plot All High-Order Effects?"
+msgstr ""
+
+msgid "Predictors (pick one or more)"
+msgstr ""
+
+msgid "You must select one or more predictors\n or plot all high-order effects."
+msgstr ""
+
+msgid "To plot partial residuals,\n there must be a least one numeric predictor."
+msgstr ""
+
+msgid "Plot partial residuals"
+msgstr ""
+
+msgid "Style of Graph"
+msgstr ""
+
+msgid "Stacked areas"
+msgstr ""
+
+msgid "Lines with confidence bands"
+msgstr ""
+
+# new one-sample Wilcoxon test dialog
+
+msgid "Single-Sample Wilcoxon Test"
+msgstr ""
+
+msgid "Single-sample Wilcoxon test..."
+msgstr ""
+
+# new drop unused factor levels dialog
+
+msgid "Drop Unused Factor Levels"
+msgstr ""
+
+msgid "Factors(s) to drop levels (pick one or more)"
+msgstr ""
+
+msgid "Drop unused factor levels\nPlease confirm."
+msgstr ""
+
+msgid "Drop unused factor levels..."
+msgstr ""
+
+msgid "all factors"
+msgstr ""
+
+  # messages related to sandwich variance estimator
+
+msgid "Linear Model Summary"
+msgstr ""
+
+msgid "Sandwich estimator"
+msgstr ""
+
+msgid "Use sandwich estimator of    \ncoefficient standard errors"
+msgstr ""
+
+msgid "sandwich covariance matrix unavailable with type I tests"
+msgstr ""
+
+  # messages related to ttk theme selection
+
+msgid "non-existent theme"
+msgstr ""
+
+msgid "theme set to"
+msgstr ""
+
+  # modified message
+
+msgid "Restart R Commander"
+msgstr ""
+
+  # formula-help button
+
+msgid "Model formula\nhelp"
+msgstr ""
+
+# messages added for version 2.1-1
+
+  # messages for the new dataset editor
+
+msgid "Data Editor"
+msgstr ""
+
+msgid "Delete current row"
+msgstr ""
+
+msgid "Delete current column"
+msgstr ""
+
+msgid "Delete cell"
+msgstr ""
+
+msgid "Cut cell"
+msgstr ""
+
+msgid "Copy cell"
+msgstr ""
+
+msgid "Paste cell"
+msgstr ""
+
+msgid "Exit and save"
+msgstr ""
+
+msgid "Add row"
+msgstr ""
+
+msgid "Add column"
+msgstr ""
+
+# messages added for version 2.1-3
+
+  # to manage app nap under Mac OS X Mavericks
+
+msgid "Manage Mac OS X app nap for R.app..."
+msgstr ""
+
+msgid "Mac OS X app nap for R.app"
+msgstr ""
+
+msgid "Set app nap"
+msgstr ""
+
+msgid "off (recommended)"
+msgstr ""
+
+msgid "on"
+msgstr ""
+
+  # set random seed dialog
+
+msgid "Set random number generator seed..."
+msgstr ""
+
+msgid "Set Random Number Generator Seed"
+msgstr ""
+
+
+# messages added for version 2.2-0
+
+  # messages that were inadvertently missing in previous versions
+
+msgid "The following variable names are not valid:\n"
+msgstr ""
+
+msgid "Save R Markdown file?"
+msgstr ""
+
+msgid "Theme (pick one)"
+msgstr ""
+
+msgid "Both or neither layout values must be numbers."
+msgstr ""
+
+msgid "ANOVA Table"
+msgstr ""
+
+msgid "There is no appropriate outlierTest method for a model of this class."
+msgstr ""
+
+msgid "Shapiro-Wilk Test for Normality"
+msgstr ""
+
+msgid "Hypothesis Test"
+msgstr ""
+
+msgid "Load Plug-ins"
+msgstr ""
+
+  # for report generation
+
+msgid "Generate report"
+msgstr ""
+
+msgid "Install Auxiliary Software"
+msgstr ""
+
+msgid "Install auxiliary software..."
+msgstr ""
+
+msgid "(already installed)"
+msgstr ""
+
+msgid "LaTeX"
+msgstr ""
+
+msgid "Pandoc"
+msgstr ""
+
+msgid "Software to Install"
+msgstr ""
+
+msgid "Please read the help for this dialog\nbefore installing auxiliary software."
+msgstr ""
+
+msgid "Select Output Format"
+msgstr ""
+
+msgid ".html (web page)"
+msgstr ""
+
+msgid ".pdf (PDF file)"
+msgstr ""
+
+msgid ".docx (Word file)"
+msgstr ""
+
+msgid "HTML file written to:"
+msgstr ""
+
+msgid "PDF file written to:"
+msgstr ""
+
+msgid "Word file written to:"
+msgstr ""
+
+
+  # additions to scatterplot and scatterplot-matrix dialogs
+
+msgid "Levels for ellipses must be numeric values\n  separated by spaces or commas."
+msgstr ""
+
+msgid "Plot concentration ellipse(s)"
+msgstr ""
+
+msgid "Legend Position"
+msgstr ""
+
+msgid "Above plot"
+msgstr ""
+
+msgid "Top left"
+msgstr ""
+
+msgid "Top right"
+msgstr ""
+
+msgid "Bottom left"
+msgstr ""
+
+msgid "Bottom right"
+msgstr ""
+
+  # additions to bargraph dialog
+
+msgid "Style of Group Bars"
+msgstr ""
+
+msgid "Divided (stacked)"
+msgstr ""
+
+msgid "Side-by-side (parallel)"
+msgstr ""
+
+msgid "Position of Legend"
+msgstr ""
+
+msgid "Left"
+msgstr ""
+
+msgid "Right"
+msgstr ""
+
+msgid "plotting and grouping variables must be different"
+msgstr ""
+
+  # dot plot dialog
+
+msgid "Dot Plot"
+msgstr ""
+
+msgid "Bin variable"
+msgstr ""
+
+msgid "Dot plot..."
+msgstr ""
+
+  # for reading Excel files (new dialog)
+  
+msgid "Convert character data to factors"
+msgstr ""
+
+msgid "<empty cell>"
+msgstr ""
+
+msgid "{\"All Files\" {\"*\"}} {\"MS Excel file\" {\".xlsx\" \".XLSX\" \".xls\" \".XLS\"}}"
+msgstr ""
+
+
+# corrected messages in version 2.2-1
+
+  # The following messages had trailing blanks. These messages were deleted from
+  #   their previous locations in this .pot file and transferred here in corrected form,
+  #   with the trailing blanks removed.
+  
+  # I suggest that you likewise delete the earlier versions of these messages from 
+  #   your .po file and provide corrected translations here, without trailing blanks.
+  
+msgid "Number of points to identify  \nin each panel and group"
+msgstr ""
+
+msgid "Use sandwich estimator of\ncoefficient covariance matrix"
+msgstr ""
+
+msgid "Concentration levels:"
+msgstr ""
+
+
+# additional messages in version 2.3-0
+
+  # .rtf output from RMarkdown reports
+  
+msgid ".rtf (rich text file)"
+msgstr ""
+
+msgid "Rich text file written to:"
+msgstr ""
+
+ # bootstrapping dialog
+ 
+msgid "Bootstrap confidence intervals..."
+msgstr ""
+
+msgid "Bootstrap"
+msgstr ""
+
+msgid "Bootstrap Confidence Intervals for Coefficients"
+msgstr ""
+
+msgid "Number of bootstrap samples:"
+msgstr ""
+
+msgid "Number of samples must be a positive integer."
+msgstr ""
+
+msgid "Type of Confidence Intervals"
+msgstr ""
+
+msgid "BCa (adjusted percentile)"
+msgstr ""
+
+msgid "Normal theory"
+msgstr ""
+
+msgid "Basic bootstrap"
+msgstr ""
+
+msgid "Percentile"
+msgstr ""
+
+msgid "Resampling Method"
+msgstr ""
+
+msgid "Case resampling"
+msgstr ""
+
+msgid "Residual resampling"
+msgstr ""
+
+ # delta method dialog
+ 
+msgid "Delta method confidence interval..."
+msgstr ""
+
+msgid "Delta Method"
+msgstr ""
+
+msgid "Confidence Interval by the Delta Method"
+msgstr ""
+
+msgid "Expression to evaluate; use parameter names:"
+msgstr ""
+
+ # view data dialog
+ 
+msgid "View data..."
+msgstr ""
+
+msgid "View Data"
+msgstr ""
+
+msgid "Bad subset expression."
+msgstr ""
+
+msgid "No data to show."
+msgstr ""
+
+msgid "View data error."
+msgstr ""
+
+ # sort active data set dialog
+ 
+msgid "Sort active data set..."
+msgstr ""
+
+msgid "Sort Active Data Set"
+msgstr ""
+
+msgid "Sort Keys (select one or more)"
+msgstr ""
+
+msgid "Sort Direction"
+msgstr ""
+
+msgid "Increasing"
+msgstr ""
+
+msgid "Decreasing"
+msgstr ""
+
+msgid "Reorder Sort Keys"
+msgstr ""
+
+msgid "Order of keys must include all integers from 1 to"
+msgstr ""
+
+msgid "Sort Keys"
+msgstr ""
+
+msgid "Order"
+msgstr ""
+
+ # added to plot means dialog
+ 
+msgid "Connect profiles of means"
+msgstr ""
+
+ # adding to one-way ANOVA dialog
+ 
+msgid "Welch F-test not assuming equal variances"
+msgstr ""
+
+ # the new normality-tests dialog, which replaces the Shapiro-Wilk normality-test dialog
+ 
+msgid "Test of normality..."
+msgstr ""
+
+msgid "Test of Normality"
+msgstr ""
+
+msgid "Shapiro-Wilk"
+msgstr ""
+
+msgid "Anderson-Darling"
+msgstr ""
+
+msgid "Cramer-von Mises"
+msgstr ""
+
+msgid "Lilliefors (Kolmogorov-Smirnov)"
+msgstr ""
+
+msgid "Shapiro-Francia"
+msgstr ""
+
+msgid "Pearson chi-square"
+msgstr ""
+
+msgid "Normality Test"
+msgstr ""
+
+msgid "Number of bins must be a number >= 4"
+msgstr ""
+
+msgid "Number of bins\nfor Pearson chi-square"
+msgstr ""
+
+msgid "Test by groups"
+msgstr ""
+
+msgid "Test by:"
+msgstr ""
+
+ # small changes to the read text data dialog
+ 
+msgid "Commas [,]"
+msgstr ""
+
+msgid "Semicolons [;]"
+msgstr ""
+
+ # additional error check in load data set dialog
+ 
+msgid "There is more than one object in the file, with the following names:\n"
+msgstr ""
+
+ # new messages for distribution plot dialogs produced by distributionPlot()
+ 
+msgid "Optionally specify regions under the density function by"
+msgstr ""
+ 
+msgid "x-values"
+msgstr ""
+
+msgid "quantiles"
+msgstr ""
+
+msgid "is not a valid number."
+msgstr ""
+
+msgid "You must specify 'from' and 'to' for at least one range."
+msgstr ""
+
+msgid "In specifying a range, 'to' must be greater than 'from'."
+msgstr ""
+
+msgid "Quantiles must be between 0 and 1."
+msgstr ""
+
+msgid "Regions to Fill (specify one or two, or leave blank)"
+msgstr ""
+
+msgid "Region 1: from"
+msgstr ""
+
+msgid "Region 2: from"
+msgstr ""
+
+msgid "to"
+msgstr ""
+
+msgid "color"
+msgstr ""
+
+msgid "Top center"
+msgstr ""
+
+  # new compare model coefficients dialog
+  
+msgid "Compare model coefficients..."
+msgstr ""
+
+msgid "Compare Model Coefficients"
+msgstr ""
+
+msgid "Select models (pick two or more)"
+msgstr ""
+
+msgid "You must select at least two models."
+msgstr ""
+
+
+# additional messages in version 2.4-0
+
+  # enhancements to the Rcmdr script editor
+
+msgid "Only one instance of the R Commander script editor may be open at a time."
+msgstr ""
+
+msgid "Save current edits"
+msgstr ""
+
+msgid "Save edits"
+msgstr ""
+
+msgid "Exit editor saving edits"
+msgstr ""
+
+msgid "Cancel discarding edits"
+msgstr ""
+
+  # additions to the barplot dialog
+  
+msgid "Percentages for Group Bars"
+msgstr ""
+  
+msgid "Conditional"
+msgstr ""
+
+msgid "Total"
+msgstr ""
+
+msgid "Color Selection"
+msgstr ""
+
+msgid "From color palette"
+msgstr ""
+
+  # correct typo
+  
+msgid "Data set %s does not exist"
+msgstr ""
+
+  # addition to plot means dialog (position of legend)
+  
+msgid "To right of graph"
+msgstr ""
+
+  # For two-variances F-test dialog
+  
+msgid "Ratio:"
+msgstr ""
+
+msgid "Ratio < 1"
+msgstr ""
+
+msgid "Ratio > 1"
+msgstr ""
+
+  # For enter and analyze contingency table dialog
+  
+msgid "Name for Row Variable (optional):"
+msgstr ""
+
+msgid "Name for Column Variable (optional):"
+msgstr ""
+
+  # for import Stata and SAS b7dat data set dialogs
+
+msgid "Convert character variables to factors"
+msgstr ""
+
+msgid "First column contains row names"
+msgstr ""
+
+msgid "Import SAS b7dat Data Set"
+msgstr ""
+
+msgid "from SAS b7dat file..."
+msgstr ""
+
+msgid "{\"All Files\" {\"*\"}} {\"SAS b7dat dataset\" {\".sas7bdat\" \".SAS7BDAT\"}}"
+msgstr ""
+
+  # addition to the Commander Options dialog
+  
+msgid "Suppress scientific notation\n(higher = more suppression)"
+msgstr ""
+
+  # new plot discrete numeric variable dialog
+  
+msgid "Plot discrete numeric variable..."
+msgstr ""
+
+msgid "Plot Discrete Numeric Variable"
+msgstr ""
+
+msgid "%s has %d unique values\nDo you want to proceed?"
+msgstr ""
+
+  # for boostrapping dialog
+  
+msgid "Plot bootstrap samples"
+msgstr ""
+
+  # for numerical summaries dialog
+  
+msgid "Binned Frequency Counts"
+msgstr ""
+
+# additional messages in version 2.4-2
+
+  # these messages were inadvertently omitted
+
+msgid "Sample from ChiSquared Distribution"
+msgstr ""
+
+msgid "Sample from Lognormal Distribution"
+msgstr ""
+
+msgid "Sample from NegativeBinomial Distribution"
+msgstr ""
+
+
+# additional messages in version 2.5-0
+
+  # new predictor effect plots dialog
+
+msgid "Predictor Effect Plots"
+msgstr ""
+
+msgid "Predictor effect plots..."
+msgstr ""
+
+msgid "Plot all predictor effects?"
+msgstr ""
+
+  # added to index plot dialog
+  
+msgid "Mark by groups"
+msgstr ""
+
+msgid "Mark by:"
+msgstr ""
+
+  # new response transformation dialog
+  
+msgid "Response Transformation"
+msgstr ""
+
+msgid "Response transformation..." 
+msgstr ""
+
+msgid "Box-Cox"
+msgstr ""
+
+msgid "Box-Cox with negatives"
+msgstr ""
+
+msgid "Yeo-Johnson"
+msgstr ""
+
+  # new transform toward normality dialog
+  
+msgid "Transform toward normality..."
+msgstr ""
+
+msgid "Transform Variables Toward Normality"
+msgstr ""
+
+msgid "Select variables to transform (one or more)"
+msgstr ""
+
+msgid "Transformation Family"
+msgstr ""
+
+msgid "Condition on:"
+msgstr
+
+  # new symmetry boxplot (symbox) dialog
+  
+msgid "Symmetry boxplot..."
+msgstr ""
+  
+msgid "Symmetry Boxplot"
+msgstr ""
+
+msgid "Start (optional)"
+msgstr ""
+
+msgid "Powers"
+msgstr ""
+
+  # new influence index plot dialog
+  
+msgid "Influence index plot..." 
+msgstr ""
+  
+msgid "Influence Index Plot"
+msgstr ""
+
+msgid "Bonferroni p-values"
+msgstr ""
+
+msgid "Diagnostics case statistics to plot"
+msgstr ""
+
+  # enhancements to Density Plot dialog
+  
+msgid "Method"
+msgstr ""
+
+msgid "adaptive kernel"
+msgstr ""
+  
+msgid "kernel"
+msgstr ""
+
+msgid "From"
+msgstr ""
+
+msgid "To"
+msgstr ""
+
+# additional messages in version 2.5-1
+
+  # a corrected message
+  
+msgid "Case statistics to plot"
+msgstr ""
+
+
+# additional message in version 2.6-0
+
+  # new mixed models dialogs
+  
+msgid "Linear Mixed Model"
+msgstr ""
+
+msgid "Linear mixed model..." 
+msgstr ""
+
+msgid "Estimation Criterion"
+msgstr ""
+
+msgid "Restricted maximum likelihood (REML)"
+msgstr ""
+
+msgid "Maximum likelihood (ML)"
+msgstr ""
+
+msgid "There are no random effects in the model."
+msgstr ""
+
+msgid "Generalized Linear Mixed Model"
+msgstr ""
+
+msgid "Generalized linear mixed model..."
+msgstr ""
+
+# corrected and messages for version 2.6-1
+
+  # correction: was "Convert variable names\nto lower case"
+
+msgid "Convert variable names to lower case"
+msgstr ""
+
+  # new messages about invalid variable classes
+  
+msgid "The following variables are not valid for use in the R Commander and will be omitted:"
+msgstr ""
+
+msgid "The following variable is not valid for use in the R Commander and will be omitted:"
+msgstr ""
+
+# new messages for version 2.7-0
+
+  # for Numerical Summaries dialog
+
+msgid "Frequency Counts"
+msgstr ""
+
+  # For bar graph dialog
+  
+msgid "Show counts or percentages in bars"
+msgstr ""
+
+  # for piechart dialog
+
+msgid "Neither"
+msgstr ""
+
+  # for proportion-test dialogs
+  
+msgid "<No response selected>"
+msgstr ""
+
+msgid "Proportion"
+msgstr ""
+
+  # for new restart Commander dialog
+  
+msgid "Restart the Commander"
+msgstr ""
+
+msgid "Restart the Commander?"
+msgstr ""
+
+  # for new repeated-measures ANOVA/ANCOVA dialogs
+  
+msgid "One-factor repeated-measures ANOVA/ANCOVA..."
+msgstr ""
+  
+msgid "One Repeated Measures Factor ANOVA/ANCOVA"
+msgstr ""
+
+msgid "no responses specified"
+msgstr ""
+
+msgid "the specified responses are not contiguous\n missing responses are removed"
+msgstr ""
+
+msgid "<no selection>"
+msgstr ""
+
+msgid "there are duplicated level names"
+msgstr ""
+
+msgid "is not a valid name"
+msgstr ""
+
+msgid "the following responses appear more than once:"
+msgstr ""
+
+msgid "at least 2 responses must be specified"
+msgstr ""
+
+msgid "Within-Subject Factor"
+msgstr ""
+
+msgid "Name for the within-subjects factor:"
+msgstr ""
+
+msgid "Specify up to 8 levels (responses) and level names for the within-subjects factor"
+msgstr ""
+
+msgid "Between-Subjects Model Formula"
+mststr ""
+
+msgid "Multivariate Test Statistic"
+msgstr ""
+
+msgid "Multivariate"
+msgstr ""
+
+msgid "Univariate"
+msgstr ""
+
+msgid "Tests to Perform"
+msgstr ""
+
+msgid "Repeated-Measures Means"
+msgstr ""
+
+msgid "Between-Subjects Factors (pick zero or more)"
+msgstr ""
+
+msgid "Plot response means by factors"
+msgstr ""
+
+msgid "Print means and standard deviations by factors"
+msgstr ""
+
+msgid "X-axis factor:"
+msgstr ""
+
+msgid "Trace factor:"
+msgstr ""
+
+msgid "Response name:"
+msgstr ""
+
+msgid "Two-factor repeated-measures ANOVA/ANCOVA..."
+msgstr ""
+
+msgid "Two Repeated Measures Factors ANOVA/ANCOVA"
+msgstr ""
+
+msgid "the specified responses are not rectangular"
+msgstr ""
+
+msgid "at least 2 rows and 2 columns of responses must be specified"
+msgstr ""
+
+msgid "there are duplicated row level names"
+msgstr ""
+
+msgid "there are duplicated column level names"
+msgstr ""
+
+msgid "Within-Subject Factors"
+msgstr ""
+
+msgid "Name for the within-subjects row factor:"
+msgstr ""
+
+msgid "Name for the within-subjects column factor:"
+msgstr ""
+
+msgid "Select up to 5 levels and level-names for each within-subjects factor"
+msgstr ""
+
+  # new reshape data set from long to wide format dialog
+  
+msgid "Reshape data set from long to wide format..."
+msgstr ""
+
+msgid "Reshape Data Set from Long to Wide Format"
+msgstr ""
+
+msgid "Subject ID variable (pick one)"
+msgstr ""
+
+msgid "Within-subjects factors (pick one or more)"
+msgstr ""
+
+msgid "Variables that vary by occasion (pick one or more)"
+msgstr ""
+
+msgid "Variables to ignore (pick zero or more)"
+msgstr ""
+
+msgid "You must select an ID variable."
+msgstr ""
+
+msgid "You must select one or more within-subjects factors."
+msgstr ""
+
+msgid "You must select one or more occasion-varying variables."
+msgstr ""
+
+msgid "the following variables appear more than once:"
+msgstr ""
+
+msgid "Save data set aborted"
+msgstr ""
+
+msgid "Name for wide data set:"
+msgstr ""
+
+msgid "Make the wide data set active"
+msgstr ""
+
+  # new reshape data set from wide to long format dialog
+  
+msgid "Reshape data set from wide to long format..."
+msgstr ""
+  
+msgid "Reshape Data Set from Wide to Long Format"
+msgstr ""
+
+msgid "both one and two repeated-measures factors were specified\nspecify either a one-way or two-way design"
+msgstr ""
+
+msgid "the specified responses are not contiguous"
+msgstr ""
+
+msgid "the following ignored variables are also responses:"
+msgstr ""
+
+msgid "Specify one within-subject factor"
+msgstr ""
+
+msgid "Specify two within-subject factors"
+msgstr ""
+
+msgid "Specify up to 5 levels and level names for each within-subjects factor"
+msgstr ""
+
+msgid "Name for long data set:"
+msgstr ""
+
+msgid "Response variable:"
+msgstr ""
+
+msgid "Subject ID variable:"
+msgstr ""
+
+msgid "Make the long data set active"
+msgstr ""
+
+  # additional messages for handling character data
+  
+msgid "Convert all character variables to factors"
+msgstr ""
+
+msgid "Convert character variables to factors..."
+msgstr ""
+
+msgid "Convert Character Variables to Factors"
+msgstr ""
+
+
+# new message for version 2.7-1
+
+  # previously omitted message (also included in 2.6-2 but omitted again from 2.7-0):
+  
+msgid "Variable (pick one or more)"
+msgstr ""
+
+  # additional messages omitted from version 2.7-0
+  
+msgid "Include in Segment Labels"
+msgstr ""
+
+msgid "One Repeated-Measures Factor"
+msgstr ""
+
+msgid "Two Repeated-Measures Factors"
 msgstr ""

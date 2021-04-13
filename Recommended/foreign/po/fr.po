@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: foreign 0.8-10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-13 09:55+0100\n"
-"PO-Revision-Date: 2021-02-06 16:20+0100\n"
+"POT-Creation-Date: 2020-04-26 10:14+0100\n"
+"PO-Revision-Date: 2021-04-12 18:51+0200\n"
 "Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
@@ -762,11 +762,11 @@ msgstr "une erreur d'écriture binaire s'est produite"
 
 #: stataread.c:716
 msgid "this should happen: overrun"
-msgstr "Ceci devrait se produire : dépassement par le haut."
+msgstr "ceci devrait se produire : dépassement par le haut"
 
 #: stataread.c:718
 msgid "this should happen: underrun"
-msgstr "Ceci devrait se produire : dépassement par le bas"
+msgstr "ceci devrait se produire : dépassement par le bas"
 
 #: stataread.c:977
 msgid "this should not happen."
