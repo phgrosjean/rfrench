@@ -21,16 +21,16 @@ msgid "Cox-Regression Model"
 msgstr "Modèle de régression de Cox"
 
 msgid "Start and stop times must be ordered."
-msgstr "Les temps de début et de fin doivent être ordonnés."
+msgstr "Les heures de début et de fin doivent être ordonnées."
 
 msgid "You must select one or two time variables."
-msgstr "Vous devez sléectionner une ou deux variables."
+msgstr "Vous devez sélectionner une ou deux variables."
 
 msgid "You must select an event indicator."
 msgstr "Vous devez sélection un indicateur d'événement."
 
 msgid "\"%s\" is not a valid name."
-msgstr "\"%s\" n'est pas un nom correct."
+msgstr "\"%s\" n'est pas un nom valide."
 
 msgid "<all valid cases>"
 msgstr "<tous cas corrects>"
@@ -100,7 +100,7 @@ msgid "Survival Data Definition"
 msgstr "Définition des données de survie"
 
 msgid "Plot Cox-Model Survival Functions"
-msgstr "Graphe des fonction du modèle de survie de Cox"
+msgstr "Graphe des fonctions du modèle de survie de Cox"
 
 msgid "Default behavior"
 msgstr "Comportement par défaut"
@@ -115,7 +115,7 @@ msgid "Plot by factor levels at covariate means"
 msgstr "Graphe par niveaux de la variable facteur aux moyennes de la covariable"
 
 msgid "Plot at specified values of predictors"
-msgstr "Graphe à des valeurs spécifiées des prédictions"
+msgstr "Graphe aux valeurs spécifiées des prédictions"
 
 msgid "Type of Plot"
 msgstr "Type de graphe"
@@ -143,7 +143,7 @@ msgid "Number of rows:"
 msgstr "Nombre de lignes :"
 
 msgid "Compare Survival Functions"
-msgstr "Comper des fonctions de survie"
+msgstr "Comparer les fonctions de survie"
 
 msgid "You must select strata."
 msgstr "Vous devez sélectionner des strates."
@@ -179,7 +179,7 @@ msgid "Fleming-Harrington 2"
 msgstr "Fleming-Harrington 2"
 
 msgid "Mark censoring times"
-msgstr "Mrquer les temps censorés"
+msgstr "Marquer les temps censurés"
 
 msgid "Method"
 msgstr "Méthode"
@@ -224,7 +224,7 @@ msgid "Distribution"
 msgstr "Distribution"
 
 msgid "Reshape Wide Survival Data to Long"
-msgstr "Reformatter des données de survie large en longueur"
+msgstr "Reformatter les données de survie large en longueur"
 
 msgid "No time-varying covariates specified."
 msgstr "Aucune covariable variant avec le temps n'est spécifiée."
@@ -233,7 +233,7 @@ msgid "You must enter the name of a data set."
 msgstr "Vous devez entrer le nom d'un jeu de données."
 
 msgid "is not a valid name."
-msgstr "n'est pas un nom correct."
+msgstr "n'est pas un nom valide."
 
 msgid "Data set"
 msgstr "Jeu de données"
@@ -242,7 +242,7 @@ msgid "You must select a time-to-event variable."
 msgstr "Vous devez sélectionner une variable time-to-event."
 
 msgid "Covariate set has %d entries; should have %d entries"
-msgstr "La covariabloe choisie a %d entrées ; Elle devrait en avoir %d"
+msgstr "La covariable choisie a %d entrées ; elle doit en avoir %d"
 
 msgid "Covariate set must have at least 2 entries."
 msgstr "La covariable choisie doit avoir au moins 2 entrées."
@@ -275,7 +275,7 @@ msgid "all elements of cov must be of the same length and"
 msgstr "tous les éléments de cov doivent être de même longueur et"
 
 msgid "cov.times must have one more entry than each element of cov."
-msgstr "cov.times doit contenir une ou plus d'entrées que chaque élément de cov."
+msgstr "cov.times doit contenir une entrée de plus que chaque élément de cov."
 
 msgid "event indicator must have values {0, 1}, {1, 2} or {FALSE, TRUE}"
 msgstr "l'indicateur d'événement doit avoir des valeurs {0, 1}, {1, 2} ou {FALSE, TRUE}"
@@ -384,7 +384,7 @@ msgid "Interval"
 msgstr "Intervalle"
 
 msgid "Counting"
-msgstr "Contage"
+msgstr "Comptage"
 
 msgid "Interval type 2"
 msgstr "Intervalle de type 2"
@@ -399,14 +399,14 @@ msgid "start-end times only for counting-process or interval censoring."
 msgstr "les heures de début et de fin uniquement pour le processus de comptage ou la censure par intervalle."
 
 msgid "start-end times required for counting-process or interval censoring."
-msgstr "les temps de début et de fin requis pour le processus de comptage ou la censure par intervalle."
+msgstr "les heures de début et de fin requises pour le processus de comptage ou la censure par intervalle."
 
 msgid ""
 "Strata\n"
 "(select one or more)"
 msgstr ""
 "Strate\n"
-"(Sélectionnez-en une ou plusieurs)"
+"(sélectionnez-en une ou plusieurs)"
 
 msgid "Summary"
 msgstr "Résumé"
