@@ -49,7 +49,7 @@ msgstr "getuse : erreur d'accès fichier"
 #: R_systat.c:319
 #, c-format
 msgid "getuse: byte counter %o octal"
-msgstr "getuse : décompteur d'octets %o octal"
+msgstr "getuse : compteur d'octets %o octal"
 
 #: R_systat.c:340
 msgid "getuse: terminal null block"
@@ -142,7 +142,7 @@ msgstr "aucun champ dans le fichier DBF"
 #: Rdbfread.c:193
 #, c-format
 msgid "value |%d| found in logical field"
-msgstr "la valeur |%d| a été trouvée dans un champ booléen"
+msgstr "valeur |%d| trouvée dans un champ booléen"
 
 #: Rdbfwrite.c:50 SASxport.c:510 SASxport.c:607
 msgid "first argument must be a file name"
@@ -164,11 +164,11 @@ msgstr "longueur de champ incorrecte dans une variable numérique"
 #: SASxport.c:152 SASxport.c:188 SASxport.c:233 SASxport.c:259 SASxport.c:303
 #: SASxport.c:311
 msgid "file not in SAS transfer format"
-msgstr "le fichier n'a pas un format de transfert SAS"
+msgstr "le fichier n'est pas au format de transfert SAS"
 
 #: SASxport.c:225 SASxport.c:293
 msgid "SAS transfer file has incorrect library header"
-msgstr "Le fichier de transfert SAS a une entête de librairie incorrecte"
+msgstr "Le fichier de transfert SAS a une entête de bibliothèque incorrecte"
 
 #: SASxport.c:251
 msgid "SAS transfer file has incorrect member header"
@@ -176,7 +176,7 @@ msgstr "Le fichier de transfert SAS a une entête de membre incorrecte"
 
 #: SASxport.c:364 SASxport.c:405 SASxport.c:411
 msgid "problem accessing SAS XPORT file"
-msgstr "problème lors de l'accès d'un fichier SAS XPORT"
+msgstr "problème lors de l'accès au fichier SAS XPORT"
 
 #: SASxport.c:513 SASxport.c:610 spss.c:670 stataread.c:586
 #, c-format
@@ -186,11 +186,11 @@ msgstr "impossible d'ouvrir le fichier '%s'"
 #: SASxport.c:612
 #, c-format
 msgid "problem reading SAS XPORT file '%s'"
-msgstr "problème à la lecture du fichier SAS XPORT '%s'"
+msgstr "problème de lecture du fichier SAS XPORT '%s'"
 
 #: SASxport.c:641
 msgid "problem reading SAS transport file"
-msgstr "problème à la lecture d'un fichier SAS transport"
+msgstr "problème de lecture du fichier SAS transport"
 
 #: file-handle.c:115
 #, c-format
@@ -200,7 +200,7 @@ msgstr "le handle du fichier '%s' n'a pas été préalablement déclaré dans FI
 #: format.c:108
 #, c-format
 msgid "format %s may not be used as an input format"
-msgstr "le format %s ne peut être utilisé comme format d'entrée"
+msgstr "le format %s ne peut pas être utilisé comme format d'entrée"
 
 #: format.c:113
 #, c-format
@@ -244,7 +244,7 @@ msgstr "impossible d'afficher une variable caractère de largeur %d avec le form
 
 #: minitab.c:92 minitab.c:158
 msgid "non-numeric data types are not yet implemented"
-msgstr "les types de données non numériques ne sont pas encore implémentées"
+msgstr "les types de données non numériques ne sont pas encore implémentés"
 
 #: minitab.c:119
 #, c-format
@@ -254,11 +254,11 @@ msgstr "impossible d'ouvrir le fichier '%s': '%s'"
 #: minitab.c:123
 #, c-format
 msgid "file '%s' is not in Minitab Portable Worksheet format"
-msgstr "le fichier '%s' n'est pas dans le format 'Minitab Portable Worksheet'"
+msgstr "le fichier '%s' n'est pas au format 'Minitab Portable Worksheet'"
 
 #: minitab.c:126 minitab.c:147 minitab.c:155 minitab.c:162
 msgid "file read error"
-msgstr "erreur d'accès fichier"
+msgstr "erreur d'accès au fichier en lecture"
 
 #: minitab.c:139
 #, c-format
@@ -294,7 +294,7 @@ msgstr "Enregistrement de données attendu"
 
 #: pfm-read.c:295
 msgid "error reading portable-file dictionary"
-msgstr "erreur à la lecture d'un dictionnaire de fichier portable"
+msgstr "erreur à la lecture du dictionnaire de fichier portable"
 
 #: pfm-read.c:358
 msgid "Number expected"
@@ -325,7 +325,7 @@ msgstr "Code de version inconnu %d"
 #: pfm-read.c:552
 #, c-format
 msgid "Bad date string length %d"
-msgstr "Mauvaise longueur de chaîne de date %d"
+msgstr "Mauvaise longueur de chaîne de la date %d"
 
 #: pfm-read.c:559
 msgid "Bad character in date"
@@ -343,12 +343,12 @@ msgstr "Mauvais caractère dans un temps"
 #: pfm-read.c:640
 #, c-format
 msgid "%s: Bad format specifier byte %d"
-msgstr "%s : mauvais octet de spécification de type %d"
+msgstr "%s : mauvais octet de spécification du type %d"
 
 #: pfm-read.c:649 sfm-read.c:1155 sfm-read.c:1165
 #, c-format
 msgid "%s: Bad format specifier byte (%d)"
-msgstr "%s : mauvais octet de spécification de type (%d)"
+msgstr "%s : mauvais octet de spécification du type (%d)"
 
 #: pfm-read.c:651
 #, c-format
@@ -381,12 +381,12 @@ msgstr "position %d : le nom de la variable a %u caractères"
 #: pfm-read.c:758
 #, c-format
 msgid "position %d: Variable name begins with invalid character"
-msgstr "position %d : le nom de variable commence par un caractère inapproprié"
+msgstr "position %d : le nom de variable commence par un caractère invalide"
 
 #: pfm-read.c:762
 #, c-format
 msgid "position %d: Variable name begins with lowercase letter %c"
-msgstr "position %d : le nom de variable commence avec une lettre minuscule %c"
+msgstr "position %d : le nom de variable commence par une lettre minuscule %c"
 
 #: pfm-read.c:774
 #, c-format
@@ -396,7 +396,7 @@ msgstr "position %d : le caractère %d du nom de variable est une lettre minuscu
 #: pfm-read.c:783
 #, c-format
 msgid "position %d: character `\\%03o' is not valid in a variable name"
-msgstr "position %d : le caractère '\\%03o' n'est pas acceptable dans un nom de variable"
+msgstr "position %d : le caractère '\\%03o' n'est pas accepté dans un nom de variable"
 
 #: pfm-read.c:789
 #, c-format
@@ -431,12 +431,12 @@ msgstr "Impossible d'assigner les étiquettes de valeurs à %s et %s, parce qu'i
 #: pfm-read.c:981
 #, c-format
 msgid "Duplicate label for value %g for variable %s"
-msgstr "Etiquette dupliquée pour la valeur %g dans la variable %s"
+msgstr "Etiquette dupliquée pour la valeur %g de la variable %s"
 
 #: pfm-read.c:984
 #, c-format
 msgid "Duplicate label for value `%.*s' for variable %s"
-msgstr "Etiquette dupliquée pour la valeur `%.*s' dans la variable %s"
+msgstr "Etiquette dupliquée pour la valeur `%.*s' de la variable %s"
 
 #: pfm-read.c:1072
 msgid "End of file midway through case"
@@ -470,17 +470,17 @@ msgstr "%s : la variable de pondération ne peut être une variable de type cha�
 #: sfm-read.c:370
 #, c-format
 msgid "%s: Orphaned variable index record (type 4).  Type 4 records must always immediately follow type 3 records"
-msgstr "%s : enregistrement d'index de variable orphelin (type 4). Les enregistrements  de type 4 doivent toujours suivre immédiatement des enregistrements de type 3"
+msgstr "%s : enregistrement d'index de variable orphelin (type 4). Les enregistrements de type 4 doivent toujours suivre immédiatement les enregistrements de type 3"
 
 #: sfm-read.c:450
 #, c-format
 msgid "%s: Very long string record(s) found (record type 7, subtype %d), each will be imported in consecutive separate variables"
-msgstr "%s : enregistrement de chaîne de caractère très long (type 7, sous-type %d), chacun d’eux sera importé dans des variables séparées consécutives"
+msgstr "%s : enregistrement(s) de chaînes de caractère très long (type 7, sous-type %d) trouvé(s), chacun d’eux sera importé dans des variables séparées consécutives"
 
 #: sfm-read.c:475
 #, c-format
 msgid "%s: Long string value labels record found (record type 7, subtype %d), but ignored"
-msgstr "%s : labels d’enregistrement de chaîne longue (type 7, sous-type %d), mais ignorés"
+msgstr "%s : étiquettes d’enregistrement de chaînes longues (type 7, sous-type %d) trouvés, mais ignorés"
 
 #: sfm-read.c:480
 #, c-format
@@ -519,7 +519,7 @@ msgstr "%s : représentations 'big/little endian' incompatibles entre le fichier
 #: sfm-read.c:596
 #, c-format
 msgid "%s: File-indicated character representation code (%s) is not ASCII"
-msgstr "%s : le code de représentation de caractères (%s) dans le fichier n'est pas ASCII"
+msgstr "%s : le code de représentation des caractères (%s) dans le fichier n'est pas ASCII"
 
 #: sfm-read.c:601
 #, c-format
@@ -594,7 +594,7 @@ msgstr "%s : position %d : le champ indicateur d'étiquette de la variable n'est
 #: sfm-read.c:948
 #, c-format
 msgid "%s: position %d: Missing value indicator field is not -3, -2, 0, 1, 2, or 3"
-msgstr "%s : position %d : le champ indicateur de valeur manquante n'est pas -3, -2, -1, 0, 1, 2 ou 3"
+msgstr "%s : position %d : le champ indicateur de valeur manquante n'est pas -3, -2, -1, 0, 1, 2 ni 3"
 
 #: sfm-read.c:970
 #, c-format
@@ -604,7 +604,7 @@ msgstr "%s : position %d : le nom de la variable commence avec un dièse ('#'). 
 #: sfm-read.c:992
 #, c-format
 msgid "%s: position %d: character `\\%03o' (%c) is not valid in a variable name"
-msgstr "%s : position %d : le caractère '\\%03o' (%c) n'est pas autorisé dans le nom d'une variable"
+msgstr "%s : position %d : le caractère '\\%03o' (%c) n'est pas autorisé dans les noms de variables"
 
 #: sfm-read.c:1034
 #, c-format
@@ -624,7 +624,7 @@ msgstr "%s : la variable de chaîne %s ne peut avoir des valeurs manquantes spé
 #: sfm-read.c:1116
 #, c-format
 msgid "%s: Long string continuation records omitted at end of dictionary"
-msgstr "%s : les enregistrements de continuation de longues chaînes sont omis à la fin du dictionnaire"
+msgstr "%s : les enregistrements de continuation des longues chaînes sont omis à la fin du dictionnaire"
 
 #: sfm-read.c:1119
 #, c-format
@@ -659,7 +659,7 @@ msgstr "%s : l'index de variable associé à une étiquette de valeur (%d) n'est
 #: sfm-read.c:1279
 #, c-format
 msgid "%s: Variable index associated with value label (%d) refers to a continuation of a string variable, not to an actual variable"
-msgstr "%s : l'index de variable associé à une étiquette de valeur (%d) se réfère à la continuation d'une variable chaîne de caractères, pas à la variable elle-même"
+msgstr "%s : l'index de variable associé à une étiquette de valeur (%d) se réfère à la continuation d'une variable chaîne de caractères, et non pas à la variable elle-même"
 
 #: sfm-read.c:1282
 #, c-format
@@ -669,7 +669,7 @@ msgstr "%s : les étiquettes de valeurs ne sont pas permises pour les variables 
 #: sfm-read.c:1291
 #, c-format
 msgid "%s: Variables associated with value label are not all of identical type.  Variable %s has %s type, but variable %s has %s type"
-msgstr "%s : les variables associées avec des étiquettes de valeurs ne sont pas toutes du même type. La variable %s a le type %s, mais la variable %s a le type %s"
+msgstr "%s : les variables associées à des étiquettes de valeurs ne sont pas toutes du même type. La variable %s a le type %s, mais la variable %s a le type %s"
 
 #: sfm-read.c:1333
 #, c-format
@@ -728,7 +728,7 @@ msgstr "problème lors de la lecture du fichier '%s'"
 #: spss.c:683
 #, c-format
 msgid "file '%s' is not in any supported SPSS format"
-msgstr "le fichier '%s' n'est enregistré dans aucun des formats supportés de SPSS"
+msgstr "le fichier '%s' n'est dans aucun des formats supportés de SPSS"
 
 #: stataread.c:95 stataread.c:105 stataread.c:113 stataread.c:138
 #: stataread.c:148 stataread.c:157 stataread.c:514
@@ -749,7 +749,7 @@ msgstr ""
 
 #: stataread.c:578
 msgid "can not yet read Stata .dta on this platform"
-msgstr "la lecture des fichiers Stata .dta n'est pas encore possible sur cette architecture"
+msgstr "la lecture des fichiers Stata .dta n'est pas encore possible sur cette plateforme"
 
 #: stataread.c:582 stataread.c:1038
 msgid "first argument must be a file name\n"
@@ -774,7 +774,7 @@ msgstr "ceci ne devrait pas se produire."
 
 #: stataread.c:1034
 msgid "cannot yet read write .dta on this platform"
-msgstr "la lecture ou l'écriture de fichiers Stata .dta n'est pas encore possible sur cette architecture"
+msgstr "la lecture ou l'écriture de fichiers Stata .dta n'est pas encore possible sur cette plateforme"
 
 #: stataread.c:1042
 msgid "data to be saved must be in a data frame"
@@ -787,7 +787,7 @@ msgstr "impossible d'ouvrir le fichier '%s' en écriture"
 
 #: stataread.c:1050
 msgid "can only write version 6-10 formats"
-msgstr "il est seulement possible d'écrire des fichiers aux formats version 6-10"
+msgstr "il est seulement possible d'écrire les fichiers dans les formats version 6-10"
 
 #~ msgid "%s: position %d: Variable name begins with invalid character"
 #~ msgstr "%s : position %d : le nom de la variable commence avec un caractère non autorisé"
