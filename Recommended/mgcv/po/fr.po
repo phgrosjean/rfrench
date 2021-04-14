@@ -24,7 +24,7 @@ msgstr "magic nécessite des valeurs de départ pour les paramètres de lissage 
 
 #: magic.c:563
 msgid "magic, the gcv/ubre optimizer, failed to converge after 400 iterations."
-msgstr "magic, l'optimisateur gcv/ubre, n'a pas convergé après 400 itérations."
+msgstr "magic, l'optimiseur gcv/ubre, n'a pas convergé après 400 itérations."
 
 #: matrix.c:82
 msgid "Failed to initialize memory for matrix."
