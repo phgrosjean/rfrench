@@ -46,10 +46,10 @@ msgid "'dropterm' not implemented for \"mlm\" fits"
 msgstr "'dropterm' n'est pas implémenté pour les ajustements \"mlm\""
 
 msgid "iteration limit reached near 'x = %f'"
-msgstr "nombre limite d'iterations atteint vers x = %f"
+msgstr "nombre limite d'iterations atteint vers 'x = %f'"
 
 msgid "%s does not have both 'qr' and 'y' components"
-msgstr "%s n'a pas les composantes 'qr' et 'y'"
+msgstr "%s n'a pas de composantes 'qr' et 'y'"
 
 msgid "response variable must be positive"
 msgstr "la variable réponse doit être positive"
@@ -64,10 +64,10 @@ msgid "frequency table is %d-dimensional"
 msgstr "le tableau de fréquences a %d dimensions"
 
 msgid "invalid table specification"
-msgstr "spécification de table de contingence incorrecte"
+msgstr "spécification incorrecte de la table de contingence"
 
 msgid "higher-way table requested.  Only 2-way allowed"
-msgstr "nombre de dimensions de la table insuffisant. Seuls deux dimensions sont admises"
+msgstr "nombre insuffisant de dimensions de la table. Seules deux dimensions sont admises"
 
 msgid "negative or non-integer entries in table"
 msgstr "valeurs négatives ou non entières dans le tableau"
@@ -115,7 +115,7 @@ msgid "unsupported distribution"
 msgstr "distribution non supportée"
 
 msgid "supplying pars for the %s distribution is not supported"
-msgstr "fixer des paramètres pour distribution %s n'est pas supporté"
+msgstr "fixer des paramètres pour la distribution %s n'est pas supporté"
 
 msgid "need positive values to fit a log-Normal"
 msgstr "des valeurs positives sont requises pour ajuster un modèle log-Normal"
@@ -199,7 +199,7 @@ msgid "data vectors must be the same length"
 msgstr "les vecteurs de données doivent avoir la même longueur"
 
 msgid "missing or infinite values in the data are not allowed"
-msgstr "les valeurs manquantes ou infinies ne sont pas admises"
+msgstr "les valeurs manquantes ou infinies ne sont pas admises dans les données"
 
 msgid "only finite values are allowed in 'lims'"
 msgstr "seules des valeurs finies sont autorisées pour 'lims'"
@@ -223,13 +223,13 @@ msgid "'prior' is of incorrect length"
 msgstr "'prior' est de longueur incorrecte"
 
 msgid "cannot use leave-one-out CV with method %s"
-msgstr "impossible d'utiliser la VC par eustachage pouri %s"
+msgstr "impossible d'utiliser la VC par eustachage pour la méthode %s"
 
 msgid "rank = 0: variables are numerically constant"
 msgstr "rank = 0 : les variables sont numériquement constantes"
 
 msgid "variables are collinear"
-msgstr "les variables sont collinéaires"
+msgstr "les variables sont colinéaires"
 
 msgid "'nu' must exceed 2"
 msgstr "'nu' doit être supérieur à 2"
@@ -238,7 +238,7 @@ msgid "group means are numerically identical"
 msgstr "les moyennes par groupes sont numériquement identiques"
 
 msgid "object not of class \"lda\""
-msgstr "l'objet n'est pas de la classe \"lda\""
+msgstr "l'objet n'est pas de classe \"lda\""
 
 msgid "wrong number of variables"
 msgstr "nombre de variables incorrect"
@@ -250,7 +250,7 @@ msgid "'breaks' must be strictly increasing"
 msgstr "'breaks' doit être strictement croissant"
 
 msgid "'breaks' do not cover the data"
-msgstr "'breaks' ne recouvrent pas toutes les données"
+msgstr "'breaks' ne recouvre pas toutes les données"
 
 msgid "dim(W) is not correct"
 msgstr "dim(W) est incorrect"
@@ -286,7 +286,7 @@ msgid "'lqs' failed: all the samples were singular"
 msgstr "'lqs' a échoué : tous les échantillons étaient singuliers"
 
 msgid "missing or infinite values are not allowed"
-msgstr "les valeurs manquantes ou infinies ne sont pas admises"
+msgstr "les valeurs manquantes ou infinies ne sont pas autorisées"
 
 msgid "at least %d cases are needed"
 msgstr "il faut au moins %d cas"
@@ -304,7 +304,7 @@ msgid "Too many combinations (%.3g) for nsamp = \"exact\""
 msgstr "Trop de combinaisons (%.3g) pour nsamp = \"exact\""
 
 msgid "'x' is probably collinear"
-msgstr "'x' est probablement collinéaire"
+msgstr "'x' est probablement colinéaire"
 
 msgid "all variables must be factors"
 msgstr "toutes les variables doivent être des facteurs"
@@ -322,7 +322,7 @@ msgid "incompatible arguments"
 msgstr "arguments incompatibles"
 
 msgid "'Sigma' is not positive definite"
-msgstr "'Sigma' n'est définie positive"
+msgstr "'Sigma' n'est pas définie positive"
 
 msgid "'theta' must be given"
 msgstr "'theta' doit être fourni"
@@ -337,7 +337,7 @@ msgid "only Chi-squared LR tests are implemented"
 msgstr "seuls les tests Chi-deux LR sont implémentés"
 
 msgid "not all objects are of class \"negbin\""
-msgstr "tous les objets ne sont pas de la classe \"negbin\""
+msgstr "tous les objets ne sont pas de classe \"negbin\""
 
 msgid "unimplemented method: %s"
 msgstr "méthode non implémentée: %s"
@@ -382,7 +382,7 @@ msgid "response must have 3 or more levels"
 msgstr "la réponse doit avoir au moins 3 niveaux"
 
 msgid "attempt to find suitable starting values failed"
-msgstr "la recherche de valeurs de départ correctes a échouée"
+msgstr "la recherche de valeurs de départ correctes a échoué"
 
 msgid "design appears to be rank-deficient, so dropping some coefs"
 msgstr "le plan ne semble pas de rang plein, des coefs seront ignorés"
@@ -400,10 +400,10 @@ msgid "anova is not implemented for a single \"polr\" object"
 msgstr "l'anova n'est pas implémentée pour un objet \"polr\""
 
 msgid "not all objects are of class \"polr\""
-msgstr "tous les objets ne sont pas de la classe \"polr\""
+msgstr "tous les objets ne sont pas de classe \"polr\""
 
 msgid "models were not all fitted to the same size of dataset"
-msgstr "les modèles n'ont pas été ajustés à des jeux de données de même dimension"
+msgstr "les modèles n'ont pas tous été ajustés à la même taille des jeux de données"
 
 msgid "Parameter:"
 msgstr "Paramètre :"
@@ -427,10 +427,10 @@ msgid "rank deficiency in group %s"
 msgstr "groupe %s n'est pas de rang plein"
 
 msgid "object not of class \"qda\""
-msgstr "cet objet n'est pas de la calsse \"qda\""
+msgstr "cet objet n'est pas de classe \"qda\""
 
 msgid "cannot have leave-one-out CV with 'newdata'"
-msgstr "une VC par eustachage (lave-one-out) impossible avec 'newdata'"
+msgstr "VC par eustachage (lave-one-out) impossible avec 'newdata'"
 
 msgid "'x' is singular: singular fits are not implemented in 'rlm'"
 msgstr "'x' est singulière : les ajustements singuliers ne sont pas implémentés dans 'rlm'"
@@ -466,7 +466,7 @@ msgid "'coef' must have same length as 'contrast.obj'"
 msgstr "'coef' doit être de la même longueur que 'contrast.obj'"
 
 msgid "each element of '%s' must be logical"
-msgstr "tous les éléments de '%s' doivent être des valeurs logiques"
+msgstr "tous les éléments de '%s' doivent être des valeurs booléennes"
 
 msgid "the contrast defined is empty (has no TRUE elements)"
 msgstr "le contraste défini est vide (aucun élément TRUE)"
@@ -481,7 +481,7 @@ msgid "\"hessian\" attribute missing"
 msgstr "attribut \"hessian\" manquant"
 
 msgid "regression apparently linear"
-msgstr "regression apparemment linéaire"
+msgstr "régression apparemment linéaire"
 
 msgid "Infs not allowed in 'd'"
 msgstr "Infs interdits dans 'd'"

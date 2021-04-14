@@ -1312,7 +1312,7 @@ msgid "Text size (points)"
 msgstr "Taille du texte (points)"
 
 msgid "There is no current RGL graphics device to save."
-msgstr "Aucun périphérique graphique RGL d'où sauvegarder."
+msgstr "Aucun périphérique graphique RGL pour sauvegarder."
 
 msgid "{\"PNG Bitmap Files\" {\".png\" \".PNG\"}} {\"All Files\" {\"*\"}}"
 msgstr "{\"Fichiers PNG\" {\".png\" \".PNG\"}} {\"Tous les fichiers\" {\"*\"}}"
@@ -1333,7 +1333,7 @@ msgid "There is no dataset associated with this model."
 msgstr "Pas de données associées à ce modèle."
 
 msgid "The dataset associated with this model, %s, is not in memory."
-msgstr "Le jeu de données, %s, associé à ce modèles n'est pas en mémoire."
+msgstr "Le jeu de données, %s, associé à ce modèle n'est pas en mémoire."
 
 msgid "Current Model:"
 msgstr "Modèle actif :"
@@ -1379,7 +1379,7 @@ msgid "Simulated confidence envelope"
 msgstr "Simuler l'enveloppe de confiance"
 
 msgid "Identify points with mouse"
-msgstr "Identifier les points à la souris"
+msgstr "Identifier les points avec la souris"
 
 msgid "Test Linear Hypothesis"
 msgstr "Tester l'hypothèse de linéarité"
@@ -1405,7 +1405,7 @@ msgid "Number of Rows:"
 msgstr "Nombre de lignes :"
 
 msgid "Enter hypothesis matrix and right-hand side vector:"
-msgstr "Entrer la matrice d'hypothèse et le vecteur du membre de droite :"
+msgstr "Entrer la matrice d'hypothèse et le vecteur du membre droit :"
 
 msgid "There are fewer than two models."
 msgstr "Moins de deux modèles."
@@ -1423,7 +1423,7 @@ msgid "You must select two models."
 msgstr "Vous devez sélectionner deux modèles."
 
 msgid "Models are not of the same class."
-msgstr "Les modèles ne sont pas de même classe."
+msgstr "Les modèles ne sont pas de la même classe."
 
 msgid "Breusch-Pagan Test"
 msgstr "Test Breusch-Pagan"
@@ -1432,7 +1432,7 @@ msgid "Score Test for Nonconstant Error Variance"
 msgstr "Test de score pour la variance d'erreur non constante"
 
 msgid "Studentized test statistic"
-msgstr "Test sur les statistiques studentisées"
+msgstr "Statistiques de test studentisées"
 
 msgid "Explanatory variables"
 msgstr "Variables explicatives"
@@ -1480,7 +1480,7 @@ msgid "Confidence Intervals"
 msgstr "Intervalles de confiance"
 
 msgid "Confidence Intervals for Individual Coefficients"
-msgstr "Intervalles de confiance pour les coefficients"
+msgstr "Intervalles de confiance pour les coefficients individuels"
 
 msgid "Confidence level must be a number between 0 and 1."
 msgstr "Le niveau de confiance doit être un nombre entre 0 et 1."
@@ -1635,7 +1635,7 @@ msgid "No"
 msgstr "Non"
 
 msgid "Assume equal variances?"
-msgstr "Variances égales ?"
+msgstr "Variances supposées égales ?"
 
 msgid "Confidence Level"
 msgstr "Niveau de confiance"
@@ -1677,7 +1677,7 @@ msgid "You must select a groups factor."
 msgstr "Vous devez sélectionner un facteur de regroupement."
 
 msgid "Factor has fewer than 3 levels; pairwise comparisons omitted."
-msgstr "Le facteur a moins de 3 niveaux ; Les comparaisons multiples sont omises."
+msgstr "Le facteur a moins de 3 niveaux ; les comparaisons multiples sont omises."
 
 msgid "Pairwise comparisons of means"
 msgstr "Comparaisons multiples des moyennes"
@@ -1713,10 +1713,10 @@ msgid "Linear Model"
 msgstr "Modèle linéaire"
 
 msgid "Left-hand side of model empty."
-msgstr "Membre de gauche vide pour ce modèle."
+msgstr "Membre gauche vide pour ce modèle."
 
 msgid "Right-hand side of model empty."
-msgstr "Membre de droite vide pour ce modèle."
+msgstr "Membre droit vide pour ce modèle."
 
 msgid "Generalized Linear Model"
 msgstr "Modèle linéaire généralisé"
@@ -1728,7 +1728,7 @@ msgid "Link function"
 msgstr "Fonction de lien"
 
 msgid "Proportional-Odds Logit Model"
-msgstr "Modèle Logit"
+msgstr "Modèle Logit Proportional-Odds"
 
 msgid "Response variable must be a factor"
 msgstr "La variable réponse doit être un facteur"
@@ -1833,7 +1833,7 @@ msgstr ""
 "n'est pas égal au nombre de niveaux (%d)."
 
 msgid "Negative probabilities not allowed."
-msgstr "Des probabilités négatives n'ont pas de sens."
+msgstr "Les probabilités négatives n'ont pas de sens."
 
 msgid "Probabilities rescaled to sum to 1."
 msgstr "Les probabilités sont mises à l'échelle pour que leur somme fasse 1."
@@ -1854,7 +1854,7 @@ msgid "Statistic"
 msgstr "Statistique"
 
 msgid "Correlation Matrix"
-msgstr "Matrice de corrélations"
+msgstr "Matrice de corrélation"
 
 msgid "Pearson product-moment"
 msgstr "Coefficient de Pearson"
@@ -1955,7 +1955,7 @@ msgid "Two Variances F-Test"
 msgstr "Test F de deux variances"
 
 msgid "Bartlett's Test"
-msgstr "Test de Batlett"
+msgstr "Test de Bartlett"
 
 msgid "Levene's Test"
 msgstr "Test de Levene"
@@ -1973,7 +1973,7 @@ msgid "There is no active model."
 msgstr "Aucun modèle actif."
 
 msgid "argument must be a square, symmetric, numeric covariance matrix"
-msgstr "l'argument doit être une matrice de covariances carrée et symétrique"
+msgstr "l'argument doit être une matrice de covariance, carrée, numérique et symétrique"
 
 msgid "there are fewer than 3 items in the scale"
 msgstr "moins de 3 items dans l'échelle"
@@ -2000,7 +2000,7 @@ msgid "groups variable must be a factor."
 msgstr "la variable de regroupement doit être de type facteur."
 
 msgid "cannot plot both multiple surfaces and residuals"
-msgstr "impossible de tracer à la fois des surfaces multiples et les résidus"
+msgstr "impossible de tracer à la fois les surfaces multiples et les résidus"
 
 msgid "not supplied"
 msgstr "non fourni"
@@ -2058,7 +2058,7 @@ msgid "Groups variable (pick one)"
 msgstr "Variable de regroupement (une)"
 
 msgid "Position legend with mouse click"
-msgstr "Positionner la légende à la souris"
+msgstr "Positionner la légende avec la souris"
 
 msgid "<No groups selected>"
 msgstr "<Pas de groupes sélectionnés>"
@@ -2080,7 +2080,7 @@ msgstr ""
 "pour un modèle de cette classe."
 
 msgid "The model is not of class \"%s\"."
-msgstr "Le modèle n'est pas de la classe \"%s\"."
+msgstr "Le modèle n'est pas de classe \"%s\"."
 
 msgid "Open script file..."
 msgstr "Ouvrir un script..."
@@ -2206,7 +2206,7 @@ msgid "Numerical summaries..."
 msgstr "Statistiques descriptives..."
 
 msgid "Frequency distribution..."
-msgstr "Distribution de fréquences..."
+msgstr "Distribution des fréquences..."
 
 msgid "Table of statistics..."
 msgstr "Tableau de statistiques..."
@@ -2248,7 +2248,7 @@ msgid "Two-variances F-test..."
 msgstr "Test F de deux variances..."
 
 msgid "Bartlett's test..."
-msgstr "Test de Bartlett…"
+msgstr "Test de Bartlett..."
 
 msgid "Levene's test..."
 msgstr "Test de Levene..."
@@ -2299,7 +2299,7 @@ msgid "Multinomial logit model..."
 msgstr "Modèle Logit multinomial..."
 
 msgid "Proportional-odds logit model..."
-msgstr "Modèle Logit..."
+msgstr "Modèle Logit Proportional-odds..."
 
 msgid "Statistics"
 msgstr "Statistiques"
@@ -2562,7 +2562,7 @@ msgid "This function requires the RODBC package.\n"
 msgstr "Cette fonction nécessite le paquet RODBC.\n"
 
 msgid "Import from Excel, Access or dBase data set"
-msgstr "Importation depuis Excel, Access ou dBase"
+msgstr "Importation des données depuis Excel, Access ou dBase"
 
 msgid "{\"MS Excel file\" {*.xls \".XLS\"}} {\"MS Access database\" {*.mdb \".MDB\"}} {\"dBase-like file\" {*.dbf \".DBF\"}} {\"All Files\" {\"*\"}}"
 msgstr "{\"Fichier MS Excel\" {*.xls \".XLS\"}} {\"Base de données MS Access\" {*.mdb \".MDB\"}} {\"Fichier de type dBase\" {*.dbf \".DBF\"}} {\"Tous les fichiers\" {\"*\"}}"
@@ -2761,7 +2761,7 @@ msgid "n (number of black balls in the urn)"
 msgstr "n (nombre de boules noires dans l'urne)"
 
 msgid "k (number of balls drawn from the urn)"
-msgstr "k (nombres de boules collectées)"
+msgstr "k (nombres de boules tirées dans l'urne)"
 
 msgid "Hypergeometric Probabilities"
 msgstr "Probabilités de la distribution hypergéométrique"
@@ -2857,7 +2857,7 @@ msgid "Sample from Binomial Distribution"
 msgstr "Échantillon d'une distribution binomiale"
 
 msgid "Poisson mean cannot be negative."
-msgstr "La moyenne Poisson ne peut être une valeur négative."
+msgstr "La moyenne de Poisson ne peut être une valeur négative."
 
 msgid "Sample from Poisson Distribution"
 msgstr "Échantillon d'une distribution de Poisson"
@@ -3104,7 +3104,7 @@ msgid "Automatically draw key"
 msgstr "Dessiner la clé automatiquement"
 
 msgid "Different panels for different responses"
-msgstr "Utiliser des panneaux séparés par réponse"
+msgstr "Utiliser des panneaux séparés pour les réponses"
 
 msgid "Identical"
 msgstr "Identique"
@@ -3116,10 +3116,10 @@ msgid "Same range"
 msgstr "Même étendue"
 
 msgid "X-Axis Scales in Different Panels"
-msgstr "Echelles des axes X dans les panneaux"
+msgstr "Echelles des axes X dans les différents panneaux"
 
 msgid "Y-Axis Scales in Different Panels"
-msgstr "Echelles des axes Y dans les panneaux"
+msgstr "Echelles des axes Y dans les différents panneaux"
 
 msgid "At least one response variable must be selected."
 msgstr "Au moins une variable réponse doit être sélectionnée."
@@ -3142,7 +3142,7 @@ msgid "Show squared residuals"
 msgstr "Afficher les résidus au carré"
 
 msgid "Show axis scales"
-msgstr "Afficher les échelles des axes"
+msgstr "Afficher l'échelle des axes"
 
 msgid "Plot 50% concentration ellipsoid"
 msgstr "Dessiner l'éllipsoïde de 50% de concentration"
@@ -3191,14 +3191,14 @@ msgid "New variable name or prefix for multiple recodes:"
 msgstr "Nouveau nom de variable ou préfixe pour recodages multiples :"
 
 msgid "Make (each) new variable a factor"
-msgstr "Transformer chaque (nouvelle) variable en facteur"
+msgstr "Transformer les nouvelles variables en facteur"
 
 msgid "Recode variables..."
 msgstr "Recoder des variables..."
 
 # Frequency distributions dialog
 msgid "Frequency Distributions"
-msgstr "Distributions de fréquence"
+msgstr "Distributions des fréquences"
 
 msgid "Chi-square goodness-of-fit test (for one variable only)"
 msgstr "Test d'ajustement du Chi-deux (une variable)"
@@ -3207,11 +3207,11 @@ msgid "Goodness-of-fit test not available when more than one variable is selecte
 msgstr "Test d'ajustement non disponible lorsque plus d'une variable est sélectionnée."
 
 msgid "Frequency distributions..."
-msgstr "Distributions de fréquences..."
+msgstr "Distributions des fréquences..."
 
 # Numeric to factor dialog
 msgid "Convert Numeric Variables to Factors"
-msgstr "Convertir une variable numérique en facteur"
+msgstr "Convertir les variables numériques en facteurs"
 
 msgid "<same as variables>"
 msgstr "<même que variables>"
@@ -3223,10 +3223,10 @@ msgid "Factors"
 msgstr "Facteurs"
 
 msgid "New variable name or prefix for multiple variables:"
-msgstr "Nouveau nom de variable ou préfixe pour variables multiples :"
+msgstr "Nouveau nom de variable ou préfixe pour les variables multiples :"
 
 msgid "Convert numeric variables to factors..."
-msgstr "Convertir des variables numériques en facteurs..."
+msgstr "Convertir les variables numériques en facteurs..."
 
 # Stack dialog
 msgid "Stack Variables"
@@ -3259,14 +3259,14 @@ msgid ""
 "right button to exit."
 msgstr ""
 "Utilisez le bouton gauche de la souris pour identifier les points,\n"
-"Cliquez sur le bouton droit de la souris pour sortir."
+"Cliquez avec le bouton droit de la souris pour sortir."
 
 msgid ""
 "Drag right mouse button to identify points,\n"
 "click right button to exit."
 msgstr ""
 "Glissez avec le bouton droit de la souris pour identifier des points,\n"
-"Cliquez sur le bouton droit de la souris pour quitter."
+"Cliquez avec le bouton droit de la souris pour quitter."
 
 msgid "Read Data From Text File or Clipboard"
 msgstr "Lire des données depuis un fichier texte ou le presse-papier"
@@ -3287,7 +3287,7 @@ msgid "No statistics selected."
 msgstr "Aucune statistique sélectionnée."
 
 msgid "Right-hand side"
-msgstr "Côté gauche"
+msgstr "Côté droit"
 
 # # messages added to Rcmdr version 1.3-0
 # handling plug-ins
@@ -3307,7 +3307,7 @@ msgid ""
 "The plug-in(s) will not be available until the Commander is restarted.\n"
 "Restart now?"
 msgstr ""
-"Le(s) plug-in(s) ne seront disponibles qu'au redémarrage de R Commander.\n"
+"Le(s) plug-in(s) ne seront plus disponibles après le redémarrage de R Commander.\n"
 "Redémarrer maintenant ?"
 
 msgid "objects have different numbers of columns"
@@ -3326,20 +3326,20 @@ msgid "the package %s is not an Rcmdr plug-in"
 msgstr "le paquet %s n'est pas un plug-in Rcmdr"
 
 msgid "unrecognized operation, \"%s\", in plugin menu line %i"
-msgstr "opération non reconnue « %s » dans la ligne %i de définition de menu du plug-in"
+msgstr "opération non reconnue « %s » à la ligne %i de définition de menu du plug-in"
 
 msgid "unrecognized type, \"%s\", in plugin menu line %i"
-msgstr "type non reconnu « %s » dans la ligne %i de définition de menu du plug-in"
+msgstr "type non reconnu « %s » à la ligne %i de définition de menu du plug-in"
 
 # miscelaneous additions
 msgid "Color palette..."
-msgstr "Palette de couleurs..."
+msgstr "Palette des couleurs..."
 
 msgid "Set Color Palette"
-msgstr "Définir la palette de couleurs"
+msgstr "Définir la palette des couleurs"
 
 msgid "Color palette reset."
-msgstr "Palette de couleurs par défaut."
+msgstr "Palette des couleurs par défaut."
 
 msgid "Save active data set..."
 msgstr "Enregistrer le jeu de données actif..."
@@ -3384,7 +3384,7 @@ msgid "Plotting Parameters"
 msgstr "Paramètres du graphe"
 
 msgid "Plotting characters"
-msgstr "Caractères à utiliser"
+msgstr "Caractères à utiliser dans le graphe"
 
 msgid "Point size"
 msgstr "Taille de point"
@@ -3401,7 +3401,7 @@ msgstr "Échelle (taux inverse)"
 
 # messages added to version 1.3-5
 msgid " has been coerced to a data frame"
-msgstr " a été transformé automatiquement en un tableau de données (data.frame)"
+msgstr " a été converti automatiquement en un tableau de données (data.frame)"
 
 msgid "the dataset %s is no longer available"
 msgstr "le jeu de données %s n'est plus disponible"
@@ -3466,13 +3466,13 @@ msgid "Remove Rows from Active Data Set"
 msgstr "Supprimer des lignes du jeu de données actif"
 
 msgid "Remove row(s) from active data set..."
-msgstr "Supprimer une ou des ligne(s) du jeu de données actif..."
+msgstr "Supprimer une ou plusieurs lignes du jeu de données actif..."
 
 msgid "No rows to remove"
 msgstr "Pas de lignes à supprimer"
 
 msgid "Indices or quoted names of row(s) to remove"
-msgstr "Indices ou noms de ligne(s) (entre guillemets) à éliminer"
+msgstr "Indices ou noms des lignes entre guillemets, à éliminer"
 
 msgid "Akaike Information Criterion (AIC)"
 msgstr "Critère d'information d'Akaike (AIC)"
@@ -3493,7 +3493,7 @@ msgid "from text file, clipboard, or URL..."
 msgstr "depuis un fichier texte, le presse-papier ou une URL..."
 
 msgid "Read Text Data From File, Clipboard, or URL"
-msgstr "Lire des données depuis un fichier, le presse-papier ou une URL"
+msgstr "Lire des données textuelles depuis un fichier, le presse-papier ou une URL"
 
 msgid "Location of Data File"
 msgstr "Emplacement du fichier de données"
@@ -3508,7 +3508,7 @@ msgid "Internet URL"
 msgstr "Lien internet (URL)"
 
 msgid "Friedman rank-sum test..."
-msgstr "Test de somme des rangs de Friedman…"
+msgstr "Test de somme des rangs de Friedman..."
 
 msgid "Friedman Rank Sum Test"
 msgstr "Test de somme des rangs de Friedman"
@@ -3620,7 +3620,7 @@ msgid ""
 "rows or columns"
 msgstr ""
 "Fusionner uniquement les lignes\n"
-"et les colonnes communes"
+"ou les colonnes communes"
 
 msgid "Aggregate variables in active data set..."
 msgstr "Agréger des variables du jeu de données actif..."
@@ -3679,8 +3679,8 @@ msgid ""
 "Pairwise p-values\n"
 "for Pearson or Spearman correlations"
 msgstr ""
-"Valeurs p par paires pour\n"
-"des corrélations de Pearson ou de Spearman"
+"p-valeurs par paires pour\n"
+"les corrélations de Pearson ou de Spearman"
 
 msgid ""
 "The Windows version of the R Commander works best under RGui\n"
@@ -3705,7 +3705,7 @@ msgid ""
 "Identify points with mouse?\n"
 "Right-click to exit."
 msgstr ""
-"Identifier des points à la souris ?\n"
+"Identifier des points avec la souris ?\n"
 "Clic droit pour sortir."
 
 msgid "Use left mouse button to identify points,\n"
@@ -3831,7 +3831,7 @@ msgid "Orthogonal"
 msgstr "Orthogonaux"
 
 msgid "Factor Correlations"
-msgstr "Corrélation des facteurs"
+msgstr "Corrélations des facteurs"
 
 msgid "There are too many factors."
 msgstr "Il y a trop de facteurs."
@@ -3855,7 +3855,7 @@ msgid "No factors defined."
 msgstr "Aucun facteur défini."
 
 msgid "Default-font size (points)"
-msgstr "Taille de police par défaut (points)"
+msgstr "Taille de la police par défaut (points)"
 
 msgid "data set edit error."
 msgstr "erreur d'édition du jeu de données."
@@ -3867,7 +3867,7 @@ msgid "Automatically"
 msgstr "Automatiquement"
 
 msgid "With mouse"
-msgstr "À la souris"
+msgstr "Avec la souris"
 
 msgid "Width"
 msgstr "Largeur"
@@ -3919,7 +3919,7 @@ msgid ""
 "to lower case"
 msgstr ""
 "Convertir les noms de variables\n"
-"en minuscule"
+"en minuscules"
 
 msgid "from Excel file..."
 msgstr "depuis un fichier Excel..."
@@ -3955,7 +3955,7 @@ msgid "Groups 'groups=' (pick zero or more)"
 msgstr "Groupes « groups= » (zéro ou plus)"
 
 msgid "Different panels for different y ~ x combinations"
-msgstr "Utiliser des panneaux séparés pour différentes combinaisons y ~ x"
+msgstr "Utiliser des panneaux séparés pour les différentes combinaisons y ~ x"
 
 msgid "Layout"
 msgstr "Disposition"
@@ -3982,7 +3982,7 @@ msgid "Apply"
 msgstr "Appliquer"
 
 msgid "Pairwise p-values"
-msgstr "Valeurs p par paires"
+msgstr "p-valeurs par paires"
 
 msgid "Observations to Use"
 msgstr "Observations à utiliser"
@@ -4058,7 +4058,7 @@ msgid "Save knitr file..."
 msgstr "Enregister le fichier knitr..."
 
 msgid "Save knitr file?"
-msgstr "Enregister le fichier knitr?"
+msgstr "Enregister le fichier knitr ?"
 
 msgid "Save current Rmd file?"
 msgstr "Enregistrer le fichier Rmd courant ?"
@@ -4170,7 +4170,7 @@ msgid "Output window height (lines)"
 msgstr "Hauteur de la fenêtre des sorties (lignes)"
 
 msgid "Messages window height (lines)"
-msgstr "Hauteur de la fenêtre des sorties (lignes)"
+msgstr "Hauteur de la fenêtre des messages (lignes)"
 
 msgid "Fonts"
 msgstr "Polices"
@@ -4179,7 +4179,7 @@ msgid "Other Options"
 msgstr "Autres Options"
 
 msgid "Save Commander Options"
-msgstr "Enregistrer les options du Commander"
+msgstr "Enregistrer les options de Commander"
 
 msgid "R Profile saved to"
 msgstr "Profil R enregistré dans"
@@ -4206,7 +4206,7 @@ msgid "Tukey biweight"
 msgstr "Tukey à double poids"
 
 msgid "Kernel Function"
-msgstr "Fonction de noyau"
+msgstr "Fonction du noyau"
 
 msgid "Bandwidth"
 msgstr "Largeur de bande"
@@ -4392,7 +4392,7 @@ msgid "Drop Unused Factor Levels"
 msgstr "Retirer les niveaux de facteur non utilisés"
 
 msgid "Factors(s) to drop levels (pick one or more)"
-msgstr "Facteur(s) dont retirer les niveaux (un ou plusieurs)"
+msgstr "Facteur(s) auxquels retirer des niveaux (un ou plusieurs)"
 
 msgid ""
 "Drop unused factor levels\n"
@@ -4402,7 +4402,7 @@ msgstr ""
 "Veuillez confirmer."
 
 msgid "Drop unused factor levels..."
-msgstr "Retirer les niveaux de facteur non utilisés..."
+msgstr "Suppression des niveaux de facteur non utilisés..."
 
 msgid "all factors"
 msgstr "tous les facteurs"
@@ -4417,7 +4417,7 @@ msgid ""
 "Use sandwich estimator of    \n"
 "coefficient standard errors"
 msgstr ""
-"Utiliser l'estimateur sandwich de\n"
+"Utiliser l'estimateur sandwich des\n"
 "erreurs types des coefficients"
 
 msgid "sandwich covariance matrix unavailable with type I tests"
@@ -4448,10 +4448,10 @@ msgid "Data Editor"
 msgstr "Editeur de données"
 
 msgid "Delete current row"
-msgstr "Effacer la ligne"
+msgstr "Effacer la ligne actuelle"
 
 msgid "Delete current column"
-msgstr "Effacer la colonne"
+msgstr "Effacer la colonne actuelle"
 
 msgid "Delete cell"
 msgstr "Effacer la cellule"
@@ -4477,7 +4477,7 @@ msgstr "Ajouter une colonne"
 # messages added for version 2.1-3
 # to manage app nap under Mac OS X Mavericks
 msgid "Manage Mac OS X app nap for R.app..."
-msgstr "Gestion de Mac OS X nap pour R.app…"
+msgstr "Gestion de Mac OS X app nap pour R.app..."
 
 msgid "Mac OS X app nap for R.app"
 msgstr "Mac OS X app nap pour R.app"
@@ -4493,10 +4493,10 @@ msgstr "activé"
 
 # set random seed dialog
 msgid "Set random number generator seed..."
-msgstr "Déterminer le point de départ pour le générateur de nombre aléatoires…"
+msgstr "Fixer le point de départ du générateur de nombres aléatoires..."
 
 msgid "Set Random Number Generator Seed"
-msgstr "Point de départ du générateur pseudo-aléatoire"
+msgstr "Fixer le point de départ du générateur de nombres aléatoires"
 
 # messages added for version 2.2-0
 # messages that were inadvertently missing in previous versions
@@ -4504,13 +4504,13 @@ msgid "The following variable names are not valid:\n"
 msgstr "Les noms de variables suivants sont incorrects:\n"
 
 msgid "Save R Markdown file?"
-msgstr "Sauver le fichier R Markdown?"
+msgstr "Sauver le fichier R Markdown ?"
 
 msgid "Theme (pick one)"
 msgstr "Thème (choisissez-en un)"
 
 msgid "Both or neither layout values must be numbers."
-msgstr "Les deux valeurs de mise en page (layout) doivent être des nombres, ou alors, aucune."
+msgstr "Les deux valeurs de mise en page (layout) doivent être des nombres, sinon aucune."
 
 msgid "ANOVA Table"
 msgstr "Table de l’ANOVA"
@@ -4519,7 +4519,7 @@ msgid "There is no appropriate outlierTest method for a model of this class."
 msgstr "Il n’y a aucune méthode de détermination des valeurs extrêmes appropriée pour un modèle de cette classe."
 
 msgid "Shapiro-Wilk Test for Normality"
-msgstr "Test Shapiro-Wilk de Normalité"
+msgstr "Test Shapiro-Wilk de normalité"
 
 msgid "Hypothesis Test"
 msgstr "Test d’hypothèse"
@@ -4554,7 +4554,7 @@ msgid ""
 "before installing auxiliary software."
 msgstr ""
 "Veuillez lire l’aide de cette boite de dialogue\n"
-"avant d’installer des logiciels auxiliaires."
+"avant d’installer les logiciels auxiliaires."
 
 msgid "Select Output Format"
 msgstr "Sélectionnez le format de sortie"
@@ -4592,7 +4592,7 @@ msgid "Legend Position"
 msgstr "Position de la légende"
 
 msgid "Above plot"
-msgstr "Au dessus de graphe"
+msgstr "Au dessus du graphe"
 
 msgid "Top left"
 msgstr "En haut à gauche"
@@ -4630,13 +4630,13 @@ msgstr "les variables représentées et servant au regroupement doivent être di
 
 # dot plot dialog
 msgid "Dot Plot"
-msgstr "Graphe en point (dot plot)"
+msgstr "Graphe en points (dot plot)"
 
 msgid "Bin variable"
 msgstr "Variable de découpage en classes"
 
 msgid "Dot plot..."
-msgstr "Graphe en points (dot plot)"
+msgstr "Graphe en points (dot plot)..."
 
 # for reading Excel files (new dialog)
 msgid "Convert character data to factors"
@@ -4725,7 +4725,7 @@ msgid "Confidence Interval by the Delta Method"
 msgstr "Intervalle de confiance par méthode delta"
 
 msgid "Expression to evaluate; use parameter names:"
-msgstr "Expression à évaluer ; utiliser les noms des paramètres :"
+msgstr "Expression à évaluer ; utiliser le nom des paramètres :"
 
 # view data dialog
 msgid "View data..."
@@ -4835,11 +4835,11 @@ msgstr "Semicolons [;]"
 
 # additional error check in load data set dialog
 msgid "There is more than one object in the file, with the following names:\n"
-msgstr "Le fichier contient plusieurs objets, qui portent les noms suivants :\n"
+msgstr "Le fichier contient plusieurs objets qui portent les noms suivants :\n"
 
 # new messages for distribution plot dialogs produced by distributionPlot()
 msgid "Optionally specify regions under the density function by"
-msgstr "Facultatif : specifier les régions sous la fonction de densité par"
+msgstr "Facultatif : spécifier les régions sous la fonction de densité par"
 
 msgid "x-values"
 msgstr "valeurs x"
@@ -4875,7 +4875,7 @@ msgid "color"
 msgstr "couleur"
 
 msgid "Top center"
-msgstr "En haut au centre"
+msgstr "En haut au milieu"
 
 # new compare model coefficients dialog
 msgid "Compare model coefficients..."
@@ -4893,7 +4893,7 @@ msgstr "Vous devez sélectionner au moins deux modèles."
 # additional messages in version 2.4-0
 # enhancements to the Rcmdr script editor
 msgid "Only one instance of the R Commander script editor may be open at a time."
-msgstr "Une seule instance de l'éditeur de script R Commander peut être ouverte à la fois."
+msgstr "Une seule instance de l'éditeur de script de R Commander peut être ouverte à la fois."
 
 msgid "Save current edits"
 msgstr "Enregistrer les modifications actuelles"
@@ -4921,7 +4921,7 @@ msgid "Color Selection"
 msgstr "Sélection des couleurs"
 
 msgid "From color palette"
-msgstr "À partir de la palette de couleurs"
+msgstr "À partir de la palette des couleurs"
 
 # correct typo
 msgid "Data set %s does not exist"
@@ -4953,7 +4953,7 @@ msgid "Convert character variables to factors"
 msgstr "Convertir les variables caractère en facteurs"
 
 msgid "First column contains row names"
-msgstr "La première colonne contient les noms de lignes"
+msgstr "La première colonne contient le nom des lignes"
 
 msgid "Import SAS b7dat Data Set"
 msgstr "Importer un jeu de données SAS b7dat"
@@ -5025,10 +5025,10 @@ msgstr "Marquer par :"
 
 # new response transformation dialog
 msgid "Response Transformation"
-msgstr "Transformation de la variable dépendante"
+msgstr "Transformation de la variable réponse"
 
 msgid "Response transformation..."
-msgstr "Transformation de la variable réponse…"
+msgstr "Transformation de la variable réponse..."
 
 msgid "Box-Cox"
 msgstr "Box-Cox"
@@ -5073,7 +5073,7 @@ msgid "Influence Index Plot"
 msgstr "Graphe indexé de l'influence"
 
 msgid "Bonferroni p-values"
-msgstr "Valeurs p de Bonferroni"
+msgstr "p-valeurs de Bonferroni"
 
 msgid "Diagnostics case statistics to plot"
 msgstr "Statistiques de diagnostic à représenter"
@@ -5122,21 +5122,21 @@ msgid "Generalized linear mixed model..."
 msgstr "Modèle linéaire généralisé mixte..."
 
 msgid "Convert variable names to lower case"
-msgstr "Convertir les noms de variables en minuscule"
+msgstr "Convertir le nom des variables en minuscules"
 
 # new messages about invalid variable classes
 msgid "The following variables are not valid for use in the R Commander and will be omitted:"
-msgstr "Les noms de variables suivants ne sont pas valides pour R Commander et seront omis :"
+msgstr "Les variables suivantes ne sont pas utilisables dans R Commander et seront omise :"
 
 msgid "The following variable is not valid for use in the R Commander and will be omitted:"
-msgstr "La variable suivante n'est pas valide pour R Commander et sera omise :"
+msgstr "La variable suivante n'est pas utilisable dans R Commander et sera omise :"
 
 msgid "Frequency Counts"
 msgstr "Fréquences"
 
 # For bar graph dialog
 msgid "Show counts or percentages in bars"
-msgstr "Afficher les fréquences ou pourcentages dans les barres"
+msgstr "Afficher les fréquences ou les pourcentages dans les barres"
 
 msgid "Neither"
 msgstr "Rien"
@@ -5149,11 +5149,11 @@ msgstr "Proportion"
 
 # modified message
 msgid "Restart the Commander"
-msgstr "Relancer le Commander"
+msgstr "Relancer R Commander"
 
 # modified message
 msgid "Restart the Commander?"
-msgstr "Relancer le Commander?"
+msgstr "Relancer R Commander ?"
 
 # for new repeated-measures ANOVA/ANCOVA dialogs
 msgid "One-factor repeated-measures ANOVA/ANCOVA..."
@@ -5209,7 +5209,7 @@ msgid "Tests to Perform"
 msgstr "Tests à réaliser"
 
 msgid "Repeated-Measures Means"
-msgstr "Moyenne de mesures répétées"
+msgstr "Moyennes des mesures répétées"
 
 msgid "Between-Subjects Factors (pick zero or more)"
 msgstr "Facteurs inter-sujets (zéro ou plus)"
@@ -5242,10 +5242,10 @@ msgid "at least 2 rows and 2 columns of responses must be specified"
 msgstr "au moins 2 lignes et 2 colonnes de la réponse doivent être sélectionnées"
 
 msgid "there are duplicated row level names"
-msgstr "certains noms de niveaux en ligne sont dupliqués"
+msgstr "certains noms des niveaux de ligne sont dupliqués"
 
 msgid "there are duplicated column level names"
-msgstr "certains noms de niveaux en colonne sont dupliqués"
+msgstr "certains noms des niveaux de colonne sont dupliqués"
 
 msgid "Within-Subject Factors"
 msgstr "Facteurs intra-sujets"
@@ -5287,7 +5287,7 @@ msgid "You must select one or more occasion-varying variables."
 msgstr "Vous devez sélectionner une ou plusieurs variables variant selon l'occasion."
 
 msgid "the following variables appear more than once:"
-msgstr "les noms de variables suivants apparaissent plusieurs fois :"
+msgstr "les noms des variables suivantes apparaissent plusieurs fois :"
 
 msgid "Save data set aborted"
 msgstr "Abandon de l'enregistrement du jeu de données"
