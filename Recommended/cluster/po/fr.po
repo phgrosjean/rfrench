@@ -20,12 +20,12 @@ msgstr ""
 #: clara.c:101
 #, c-format
 msgid "C level clara(): random k=%d > n **\n"
-msgstr "Au niveau du code C de clara(): random k=%d > n **\n"
+msgstr "Code C de clara(): random k=%d > n **\n"
 
 #: clara.c:312
 #, c-format
 msgid "clara()'s C level dysta2(nsam=%d, p=%d, nbest=%d, n=%d) gave 'toomany_NA'"
-msgstr "code C de clara(), dysta2(nsam=%d, p=%d, nbest=%d, n=%d) ergab 'toomany_NA'"
+msgstr "code C de clara(), dysta2(nsam=%d, p=%d, nbest=%d, n=%d) a donné 'toomany_NA'"
 
 #: clara.c:348 clara.c:353
 #, c-format
