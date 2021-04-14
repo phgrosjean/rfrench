@@ -52,7 +52,7 @@ msgid "unknown type of \"boot\" object"
 msgstr "type d’objet \"boot\" inconnu"
 
 msgid "only first element of 'index' used"
-msgstr "seul le premier élément d''index' est utilisé"
+msgstr "seul le premier élément de 'index' est utilisé"
 
 msgid "'K' outside allowable range"
 msgstr "'K' en dehors de la plage admise"
@@ -88,10 +88,10 @@ msgid "variance required for studentized intervals"
 msgstr "variance requise pour les intervalles de confiance studentisés"
 
 msgid "estimated adjustment 'w' is infinite"
-msgstr "l'ajustement de 'w' est infini"
+msgstr "l'ajustement estimé de 'w' est infini"
 
 msgid "estimated adjustment 'a' is NA"
-msgstr "l'ajustement de 'a' estimé est NA"
+msgstr "l'ajustement estimé de 'a' est NA"
 
 msgid "only first element of 'index' used in 'abc.ci'"
 msgstr "seul le premier élément de 'index' est utilisé dans 'abc.ci'"
@@ -109,7 +109,7 @@ msgid "'index' must contain 2 elements"
 msgstr "'index' doit contenir 2 éléments"
 
 msgid "only first 2 elements of 'index' used"
-msgstr "seuls les deux premiers éléments d''index' sont utilisés"
+msgstr "seuls les deux premiers éléments de 'index' sont utilisés"
 
 msgid "indices are incompatible with 'ncol(data)'"
 msgstr "les indices sont incompatibles avec 'ncol(data)'"
@@ -118,7 +118,7 @@ msgid "sim = \"weird\" cannot be used with a \"coxph\" object"
 msgstr "sim=\"weird\" ne peut être utilisé avec un object \"coxph\""
 
 msgid "only columns %s and %s of 'data' used"
-msgstr "seule les colonnes %s et %s de 'data' sont utilisées"
+msgstr "seules les colonnes %s et %s de 'data' sont utilisées"
 
 msgid "no coefficients in Cox model -- model ignored"
 msgstr "pas de coefficients dans le modèle Cox -- modèle ignoré"
@@ -136,10 +136,10 @@ msgid "influence values cannot be found from a parametric bootstrap"
 msgstr "les valeurs d'influence ne peuvent être trouvées à partir d'un bootstrap paramétrique"
 
 msgid "neither 'data' nor bootstrap object specified"
-msgstr "pas de 'data' ou d'objet bootstrap spécifié"
+msgstr "pas de 'data' ni d'objet bootstrap spécifié"
 
 msgid "neither 'statistic' nor bootstrap object specified"
-msgstr "pas de 'statistic' ou d'objet bootstrap spécifié"
+msgstr "pas de 'statistic' ni d'objet bootstrap spécifié"
 
 msgid "'stype' must be \"w\" for type=\"inf\""
 msgstr "'stype' doit être \"w\" pour type=\"inf\""
@@ -163,7 +163,7 @@ msgid "bootstrap output matrix missing"
 msgstr "matrice manquante dans la sortie bootstrap"
 
 msgid "use 'boot.ci' for scalar parameters"
-msgstr "utilisez 'boot.ci' pour des paramètres scalaires"
+msgstr "utilisez 'boot.ci' pour les paramètres scalaires"
 
 msgid "unable to achieve requested overall error rate"
 msgstr "impossible d'atteindre le taux global d'erreur spécifié"
@@ -190,13 +190,13 @@ msgid "invalid value of 'sim' supplied"
 msgstr "valeur incorrecte spécifiée pour 'sim'"
 
 msgid "'R' and 'theta' have incompatible lengths"
-msgstr "'R' et 'theta' ont des longueurs non conformes"
+msgstr "'R' et 'theta' ont des longueurs incompatibles"
 
 msgid "R[1L] must be positive for frequency smoothing"
 msgstr "R[1L] doit être positif pour un lissage des fréquences"
 
 msgid "'R' and 'alpha' have incompatible lengths"
-msgstr "'R' et 'alpha' ont des longueurs non conformes"
+msgstr "'R' et 'alpha' ont des longueurs incompatibles"
 
 msgid "extreme values used for quantiles"
 msgstr "valeurs extrêmes utilisées pour les quantiles"
@@ -250,7 +250,7 @@ msgid "likelihood never exceeds %f"
 msgstr "la vraissemblance n'a jamais excédé %f"
 
 msgid "likelihood exceeds %f at only one point"
-msgstr "la vraissemblance excède %f a seulement un point"
+msgstr "la vraissemblance excède %f en un point seulement"
 
 #~ msgid "only columns"
 #~ msgstr "seulement des colonnes"
