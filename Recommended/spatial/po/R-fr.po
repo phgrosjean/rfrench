@@ -22,13 +22,13 @@ msgid "'np' exceeds 6"
 msgstr "'np' dépasse 6"
 
 msgid "'x' does not have columns 'x', 'y' and 'z'"
-msgstr "'x' n'a pas de colonnes 'x', 'y' et 'z'"
+msgstr "'x' n'a pas de colonne 'x', 'y' et 'z'"
 
 msgid "some of '...' do not match"
 msgstr "quelques arguments de '...' ne correspondent pas"
 
 msgid "rank failure in Choleski decomposition"
-msgstr "erreur de rang dans la décomposition de Cholesky"
+msgstr "erreur de rang dans la décomposition de Choleski"
 
 msgid "'object' is not a fitted trend surface"
 msgstr "'object' n'est pas une surface de tendance ajustée"

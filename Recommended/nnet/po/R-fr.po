@@ -34,7 +34,7 @@ msgid "'scope' is not a subset of term labels"
 msgstr "'scope' n'est pas un sous-ensemble des étiquettes de termes"
 
 msgid "number of rows in use has changed: remove missing values?"
-msgstr "le nombre de lignes en utilisation a changé : éliminer les valeurs manquantes ?"
+msgstr "le nombre de lignes utilisé a changé : éliminer les valeurs manquantes ?"
 
 msgid "no terms in 'scope' for adding to object"
 msgstr "aucun terme dans 'scope' à ajouter à l'objet"
@@ -55,10 +55,10 @@ msgid "missing values in 'y'"
 msgstr "valeurs manquantes dans 'y'"
 
 msgid "nrows of 'x' and 'y' must match"
-msgstr "les nombres de lignes de 'x' et 'y' doivent correspondre"
+msgstr "le nombre de lignes de 'x' et 'y' doit correspondre"
 
 msgid "entropy fit only for logistic units"
-msgstr "ajustement entropique seulement pour des unités de courbes logistiques"
+msgstr "ajustement entropique seulement pour les unités des courbes logistiques"
 
 msgid "no weights to fit"
 msgstr "pas de pondérations à ajuster"
@@ -67,7 +67,7 @@ msgid "too many (%d) weights"
 msgstr "trop (%d) de pondérations"
 
 msgid "'softmax = TRUE' requires at least two response categories"
-msgstr "'softmax = TRUE' nécessite au moins deux catégories réponses"
+msgstr "'softmax = TRUE' nécessite au moins deux catégories de réponses"
 
 msgid "weights vector of incorrect length"
 msgstr "le vecteur de pondérations est de longueur incorrecte"
@@ -76,7 +76,7 @@ msgid "incorrect length of 'mask'"
 msgstr "longueur incorrecte pour 'mask'"
 
 msgid "invalid weights vector"
-msgstr "vecteur de pondérations incorrect"
+msgstr "vecteur de pondération incorrect"
 
 msgid "object not of class \"nnet\""
 msgstr "l'objet n'est pas de classe \"nnet\""
@@ -88,7 +88,7 @@ msgid "dims of 'x' and 'y' must match"
 msgstr "les dimensions de 'x' et de 'y' doivent correspondre"
 
 msgid "not a legitimate neural net fit"
-msgstr "ce n'est pas un ajustement de réseau de neurone autorisé"
+msgstr "ce n'est pas un ajustement de réseau de neurones autorisé"
 
 msgid "group %s is empty"
 msgid_plural "groups %s are empty"

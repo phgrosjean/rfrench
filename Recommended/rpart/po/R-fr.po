@@ -25,19 +25,19 @@ msgid "Not a legitimate \"rpart\" object"
 msgstr "Ceci n'est pas un objet \"rpart\" valide"
 
 msgid "Plot not useful for classification or poisson trees"
-msgstr "Le graphe n'est pas utile pour des arbres de classification ou de poisson"
+msgstr "Le graphe n'est pas utile pour des arbres de classification ou de Poisson"
 
 msgid "fit is not a tree, just a root"
 msgstr "l'ajustement n'est pas un arbre, juste une racine"
 
 msgid "'cptable' does not contain cross-validation results"
-msgstr "'cptable' ne contients aucuns résultats de validation croisée"
+msgstr "'cptable' ne contient aucun résultat de validation croisée"
 
 msgid "Tree has variables not found in new data"
 msgstr "L'arbre a des variables introuvables dans le nouveau jeu de données"
 
 msgid "type 'class' is only appropriate for classification"
-msgstr "type 'class' n'est approprié que pour une classification"
+msgstr "le type 'class' n'est approprié que pour une classification"
 
 msgid "Invalid prediction for \"rpart\" object"
 msgstr "Prédiction incorrecte pour un objet \"rpart\""
@@ -79,7 +79,7 @@ msgid "Initialization routine is missing the 'summary' function"
 msgstr "La routine d'initialisation ne trouve pas la fonction 'summary'"
 
 msgid "no information available on parameters from previous call to plot()"
-msgstr "aucune information disponible pour les paramètres depuis un appel antérieur à plot()"
+msgstr "aucune information disponible pour les paramètres depuis le dernier appel de plot()"
 
 msgid "No offset allowed in classification models"
 msgstr "Aucun décalage n'est autorisé pour les modèles de classification"
@@ -100,16 +100,16 @@ msgid "Wrong length for priors"
 msgstr "Longueur incorrecte pour 'priors'"
 
 msgid "Wrong length for loss matrix"
-msgstr "Longueur inconnue pour la 'loss matrix'"
+msgstr "Longueur incorrecte de la 'loss matrix'"
 
 msgid "Loss matrix must have zero on diagonals"
-msgstr "La 'loss matrix' doit avoir des zéros dans sa diagonale"
+msgstr "La 'loss matrix' doit avoir des zéros sur sa diagonale"
 
 msgid "Loss matrix cannot have negative elements"
-msgstr "La 'loss matrix' ne peut avoir des éléments négatifs"
+msgstr "La 'loss matrix' ne peut avoir d'éléments négatifs"
 
 msgid "Loss matrix has a row of zeros"
-msgstr "La 'loss matrix' a une ligne remplie de zéros"
+msgstr "La 'loss matrix' a une ligne complète de zéros"
 
 msgid "Invalid splitting rule"
 msgstr "Règle de séparation des groupes incorrecte"
@@ -118,10 +118,10 @@ msgid "Parameter argument must be a list"
 msgstr "L'argument 'parameter' doit être une liste"
 
 msgid "The value of 'maxcompete' supplied is < 0; the value 0 was used instead"
-msgstr "La valeur de 'maxcompete' fournie est < 0 ; La valeur 0 sera utilisée à la place"
+msgstr "La valeur de 'maxcompete' fournie est < 0 ; la valeur 0 sera utilisée à la place"
 
 msgid "The value of 'xval' supplied is < 0; the value 0 was used instead"
-msgstr "La valeur de 'xval' fournie est < 0 ; La valeur 0 sera utilisée à la place"
+msgstr "La valeur de 'xval' fournie est < 0 ; la valeur 0 sera utilisée à la place"
 
 msgid "Maximum depth is 30"
 msgstr "La profondeur maximale est de 30"
@@ -130,10 +130,10 @@ msgid "Maximum depth must be at least 1"
 msgstr "La profondeur maximale doit être au moins 1"
 
 msgid "The value of 'usesurrogate' supplied was out of range, the default value of 2 is used instead."
-msgstr "La valeur de 'usesurrogate' fournie est hors plage,la valeur par défaut de 2 est utilisée à la place."
+msgstr "La valeur de 'usesurrogate' fournie est hors plage, la valeur par défaut de 2 est utilisée à la place."
 
 msgid "The value of 'surrogatestyle' supplied was out of range, the default value of 0 is used instead."
-msgstr "La valeur de 'usesurrogate' fournie est hors plage,la valeur par défaut de 0 est utilisée à la place."
+msgstr "La valeur de 'surrogatestyle' fournie est hors plage, la valeur par défaut de 0 est utilisée à la place."
 
 msgid "Response must be a 'survival' object - use the 'Surv()' function"
 msgstr "'Response' doit être un objet 'survival' - utilisez la fonction 'Surv()'"
@@ -151,7 +151,7 @@ msgid "Invalid error method for Poisson"
 msgstr "Méthode d'erreur incorrecte pour 'Poisson'"
 
 msgid "Invalid shrinkage value"
-msgstr "Valeur 'shrinkage' incorrecte"
+msgstr "Valeur de 'shrinkage' incorrecte"
 
 msgid "response must be a 2 column matrix or a vector"
 msgstr "'response' doit être un vecteur ou une matrice à 2 colonnes"
@@ -163,13 +163,13 @@ msgid "User written methods must have 3 functions"
 msgstr "Les méthodes personnalisées doivent avoir 3 fonctions"
 
 msgid "User written method does not contain an 'init' function"
-msgstr "La méthode personnalisée ne contient pas de fonction 'init'"
+msgstr "La méthode personnalisée n'a pas de fonction 'init'"
 
 msgid "User written method does not contain a 'split' function"
-msgstr "La méthode personnalisée ne contient pas de fonction 'split'"
+msgstr "La méthode personnalisée n'a pas de fonction 'split'"
 
 msgid "User written method does not contain an 'eval' function"
-msgstr "La méthode personnalisée ne contient pas de fonction 'eval'"
+msgstr "La méthode personnalisée n'a pas de fonction 'eval'"
 
 msgid "User 'eval' function returned invalid label"
 msgstr "La fonction 'eval' personnalisée a renvoyé une étiquette incorrecte"
@@ -178,7 +178,7 @@ msgid "User 'eval' function returned invalid deviance"
 msgstr "La fonction 'eval' personnalisée a renvoyé un écart incorrect"
 
 msgid "Invalid return from categorical 'split' function"
-msgstr "Retour incorrect de la fonction 'split'"
+msgstr "Retour incorrect de la fonction 'split' par catégorie"
 
 msgid "User 'split' function returned invalid goodness"
 msgstr "La fonction 'split' personnalisée a renvoyé une qualité (goodness) incorrecte"
@@ -187,13 +187,13 @@ msgid "User 'split' function returned invalid direction"
 msgstr "La fonction 'split' personnalisée a renvoyé une direction incorrecte"
 
 msgid "may not be applicable for this method"
-msgstr "n'est probablement pas d'application pour cette méthode"
+msgstr "n'est probablement pas applicable avec cette méthode"
 
 msgid "Not an \"rpart\" object"
 msgstr "Ceci n'est pas un objet \"rpart\""
 
 msgid "Nodes %s are not in this tree"
-msgstr "Les noeuds %s ne sont pas dans l'arbre"
+msgstr "Les noeuds %s ne sont pas dans cet arbre"
 
 msgid "argument 'label' is no longer used"
 msgstr "l'argument 'label' n'est plus utilisé"
@@ -202,7 +202,7 @@ msgid "Invalid fit object"
 msgstr "Objet 'fit' incorrect"
 
 msgid "supplied nodes %s are not in this tree"
-msgstr "les noeuds fournis %s ne sont pas dans l'arbre"
+msgstr "les noeuds fournis %s ne sont pas dans cet arbre"
 
 msgid "supplied nodes %s are leaves"
 msgstr "les noeuds fournis %s sont des feuilles"
