@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RGui 4.0.4\n"
+"Project-Id-Version: RGui 4.1.3\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2021-02-01 13:59+0000\n"
-"PO-Revision-Date: 2021-02-15 07:39+0100\n"
+"PO-Revision-Date: 2021-10-07 14:51+0100\n"
 "Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
