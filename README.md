@@ -4,7 +4,7 @@
 
 Ceci est le dépôt relatif au travail de traduction du logiciel [R](https://www.r-project.org/) en français, voir aussi [R translation teams](https://developer.r-project.org/TranslationTeams.html) et [notes aux traducteurs de R](https://developer.r-project.org/TranslationTeams.html).
 
-Cette traduction est disponible depuis la version 2.2.1 de R. L'équipe de traduction est constituée de :
+Cette traduction est disponible depuis la version 2.2.1 dans ce dépôt (et version 2.1.1 dans R lui-même). L'équipe de traduction est constituée de :
 
 **Traduction :**
 
@@ -39,7 +39,7 @@ Un [dictionnaire anglais - français](RFrenchDictionary.txt) de termes tels que 
 
 This is the repository related to translation of the [R software](https://www.r-project.org/) in French, see also [R translation teams](https://developer.r-project.org/TranslationTeams.html) and [notes aux traducteurs de R](https://developer.r-project.org/TranslationTeams.html).
 
-This French translation is available since R version 2.2.1. The translation teams is:
+This French translation is available since R version 2.2.1 in this repository (and 2.1.1 in R itself). The translation teams is:
 
 **Translation:**
 
