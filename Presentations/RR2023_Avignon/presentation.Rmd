@@ -1,0 +1,182 @@
+---
+title: "fRench : R en français"
+shorttitle: "fRench"
+subtitle: "\\break \\vfill \\includegraphics[width=.16\\textwidth,height=.2\\textheight]{template/EcoNum-logo.pdf}  \\includegraphics[width=.16\\textwidth,height=.2\\textheight]{template/SciViews-logo.pdf}  \\includegraphics[width=.16\\textwidth,height=.2\\textheight]{figures/rr2023.jpg}"
+author: "Philippe Grosjean"
+institute: "Université de Mons, Belgique\\break Service d'Écologie numérique, Instituts Complexys et Infortech\\break <\\url{philippe.grosjean@umons.ac.be}>, <\\url{phgrosjean@sciviews.org}>"
+date: "Rencontres R 2023, Avignon"
+fontfamily: mathpazo
+fontsize: 9pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+#SciViews::R
+```
+
+### R en français ?
+
+-   Qui sait que les messages de R peuvent être affichés en français ?
+
+-   Qui n'**utilise pas** R en français ?
+
+-   Qui utilise R en français ?
+
+### Pourquoi *ne pas* utiliser R en français
+
+Si on est suffisamment bon en anglais...
+
+-   Messages originaux
+
+-   Plus facile pour échanger (poser des questions ou répondre sur des forums internationaux)
+
+-   Plus facile parce que le message correspond à la doc
+
+### Pourquoi utiliser R en français
+
+-   Moins intimidant pour un francophone peu habitué avec les termes en anglais
+
+-   Libère la barrière linguistique pour les débutants
+
+-   Peut-être utile dans une classe francophone
+
+### Comment passer de l'anglais au français dans R
+
+Cela dépend de l'OS.
+
+**Sous Linux**, on pourra utiliser la variable d'environnement
+
+``` bash
+LANGUAGE=fr
+```
+
+Cette variable peut être mise dans `/etc/R/Renviron.site` une fois pour toutes ou dans `Rprofile`:
+
+```{r, eval=FALSE}
+local({ Sys.setenv(LANGUAGE = "fr") })
+```
+
+### Comment passer de l'anglais au français dans R
+
+Cela dépend de l'OS.
+
+**Sous MacOS**, on fera comme pour Linux ou entrera dans le Terminal:
+
+``` bash
+defaults write org.R-project.R force.LANG fr_FR.UTF-8
+```
+
+... et pour revenir sur l'anglais:
+
+``` bash
+defaults write org.R-project.R force.LANG en_US.UTF-8
+```
+
+### Comment passer de l'anglais au français dans R
+
+Cela dépend de l'OS.
+
+**Sous Windows**, on pourra utiliser la variable d'environnement
+
+``` bash
+LANGUAGE=fr
+```
+
+Cette variable peut être mise dans `/etc/R/Renviron.site` une fois pour toutes.
+
+### Comment passer de l'anglais au français dans R
+
+TODO...
+
+###.Aide en français pour R
+
+-   Groupe des utilisateurs du logiciel R <https://forums.cirad.fr/logiciel-R/>
+
+-   Slack <https://r-grrr.slack.com>
+
+-   <https://developer.r-project.org/Translations30.html>
+
+###Exemple de session avec changement de langage
+
+``` r
+> 1:2 + 1:3
+[1] 2 4 4
+Warning message:
+In 1:2 + 1:3 :
+  longer object length is not a multiple of shorter object length
+> Sys.setenv(LANG = "fr")
+> 1:2 + 1:3
+[1] 2 4 4
+Message d'avis :
+Dans 1:2 + 1:3 :
+  la taille d'un objet plus long n'est pas multiple de la taille d'un objet plus court
+```
+
+### Avez-vous des questions ?
+
+```{=tex}
+\begin{center}
+\textbf{Ressources utiles}
+\end{center}
+```
+\vfill
+
+-   Lien 1 : <https://github.com/phgrosjean/rfrench>
+-   Lien 2 : ...\>
+
+\vfill
+
+```{=tex}
+\begin{center}
+\includegraphics[width=.16\textwidth,height=.2\textheight]{template/EcoNum-logo.pdf}  \includegraphics[width=.16\textwidth,height=.2\textheight]{template/SciViews-logo.pdf}
+\end{center}
+```
+### More..
+
+```{=tex}
+\begincols
+\begincol{.50\textwidth}
+```
+Some text...
+
+![](figures/rr2023.jpg){width="65%"}
+
+```{=tex}
+\endcol
+\begincol{.50\textwidth}
+```
+Some more text...
+
+```{=tex}
+\endcol
+\endcols
+```
+### Lien centré
+
+```{=tex}
+\begin{center}
+https://wp.sciviews.org/
+\end{center}
+```
+### Grande image, petit texte
+
+```{=tex}
+\begincols
+\begincol{.70\textwidth}
+```
+![](figures/rr2023.jpg){width="100%"}
+
+```{=tex}
+\endcol
+\begincol{.30\textwidth}
+```
+Texte.
+
+\vfill
+
+Plus de texte.
+
+```{=tex}
+\endcol
+\endcols
+```

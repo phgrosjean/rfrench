@@ -1,0 +1,190 @@
+% Document Class options:
+% - You can use article(beamer) or presentation(beamer)
+% - In presentation, you can use following options:
+%    'trans' for transparent, 'handout' for printing-friendly version
+%    'notes' also output notes, 'notesonly' only output notes
+
+% If you have several lectures defined in the same document, uncomment this:
+%\includeonlylecture{cours02}
+
+%\usepackage{fontspec}
+%\fontfamily{ppl}\selectfont
+%\setmainfont{Arial}
+%\setmainfont{DejaVu LGC Sans}
+%\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}
+%\setmainfont{Gentium Basic}
+%\setsansfont{DejaVu LGC Sans}
+%\setmonofont{DejaVu LGC Sans Mono}
+%\setmainfont{Calibri}
+%\setsansfont{Candara}
+%\setmonofont{Consolas}
+
+% UMONS-EcoNum template configuration
+\mode<all>
+{
+  \definecolor{umons-red}{RGB}{168, 0, 57}
+  \definecolor{umons-turquoise}{RGB}{0, 171, 204}
+  \definecolor{umons-gray}{RGB}{150, 150, 150}
+  \definecolor{umons-gray2}{RGB}{110, 110, 110}
+  \usepackage[labelfont=bf, tableposition=top]{caption}
+}
+\mode<article>
+{
+  \usepackage{beamerbasearticle}
+  \usepackage{fullpage}
+  \pdfimageresolution 72
+}
+\mode<beamer>
+{
+  % Customizable items (make sure corresponding pictures are in /template subdir):
+  % The background image
+  \usebackgroundtemplate{\includegraphics[width=1.07\paperwidth,
+height=1.07\paperheight]{template/background-tech.pdf}}
+  % The a picture
+  \logo{\includegraphics[width=2cm]{template/UMONS-logo.pdf}}
+}
+\mode<handout>
+{
+  \definecolor{umons-red}{RGB}{84, 84, 84}
+  \definecolor{umons-turquoise}{RGB}{168, 168, 168}
+  \usepackage{pgfpages}
+  \pgfpagesuselayout{2 on 1}[a4paper, border shrink=5mm]
+}
+\mode<presentation>
+{
+  % General theme to use
+  \usetheme{CambridgeUS}
+  %\usetheme{AnnArbor}
+  %\usetheme{default}
+  %\usetheme{Pittsburgh}
+  %\usetheme{Dresden}
+  %\usetheme{Hannover}
+  % Color theme (but must colors redefined hereunder)
+  \usecolortheme{beaver}
+  % Theme used for bullets
+  \useinnertheme{rectangles}
+  %or \useinnertheme{circles}
+  % This is to get semi-transparent covered items
+  \setbeamercovered{transparent}
+  % Rounded rectangular blocks without shadow
+  \setbeamertemplate{blocks}[rounded][shadow=false]
+ %\usepackage{beamerthemeshadow}
+
+  \setbeamersize{text margin left=1em,text margin right=1em}
+  \setbeamerfont{title}{size=\huge}
+  \setbeamerfont{subtitle}{size=\large}
+  \setbeamerfont{institute}{size=\small}
+  \setbeamerfont{date}{size=\small}
+  \setbeamerfont{framesubtitle}{size=\small}
+  % This stands out a little bit more than umons-red!
+  \setbeamercolor{alerted text}{fg=red!80!black}
+  %\setbeamercolor{alerted text}{fg=umons-red}
+  \setbeamercolor*{palette primary}{fg=black, bg=umons-turquoise}
+  \setbeamercolor*{palette secondary}{fg=black, bg=umons-turquoise}
+  \setbeamercolor*{palette tertiary}{fg=umons-gray!30, bg=umons-red!80!black}
+  \setbeamercolor*{palette quaternary}{fg=black, bg=umons-turquoise}
+  \setbeamercolor*{upper separation line head left}{parent=palette tertiary}
+  \setbeamercolor*{upper separation line head right}{parent=palette primary}
+  \setbeamercolor{title}{fg=umons-red}
+  \setbeamercolor*{titlelike}{fg=umons-red}
+  \setbeamercolor{institute}{fg=umons-gray2}
+  \setbeamercolor{date}{fg=umons-gray2}
+  \setbeamercolor{frametitle}{fg=umons-red, bg=white}
+  \setbeamercolor{frametitle right}{bg=white}
+  \setbeamercolor{structure}{fg=umons-turquoise}
+  \setbeamercolor*{separation line}{}
+  \setbeamercolor*{fine separation line}{}
+  \setbeamercolor*{sidebar}{fg=umons-red,bg=white}
+  \setbeamercolor*{palette sidebar primary}{fg=umons-turquoise!10!black}
+  \setbeamercolor*{palette sidebar secondary}{fg=umons-red}
+  \setbeamercolor*{palette sidebar tertiary}{fg=umons-red!50!black}
+  \setbeamercolor*{palette sidebar quaternary}{fg=umons-red}
+  \setbeamercolor*{example text}{fg=umons-gray2}
+
+  % Change the footer
+  \makeatother
+  \setbeamertemplate{footline}
+  {
+    \leavevmode%
+    \hbox{%
+    \begin{beamercolorbox}[wd=.35\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertshortauthor
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.57\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+      \usebeamerfont{title in head/foot}\insertshorttitle\hspace*{3em}
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.08\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+      \insertframenumber{} / \inserttotalframenumber\hspace*{1ex}
+    \end{beamercolorbox}}%
+    \vskip0pt%
+  }
+  \makeatletter
+  \setbeamertemplate{navigation symbols}{}
+
+  % Custom Sweave styles
+  %\definecolor{SinputColor}{RGB}{25, 25, 125}
+  %\definecolor{SoutputColor}{RGB}{110, 110, 110}
+  %\DefineVerbatimEnvironment{Sinput}{Verbatim}{fontsize=\small,formatcom=\color{SinputColor}}
+  %\DefineVerbatimEnvironment{Soutput}{Verbatim}{fontsize=\small,formatcom=\color{SoutputColor}}
+  %\DefineVerbatimEnvironment{Scode}{Verbatim}{fontsize=\small,\color{SinputColor}}
+}
+
+% To get coherent font between text and equations
+\usefonttheme{professionalfonts}
+%\usepackage{mathpazo}
+% Useful package in this context
+\usepackage{listings}
+% Command used to place a picture somewhere in the slide (relative to current pos)
+\newcommand{\putat}[3]{\begin{picture}(0,0)(0,0)\put(#1,#2){#3}\end{picture}}
+
+% Idem, but in absolute pos (slide = 128x96mm)
+\usepackage{textpos}
+\newcommand{\putabs}[3]{\begin{textblock*}{10mm}[0,0](#1,#2){#3}\end{textblock*}}
+
+
+% Copyright notices and sources:
+% The background picture: http://www.uberpiglet.com/vectors/20-amazing-vector-backgrounds/
+% UMONS-EcoNum template is partly inspired from a work done by:
+% C. Troestler <Christophe.Troestler@umons.ac.be> licensed under GNU GPL v3 or later.
+
+% SLIDE NOTES:
+% For slide notes, use the \note{} beamer style in your document.
+% To make sure to generate note pages even where there are no notes
+% (in order to have side-by-side slides at left and notes at right),
+% we add this:
+\makeatletter
+\def\beamer@framenotesbegin{%
+  \gdef\beamer@noteitems{}%
+  \gdef\beamer@notes{{}}%
+}
+\makeatother
+% Uncomment this line to print notes:
+%\setbeameroption{show notes}
+% To interleave slides and notes in the PDF:
+%\setbeamertemplate{note page}[plain]
+% To get only notes:
+%\setbeameroption{show only notes}
+
+% Uncomment the following 3 lines in presentation mode for dual screen
+% use (and specify 'left', 'top', 'right' or 'bottom' for second screen...)
+%\usepackage{pgfpages}
+%\setbeameroption{second mode text on second screen=right}
+%\setbeameroption{show notes on second screen}
+
+% More packages and options
+\usepackage{graphicx}
+\usepackage{rotating}
+%\setbeamertemplate{caption}[numbered]
+\usepackage{hyperref}
+\usepackage[normalem]{ulem}
+%\mode<presentation>
+\usepackage{wasysym}
+%\usepackage{amsmath}
+
+% TODO: redefine colors for syntax highlighting!
+
+% Tricks for two-columns sections
+\def\begincols{\begin{columns}}
+\def\begincol{\begin{column}}
+\def\endcol{\end{column}}
+\def\endcols{\end{columns}}

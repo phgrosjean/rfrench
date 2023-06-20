@@ -1,0 +1,16 @@
+---
+title: "fRench : R en français"
+author:
+- Philippe Grosjean 1^[Service d'Écologie numérique, Instituts Complexys et Infortech, Université de Mons, Belgique (Philippe.Grosjean@umons.ac.be & phgrosjean@sciviews.org)]
+output: pdf_document
+indent: true
+---
+
+```{=tex}
+\begin{center}
+\textbf{Résumé (max 300 mots)}
+\end{center}
+```
+Depuis sa version 2, R offre la possibilité de traduire les messages (avis, erreurs) de R et de packages R, de l'UI RGui et de l'installeur de R sous Windows dans différentes langues. Le français (<https://github.com/phgrosjean/rfrench>) est supporté depuis la version R 2.1.1 (voir <https://cran.r-project.org/doc/manuals/NEWS.2>). C'est aussi la langue traduite de manière la plus complète à ce jour, hors manuels. Récemment, RStudio propose aussi (en expérimental) une traduction en français qui nécessite encore quelques finalisations. À la suite de cet exposé, vous saurez tout sur la traduction de R en français, l'auteur étant traducteur principal depuis le début. Nous discuterons le pour (utile pour les non-anglophones) et le contre (ne facilite pas les questions vers une communauté qui a largement adopté l'anglais). Des pistes pour la traduction des jeux de données, des graphiques et des tableaux seront aussi discutées.
+
+\noindent \textbf{Mots-clefs} : R -- Traduction -- Français -- Public francophone -- RStudio -- data.io -- chart

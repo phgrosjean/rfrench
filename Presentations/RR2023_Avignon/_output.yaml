@@ -1,0 +1,13 @@
+beamer_presentation:
+  latex_engine: xelatex
+  df_print: kable
+  fonttheme: serif
+  keep_tex: no
+  slide_level: 3
+  highlight: zenburn
+  fig_width: 5
+  fig_height: 4
+  fig_crop: false
+  fig_caption: false
+  includes:
+    in_header: "template/_header.tex"
