@@ -34,6 +34,8 @@ Si on est suffisamment bon en anglais...
 
 ### Pourquoi utiliser R en français
 
+-   Difficultés avec la langue de Shakespeare
+
 -   Moins intimidant pour un francophone peu habitué avec les termes en anglais
 
 -   Libère la barrière linguistique pour les débutants
@@ -76,19 +78,60 @@ defaults write org.R-project.R force.LANG en_US.UTF-8
 
 Cela dépend de l'OS.
 
-**Sous Windows**, on pourra utiliser la variable d'environnement
+**Sous Windows**, on pourra l'indiquer dans les préférences de RGui.exe.
 
-``` bash
-LANGUAGE=fr
-```
-
-Cette variable peut être mise dans `/etc/R/Renviron.site` une fois pour toutes.
+![](figures/rgui_fr.png)
 
 ### Comment passer de l'anglais au français dans R
 
-TODO...
+Versions récentes de R (\>= 4.2.0) =\> `Sys.setLanguage()`, pour les versions plus anciennes -\> `Sys.setenv(LANGUAGE = 'fr')`.
 
-###.Aide en français pour R
+```{r, echo=FALSE}
+if (utils::compareVersion("4.2.0",
+  paste(version$major, version$minor, sep = ".")) > 0) {
+  Sys.setLanguage <- function(lang) {
+    olang <- Sys.getenv("LANGUAGE")
+    Sys.setenv(LANGUAGE = lang)
+    invisible(olang)
+  }
+}
+```
+
+```{r, echo=TRUE, warning=TRUE}
+olang <- Sys.setLanguage('fr') # Utilisation du français
+1:2 + 1:3
+Sys.setLanguage('en') # Passage à l'anglais
+1:2 + 1:3
+Sys.setLanguage(olang) # Rétabli langue de départ
+```
+
+### Qu'est-ce qui est traduit ?
+
+-   Traduction par packages (base + recommended + quelques autres).
+
+-   Les messages `warning()` ou `stop()` automatiquement
+
+-   D'autres chaînes de caractères avec `gettext()`/`ngettext()`
+
+-   Installeurs et GUI Rgui.exe (Windows) et R.app (MacOS)
+
+-   R Commander (ref)
+
+-   RStudio (expérimental depuis version 2023.05...)
+
+### R.app en français sous MacOS
+
+![](figures/rapp_fr.png)
+
+### Comment la traduction est faite ?
+
+Le logiciel **poEdit** est utilisé. Il gère les mises à jour des phrases à traduire et la version Pro+ utilise DeepL pour suggérer les traductions.
+
+![](figures/poEdit.png)
+
+### Comment préparer mon package R à une traduction en français ?
+
+### Aide en français pour R
 
 -   Groupe des utilisateurs du logiciel R <https://forums.cirad.fr/logiciel-R/>
 
@@ -96,21 +139,25 @@ TODO...
 
 -   <https://developer.r-project.org/Translations30.html>
 
-###Exemple de session avec changement de langage
+-   Manuels de R (?)
 
-``` r
-> 1:2 + 1:3
-[1] 2 4 4
-Warning message:
-In 1:2 + 1:3 :
-  longer object length is not a multiple of shorter object length
-> Sys.setenv(LANG = "fr")
-> 1:2 + 1:3
-[1] 2 4 4
-Message d'avis :
-Dans 1:2 + 1:3 :
-  la taille d'un objet plus long n'est pas multiple de la taille d'un objet plus court
-```
+### Comment traduire son package R ?
+
+TODO...
+
+### Français pour les jeux de données, les tableaux et les graphiques
+
+-   Rien n'est prévu en standard dans R
+
+-   SciViews verse -\> {data.io} et {chart}
+
+TODO: exemple sur base de urchin.
+
+### Pages d'aide
+
+-   Pas prévues pour être traduite, mais...
+
+-   `svMisc::aka()` -\> exemple TODO
 
 ### Avez-vous des questions ?
 
