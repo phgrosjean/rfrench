@@ -14,77 +14,114 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 #SciViews::R
 ```
 
-### R en français ?
+------------------------------------------------------------------------
 
--   Qui sait que les messages de R peuvent être affichés en français ?
+```{=tex}
+\begin{center}
+\Large \textbf{Qui sait que les messages de R peuvent être affichés en français ?}
+\end{center}
+```
 
--   Qui n'**utilise pas** R en français ?
+------------------------------------------------------------------------
 
--   Qui utilise R en français ?
+```{=tex}
+\begin{center}
+\Large \textbf{Qui n'utilise pas R en français ?}
+\end{center}
+```
 
-### Pourquoi *ne pas* utiliser R en français
+------------------------------------------------------------------------
 
-Si on est suffisamment bon en anglais...
+```{=tex}
+\begin{center}
+\Large \textbf{Qui utilise R en français ?}
+\end{center}
+```
+### Pourquoi *ne pas* utiliser R en français ?
+
+\alert{Si on est suffisamment bon en anglais...}
 
 -   Messages originaux
 
--   Plus facile pour échanger (poser des questions ou répondre sur des forums internationaux)
+\vfill
 
--   Plus facile parce que le message correspond à la doc
+-   Pas de mélange de vocabulaire entre messages traduits et non traduits
 
-### Pourquoi utiliser R en français
+\vfill
+
+-   Plus facile parce que le message correspond à la doc (pages d'aide des fonctions)
+
+\vfill
+
+-   Plus facile pour échanger (questions / réponses sur des forums internationaux)
+
+### Pourquoi utiliser R en français ?
 
 -   Difficultés avec la langue de Shakespeare
 
+\vfill
+
 -   Moins intimidant pour un francophone peu habitué avec les termes en anglais
+
+\vfill
 
 -   Libère la barrière linguistique pour les débutants
 
--   Peut-être utile dans une classe francophone
+\vfill
 
-### Comment passer de l'anglais au français dans R
+-   Obligatoire dans certains contextes (administrations Québécoises)
 
-Cela dépend de l'OS.
+### Comment passer de l'anglais au français dans R ?
 
-**Sous Linux**, on pourra utiliser la variable d'environnement
+\alert{Cela dépend de l'OS.}
+
+\vfill
+
+\alert{Sous Linux} (et ailleurs), on pourra utiliser la variable d'environnement `LANGUAGE` :
 
 ``` bash
 LANGUAGE=fr
 ```
 
-Cette variable peut être mise dans `/etc/R/Renviron.site` une fois pour toutes ou dans `Rprofile`:
+Cette variable peut être indiquée dans `/etc/R/Renviron.site` une fois pour toutes ou on peut ajouter dans `Rprofile` :
 
-```{r, eval=FALSE}
+```{r, eval=FALSE, echo=TRUE}
 local({ Sys.setenv(LANGUAGE = "fr") })
 ```
 
-### Comment passer de l'anglais au français dans R
+### Comment passer de l'anglais au français dans R ?
 
-Cela dépend de l'OS.
+\alert{Cela dépend de l'OS.}
 
-**Sous MacOS**, on fera comme pour Linux ou entrera dans le Terminal:
+\vfill
+
+\alert{Sous MacOS}, on fera comme pour Linux ou on entrera dans le Terminal :
 
 ``` bash
 defaults write org.R-project.R force.LANG fr_FR.UTF-8
 ```
 
-... et pour revenir sur l'anglais:
+... et pour revenir sur l'anglais :
 
 ``` bash
 defaults write org.R-project.R force.LANG en_US.UTF-8
 ```
 
-### Comment passer de l'anglais au français dans R
+### R.app en français sous MacOS
 
-Cela dépend de l'OS.
+![](figures/rapp_fr.png)
 
-**Sous Windows**, on pourra l'indiquer dans les préférences de RGui.exe.
+### Comment passer de l'anglais au français dans R ?
+
+\alert{Cela dépend de l'OS.}
+
+\alert{Sous Windows}, on pourra l'indiquer dans les préférences de RGui.exe.
 
 ![](figures/rgui_fr.png)
 
-### Comment passer de l'anglais au français dans R
+### Comment changer la langue en cours de session dans R ?
 
-Versions récentes de R (\>= 4.2.0) =\> `Sys.setLanguage()`, pour les versions plus anciennes -\> `Sys.setenv(LANGUAGE = 'fr')`.
+Versions récentes de R (\>= 4.2.0) =\> `Sys.setLanguage()`, versions plus anciennes =\> `Sys.setenv(LANGUAGE = 'fr')`.
 
 ```{r, echo=FALSE}
 if (utils::compareVersion("4.2.0",
@@ -98,14 +135,14 @@ if (utils::compareVersion("4.2.0",
 ```
 
 ```{r, echo=TRUE, warning=TRUE}
-olang <- Sys.setLanguage('fr') # Utilisation du français
+olang <- Sys.setLanguage('fr') # Utiliser le français
 1:2 + 1:3
-Sys.setLanguage('en') # Passage à l'anglais
+Sys.setLanguage('en') # Passer à l'anglais
 1:2 + 1:3
-Sys.setLanguage(olang) # Rétabli langue de départ
+Sys.setLanguage(olang) # Rétablir la langue de départ
 ```
 
-### Qu'est-ce qui est traduit ?
+### Qu'est-ce qui est traduit ?
 
 -   Traduction par packages (base + recommended + quelques autres).
 
@@ -119,19 +156,35 @@ Sys.setLanguage(olang) # Rétabli langue de départ
 
 -   RStudio (expérimental depuis version 2023.05...)
 
-### R.app en français sous MacOS
+### Qui traduit R ?
 
-![](figures/rapp_fr.png)
+TODO
 
-### Comment la traduction est faite ?
+### Comment la traduction est-elle réalisée ?
 
 Le logiciel **poEdit** est utilisé. Il gère les mises à jour des phrases à traduire et la version Pro+ utilise DeepL pour suggérer les traductions.
 
 ![](figures/poEdit.png)
 
-### Comment préparer mon package R à une traduction en français ?
+### Comment préparer mon package R à une traduction en français ?
 
-### Aide en français pour R
+TODO
+
+### Existe-t-il de la doc annexe en frnçais ?
+
+-   R for data science en français
+
+-   Contributions CRAN
+
+-   Cours wp.sciviews.org
+
+-   Aide-mémoires en français
+
+-   ...
+
+### Comment obtenir de l'aide externe en français pour R ?
+
+Configurer R en français (facultatif) et utiliser {reprex}
 
 -   Groupe des utilisateurs du logiciel R <https://forums.cirad.fr/logiciel-R/>
 
@@ -141,11 +194,9 @@ Le logiciel **poEdit** est utilisé. Il gère les mises à jour des phrases à t
 
 -   Manuels de R (?)
 
-### Comment traduire son package R ?
+### Comment traduire les jeux de données, les tableaux et les graphiques ?
 
-TODO...
-
-### Français pour les jeux de données, les tableaux et les graphiques
+Actuellemnt, il faut le faire manuellement, ... ou utiliser {data.io} et {chart}
 
 -   Rien n'est prévu en standard dans R
 
@@ -153,13 +204,13 @@ TODO...
 
 TODO: exemple sur base de urchin.
 
-### Pages d'aide
+### Comment fournir une aide aux fonctions en français aux débutants ?
 
 -   Pas prévues pour être traduite, mais...
 
 -   `svMisc::aka()` -\> exemple TODO
 
-### Avez-vous des questions ?
+### Avez-vous des questions ?
 
 ```{=tex}
 \begin{center}
@@ -178,6 +229,24 @@ TODO: exemple sur base de urchin.
 \includegraphics[width=.16\textwidth,height=.2\textheight]{template/EcoNum-logo.pdf}  \includegraphics[width=.16\textwidth,height=.2\textheight]{template/SciViews-logo.pdf}
 \end{center}
 ```
+
+------------------------------------------------------------------------
+
+```{=tex}
+\begin{center}
+\textbf{Avez-vous des questions ?}
+\end{center}
+```
+\centering
+
+![](figures/rr2023.jpg){width="30%"}
+
+\vfill
+
+**Ressources utiles**
+
+-   Site web du cours
+
 ### More..
 
 ```{=tex}
