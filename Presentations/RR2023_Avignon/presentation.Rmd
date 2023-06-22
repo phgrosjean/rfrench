@@ -119,6 +119,12 @@ defaults write org.R-project.R force.LANG en_US.UTF-8
 
 ![](figures/rgui_fr.png)
 
+### Interface de RStudio en français
+
+L'interface de RStudio peut maintenant aussi être basculée en français.
+
+![](figures/rstudio_fr.png)
+
 ### Comment changer la langue en cours de session dans R ?
 
 Versions récentes de R (\>= 4.2.0) =\> `Sys.setLanguage()`, versions plus anciennes =\> `Sys.setenv(LANGUAGE = 'fr')`.
@@ -142,6 +148,12 @@ Sys.setLanguage('en') # Passer à l'anglais
 Sys.setLanguage(olang) # Rétablir la langue de départ
 ```
 
+### Bug dans RStudio sous Windows
+
+Les messages restent en anglais ! Ailleurs, cela fonctionne. Voir issue #10308 (<https://github.com/rstudio/rstudio/issues/10308>)
+
+![](figures/rstudio_bug.png)
+
 ### Qu'est-ce qui est traduit ?
 
 -   Traduction par packages (base + recommended + quelques autres).
@@ -152,63 +164,130 @@ Sys.setLanguage(olang) # Rétablir la langue de départ
 
 -   Installeurs et GUI Rgui.exe (Windows) et R.app (MacOS)
 
--   R Commander (ref)
+-   R Commander (<https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/>)
 
--   RStudio (expérimental depuis version 2023.05...)
+\vfill
+
+Voir <https://developer.r-project.org/Translations30.html>
+
+\vfill
+
+\alert{Cela représente plus de 10.000 messages traduits.}
 
 ### Qui traduit R ?
 
-TODO
+Une équipe de volontaires ; Philippe Grosjean fait l'interface avec le R Core team, voir <https://github.com/phgrosjean/rfrench>.
+
+![](figures/translators.png){width="60%"}
 
 ### Comment la traduction est-elle réalisée ?
 
-Le logiciel **poEdit** est utilisé. Il gère les mises à jour des phrases à traduire et la version Pro+ utilise DeepL pour suggérer les traductions.
+Avec **poEdit**. La version Pro+ utilise **DeepL** pour des suggestions de traduction.
 
 ![](figures/poEdit.png)
 
 ### Comment préparer mon package R à une traduction en français ?
 
-TODO
+-   Preparer les templates (fichiers .pot) avec `tools::update_pkg_po(pkgdir)`.
 
-### Existe-t-il de la doc annexe en frnçais ?
+\vfill
 
--   R for data science en français
+-   Ouvrir poEdit, créer ou ouvrir le fichier de traduction .po pour le langage choisi.
 
--   Contributions CRAN
+\vfill
 
--   Cours wp.sciviews.org
+-   Mettre à jour avec le nouveau fichier template .pot
 
--   Aide-mémoires en français
+\vfill
 
--   ...
+-   Editer les (nouveaux) messages dans poEdit
 
-### Comment obtenir de l'aide externe en français pour R ?
+\vfill
 
-Configurer R en français (facultatif) et utiliser {reprex}
+-   Recompiler le package R
 
--   Groupe des utilisateurs du logiciel R <https://forums.cirad.fr/logiciel-R/>
+### Comment traduire les jeux de données et les graphiques ?
 
--   Slack <https://r-grrr.slack.com>
+Actuellement, il faut le faire manuellement, ... ou utiliser {data.io} et {chart} (pas encore sur CRAN, encore en phase exéprimentale):
 
--   <https://developer.r-project.org/Translations30.html>
+\vfill
 
--   Manuels de R (?)
+```{r, echo=TRUE, eval=FALSE}
+remotes::install.packages("SciViews/data.io")
+remotes::install.packages("SciViews/chart")
+```
 
-### Comment traduire les jeux de données, les tableaux et les graphiques ?
+### Comment traduire les jeux de données et les graphiques ?
 
-Actuellemnt, il faut le faire manuellement, ... ou utiliser {data.io} et {chart}
+Avec le package {data.io}, un label est associé aux variables (auto ou avec `labelise()`.
 
--   Rien n'est prévu en standard dans R
+```{r, echo=TRUE}
+library(data.io)
+urchin_en <- read("urchin_bio", package = "data.io")
+urchin_en[1:3, 1:5]
+label(urchin_en$origin)
+```
 
--   SciViews verse -\> {data.io} et {chart}
+### Comment traduire les jeux de données et les graphiques ?
 
-TODO: exemple sur base de urchin.
+Une version francisée est possible avec `lang = "fr"`, ou pour traduire également les niveaux de variables facteur `lang = "FR"` :
+
+```{r, echo=TRUE}
+urchin_fr <- read("urchin_bio", package = "data.io", lang = "FR")
+urchin_fr[1:3, 1:5]
+label(urchin_fr$origin)
+```
+
+### Utiliser chart() au lieu de ggplot() - version anglaise
+
+```{r}
+library(ggplot2)
+library(chart)
+```
+
+```{r, echo=TRUE, out.width="70%"}
+chart(aes(x = weight, y = skeleton, col = origin), data = urchin_en) +
+  geom_point()
+```
+
+### Utiliser chart() au lieu de ggplot() - version française
+
+```{r, echo=TRUE, out.width="70%"}
+chart(aes(x = weight, y = skeleton, col = origin), data = urchin_fr) +
+  geom_point()
+```
 
 ### Comment fournir une aide aux fonctions en français aux débutants ?
 
--   Pas prévues pour être traduite, mais...
+-   Pas prévues pour être traduite dans R pour l'instant, mais...
 
--   `svMisc::aka()` -\> exemple TODO
+\vfill
+
+-   `svMisc::aka()` courtes pages d'aide alternatives style docstrings :
+
+```{r, eval=FALSE, echo=TRUE}
+remotes::install_github("SciViews/svMisc")
+```
+
+Créer une courte page d'aide :
+
+```{r, echo=TRUE}
+library(svMisc)
+log <- aka(log, 
+  description = "Logarithme d'un vecteur numérique (log en base e par défaut,\nou définir avec base=).",
+  seealso = c("log10", "log1p", "exp","expm1"),
+  example = c("log(5)", "# Log en base 3", "log(1:5, base = 3)"))
+```
+
+### Aide alternative avec `.?` de svMisc
+
+Une fois {svMisc} chargé, on utilise `.?` à la place de `?` :
+
+```{r, echo=TRUE}
+.?log
+```
+
+L'example est exécuté en entrant `ex` à l'invite de R...
 
 ### Avez-vous des questions ?
 
@@ -219,8 +298,11 @@ TODO: exemple sur base de urchin.
 ```
 \vfill
 
--   Lien 1 : <https://github.com/phgrosjean/rfrench>
--   Lien 2 : ...\>
+-   GitHub R french : <https://github.com/phgrosjean/rfrench>
+-   data.io : <https://www.sciviews.org/data.io>
+-   chart : <https://www.sciviews.org/chart/>
+-   svMisc : <https://www.sciviews.org/svMisc/>
+-   Cours : <https://wp.sciviews.org>
 
 \vfill
 
@@ -228,71 +310,4 @@ TODO: exemple sur base de urchin.
 \begin{center}
 \includegraphics[width=.16\textwidth,height=.2\textheight]{template/EcoNum-logo.pdf}  \includegraphics[width=.16\textwidth,height=.2\textheight]{template/SciViews-logo.pdf}
 \end{center}
-```
-
-------------------------------------------------------------------------
-
-```{=tex}
-\begin{center}
-\textbf{Avez-vous des questions ?}
-\end{center}
-```
-\centering
-
-![](figures/rr2023.jpg){width="30%"}
-
-\vfill
-
-**Ressources utiles**
-
--   Site web du cours
-
-### More..
-
-```{=tex}
-\begincols
-\begincol{.50\textwidth}
-```
-Some text...
-
-![](figures/rr2023.jpg){width="65%"}
-
-```{=tex}
-\endcol
-\begincol{.50\textwidth}
-```
-Some more text...
-
-```{=tex}
-\endcol
-\endcols
-```
-### Lien centré
-
-```{=tex}
-\begin{center}
-https://wp.sciviews.org/
-\end{center}
-```
-### Grande image, petit texte
-
-```{=tex}
-\begincols
-\begincol{.70\textwidth}
-```
-![](figures/rr2023.jpg){width="100%"}
-
-```{=tex}
-\endcol
-\begincol{.30\textwidth}
-```
-Texte.
-
-\vfill
-
-Plus de texte.
-
-```{=tex}
-\endcol
-\endcols
 ```
