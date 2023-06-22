@@ -213,8 +213,8 @@ Actuellement, il faut le faire manuellement, ... ou utiliser {data.io} et {chart
 \vfill
 
 ```{r, echo=TRUE, eval=FALSE}
-remotes::install.packages("SciViews/data.io")
-remotes::install.packages("SciViews/chart")
+remotes::install_github("SciViews/data.io")
+remotes::install_github("SciViews/chart")
 ```
 
 ### Comment traduire les jeux de données et les graphiques ?
