@@ -275,7 +275,7 @@ Créer une courte page d'aide :
 library(svMisc)
 log <- aka(log, 
   description = "Logarithme d'un vecteur numérique (log en base e par défaut,\nou définir avec base=).",
-  seealso = c("log10", "log1p", "exp","expm1"),
+  seealso = c("log10", "log1p", "exp", "expm1"),
   example = c("log(5)", "# Log en base 3", "log(1:5, base = 3)"))
 ```
 
