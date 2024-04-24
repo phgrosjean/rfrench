@@ -4,18 +4,38 @@ format: pdf
 editor: visual
 ---
 
-This proposal is submitted to answer a call for translations of the {data.table} package as detailed \[here\](<https://rdatatable-community.github.io/The-Raft/posts/2023-10-17-translation_announcement-toby_hocking/>).
+This proposal is submitted to answer to a call for translations of the {data.table} package \[see here\](<https://rdatatable-community.github.io/The-Raft/posts/2023-10-17-translation_announcement-toby_hocking/>).
 
 ## Goal
 
 -   Translation of all messages of the {data.table} package in French (from its `R-data.table.pot` and `data.table.pot` files, that is, 1285 messages for {data.table} version 1.15.99, commit 65212df on 2024-04-24)
 
--   Translation of all vignettes in French (12 `.Rmd`\` files for same version of {data.table})
+-   Translation of all vignettes in French (12 `.Rmd`\` files for the same version of {data.table})
+
+-   Translation in French of the {data.table} cheatsheet ()
 
 ## Staff
 
--   Philippe Grosjean \<phgrosjean\@sciviews.org\> and \<Philippe.Grosjean\@umons.ac.be\>, University of Mons, main translator in French of base and recommended R packages,
+-   Lead: Philippe Grosjean \<phgrosjean\@sciviews.org\> and \<Philippe.Grosjean\@umons.ac.be\>, University of Mons, main translator in French of base and recommended R packages, using R since version 0.63, maintain many R packages in CRAN or GitHub,
 
--   Christian Wia \<w9204-rs\@yahoo.com\>, part of the French R translation team
+-   Christian Wia \<w9204-rs\@yahoo.com\>, part of the French R translation team **TODO: add number of year since using R and {data.table} + what you consider useful here !**
 
--   Vincent Rocher \<vincent.rocher\@inrae.fr\>, post-doc MIAT unit, INRAE Toulouse.
+-   Vincent Rocher \<vincent.rocher\@inrae.fr\>, post-doc MIAT unit, INRAE Toulouse. **TODO: add number of year since using R and {data.table} + what you consider useful here !**
+
+## Organisation
+
+-   Work centralized in a GitHub repository (<https://github.com/phgrosjean/rfrench>).
+
+-   Each translated sentence is revised by at least a second translator.
+
+-   Difficult sentences may be discussed among the whole staff.
+
+-   An English-French dictionary for several terms used in R messages is maintained for the translation of base and recommended R packages (\[here\](<https://github.com/phgrosjean/rfrench/blob/main/RFrenchDictionary.txt>)). This dictionary will be updated with terms specific to {data.table}.
+
+## Timing
+
+We plan to finish the translation around the beginning of September 2024. Translation of new messages for future versions of {data.table} will be done (although on an irregular basis, depending on our availability) by the French translation team of R as it is the case for base and recommended R packages since R version 2.10.0.
+
+## Awards
+
+**Add here the number of awards asked + justification.**
