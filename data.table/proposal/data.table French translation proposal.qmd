@@ -1,0 +1,21 @@
+---
+title: "{data.table} Translation Project - French"
+format: pdf
+editor: visual
+---
+
+This proposal is submitted to answer a call for translations of the {data.table} package as detailed \[here\](<https://rdatatable-community.github.io/The-Raft/posts/2023-10-17-translation_announcement-toby_hocking/>).
+
+## Goal
+
+-   Translation of all messages of the {data.table} package in French (from its `R-data.table.pot` and `data.table.pot` files, that is, 1285 messages for {data.table} version 1.15.99, commit 65212df on 2024-04-24)
+
+-   Translation of all vignettes in French (12 `.Rmd`\` files for same version of {data.table})
+
+## Staff
+
+-   Philippe Grosjean \<phgrosjean\@sciviews.org\> and \<Philippe.Grosjean\@umons.ac.be\>, University of Mons, main translator in French of base and recommended R packages,
+
+-   Christian Wia \<w9204-rs\@yahoo.com\>, part of the French R translation team
+
+-   Vincent Rocher \<vincent.rocher\@inrae.fr\>, post-doc MIAT unit, INRAE Toulouse.
