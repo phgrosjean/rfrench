@@ -41,4 +41,4 @@ vignettes/*.pdf
 # Other files
 .DS_Store
 */*.tar.gz
-
+nul
