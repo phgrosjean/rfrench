@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: RGui 4.4.0\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2023-11-30 16:47+0100\n"
-"PO-Revision-Date: 2024-04-26 13:55+0200\n"
-"Last-Translator: Michael Chirico <michaelchirico4@gmail.com>\n"
+"PO-Revision-Date: 2024-04-26 16:41+0200\n"
+"Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: src/gnuwin32/console.c:1200 src/gnuwin32/console.c:1242
 msgid "Not enough memory"
@@ -887,11 +887,11 @@ msgstr "Arranger les icônes"
 
 #: src/extra/graphapp/metafile.c:55
 msgid "Unable to save metafile to the clipboard"
-msgstr "Impossible d'enregistrer le métafichier dans le presse-papiers"
+msgstr "Impossible d'enregistrer le métafichier dans le presse-papier"
 
 #: src/extra/graphapp/metafile.c:117
 msgid "Unable to create metafile"
-msgstr "Impossible de créer un métafichier"
+msgstr "Impossible de créer le métafichier"
 
 #: src/extra/graphapp/metafile.c:122
 msgid "Insufficient memory to create metafile"
@@ -899,11 +899,11 @@ msgstr "Mémoire insuffisante pour créer le métafichier"
 
 #: src/extra/graphapp/printer.c:111
 msgid "Unable to choose printer"
-msgstr "Impossible de sélectionner l’imprimante"
+msgstr "Impossible de choisir une imprimante"
 
 #: src/extra/graphapp/printer.c:139
 msgid "Insufficient memory for new printer"
-msgstr "Mémoire insuffisante pour une nouvelle imprimante"
+msgstr "Mémoire insuffisante pour la nouvelle imprimante"
 
 #: src/extra/graphapp/printer.c:175
 msgid "Unable to start the print job"
