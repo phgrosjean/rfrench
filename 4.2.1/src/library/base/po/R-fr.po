@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: R 4.0.4\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2022-01-14 11:27\n"
-"PO-Revision-Date: 2021-02-10 17:30+0100\n"
-"Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
+"PO-Revision-Date: 2024-04-26 01:12+0200\n"
+"Last-Translator: Christian Wiatr <w9204-fs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -404,11 +404,8 @@ msgstr ""
 msgid "cannot xtfrm data frames"
 msgstr "impossible d’utiliser xtfrm sur un tableau de données (data frame)"
 
-#, fuzzy
 msgid "all variables should have the same length"
-msgstr ""
-"liste d'arguments incorrecte : toutes les variables doivent avoir la même "
-"longueur"
+msgstr "toutes les variables doivent avoir la même longueur"
 
 msgid "character string is not in a standard unambiguous format"
 msgstr "la chaîne de caractères n'est pas dans un format standard non ambigu"
@@ -1083,9 +1080,8 @@ msgstr "'input' doit être de longueur 1"
 msgid "'input' and 'target' must be character vectors"
 msgstr "'input' et 'target' doivent être des vecteurs caractères"
 
-#, fuzzy
 msgid "cannot mtfrm"
-msgstr "impossible d’appliquer xterm sur 'x'"
+msgstr "erreur dans la fonction mtfrm"
 
 msgid "'%s' is not a function, character or symbol"
 msgstr "'%s' n'est pas une fonction, une chaîne de caractères ou un symbole"
@@ -1285,9 +1281,8 @@ msgstr "-- mise en cache des métadonnées"
 msgid "--- done caching metadata"
 msgstr "-- fin de la mise en cache des métadonnées"
 
-#, fuzzy
 msgid "--- processing classes"
-msgstr "-- traitement des classes"
+msgstr "--- traitement des classes"
 
 msgid ""
 "'exportClassPattern' specified in 'NAMESPACE' but no matching classes in "
@@ -1681,7 +1676,7 @@ msgid "additional arguments ignored in warning()"
 msgstr "arguments supplémentaires ignorés dans warning()"
 
 msgid "Sys.setenv(LANGUAGE=\"%s\") may have failed"
-msgstr ""
+msgstr "Echec possible pour Sys.setenv(LANGUAGE=\"%s\")"
 
 msgid ""
 "Calling 'structure(NULL, *)' is deprecated, as NULL cannot have attributes.\n"
