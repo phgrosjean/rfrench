@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: RGui 4.1.3\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2021-11-06 17:18+0100\n"
-"PO-Revision-Date: 2021-10-07 14:51+0100\n"
-"Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
+"PO-Revision-Date: 2024-04-25 23:55+0200\n"
+"Last-Translator: Christian Wiatr <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -859,34 +859,28 @@ msgid "Arrange Icons"
 msgstr "Arranger les icônes"
 
 #: src/extra/graphapp/metafile.c:55
-#, fuzzy
 msgid "Unable to save metafile to the clipboard"
-msgstr "Impossible d'ouvrir le presse-papier"
+msgstr "Impossible d'enregistrer le métafichier dans le presse-papier"
 
 #: src/extra/graphapp/metafile.c:108
-#, fuzzy
 msgid "Unable to create metafile"
-msgstr "Impossible de créer la fenêtre d'édition"
+msgstr "Impossible de créer le métafichier"
 
 #: src/extra/graphapp/metafile.c:113
-#, fuzzy
 msgid "Insufficient memory to create metafile"
-msgstr "Mémoire insuffisante. Veuillez refermer la console, s'il-vous-plait"
+msgstr "Mémoire insuffisante pour créer le métafichier"
 
 #: src/extra/graphapp/printer.c:90
-#, fuzzy
 msgid "Unable to choose printer"
-msgstr "Impossible de créer la fenêtre de l'afficheur"
+msgstr "Impossible de choisir une imprimante"
 
 #: src/extra/graphapp/printer.c:118
-#, fuzzy
 msgid "Insufficient memory for new printer"
-msgstr "Mémoire insuffisante pour afficher le fichier dans un afficheur interne"
+msgstr "Mémoire insuffisante pour la nouvelle imprimante"
 
 #: src/extra/graphapp/printer.c:151
-#, fuzzy
 msgid "Unable to start the print job"
-msgstr "Impossible de créer la fenêtre de l'afficheur"
+msgstr "Impossible de démarrer la tâche d'impression"
 
 #: src/library/utils/src/windows/dataentry.c:225
 #: src/library/utils/src/windows/dataentry.c:1853
