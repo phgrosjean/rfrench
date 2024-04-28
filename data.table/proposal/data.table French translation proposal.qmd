@@ -18,7 +18,7 @@ This proposal is submitted to answer to a call for translations of the {data.tab
 
 -   Lead: Philippe Grosjean \<phgrosjean\@sciviews.org\> and \<Philippe.Grosjean\@umons.ac.be\>, University of Mons, main translator in French of base and recommended R packages, using R since version 0.63, maintain many R packages in CRAN or GitHub,
 
--   Christian Wia \<w9204-rs\@yahoo.com\>, part of the French R translation team **TODO: add number of year since using R and {data.table} + what you consider useful here !**
+-   Christian Wia \<w9204-rs\@yahoo.com\>, part of the French R translation team,  retired senior engineer of Nokia International at Paris-Saclay, translator administrator EN->FR, on MediaWiki transverse technical projects since 2009, R contents translator since 2021.
 
 -   Vincent Rocher \<vincent.rocher\@inrae.fr\>, post-doc MIAT unit, INRAE Toulouse. **TODO: add number of year since using R and {data.table} + what you consider useful here !**
 
@@ -39,3 +39,5 @@ We plan to finish the translation around the beginning of September 2024. Transl
 ## Awards
 
 **Add here the number of awards asked + justification.**
+
+Christian: one award asked for my FR activity considered being at full time and for long term support. FR done with no sub dialects, on contents being messages of code (warning errors..., interface : UI, forms.. , vignettes , news, releases), working in team coordinated by Philippe , means being a centralized glossary plus common discussion forum. Informations received via alerts on GitHub or mail messages. Favorable to collaborate to the data.table translation since according to Michael Chirico statistics french reaches 267M of speakers that is the 5th position in the list and covers a wellspread community in Europe (Belgium Swiss France)  Canada and Africa. Thanks.
