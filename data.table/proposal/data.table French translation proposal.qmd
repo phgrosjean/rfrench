@@ -18,11 +18,11 @@ This proposal is submitted to answer to a call for translations of the {data.tab
 
 -   Lead: Philippe Grosjean \<phgrosjean\@sciviews.org\> and \<Philippe.Grosjean\@umons.ac.be\>, University of Mons, main translator in French of base and recommended R packages, using R since version 0.63, maintain many R packages in CRAN or GitHub,
 
--   Christian Wia \<w9204-rs\@yahoo.com\>, part of the French R translation team,  retired senior engineer of Nokia International at Paris-Saclay, translator administrator EN->FR, on MediaWiki transverse technical projects since 2009, R contents translator since 2021.
+-   Christian Wia \<w9204-rs\@yahoo.com\>, part of the French R translation team, retired senior engineer of Nokia International at Paris-Saclay, translator administrator EN-\>FR, on MediaWiki transverse technical projects since 2009, R contents translator since 2021.
 
 -   Vincent Rocher \<vincent.rocher\@inrae.fr\>, post-doc MIAT unit, INRAE Toulouse. Data scientist in bioinformatics, has been using R since 2014 and data.table since 2020 to process genomic data.
 
--   Elise Maigné, elise.maigne@inrae.fr, INRAE, Toulouse. Engineer in biostatistics, using R since 2009 and data.table since 2017.
+-   Elise Maigné, elise.maigne\@inrae.fr, INRAE, Toulouse. Engineer in biostatistics, using R since 2009 and data.table since 2017.
 
 ## Organisation
 
@@ -40,8 +40,10 @@ We plan to finish the translation around the beginning of September 2024. Transl
 
 ## Awards
 
-**Add here the number of awards asked + justification.**
+Philippe: no award asked. I contribute for free to the translation of R in French. I prefer to reserve the awards for the other contributors in the team.
 
-Christian: one award asked for my FR activity considered being at full time and for long term support. FR done with no sub dialects, on contents being messages of code (warning errors..., interface : UI, forms.. , vignettes , news, releases), working in team coordinated by Philippe , means being a centralized glossary plus common discussion forum. Informations received via alerts on GitHub or mail messages. Favorable to collaborate to the data.table translation since according to Michael Chirico statistics french reaches 267M of speakers that is the 5th position in the list and covers a wellspread community in Europe (Belgium Swiss France)  Canada and Africa. Thanks.
+Christian: one award asked for my FR activity considered being at full time and for long term support. FR done with no sub dialects, on contents being messages of code (warning errors..., interface : UI, forms.. , vignettes , news, releases), working in team coordinated by Philippe , means being a centralized glossary plus common discussion forum. Informations received via alerts on GitHub or mail messages. Favorable to collaborate to the data.table translation since according to Michael Chirico statistics french reaches 267M of speakers that is the 5th position in the list and covers a wellspread community in Europe (Belgium Swiss France) Canada and Africa. Thanks.
 
-Vincent: One award asked to compensate for the time this activity will take from my research. The translation will be carried out on messages, vignettes, and cheatsheets under the direction of Philippe Grosjean. I'm very interested to participate in the translation of data.table to help the French community use the R language and to promote its use in the data science community.
+Vincent: one award asked to compensate for the time this activity will take from my research. The translation will be carried out on messages, vignettes, and cheatsheets under the direction of Philippe Grosjean. I'm very interested to participate in the translation of data.table to help the French community use the R language and to promote its use in the data science community.
+
+Elise: no award asked, contribution to the projet on my (limited) spare time.
