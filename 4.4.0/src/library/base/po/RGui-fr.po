@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: RGui 4.4.0\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2023-11-30 16:47+0100\n"
-"PO-Revision-Date: 2024-04-30 17:59+0200\n"
+"PO-Revision-Date: 2024-04-30 18:08+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
@@ -33,7 +33,7 @@ msgstr "Impossible d'ouvrir le presse-papier"
 
 #: src/gnuwin32/console.c:1977
 msgid "Insufficient memory. Please close the console"
-msgstr "Mémoire insuffisante. Veuillez refermer la console."
+msgstr "Mémoire insuffisante. Veuillez refermer la console"
 
 #: src/gnuwin32/console.c:2033 src/gnuwin32/console.c:2087
 #: src/gnuwin32/preferences.c:342
