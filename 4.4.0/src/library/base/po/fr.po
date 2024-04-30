@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: R-4.4.0\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2024-04-15 18:09-0700\n"
-"PO-Revision-Date: 2024-04-26 13:56+0200\n"
-"Last-Translator: Michael Chirico <michaelchirico4@gmail.com>\n"
+"PO-Revision-Date: 2024-04-30 13:48+0200\n"
+"Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: src/appl/optim.c:60
 msgid "non-finite value supplied by 'optim'"
@@ -347,6 +347,8 @@ msgid ""
 "expanded path length %llu would be too long for\n"
 "%s\n"
 msgstr ""
+"la longueur du chemin développé %llu est trop grande pour\n"
+"%s\n"
 
 #: src/gnuwin32/sys-win32.c:263
 msgid "character string expected as first argument"
@@ -697,12 +699,12 @@ msgstr "connexion incorrecte"
 #: src/main/Rdynload.c:427
 #, c-format
 msgid "Invalid entry '%s' in native symbol object."
-msgstr ""
+msgstr "Entrée non valide '%s' dans l'objet symbole natif."
 
 #: src/main/Rdynload.c:433
 #, c-format
 msgid "Component '%s' missing in symbol object."
-msgstr ""
+msgstr "Le composant '%s' est absent dans l'objet symbole."
 
 #: src/main/Rdynload.c:445
 #, fuzzy
@@ -712,7 +714,7 @@ msgstr "symbole non valide"
 #: src/main/Rdynload.c:459
 #, c-format
 msgid "Symbol at %d does not have registration information."
-msgstr ""
+msgstr "Le symbole à %d n'a pas d'informations d'enregistrement."
 
 #: src/main/Rdynload.c:495
 #, fuzzy
@@ -733,17 +735,17 @@ msgstr "le corps du fichier n'a pas une entête gzip correcte"
 #: src/main/Rdynload.c:502
 #, c-format
 msgid "Symbol '%s' does not have a valid DllInfo reference."
-msgstr ""
+msgstr "La référence DllInfo du symbole '%s' n'est pas valide."
 
 #: src/main/Rdynload.c:507
 #, c-format
 msgid "Symbol '%s' comes from a different shared object."
-msgstr ""
+msgstr "Le symbole '%s' vient d'un objet partagé différent."
 
 #: src/main/Rdynload.c:510
 #, c-format
 msgid "Symbol '%s' is missing parameter specification."
-msgstr ""
+msgstr "Spécification de paramètre absente pour le symbole '%s'."
 
 #: src/main/Rdynload.c:851
 msgid "`maximal number of DLLs reached..."
@@ -1131,7 +1133,7 @@ msgstr "la longueur des données dépasse la taille de la matrice"
 
 #: src/main/array.c:174
 msgid "non-empty data for zero-extent matrix"
-msgstr ""
+msgstr "non-empty data for zero-extent matrix"
 
 #: src/main/array.c:179 src/main/array.c:2105 src/main/array.c:2213
 msgid "too many elements specified"
@@ -1178,7 +1180,7 @@ msgstr[1] "%d arguments passés à '%s' qui en exige entre %d et %d"
 #: src/main/array.c:1289
 #, c-format
 msgid "more than 2 arguments passed to default method of '%s'"
-msgstr ""
+msgstr "plus de 2 arguments sont passés à la méthode par défaut de '%s'"
 
 #: src/main/array.c:1294
 msgid "requires numeric/complex matrix/vector arguments"
@@ -2588,7 +2590,7 @@ msgstr "ethod = \"wininet\" n’est supporté que sous Windows"
 
 #: src/main/connections.c:5667 src/modules/internet/internet.c:225
 msgid "the 'internal' method of url() is defunct for http:// and ftp:// URLs"
-msgstr ""
+msgstr "méthode 'internal' de url() obsolète pour les URL http:// et ftp://"
 
 #: src/main/connections.c:5680
 msgid ""
@@ -2698,7 +2700,7 @@ msgstr "la longueur %d est trop grande pour le hachage"
 
 #: src/main/connections.c:6433 src/modules/internet/libcurl.c:606
 msgid "too many file descriptors for select()"
-msgstr ""
+msgstr "trop de descripteurs de fichiers pour select()"
 
 #: src/main/connections.c:6764
 msgid "unknown compression, assuming none"
@@ -2784,6 +2786,8 @@ msgstr "fonction cumxxx inconnue"
 #: src/main/datetime.c:594
 msgid "datetimes before 1902 may not be accurate: warns once per session"
 msgstr ""
+"les horodatages avant 1902 peuvent être imprécis : un avertissement par "
+"session"
 
 #: src/main/datetime.c:790 src/main/datetime.c:802 src/main/datetime.c:825
 #: src/main/datetime.c:830
@@ -2800,27 +2804,29 @@ msgstr "problème lors de la désaffectation d'un fuseau horaire"
 
 #: src/main/datetime.c:969
 msgid "a valid \"POSIXlt\" object is a list of at least 9 elements"
-msgstr ""
+msgstr "un objet « POSIXlt » valide est une liste d'au moins 9 éléments"
 
 #: src/main/datetime.c:973
 msgid "a valid \"POSIXlt\" object has names"
-msgstr ""
+msgstr "un objet « POSIXlt » valide a des noms"
 
 #: src/main/datetime.c:979
 #, c-format
 msgid ""
 "a valid \"POSIXlt\" object has element %d with name '%s' which should be '%s'"
 msgstr ""
+"un objet « POSIXlt » valide comporte un élément %d de nom '%s' qui devrait "
+"être '%s'"
 
 #: src/main/datetime.c:986 src/main/datetime.c:1002
 #, c-format
 msgid "a valid \"POSIXlt\" object has a numeric element %s"
-msgstr ""
+msgstr "un objet « POSIXlt » valide possède un élément numérique %s"
 
 #: src/main/datetime.c:997
 #, c-format
 msgid "a valid \"POSIXlt\" object has a character element %s"
-msgstr ""
+msgstr "un objet « POSIXlt » valide possède un élément caractère %s"
 
 #: src/main/datetime.c:1010 src/main/datetime.c:1252 src/main/datetime.c:1941
 #, fuzzy, c-format
@@ -2829,7 +2835,7 @@ msgstr "valeur '%s' incorrecte"
 
 #: src/main/datetime.c:1013
 msgid "attr(x, \"tzone\") should have length 1 or 3"
-msgstr ""
+msgstr "attr(x, \"tzone\") doit avoir une longueur de 1 ou 3"
 
 #: src/main/datetime.c:1130
 #, c-format
@@ -2947,8 +2953,8 @@ msgstr "pas de périphérique actif ou par défaut"
 #: src/main/devices.c:176
 msgid "no active device and default getOption(\"device\") is invalid"
 msgstr ""
-"aucun périphérique graphique actif et la valeur par défaut "
-"getOption(\"device\") est incorrecte"
+"aucun périphérique graphique actif et la valeur par défaut getOption(\"device"
+"\") est incorrecte"
 
 #: src/main/devices.c:390 src/main/devices.c:452
 msgid "too many open devices"
@@ -3002,8 +3008,8 @@ msgstr "\"%s\" non disponible pour %s() pour le package\"%s\""
 #, c-format
 msgid "%s symbol name \"%s\" not in DLL for package \"%s\""
 msgstr ""
-"le nom %s de symbole \"%s\" est introuvable dans la DLL pour le package "
-"\"%s\""
+"le nom %s de symbole \"%s\" est introuvable dans la DLL pour le package \"%s"
+"\""
 
 #: src/main/dotcode.c:317
 #, c-format
@@ -3059,7 +3065,7 @@ msgstr "Valeur NULL pour DLLInfoReference lors de la recherche de la DLL"
 
 #: src/main/dotcode.c:1635
 msgid "DLL requires the use of native symbols"
-msgstr ""
+msgstr "La DLL nécessite d'utiliser les symboles natifs"
 
 #: src/main/dotcode.c:1732
 #, c-format
@@ -3404,15 +3410,15 @@ msgstr "type de ligne incorrect"
 
 #: src/main/engine.c:3790
 msgid "Stroke ignored (device is appending path)"
-msgstr ""
+msgstr "Stroke ignoré (chemin complété par l'équipement)"
 
 #: src/main/engine.c:3802
 msgid "Fill ignored (device is appending path)"
-msgstr ""
+msgstr "Fill ignoré (chemin complété par l'équipement)"
 
 #: src/main/engine.c:3814
 msgid "FillStroke ignored (device is appending path)"
-msgstr ""
+msgstr "FillStroke ignoré (chemin complété par l'équipement)"
 
 #: src/main/envir.c:130 src/main/envir.c:144
 #, c-format
@@ -3911,7 +3917,7 @@ msgstr "pile de noeuds débordée vers le haut"
 
 #: src/main/eval.c:682
 msgid "samples too large for I/O buffer skipped by Rprof"
-msgstr ""
+msgstr "trop d'échantillons pour le tampon d'E/S sauté par Rprof"
 
 #: src/main/eval.c:684
 #, c-format
@@ -3926,12 +3932,12 @@ msgstr "Rprof : impossible d'ouvrir le fichier '%s'"
 #: src/main/eval.c:900
 #, c-format
 msgid "interval too short for this platform, using '%f'"
-msgstr ""
+msgstr "intervalle trop petit pour cette plateforme, '%f' est utilisé"
 
 #: src/main/eval.c:905
 #, c-format
 msgid "interval too short, using '%f'"
-msgstr ""
+msgstr "intervalle trop court, utilisation de '%f'"
 
 #: src/main/eval.c:921
 msgid "R profiling is not available on this system"
@@ -4213,7 +4219,7 @@ msgstr "débordement vers le haut du tampon d'entrée à la ligne %d"
 #: src/main/gram.y:1215
 #, c-format
 msgid "function '%s' not supported in RHS call of a pipe (%s:%d:%d)"
-msgstr ""
+msgstr "fonction '%s' non supportée dans l'appel RHS d'un pipe (%s:%d:%d)"
 
 #: src/main/gram.y:1223 src/main/gram.y:1255
 #, fuzzy, c-format
@@ -4235,11 +4241,13 @@ msgstr "les arguments doivent être symboliques"
 #, c-format
 msgid "pipe placeholder cannot be used in the RHS function (%s:%d:%d)"
 msgstr ""
+"les paramètres de la fonction RHS (%s:%d:%d) ne peuvent pas être des pipes"
 
 #: src/main/gram.y:1302
 #, c-format
 msgid "pipe placeholder can only be used as a named argument (%s:%d:%d)"
 msgstr ""
+"le paramètre pipe ne peut être passé qu'avec un argument nommé (%s:%d:%d)"
 
 #: src/main/gram.y:1335
 #, c-format
@@ -4247,6 +4255,8 @@ msgid ""
 "'=>' is disabled; set '_R_USE_PIPEBIND_' envvar to a true value to enable it "
 "(%s:%d:%d)"
 msgstr ""
+"'=>' est désactivé; initialiser la variable d'environnement "
+"'_R_USE_PIPEBIND_' à true pour l'activer (%s:%d:%d)"
 
 #: src/main/gram.y:1411
 #, fuzzy, c-format
@@ -4260,7 +4270,7 @@ msgstr "échec d'allocation de l’état de la source de référence"
 #: src/main/gram.y:1756
 #, c-format
 msgid "invalid use of pipe placeholder (%s:%d:%d)"
-msgstr ""
+msgstr "utilisation non valide du pipe dans la substitution (%s:%d:%d)"
 
 #: src/main/gram.y:1765
 #, fuzzy, c-format
@@ -4353,6 +4363,8 @@ msgstr ""
 #, c-format
 msgid "bidi formatting not allowed, use escapes instead (\\u%04x) (%s:%d:%d)"
 msgstr ""
+"le format bidirectionnel n'est pas autorisé, utiliser l'échappement à la "
+"place (\\u%04x) (%s:%d:%d)"
 
 #: src/main/gram.y:2917 src/main/gram.y:2948 src/main/gram.y:2995
 #: src/main/gram.y:3042
@@ -4364,6 +4376,7 @@ msgstr "caractères nul non autorisé (ligne %d)"
 #, c-format
 msgid "\\%o exceeds maximum allowed octal value \\377 (%s:%d:%d)"
 msgstr ""
+"\\%o est supérieur à la valeur octale maximale permise \\377 (%s:%d:%d)"
 
 #: src/main/gram.y:2939
 #, fuzzy, c-format
@@ -4457,6 +4470,8 @@ msgid ""
 "axis(%d, *): range of values (%5.2g) is small wrt |M| = %7.2g --> not "
 "pretty()"
 msgstr ""
+"axis(%d, *): intervalle de valeurs (%5.2g) petit wrt |M| = %7.2g --> pas de "
+"pretty()"
 
 #: src/main/grep.c:155
 #, c-format
@@ -4714,7 +4729,7 @@ msgstr "impossible d’initialiser le compilateur JIT\n"
 
 #: src/main/main.c:1447
 msgid "non-interactive browser() -- left over from debugging?"
-msgstr ""
+msgstr "browser() non interactif -- laisser pour débogage ?"
 
 #: src/main/main.c:1570
 msgid "cannot quit from browser"
@@ -4803,6 +4818,7 @@ msgstr[1] "arguments inutilisés %s"
 #: src/main/memory.c:475 src/main/memory.c:496
 msgid "a limit lower than current usage, so ignored"
 msgstr ""
+"une limite est inférieure à l'utilisation habituelle, elle a donc été ignorée"
 
 #: src/main/memory.c:1398
 msgid "can only weakly reference/finalize reference objects"
@@ -4837,6 +4853,8 @@ msgstr "vecteurs de mémoire épuisés (limite atteinte ?)"
 #, c-format
 msgid "vector memory limit of %0.1f %s reached, see mem.maxVSize()"
 msgstr ""
+"la limite mémoire de %0.1f %s pour un vecteur est atteinte, voir mem."
+"maxVSize()"
 
 #: src/main/memory.c:2186
 #, fuzzy
@@ -4847,6 +4865,7 @@ msgstr "mémoires 'cons' épuisées (limite atteinte ?)"
 #, c-format
 msgid "cons memory limit of %llu nodes reached, see mem.maxNSize()"
 msgstr ""
+"la limite mémoire pour cons de %llu noeuds est atteinte, voir mem.maxNSize()"
 
 #: src/main/memory.c:2195
 #, fuzzy
@@ -5026,6 +5045,7 @@ msgstr "'UseMethod' utilisé d'une manière inappropriée"
 #, c-format
 msgid "illegal class of length 0 when using method for '%s'"
 msgstr ""
+"classe non autorisée de longueur 0 dans l'utilisation de la méthode pour '%s'"
 
 #: src/main/objects.c:616
 #, c-format
@@ -5142,8 +5162,8 @@ msgid ""
 "invalid primitive methods code (\"%s\"): should be \"clear\", \"reset\", "
 "\"set\", or \"suppress\""
 msgstr ""
-"code de méthodes primitives incorrect (\"%s\") : doit être \"clear\", "
-"\"reset\", \"set\", ou \"suppress\""
+"code de méthodes primitives incorrect (\"%s\") : doit être \"clear\", \"reset"
+"\", \"set\", ou \"suppress\""
 
 #: src/main/objects.c:1449
 msgid "invalid object: must be a primitive function"
@@ -5503,6 +5523,8 @@ msgstr ""
 #, c-format
 msgid "using locale code page other than %d%s may cause problems"
 msgstr ""
+"l'utilisation d'une page de code locale différente de %d%s peut causer des "
+"problèmes"
 
 #: src/main/platform.c:2644
 #, c-format
@@ -5702,7 +5724,7 @@ msgstr "l'argument n'est pas un vecteur numérique"
 
 #: src/main/radixsort.c:942
 msgid "Character encoding must be UTF-8, Latin-1 or bytes"
-msgstr ""
+msgstr "L'encodage des caractères doit être UTF-8, Latin-1 ou octets"
 
 #: src/main/radixsort.c:1587 src/main/sort.c:1441
 #, c-format
@@ -5715,7 +5737,7 @@ msgstr "arguments de tailles différentes"
 
 #: src/main/radixsort.c:1594
 msgid "length(decreasing) must match the number of order arguments"
-msgstr ""
+msgstr "length(decreasing) doit correspondre au nombre d'arguments de l'ordre"
 
 #: src/main/radixsort.c:1597
 #, fuzzy
@@ -6482,7 +6504,7 @@ msgstr "connexion en mode binaire nécessaire avec ascii=FALSE"
 
 #: src/main/serialize.c:2656
 msgid "cannot return a promise (PROMSXP) object"
-msgstr ""
+msgstr "impossible de renvoyer un objet promesse (PROMSXP)"
 
 #: src/main/serialize.c:2808 src/main/serialize.c:2845
 #: src/main/serialize.c:2908
@@ -6909,6 +6931,8 @@ msgstr "aucun attribut 'dimnames' pour le tableau"
 #, c-format
 msgid "%d x %d character matrix subscript illegal for NULL dimnames"
 msgstr ""
+"l'indice de la matrice de %d x %d caractères est illegal pour les dimnames "
+"NULL"
 
 #: src/main/subscript.c:538
 #, c-format
@@ -6916,6 +6940,8 @@ msgid ""
 "subscripting by character matrix of %d columns does not match "
 "length(dimnames(x)) == %d"
 msgstr ""
+"l'indiçage par caractères de la matrice de %d colonnes ne vérifie pas "
+"length(dimnames(x)) == %d"
 
 #: src/main/subscript.c:598
 msgid "(subscript) logical subscript too long"
@@ -7678,11 +7704,11 @@ msgstr "affectation mémoire impossible pour la structure X11Routines"
 #: src/modules/internet/internet.c:94
 msgid ""
 "the 'wininet' method of url() is deprecated for http:// and https:// URLs"
-msgstr ""
+msgstr "méthode 'wininet' de url() obsolète pour les URL http:// et https://"
 
 #: src/modules/internet/internet.c:116
 msgid "the 'wininet' method of url() is deprecated for ftp:// URLs"
-msgstr ""
+msgstr "méthode 'wininet' de url() obsolète pour les URL ftp://"
 
 #: src/modules/internet/internet.c:127 src/modules/internet/internet.c:519
 #, c-format
@@ -7722,11 +7748,11 @@ msgstr "impossible d'ouvrir le fichier de destination '%s', à cause de '%s'"
 
 #: src/modules/internet/internet.c:396
 msgid "the 'internal' method for http:// URLs is defunct"
-msgstr ""
+msgstr "méthode 'internal' obsolète pour les URL http://"
 
 #: src/modules/internet/internet.c:404
 msgid "the 'wininet' method is deprecated for http:// and https:// URLs"
-msgstr ""
+msgstr "méthode 'wininet' obsolète pour les URL http:// et https://"
 
 #: src/modules/internet/internet.c:420 src/modules/internet/libcurl.c:772
 #, c-format
@@ -7745,11 +7771,11 @@ msgstr "impossible d'ouvrir l'URL '%s'"
 
 #: src/modules/internet/internet.c:515
 msgid "the 'wininet' method for ftp:// URLs is defunct"
-msgstr ""
+msgstr "méthode 'wininet' obsolète pour les URL ftp://"
 
 #: src/modules/internet/internet.c:517
 msgid "the 'internal' method for ftp:// URLs is defunct"
-msgstr ""
+msgstr "méthode 'internal' obsolète pour les URL ftp://"
 
 #: src/modules/internet/internet.c:570 src/modules/internet/internet.c:584
 #: src/modules/internet/internet.c:676 src/modules/internet/internet.c:685
@@ -8131,7 +8157,7 @@ msgstr "'k' (%.2f) doit être entier, arrondi à %.0f"
 #: src/nmath/dpq.h:126
 #, c-format
 msgid "non-integer x = %f"
-msgstr ""
+msgstr "valeur non entière x = %f"
 
 #: src/nmath/nmath.h:161
 #, c-format
@@ -8168,7 +8194,7 @@ msgstr ""
 #: src/nmath/pbinom.c:37
 #, c-format
 msgid "non-integer n = %f"
-msgstr ""
+msgstr "valeur non entière n = %f"
 
 #: src/nmath/pnbinom.c:82
 #, c-format
@@ -8262,6 +8288,8 @@ msgid ""
 "expanded path length %lld would be too long for\n"
 "%s\n"
 msgstr ""
+"la longueur du chemin développé %lld est trop grande pour\n"
+"%s\n"
 
 #: src/unix/sys-std.c:596
 msgid ""
@@ -8369,7 +8397,7 @@ msgstr "AVIS : interface graphique '%s' inconnue, aucune n'est utilisée\n"
 #: src/unix/system.c:417
 #, c-format
 msgid "path given in -f/--file is too long"
-msgstr ""
+msgstr "chemin trop long dans -f/--file"
 
 #: src/unix/system.c:489
 msgid "creating temporary file for '-e' failed"
