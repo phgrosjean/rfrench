@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: RGui 4.4.0\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2023-11-30 16:47+0100\n"
-"PO-Revision-Date: 2024-04-26 16:41+0200\n"
+"PO-Revision-Date: 2024-04-30 18:20+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
@@ -33,7 +33,7 @@ msgstr "Impossible d'ouvrir le presse-papier"
 
 #: src/gnuwin32/console.c:1977
 msgid "Insufficient memory. Please close the console"
-msgstr "Mémoire insuffisante. Veuillez refermer la console, s'il-vous-plait"
+msgstr "Mémoire insuffisante. Veuillez refermer la console"
 
 #: src/gnuwin32/console.c:2033 src/gnuwin32/console.c:2087
 #: src/gnuwin32/preferences.c:342
@@ -79,13 +79,11 @@ msgstr "  Déplacement du curseur : \n"
 
 #: src/gnuwin32/console.c:2306
 msgid "     Left arrow or Ctrl+B: move backward one character;\n"
-msgstr ""
-"     Flèche gauche ou Ctrl+B : se déplacer d'un caractère vers la gauche ;\n"
+msgstr "     Flèche gauche ou Ctrl+B : reculer d'un caractère ;\n"
 
 #: src/gnuwin32/console.c:2307
 msgid "     Right arrow or Ctrl+F: move forward one character;\n"
-msgstr ""
-"     Flèche droite ou Ctrl+F : se déplacer d'un caractère vers la droite ;\n"
+msgstr "     Flèche droite ou Ctrl+F : avancer d'un caractère ;\n"
 
 #: src/gnuwin32/console.c:2308
 msgid "     Home or Ctrl+A: go to beginning of line;\n"
@@ -116,7 +114,7 @@ msgid ""
 "     Ctrl+Del or Ctrl+K: delete text from current character to end of line.\n"
 msgstr ""
 "     Ctrl+Suppr ou Ctrl+K : effacer le texte du caractère sous le curseur "
-"jusqu'à la fin.\n"
+"jusqu'à la fin de la ligne.\n"
 
 #: src/gnuwin32/console.c:2315
 msgid "     Ctrl+U: delete all text from current line.\n"
@@ -145,8 +143,8 @@ msgid ""
 "     Shift+Ins (or Ctrl+V or Ctrl+Y) to paste the content of the clipboard "
 "(if any)  \n"
 msgstr ""
-"     Shift+Ins (ou Ctrl+V ou Ctrl+Y) pour coller le contenu du presse-"
-"papier  \n"
+"     Shift+Ins (ou Ctrl+V ou Ctrl+Y) pour coller le contenu (éventuel) du "
+"presse-papier  \n"
 
 #: src/gnuwin32/console.c:2320
 msgid "     to the console, Ctrl+X first copy then paste\n"
@@ -270,7 +268,7 @@ msgstr ""
 #: src/gnuwin32/editor.c:681
 msgid "     Press the \"Run line or selection\" icon on the toolbar\n"
 msgstr ""
-"     Enfoncez le bouton \"Exécuter la ligne ou sélection\" de la barre "
+"     Toucher l'icône \"Exécuter la ligne ou la sélection\" de la barre "
 "d'outils\n"
 
 #: src/gnuwin32/editor.c:682
@@ -291,7 +289,7 @@ msgstr "avance d'une ligne.\n"
 #: src/gnuwin32/editor.c:696 src/gnuwin32/editor.c:773
 #: src/gnuwin32/editor.c:831
 msgid "Run line or selection"
-msgstr "Exécuter la ligne ou sélection"
+msgstr "Exécuter la ligne ou la sélection"
 
 #: src/gnuwin32/editor.c:698 src/gnuwin32/editor.c:816
 msgid "Undo"
@@ -428,8 +426,7 @@ msgstr "Erreur à l'ouverture du fichier"
 
 #: src/gnuwin32/pager.c:88 src/gnuwin32/pager.c:106
 msgid "Insufficient memory to display file in internal pager"
-msgstr ""
-"Mémoire insuffisante pour afficher le fichier dans un afficheur interne"
+msgstr "Mémoire insuffisante pour afficher le fichier dans l'afficheur interne"
 
 #: src/gnuwin32/pager.c:187 src/gnuwin32/pager.c:199 src/gnuwin32/pager.c:219
 #: src/gnuwin32/rui.c:306 src/gnuwin32/rui.c:333
@@ -490,7 +487,7 @@ msgstr ""
 "La langue des menus ne peut être changée sur une\n"
 "console en cours d'exécution.\n"
 "\n"
-"Sauvez les préférences et redémarrez Rgui pour les appliquer.\n"
+"Sauvez les préférences et redémarrez Rgui pour les appliquer aux menus.\n"
 
 #: src/gnuwin32/preferences.c:380
 msgid "Changes in pager size will not apply to any open pagers"
@@ -529,7 +526,7 @@ msgstr "Sélectionner un fichier de code à sourcer"
 
 #: src/gnuwin32/rui.c:233
 msgid "Select image to load"
-msgstr "Sélectionner une image d'environnement à charger"
+msgstr "Sélectionner l'image d'un environnement à charger"
 
 #: src/gnuwin32/rui.c:245
 msgid "Save image in"
@@ -549,7 +546,7 @@ msgstr "Pas de texte disponible"
 
 #: src/gnuwin32/rui.c:373
 msgid "Name of data frame or matrix"
-msgstr "Nom du tableau ou de la matrice"
+msgstr "Nom du tableau de données ou de la matrice"
 
 #: src/gnuwin32/rui.c:380
 #, c-format
@@ -611,7 +608,7 @@ msgstr "Choisir le site miroir de CRAN..."
 
 #: src/gnuwin32/rui.c:990
 msgid "Select repositories..."
-msgstr "Choisir les entrepôts..."
+msgstr "Choisir les dépôts..."
 
 #: src/gnuwin32/rui.c:992
 msgid "Install package(s)..."
@@ -667,7 +664,7 @@ msgstr "A propos de Rgui"
 
 #: src/gnuwin32/rui.c:1085 src/extra/graphapp/gmenus.c:52
 msgid "Windows"
-msgstr "Fenètres"
+msgstr "Fenêtres"
 
 #: src/gnuwin32/rui.c:1086 src/extra/graphapp/gmenus.c:53
 msgid "Cascade"
@@ -747,7 +744,7 @@ msgstr "Barre d'outils"
 
 #: src/gnuwin32/rui.c:1246
 msgid "Statusbar"
-msgstr "Barre de statut"
+msgstr "Barre d'état"
 
 #: src/gnuwin32/rui.c:1250
 msgid "Misc"
@@ -767,11 +764,11 @@ msgstr "Interrompre vers le déboggeur"
 
 #: src/gnuwin32/rui.c:1258
 msgid "Word completion"
-msgstr "Complétude de mot"
+msgstr "Complétude du mot"
 
 #: src/gnuwin32/rui.c:1260
 msgid "Filename completion"
-msgstr "Complétude de nom de fichier"
+msgstr "Complétude du nom de fichier"
 
 #: src/gnuwin32/rui.c:1267
 msgid "List objects"
@@ -1097,7 +1094,7 @@ msgstr "La variable ne contient aucun graphique !"
 
 #: src/library/grDevices/src/devWindows.c:1286
 msgid "Name of variable to save to"
-msgstr "Nom de la variable où sauver les graphes"
+msgstr "Nom de la variable pour l'enregistrement"
 
 #: src/library/grDevices/src/devWindows.c:1595
 msgid "Copy to the clipboard as a metafile"
@@ -1230,7 +1227,7 @@ msgstr "Changement de page : attente de confirmation..."
 
 #: src/library/grDevices/src/devWindows.c:3896
 msgid "Click or hit ENTER for next page"
-msgstr "Cliquez ou appuyez ENTREE pour la page suivante"
+msgstr "Cliquez ou appuyez sur ENTREE pour la page suivante"
 
 #~ msgid "Print...\tCTRL+P"
 #~ msgstr "Imprimer...\tCTRL+P"
