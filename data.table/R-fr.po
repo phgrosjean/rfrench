@@ -15,7 +15,7 @@ msgstr ""
 #: AllS4.R:2
 #, c-format
 msgid "data.table package loaded. When developing don't load package"
-msgstr ""
+msgstr "package data.table chargé. En cours de développement ne pas charger le package"
 
 #: IDateTime.R:101
 #, c-format
