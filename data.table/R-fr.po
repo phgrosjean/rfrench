@@ -2,9 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-05-02 11:43+0200\n"
+"PO-Revision-Date: 2024-05-02 16:43+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
-"Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -55,7 +54,7 @@ msgstr ""
 #: IDateTime.R:309
 #, c-format
 msgid "Valid options for ms are 'truncate', 'nearest', and 'ceil'."
-msgstr ""
+msgstr "Les options valides pour ms sont 'truncate', 'nearest', et 'ceil'."
 
 #: as.data.table.R:86
 #, c-format
@@ -84,13 +83,13 @@ msgstr "L'argument 'na.rm' doit être un scalaire, un booléen et ddifférent de
 #: as.data.table.R:94
 #, c-format
 msgid "Please provide either 'key' or 'sorted', but not both."
-msgstr "Utiliser 'key' ou 'sorted' mais pas les deux."
+msgstr "Utiliser 'key' ou 'sorted' mais pas les deux simultanément."
 
 #: as.data.table.R:108
 #, c-format
 msgid ""
 "Argument 'value.name' should not overlap with column names in result: %s"
-msgstr ""
+msgstr "L'argument 'value.name' ne doit pas recouvrir le nom des colonnes dans le résultat : %s"
 
 #: as.data.table.R:140
 #, c-format
@@ -102,12 +101,12 @@ msgstr ""
 #: as.data.table.R:181
 #, c-format
 msgid "Item %d has %d rows but longest item has %d; recycled with remainder."
-msgstr ""
+msgstr "L'élément %d a %d lignes mais l'élément le plus long en a %d; recyclé avec le restant."
 
 #: as.data.table.R:196
 #, c-format
 msgid "A column may not be called .SD. That has special meaning."
-msgstr ""
+msgstr "Une colonne ne peut pas s'appeler .SD. Ceci a une signification particulière."
 
 #: as.data.table.R:210
 #, c-format
@@ -154,12 +153,12 @@ msgstr ""
 #: between.R:49
 #, c-format
 msgid "Some lower>upper for this non-numeric and non-character type"
-msgstr ""
+msgstr "Certains inférieurs sont plus grands que les supérieurs pour ce type non numérique et non caractère."
 
 #: between.R:63
 #, c-format
 msgid "Perhaps you meant %s?"
-msgstr ""
+msgstr "Peut-être vouliez-vous dire %s ?"
 
 #: between.R:64
 #, c-format
@@ -171,7 +170,7 @@ msgstr ""
 #: bmerge.R:48 bmerge.R:49
 #, c-format
 msgid "%s is type %s which is not supported by data.table join"
-msgstr ""
+msgstr "%s est de type %s qui n'est pas pris en charge pour data.table join"
 
 #: bmerge.R:52
 #, c-format
@@ -190,7 +189,7 @@ msgstr ""
 #: bmerge.R:90
 #, c-format
 msgid "Incompatible join types: %s (%s) and %s (%s)"
-msgstr ""
+msgstr "Types incompatibles pour le join : %s (%s) et %s (%s)"
 
 #: bmerge.R:98
 #, c-format
@@ -202,47 +201,47 @@ msgstr ""
 #: bmerge.R:153
 #, c-format
 msgid "roll is not implemented for non-equi joins yet."
-msgstr ""
+msgstr "roll n'est pas encore implémenté avec des join différents."
 
 #: bmerge.R:173
 #, c-format
 msgid "Column name '_nqgrp_' is reserved for non-equi joins."
-msgstr ""
+msgstr "Le nom de colonne '_nqgrp_' est réservé pour les join différents."
 
 #: data.table.R:63
 #, c-format
 msgid "key argument of data.table() must be character"
-msgstr ""
+msgstr "l'argument de la clé de data.table() doit être un caractère"
 
 #: data.table.R:132
 #, c-format
 msgid "Object '%s' not found. Perhaps you intended %s"
-msgstr ""
+msgstr "Objet '%s' non trouvé. Peut-être vous vouliez dire %s"
 
 #: data.table.R:134
 #, c-format
 msgid "Object '%s' not found amongst %s"
-msgstr ""
+msgstr "Objet '%s' non trouvé parmi %s"
 
 #: data.table.R:157
 #, c-format
 msgid "verbose must be logical or integer"
-msgstr ""
+msgstr "verbose est soit un booléen, soit un entier"
 
 #: data.table.R:158
 #, c-format
 msgid "verbose must be length 1 non-NA"
-msgstr ""
+msgstr "verbose doit être de longueur 1 et différent de NA"
 
 #: data.table.R:166
 #, c-format
 msgid "Ignoring by/keyby because 'j' is not supplied"
-msgstr ""
+msgstr "by ou keyby est ignoré car 'j' n'est pas fourni"
 
 #: data.table.R:180
 #, c-format
 msgid "When by and keyby are both provided, keyby must be TRUE or FALSE"
-msgstr ""
+msgstr "Si by et keyby sont fourni simultanément, keyby doit être TRUE ou FALSE"
 
 #: data.table.R:192
 #, c-format
@@ -262,7 +261,7 @@ msgstr ""
 #: data.table.R:209
 #, c-format
 msgid "mult argument can only be 'first', 'last' or 'all'"
-msgstr ""
+msgstr "l'argument mult ne peut valoir que 'first', 'last' ou 'all'"
 
 #: data.table.R:211
 #, c-format
@@ -274,17 +273,17 @@ msgstr ""
 #: data.table.R:213
 #, c-format
 msgid "roll is '%s' (type character). Only valid character value is 'nearest'."
-msgstr ""
+msgstr "roll vaut '%s' (de type caractère). La seule chaîne valide est 'nearest'."
 
 #: data.table.R:218
 #, c-format
 msgid "rollends must be a logical vector"
-msgstr ""
+msgstr "rollends doit être un vecteur de booléens"
 
 #: data.table.R:219
 #, c-format
 msgid "rollends must be length 1 or 2"
-msgstr ""
+msgstr "rollends doit être de longueur 1 ou 2"
 
 #: data.table.R:227
 #, c-format
@@ -292,11 +291,11 @@ msgid ""
 "nomatch= must be either NA or NULL (or 0 for backwards compatibility which "
 "is the same as NULL but please use NULL)"
 msgstr ""
-
+r
 #: data.table.R:230
 #, c-format
 msgid "which= must be a logical vector length 1. Either FALSE, TRUE or NA."
-msgstr ""
+msgstr "which= doit être un vecteur de boléens de longueur 1. Valeur FALSE, TRUE ou NA."
 
 #: data.table.R:231
 #, c-format
@@ -316,7 +315,7 @@ msgstr ""
 #: data.table.R:233
 #, c-format
 msgid "j must be provided when with=FALSE"
-msgstr ""
+msgstr "j doit être fourni quand with=FALSE"
 
 #: data.table.R:273
 #, c-format
@@ -379,7 +378,7 @@ msgstr ""
 #: data.table.R:320
 #, c-format
 msgid "nomatch isn't relevant together with :=, ignoring nomatch"
-msgstr ""
+msgstr "nomatch n'est pas significatif avec with :=, nomatch est ignoré"
 
 #: data.table.R:376
 #, c-format
@@ -401,7 +400,7 @@ msgstr ""
 #: data.table.R:416
 #, c-format
 msgid "'%s' is not found in calling scope and it is not a column name either"
-msgstr ""
+msgstr "'%s' n'existe pas dans le contexte de l'appelant et ce n'est pas non plus un nom de colonne"
 
 #: data.table.R:419
 #, c-format
@@ -441,12 +440,12 @@ msgstr ""
 #: data.table.R:465
 #, c-format
 msgid "Attempting to do natural join but no common columns in provided tables"
-msgstr ""
+msgstr " Aucune colonne commune dans les tables fournies pour réaliser le join naturellement"
 
 #: data.table.R:543
 #, c-format
 msgid "Internal error. Cannot by=.EACHI when joining to an index, yet"
-msgstr ""
+msgstr "Erreur interne. Il n'est pas encore possible d'utiliser by=.EACHI avec join vers un index"
 
 #: data.table.R:546
 #, c-format
