@@ -2,7 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-04-24 11:43+0200\n"
+"PO-Revision-Date: 2024-05-02 11:43+0200\n"
+"Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -27,22 +28,22 @@ msgstr ""
 #: IDateTime.R:107
 #, c-format
 msgid "binary + is not defined for \"IDate\" objects"
-msgstr ""
+msgstr "l'opérateur binaire + n'est pas défini piur les objets \"IDate\""
 
 #: IDateTime.R:114
 #, c-format
 msgid "can only subtract from \"IDate\" objects"
-msgstr ""
+msgstr "seule la soustraction est autorisée sur les objets \"IDate\""
 
 #: IDateTime.R:117
 #, c-format
 msgid "Internal error: storage mode of IDate is somehow no longer integer"
-msgstr ""
+msgstr "Erreur interne : le mode d'enregistrement de IDate n'est plus sous forme d'entiers"
 
 #: IDateTime.R:119
 #, c-format
 msgid "unary - is not defined for \"IDate\" objects"
-msgstr ""
+msgstr "l'opérateur unaire - n'est pas défini sur les objets \"IDate\""
 
 #: IDateTime.R:121
 #, c-format
@@ -73,17 +74,17 @@ msgstr ""
 #: as.data.table.R:90
 #, c-format
 msgid "Argument 'sorted' must be scalar logical and non-NA"
-msgstr ""
+msgstr "L'argument 'sorted' doit être un scalaire, un booléen et différent de NA"
 
 #: as.data.table.R:92
 #, c-format
 msgid "Argument 'na.rm' must be scalar logical and non-NA"
-msgstr ""
+msgstr "L'argument 'na.rm' doit être un scalaire, un booléen et ddifférent de NA"
 
 #: as.data.table.R:94
 #, c-format
 msgid "Please provide either 'key' or 'sorted', but not both."
-msgstr ""
+msgstr "Utiliser 'key' ou 'sorted' mais pas les deux."
 
 #: as.data.table.R:108
 #, c-format
@@ -111,12 +112,12 @@ msgstr ""
 #: as.data.table.R:210
 #, c-format
 msgid "class must be length 1"
-msgstr ""
+msgstr "la classe doit être de longueur 1"
 
 #: between.R:3
 #, c-format
 msgid "between has been passed an argument x of type logical"
-msgstr ""
+msgstr "'between' contient un argument x booléen"
 
 #: between.R:13 between.R:15
 #, c-format
@@ -142,7 +143,7 @@ msgstr ""
 #: between.R:36
 #, c-format
 msgid "trying to use integer64 class when 'bit64' package is not installed"
-msgstr ""
+msgstr "utilisation de la classe integer64 alors que le package 'bit64' n'est pas installé"
 
 #: between.R:48
 #, c-format
