@@ -291,7 +291,7 @@ msgid ""
 "nomatch= must be either NA or NULL (or 0 for backwards compatibility which "
 "is the same as NULL but please use NULL)"
 msgstr ""
-r
+
 #: data.table.R:230
 #, c-format
 msgid "which= must be a logical vector length 1. Either FALSE, TRUE or NA."
@@ -445,22 +445,22 @@ msgstr " Aucune colonne commune dans les tables fournies pour réaliser le join 
 #: data.table.R:543
 #, c-format
 msgid "Internal error. Cannot by=.EACHI when joining to an index, yet"
-msgstr "Erreur interne. Il n'est pas encore possible d'utiliser by=.EACHI avec join vers un index"
+msgstr "Erreur interne. Il n'est pas encore possible d'utiliser by=.EACHI pour un join vers un index"
 
 #: data.table.R:546
 #, c-format
 msgid "Internal error. irows has length in by=.EACHI"
-msgstr ""
+msgstr "Erreur interne. irows a la longueur dans by=.EACHI"
 
 #: data.table.R:597
 #, c-format
 msgid "logical error. i is not a data.table, but 'on' argument is provided."
-msgstr ""
+msgstr "erreur logique. i n'est pas une data.table, mais l'argument 'on' est fourni."
 
 #: data.table.R:601
 #, c-format
 msgid "i has evaluated to type %s. Expecting logical, integer or double."
-msgstr ""
+msgstr "i a pour type %s alors qu'un booléen, un entier ou un double est attendu."
 
 #: data.table.R:605
 #, c-format
@@ -487,7 +487,7 @@ msgstr ""
 #: data.table.R:639
 #, c-format
 msgid "Internal error: notjoin but byjoin or !integer or nomatch==NA"
-msgstr ""
+msgstr "Erreur interne : notjoin mais byjoin ou !integer ou nomatch==NA"
 
 #: data.table.R:699
 #, c-format
@@ -507,22 +507,22 @@ msgstr ""
 #: data.table.R:726
 #, c-format
 msgid "column(s) not removed because not found: %s"
-msgstr ""
+msgstr "colonne(s) non supprimées car il manque : %s"
 
 #: data.table.R:740
 #, c-format
 msgid "column(s) not found: %s"
-msgstr ""
+msgstr "colonnes(s) absente(s) : %s"
 
 #: data.table.R:746
 #, c-format
 msgid "Item %d of j is %d which is outside the column number range [1,ncol=%d]"
-msgstr ""
+msgstr "L'élément %d de j vaut %d qui n'est pas dans l'intervalle des index de colonne [1,ncol=%d]"
 
 #: data.table.R:749
 #, c-format
 msgid "j mixes positives and negatives"
-msgstr ""
+msgstr "j mélange les valeurs positives et négatives"
 
 #: data.table.R:757
 #, c-format
@@ -541,7 +541,7 @@ msgstr ""
 #: data.table.R:795
 #, c-format
 msgid "by=c(...), key(...) or names(...) must evaluate to 'character'"
-msgstr ""
+msgstr "by=c(...), key(...) ou names(...) doivent être des 'character'"
 
 #: data.table.R:805
 #, c-format
@@ -554,12 +554,12 @@ msgstr ""
 
 #: data.table.R:812
 msgid "At least one entry of by is empty"
-msgstr ""
+msgstr "Au moins une valeur de by est vide"
 
 #: data.table.R:853
 #, c-format
 msgid "Internal error: irows isn't integer"
-msgstr ""
+msgstr "Erreur interne : irows n'est pas un entier"
 
 #: data.table.R:887
 #, c-format
@@ -597,12 +597,12 @@ msgstr ""
 #: data.table.R:940
 #, c-format
 msgid "Internal error: drop_dot passed %d items"
-msgstr ""
+msgstr "Erreur interne : drop_dot a passé  %d éléments"
 
 #: data.table.R:959
 #, c-format
 msgid "Item %d of the .() or list() passed to j is missing"
-msgstr ""
+msgstr "L'élément %d de .() ou de list() passé à j est absent"
 
 #: data.table.R:965
 #, c-format
@@ -634,32 +634,32 @@ msgstr ""
 #: data.table.R:1036
 #, c-format
 msgid ".SDcols missing at the following indices: %s"
-msgstr ""
+msgstr ".SDcols est absent aux indices suivants : %s"
 
 #: data.table.R:1038
 #, c-format
 msgid ".SDcols is a logical vector length %d but there are %d columns"
-msgstr ""
+msgstr ".SDcols est la longueur %d d'un vecteur de booléens mais il y a %d colonnes"
 
 #: data.table.R:1044
 #, c-format
 msgid ".SDcols is numeric but has both +ve and -ve indices"
-msgstr ""
+msgstr ".SDcols est numérique mais comporte à la fois des indices +ve et -ve"
 
 #: data.table.R:1046
 #, c-format
 msgid ".SDcols is numeric but out of bounds [1, %d] at: %s"
-msgstr ""
+msgstr ".SDcols est numérique mais hors de l'intervalle [1, %d] à : %s"
 
 #: data.table.R:1050
 #, c-format
 msgid ".SDcols should be column numbers or names"
-msgstr ""
+msgstr ".SDcols doit être des numéros de colonnes ou des noms"
 
 #: data.table.R:1052
 #, c-format
 msgid "Some items of .SDcols are not column names: %s"
-msgstr ""
+msgstr "Certains éléments de .SDcols ne sont pas des noms de colonnnes : %s"
 
 #: data.table.R:1094
 #, c-format
@@ -679,13 +679,13 @@ msgstr ""
 #: data.table.R:1118 data.table.R:1130
 #, c-format
 msgid "In %s(col1=val1, col2=val2, ...) form, all arguments must be named."
-msgstr ""
+msgstr "Dans la forme %s(col1=val1, col2=val2, ...), tous les arguments doivent être nommés."
 
 #: data.table.R:1135
 #, c-format
 msgid ""
 "LHS of := must be a symbol, or an atomic vector (column names or positions)."
-msgstr ""
+msgstr "La partie gauche de := doit être un symbole, ou un vecteur atomique (noms de colonnes ou positions)."
 
 #: data.table.R:1140
 #, c-format
