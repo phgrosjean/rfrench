@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-05-02 16:43+0200\n"
+"PO-Revision-Date: 2024-05-03 18:23+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -685,7 +685,7 @@ msgstr "Dans la forme %s(col1=val1, col2=val2, ...), tous les arguments doivent 
 #, c-format
 msgid ""
 "LHS of := must be a symbol, or an atomic vector (column names or positions)."
-msgstr "La partie gauche de := doit être un symbole, ou un vecteur atomique (noms de colonnes ou positions)."
+msgstr "Le membre gauche de := doit être un symbole, ou un vecteur atomique (noms de colonnes ou positions)."
 
 #: data.table.R:1140
 #, c-format
@@ -724,12 +724,12 @@ msgstr ""
 #: data.table.R:1207
 #, c-format
 msgid "Internal error -- item '%s' not found in names of list"
-msgstr ""
+msgstr "Erreur interne -- élément '%s' non trouvé parmi les noms de la liste"
 
 #: data.table.R:1236 data.table.R:1249
 #, c-format
 msgid "Internal error -- column(s) not found: %s"
-msgstr ""
+msgstr "Erreur interne -- colonne(s) non trouvée(s) :%s"
 
 #: data.table.R:1261
 #, c-format
@@ -750,7 +750,7 @@ msgstr ""
 #: data.table.R:1290
 #, c-format
 msgid "Internal error: xcolAns does not pass checks: %d/%d/%d/%s"
-msgstr ""
+msgstr "Erreur interne : xcolAns ne passe pas les contrôles : %d/%d/%d/%s"
 
 #: data.table.R:1300
 #, c-format
@@ -772,7 +772,7 @@ msgstr ""
 #, c-format
 msgid ""
 "Internal error: j has created a data.table result containing a NULL column"
-msgstr ""
+msgstr "Erreur interne : j a produit un résultat data.table contenant une colonne NULL"
 
 #: data.table.R:1429
 #, c-format
@@ -791,22 +791,22 @@ msgstr ""
 #: data.table.R:1457
 #, c-format
 msgid "logical error. i is not data.table, but mult='all' and 'by'=.EACHI"
-msgstr ""
+msgstr "erreur logique. i n'est pas une data.table, mais mult='all' et 'by'=.EACHI"
 
 #: data.table.R:1480
 #, c-format
 msgid "Internal error: by= is missing"
-msgstr ""
+msgstr "Erreur interne : by= est absent"
 
 #: data.table.R:1521
 #, c-format
 msgid "Internal error: byindex not the index name"
-msgstr ""
+msgstr "Erreur interne : byindex mais non pas par le nom de l'indice"
 
 #: data.table.R:1524
 #, c-format
 msgid "Internal error: byindex not found"
-msgstr ""
+msgstr "Erreur interne : byindex est absent"
 
 #: data.table.R:1797
 #, c-format
@@ -819,7 +819,7 @@ msgstr ""
 #: data.table.R:1834
 #, c-format
 msgid "Internal error: length(irows)!=length(o__)"
-msgstr ""
+msgstr "Erreur interne : length(irows)!=length(o__)"
 
 #: data.table.R:1935
 #, c-format
@@ -833,12 +833,12 @@ msgstr ""
 #: data.table.R:1950
 #, c-format
 msgid "Internal error: jvnames is length %d but ans is %d and bynames is %d"
-msgstr ""
+msgstr "Erreur interne : jvnames a pour longueur %d mais ans vaut %d et bynames vaut %d"
 
 #: data.table.R:2020
 #, c-format
 msgid "rownames and rownames.value cannot both be used at the same time"
-msgstr ""
+msgstr "rownames et rownames.value ne peuvent pas être utilisés simultanément"
 
 #: data.table.R:2025
 #, c-format
@@ -863,7 +863,7 @@ msgstr ""
 #: data.table.R:2043
 #, c-format
 msgid "'%s' is not a column of x"
-msgstr ""
+msgstr "'%s' n'est pas une colonne de x"
 
 #: data.table.R:2049
 #, c-format
@@ -875,7 +875,7 @@ msgstr ""
 #: data.table.R:2054
 #, c-format
 msgid "length(rownames.value)==%d but should be nrow(x)==%d"
-msgstr ""
+msgstr "length(rownames.value)==%d mais devrait être nrow(x)==%d"
 
 #: data.table.R:2116
 #, c-format
@@ -892,17 +892,17 @@ msgstr ""
 #: data.table.R:2162
 #, c-format
 msgid "j must be an atomic vector, see ?is.atomic"
-msgstr ""
+msgstr "j doit être un vecteur atomique, voir ?is.atomic"
 
 #: data.table.R:2163
 #, c-format
 msgid "NA in j"
-msgstr ""
+msgstr "NA trouvé dans j"
 
 #: data.table.R:2169
 #, c-format
 msgid "j must be vector of column name or positions"
-msgstr ""
+msgstr "j doit être un vecteur de noms de colonnes ou de positions"
 
 #: data.table.R:2170
 #, c-format
@@ -922,37 +922,37 @@ msgstr ""
 #: data.table.R:2246
 #, c-format
 msgid "attempting to assign invalid object to dimnames of a data.table"
-msgstr ""
+msgstr "assignation d'un objet non valide à dimnames d'une data.table"
 
 #: data.table.R:2247
 #, c-format
 msgid "data.tables do not have rownames"
-msgstr ""
+msgstr "les data.tables n'ont pas de rownames"
 
 #: data.table.R:2248 data.table.R:2626
 #, c-format
 msgid "Can't assign %d names to a %d-column data.table"
-msgstr ""
+msgstr "Impossible d'assigner %d noms à une data.table de %d colonne(s)"
 
 #: data.table.R:2327
 #, c-format
 msgid "'subset' must evaluate to logical"
-msgstr ""
+msgstr "'subset' doit représenter une valeur booléenne"
 
 #: data.table.R:2370
 #, c-format
 msgid "Argument 'invert' must be logical TRUE/FALSE"
-msgstr ""
+msgstr "L'argument 'invert' doit être un booléen TRUE / FALSE"
 
 #: data.table.R:2411
 #, c-format
 msgid "x argument must be a data.table"
-msgstr ""
+msgstr "l'argument x doit être une data.table"
 
 #: data.table.R:2416
 #, c-format
 msgid "group length is 0 but data nrow > 0"
-msgstr ""
+msgstr "la longueur du groupe est 0 mais pour les données nrow > 0"
 
 #: data.table.R:2418
 #, c-format
@@ -964,22 +964,22 @@ msgstr ""
 #: data.table.R:2422
 #, c-format
 msgid "Either 'by' or 'f' argument must be supplied"
-msgstr ""
+msgstr "fournir un seul argument 'by' ou 'f' mais pas les deux"
 
 #: data.table.R:2424
 #, c-format
 msgid "Column '.ll.tech.split' is reserved for split.data.table processing"
-msgstr ""
+msgstr "'.ll.tech.split' de colonne est réservé au traitement de split.data.table"
 
 #: data.table.R:2425
 #, c-format
 msgid "Column '.nm.tech.split' is reserved for split.data.table processing"
-msgstr ""
+msgstr "'.nm.tech.split' de colonne est réservé au traitement de split.data.table"
 
 #: data.table.R:2426
 #, c-format
 msgid "Argument 'by' must refer to column names in x"
-msgstr ""
+msgstr "L'argument 'by' doit se rapporter aux noms des colonnes dans x"
 
 #: data.table.R:2427
 #, c-format
@@ -998,7 +998,7 @@ msgstr ""
 #: data.table.R:2566
 #, c-format
 msgid "setalloccol attempting to modify `*tmp*`"
-msgstr ""
+msgstr "setalloccol essaie de modifier '*tmp*'"
 
 #: data.table.R:2601
 #, c-format
@@ -1011,32 +1011,32 @@ msgstr ""
 #: data.table.R:2616
 #, c-format
 msgid "x is not a data.table or data.frame"
-msgstr ""
+msgstr "x n'est pas une data.table ni un data.frame"
 
 #: data.table.R:2618
 #, c-format
 msgid "x has %d columns but its names are length %d"
-msgstr ""
+msgstr "x a %d colonnes mais les noms sont de longueur %d"
 
 #: data.table.R:2625
 #, c-format
 msgid "Passed a vector of type '%s'. Needs to be type 'character'."
-msgstr ""
+msgstr "Passage d'un vecteur de type '%s'. Doit être de type 'character'."
 
 #: data.table.R:2638
 #, c-format
 msgid "'new' is not a character vector or a function"
-msgstr ""
+msgstr "'new' n'est pas un vecteur de caractères ni une fonction"
 
 #: data.table.R:2640
 #, c-format
 msgid "NA in 'new' at positions %s"
-msgstr ""
+msgstr "NA est présent dans 'new' aux positions %s"
 
 #: data.table.R:2641
 #, c-format
 msgid "Some duplicates exist in 'old': %s"
-msgstr ""
+msgstr "Présence de certains doublons dans 'old' : %s"
 
 #: data.table.R:2643
 #, c-format
