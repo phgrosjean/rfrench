@@ -1041,17 +1041,17 @@ msgstr "Présence de certains doublons dans 'old' : %s"
 #: data.table.R:2643
 #, c-format
 msgid "'old' is type %s but should be integer, double or character"
-msgstr ""
+msgstr "'old' est de type %s mais doit être un entier, un double ou de type character"
 
 #: data.table.R:2644
 #, c-format
 msgid "'old' is length %d but 'new' is length %d"
-msgstr ""
+msgstr "'old' a pour longueur %d et 'new' a pour longueur %d"
 
 #: data.table.R:2645
 #, c-format
 msgid "NA (or out of bounds) in 'old' at positions %s"
-msgstr ""
+msgstr "NA (ou valeurs hors limites) trouvées dans 'old' aux positions %s"
 
 #: data.table.R:2648
 #, c-format
@@ -1070,7 +1070,7 @@ msgstr ""
 #: data.table.R:2666
 #, c-format
 msgid "Internal error: length(i)!=length(new)"
-msgstr ""
+msgstr "Erreur interne : length(i)!=length(new)"
 
 #: data.table.R:2695
 #, c-format
@@ -1082,17 +1082,17 @@ msgstr ""
 #: data.table.R:2697
 #, c-format
 msgid "Provide either before= or after= but not both"
-msgstr ""
+msgstr "Fournir before= ou after= mais pas les deux simultanément"
 
 #: data.table.R:2699
 #, c-format
 msgid "before=/after= accept a single column name or number, not more than one"
-msgstr ""
+msgstr "before= ou after= n'acceptent qu'un seul nom de colonne ou nombre et pas plus"
 
 #: data.table.R:2754
 #, c-format
 msgid "Input is %s but should be a plain list of items to be stacked"
-msgstr ""
+msgstr "L'entrée est %s mais doit être une liste à plat d'éléments à empiler"
 
 #: data.table.R:2758
 #, c-format
@@ -1104,7 +1104,7 @@ msgstr ""
 #: data.table.R:2763
 #, c-format
 msgid "use.names=NA invalid"
-msgstr ""
+msgstr "use.names=NA non valide"
 
 #: data.table.R:2765
 #, c-format
@@ -1130,22 +1130,22 @@ msgstr ""
 #: data.table.R:2787
 #, c-format
 msgid "rownames contains duplicates"
-msgstr ""
+msgstr "doublons présents dans rownames"
 
 #: data.table.R:2794 data.table.R:2805 data.table.R:2828
 #, c-format
 msgid "rownames incorrect length; expected %d names, got %d"
-msgstr ""
+msgstr "longueur incorrecte de rownames; %d noms attendus, obtenus %d"
 
 #: data.table.R:2813
 #, c-format
 msgid "All elements in argument 'x' to 'setDF' must be of same length"
-msgstr ""
+msgstr "Tous les éléments de l'argument 'x' de 'setDF' doivent avoir la même longueur"
 
 #: data.table.R:2842
 #, c-format
 msgid "Cannot find symbol %s"
-msgstr ""
+msgstr "Symbole %s non trouvé"
 
 #: data.table.R:2849
 #, c-format
@@ -1191,22 +1191,22 @@ msgstr ""
 #: data.table.R:2926
 #, c-format
 msgid "Item '%s' not found in names of input list"
-msgstr ""
+msgstr "Elément '%s' non trouvé parmi les noms de la liste d'entrée"
 
 #: data.table.R:2951 data.table.R:2976
 #, c-format
 msgid "'prefix' must be NULL or a character vector of length 1."
-msgstr ""
+msgstr "'prefix' doit être NULL ou un vecteur de caractères de longueur 1."
 
 #: data.table.R:2954 data.table.R:2979
 #, c-format
 msgid "x is a single vector, non-NULL 'cols' doesn't make sense."
-msgstr ""
+msgstr "x est un vecteur unique, donc 'cols' non NULL n'a pas de sens."
 
 #: data.table.R:2958 data.table.R:2983
 #, c-format
 msgid "x is a list, 'cols' cannot be 0-length."
-msgstr ""
+msgstr "x est une liste, 'cols' ne peut avoir une longueur 0."
 
 #: data.table.R:3092
 #, c-format
@@ -1252,27 +1252,27 @@ msgstr ""
 #: data.table.R:3278
 #, c-format
 msgid "Invalid join operators %s. Only allowed operators are %s."
-msgstr ""
+msgstr "Opérateurs join non valides %s. Les seuls opérateurs autorisés sont %s."
 
 #: devel.R:16
 #, c-format
 msgid "There is no package %s in provided repository."
-msgstr ""
+msgstr "Package %s non trouvé dans le dépôt fourni."
 
 #: duplicated.R:7
 #, c-format
 msgid "'fromLast' must be TRUE or FALSE"
-msgstr ""
+msgstr "'fromLast' doit être TRUE ou FALSE"
 
 #: duplicated.R:105
 #, c-format
 msgid "x must be an atomic vector or data.frames/data.tables"
-msgstr ""
+msgstr "x doit être un vecteur atomique ou des data.frames / data.tables"
 
 #: fcast.R:7
 #, c-format
 msgid "Using '%s' as value column. Use 'value.var' to override"
-msgstr ""
+msgstr "'%s' est utilisé comme colonne de valeurs. Utiliser 'value.var' pour redéfinir"
 
 #: fcast.R:20 fmelt.R:16
 #, c-format
@@ -1304,12 +1304,12 @@ msgstr ""
 #: fcast.R:36
 #, c-format
 msgid "data.table to cast must have unique column names"
-msgstr ""
+msgstr "cast impossible si les noms de colonnes ne sont pas uniques dans la data.table"
 
 #: fcast.R:60
 #, c-format
 msgid "value.var values %s are not found in 'data'."
-msgstr ""
+msgstr "valeurs %s de value.var absentes dans 'data'."
 
 #: fcast.R:76
 #, c-format
@@ -1321,27 +1321,27 @@ msgstr ""
 #: fcast.R:109
 #, c-format
 msgid "'data' must be a data.table."
-msgstr ""
+msgstr "'data' doit être une data.table."
 
 #: fcast.R:111
 #, c-format
 msgid "'drop' must be logical TRUE/FALSE"
-msgstr ""
+msgstr "'drop' doit être un booléen TRUE / FALSE"
 
 #: fcast.R:128
 #, c-format
 msgid "Column [%s] not found or of unknown type."
-msgstr ""
+msgstr "La colonne [%s] est absente ou de type inconnu."
 
 #: fcast.R:143
 #, c-format
 msgid "Columns specified in formula can not be of type list"
-msgstr ""
+msgstr "Les colonnes spécifiées dans la formule ne peuvent pas avoir le type liste"
 
 #: fcast.R:159
 #, c-format
 msgid "Aggregate function missing, defaulting to 'length'"
-msgstr ""
+msgstr "Fonction d'aggrégation absente, repli par défaut sur 'length'"
 
 #: fcast.R:165
 msgid ""
@@ -1355,7 +1355,7 @@ msgstr ""
 #: fcast.R:222
 #, c-format
 msgid "Internal error -- empty rhsnames in dcast; please report"
-msgstr ""
+msgstr "Erreur interne -- rhsnames est vide dans dcast; veuillez rapporter cette anomalie"
 
 #: fmelt.R:17
 #, c-format
@@ -1371,12 +1371,12 @@ msgstr ""
 #: fmelt.R:28
 #, c-format
 msgid "Input patterns must be of type character."
-msgstr ""
+msgstr "Les motifs d'entrée doivent être de type caractère."
 
 #: fmelt.R:32
 #, c-format
 msgid "Pattern(s) not found: [%s]"
-msgstr ""
+msgstr "Motif(s) non trouvé(s) : [%s]"
 
 #: fmelt.R:46
 #, c-format
@@ -1409,32 +1409,32 @@ msgstr ""
 #: fmelt.R:77
 #, c-format
 msgid "multiple.keyword must be a character string with nchar>0"
-msgstr ""
+msgstr "multiple.keyword doit être une chaîne de caractères avec nchar>0"
 
 #: fmelt.R:80
 #, c-format
 msgid "cols must be a character vector of column names"
-msgstr ""
+msgstr "cols doit être un vecteur de caractères de noms de colonnes"
 
 #: fmelt.R:88
 #, c-format
 msgid "in measurev, %s must be named, problems: %s"
-msgstr ""
+msgstr "dans measurev, %s doit avoir un nom, problèmes : %s"
 
 #: fmelt.R:94
 #, c-format
 msgid "%s should be uniquely named, problems: %s"
-msgstr ""
+msgstr "%s doit avoir un nom unique, problèmes : %s"
 
 #: fmelt.R:99
 #, c-format
 msgid "number of %s =%d must be same as %s =%d"
-msgstr ""
+msgstr "le nombre de %s =%d doit être le même que %s =%d"
 
 #: fmelt.R:106
 #, c-format
 msgid "pattern must be character string"
-msgstr ""
+msgstr "le motif doit être une chaîne de caractères"
 
 #: fmelt.R:111
 #, c-format
@@ -1452,7 +1452,7 @@ msgstr ""
 #: fmelt.R:123
 #, c-format
 msgid "sep must be character string"
-msgstr ""
+msgstr "sep doit être une chaîne de caractères"
 
 #: fmelt.R:129
 #, c-format
@@ -1487,7 +1487,7 @@ msgstr ""
 #: fmelt.R:155
 #, c-format
 msgid "%s conversion function returned vector of all NA"
-msgstr ""
+msgstr "la fonction de conversion %s a renvoyé un vecteur complet de NA"
 
 #: fmelt.R:161
 #, c-format
@@ -1505,12 +1505,12 @@ msgstr ""
 #: fmelt.R:170
 #, c-format
 msgid "%s is the only group; fix by creating at least one more group"
-msgstr ""
+msgstr "%s est le seul groupe; corrigez en créant au moins un groupe supplémentaire"
 
 #: fmelt.R:193
 #, c-format
 msgid "'data' must be a data.table"
-msgstr ""
+msgstr "'data' doit être une data.table"
 
 #: fmelt.R:212
 #, c-format
@@ -1522,7 +1522,7 @@ msgstr ""
 #: fmelt.R:215
 #, c-format
 msgid "Please provide a name to each element of 'measure.vars'."
-msgstr ""
+msgstr "Veuillez fournir un nom pour chaque élément de 'measure.vars'."
 
 #: foverlaps.R:3
 #, c-format
@@ -1535,27 +1535,27 @@ msgstr ""
 #: foverlaps.R:9
 #, c-format
 msgid "maxgap must be a non-negative integer value of length 1"
-msgstr ""
+msgstr "maxgap doit être un entier positif ou nul de longueur 1"
 
 #: foverlaps.R:11
 #, c-format
 msgid "minoverlap must be a positive integer value of length 1"
-msgstr ""
+msgstr "minorverlap doit être un entier positif ou nul de longueur 1"
 
 #: foverlaps.R:13
 #, c-format
 msgid "which must be a logical vector of length 1. Either TRUE/FALSE"
-msgstr ""
+msgstr "qui doit être un vecteur de booléens de longueur 1. Soit TRUE ou FALSE"
 
 #: foverlaps.R:15
 #, c-format
 msgid "nomatch must either be NA or NULL"
-msgstr ""
+msgstr "nomatch doit valoir soit NA soit NULL"
 
 #: foverlaps.R:20
 #, c-format
 msgid "maxgap and minoverlap arguments are not yet implemented."
-msgstr ""
+msgstr "les arguments maxgap et minoverlap ne sont pas encore implémentés."
 
 #: foverlaps.R:22
 #, c-format
@@ -1589,12 +1589,12 @@ msgstr ""
 #: foverlaps.R:36
 #, c-format
 msgid "A non-empty vector of column names or numbers is required for by.x"
-msgstr ""
+msgstr "Un vecteur non vide de noms de colonnes ou de nombres est nécessaire pour by.x"
 
 #: foverlaps.R:38
 #, c-format
 msgid "A non-empty vector of column names or numbers is required for by.y"
-msgstr ""
+msgstr "Un vecteur non vide de noms de colonnes ou de nombres est nécessaire pour by.y"
 
 #: foverlaps.R:40
 #, c-format
@@ -1606,7 +1606,7 @@ msgstr ""
 #: foverlaps.R:42
 #, c-format
 msgid "Elements listed in 'by.x' must be valid names in data.table x"
-msgstr ""
+msgstr "Les éléments listés dans 'by.x' doivent être des noms valides de data.table x"
 
 #: foverlaps.R:44
 #, c-format
@@ -1684,17 +1684,17 @@ msgstr ""
 #: foverlaps.R:164 foverlaps.R:166 foverlaps.R:170
 #, c-format
 msgid "Not yet implemented"
-msgstr ""
+msgstr "Non encore implémenté"
 
 #: foverlaps.R:169
 #, c-format
 msgid "maxgap > minoverlap. maxgap will have no effect here."
-msgstr ""
+msgstr "maxgap > minoverlap. maxgap n'a pas de conséquence ici."
 
 #: frank.R:3
 #, c-format
 msgid "length(na.last) = 0"
-msgstr ""
+msgstr "length(na.last) = 0"
 
 #: frank.R:5
 #, c-format
