@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-05-03 18:23+0200\n"
+"PO-Revision-Date: 2024-05-06 17:20+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -1699,17 +1699,17 @@ msgstr "length(na.last) = 0"
 #: frank.R:5
 #, c-format
 msgid "length(na.last) > 1, only the first element will be used"
-msgstr ""
+msgstr "length(na.last) > 1, seul le premier élément sera utilisé"
 
 #: frank.R:17
 #, c-format
 msgid "x is a single vector, non-NULL 'cols' doesn't make sense"
-msgstr ""
+msgstr "x est un vecteur colonne, les 'cols' non NULL n'ont pas de sens"
 
 #: frank.R:23
 #, c-format
 msgid "x is a list, 'cols' can not be 0-length"
-msgstr ""
+msgstr "x est une liste, 'cols' ne peut pas avoir une longueur 0"
 
 #: frank.R:31
 #, c-format
@@ -1728,17 +1728,17 @@ msgstr ""
 #: fread.R:10
 #, c-format
 msgid "Used more than one of the arguments input=, file=, text= and cmd=."
-msgstr ""
+msgstr "Plusieurs occurences d'un des arguments suivants input=, file=, text=, cmd=."
 
 #: fread.R:22
 #, c-format
 msgid "Argument 'encoding' must be 'unknown', 'UTF-8' or 'Latin-1'."
-msgstr ""
+msgstr "L'argument 'encoding' doit être 'unknown', 'UTF-8' ou 'Latin-1'."
 
 #: fread.R:40
 #, c-format
 msgid "'text=' is type %s but must be character."
-msgstr ""
+msgstr "'text=' est de type %s mais doit être character.
 
 #: fread.R:53
 #, c-format
@@ -1785,17 +1785,17 @@ msgstr ""
 #: fread.R:91
 #, c-format
 msgid "File '%s' does not exist or is non-readable. getwd()=='%s'"
-msgstr ""
+msgstr "Fichier '%s' absent ou non accessible en lecture. getwd()=='%s'"
 
 #: fread.R:92
 #, c-format
 msgid "File '%s' is a directory. Not yet implemented."
-msgstr ""
+msgstr "Le fichier '%s' est un répertoire. Pas encore implémenté."
 
 #: fread.R:94
 #, c-format
 msgid "File '%s' has size 0. Returning a NULL %s."
-msgstr ""
+msgstr "Le fichier '%s' a pour taille 0. Renvoi de %s NULL."
 
 #: fread.R:107
 #, c-format
@@ -1828,7 +1828,7 @@ msgstr ""
 #: fread.R:135
 #, c-format
 msgid "colClasses is not type list or character vector"
-msgstr ""
+msgstr "colClasses n'est ni du type liste ni un vecteur de caractères"
 
 #: fread.R:140
 #, c-format
@@ -1840,7 +1840,7 @@ msgstr ""
 #: fread.R:152
 #, c-format
 msgid "na.strings[%d]==\"%s\" consists only of whitespace, ignoring"
-msgstr ""
+msgstr "na.strings[%d]==\"%s\" n'est formé que d'espaces, il est ignoré"
 
 #: fread.R:155
 #, c-format
@@ -1898,7 +1898,7 @@ msgstr ""
 #: fread.R:207
 #, c-format
 msgid "User-supplied 'header' will override that found in metadata."
-msgstr ""
+msgstr "Le 'header' fourni par l'utilisateur redéfinira celui trouvé dans les métadonnées."
 
 #: fread.R:225
 #, c-format
@@ -1920,22 +1920,22 @@ msgstr ""
 #: fread.R:255
 #, c-format
 msgid "User-supplied 'sep' will override that found in metadata."
-msgstr ""
+msgstr "Le 'sep' fourni par l'utilisateur redéfinira celui trouvé dans les métadonnées."
 
 #: fread.R:260
 #, c-format
 msgid "User-supplied 'quote' will override that found in metadata."
-msgstr ""
+msgstr "Le 'quote' fourni par l'utilisateur redéfinira celui trouvé dans les métadonnées."
 
 #: fread.R:265
 #, c-format
 msgid "User-supplied 'dec' will override that found in metadata."
-msgstr ""
+msgstr "Le 'dec' fourni par l'utilisateur redéfinira celui trouvé dans les métadonnées."
 
 #: fread.R:269
 #, c-format
 msgid "User-supplied 'na.strings' will override that found in metadata."
-msgstr ""
+msgstr "Le 'na.strings' fourni par l'utilisateur redéfinira celui trouvé dans les métadonnées."
 
 #: fread.R:317
 #, c-format
@@ -1963,22 +1963,22 @@ msgstr ""
 #: fwrite.R:19
 #, c-format
 msgid "Argument 'encoding' must be '', 'UTF-8' or 'native'."
-msgstr ""
+msgstr "L'argument 'encoding' doit être '', 'UTF-8' ou 'native'."
 
 #: fwrite.R:24
 #, c-format
 msgid "dateTimeAs must be a single string"
-msgstr ""
+msgstr "dateTimeAs doit être une seule chaîne de caractères"
 
 #: fwrite.R:26
 #, c-format
 msgid "dateTimeAs must be 'ISO','squash','epoch' or 'write.csv'"
-msgstr ""
+msgstr "dateTimeAs doit être 'ISO','squash','epoch' ou 'write.csv'"
 
 #: fwrite.R:28
 #, c-format
 msgid "logicalAsInt has been renamed logical01. Use logical01 only, not both."
-msgstr ""
+msgstr "logicalAsInt a été renommé logical01. Utiliser logical01 uniquement, pas les deux."
 
 #: fwrite.R:30
 #, c-format
@@ -1991,7 +1991,7 @@ msgstr ""
 #: fwrite.R:40
 #, c-format
 msgid "x being coerced from class: matrix to data.table"
-msgstr ""
+msgstr "conversion automatique de classe pour x : matrix vers data.table"
 
 #: fwrite.R:79
 #, c-format
@@ -2003,12 +2003,12 @@ msgstr ""
 #: fwrite.R:80
 #, c-format
 msgid "Input has no columns; doing nothing.%s"
-msgstr ""
+msgstr "L'entrée n'a pas de colonne; pas d'action. %s"
 
 #: fwrite.R:83
 #, c-format
 msgid "Input has no columns; creating an empty file at '%s' and exiting."
-msgstr ""
+msgstr "L'entrée n'a pas de colonne; création d'un fichier vide sur %s et sortie."
 
 #: fwrite.R:90
 #, c-format
@@ -2020,7 +2020,7 @@ msgstr ""
 #: groupingsets.R:7 groupingsets.R:25 groupingsets.R:47
 #, c-format
 msgid "Argument 'x' must be a data.table object"
-msgstr ""
+msgstr "L'argument 'x' doit être un objet data.table"
 
 #: groupingsets.R:9 groupingsets.R:27 groupingsets.R:53
 #, c-format
@@ -2031,12 +2031,12 @@ msgstr ""
 #: groupingsets.R:11 groupingsets.R:29 groupingsets.R:59
 #, c-format
 msgid "Argument 'id' must be a logical scalar."
-msgstr ""
+msgstr "L'argument 'id' doit être un scalaire booléen."
 
 #: groupingsets.R:31
 #, c-format
 msgid "Argument 'j' is required"
-msgstr ""
+msgstr "L'argument 'j' est obligatoire"
 
 #: groupingsets.R:49
 #, c-format
@@ -2047,17 +2047,17 @@ msgstr ""
 #: groupingsets.R:51
 #, c-format
 msgid "Input data.table must not contain duplicate column names."
-msgstr ""
+msgstr "L'entrée data.table ne doit pas contenir de noms de colonnes dupliqués."
 
 #: groupingsets.R:55
 #, c-format
 msgid "Argument 'by' must have unique column names for grouping."
-msgstr ""
+msgstr "L'argument 'by' doit avoir des noms de colonnes uniques pour grouper."
 
 #: groupingsets.R:57
 #, c-format
 msgid "Argument 'sets' must be a list of character vectors."
-msgstr ""
+msgstr "L'argument 'sets' doit être une liste de vecteurs de caractères."
 
 #: groupingsets.R:62
 #, c-format
@@ -2126,27 +2126,27 @@ msgstr ""
 #: merge.R:4
 #, c-format
 msgid "Argument 'sort' should be logical TRUE/FALSE"
-msgstr ""
+msgstr "L'argument 'sort' doit être un booléen TRUE ou FALSE"
 
 #: merge.R:6
 #, c-format
 msgid "Argument 'no.dups' should be logical TRUE/FALSE"
-msgstr ""
+msgstr "L'argument 'no.dups' doit être un booléen TRUE ou FALSE"
 
 #: merge.R:18
 #, c-format
 msgid "Neither of the input data.tables to join have columns."
-msgstr ""
+msgstr "Aucune des data.tables d'entrée n'a de colonne pour le join."
 
 #: merge.R:20 merge.R:22
 #, c-format
 msgid "Input data.table '%s' has no columns."
-msgstr ""
+msgstr "La data.table d'entrée '%s' n'a pas de colonne."
 
 #: merge.R:31
 #, c-format
 msgid "`by.x` and `by.y` must be of same length."
-msgstr ""
+msgstr "'by.x' et 'by.y' doivent avoir la même longueur."
 
 #: merge.R:33
 #, c-format
