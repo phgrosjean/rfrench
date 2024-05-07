@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-05-06 17:20+0200\n"
+"PO-Revision-Date: 2024-05-07 12:10+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -2151,47 +2151,47 @@ msgstr "'by.x' et 'by.y' doivent avoir la même longueur."
 #: merge.R:33
 #, c-format
 msgid "Supplied both `by` and `by.x/by.y`. `by` argument will be ignored."
-msgstr ""
+msgstr "Quand 'by' et 'by.x/by.y' sont présents simultanément, l'argument 'by' est ignoré."
 
 #: merge.R:36
 #, c-format
 msgid "A non-empty vector of column names is required for `by.x` and `by.y`."
-msgstr ""
+msgstr "'by.x' et 'by.y' doivent être un vecteur non vide comportant des noms de colonnes."
 
 #: merge.R:38
 #, c-format
 msgid "Elements listed in `by.x` must be valid column names in x."
-msgstr ""
+msgstr "Les éléments listés dans 'by.x' doivent être des noms de colonnes valides de x."
 
 #: merge.R:40
 #, c-format
 msgid "Elements listed in `by.y` must be valid column names in y."
-msgstr ""
+msgstr "Les éléments listés dans 'by.y' doivent être des noms de colonnes valides de y."
 
 #: merge.R:51
 #, c-format
 msgid "A non-empty vector of column names for `by` is required."
-msgstr ""
+msgstr "'by' doit être un vecteur non vide de noms de colonnes."
 
 #: merge.R:53
 #, c-format
 msgid "Elements listed in `by` must be valid column names in x and y"
-msgstr ""
+msgstr "Les éléments listés dans 'by' doivent être des noms de colonnes valides de x et de y"
 
 #: merge.R:61
 #, c-format
 msgid "Unknown argument '%s' has been passed."
-msgstr ""
+msgstr "L'argument '%s' fourni n'est pas connu."
 
 #: merge.R:64
 #, c-format
 msgid "Passed %d unknown and unnamed arguments."
-msgstr ""
+msgstr "Les arguments '%s' fournis sont inconnus et non nommés."
 
 #: merge.R:128
 #, c-format
 msgid "column names %s are duplicated in the result"
-msgstr ""
+msgstr "noms de colonnes en doublon %s dans le résultat"
 
 #: onAttach.R:23
 #, c-format
@@ -2202,16 +2202,16 @@ msgstr ""
 #: onAttach.R:25
 #, c-format
 msgid "data.table %s using %d threads (see ?getDTthreads)."
-msgstr ""
+msgstr "La data.table %s utilise %d threads (voir ?getDTthreads)."
 
 #: onAttach.R:26
 #, c-format
 msgid "Latest news: r-datatable.com"
-msgstr ""
+msgstr "Dernières actualités : r-datatable.com"
 
 #: onAttach.R:27
 msgid "TRANSLATION CHECK"
-msgstr ""
+msgstr "CONTROLE DE TRADUCTION"
 
 #: onAttach.R:28
 #, c-format
@@ -2318,12 +2318,12 @@ msgstr ""
 #: onLoad.R:100
 #, c-format
 msgid "Unexpected base R behaviour: list(x) has copied x"
-msgstr ""
+msgstr "Comportement de base inattendu de R : list(x) a recopié x"
 
 #: onLoad.R:108
 #, c-format
 msgid "Unexpected base R behaviour: names<- has copied column contents"
-msgstr ""
+msgstr "Comportement de base inattendu de R : names<- a recopié le contenu de la colonne"
 
 #: onLoad.R:118
 #, c-format
@@ -2342,37 +2342,37 @@ msgstr ""
 #: onLoad.R:121
 #, c-format
 msgid "Unexpected base R behaviour: DF[2,2]<- has not copied address(DF)"
-msgstr ""
+msgstr "Comportement de base inattendu de R : DF[2,2]<- n'a pas copié address(DF)"
 
 #: openmp-utils.R:3
 #, c-format
 msgid "Provide either threads= or percent= but not both"
-msgstr ""
+msgstr "Utiliser threads= ou percent= mais pas les deux simultanément"
 
 #: openmp-utils.R:4
 #, c-format
 msgid "percent= is provided but is length %d"
-msgstr ""
+msgstr "percent= est fourni mais sa longueur vaut %d"
 
 #: openmp-utils.R:6
 #, c-format
 msgid "percent==%d but should be a number between 2 and 100"
-msgstr ""
+msgstr "percent==%d mais doit être un nombre entre 2 et 100"
 
 #: print.data.table.R:17
 #, c-format
 msgid "Valid options for col.names are 'auto', 'top', and 'none'"
-msgstr ""
+msgstr "Les options valides pour col.names sont 'auto', 'top', ou 'none'"
 
 #: print.data.table.R:19
 #, c-format
 msgid "Valid options for trunc.cols are TRUE and FALSE"
-msgstr ""
+msgstr "Les options valides pour trunc.cols sont TRUE ou FALSE"
 
 #: print.data.table.R:21
 #, c-format
 msgid "Column classes will be suppressed when col.names is 'none'"
-msgstr ""
+msgstr "Les classes des colonnes seront supprimées si col.names devient 'none'"
 
 #: print.data.table.R:146
 #, c-format
@@ -2383,7 +2383,7 @@ msgstr ""
 #: programming.R:14 programming.R:40
 #, c-format
 msgid "'x' must be a list"
-msgstr ""
+msgstr "'x' doit être une liste"
 
 #: programming.R:22
 #, c-format
@@ -2395,32 +2395,32 @@ msgstr ""
 #: programming.R:50
 #, c-format
 msgid "'env' must not be missing"
-msgstr ""
+msgstr "'env' doit être présent"
 
 #: programming.R:56
 #, c-format
 msgid "'env' must be a list or an environment"
-msgstr ""
+msgstr "'env' doit être une liste ou un environnement"
 
 #: programming.R:63
 #, c-format
 msgid "'env' argument does not have names"
-msgstr ""
+msgstr "il manque les noms dans l'argument 'env'"
 
 #: programming.R:65
 #, c-format
 msgid "'env' argument has zero char names"
-msgstr ""
+msgstr "les noms dans l'argument 'env' ont zéro caractère"
 
 #: programming.R:67
 #, c-format
 msgid "'env' argument has NA names"
-msgstr ""
+msgstr "l'argument 'env' comporte des noms à NA"
 
 #: programming.R:69
 #, c-format
 msgid "'env' argument has duplicated names"
-msgstr ""
+msgstr "l'argument 'env' contient des noms dupliqués"
 
 #: setkey.R:3
 #, c-format
@@ -2439,7 +2439,7 @@ msgstr ""
 #: setkey.R:39
 #, c-format
 msgid "x is not a data.table"
-msgstr ""
+msgstr "x n'est pas une data.table"
 
 #: setkey.R:40
 #, c-format
@@ -2465,17 +2465,17 @@ msgstr ""
 #: setkey.R:47
 #, c-format
 msgid "cols is the empty string. Use NULL to remove the key."
-msgstr ""
+msgstr "cols est une chaîne vide. Utiliser NULL pour supprimer la clé."
 
 #: setkey.R:48 setkey.R:277
 #, c-format
 msgid "cols contains some blanks."
-msgstr ""
+msgstr "cols contient certains blancs."
 
 #: setkey.R:51 setkey.R:281
 #, c-format
 msgid "some columns are not in the data.table: %s"
-msgstr ""
+msgstr "certaines colonnes n'appartiennent pas à la data.table: %s"
 
 #: setkey.R:73 setkey.R:282
 #, c-format
@@ -2500,22 +2500,22 @@ msgstr ""
 #: setkey.R:125
 #, c-format
 msgid "Internal error: index '%s' exists but is invalid"
-msgstr ""
+msgstr "Erreur interne : l'index '%s' existe mais il n'est pas valide"
 
 #: setkey.R:157
 #, c-format
 msgid "x is vector but 'by' is supplied"
-msgstr ""
+msgstr "x est un vecteur mais 'by' est fourni"
 
 #: setkey.R:167
 #, c-format
 msgid "x is a single vector, non-NULL 'by' doesn't make sense"
-msgstr ""
+msgstr "x est un vecteur colonne, 'by' non NULL n'a pas de sens"
 
 #: setkey.R:199
 #, c-format
 msgid "Attempting to order a 0-column data.table or data.frame."
-msgstr ""
+msgstr "Tentative de tri d'une data.table ou d'un data.frame qui n'a pas de colonne."
 
 #: setkey.R:204
 #, c-format
@@ -2527,7 +2527,7 @@ msgstr ""
 #: setkey.R:221
 #, c-format
 msgid "Internal code should not be being called on type double"
-msgstr ""
+msgstr "Le code interne ne doit pas être appelé avec un type double"
 
 #: setkey.R:229
 #, c-format
@@ -2553,12 +2553,12 @@ msgstr ""
 #: setkey.R:243 setkey.R:269
 #, c-format
 msgid "x must be a data.frame or data.table"
-msgstr ""
+msgstr "x doit être un data.frame ou une data.table"
 
 #: setkey.R:271
 #, c-format
 msgid "na.last must be logical TRUE/FALSE"
-msgstr ""
+msgstr "na.last doit être un booléen TRUE ou FALSE"
 
 #: setkey.R:272
 #, c-format
