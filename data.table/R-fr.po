@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-05-07 12:10+0200\n"
+"PO-Revision-Date: 2024-05-10 15:10+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -2595,12 +2595,12 @@ msgstr ""
 #: setops.R:3 setops.R:40
 #, c-format
 msgid "x and y must both be data.tables"
-msgstr ""
+msgstr "x et y doivent être tous deux des data.table"
 
 #: setops.R:9
 #, c-format
 msgid "length(by.x) != length(by.y)"
-msgstr ""
+msgstr "length(by.x) != length(by.y)"
 
 #: setops.R:17
 #, c-format
@@ -2627,57 +2627,57 @@ msgstr ""
 #: setops.R:39
 #, c-format
 msgid "argument 'all' should be logical of length one"
-msgstr ""
+msgstr "l'argument 'all' doit être un booléen de longueur un"
 
 #: setops.R:41
 #, c-format
 msgid "x and y must have the same column names"
-msgstr ""
+msgstr "x et y doivent avoir les mêmes noms de colonnes"
 
 #: setops.R:42
 #, c-format
 msgid "x and y must have the same column order"
-msgstr ""
+msgstr "x et y doivent avoir les colonnes dans le même ordre"
 
 #: setops.R:45
 #, c-format
 msgid "unsupported column type(s) found in x or y: %s"
-msgstr ""
+msgstr "type(s) de colonne non reconnu trouvé dans x ou y : %s"
 
 #: setops.R:53
 #, c-format
 msgid "Item %d of x is '%s' but the corresponding item of y is '%s'."
-msgstr ""
+msgstr "L'élément %d de x est '%s' mais l'élément correspondant de y est '%s'."
 
 #: setops.R:55
 #, c-format
 msgid "None of the datasets should contain a column named '.seqn'"
-msgstr ""
+msgstr "Aucun datasets ne doit contenir de colonne nommée '.seqn'"
 
 #: setops.R:146
 #, c-format
 msgid "Internal error: ncol(current)==ncol(target) was checked above"
-msgstr ""
+msgstr "Erreur interne : ncol(current)==ncol(target) a été vérifié ci-dessus"
 
 #: setops.R:159 setops.R:170
 #, c-format
 msgid "Datasets have different %s. 'target': %s. 'current': %s."
-msgstr ""
+msgstr "Les dataset ont différents %s. 'target': %s. 'current': %s."
 
 #: setops.R:161 setops.R:162
 #, c-format
 msgid "has no key"
-msgstr ""
+msgstr "sans clé"
 
 #: setops.R:172 setops.R:173
 #, c-format
 msgid "has no index"
-msgstr ""
+msgstr "sans index"
 
 #: setops.R:190
 #, c-format
 msgid "None of the datasets to compare should contain a column named '.seqn'"
-msgstr ""
+msgstr "Aucun des dataset à comparer ne doit contenir de colonne nommée '.seqn'"
 
 #: setops.R:193
 #, c-format
@@ -2710,25 +2710,25 @@ msgstr ""
 #: setops.R:266
 #, c-format
 msgid "Internal error: factor type mismatch should have been caught earlier"
-msgstr ""
+msgstr "Erreur interne : type factor incohérent; aurait dû être détecté plus tôt"
 
 #: shift.R:3
 msgid "Provided argument fill="
-msgstr ""
+msgstr "Argument fill= fourni"
 
 #: shift.R:3
 msgid "will be ignored since type='shift'."
-msgstr ""
+msgstr "sera ignoré car type='shift'."
 
 #: tables.R:46
 #, c-format
 msgid "order.col='%s' not a column name of info"
-msgstr ""
+msgstr "order.col='%s' n'est pas un nom de colonne de info"
 
 #: test.data.table.R:17
 #, c-format
 msgid "data.table package is loaded. Unload or start a fresh R session."
-msgstr ""
+msgstr "le package data.table est chargé. Déchargez-le ou redémarrez une nouvelle session R."
 
 #: test.data.table.R:33
 #, c-format
@@ -2740,11 +2740,11 @@ msgstr ""
 #: test.data.table.R:63
 #, c-format
 msgid "Neither %s nor %s exist in %s"
-msgstr ""
+msgstr "%s ou %s non trouvés dans %s"
 
 #: test.data.table.R:114
 msgid "object '%s' not found"
-msgstr ""
+msgstr "objet '%s' non trouvé"
 
 #: test.data.table.R:138
 #, c-format
@@ -2756,17 +2756,17 @@ msgstr ""
 #: test.data.table.R:176
 #, c-format
 msgid "Failed in %s after test %s before the next test() call in %s"
-msgstr ""
+msgstr "Echec dans %s après le test %s avant l'appel suivant de test() dans %s"
 
 #: test.data.table.R:186
 #, c-format
 msgid "%d error(s) out of %d. Search %s for test number(s) %s. Duration: %s."
-msgstr ""
+msgstr "%d erreur(s) de %d. Cherche %s pour test(s) numéro %s. Durée : %s."
 
 #: test.data.table.R:199
 #, c-format
 msgid "Timings count mismatch: %d vs %d"
-msgstr ""
+msgstr "Différence dans les délais comptés : %d avec %d"
 
 #: test.data.table.R:312
 #, c-format
@@ -2778,32 +2778,32 @@ msgstr ""
 #: timetaken.R:3
 #, c-format
 msgid "Use started.at=proc.time() not Sys.time() (POSIXt and slow)"
-msgstr ""
+msgstr "Utiliser started.at=proc.time() et non pas Sys.time() (POSIXt et plus lent)"
 
 #: transpose.R:7
 #, c-format
 msgid "make.names='%s' not found in names of input"
-msgstr ""
+msgstr "make.names='%s' non trouvé parmi les noms d'entrée"
 
 #: transpose.R:12
 #, c-format
 msgid "make.names=%d is out of range [1,ncol=%d]"
-msgstr ""
+msgstr "make.names=%d hors limites [1,ncol=%d]"
 
 #: transpose.R:28
 #, c-format
 msgid "'names' must be TRUE/FALSE or a character vector."
-msgstr ""
+msgstr "'names' doit être TRUE ou FALSE ou un vecteur de caractères."
 
 #: transpose.R:34
 #, c-format
-msgid "'keep' should contain integer values between %d and %d."
+msgid "'keep' doit contenir des valeurs entières entre %d and %d."
 msgstr ""
 
 #: transpose.R:51
 #, c-format
 msgid "The argument 'type.convert' does not support empty list."
-msgstr ""
+msgstr "L'argument 'type.convert' n'accepte pas de liste vide."
 
 #: transpose.R:57
 #, c-format
@@ -2851,31 +2851,31 @@ msgstr ""
 #: transpose.R:88
 #, c-format
 msgid "length(names) (= %d) is not equal to length(%s) (= %d)."
-msgstr ""
+msgstr "length(names) (= %d) est différent de length(%s) (= %d)."
 
 #: uniqlist.R:12
 #, c-format
 msgid "l not type list"
-msgstr ""
+msgstr "l n'est pas de type liste"
 
 #: utils.R:18
 #, c-format
 msgid "Argument 'nan' must be length 1"
-msgstr ""
+msgstr "L'argument 'nan' doit être de longueur 1"
 
 #: utils.R:21
 #, c-format
 msgid "Argument 'nan' must be NA or NaN"
-msgstr ""
+msgstr "L'argument 'nan' doit être NA ou NaN"
 
 #: utils.R:32
 msgid "Internal error: use endsWithAny instead of base::endsWith"
-msgstr ""
+msgstr "Erreur interne : utiliser endsWithAny à la place de base::endsWith"
 
 #: utils.R:43 utils.R:52
 #, c-format
 msgid "x not boolean"
-msgstr ""
+msgstr "x n'est pas un booléen"
 
 #: utils.R:63
 #, c-format
@@ -2889,12 +2889,12 @@ msgstr ""
 #: xts.R:3
 #, c-format
 msgid "keep.rownames must be length 1"
-msgstr ""
+msgstr "keep.rownames doit être de longueur 1"
 
 #: xts.R:4
 #, c-format
 msgid "keep.rownames must not be NA"
-msgstr ""
+msgstr "keep.rownames ne doit pas être NA"
 
 #: xts.R:10
 #, c-format
@@ -2915,7 +2915,7 @@ msgstr ""
 #: xts.R:24
 #, c-format
 msgid "Following columns are not numeric and will be omitted: %s"
-msgstr ""
+msgstr "Les colonnes suivantes ne sont pas numériques et seront omises : %s"
 
 #: print.data.table.R:51
 msgid "Index: %s\n"
