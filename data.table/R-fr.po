@@ -2672,7 +2672,7 @@ msgstr "'names' doit être TRUE ou FALSE ou un vecteur de caractères."
 
 #: transpose.R:34
 #, c-format
-msgid "'keep' doit contenir des valeurs entières entre %d and %d."
+msgid "'keep' should contain integer values between %d and %d."
 msgstr "'keep' doit contenir des valeurs entières entre %d et %d."
 
 #: transpose.R:51
