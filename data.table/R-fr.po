@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-05-12 23:22+0200\n"
+"PO-Revision-Date: 2024-05-13 12:47+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -23,6 +23,8 @@ msgid ""
 "Internal error -- difftime objects may not be added to IDate, but Ops dispatch should have intervened to "
 "prevent this"
 msgstr ""
+"Erreur interne -- les objets difftime ne peuvent pas être ajoutés à IDate, mais la distribution Ops aurait "
+"dû empêcher cela"
 
 #: IDateTime.R:107
 #, c-format
@@ -50,6 +52,8 @@ msgid ""
 "Internal error -- difftime objects may not be subtracted from IDate, but Ops dispatch should have "
 "intervened to prevent this"
 msgstr ""
+"Erreur interne -- les objets difftime ne peuvent pas être soustraits de IDate, mais la distribution Ops "
+"aurait dû empêcher cela"
 
 #: IDateTime.R:309
 #, c-format
@@ -257,6 +261,8 @@ msgstr ""
 msgid ""
 "i and j are both missing so ignoring the other arguments. This warning will be upgraded to error in future."
 msgstr ""
+"i et j sont absents donc les autres arguments sont ignorés. Cet avertissement deviendra une erreur à "
+"l'avenir."
 
 #: data.table.R:209
 #, c-format
@@ -268,6 +274,8 @@ msgstr "l'argument mult ne peut valoir que 'first', 'last' ou 'all'"
 msgid ""
 "roll must be a single TRUE, FALSE, positive/negative integer/double including +Inf and -Inf or 'nearest'"
 msgstr ""
+"roll doit être une seule valeur TRUE, FALSE, un entier ou un double, positif ou négatif, +Inf -Inf ou "
+"'nearest' compris"
 
 #: data.table.R:213
 #, c-format
@@ -333,7 +341,7 @@ msgstr ""
 #, c-format
 msgid ""
 "Variable '%s' is not found in calling scope. Looking in calling scope because you used the .. prefix.%s"
-msgstr ""
+msgstr "La variable '%s' n'est pas visible dans le contexte de l'appelant désigné par le préfixe .. .%s"
 
 #: data.table.R:282
 #, c-format
@@ -341,6 +349,8 @@ msgid ""
 "Both '%1$s' and '..%1$s' exist in calling scope. Please remove the '..%1$s' variable in calling scope for "
 "clarity."
 msgstr ""
+"'%1$s' et '..%1$s' sont tous deux visibles dans le contexte de l'appelant. Veuillez supprimer la variable "
+"'..%1$s' de ce contexte pour clarifier."
 
 #: data.table.R:288
 #, c-format
@@ -353,6 +363,8 @@ msgid ""
 "Variable '%s' is not found in calling scope. Looking in calling scope because you set with=FALSE. Also, "
 "please use .. symbol prefix and remove with=FALSE."
 msgstr ""
+"La variable '%s' n'est pas visible dans le contexte de l'appelant désigné par with=FALSE. Utilisez alors "
+"le préfixe de symbole .. et supprimez with=FALSE."
 
 #: data.table.R:298
 #, c-format
@@ -391,11 +403,15 @@ msgid ""
 "Most often, this happens when forgetting the first comma (e.g. DT[newvar := 5] instead of DT[ , new_var := "
 "5]). Please double-check the syntax. Run traceback(), and debugger() to get a line number."
 msgstr ""
+"L'opérateur := est présent dans i, le premier argument de DT[...], mais n'est valide que dans le second "
+"argument, j. Le plus souvent, cela se produit lorsqu'on oublie la première virgule (par exemple, "
+"DT[newvar := 5] au lieu de DT[ , new_var := 5]). Veuillez vérifier la syntaxe. Exécuter traceback(), et "
+"debugger() pour obtenir un numéro de ligne."
 
 #: data.table.R:416
 #, c-format
 msgid "'%s' is not found in calling scope and it is not a column name either"
-msgstr "'%s' n'existe pas dans le contexte de l'appelant et ce n'est pas non plus un nom de colonne"
+msgstr "'%s' n'est pas visible dans le contexte de l'appelant et ce n'est pas non plus un nom de colonne"
 
 #: data.table.R:419
 #, c-format
@@ -404,10 +420,10 @@ msgid ""
 "column contains TRUE, or perhaps that column contains row numbers of itself to select, try DT[(col)], DT[DT"
 "$col], or DT[col==TRUE} is particularly clear and is optimized"
 msgstr ""
-"'%s' non trouvé sans le contexte de l'appelant, mais c'est une colonne de type %s. Si vous souhaitez "
-"sélectionner des lignes pour lesquelles cette colonne vaut TRUE, ou peut-être que cette colonne contient "
-"ses propres numéros de lignes à sélectionner, essayez DT[(col)], DT[DT$col], or DT[col==TRUE} qui est "
-"particulièrement clair et optimisé"
+"'%s' n'est pas visible dans le contexte de l'appelant, mais c'est une colonne de type %s. Si vous "
+"souhaitez sélectionner des lignes pour lesquelles cette colonne vaut TRUE, ou peut-être que cette colonne "
+"contient ses propres numéros de lignes à sélectionner, essayez DT[(col)], DT[DT$col], or DT[col==TRUE} qui "
+"est particulièrement clair et optimisé"
 
 #: data.table.R:422
 #, c-format
@@ -425,6 +441,9 @@ msgid ""
 "the spirit of A[B] in FAQ 2.14). Please report to data.table issue tracker if you'd like this, or add your "
 "comments to FR #657."
 msgstr ""
+"i est un type non valide (matrice). Peut-être qu'à l'avenir, une matrice à 2 colonnes pourrait renvoyer "
+"une liste d'éléments de DT (dans l'esprit de A[B] dans la FAQ 2.14). Veuillez rapporter ce problème au "
+"suivi de data.table si vous le souhaitez, ou ajouter vos commentaires à FR #657."
 
 #: data.table.R:457
 #, c-format
@@ -434,6 +453,11 @@ msgid ""
 "column names between x and i (i.e., a natural join). Keyed joins might have further speed benefits on very "
 "large data due to x being sorted in RAM."
 msgstr ""
+"Lorsque i est une data.table (ou un vecteur de caractères), les colonnes à joindre doivent être spécifiées "
+"à l'aide de l'argument 'on=' (voir ?data.table), par l'attribution d'une clé à x (c'est-à-dire trié, et, "
+"marqué comme trié, voir ?setkey), ou en partageant les noms des colonnes entre x et i (c'est-à-dire, une "
+"jointure naturelle). Les jointures avec clé peuvent avoir des avantages supplémentaires en termes de "
+"rapidité sur des données très volumineuses, car x est trié en mémoire vive."
 
 #: data.table.R:465
 #, c-format
@@ -474,6 +498,9 @@ msgid ""
 "allowed as it hides more bugs than is worth the rare convenience. Explicitly use rep(...,length=.N) if you "
 "really need to recycle."
 msgstr ""
+"i représente un vecteur logique de longueur %d mais il y a %d lignes. Le recyclage du vecteur logique i "
+"n'est plus autorisé car il cache plus de bogues qu'il n'en vaut la peine. Utiliser explicitement rep(...,"
+"length=.N) si vous avez vraiment besoin de recycler."
 
 #: data.table.R:626
 msgid "Please use nomatch=NULL instead of nomatch=0; see news item 5 in v1.12.0 (Jan 2019)"
@@ -492,6 +519,10 @@ msgid ""
 "parentheses; e.g., DT[,(myVar):=sum(b),by=a] to assign to column name(s) held in variable myVar. See ?':=' "
 "for other examples. As warned in 2014, this is now a warning."
 msgstr ""
+"with=FALSE avec := a été supprimé dans la version 1.9.4 publiée en octobre 2014. Veuillez entourer le "
+"membre gauche de := avec des parenthèses ; par exemple, DT[,(monVar):=sum(b),by=a] pour affecter le(s) "
+"nom(s) de colonne(s) contenu(s) dans la variable monVar. Voir ?':=' pour d'autres exemples. Comme annoncé "
+"en 2014, il s'agit maintenant d'un avertissement."
 
 #: data.table.R:702
 #, c-format
@@ -583,6 +614,11 @@ msgid ""
 "workaround, consider converting the column to a supported type, e.g. by=sapply(list_col, toString), whilst "
 "taking care to maintain distinctness in the process."
 msgstr ""
+"La colonne ou l'expression %d de 'by' ou 'keyby' est de type \"%s\" qui n'est pas pris en charge "
+"actuellement. Si vous avez un cas d'utilisation convaincant, veuillez l'ajouter sur https://github.com/"
+"Rdatatable/data.table/issues/1597. Comme solution de contournement, envisagez de convertir la colonne en "
+"un type pris en charge, par exemple by=sapply(list_col, toString), tout en veillant à maintenir la "
+"distinction dans le processus."
 
 #: data.table.R:906
 #, c-format
@@ -617,6 +653,12 @@ msgid ""
 "explicitly provide missing defaults for each branch in all cases; or (3) use the same name for each branch "
 "and re-name it in a follow-up call."
 msgstr ""
+"Différentes branches de l'expression j ont produit différentes colonnes auto-nommées : %s ; en utilisant "
+"les derniers noms connus. Si cela était intentionnel (par exemple, vous savez qu'une seule branche sera "
+"utilisée dans une requête donnée parce que la branche est contrôlée par un argument de fonction), veuillez "
+"(1) retirer cette branche de l'appel ; (2) fournir explicitement les valeurs par défaut manquantes pour "
+"chaque branche dans tous les cas ; ou (3) utiliser le même nom pour chaque branche et la renommer dans un "
+"appel de suivi."
 
 #: data.table.R:1030
 #, c-format
@@ -625,6 +667,9 @@ msgid ""
 "missing boolean scalar signalling inclusion/exclusion of the column. However, these conditions were not "
 "met for: %s"
 msgstr ""
+"Quand .SDcols est une fonction, elle est appliquée à chaque colonne ; la sortie de cette fonction doit "
+"être un scalaire booléen présent indiquant l'inclusion ou l'exclusion de la colonne. Néanmoins ces "
+"conditions ne sont pas satisfaite pour : %s"
 
 #: data.table.R:1036
 #, c-format
@@ -741,6 +786,8 @@ msgid ""
 "Variable '%s' is not found in calling scope. Looking in calling scope because this symbol was prefixed "
 "with .. in the j= parameter."
 msgstr ""
+"La variable '%s' n'est pas visible dans le contexte de l'appelant désigné par le préfixe .. du symbole "
+"dans le paramètre j= ."
 
 #: data.table.R:1290
 #, c-format
@@ -773,6 +820,8 @@ msgid ""
 "The column '.N' can't be grouped because it conflicts with the special .N variable. Try setnames(DT,'."
 "N','N') first."
 msgstr ""
+"La colonne '.N' ne peut pas être groupée car elle est en conflit avec la variable spéciale .N variable. "
+"Essayer d'abord setnames(DT,'.N','N') ."
 
 #: data.table.R:1430
 #, c-format
@@ -850,6 +899,8 @@ msgstr "length(rownames)==0 mais doit être un nom de vecteur colonne, ou un nom
 #, c-format
 msgid "rownames is TRUE but key has multiple columns %s; taking first column x[,1] as rownames"
 msgstr ""
+"rownames vaut TRUE mais la clé a plusieurs colonnes %s; seule la première colonne x[,1] est utilisée pour "
+"le nom des lignes"
 
 #: data.table.R:2043
 #, c-format
@@ -874,7 +925,7 @@ msgstr "Erreur interne : as.matrix.data.table length(X)==%d mais une dimension e
 #: data.table.R:2152
 #, c-format
 msgid "When i is a matrix in DT[i]<-value syntax, it doesn't make sense to provide j"
-msgstr ""
+msgstr "Si i est une matrice, dans la syntaxe DT[i]<-valeur , fournir j n'a pas de sens"
 
 #: data.table.R:2162
 #, c-format
@@ -1305,6 +1356,8 @@ msgid ""
 "When 'fun.aggregate' and 'value.var' are both lists, 'value.var' must be either of length =1 or "
 "=length(fun.aggregate)."
 msgstr ""
+"Si 'fun.aggregate' et 'value.var' sont tous deux des listes, 'value.var' doit avoir une longueur =1 ou "
+"=length(fun.aggregate)."
 
 #: fcast.R:109
 #, c-format
@@ -1787,6 +1840,8 @@ msgid ""
 "To read gz and bz2 files directly, fread() requires 'R.utils' package which cannot be found. Please "
 "install 'R.utils' using 'install.packages('R.utils')'."
 msgstr ""
+"Pour lire directement les fichiers gz et bz2 fread() a besoin du package 'R.utils' qui n'a pas été trouvé. "
+"Veuillez installer 'R.utils' via 'install.packages('R.utils')'."
 
 #: fread.R:129
 #, c-format
@@ -2086,6 +2141,8 @@ msgid ""
 "There exists duplicated column names in the results, ensure the column passed/evaluated in `j` and those "
 "in `by` are not overlapping."
 msgstr ""
+"Le résultat comporte des doublons parmi les noms de colonnes, vérifier que les colonnes passées ou "
+"évaluées dans 'j' et celles du 'by' ne se recouvrent pas."
 
 #: groupingsets.R:92
 #, c-format
@@ -2671,6 +2728,8 @@ msgstr "Aucun des dataset à comparer ne doit contenir de colonne nommée '.seqn
 #, c-format
 msgid "Datasets to compare with 'ignore.row.order' must not have unsupported column types: %s"
 msgstr ""
+"Les datasets à comparer avec 'ignore.row.order' ne doivent pas avoir de types de colonnes non supportés : "
+"%s"
 
 #: setops.R:195
 #, c-format
@@ -2720,6 +2779,8 @@ msgstr "le package data.table est chargé. Déchargez-le ou redémarrez une nouv
 #, c-format
 msgid "script must end with '.Rraw'. If a file ending '.Rraw.bz2' exists, that will be found and used."
 msgstr ""
+"le script doit se terminer par '.Rraw'. Si un fichier se terminant par '.Rraw.bz2' existe, il sera trouvé "
+"et utilisé."
 
 #: test.data.table.R:63
 #, c-format
