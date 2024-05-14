@@ -18,13 +18,13 @@ backslash : caractère barre oblique inversée
 binary operator : opérateur binaire
 bind : lien (binding : lier)
 bitmap : bitmap
-boxplot : boite à dispersion
+boxplot : boîte à dispersion
 breaks : limites de classes (histogrammes, plus parlant que simplement 'limites')
 browser : explorateur
 bytecode : pseudo-code (code a octets est officiel mais peu utilisé)
-cached value : valeur cachée en mémoire
+cached value : valeur de la mémoire cache
 call : appel
-callback : rappel (callback)
+callback : rappel (procédure de, callback)
 case insensitive matching : correspondance indépendante de la casse
 channel : canal
 character : caractère (sans h)
@@ -37,15 +37,17 @@ connection : connexion
 console : console
 database : base de données
 dataframe : tableau de données, mais on précise (data frame) si nécessaire
+dataset : ????
 deparse : reconstruction de code (deparse)
 deprecated : obsolète
 device : périphérique
 dispatch: dispatcheur
-download: téléchargement
+download: téléchargement client <- serveur 
 driver : pilote
 encoding : encodage
 environment : environnement (voir aussi workspace)
 factor : variable facteur ou facteur
+fallback : repli (ex: procédure de repli)
 fifo : fifo (préférable à... peps, peu connu)
 filename : nom de fichier
 file stream : corps du fichier
@@ -60,7 +62,7 @@ history : historique des commandes
 image : image d'environnement (fichier image où les objets R sont sauvés)
 implemented : implémenté
 index : indice (presque toujours, et non index)
-interrupt handler : traitement de l'interruption
+interrupt handler : gestionnaire d'interruptions
 invalid : incorrect (à préférer à 'non valide')
 IO : E/S
 kriging : krigeage
@@ -70,6 +72,7 @@ layout : mise en page
 lazy loading : chargement partiel (explicit loading : chargement complet)
 leading minor : mineur dominant
 length : longueur (réserver taille pour size)
+LHS : membre gauche (d'une expression, d'une égalité...)
 library : bibliothèque
 locale : environnement linguistique
 locator : mode de localisation à la souris (pour les graphes)
@@ -92,11 +95,12 @@ outlier : valeur extrême
 overflow : débordement au dépassement de capacité par le haut
 package : package (non traduit cf. significations pour paquet ou paquetage)
 pager : afficheur
-pair list : liste appariée
-parse : analyse de code (to parse : analyser le code)
-path : chemin d'accès
+pair list : liste appairée
+parse : analyse syntaxique du code (to parse : analyser le code)
+parser : analyseur syntaxique
+path : chemin d'accès (d'un fichier...)
 pattern : motif
-pipe : conduite
+pipe : conduite, caractère barre verticale '|'
 pixmap : pixmap (format de fichier image)
 platform : architecture
 polyline : ligne brisée
@@ -109,25 +113,27 @@ push back : repoussage
 quote symbol : symbole de chaîne de caractères (et non de citation)
 raw : raw, si c'est le type de données, sinon brut
 range : plage, étendue ou intervalle, selon le contexte
-redraw : retraçage (des affichages)
+redraw : retraçage (des affichages), rafraichissement
+regex : expression régulière
 regular expression : expression régulière
 report: (to report : signaler)
-repository : entrepôt
+repository : entrepôt, dépôt
 restore : restaurer
-return : retour ou renvoi selon le contexte
+return : retourner (abcd -> dcba) ou renvoyer (d'une fonction) selon le contexte
+RHS : membre droit (d'une expression, d'une égalité...)
 RNG : RNG ou générateur de nombres pseudo-aléatoires
 routine : sous-programme ou procédure
 search path : chemin de recherche
-seed : valeurs d'initialisation
+seed : valeurs d'initialisation d'un processus (ex: génération des nombres aléatoires)
 seek : mode d'accès aléatoire
 self-starting function : fonction auto-initialisée
 sequence : suite (selon contexte) ou séquence
 shingke : latte (dans lattice)
 sink : sortie par défaut
 size : taille
-slash : caractère barre oblique
+slash : caractère barre oblique droite '/' (opposé à antislash barre oblique gauche '\')
 slot : slot (sous partie d'un objet S4, terme spécifique de S)
-snapshot : instantané graphique
+snapshot : instantané graphique, capture d'écran
 socket : connecteur logiciel (ou socket -usage courant- dans les longs messages)
 source : source (to source : sourcer, préférable à entrée par défaut)
 specified : fourni (voir choisi ou donné, selon le contexte)
@@ -139,7 +145,7 @@ table : tableau de contingence
 tag : marque
 thermometer : jauge (contexte de graphes)
 thread :  contexte (threaded code : code contextuel)
-timeout : délais maximal
+timeout : délai maximal
 timer : horloge ou temporisation, selon le contexte
 timezone : fuseau horaire
 top level : niveau le plus haut
@@ -151,6 +157,7 @@ unary operator : opérateur unaire
 unbind : délier
 underflow : dépassement de capacité par le bas
 unmatched : déparié
+upload: téléversement client -> serveur 
 url : URL
 viewport : vue
 vignette : vignette
