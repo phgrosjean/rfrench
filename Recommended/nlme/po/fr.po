@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: nlme 3.1-65\n"
+"Project-Id-Version: nlme 3.1-164\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-13 09:56+0100\n"
-"PO-Revision-Date: 2021-02-06 16:27+0100\n"
+"POT-Creation-Date: 2021-02-12 09:19+0000\n"
+"PO-Revision-Date: 2024-05-16 16:42+0200\n"
 "Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: corStruct.c:423
 msgid "All parameters must be less than 1 in absolute value"
@@ -34,38 +34,48 @@ msgstr "Classes de corrélation spatiale inconnues"
 msgid "First observation on an individual must have a dose"
 msgstr "La première observation sur un individu doit avoir une dose"
 
-#: nlmefit.c:420
+#: nlmefit.c:424
 #, c-format
 msgid "Singularity in backsolve at level %ld, block %ld"
 msgstr "Singularité rencontrée en résolution inverse au niveau %ld, bloc %ld"
 
-#: nlmefit.c:460
+#: nlmefit.c:464
 #, c-format
-msgid "Too many parameters for finite-difference Hessian; npar = %d, nTot = %g."
-msgstr "Trop de paramètres pour un Hessien de différences finies : par = %d, not = %g."
+msgid ""
+"Too many parameters for finite-difference Hessian; npar = %d, nTot = %g."
+msgstr ""
+"Trop de paramètres pour un Hessien de différences finies : par = %d, not = "
+"%g."
 
-#: nlmefit.c:571 nlmefit.c:752
+#: nlmefit.c:575 nlmefit.c:756
 msgid "Overfitted model!"
 msgstr "Modèle surajusté !"
 
-#: nlmefit.c:597
+#: nlmefit.c:601
 msgid "analytic gradient is not available with matrix logarithm"
-msgstr "un gradient analytique n'est pas disponible avec une matrice logarithmique"
+msgstr ""
+"un gradient analytique n'est pas disponible avec une matrice logarithmique"
 
-#: nlmefit.c:620
+#: nlmefit.c:624
 msgid "analytic gradient is not available with compound symmetry"
 msgstr "un gradient analytique n'est pas disponible avec une symétrie composée"
 
-#: nlmefit.c:913
+#: nlmefit.c:917
 #, c-format
 msgid "Unable to form eigenvalue-eigenvector decomposition [RS(.) ierr = %d]"
-msgstr "Incapable de former la décomposition valeurs propres - vecteurs propres [RS(.) ierr = %d]"
+msgstr ""
+"Incapable de former la décomposition valeurs propres - vecteurs propres "
+"[RS(.) ierr = %d]"
 
-#: nlmefit.c:945
+#: nlmefit.c:949
 #, c-format
-msgid "Unable to form Cholesky decomposition: the leading minor of order %d is not pos.def."
-msgstr "Incapable de former la décomposition de Cholesky : le premier mineur d’ordre %d n’est pas pos.def."
+msgid ""
+"Unable to form Cholesky decomposition: the leading minor of order %d is not "
+"pos.def."
+msgstr ""
+"Incapable de former la décomposition de Cholesky : le premier mineur d’ordre "
+"%d n’est pas pos.def."
 
-#: nlmefit.c:977
+#: nlmefit.c:981
 msgid "Haven't written the compound symmetry case for this yet"
 msgstr "Les cas de symétrie composée n'ont pas encore été écrits"

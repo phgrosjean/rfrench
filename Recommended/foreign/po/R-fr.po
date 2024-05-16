@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: foreign 0.8-10\n"
+"Project-Id-Version: foreign 0.8-86\n"
 "Report-Msgid-Bugs-To: bugs@r-project.org\n"
-"POT-Creation-Date: 2020-04-26 10:14\n"
-"PO-Revision-Date: 2021-04-12 18:52+0200\n"
+"POT-Creation-Date: 2021-02-12 09:19\n"
+"PO-Revision-Date: 2024-05-16 16:26+0200\n"
 "Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 
 msgid "only one file"
 msgstr "seulement un fichier"
@@ -34,7 +34,7 @@ msgid "S mode %s (near byte offset %s) not supported"
 msgstr "Mode S %s (dans les environs du décalage d'octet %s) non supporté"
 
 msgid "Argument 'file' must be a character string or connection."
-msgstr "L’argument 'file' doit être une chaîne de caractères ou une connexion."
+msgstr "L’argument 'file' doit être une chaîne de caractères ou une connexion"
 
 msgid "Invalid attribute specification."
 msgstr "Spécification d'attribut incorrect."
@@ -58,7 +58,7 @@ msgid "cannot handle matrix/array columns"
 msgstr "impossible de traiter les colonnes de la matrice/du tableau"
 
 msgid "character column %d will be truncated to %d bytes"
-msgstr "la colonne de chaînes de caractères %d sera tronquée à %d octets"
+msgstr "la colonne de chaîne de caractères %d sera tronquée à %d octets"
 
 msgid "unknown column type in data frame"
 msgstr "type inconnu pour une colonne dans le tableau de données"
@@ -73,16 +73,18 @@ msgid "cannot handle unknown type %s"
 msgstr "impossible de traiter un type inconnu %s"
 
 msgid "'missing.type' only applicable to version >= 8 files"
-msgstr "'missing.type' est seulement applicable aux fichiers des versions >= 8"
+msgstr "'missing.type' est seulement applicable pour des fichiers version >= 8"
 
 msgid "cannot read factor labels from Stata 5 files"
-msgstr "impossible de lire les étiquettes des variables facteur depuis les fichiers Stata 5"
+msgstr ""
+"impossible de lire les étiquettes des variables facteur depuis les fichiers "
+"Stata 5"
 
 msgid "value labels (%s) for %s are missing"
 msgstr "valeurs de libellé (%s) manquantes pour %s"
 
 msgid "The object \"dataframe\" must have class data.frame"
-msgstr "L'objet \"dataframe\" doit être de classe data.frame"
+msgstr "L'objet \""
 
 msgid "Version must be 6-12"
 msgstr "La version doit être 6-12"
@@ -91,19 +93,21 @@ msgid "Version must be 6-12: using 7"
 msgstr "La version doit être 6-12 : la version 7 est utilisée"
 
 msgid "cannot uniquely abbreviate variable names"
-msgstr "impossible d'abbréger de manière unique les noms des variables"
+msgstr "impossible d'abbréger de manière unique les noms de variables"
 
 msgid "abbreviating variable names"
 msgstr "abbréviation des noms de variables"
 
 msgid "cannot handle multicolumn columns"
-msgstr "impossible de traiter les colonnes de type 'multicolumn'"
+msgstr "impossible de traiter des colonnes de type 'multicolumn'"
 
 msgid "argument 'file' must be a character string or connection"
 msgstr "l'argument 'file' doit être une chaîne de caractères ou une connexion"
 
 msgid "file has zero or fewer variables: probably not an EpiInfo file"
-msgstr "le fichier aurait zéro variables ou moins : ce n'est probablement pas un fichier EpiInfo"
+msgstr ""
+"le fichier aurait zéro variables ou moins : ce n'est probablement pas un "
+"fichier EpiInfo"
 
 msgid "no records in file"
 msgstr "aucun enregistrement dans le fichier"
@@ -112,7 +116,7 @@ msgid "wrong number of records"
 msgstr "nombre d'enregistrements incorrect"
 
 msgid "sectionname %s not found"
-msgstr "section %s non trouvée"
+msgstr "nom de section %s non trouvée"
 
 msgid "SAS return code was %d"
 msgstr "Le code renvoyé par SAS est %d"
@@ -133,36 +137,45 @@ msgid "added in variable:"
 msgstr "ajouté dans la variable :"
 
 msgid "Duplicated levels in factor"
-msgstr "Niveaux dupliqués dans le facteur"
+msgstr "Niveaux dupliqués dans la variable qualitative"
 
 msgid ":"
 msgstr ":"
 
 msgid "I cannot abbreviate the variable names to 'maxchars' or fewer chars"
-msgstr "Impossible d'abbréger les noms de variables sur au plus 'maxchars' caractères"
+msgstr ""
+"Impossible d'abbréger les noms de variables à 'maxchars' lettres au maximum"
 
 msgid "some variable names were abbreviated"
-msgstr "quelques noms de variables ont été abbrégés"
+msgstr "quelques noms de variables ont été abbrégées"
 
 msgid "Cannot uniquely abbreviate the variable names to %d or fewer characters"
-msgstr "Impossible d'abbréger de manière unique les noms de variables sur %d caractères ou moins"
+msgstr ""
+"Impossible d'abbréger de manière unique les noms de variables vers %d ou "
+"moins de caractères"
 
 msgid "Cannot uniquely abbreviate format names to conform to"
-msgstr "Impossible d'abbréger de manière unique les noms de format pour se conformer à"
+msgstr ""
+"Impossible d'abbréger de manière unique les noms de format pour se conformer "
+"à"
 
 msgid "eight-character limit and not ending in a digit"
-msgstr "limite de 8 caractères et sans se terminer par un chiffre"
+msgstr "limite de 8 caractères et sans terminer par un chiffre"
 
 msgid "Some variable names were abbreviated or otherwise altered."
-msgstr "Quelques noms de variables on été abbrégés ou autrement altérés."
+msgstr "Quelques noms de variables on été abbrégées ou altérées."
 
 msgid "data frame contains columns of unsupported class %s"
 msgid_plural "data frame contains columns of unsupported classes %s"
-msgstr[0] "le tableau de données contient des colonnes de classe non supportée %s"
-msgstr[1] "le tableau de données contient des colonnes de classes non supportées %s"
+msgstr[0] ""
+"le tableau de données contient des colonnes de classe non supportée %s"
+msgstr[1] ""
+"le tableau de données contient des colonnes de classes non supportées %s"
 
 #~ msgid "Cannot handle character variables longer than 255"
-#~ msgstr "Les chaînes de caractères plus longues que 255 ne sont pas prises en compte"
+#~ msgstr ""
+#~ "Les chaînes de caractères plus longues que 255 ne sont pas prises en "
+#~ "compte"
 
 #~ msgid "S mode"
 #~ msgstr "mode S"
