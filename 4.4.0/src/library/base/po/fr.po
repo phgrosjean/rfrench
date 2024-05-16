@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: R-4.4.0\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2024-04-15 18:09-0700\n"
-"PO-Revision-Date: 2024-05-01 00:41+0200\n"
+"PO-Revision-Date: 2024-05-16 15:44+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 "X-Poedit-Bookmarks: 1298,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 #: src/appl/optim.c:60
@@ -2946,8 +2946,8 @@ msgstr "pas de périphérique actif ou par défaut"
 #: src/main/devices.c:176
 msgid "no active device and default getOption(\"device\") is invalid"
 msgstr ""
-"aucun périphérique graphique actif et la valeur par défaut getOption(\"device"
-"\") est incorrecte"
+"aucun périphérique graphique actif et la valeur par défaut "
+"getOption(\"device\") est incorrecte"
 
 #: src/main/devices.c:390 src/main/devices.c:452
 msgid "too many open devices"
@@ -3001,8 +3001,8 @@ msgstr "\"%s\" non disponible pour %s() pour le package\"%s\""
 #, c-format
 msgid "%s symbol name \"%s\" not in DLL for package \"%s\""
 msgstr ""
-"le nom %s de symbole \"%s\" est introuvable dans la DLL pour le package \"%s"
-"\""
+"le nom %s de symbole \"%s\" est introuvable dans la DLL pour le package "
+"\"%s\""
 
 #: src/main/dotcode.c:317
 #, c-format
@@ -4153,7 +4153,7 @@ msgstr "temporisation de profilage en utilisation"
 
 #: src/main/eval.c:9294
 msgid "already byte code profiling"
-msgstr "déjà en train de profiler le bytecode "
+msgstr "déjà en train de profiler le bytecode"
 
 #: src/main/eval.c:9314
 msgid "setting profile timer failed"
@@ -5870,7 +5870,7 @@ msgstr "erreur de lecture"
 
 #: src/main/saveload.c:337
 msgid "a I read error occurred"
-msgstr "I erreur de lecture"
+msgstr "erreur de lecture I"
 
 #: src/main/saveload.c:347
 msgid "a R read error occurred"
