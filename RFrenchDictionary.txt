@@ -68,6 +68,7 @@ IO : E/S
 kriging : krigeage
 label : étiquette
 lag : décalage
+l : en général longueur; compléter avec 'taille' ex: "....différent de la taille l de l'objet DT..."
 layout : mise en page
 lazy loading : chargement partiel (explicit loading : chargement complet)
 leading minor : mineur dominant
@@ -148,6 +149,7 @@ thread :  contexte (threaded code : code contextuel)
 timeout : délai maximal
 timer : horloge ou temporisation, selon le contexte
 timezone : fuseau horaire
+tl : en général taille préallouée ; compléter avec le texte ex: "...différent de la taille préallouée tl de l'objet DT..."
 top level : niveau le plus haut
 traceback : historique des fonctions appelées ('traceback')
 trimmed mean : moyenne tronquée
