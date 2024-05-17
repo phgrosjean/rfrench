@@ -22,7 +22,7 @@ This proposal is submitted to answer to a call for translations of the {data.tab
 
 -   Vincent Rocher \<vincent.rocher\@inrae.fr\>, post-doc MIAT unit, INRAE Toulouse. Data scientist in bioinformatics, has been using R since 2014 and data.table since 2020 to process genomic data.
 
--   Elise Maigné, elise.maigne\@inrae.fr, INRAE, Toulouse. Engineer in biostatistics, using R since 2009 and data.table since 2017.
+-   Elise Maigné, \<elise.maigne\@inrae.fr\>, INRAE, Toulouse. Engineer in biostatistics, using R since 2009 and data.table since 2017.
 
 -   Vincent Runge, \<vincent.runge\@univ-evry.fr\>, assistant Professor in statistics, Evry University, using R since 2012.
 
@@ -48,6 +48,6 @@ Christian: one award asked for my FR activity considered being at full time and 
 
 Vincent: one award asked to compensate for the time this activity will take from my research. The translation will be carried out on messages, vignettes, and cheatsheets under the direction of Philippe Grosjean. I'm very interested to participate in the translation of data.table to help the French community use the R language and to promote its use in the data science community.
 
-Elise: one award asked to compensate for the time this activity will take from my research.
+Elise: one award asked to compensate for the time this activity will take from my research. I use the package on a dayly basis and I am glad to participate in its translation into French, hoping that it will help make it better known and used by the French community.
 
 Vincent R: one award asked to compensate for the time this activity will take from my research. I believe it is important to provide high-quality resources in languages other than English. That is why I joined the team.
