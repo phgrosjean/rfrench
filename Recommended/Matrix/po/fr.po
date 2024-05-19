@@ -33,7 +33,7 @@ msgstr "le slot j ne contient pas de valeurs croissantes au sein d'une colonne"
 #: Csparse.c:57
 #, c-format
 msgid "'%s' is empty or not square"
-msgstr ""
+msgstr "'%s' est vide ou n'est pas carrée"
 
 #: Csparse.c:59 Csparse.c:81 Csparse.c:104 solve.c:43 solve.c:988
 #, fuzzy, c-format
@@ -49,7 +49,7 @@ msgstr ""
 #: Csparse.c:106
 #, c-format
 msgid "%s(%s, %s) requires m-by-n '%s' with n >= m > 0"
-msgstr ""
+msgstr "%s(%s, %s) nécessite m-by-n '%s' avec n >= m > 0"
 
 #: Csparse.c:194 coerce.c:220 coerce.c:240 coerce.c:250 coerce.c:905
 #: coerce.c:911 coerce.c:1015 coerce.c:1501 coerce.c:1521 coerce.c:1531
@@ -77,15 +77,15 @@ msgstr "argument '%s' incorrect"
 #: attrib.c:233
 #, c-format
 msgid "attempt to set factor on %s without '%s' slot"
-msgstr ""
+msgstr "application de facteur sur %s mais l'emplacement '%s' n'est pas défini"
 
 #: bind.c:46 bind.c:153
 msgid "number of rows of matrices must match"
-msgstr ""
+msgstr "le nombre de lignes des matrices doit correspondre"
 
 #: bind.c:48 bind.c:155
 msgid "number of columns of matrices must match"
-msgstr ""
+msgstr "le nombre de colonnes des matrices doit correspondre"
 
 #: bind.c:51 bind.c:158 bind.c:182 bind.c:206 cholmod-common.c:608
 #: cholmod-common.c:759 cholmod-common.c:874 cholmod-common.c:975
@@ -95,20 +95,20 @@ msgstr ""
 #: matmult.c:28 matmult.c:50 matmult.c:56
 #, c-format
 msgid "dimensions cannot exceed %s"
-msgstr ""
+msgstr "les dimensions ne peuvent pas dépasser %s"
 
 #: bind.c:210
 msgid "number of rows of result is not a multiple of vector length"
-msgstr ""
+msgstr "le nombre de lignes du résultat n'est pas un multiple de la taille du vecteur"
 
 #: bind.c:212
 msgid "number of columns of result is not a multiple of vector length"
-msgstr ""
+msgstr "le nombre de colonnes du résultat n'est pas un multiple de la taille du vecteur"
 
 #: bind.c:626 bind.c:691 sparse.c:913 sparse.c:994
 #, c-format
 msgid "%s cannot exceed %s"
-msgstr ""
+msgstr "%s ne peut dépasser %s"
 
 #: bind.c:756 bind.c:853 cholmod-common.c:978 cholmod-etc.c:333 coerce.c:29
 #: coerce.c:518 coerce.c:811 coerce.c:945 coerce.c:2772 coerce.c:3041
