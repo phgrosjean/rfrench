@@ -31,7 +31,7 @@ msgid "not implemented for uncorrelated errors"
 msgstr "pas implémenté pour des erreurs non corrélées"
 
 msgid "not implemented for correlation structures without a grouping factor"
-msgstr ""
+msgstr "non implémenté pour les structures de corrélation sans facteur de groupement"
 
 msgid "do not know how to calculate correlation matrix of %s object"
 msgstr "incapable de calculer la matrice de corrélation de l'objet %s"
@@ -127,7 +127,7 @@ msgid "parameter in AR(1) structure must be between -1 and 1"
 msgstr "le paramètre dans la structure AR(1) doit se situer entre - 1 et 1"
 
 msgid "'sumLenSq' = %g is too large (larger than maximal integer)"
-msgstr ""
+msgstr "'sumLenSq' = %g est trop grand (supérieur au plus grand entier)"
 
 msgid "cannot change the length of the parameter of a \"corAR1\" object"
 msgstr "impossible de changer la longueur des paramètres d'un objet \"corAR1\""
@@ -342,7 +342,7 @@ msgstr ""
 "le premier argument de 'nmGroupedData' doit être une formule à deux membres"
 
 msgid "single group not supported -- use groupedData()"
-msgstr ""
+msgstr "groupe seul non pris en charge -- utiliser groupedData()"
 
 msgid "'subset' ignored with single grouping factor"
 msgstr ""
@@ -382,7 +382,7 @@ msgstr ""
 "'asTable' ne peut être utilisé qu'avec des objets 'groupedData' balancés"
 
 msgid "%d errors caught in %s.  The error messages and their frequencies are"
-msgstr ""
+msgstr "%d erreurs survenues dans %s.  Les messages d'erreur avec leur fréquence sont"
 
 #, fuzzy
 msgid "'data' argument not used, but taken from groupedData object"
@@ -763,16 +763,16 @@ msgstr ""
 "niveau %s"
 
 msgid "Iteration %d, LME step: nlminb() did not converge (code = %d)."
-msgstr ""
+msgstr "Itération %d, étape LME : nlminb() n'a pas convergé (code = %d)."
 
 msgid "Do increase 'msMaxIter'!"
-msgstr ""
+msgstr "N'augmentez-pas 'msMaxIter'!"
 
 msgid "PORT message:"
-msgstr ""
+msgstr "message PORT :"
 
 msgid "Iteration %d, LME step: nlm() did not converge (code = %d)."
-msgstr ""
+msgstr "Itération %d, étape LME : nlm() n'a pas convergé (code = %d)."
 
 #, fuzzy
 msgid "maximum number of iterations (maxIter = %d) reached without convergence"
@@ -1257,22 +1257,22 @@ msgstr ""
 "initialisés"
 
 msgid "Package"
-msgstr ""
+msgstr "Package"
 
 msgid "installed with old R version"
-msgstr ""
+msgstr "installé avec une ancienne version de R"
 
 msgid "should not be used with R version"
-msgstr ""
+msgstr "ne doit pas être utilisé avec la version de R"
 
 msgid "Rather re-install it with this version of R."
-msgstr ""
+msgstr "Il est préférable de le réinstaller avec cette version de R."
 
 msgid "deviance undefined for REML fit"
-msgstr ""
+msgstr "la déviance n'est pas définie pour la méthode REML"
 
 msgid "AIC undefined for REML fit"
-msgstr ""
+msgstr "AIC n'est pas défini pour la méthode REML"
 
 msgid ""
 "not (yet) implemented.  Contributions are welcome; use intervals() instead "
