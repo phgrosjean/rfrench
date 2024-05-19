@@ -40,6 +40,7 @@ dataframe : tableau de données, mais on précise (data frame) si nécessaire
 dataset : ????
 deparse : reconstruction de code (deparse)
 deprecated : obsolète
+deviance : déviance (en statistique)
 device : périphérique
 dispatch: dispatcheur
 download: téléchargement client <- serveur 
