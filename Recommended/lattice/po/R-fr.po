@@ -47,7 +47,7 @@ msgid ","
 msgstr ","
 
 msgid "'formula' must be a formula object"
-msgstr "'formula' doit être un objet de formule"
+msgstr "'formula' doit être un objet formule"
 
 msgid "explicit 'data' specification ignored"
 msgstr "spécification explicite de 'data' ignorée"
@@ -119,13 +119,13 @@ msgid "invalid value for layout"
 msgstr "valeur incorrecte pour 'layout'"
 
 msgid "More pages in layout than seem to be necessary."
-msgstr "La mise en page contient plus de pages qu'il ne semble nécessaire."
+msgstr "La mise en page contient plus de pages qu'il semble nécessaire."
 
 msgid "Density"
 msgstr "Densité"
 
 msgid "Can't have log Y-scale"
-msgstr "L'axe Y ne peut avoir une échelle logarithmique"
+msgstr "L'axe Y ne peut pas avoir une échelle logarithmique"
 
 msgid "type='%s' can be misleading in this context"
 msgstr "type='%s' peut être ambigü dans ce contexte"
