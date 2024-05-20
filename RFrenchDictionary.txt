@@ -32,9 +32,11 @@ closure : fermeture (closure)
 coerce : convertir automatiquement
 coercion : conversion automatique
 collation : collation
+collapsing level : niveau de fusion
 colortype : colorimétrie
 connection : connexion
 console : console
+covariate : covariables
 database : base de données
 dataframe : tableau de données, mais on précise (data frame) si nécessaire
 dataset : ????
@@ -56,6 +58,7 @@ fit : ajustement ou ajuster
 flush : vider ou vidage
 formula : formule de modèle ou formule tout court
 frame : cadre ou trame selon le contexte
+GiB : giga octets (pour les tailles)
 handler : manipulateur de données (voir aussi interrupt handler)
 hashing : hachage
 Hessian : Hessien
@@ -120,6 +123,7 @@ regex : expression régulière
 regular expression : expression régulière
 report: (to report : signaler)
 repository : entrepôt, dépôt
+residuals : résidus
 restore : restaurer
 return : retourner (abcd -> dcba) ou renvoyer (d'une fonction) selon le contexte
 RHS : membre droit (d'une expression, d'une égalité...)
@@ -133,6 +137,7 @@ sequence : suite (selon contexte) ou séquence
 shingke : latte (dans lattice)
 sink : sortie par défaut
 size : taille
+skew-symmetric : matrice anti-symétrique
 slash : caractère barre oblique droite '/' (opposé à antislash barre oblique gauche '\')
 slot : slot (sous partie d'un objet S4, terme spécifique de S)
 snapshot : instantané graphique, capture d'écran
