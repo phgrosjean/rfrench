@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-05-21 21:45+0200\n"
+"PO-Revision-Date: 2024-05-21 21:46+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -2714,12 +2714,12 @@ msgstr "Les jeux de données ont différents %s. 'target': %s. 'current': %s."
 #: setops.R:161 setops.R:162
 #, c-format
 msgid "has no key"
-msgstr "N’a pas de clé"
+msgstr "n’a pas de clé"
 
 #: setops.R:172 setops.R:173
 #, c-format
 msgid "has no index"
-msgstr "N’a pas d’index"
+msgstr "n’a pas d’index"
 
 #: setops.R:190
 #, c-format
