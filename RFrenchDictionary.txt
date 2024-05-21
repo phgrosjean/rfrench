@@ -145,9 +145,10 @@ socket : connecteur logiciel (ou socket -usage courant- dans les longs messages)
 source : source (to source : sourcer, préférable à entrée par défaut)
 specified : fourni (voir choisi ou donné, selon le contexte)
 stack : pile
-standard deviation : écart type
+standard deviation : écart-type
 subscript : indice
 subset : sous-ensemble (subsetting : indiçage, ou réalisation d'un sous-ensemble)
+supernode : super-noeud
 table : tableau de contingence
 tag : marque
 thermometer : jauge (contexte de graphes)
