@@ -36,7 +36,7 @@ msgstr "'%s' est vide ou n'est pas carrée"
 #: Csparse.c:59 Csparse.c:81 Csparse.c:104 solve.c:43 solve.c:988
 #, c-format
 msgid "dimensions of '%s' and '%s' are inconsistent"
-msgstr "les dimensions de '%s' et '%s' sont incohérentes"
+msgstr "les dimensions de '%s' et de '%s' sont incohérentes"
 
 #: Csparse.c:83
 #, c-format
@@ -122,7 +122,7 @@ msgstr "ne doit jamais arriver ..."
 #: validity.c:1742
 #, c-format
 msgid "'%s' slot is not of type \"%s\""
-msgstr "le slot '%s' n'est pas du type  \"%s\""
+msgstr "le slot '%s' n'est pas du type \"%s\""
 
 #: cholmod-common.c:14 validity.c:274 validity.c:285 validity.c:301 validity.c:352 validity.c:487
 #: validity.c:928 validity.c:961 validity.c:1063 validity.c:1131 validity.c:1179 validity.c:1244
@@ -136,7 +136,7 @@ msgstr "le slot '%s' doit avoir pour longueur %s"
 #: validity.c:1656
 #, c-format
 msgid "first element of '%s' slot is not 0"
-msgstr "le premier élément du slot '%s'  n'est pas 0"
+msgstr "le premier élément du slot '%s' n'est pas 0"
 
 #: cholmod-common.c:23 cholmod-common.c:46 validity.c:34 validity.c:308 validity.c:326
 #: validity.c:359 validity.c:377 validity.c:413 validity.c:415 validity.c:491 validity.c:1008
@@ -207,7 +207,7 @@ msgstr "le 'leading principal minor' d'ordre %d n'est pas positif"
 #: cholmod-common.c:623 cholmod-etc.c:198
 #, c-format
 msgid "leading principal minor of order %d is zero"
-msgstr "le 'leading principal minor' d'ordre %d est zéro"
+msgstr "le 'leading principal minor' d'ordre %d vaut zéro"
 
 #: cholmod-common.c:973 cholmod-etc.c:328
 msgid "leading dimension not equal to number of rows"
@@ -238,7 +238,7 @@ msgstr "tentative pour construire %s non carrée"
 #: coerce.c:186 coerce.c:476 coerce.c:1467 coerce.c:1622
 #, c-format
 msgid "second argument of '%s' does not specify a subclass of %s"
-msgstr "le second argument de '%s' ne représente pas une sous-classe de %s"
+msgstr "le second argument de '%s' n'identifie pas une sous-classe de %s"
 
 #: coerce.c:194 coerce.c:200 coerce.c:484 coerce.c:490 coerce.c:925 coerce.c:1475 coerce.c:1481
 #: coerce.c:1630 coerce.c:1636 coerce.c:2275 coerce.c:3344 coerce.c:3349
@@ -251,7 +251,7 @@ msgstr "'%s' doit être \"%s\" ou \"%s\""
 #: sparse.c:3141 sparse.c:3146 sparse.c:3151 sparse.c:3427 sparse.c:3664
 #, c-format
 msgid "'%s' must be %s or %s"
-msgstr "'%s' doit valoir  %s ou %s"
+msgstr "'%s' doit valoir %s ou %s"
 
 #: coerce.c:266 coerce.c:274 coerce.c:285 coerce.c:1549 coerce.c:1557 coerce.c:1568
 msgid "nonempty vector supplied for empty matrix"
@@ -270,12 +270,12 @@ msgstr "la longueur de la matrice (%d * %d) n'est pas un multiple de la longueur
 #: coerce.c:521
 #, c-format
 msgid "coercing n-by-n %s to %s is not supported for n*n exceeding %s"
-msgstr "la conversion forcée n-by-n %s en %s n'est pas prise en charge pour n*n dépasse %s"
+msgstr "la conversion forcée n-by-n %s en %s n'est pas prise en charge pour n*n et dépasse %s"
 
 #: coerce.c:525 coerce.c:815 coerce.c:949
 #, c-format
 msgid "sparse->dense coercion: allocating vector of size %0.1f GiB"
-msgstr "sparse->dense coercion : allocation d'un vecteur de taille %0.1f GiB"
+msgstr "sparse->dense coercion : allocation d'un vecteur de taille %0.1f giga octets"
 
 #: coerce.c:1196 coerce.c:1941 coerce.c:2948 coerce.c:2954
 #, c-format
@@ -322,7 +322,7 @@ msgstr "la diagonale de remplacement a une longueur incorrecte"
 
 #: dense.c:622 sparse.c:1275
 msgid "attempt to symmetrize a non-square matrix"
-msgstr "tentative pour obtenir le symétrique d'une matrice qui n'est pas carrée"
+msgstr "tentative pour obtenir la symétrique d'une matrice non carrée"
 
 #: dense.c:721 sparse.c:1653
 msgid "attempt to get symmetric part of non-square matrix"
@@ -601,7 +601,7 @@ msgstr "tentative pour construire %s avec plus de %s éléments différents de z
 #: subscript.c:1542 subscript.c:1695 subscript.c:1938 subscript.c:2122
 #, c-format
 msgid "%s too dense for %s; would have more than %s nonzero entries"
-msgstr "%s est trop dense pour %s; plus de %s entrées sont différentes de zero"
+msgstr "%s est trop dense pour %s; plus de %s entrées sont différentes de zéro"
 
 #: subscript.c:2209
 #, c-format
@@ -625,12 +625,12 @@ msgstr "x[] <- val: val est converti automatiquement en valeurs logiques pour \"
 #, c-format
 msgid "x[] <- val: val should be integer or logical, is coerced to integer, for \"%s\" x"
 msgstr ""
-"x[] <- val: val devrait être des entiers ou des valeurs booléennes, il est converti "
+"x[] <- val: val doit être des entiers ou des valeurs booléennes, il est converti "
 "automatiquement en entiers pour \"%s\" x"
 
 #: t_subassign.c:198
 msgid "programming error in Csparse_subassign() should never happen"
-msgstr "erreur de programmation dans Csparse_subassign() qui ne devrait jamais se produire"
+msgstr "erreur de programmation dans Csparse_subassign() ; ne doit jamais se produire"
 
 #: utils-R.c:30 utils-R.c:116
 #, c-format
@@ -716,7 +716,7 @@ msgstr "le slot '%s' doit avoir pour longueur %d"
 #: validity.c:36 validity.c:932 validity.c:965
 #, c-format
 msgid "'%s' slot has negative elements"
-msgstr "le slot '%s' comporte des éléments négatifs"
+msgstr "le slot '%s' contient des éléments négatifs"
 
 #: validity.c:50 validity.c:164
 #, c-format
@@ -727,7 +727,7 @@ msgstr "le slot '%s' n’est pas une liste"
 #, c-format
 #| msgid "Dimnames[%d] is not a character vector"
 msgid "%s[[%d]] is not NULL or a vector"
-msgstr "%s[[%d]] est non nul ni un vecteur"
+msgstr "%s[[%d]] n'est ni nul ni un vecteur"
 
 #: validity.c:71
 #, c-format
@@ -753,7 +753,7 @@ msgstr "%s[1] est différent de %s[2]"
 #: validity.c:234 validity.c:253 validity.c:262 validity.c:444
 #, c-format
 msgid "'%s' slot is not \"%s\" or \"%s\""
-msgstr "le slot '%s' n’est pas \"%s\" ni \"%s\""
+msgstr "le slot '%s' n’est ni \"%s\" ni \"%s\""
 
 #: validity.c:331 validity.c:1580
 #, c-format
@@ -774,7 +774,7 @@ msgstr "les slots '%s' et '%s'  doivent avoir la même longueur"
 #: validity.c:409
 #, c-format
 msgid "'%s' slot has nonzero length but %s is 0"
-msgstr "le slot '%s' a une longueur non nulle mais  %s vaut 0"
+msgstr "le slot '%s' a une longueur non nulle mais %s vaut 0"
 
 #: validity.c:450 validity.c:454
 #, c-format
@@ -883,7 +883,7 @@ msgstr "le slot '%s' est triangulaire dans la partie inférieure (et non supéri
 #: validity.c:1133 validity.c:1246 validity.c:1337 validity.c:1386
 #, c-format
 msgid "'%s' slot does not have length %s or length %s"
-msgstr "le slot '%s' doit avoir pour longueur  %s ou %s"
+msgstr "le slot '%s' doit avoir pour longueur %s ou %s"
 
 #: validity.c:1173
 msgid "matrix has more columns than rows"
@@ -902,7 +902,7 @@ msgstr "le slot '%s' a plus de %s lignes"
 #: validity.c:1197 validity.c:1219
 #, c-format
 msgid "'%s' slot does not have %s columns"
-msgstr "le slot '%s' doit avoir  %s colonnes"
+msgstr "le slot '%s' doit avoir %s colonnes"
 
 #: validity.c:1204
 #, c-format
@@ -1034,12 +1034,12 @@ msgstr "%s[%d] (%s) n'est pas inférieur à %s"
 #: validity.c:1629
 #, c-format
 msgid "'%s' slot has length less than %d"
-msgstr "le slot '%s' a une longueur inférieure à  %d"
+msgstr "le slot '%s' a une longueur inférieure à %d"
 
 #: validity.c:1631
 #, c-format
 msgid "'%s' slot has length greater than %s"
-msgstr "le slot '%s' a une longueur supérieure à  %s"
+msgstr "le slot '%s' a une longueur supérieure à %s"
 
 #: validity.c:1636
 #, c-format
@@ -1054,12 +1054,12 @@ msgstr "les premières différences du slot '%s' sont inférieures à celles du 
 #: validity.c:1672
 #, c-format
 msgid "supernode lengths exceed %s"
-msgstr "les longueurs du supernode dépassent %s"
+msgstr "les longueurs du super-noeud dépassent %s"
 
 #: validity.c:1674
 #, c-format
 msgid "first differences of '%s' slot are not equal to supernode lengths"
-msgstr "les premières différences du slot '%s' ne sont pas égales aux longueurs du supernode"
+msgstr "les premières différences du slot '%s' ne sont pas égales aux longueurs du super-noeud"
 
 #: validity.c:1694
 #, c-format
@@ -1096,7 +1096,7 @@ msgstr "la longueur %s ne peut dépasser %s"
 
 #, c-format
 #~ msgid "diagonal element %d of Cholesky factor is missing"
-#~ msgstr "l'élément de diagonale %d de la factorisation de Cholesky est manquant"
+#~ msgstr "élément de diagonale %d de la factorisation de Cholesky absent"
 
 #, c-format
 #~ msgid "cholmod_factorize_p failed: status %d, minor %d of ncol %d"
