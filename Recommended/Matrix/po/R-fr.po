@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Matrix 1.7-0\n"
 "POT-Creation-Date: 2024-03-12 11:27\n"
-"PO-Revision-Date: 2024-05-16 16:57+0200\n"
-"Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
+"PO-Revision-Date: 2024-05-21 08:35+0200\n"
+"Last-Translator: Christian Wiat\n"
 "Language-Team: none\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgid "complex %s not yet implemented"
 msgstr "La classe %s n'est pas encore implémentée"
 
 msgid "cannot coerce matrix of type \"%s\" to %s"
-msgstr ""
+msgstr "conversion forcée de matrice de type \"%s\" en %s"
 
 #, fuzzy
 #| msgid "not yet implemented for class %s"
@@ -36,13 +36,13 @@ msgid "non0.i() not yet implemented for class %s"
 msgstr "pas encore implémenté pour la classe %s"
 
 msgid "%s=\"%s\" invalid for %s@uplo=\"%s\""
-msgstr ""
+msgstr "%s=\"%s\" incorrect pour %s@uplo=\"%s\""
 
 msgid "'%s' is not \"%1$s\", \"D%1$s\", or \"%1$s.\""
-msgstr ""
+msgstr "'%s' doit être \"%1$s\", \"D%1$s\", ou \"%1$s.\""
 
 msgid "%1$s(%2$s) is undefined: '%2$s' is not positive semidefinite"
-msgstr ""
+msgstr "%1$s(%2$s) n'est pas défini : '%2$s' n'est pas définie semi-positive"
 
 #, fuzzy
 #| msgid "matrix is not diagonal"
@@ -55,19 +55,19 @@ msgid ""
 msgstr ""
 
 msgid "'%s' does not inherit from virtual class %s"
-msgstr ""
+msgstr "'%s' n'hérite pas de la classe virtuelle %s"
 
 msgid "D[i,i] is NA, i=%d"
-msgstr ""
+msgstr "D[i,i] vaut NA, i=%d"
 
 msgid "D[i,i] is negative, i=%d"
-msgstr ""
+msgstr D[i,i] est négatif, i=%d"
 
 msgid "'%1$s' is not formally symmetric; factorizing tcrossprod(%1$s)"
-msgstr ""
+msgstr "'%1$s' n'est pas formellement symétrique; factorisation tcrossprod(%1$s)"
 
 msgid "unexpected %s=\"%s\" in '%s' method"
-msgstr ""
+msgstr "%s=\"%s\" inattendu dans la méthode '%s'"
 
 msgid "Not a valid format"
 msgstr "Pas un format acceptable"
