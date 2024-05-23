@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: R 4.4.0\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2024-04-15 18:10-0700\n"
-"PO-Revision-Date: 2024-05-16 15:47+0200\n"
+"PO-Revision-Date: 2024-05-23 08:53+0200\n"
 "Last-Translator: Marcel Ramos <marcel.ramos@sph.cuny.edu>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
@@ -158,7 +158,7 @@ msgstr "\"%s\" n'est pas un paramètre graphique"
 #: par.c:1109
 #, c-format
 msgid "argument %d does not name a graphical parameter"
-msgstr "L’argument %d n'est pas un paramètre graphique"
+msgstr "l’argument %d n'est pas un paramètre graphique"
 
 #: par.c:1117
 msgid "invalid argument passed to par()"
@@ -543,7 +543,7 @@ msgstr "contour() : seglist longue / circulaire -- est-ce que %s > %d ?"
 
 #: plot3d.c:1938
 msgid "no 'levels'"
-msgstr "Pas de ‘levels'"
+msgstr "pas de ‘levels'"
 
 #: plot3d.c:1942
 msgid "missing 'x' values"
@@ -564,7 +564,7 @@ msgstr "des valeurs croissantes sont attendues pour 'y'"
 #: plot3d.c:1956
 #, c-format
 msgid "non-finite level values: levels[%d] = %g"
-msgstr "Valeurs de niveaux non finis : levels[%d] = %g"
+msgstr "valeurs de niveaux non finis : levels[%d] = %g"
 
 #: plot3d.c:1969
 msgid "all z values are equal"
