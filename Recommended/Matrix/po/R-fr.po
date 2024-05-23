@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Matrix 1.7-0\n"
 "POT-Creation-Date: 2024-03-12 11:27\n"
-"PO-Revision-Date: 2024-05-23 12:31+0200\n"
+"PO-Revision-Date: 2024-05-23 16:45+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -153,7 +153,7 @@ msgstr ""
 "bogue interne dans la méthode \"Compare\" (Cmp.Mat.atomic) ; veuillez reporter ceci"
 
 msgid "Cmp.Mat.atomic() should not be called for diagonalMatrix"
-msgstr "Cmp.Mat.atomic() ne devrait pas être appelé pour diagonalMatrix"
+msgstr "Cmp.Mat.atomic() ne doit pas être appelé pour diagonalMatrix"
 
 msgid "Matrices must have same number of rows for arithmetic"
 msgstr ""
@@ -173,7 +173,7 @@ msgstr ""
 "bogue interne dans la méthode \"Logic\" (Logic.Mat.atomic) ; veuillez reporter ceci"
 
 msgid "Logic.Mat.atomic() should not be called for diagonalMatrix"
-msgstr "Logic.Mat.atomic() ne devrait pas être appelé pour diagonalMatrix"
+msgstr "Logic.Mat.atomic() ne doit pas être appelé pour diagonalMatrix"
 
 msgid "vector too long in Matrix - vector operation"
 msgstr "vecteur trop long dans une opération Matrix - vecteur"
@@ -279,7 +279,7 @@ msgid "invalid class \"%s\" in '%s'"
 msgstr "classe \"%s\" incorrecte dans '%s'"
 
 msgid "%s length cannot exceed %s"
-msgstr "la longuer de %s ne peut pas dépasser %s"
+msgstr "la longueur de %s ne peut pas dépasser %s"
 
 msgid "'A' must be a square matrix"
 msgstr "'A' doit être une matrice carrée"
@@ -291,7 +291,7 @@ msgid "when 'A' is specified, 'A.x' and 'At.x' are disregarded"
 msgstr "lorsque 'A' est spécifié, 'A.x' et 'At.x' ne sont pas pris en compte"
 
 msgid "not converged in %d iterations"
-msgstr "pas de convergence en %d itérations"
+msgstr "pas de convergence après %d itérations"
 
 msgid "hit a cycle (1) -- stop iterations"
 msgstr "un cycle est atteint (1) -- arrêt des itérations"
@@ -550,7 +550,7 @@ msgid "matrix must have exactly one entry in each row or column"
 msgstr "la matrice doit avoir exactement une entrée pour chaque ligne ou colonne"
 
 msgid "attempt to coerce non-square matrix to %s"
-msgstr "demande de traduction d'une matrice non carrée en %s"
+msgstr "demande de conversion d'une matrice non carrée en %s"
 
 msgid "matrix must have exactly one entry in each row and column"
 msgstr "la matrice doit avoir exactement une entrée par ligne et par colonne"
@@ -580,7 +580,7 @@ msgstr ""
 "\", ou \"%4$s\""
 
 msgid "non-conformable arguments"
-msgstr "matrices de dimensions incompatibles dans les arguments"
+msgstr "arguments non conformables"
 
 msgid "model frame and formula mismatch in sparse.model.matrix()"
 msgstr "le cadre du modèle et la formule ne correspondent pas dans sparse.model.matrix()"
@@ -598,11 +598,11 @@ msgid "Matrix seems negative semi-definite"
 msgstr "La matrice semble négative et semi-définie"
 
 msgid "'nearPD()' did not converge in %d iterations"
-msgstr "'nearPD()' n'a pas converti en %d itérations"
+msgstr "'nearPD()' n'a pas convergé après %d itérations"
 
 #| msgid "'V' is not a square matrix"
 msgid "'cl' is not a character string"
-msgstr "'cl' n'est pas un chaîne de caractères"
+msgstr "'cl' n'est pas une chaîne de caractères"
 
 msgid "not a positive definite matrix (and positive semidefiniteness is not checked)"
 msgstr "matrice non définie positive (et définition de semi-positivité non vérifiée)"
@@ -694,19 +694,19 @@ msgid "'%s' is computationally singular, min(d)/max(d)=%g, d=abs(diag(U))"
 msgstr "'%s' est singulière par calcul, min(d)/max(d)=%g, d=abs(diag(U))"
 
 msgid "matrix is exactly singular, D[i,i]=0, i=%d"
-msgstr "matrice singulière exactement, D[i,i]=0, i=%d"
+msgstr "matrice exactement singulière, D[i,i]=0, i=%d"
 
 msgid "matrix is exactly singular, J[,j]=0, j=%d"
-msgstr "matrice singulière exactement, J[,j]=0, j=%d"
+msgstr "matrice exactement singulière, J[,j]=0, j=%d"
 
 msgid "matrix exactly singular, J[i,]=0, i=%d"
-msgstr "matrice singulière exactement, J[i,]=0, i=%d"
+msgstr "matrice exactement singulière, J[i,]=0, i=%d"
 
 msgid "cannot coerce from %s to %s"
 msgstr "impossible de convertir automatiquement %s en %s"
 
 msgid "a sparseMatrix should rarely be centered: will not be sparse anymore"
-msgstr "une sparseMatrix doit rarement être centrée : elle ne sera plus éparse ensuite"
+msgstr "une sparseMatrix doit rarement être centrée : elle ne sera plus jamais éparse"
 
 msgid "length of 'center' must equal the number of columns of 'x'"
 msgstr "la longueur de 'center' doit être égale au nombre de colonnes de 'x'"
@@ -737,8 +737,8 @@ msgid ""
 ".M.repl.i.2col(): 'i' has no integer column number;\n"
 " should never happen; please report"
 msgstr ""
-".M.repl.i.2col() : 'i' n'a\tpas un nombre entier de colonnes ;\n"
-" ceci ne devrait pas se produite. Veuillez envoyer un rapport de bogue"
+".M.repl.i.2col() : 'i' n'a pas un nombre entier de colonnes ;\n"
+" ceci ne devrait pas se produire. Veuillez envoyer un rapport de bogue"
 
 msgid "such indexing must be by logical or 2-column numeric matrix"
 msgstr ""
@@ -749,7 +749,7 @@ msgid ".M.repl.i.2col(): drop 'matrix' case ..."
 msgstr ".M.repl.i.2col() : cas 'matrix' non traité ..."
 
 msgid "negative values are not allowed in a matrix subscript"
-msgstr "les valeurs négatives ne sont pas permises dans les indices de matrices"
+msgstr "les valeurs négatives ne sont pas permises pour les indices de matrices"
 
 msgid "NAs are not allowed in subscripted assignments"
 msgstr "Les NAs ne sont pas autorisés dans les assignations avec indices"
@@ -842,10 +842,10 @@ msgid "nargs() = %d should never happen; please report."
 msgstr "nargs() = %d ne devrait jamais se produire ; veuillez reporter ceci."
 
 msgid "row indices must be <= nrow(.) which is %d"
-msgstr "les indices de lignes doivent être <= nrow(.) qui est %d"
+msgstr "les indices de lignes doivent être <= nrow(.) qui vaut %d"
 
 msgid "column indices must be <= ncol(.) which is %d"
-msgstr "les indices de colonnes doivent être <= ncol(.) qui est %d"
+msgstr "les indices de colonnes doivent être <= ncol(.) qui vaut %d"
 
 msgid "Internal bug: nargs()=%d; please report"
 msgstr "Bogue interne : nargs()=%d ; veuillez reporter ceci"
