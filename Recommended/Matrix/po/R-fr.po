@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Matrix 1.7-0\n"
 "POT-Creation-Date: 2024-03-12 11:27\n"
-"PO-Revision-Date: 2024-05-21 08:35+0200\n"
+"PO-Revision-Date: 2024-05-23 09:00+0200\n"
 "Last-Translator: Christian Wiat\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -147,7 +147,7 @@ msgid "invalid class \"%s\" in '%s' method"
 msgstr "classe incorrecte : %s"
 
 msgid "invalid type \"%s\" in '%s' method"
-msgstr ""
+msgstr "type incorrect \"%s\" dans la méthode '%s'"
 
 msgid "non-conformable matrix dimensions in %s"
 msgstr "matrices de dimensions incompatibles dans %s"
@@ -202,7 +202,7 @@ msgstr ""
 "\tn'est pas un multiple de la longueur de l'objet le plus court"
 
 msgid "invalid class \"%s\" object in '%s' method"
-msgstr ""
+msgstr "objet de classe incorrecte \"%s\" dans la méthode '%s'"
 
 msgid "intermediate 'r' is of type %s"
 msgstr "le 'r' intermédiaire est de type %s"
@@ -211,10 +211,10 @@ msgid "not yet implemented .. please report"
 msgstr "pas encore implémenté .. veuillez reporter ceci"
 
 msgid "'%s' has non-finite values"
-msgstr ""
+msgstr "valeurs non finies dans '%s'"
 
 msgid "'%1$s' is not \"%2$s\", \"%3$s\", or \"%2$s.\""
-msgstr ""
+msgstr "'%1$s' n'est ni \"%2$s\", ni \"%3$s\", ni \"%2$s.\""
 
 msgid "'force' must be (coercable to) TRUE or FALSE"
 msgstr "'force' doit être (convertible en) TRUE ou FALSE"
@@ -282,10 +282,10 @@ msgstr ""
 "symmpart()"
 
 msgid "matrix is not triangular; consider triu(.) or tril(.)"
-msgstr ""
+msgstr "matrice non triangulaire; remplacer par triu(.) ou tril(.)"
 
 msgid "matrix is not diagonal; consider Diagonal(x=diag(.))"
-msgstr ""
+msgstr "matrice non diagonale ; remplacer par Diagonal(x=diag(.))"
 
 #, fuzzy
 #| msgid "invalid 'type'"
@@ -298,7 +298,7 @@ msgid "invalid %s=\"%s\" to '%s'"
 msgstr "classe incorrecte : %s"
 
 msgid "dimensions cannot exceed %s"
-msgstr ""
+msgstr "les dimensions ne peuvent pas dépasser %s"
 
 #, fuzzy
 #| msgid "invalid class: %s"
@@ -306,7 +306,7 @@ msgid "invalid class \"%s\" in '%s'"
 msgstr "classe incorrecte : %s"
 
 msgid "%s length cannot exceed %s"
-msgstr ""
+msgstr "la longuer de %s ne peut pas dépasser %s"
 
 msgid "'A' must be a square matrix"
 msgstr "'A' doit être une matrice carrée"
@@ -338,7 +338,7 @@ msgid "'nrow', 'ncol', 'byrow' disregarded for [mM]atrix 'data'"
 msgstr "'nrow', 'ncol', etc, ne sont pas utilisés pour la matrice 'data'"
 
 msgid "data is too long"
-msgstr ""
+msgstr "données trop longues"
 
 #, fuzzy
 #| msgid "exactly one of 'i', 'j', or 'p' must be missing from call"
@@ -367,19 +367,19 @@ msgid "'p' must be a nondecreasing vector c(0, ...)"
 msgstr "'p' doit être un vecteur non décroissant (0, ...)"
 
 msgid "dimensions cannot exceed 2^31-1"
-msgstr ""
+msgstr "les dimensions ne peuvent pas dépasser 2^31-1"
 
 msgid "'i' and 'j' must not contain NA"
-msgstr ""
+msgstr "'i' et 'j' ne doivent pas contenir de NA"
 
 msgid "'i' and 'j' must be"
-msgstr ""
+msgstr "'i' et 'j' doivent être"
 
 msgid "positive"
-msgstr ""
+msgstr "positif"
 
 msgid "non-negative"
-msgstr ""
+msgstr "zéro ou positif"
 
 #, fuzzy
 #| msgid "invalid 'data'"
@@ -387,7 +387,7 @@ msgid "invalid 'dims'"
 msgstr "'data' incorrect"
 
 msgid "'dims' must contain all (i,j) pairs"
-msgstr ""
+msgstr "'dims' doit contenir toutes les paires (i,j)"
 
 msgid "symmetric matrix must be square"
 msgstr "la matrice symétrique doit être carrée"
@@ -396,10 +396,10 @@ msgid "triangular matrix must be square"
 msgstr "la matrice triangulaire doit être carrée"
 
 msgid "p[length(p)]"
-msgstr ""
+msgstr "p[length(p)]"
 
 msgid "length(i)"
-msgstr ""
+msgstr "length(i)"
 
 #, fuzzy
 #| msgid "length(i) is not a multiple of length(x)"
@@ -407,7 +407,7 @@ msgid "is not an integer multiple of length(x)"
 msgstr "length(i) n'est pas un multiple de length(x)"
 
 msgid "length(x) must not exceed"
-msgstr ""
+msgstr "length(x) ne doit pas dépasser"
 
 #, fuzzy
 #| msgid "invalid 'repr'; must be \"C\", \"T\", or \"R\""
@@ -420,16 +420,16 @@ msgid "'n' must be a non-negative integer"
 msgstr "la longueur doit être un nombre non négatif"
 
 msgid "'x' has unsupported class \"%s\""
-msgstr ""
+msgstr "classe \"%s\" non prise en charge par 'x'"
 
 msgid "'x' has unsupported type \"%s\""
-msgstr ""
+msgstr "type \"%s\" non pris en charge par 'x'"
 
 msgid "attempt to recycle 'x' of length 0 to length 'n' (n > 0)"
-msgstr ""
+msgstr "demande de recyclage de 'x' sur une longueur de 0 à 'n' (n > 0)"
 
 msgid "'shape' must be one of \"g\", \"t\", \"s\""
-msgstr ""
+msgstr "'shape' doit être une valeur parmi \"g\", \"t\", \"s\""
 
 #, fuzzy
 #| msgid "invalid 'repr'; must be \"C\", \"T\", or \"R\""
@@ -437,7 +437,7 @@ msgid "'kind' must be one of \"d\", \"l\", \"n\""
 msgstr "'repr' incorrect ; il doit être \"C\", \"T\", ou \"R\""
 
 msgid "mismatch between typeof(x)=\"%s\" and kind=\"%s\"; using kind=\"%s\""
-msgstr ""
+msgstr "typeof(x)=\"%s\" et kind=\"%s\" ne correspondent pas; utilisation de kind=\"%s\""
 
 #, fuzzy
 #| msgid "'ncol' must be >= 0"
@@ -445,7 +445,7 @@ msgid "'cols' must be numeric"
 msgstr "'ncol' doit être >= 0"
 
 msgid "'cols' has elements not in seq(0, length.out = n)"
-msgstr ""
+msgstr "certains éléments de 'cols' ne sont pas dans seq(0, length.out = n)"
 
 #, fuzzy
 #| msgid "invalid 'repr'; must be \"C\", \"T\", or \"R\""
@@ -543,28 +543,28 @@ msgid ""
 msgstr ""
 
 msgid "determinant of non-square matrix is undefined"
-msgstr ""
+msgstr "pas de déterminant si la matrice n'est pas carrée"
 
 msgid "replacement diagonal has wrong length"
-msgstr ""
+msgstr "longueur incorrecte du replacement diagonal"
 
 msgid "replacement diagonal has incompatible type \"%s\""
-msgstr ""
+msgstr "type \"%s\" incorrect du replacement diagonal"
 
 msgid "assigned dimensions are not of type \"%s\" or \"%s\""
-msgstr ""
+msgstr "les dimensions attribuées ne sont pas du type \"%s\" ni \"%s\""
 
 msgid "assigned dimensions do not have length %d"
-msgstr ""
+msgstr "les dimensions attribuées ne sont pas de longueur %d"
 
 msgid "assigned dimensions are NA"
-msgstr ""
+msgstr "les dimensions attribuées sont NA"
 
 msgid "assigned dimensions are negative"
-msgstr ""
+msgstr "les dimensions attribuées sont négatives"
 
 msgid "assigned dimensions exceed %s"
-msgstr ""
+msgstr "les dimensions attribuées dépassent %s"
 
 #, fuzzy
 #| msgid "dim [product %d] do not match the length of object [%d]"
@@ -580,13 +580,13 @@ msgid "%s(<%s>) is not yet implemented"
 msgstr "La classe %s n'est pas encore implémentée"
 
 msgid "'%s' is not of type \"%s\" or \"%s\""
-msgstr ""
+msgstr "'%s' n'est pas du type \"%s\" ni \"%s\""
 
 msgid "'%s' contains NA"
-msgstr ""
+msgstr "'%s' contient NA"
 
 msgid "'%s' has elements less than %d"
-msgstr ""
+msgstr "certains éléments de '%s' sont inférieurs à %d"
 
 #, fuzzy
 #| msgid "length must be non-negative number"
@@ -594,10 +594,10 @@ msgid "'%s' is not a non-negative number"
 msgstr "la longueur doit être un nombre non négatif"
 
 msgid "'%s' has elements exceeding '%s'"
-msgstr ""
+msgstr "certains éléments de '%s' dépassent '%s'"
 
 msgid "'%s' is not %d or %d"
-msgstr ""
+msgstr "'%s' n'est ni %d ni %d"
 
 #, fuzzy
 #| msgid "'ncol' is not a factor of length(x)"
@@ -610,7 +610,7 @@ msgid "matrix must have exactly one entry in each row or column"
 msgstr "doit avoir exactement une entrée non zéro par ligne"
 
 msgid "attempt to coerce non-square matrix to %s"
-msgstr ""
+msgstr "demande de traduction d'une matrice non carrée en %s"
 
 #, fuzzy
 #| msgid "must have exactly one non-zero entry per row"
@@ -641,7 +641,7 @@ msgid "number of nonzero entries cannot exceed %s"
 msgstr "nombre incompatible de lignes pour %s"
 
 msgid "'%1$s' is not \"%2$s1\", \"%2$s1.\", \"%3$s\", or \"%4$s\""
-msgstr ""
+msgstr "'%1$s' n'est ni \"%2$s1\", ni \"%2$s1.\", ni \"%3$s\", ni \"%4$s\""
 
 msgid ""
 "'%1$s' is not \"%2$s1\", \"%2$s1.\", \"%2$s2\", \"%2$s2.\", \"%3$s\", or "
@@ -717,7 +717,7 @@ msgid "invalid '%s': not in %d:%d"
 msgstr "chaîne de caractères 'col.names' incorrecte : %s"
 
 msgid "need greater '%s' as pivoting occurred"
-msgstr ""
+msgstr "'%s' doit être plus grand car le pivot a été appliqué"
 
 msgid "qr2rankMatrix(.): QR with only %d out of %d finite diag(R) entries"
 msgstr "qr2rankMatrix(.): QR avec seulement %d de %d entrées finies de diag(R)"
@@ -772,22 +772,22 @@ msgid "'%s' is not square"
 msgstr "'V' n'est pas une matrice carrée"
 
 msgid "dimensions of '%s' and '%s' are inconsistent"
-msgstr ""
+msgstr "les dimensions de '%s' et '%s' sont incorrectes"
 
 msgid "'%1$s' is computationally singular, rcond(%1$s)=%2$g"
-msgstr ""
+msgstr "'%1$s' est une matrice singulière par calcul, rcond(%1$s)=%2$g"
 
 msgid "'%s' is computationally singular, min(d)/max(d)=%g, d=abs(diag(U))"
-msgstr ""
+msgstr "'%s' est singulière par calcul, min(d)/max(d)=%g, d=abs(diag(U))"
 
 msgid "matrix is exactly singular, D[i,i]=0, i=%d"
-msgstr ""
+msgstr "matrice singulière exactement, D[i,i]=0, i=%d"
 
 msgid "matrix is exactly singular, J[,j]=0, j=%d"
-msgstr ""
+msgstr "matrice singulière exactement, J[,j]=0, j=%d"
 
 msgid "matrix exactly singular, J[i,]=0, i=%d"
-msgstr ""
+msgstr "matrice singulière exactement, J[i,]=0, i=%d"
 
 #, fuzzy
 #| msgid "cannot coerce 'NA's to \"nsparseMatrix\""
@@ -806,7 +806,7 @@ msgid "length of 'scale' must equal the number of columns of 'x'"
 msgstr "la longueur de 'scale' doit être égale au nombre de colonnes de 'x'"
 
 msgid "invalid subassignment value class \"%s\""
-msgstr ""
+msgstr "classe \"%s\" incorrecte de la valeur de sous-assignation"
 
 #, fuzzy
 #| msgid "Invalid storage type: %s"
@@ -814,7 +814,7 @@ msgid "invalid subassignment value type \"%s\""
 msgstr "Type de stockage incorrect : %s"
 
 msgid "missing subassignment value"
-msgstr ""
+msgstr "valeur absente de sous-assignation"
 
 #, fuzzy
 #| msgid "incompatible matrix dimensions"
@@ -822,7 +822,7 @@ msgid "incorrect number of dimensions"
 msgstr "dimensions incompatibles des matrices"
 
 msgid "replacement has length zero"
-msgstr ""
+msgstr "remplacement de longueur zéro"
 
 msgid "number of items to replace is not a multiple of replacement length"
 msgstr ""
@@ -977,13 +977,13 @@ msgid "invalid subscript type \"%s\""
 msgstr "Type de stockage incorrect : %s"
 
 msgid "recycled %s would have maximal index exceeding %s"
-msgstr ""
+msgstr "%s recyclé aura un indice maximal dépassant %s"
 
 msgid "subscripts exceeding %s replaced with NA"
-msgstr ""
+msgstr "les indices dépassant %s sont remplacés par NA"
 
 msgid "subscript out of bounds"
-msgstr ""
+msgstr "indice hors limites"
 
 #, fuzzy
 #| msgid "logical subscript too long (%d, should be %d)"
@@ -991,13 +991,13 @@ msgid "logical subscript too long"
 msgstr "indice logique trop long (%d, devrait être %d)"
 
 msgid "only zeros may be mixed with negative subscripts"
-msgstr ""
+msgstr "seuls les zéros peuvent figurer avec les indices négatifs"
 
 msgid "trimmed means are not defined for complex data"
-msgstr ""
+msgstr "les méthodes d'élagage n'existent pas pour les données complexes"
 
 msgid "first element used of '%s' argument"
-msgstr ""
+msgstr "premier élément utilisé de l'argument '%s'"
 
 #, fuzzy
 #| msgid "invalid 'contrasts.arg' argument"
@@ -1005,7 +1005,7 @@ msgid "invalid '%s' argument"
 msgstr "argument 'contrast.arg' incorrect"
 
 msgid "should never happen ..."
-msgstr ""
+msgstr "ne doit jamais arriver ..."
 
 #, fuzzy
 #| msgid "'giveCsparse' has been deprecated; will use 'repr' instead"
@@ -1018,7 +1018,7 @@ msgid "'%s' is deprecated; setting %s=\"%s\""
 msgstr "'giveCsparse' est obsolète ; j’ai mis 'repr = \"%s\"' pour vous"
 
 msgid "'%s' has length 0 but '%s' does not"
-msgstr ""
+msgstr "'%s' a pour longueur 0 mais pas '%s'"
 
 #, fuzzy
 #| msgid "not yet implemented for matrix with typeof %s"
