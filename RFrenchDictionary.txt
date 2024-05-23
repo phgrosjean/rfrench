@@ -34,6 +34,7 @@ coercion : conversion automatique
 collation : collation
 collapsing level : niveau de fusion
 colortype : colorimétrie
+computationally singular : singulière par calcul (par exemple pour une matrice)
 connection : connexion
 console : console
 covariate : covariables
@@ -84,6 +85,7 @@ locator : mode de localisation à la souris (pour les graphes)
 logical : booléen
 log-likelyhood : log de vraisemblance
 magic number : nombre magique
+matrix is exactly singular : matrice exactement singulière
 metafile : metafile
 mirror site : site miroir
 mismatch : incohérence
@@ -93,6 +95,7 @@ multibyte : multioctets
 NA : NA ou valeur manquante, selon le contexte
 named args : arguments nommés
 namespace : espace de noms
+nondecreasing vector : vecteur de valeurs non décroissantes
 non-vector type : type non vectoriel
 offset : décalage
 opcode : code d'opération
