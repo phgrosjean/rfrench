@@ -331,7 +331,7 @@ msgid "no diss nor data found, nor the original argument of %s"
 msgstr "pas de diss ni de données trouvées, ni même l'argument original de %s"
 
 msgid "no diss nor data found for clusplot()'"
-msgstr "pas de diss ni de données trouvées pour clusplot()'"
+msgstr "pas de diss ni de données trouvées pour 'clusplot()'"
 
 msgid "invalid partition object"
 msgstr "objet de partitionnement incorrect"
