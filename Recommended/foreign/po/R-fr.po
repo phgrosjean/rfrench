@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: foreign 0.8-86\n"
 "Report-Msgid-Bugs-To: bugs@r-project.org\n"
 "POT-Creation-Date: 2021-02-12 09:19\n"
-"PO-Revision-Date: 2024-05-16 16:26+0200\n"
-"Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
+"PO-Revision-Date: 2024-06-27 19:00+0200\n"
+"Last-Translator: Christian Wia <w9204-rs@yahoocom>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -55,10 +55,10 @@ msgid "Field name: %s changed to: %s"
 msgstr "Nom de champ : %s modifié en : %s"
 
 msgid "cannot handle matrix/array columns"
-msgstr "impossible de traiter les colonnes de la matrice/du tableau"
+msgstr "impossible de traiter les colonnes de la matrice ou du tableau"
 
 msgid "character column %d will be truncated to %d bytes"
-msgstr "la colonne de chaîne de caractères %d sera tronquée à %d octets"
+msgstr "la colonne de chaînes de caractères %d sera tronquée à %d octets"
 
 msgid "unknown column type in data frame"
 msgstr "type inconnu pour une colonne dans le tableau de données"
@@ -84,7 +84,7 @@ msgid "value labels (%s) for %s are missing"
 msgstr "valeurs de libellé (%s) manquantes pour %s"
 
 msgid "The object \"dataframe\" must have class data.frame"
-msgstr "L'objet \""
+msgstr "L'objet \"dataframe\" doit être de classe data.frame"
 
 msgid "Version must be 6-12"
 msgstr "La version doit être 6-12"
@@ -106,7 +106,7 @@ msgstr "l'argument 'file' doit être une chaîne de caractères ou une connexion
 
 msgid "file has zero or fewer variables: probably not an EpiInfo file"
 msgstr ""
-"le fichier aurait zéro variables ou moins : ce n'est probablement pas un "
+"le fichier a zéro variable ou moins : ce n'est probablement pas un "
 "fichier EpiInfo"
 
 msgid "no records in file"
@@ -147,7 +147,7 @@ msgstr ""
 "Impossible d'abbréger les noms de variables à 'maxchars' lettres au maximum"
 
 msgid "some variable names were abbreviated"
-msgstr "quelques noms de variables ont été abbrégées"
+msgstr "quelques noms de variables ont été abbrégés"
 
 msgid "Cannot uniquely abbreviate the variable names to %d or fewer characters"
 msgstr ""
@@ -163,7 +163,7 @@ msgid "eight-character limit and not ending in a digit"
 msgstr "limite de 8 caractères et sans terminer par un chiffre"
 
 msgid "Some variable names were abbreviated or otherwise altered."
-msgstr "Quelques noms de variables on été abbrégées ou altérées."
+msgstr "Quelques noms de variables on été abbrégés ou altérés."
 
 msgid "data frame contains columns of unsupported class %s"
 msgid_plural "data frame contains columns of unsupported classes %s"
