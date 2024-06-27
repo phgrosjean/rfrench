@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: foreign 0.8-86\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-12 09:19+0000\n"
-"PO-Revision-Date: 2024-05-16 16:26+0200\n"
-"Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
+"PO-Revision-Date: 2024-06-27 18:26+0200\n"
+"Last-Translator: Christian Wia <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -138,7 +138,7 @@ msgstr "impossible d'ouvrir le fichier DBF"
 
 #: Rdbfread.c:64
 msgid "no fields in DBF table"
-msgstr "aucun champ dans le fichier DBF"
+msgstr "aucun champ dans la table DBF"
 
 #: Rdbfread.c:193
 #, c-format
@@ -177,7 +177,7 @@ msgstr "Le fichier de transfert SAS a une entête de membre incorrecte"
 
 #: SASxport.c:364 SASxport.c:405 SASxport.c:411
 msgid "problem accessing SAS XPORT file"
-msgstr "problème lors de l'accès d'un fichier SAS XPORT"
+msgstr "problème lors de l'accès au fichier SAS XPORT"
 
 #: SASxport.c:513 SASxport.c:610 spss.c:670 stataread.c:592
 #, c-format
@@ -276,7 +276,7 @@ msgstr ""
 
 #: minitab.c:92 minitab.c:158
 msgid "non-numeric data types are not yet implemented"
-msgstr "les types de données non numériques ne sont pas encore implémentées"
+msgstr "les types de données non numériques ne sont pas encore implémentés"
 
 #: minitab.c:119
 #, c-format
@@ -290,7 +290,7 @@ msgstr "le fichier '%s' n'est pas dans le format 'Minitab Portable Worksheet'"
 
 #: minitab.c:126 minitab.c:147 minitab.c:155 minitab.c:162
 msgid "file read error"
-msgstr "erreur d'accès fichier"
+msgstr "erreur de lecture du fichier"
 
 #: minitab.c:139
 #, c-format
@@ -380,12 +380,12 @@ msgstr "Mauvais caractère dans un temps"
 #: pfm-read.c:640
 #, c-format
 msgid "%s: Bad format specifier byte %d"
-msgstr "%s : mauvais octet de spécification de type %d"
+msgstr "%s : mauvais octet de spécification de format %d"
 
 #: pfm-read.c:649 sfm-read.c:1157 sfm-read.c:1167
 #, c-format
 msgid "%s: Bad format specifier byte (%d)"
-msgstr "%s : mauvais octet de spécification de type (%d)"
+msgstr "%s : mauvais octet de spécification de format (%d)"
 
 #: pfm-read.c:651
 #, c-format
@@ -469,7 +469,7 @@ msgid ""
 "Cannot assign value labels to %s and %s, which have different variable types "
 "or widths"
 msgstr ""
-"Impossible d'assigner les étiquettes de valeurs à %s et %s, parce qu'ils ont "
+"Impossible d'assigner les étiquettes de valeurs à %s et %s, parce qu'elles ont "
 "des types ou des longueurs de variables différents"
 
 #: pfm-read.c:981
@@ -480,7 +480,7 @@ msgstr "Etiquette dupliquée pour la valeur %g dans la variable %s"
 #: pfm-read.c:984
 #, c-format
 msgid "Duplicate label for value `%.*s' for variable %s"
-msgstr "Etiquette dupliquée pour la valeur `%.*s' dans la variable %s"
+msgstr "Etiquette dupliquée pour la valeur '%.*s' dans la variable %s"
 
 #: pfm-read.c:1072
 msgid "End of file midway through case"
@@ -536,7 +536,7 @@ msgid ""
 "%s: Very long string record(s) found (record type 7, subtype %d), each will "
 "be imported in consecutive separate variables"
 msgstr ""
-"%s : enregistrement de chaîne de caractère très long (type 7, sous-type %d), "
+"%s : enregistrement(s) de chaîne(s) de caractères très long(s) (type 7, sous-type %d), "
 "chacun d’eux sera importé dans des variables séparées consécutives"
 
 #: sfm-read.c:477
@@ -606,7 +606,7 @@ msgstr ""
 #, c-format
 msgid "%s: File-indicated character representation code (%s) is not ASCII"
 msgstr ""
-"%s : le code de représentation de caractères (%s) dans le fichier n'est pas "
+"%s : le code de représentation des caractères (%s) dans le fichier n'est pas "
 "ASCII"
 
 #: sfm-read.c:603
@@ -633,7 +633,7 @@ msgid ""
 "%g; LOWEST: %g, %g"
 msgstr ""
 "%s : une valeur indiquée dans le fichier est différente d'une valeur interne "
-"pour au moins une des trois valeurs système. SYSMIS indique %g, attendu %g ; "
+"pour au moins une des trois valeurs système. SYSMIS: indiqué %g, attendu %g ; "
 "LA PLUS ELEVEE : %g, %g ; LA PLUS FAIBLE : %g, %g"
 
 #: sfm-read.c:745
@@ -721,7 +721,7 @@ msgid ""
 "%s: position %d: Missing value indicator field is not -3, -2, 0, 1, 2, or 3"
 msgstr ""
 "%s : position %d : le champ indicateur de valeur manquante n'est pas -3, -2, "
-"-1, 0, 1, 2 ou 3"
+"0, 1, 2 ou 3"
 
 #: sfm-read.c:972
 #, c-format
@@ -730,7 +730,7 @@ msgid ""
 "variables should not appear in system files"
 msgstr ""
 "%s : position %d : le nom de la variable commence avec un dièse ('#'). Les "
-"variables \"scratch\" ne devraient pas apparaitre dans les fichiers systèmes"
+"variables \"scratch\" ne devraient pas apparaître dans les fichiers systèmes"
 
 #: sfm-read.c:994
 #, c-format
@@ -955,7 +955,7 @@ msgstr "ceci ne devrait pas se produire."
 #: stataread.c:1040
 msgid "cannot yet read write .dta on this platform"
 msgstr ""
-"la lecture ou l'écriture de fichiers Stata .dta n'est pas encore possible "
+"la lecture ou l'écriture de fichiers .dta n'est pas encore possible "
 "sur cette architecture"
 
 #: stataread.c:1048
