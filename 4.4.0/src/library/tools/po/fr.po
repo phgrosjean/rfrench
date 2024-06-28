@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: R 4.4.0\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2024-04-15 18:10-0700\n"
-"PO-Revision-Date: 2024-05-16 16:17+0200\n"
-"Last-Translator: Marcel Ramos <marcel.ramos@sph.cuny.edu>\n"
+"PO-Revision-Date: 2024-06-28 19:00+0200\n"
+"Last-Translator: Christian Wia <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,7 @@ msgstr "l'argument 'files' doit être une chaîne de caractères"
 #: Rmd5.c:63
 #, c-format
 msgid "md5 failed on file '%ls'"
-msgstr "md5 a échoué sur le fichier ‘%ls'"
+msgstr "md5 a échoué sur le fichier '%ls'"
 
 #: Rmd5.c:65
 #, c-format
@@ -80,7 +80,7 @@ msgstr "marque erronée (espace additionel ?) à %s:%d:%d"
 #: gramRd.c:3117
 #, c-format
 msgid "Macro '%s' previously defined."
-msgstr "La macro '%s' est déjà précédemment définie."
+msgstr "La macro '%s' est déjà définie précédemment."
 
 #: gramRd.c:3127
 #, c-format
@@ -97,20 +97,20 @@ msgstr "Pas de définition de macro pour '%s'."
 #: gramRd.c:3231
 #, c-format
 msgid "Not enough arguments passed to user macro '%s'"
-msgstr "Pas assez d’arguments passés à la macro '%s'"
+msgstr "Pas assez d'arguments passés à la macro '%s'"
 
 #: gramRd.c:3371 gramRd.c:3375
 #, c-format
 msgid "newline within quoted string at %s:%d"
 msgstr ""
-"retour de ligne à l'intérieur d'une chaîne de caractères entre guillemets à "
+"retour à la ligne à l'intérieur d'une chaîne de caractères entre guillemets à "
 "%s:%d"
 
 #: gramRd.c:3394
 #, c-format
 msgid "unable to allocate buffer for long macro at line %d"
 msgstr ""
-"impossible d'allouer de la mémoire tampon pour une longue macro à la lign %d"
+"impossible d'allouer la mémoire tampon pour une longue macro à la ligne %d"
 
 #: gramRd.c:3424
 msgid "macros nested too deeply: infinite recursion?"
@@ -125,7 +125,7 @@ msgstr "Macro %s introuvable"
 #, c-format
 msgid "Unexpected end of input (in %c quoted string opened at %s:%d:%d)"
 msgstr ""
-"Fin d'entrée inattendue (dans la chaîne entre guillements %c ouvertes à %s:"
+"Fin d'entrée inattendue (dans la chaîne entre guillements %c ouverte à %s:"
 "%d:%d)"
 
 #: gramRd.c:4536
@@ -161,7 +161,7 @@ msgstr "spécification d'adresse de lien incorrecte"
 #, c-format
 msgid "Invalid port number %d: should be in 0:65535, typically above 1024"
 msgstr ""
-"Numéro de port %d incorrect : il devrait être dans 0:65535, typiquement au "
+"Numéro de port %d incorrect : il doit être dans 0:65535, typiquement au "
 "dessus de 1024"
 
 #: install.c:95
@@ -179,11 +179,11 @@ msgstr "erreur en écriture lors du rajout dans un fichier"
 
 #: pdscan.c:67
 msgid "too many items"
-msgstr "trop d’éléments"
+msgstr "trop d'éléments"
 
 #: pdscan.c:115
 msgid "non-character argument"
-msgstr "argument qui n’est pas une chaîne de caractères"
+msgstr "argument qui n'est pas une chaîne de caractères"
 
 #: signals.c:42
 msgid "pskill() is not supported on this platform"
