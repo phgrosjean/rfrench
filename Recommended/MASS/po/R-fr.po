@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: MASS 7.3-60.2\n"
 "Report-Msgid-Bugs-To: bugs@r-project.org\n"
 "POT-Creation-Date: 2023-11-28 20:11\n"
-"PO-Revision-Date: 2024-05-16 16:31+0200\n"
-"Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
+"PO-Revision-Date: 2024-06-28 12:40+0200\n"
+"Last-Translator: Christian Wia <w9204-rs@yahoocom>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -48,7 +48,7 @@ msgid "'dropterm' not implemented for \"mlm\" fits"
 msgstr "'dropterm' n'est pas implémenté pour les ajustements \"mlm\""
 
 msgid "iteration limit reached near 'x = %f'"
-msgstr "nombre limite d'iterations atteint vers 'x = %f'"
+msgstr "nombre limite d'itérations atteint vers 'x = %f'"
 
 msgid "%s does not have both 'qr' and 'y' components"
 msgstr "%s n'a pas de composantes 'qr' et 'y'"
@@ -63,7 +63,7 @@ msgid "frequency table is %d-dimensional"
 msgstr "le tableau de fréquences a %d dimensions"
 
 msgid "invalid table specification"
-msgstr "spécification incorrecte de la table de contingence"
+msgstr "spécification incorrecte de la table"
 
 msgid "higher-way table requested.  Only 2-way allowed"
 msgstr ""
@@ -149,7 +149,7 @@ msgid "Iter. %d Alpha: %s"
 msgstr "Itér. %d Alpha : %s"
 
 msgid "iteration limit reached"
-msgstr "nombre limite d'iterations atteint"
+msgstr "nombre limite d'itérations atteint"
 
 msgid "package 'nlme' is essential"
 msgstr "le package 'nlme' est essentiel"
@@ -243,7 +243,7 @@ msgid "object not of class \"lda\""
 msgstr "l'objet n'est pas de classe \"lda\""
 
 msgid "wrong number of variables"
-msgstr "nombre de variables incorrect"
+msgstr "nombre incorrect de variables"
 
 msgid "variable names in 'newdata' do not match those in 'object'"
 msgstr ""
@@ -253,7 +253,7 @@ msgid "'breaks' must be strictly increasing"
 msgstr "'breaks' doit être strictement croissant"
 
 msgid "'breaks' do not cover the data"
-msgstr "'breaks' ne recouvre pas toutes les données"
+msgstr "'breaks' ne couvre pas toutes les données"
 
 msgid "dim(W) is not correct"
 msgstr "dim(W) est incorrect"
@@ -301,7 +301,7 @@ msgid "at least one column has IQR 0"
 msgstr "au moins une des colonnes a un EIQ de 0"
 
 msgid "Too many samples (%.3g)"
-msgstr "Trop d’échantillons (%.3g)"
+msgstr "Trop d'échantillons (%.3g)"
 
 msgid "Too many combinations (%.3g) for nsamp = \"exact\""
 msgstr "Trop de combinaisons (%.3g) pour nsamp = \"exact\""
@@ -343,7 +343,7 @@ msgid "not all objects are of class \"negbin\""
 msgstr "tous les objets ne sont pas de classe \"negbin\""
 
 msgid "unimplemented method: %s"
-msgstr "méthode non implémentée: %s"
+msgstr "méthode non implémentée : %s"
 
 msgid "Initial fit:"
 msgstr "Ajustement initial :"
@@ -404,7 +404,7 @@ msgid "not a \"polr\" object"
 msgstr "ce n'est pas un objet \"polr\""
 
 msgid "anova is not implemented for a single \"polr\" object"
-msgstr "l'anova n'est pas implémentée pour un objet \"polr\""
+msgstr "l'anova n'est pas implémentée pour un objet \"polr\" seul"
 
 msgid "not all objects are of class \"polr\""
 msgstr "tous les objets ne sont pas de classe \"polr\""
