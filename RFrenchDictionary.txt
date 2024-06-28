@@ -29,6 +29,7 @@ case insensitive matching : correspondance indépendante de la casse
 channel : canal
 character : caractère (sans h)
 closure : fermeture (closure)
+cluster : agrégation, groupe
 coerce : convertir automatiquement
 coercion : conversion automatique
 collation : collation
@@ -48,6 +49,7 @@ device : périphérique
 dispatch: dispatcheur
 download: téléchargement client <- serveur 
 driver : pilote
+eigenvalues : valeurs propres
 encoding : encodage
 environment : environnement (voir aussi workspace)
 factor : variable facteur ou facteur
@@ -58,7 +60,7 @@ file stream : corps du fichier
 fit : ajustement ou ajuster
 flush : vider ou vidage
 formula : formule de modèle ou formule tout court
-frame : cadre ou trame selon le contexte
+frame : cadre ou trame selon le contexte; (data frame : tableau de données)
 GiB : giga octets (pour les tailles)
 handler : manipulateur de données (voir aussi interrupt handler)
 hashing : hachage
@@ -69,7 +71,8 @@ implemented : implémenté
 index : indice (presque toujours, et non index)
 interrupt handler : gestionnaire d'interruptions
 invalid : incorrect (à préférer à 'non valide')
-IO : E/S
+IO : E/S (pour entrées/sorties)
+knots : noeuds
 kriging : krigeage
 label : étiquette
 lag : décalage
@@ -80,6 +83,7 @@ leading minor : mineur dominant
 length : longueur (réserver taille pour size)
 LHS : membre gauche (d'une expression, d'une égalité...)
 library : bibliothèque
+likelyhood : vraisemblance
 locale : environnement linguistique
 locator : mode de localisation à la souris (pour les graphes)
 logical : booléen
@@ -132,6 +136,7 @@ return : retourner (abcd -> dcba) ou renvoyer (d'une fonction) selon le contexte
 RHS : membre droit (d'une expression, d'une égalité...)
 RNG : RNG ou générateur de nombres pseudo-aléatoires
 routine : sous-programme ou procédure
+scaled : standardisé, mis à l'échelle
 search path : chemin de recherche
 seed : valeurs d'initialisation d'un processus (ex: génération des nombres aléatoires)
 seek : mode d'accès aléatoire
@@ -169,6 +174,7 @@ unary operator : opérateur unaire
 unbind : délier
 underflow : dépassement de capacité par le bas
 unmatched : déparié
+unpacking : décompaction (?)
 upload: téléversement client -> serveur 
 url : URL
 viewport : vue
