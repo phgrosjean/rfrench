@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: mgcv 1.9-1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-04 18:15+0100\n"
-"PO-Revision-Date: 2024-05-16 16:40+0200\n"
-"Last-Translator: Philippe Grosjean <phgrosjean@sciviews.org>\n"
+"PO-Revision-Date: 2024-06-28 11:48+0200\n"
+"Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -34,7 +34,7 @@ msgstr "L'initialisation de la mémoire pour une matrice a échoué."
 
 #: matrix.c:144 matrix.c:202
 msgid "An out of bound write to matrix has occurred!"
-msgstr "Une écrite hors des limites de la matrice s'est produite !"
+msgstr "Une écriture hors des limites de la matrice s'est produite !"
 
 #: matrix.c:150
 msgid "INTEGRITY PROBLEM in the extant matrix list."
@@ -72,7 +72,7 @@ msgstr "QPCLS - Déficience de rang dans le modèle"
 
 #: tprs.c:40
 msgid "You must have 2m>d for a thin plate spline."
-msgstr "Vous devez avoir 2m > d pour une 'thin plate spline’."
+msgstr "Vous devez avoir 2m > d pour une 'thin plate spline'."
 
 #: tprs.c:375 tprs.c:383
 msgid ""
