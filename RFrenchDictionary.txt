@@ -7,6 +7,7 @@ par contre, nous conservons les conventions du langage S pour les guillements,
 soit '' ou "", mais non transformés et sans espaces.
 ’ : remplacer l'apostrophe grasse ’ par l'apostrophe simple '
 ` : remplacer l'apostrophe inverse ` par l'apostrophe simple ' 
+‘ : remplacer l'apostrophe retournée ‘ par l'apostrophe simple '
 
 
 aborting : annulation
