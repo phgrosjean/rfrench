@@ -163,7 +163,7 @@ msgid "found T/F in %s"
 msgstr "un ou des T/F trouvé(s) dans %s"
 
 msgid "The package 'dir' argument must be of length 1"
-msgstr "L’argument du package 'dir' doit être de longueur 1"
+msgstr "L'argument du package 'dir' doit être de longueur 1"
 
 msgid "package name '%s' seems invalid; using directory name '%s' instead"
 msgstr ""
@@ -278,7 +278,7 @@ msgstr "Le champ Authors@R ne renvoie aucune personne avec un nom :"
 msgid "Authors@R field gives persons with no role:"
 msgstr ""
 "Le champ Authors@R ne renvoie aucune personne avec un nom et un rôle "
-"d’auteur :"
+"d'auteur :"
 
 msgid "Authors@R field gives no person with name and author role"
 msgstr ""
@@ -289,7 +289,7 @@ msgstr "Impossible d'extraire le champ 'Maintainer' du champ 'Authors@R' :"
 
 msgid "Authors@R field gives more than one person with maintainer role:"
 msgstr ""
-"Le champ Authors@R renvoie plus d’une personne avec un rôle de mainteneur :"
+"Le champ Authors@R renvoie plus d'une personne avec un rôle de mainteneur :"
 
 msgid ""
 "Authors@R field gives no person with maintainer role, valid email address "
@@ -304,7 +304,7 @@ msgstr ""
 "incorrects :"
 
 msgid "Encoding '%s' is not portable"
-msgstr "L’encodage '%s' n'est pas portable"
+msgstr "L'encodage '%s' n'est pas portable"
 
 msgid "Unknown encoding with non-ASCII data"
 msgstr "Encodage inconnu avec des données non-ASCII"
@@ -610,7 +610,7 @@ msgid "Rd macro package '%s' is not installed."
 msgstr "Macro Rd '%s' du package non installée."
 
 msgid "No Rd macros in package '%s'."
-msgstr "Pas de macros Rd dans le package ‘%s’."
+msgstr "Pas de macros Rd dans le package '%s'."
 
 msgid ""
 "links not supported for 'standalone = FALSE' when "
@@ -699,7 +699,7 @@ msgid "unable to create temp directory %s"
 msgstr "impossible de créer le répertoire temporaire %s"
 
 msgid "Vignette '%s' is non-ASCII but has no declared encoding"
-msgstr "La vignette '%s' n’est pas ASCII mais n’a pas déclaré d’encodage"
+msgstr "La vignette '%s' n'est pas ASCII mais n'a pas déclaré d'encodage"
 
 msgid "Running"
 msgstr "Exécution"
@@ -721,10 +721,10 @@ msgstr "Note : %s est sauté"
 
 msgid "Error: Vignette '%s' is non-ASCII but has no declared encoding"
 msgstr ""
-"Erreur : la vignette '%s' n’est pas ASCII mais n’a pas d’encodage déclaré"
+"Erreur : la vignette '%s' n'est pas ASCII mais n'a pas d'encodage déclaré"
 
 msgid "--- re-building %s using %s"
-msgstr "--- reconstruction de %s à l’aide de %s"
+msgstr "--- reconstruction de %s à l'aide de %s"
 
 msgid ""
 "Error: processing vignette '%s' failed with diagnostics:\n"
@@ -1020,7 +1020,7 @@ msgid "No docs found for package %s"
 msgstr "Pas de docs trouvés pour le package %s"
 
 msgid "URL %s was not found"
-msgstr "L’URL %s est introuvable"
+msgstr "L'URL %s est introuvable"
 
 msgid "HTTPD-DEMO %s::%s"
 msgstr "HTTPD-DEMO %s::%s"
@@ -1038,7 +1038,7 @@ msgstr ""
 "fichiers dans %s et %s d'un package"
 
 msgid "unsupported URL %s"
-msgstr "l’URL %s n’est pas supportée"
+msgstr "l'URL %s n'est pas supportée"
 
 msgid "httpd server disabled by R_DISABLE_HTTPD"
 msgstr "serveur http arrêté par R_DISABLE_HTTPD"
@@ -1102,7 +1102,7 @@ msgid "NOTE: fixed path"
 msgstr "NOTE : chemin fixé"
 
 msgid "NOTE: fixed library identification name"
-msgstr "NOTE : nom d’identification de bibliothèque fixé"
+msgstr "NOTE : nom d'identification de bibliothèque fixé"
 
 msgid "NOTE: fixed library path"
 msgstr "NOTE : chemin de bibliothèques fixé"
@@ -1115,13 +1115,13 @@ msgid ""
 "installation paths"
 msgstr ""
 "AVIS : objets partagés/librairies dynamiques ayant des répertoires "
-"d’installation codés en dur"
+"d'installation codés en dur"
 
 msgid "package %s successfully unpacked and MD5 sums checked"
 msgstr "package %s correctement décompressé et sommes MD5 vérifiées"
 
 msgid "not using staged install with --libs-only"
-msgstr "pas d’utilisation d’une installation fictive avec --libs-only"
+msgstr "pas d'utilisation d'une installation fictive avec --libs-only"
 
 msgid "staged installation is only possible with locking"
 msgstr "installation fictive seulement possible avec verrouillage"
@@ -1362,7 +1362,7 @@ msgid "Found %s, possibly from %s"
 msgstr "%s est trouvé, sans doute depuis %s"
 
 msgid "no native symbols were extracted"
-msgstr "aucuns symboles natifs n’ont été extraits"
+msgstr "aucuns symboles natifs n'ont été extraits"
 
 msgid "not a PDF file"
 msgstr "n'est pas un fichier PDF"
@@ -1430,14 +1430,14 @@ msgstr ""
 "échouer)"
 
 msgid "unknown header specification"
-msgstr "spécification d’entête inconnue"
+msgstr "spécification d'entête inconnue"
 
 msgid "R CMD build failed"
 msgstr "R CMD build a échoué"
 
 msgid "PACKAGES files do not include MD5 sums in the win.binary case"
 msgstr ""
-"Les fichiers PACKAGES n’incluent pas de sommes MD5 dans le cas win.binary"
+"Les fichiers PACKAGES n'incluent pas de sommes MD5 dans le cas win.binary"
 
 msgid ", so strict checking is impossible. Calling down to write_PACKAGES"
 msgstr ""
@@ -1522,10 +1522,10 @@ msgid "only Rd syntax is currently supported"
 msgstr "seule la syntaxe Rd est actuellement supportée"
 
 msgid "texi2dvi script/program not available, using emulation"
-msgstr "script/programme texi2dvi pas disponible, utilisation d’une émulation"
+msgstr "script/programme texi2dvi pas disponible, utilisation d'une émulation"
 
 msgid "Running 'texi2dvi' on '%s' failed."
-msgstr "L’exécution de 'texi2dvi' sur '%s' a échoué."
+msgstr "L'exécution de 'texi2dvi' sur '%s' a échoué."
 
 msgid "running 'texi2dvi' on '%s' failed"
 msgstr "l'exécution de 'texi2dvi' sur '%s' a échoué"
@@ -1784,7 +1784,7 @@ msgstr[1] "Entrées BibTeX correspondantes :"
 #~ msgstr[1] "titres de vignettes dupliqués :"
 
 #~ msgid "Previous alias or file overwritten by alias:"
-#~ msgstr "Alias précédent ou fichier remplacé par l’alias :"
+#~ msgstr "Alias précédent ou fichier remplacé par l'alias :"
 
 #~ msgid ""
 #~ "package %s exists but was not installed under R >= 2.10.0 so xrefs cannot "
