@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Matrix 1.7-0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-14 15:49-0400\n"
-"PO-Revision-Date: 2024-05-20 16:29+0200\n"
+"PO-Revision-Date: 2024-06-28 12:10+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -448,7 +448,7 @@ msgstr "dgeMatrix_Schur : dgees a renvoyé le code d'erreur %d"
 #: factor.c:403 sparse.c:196
 #, c-format
 msgid "'%s' is not a number"
-msgstr "'%s' n’est pas un nombre"
+msgstr "'%s' n'est pas un nombre"
 
 #: factor.c:424
 #, c-format
@@ -545,7 +545,7 @@ msgstr "vecteur de transposition incorrect"
 #: perm.c:79 perm.c:81 perm.c:96 perm.c:98 perm.c:113 perm.c:133 perm.c:145
 #, c-format
 msgid "'%s' is not of type \"%s\""
-msgstr "'%s' n’est pas du type \"%s\""
+msgstr "'%s' n'est pas du type \"%s\""
 
 #: perm.c:83 perm.c:100 perm.c:147
 #, c-format
@@ -721,7 +721,7 @@ msgstr "le slot '%s' contient des éléments négatifs"
 #: validity.c:50 validity.c:164
 #, c-format
 msgid "'%s' slot is not a list"
-msgstr "le slot '%s' n’est pas une liste"
+msgstr "le slot '%s' n'est pas une liste"
 
 #: validity.c:68
 #, c-format
@@ -753,7 +753,7 @@ msgstr "%s[1] est différent de %s[2]"
 #: validity.c:234 validity.c:253 validity.c:262 validity.c:444
 #, c-format
 msgid "'%s' slot is not \"%s\" or \"%s\""
-msgstr "le slot '%s' n’est ni \"%s\" ni \"%s\""
+msgstr "le slot '%s' n'est ni \"%s\" ni \"%s\""
 
 #: validity.c:331 validity.c:1580
 #, c-format
@@ -952,7 +952,7 @@ msgstr "%s[%d] (%s) n'est pas dans %s"
 #: validity.c:1435 validity.c:1536
 #, c-format
 msgid "%s is not in {%s}"
-msgstr "%s n’est pas dans {%s}"
+msgstr "%s n'est pas dans {%s}"
 
 #: validity.c:1472
 #, c-format
@@ -992,7 +992,7 @@ msgstr "la transverse du slot '%s' n'est pas terminée exactement après %s éta
 #: validity.c:1523 validity.c:1525
 #, c-format
 msgid "%s is not %d"
-msgstr "%s n’est pas %d"
+msgstr "%s n'est pas %d"
 
 #: validity.c:1546
 #, c-format
