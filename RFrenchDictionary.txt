@@ -145,7 +145,7 @@ seed : valeurs d'initialisation d'un processus (ex: génération des nombres al�
 seek : mode d'accès aléatoire
 self-starting function : fonction auto-initialisée
 sequence : suite (selon contexte) ou séquence
-shingke : latte (dans lattice)
+shingle : latte (dans lattice)
 sink : sortie par défaut
 size : taille
 skew-symmetric : matrice anti-symétrique
