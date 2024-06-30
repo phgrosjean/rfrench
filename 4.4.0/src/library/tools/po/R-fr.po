@@ -116,13 +116,13 @@ msgid "Undocumented arguments in Rd file '%s'"
 msgstr "Arguments non documentés dans le fichier Rd '%s'"
 
 msgid "Duplicated \\argument entries in Rd file '%s':"
-msgstr "Entrées \argument dupliquées dans le fichier Rd '%s' :"
+msgstr "Entrées \\argument dupliquées dans le fichier Rd '%s' :"
 
 msgid "Documented arguments not in \\usage in Rd file '%s':"
 msgstr "Arguments documentés non repris dans \\usage pour le fichier Rd '%s' :"
 
 msgid "Objects in \\usage without \\alias in Rd file '%s':"
-msgstr "Objets dans \\usage sans \alias dans le fichier Rd '%s' :"
+msgstr "Objets dans \\usage sans \\alias dans le fichier Rd '%s' :"
 
 msgid "Assignments in \\usage in Rd file '%s':"
 msgstr "Affectations dans \\usage dans le fichier Rd '%s' :"
@@ -131,7 +131,7 @@ msgid "Bad \\usage lines found in Rd file '%s':"
 msgstr "Mauvaises lignes \\usage trouvées dans le fichier Rd '%s' :"
 
 msgid "S3 methods shown with full name in Rd file '%s':"
-msgstr "Methodes S3 indiquées avec le nom complet dans le fichier Rd '%s' :"
+msgstr "Méthodes S3 indiquées avec le nom complet dans le fichier Rd '%s' :"
 
 msgid "you must specify 'package', 'dir' or 'file'"
 msgstr "vous devez spécifier 'package', 'dir' ou 'file'"
@@ -205,7 +205,7 @@ msgid "Malformed Depends or Suggests or Imports or Enhances field."
 msgstr "Champ 'Depends', 'Suggests', 'Imports' ou 'Enhances' incorrect."
 
 msgid "Offending entries:"
-msgstr "Entrée erronées :"
+msgstr "Entrées erronées :"
 
 msgid ""
 "Entries must be names of packages optionally followed by '<=' or '>=', white "
@@ -250,7 +250,7 @@ msgstr ""
 "être déjà connus de R."
 
 msgid "Malformed Title field: should not end in a period."
-msgstr "Champ Title incorrect : il ne devrait pas se terminer par un point."
+msgstr "Champ Title incorrect : il ne doit pas se terminer par un point."
 
 msgid ""
 "Malformed Description field: should contain one or more complete sentences."
@@ -273,16 +273,15 @@ msgid "Authors@R field gives no person with name and roles."
 msgstr "Le champ Authors@R ne renvoie aucune personne avec un nom et un rôle."
 
 msgid "Authors@R field gives persons with no name:"
-msgstr "Le champ Authors@R ne renvoie aucune personne avec un nom :"
+msgstr "Le champ Authors@R renvoie des personnes sans nom :"
 
 msgid "Authors@R field gives persons with no role:"
 msgstr ""
-"Le champ Authors@R ne renvoie aucune personne avec un nom et un rôle "
-"d'auteur :"
+"Le champ Authors@R renvoie des personnes sans rôle :"
 
 msgid "Authors@R field gives no person with name and author role"
 msgstr ""
-"Le champ Authors@R ne renvoie aucune personne avec un nom et un rôle d'auteur"
+"Le champ Authors@R ne renvoie aucune personne avec un nom et un rôle"
 
 msgid "Cannot extract Maintainer field from Authors@R field:"
 msgstr "Impossible d'extraire le champ 'Maintainer' du champ 'Authors@R' :"
@@ -295,8 +294,8 @@ msgid ""
 "Authors@R field gives no person with maintainer role, valid email address "
 "and non-empty name."
 msgstr ""
-"Le champ Authors@R ne renvoie personne avec un rôle de mainteneur, une "
-"adresse email valide et un nom."
+"Le champ Authors@R renvoie aucune personne ayant le rôle de mainteneur, une "
+"adresse email valide et un nom non vide."
 
 msgid "Authors@R field gives persons with invalid ORCID identifiers:"
 msgstr ""
@@ -310,7 +309,7 @@ msgid "Unknown encoding with non-ASCII data"
 msgstr "Encodage inconnu avec des données non-ASCII"
 
 msgid "Record: %d Field(s): %s"
-msgstr "Enregistrement : %d Champ(s): %s"
+msgstr "Enregistrement : %d Champ(s) : %s"
 
 msgid "Non-standard license specification:"
 msgstr "Spécification de licence non standard :"
@@ -322,17 +321,17 @@ msgid "Standardized license specification:"
 msgstr "Spécification de licence standard :"
 
 msgid "Deprecated license: %s"
-msgstr "Licence dépréciée : %s"
+msgstr "Licence obsolète : %s"
 
 msgid "Invalid license file pointers: %s"
-msgstr "Pointeur de fichier licence incorrect : %s"
+msgstr "Pointeurs de fichiers licence incorrects : %s"
 
 msgid "License components with restrictions not permitted:"
 msgstr "Les composants avec restrictions de licence ne sont pas autorisés :"
 
 msgid "License components which are templates and need '+ file LICENSE':"
 msgstr ""
-"Les composants avec restrictions de licence qui sont des modèles et qui "
+"Composants avec restrictions de licence qui sont des modèles et qui "
 "nécessitent '+ file LICENSE' :"
 
 msgid "License stub is invalid DCF."
@@ -347,7 +346,7 @@ msgstr ""
 "TOMS"
 
 msgid "Non-portable flags in variable '%s':"
-msgstr "Indicateur non portable dans la variable '%s' :"
+msgstr "Indicateurs non portables dans la variable '%s' :"
 
 msgid "Non-portable flags in file '%s':"
 msgstr "Indicateur non portable dans le fichier '%s' :"
@@ -400,16 +399,16 @@ msgstr ""
 
 msgid "Package startup functions should not change the search path."
 msgstr ""
-"Les fonctions de démarrage de package ne devraient pas changer le chemin de "
+"Les fonctions de démarrage de package ne doivent pas modifier le chemin de "
 "recherche."
 
 msgid "Package startup functions should use %s to generate messages."
 msgstr ""
-"Les fonctions de démarrage de package devraient utiliser %s pour générer des "
+"Les fonctions de démarrage de package doivent utiliser %s pour générer des "
 "messages."
 
 msgid "Package startup functions should not call %s."
-msgstr "Les fonctionne de démarrage de package ne devraient pas appeler %s."
+msgstr "Les fonctions de démarrage de package ne doivent pas appeler %s."
 
 msgid "See section %s in '%s'."
 msgstr "Voir section %s dans '%s'."
@@ -421,7 +420,7 @@ msgstr ""
 "commençant par %s."
 
 msgid "Package detach functions should not call %s."
-msgstr "Les fonctions detach du package ne devraient pas appeler %s."
+msgstr "Les fonctions detach du package ne doivent pas appeler %s."
 
 msgid "unable to create"
 msgstr "impossible de créer"
@@ -436,42 +435,42 @@ msgid "'::' or ':::' imports not declared from:"
 msgstr "importations '::' ou ':::' non déclarées depuis :"
 
 msgid "'::' or ':::' import not declared from: %s"
-msgstr "importations '::' ou ':::' non déclarées depuis : %s"
+msgstr "importation '::' ou ':::' non déclarée depuis : %s"
 
 msgid "'library' or 'require' calls not declared from:"
-msgstr "appels 'library' ou 'require' non déclarés depuis :"
+msgstr "appels de 'library' ou 'require' non déclarés depuis :"
 
 msgid "'library' or 'require' call not declared from: %s"
-msgstr "appels 'library' ou 'require' non déclarés depuis : %s"
+msgstr "appel de 'library' ou 'require' non déclaré depuis : %s"
 
 msgid "'loadNamespace' or 'requireNamespace' calls not declared from:"
-msgstr "appels 'loadNamespace' ou 'requireNamespace' non déclarés depuis :"
+msgstr "appels de 'loadNamespace' ou 'requireNamespace' non déclarés depuis :"
 
 msgid "'loadNamespace' or 'requireNamespace' call not declared from: %s"
-msgstr "appels 'loadNamespace' ou 'requireNamespace' non déclarés depuis : %s"
+msgstr "appel de 'loadNamespace' ou 'requireNamespace' non déclaré depuis : %s"
 
 msgid "'library' or 'require' calls to packages already attached by Depends:"
 msgstr ""
-"appels 'library' ou 'require' vers des packages déjà attachés depuis "
+"appels de 'library' ou 'require' vers les packages déjà attachés par "
 "Depends :"
 
 msgid ""
 "'library' or 'require' call to %s which was already attached by Depends."
 msgstr ""
-"appels 'library' ou 'require' à %s qui est déjà attaché depuis Depends."
+"appel de 'library' ou 'require' à %s qui est déjà attaché par Depends."
 
 msgid "'library' or 'require' calls in package code:"
-msgstr "appels 'library' ou 'require' dans le code du package :"
+msgstr "appels de 'library' ou 'require' dans le code du package :"
 
 msgid "'library' or 'require' call to %s in package code."
-msgstr "appels 'library' ou 'require' à %s dans le code du package."
+msgstr "appel de 'library' ou 'require' à %s dans le code du package."
 
 msgid "Namespaces in Imports field not imported from:"
 msgstr "Espaces de noms dans le champ Imports non importés depuis :"
 
 msgid "Namespace in Imports field not imported from: %s"
 msgstr ""
-"Dépendance d'espace de nom dans le champ Imports non importé depuis : %s"
+"Dépendance d'espace de noms dans le champ Imports non importé depuis : %s"
 
 msgid "Packages in Depends field not imported from:"
 msgstr "Packages dans le champ Depends non importés depuis :"
@@ -507,10 +506,10 @@ msgid "Unavailable namespaces imported from by ':::' calls:"
 msgstr "Espaces de noms non disponibles importés par des appels ':::' :"
 
 msgid "Unavailable namespace imported from by a ':::' call: %s"
-msgstr "Espace de nom non disponible importé par un appel ':::' : %s"
+msgstr "Espace de noms non disponible importé par un appel ':::' : %s"
 
 msgid "'data(package=)' calls not declared from:"
-msgstr "appel 'data(package=)' non déclaré depuis :"
+msgstr "appels 'data(package=)' non déclarés depuis :"
 
 msgid "'data(package=)' call not declared from: %s"
 msgstr "appel 'data(package=)' non déclaré depuis : %s"
@@ -530,7 +529,7 @@ msgid "Rd files with duplicated alias '%s':"
 msgstr "Fichiers Rd avec alias '%s' dupliqué :"
 
 msgid "Rd files without \\alias:"
-msgstr "Fichiers Rd sans \alias :"
+msgstr "Fichiers Rd sans \\alias :"
 
 msgid "Invalid package aliases in Rd file '%s':"
 msgstr "Alias incorrects de packages dans le fichier Rd '%s' :"
@@ -554,7 +553,7 @@ msgid ""
 "%s\n"
 "in NAMESPACE."
 msgstr ""
-"Les génériques 'g' dans 'env' %s avec '%s' erreurs : %s\n"
+"Génériques 'g' dans 'env' %s avec '%s' erreurs : %s\n"
 "Requiert sans doute quelque chose comme\n"
 "\n"
 "%s\n"
@@ -596,7 +595,7 @@ msgstr ""
 "vides"
 
 msgid "No help on %s found in RdDB %s"
-msgstr "Pas d'aide pour %s trouvée dans RdDB %s"
+msgstr "Pas d'aide trouvée pour %s dans RdDB %s"
 
 msgid "'macros' must be TRUE or must specify existing macros"
 msgstr "'macros' doit être TRUE ou doit spécifier des macros existantes"
@@ -607,7 +606,7 @@ msgstr ""
 "commentaires"
 
 msgid "Rd macro package '%s' is not installed."
-msgstr "Macro Rd '%s' du package non installée."
+msgstr "package Macro Rd '%s' non installé."
 
 msgid "No Rd macros in package '%s'."
 msgstr "Pas de macros Rd dans le package '%s'."
@@ -653,7 +652,7 @@ msgid "current working directory cannot be ascertained"
 msgstr "le répertoire de travail actuel ne peut être déterminé"
 
 msgid "no inputs"
-msgstr "pas d'entrées"
+msgstr "pas d'entrée"
 
 msgid "Error in running tools::texi2pdf()"
 msgstr "Erreur lors de l'exécution de tools::texi2pdf()"
@@ -677,8 +676,8 @@ msgid ""
 "engine %s. The following files exist in working directory %s: %s"
 msgstr ""
 "Impossible de localiser %s le fichier de sortie %s ou %s pour la vignette de "
-"nom %s et le moteur %s. Les fichiers suivants existent dans le répertoire "
-"%s : %s"
+"nom %s et le moteur %s. Les fichiers suivants existent dans le répertoire de "
+"travail %s : %s"
 
 msgid ""
 "Located more than one %s output file (by engine %s) for vignette with name "
@@ -699,14 +698,14 @@ msgid "unable to create temp directory %s"
 msgstr "impossible de créer le répertoire temporaire %s"
 
 msgid "Vignette '%s' is non-ASCII but has no declared encoding"
-msgstr "La vignette '%s' n'est pas ASCII mais n'a pas déclaré d'encodage"
+msgstr "La vignette '%s' n'est pas ASCII et n'a pas d'encodage déclaré"
 
 msgid "Running"
 msgstr "Exécution"
 
 msgid "Vignette %s overwrites the following %s output by vignette %s: %s"
 msgstr ""
-"La vignette %s réécrit sur la sortie %s de la  vignette suivante %s : %s"
+"La vignette %s réécrit sur la sortie %s de la vignette suivante %s : %s"
 
 msgid ""
 "Detected vignette source files (%s) with shared names (%s) and therefore "
@@ -742,7 +741,7 @@ msgstr ""
 "%s"
 
 msgid "--- finished re-building %s"
-msgstr "--- reconstruction de %s est terminée"
+msgstr "--- la reconstruction de %s est terminée"
 
 msgid "--- failed re-building %s"
 msgstr "--- la reconstruction de %s a échoué"
@@ -772,7 +771,7 @@ msgstr "Module de traitement non supporté"
 
 msgid "None of packages %s have registered vignette engines"
 msgstr ""
-"Aucun des packages %s n'a enregistré de module de traitement de vignettes"
+"Aucun des packages %s n'a enregistré de module de traitement des vignettes"
 
 msgid "Vignette engine %s is not registered"
 msgstr "Moteur de vignette %s non enregistré"
@@ -781,7 +780,7 @@ msgid "Vignette engine %s is not registered by any of the packages %s"
 msgstr "Moteur de vignette %s non enregistré dans aucun des packages %s"
 
 msgid "Engine name %s and package %s do not match"
-msgstr "Le nom de generateur %s dans le package %s ne peut être localisé"
+msgstr "Le nom de générateur %s dans le package %s ne peut être localisé"
 
 msgid "Argument %s must be a function and not %s"
 msgstr "L'argument %s doit être une fonction et pas %s"
@@ -861,7 +860,7 @@ msgid "ERROR: this R is version %s, package '%s' requires R %s %s"
 msgstr "ERREUR : cette version de R est %s, le package '%s' nécessite R %s %s"
 
 msgid "ERROR: this R is version %s, required is R %s %s"
-msgstr "ERREUR : cette version de R est %s, requis R %s %s"
+msgstr "ERREUR : cette version de R est %s, il faut R %s %s"
 
 msgid "loading failed"
 msgstr "le chargement a échoué"
@@ -881,7 +880,7 @@ msgstr ""
 "erreur"
 
 msgid "Changes require specified 'style'"
-msgstr "Les modifications nécessite le 'style' spécifié"
+msgstr "Les modifications nécessitent le 'style' spécifié"
 
 msgid "The default JSS style may not be modified."
 msgstr "Le style par défaut JSS ne peut être modifié."
@@ -893,7 +892,7 @@ msgid ","
 msgstr ","
 
 msgid "ignored as vignettes have been rebuilt."
-msgstr "ignoré puisque la vignette a été reconstruite."
+msgstr "ignoré puisque les vignettes ont été reconstruites."
 
 msgid "Run R CMD build with --no-build-vignettes to prevent rebuilding."
 msgstr ""
@@ -906,7 +905,7 @@ msgid "Error: cannot rename directory to %s"
 msgstr "Erreur : impossible de renommer le répertoire vers %s"
 
 msgid "elapsed-time limit of %g %s reached for sub-process"
-msgstr "limite de temps maximale de %g %s atteinte pour le processus fille"
+msgstr "limite de temps maximale de %g %s atteinte pour le processus fils"
 
 msgid "cannot link from %s"
 msgstr "impossible de créer un lien depuis %s"
@@ -916,7 +915,7 @@ msgstr "option -l sans valeur"
 
 msgid "configuration files are not supported as from R 2.12.0"
 msgstr ""
-"les fichiers de configuration se sont pas plus supportés depuis R 2.12.0"
+"les fichiers de configuration se sont plus supportés depuis R 2.12.0"
 
 msgid "'--multiarch' specified with only one usable sub-architecture"
 msgstr ""
@@ -932,10 +931,10 @@ msgid "ERROR: cannot create check dir %s"
 msgstr "ERREUR : impossible de créer le répertoire de vérification %s"
 
 msgid "package directory %s does not exist"
-msgstr "le répertoire de package %s n'existe pas"
+msgstr "le répertoire du package %s n'existe pas"
 
 msgid "no packages to check"
-msgstr "pas de packages à vérifier"
+msgstr "pas de package à vérifier"
 
 msgid "'reverse$repos' should be a subset of getOption(\"repos\")"
 msgstr "'reverse$repos' devrait être un sous-ensemble de getOption(\"repos\")"
@@ -984,7 +983,7 @@ msgid "="
 msgstr "="
 
 msgid "No files in this directory"
-msgstr "Pas de fichiers dans ce répertoire"
+msgstr "Pas de fichier dans ce répertoire"
 
 msgid "No results found"
 msgstr "Aucun résultat trouvé"
@@ -993,7 +992,7 @@ msgid "Vignettes:"
 msgstr "Vignettes :"
 
 msgid "Code demonstrations:"
-msgstr "Démonstration de code :"
+msgstr "Démonstrations de code :"
 
 msgid "Help pages:"
 msgstr "Pages d'aide :"
@@ -1041,13 +1040,13 @@ msgid "unsupported URL %s"
 msgstr "l'URL %s n'est pas supportée"
 
 msgid "httpd server disabled by R_DISABLE_HTTPD"
-msgstr "serveur http arrêté par R_DISABLE_HTTPD"
+msgstr "serveur httpd arrêté par R_DISABLE_HTTPD"
 
 msgid "server already running"
 msgstr "serveur déjà en cours d'exécution"
 
 msgid "server could not be started on an earlier attempt"
-msgstr "le serveur n'a pas pu démarrer lors d'un tentative antérieure"
+msgstr "le serveur n'a pas pu démarrer lors d'une tentative antérieure"
 
 msgid "no running server to stop"
 msgstr "aucun serveur en cours d'exécution à arrêter"
@@ -1068,7 +1067,7 @@ msgid "cannot read index information in file '%s'"
 msgstr "impossible de lire l'indice de l'information dans le fichier '%s'"
 
 msgid ".install_packages() exit status"
-msgstr "statut de sortie .install_packages()"
+msgstr "statut de sortie de .install_packages()"
 
 msgid "restoration failed"
 msgstr "la restauration a échoué"
@@ -1096,7 +1095,7 @@ msgid "generating debug symbols (%s)"
 msgstr "génération des symboles de débogage (%s)"
 
 msgid "no DLL was created"
-msgstr "aucune DLL n'a pas été créé"
+msgstr "aucune DLL n'a pas été créée"
 
 msgid "NOTE: fixed path"
 msgstr "NOTE : chemin fixé"
@@ -1105,7 +1104,7 @@ msgid "NOTE: fixed library identification name"
 msgstr "NOTE : nom d'identification de bibliothèque fixé"
 
 msgid "NOTE: fixed library path"
-msgstr "NOTE : chemin de bibliothèques fixé"
+msgstr "NOTE : chemin des bibliothèques fixé"
 
 msgid "NOTE: fixed rpath"
 msgstr "NOTE : chemin rpath fixé"
@@ -1149,7 +1148,7 @@ msgid "Applied installation-time patch"
 msgstr "Correctif d'installation appliqué"
 
 msgid "and saved it as"
-msgstr "et sauvegardez-le tel quel"
+msgstr "et sauvegardez-le comme"
 
 msgid "in package installation"
 msgstr "dans l'installation du package"
@@ -1199,7 +1198,7 @@ msgid "ERROR: no permission to install to directory"
 msgstr "ERREUR : pas de permission pour installer dans le répertoire"
 
 msgid "building a fake installation is disallowed"
-msgstr "construire une installation fantôme n'est pas permise"
+msgstr "construire une installation fantôme n'est pas permis"
 
 msgid "using C compiler:"
 msgstr "en utilisant le compilateur C :"
@@ -1241,7 +1240,7 @@ msgid "package seems to be using lazy loading for data already"
 msgstr "le package semble déjà utiliser le chargement partiel pour les données"
 
 msgid "source list must have names for all elements"
-msgstr "la liste de source doit avoir des noms pour tous ses éléments"
+msgstr "la liste des sources doit avoir des noms pour tous ses éléments"
 
 msgid "source must be an environment or a list"
 msgstr "source doit être un environnement ou une liste"
@@ -1301,7 +1300,7 @@ msgstr ""
 "Fichier NEWS.Rd erroné :\n"
 "Le fragment démarrant\n"
 "  %s\n"
-"contiennent no \\itemsize."
+"ne contient pas \\itemsize."
 
 msgid ""
 "Malformed NEWS.Rd file:\n"
@@ -1313,7 +1312,7 @@ msgstr ""
 "Fichier NEWS.Rd erroné :\n"
 "Le fragment démarrant\n"
 "  %s\n"
-"contiennent plus d'un \\itemsize.\n"
+"contient plus d'un \\itemsize.\n"
 "Le premier est utilisé."
 
 msgid ""
@@ -1325,7 +1324,7 @@ msgstr ""
 "Fichier NEWS.Rd erroné :\n"
 "Le fragment démarrant\n"
 "  %s\n"
-"contiennent no \\item."
+"contient aucun \\item."
 
 msgid "Processing packages:"
 msgstr "Traitement des packages :"
@@ -1362,7 +1361,7 @@ msgid "Found %s, possibly from %s"
 msgstr "%s est trouvé, sans doute depuis %s"
 
 msgid "no native symbols were extracted"
-msgstr "aucuns symboles natifs n'ont été extraits"
+msgstr "aucun symbole natif n'a été extrait"
 
 msgid "not a PDF file"
 msgstr "n'est pas un fichier PDF"
@@ -1395,7 +1394,7 @@ msgid "OK"
 msgstr "OK"
 
 msgid "no examples found for package %s"
-msgstr "pas d'examples trouvés pour le package %s"
+msgstr "aucun exemple trouvé pour le package %s"
 
 msgid "Running specific tests for package %s"
 msgstr "Exécution des tests spécifiques au package %s"
@@ -1413,7 +1412,7 @@ msgid "Comparing %s to %s ..."
 msgstr "Comparaison de %s à %s ..."
 
 msgid "no parsed files found"
-msgstr "aucun fichier source n'est trouvé"
+msgstr "aucun fichier analysé trouvé"
 
 msgid "FAILED"
 msgstr "ECHEC"
@@ -1447,11 +1446,11 @@ msgid "directly."
 msgstr "directement."
 
 msgid "No existing PACKAGES file found at"
-msgstr "Pas de fichiers PACKAGES trouvés à"
+msgstr "Aucun fichier PACKAGES trouvé à"
 
 msgid "Existing PACKAGES file contained no rows and/or no columns"
 msgstr ""
-"Le fichier PACKAGES existant ne contenait aucune ligne et aucune colonne"
+"Le fichier PACKAGES existant ne contenait aucune ligne et(ou) aucune colonne"
 
 msgid "Specified fields no present in existing PACKAGES file:"
 msgstr "Champs explicités absents du fichier PACKAGES existant :"
@@ -1482,17 +1481,17 @@ msgid "entries at"
 msgstr "entrées à"
 
 msgid "unable to find any package tarballs in"
-msgstr "aucun fichier “tarball” de package trouvé"
+msgstr "aucun fichier 'tarball' de package trouvé"
 
 msgid "All existing entry MD5sums match tarballs."
 msgstr ""
-"Toutes les entrées MD5sums existantes correspondent aux fichiers “tarball”s."
+"Toutes les entrées MD5sums existantes correspondent aux fichiers 'tarball'."
 
 msgid "Found"
 msgstr "Trouvé(s)"
 
 msgid "package versions to process."
-msgstr "versions de packages à traiter."
+msgstr "versions des packages à traiter."
 
 msgid "No new packages or updated package versions detected"
 msgstr "Aucunes versions mise à jours ou nouveaux packages détectées"
@@ -1501,7 +1500,7 @@ msgid "[dryrun mode] Dryrun complete."
 msgstr "[dryrun mode] Dryrun terminé."
 
 msgid "Writing final updated PACKAGES files."
-msgstr "Écriture du fichier PACKAGES final mis à jour."
+msgstr "Écriture des fichiers PACKAGES finaux mis à jour."
 
 msgid "update_PACKAGES complete."
 msgstr "update_PACKAGES terminé."
@@ -1618,7 +1617,7 @@ msgid ""
 msgid_plural ""
 "Found possibly global 'T' or 'F' in the examples of the following Rd files:"
 msgstr[0] ""
-"L'utilisation globale possible de 'T' ou 'F' est trouvées dans l'exemple du "
+"L'utilisation globale possible de 'T' ou 'F' est trouvée dans les exemples du "
 "fichier Rd suivant :"
 msgstr[1] ""
 "Des utilisations globales possibles de 'T' ou 'F' sont trouvées dans les "
@@ -1629,7 +1628,7 @@ msgid_plural "Possibly missing '()' after 'return' in the following functions:"
 msgstr[0] ""
 "'()' potentiellement manquantes après 'return' dans la fonction suivante :"
 msgstr[1] ""
-"'()' potentiellement manquantes après 'return' dans les fonctions suivantes :"
+"'()' potentiellement manquant après 'return' dans les fonctions suivantes :"
 
 msgid "Found a .Internal call in the following function:"
 msgid_plural "Found .Internal calls in the following functions:"
@@ -1638,15 +1637,15 @@ msgstr[1] "Appels .Internal trouvés dans les fonctions suivantes :"
 
 msgid "Found a.Internal call in methods for the following S4 generic:"
 msgid_plural "Found .Internal calls in methods for the following S4 generics:"
-msgstr[0] "Appel .Internal trouvé dans la fonction générique S4 suivante :"
+msgstr[0] "Apppel .Internal trouvé dans les méthodes pour la fonction générique S4 suivante :"
 msgstr[1] ""
-"Appels .Internal trouvés dans les fonctions génériques S4 suivantes :"
+"Appels .Internal trouvés dans les méthodes pour les fonctions génériques S4 suivantes :"
 
 msgid "Found a .Internal call in methods for the following reference class:"
 msgid_plural ""
 "Found .Internal calls in methods for the following reference classes:"
 msgstr[0] ""
-"Appel .Internal trouvé dans la méthode pour la classe de référence suivante :"
+"Appel .Internal trouvé dans les méthodes pour la classe de référence suivante :"
 msgstr[1] ""
 "Appels .Internal trouvés dans les méthodes pour les classes de références "
 "suivantes :"
@@ -1693,8 +1692,8 @@ msgstr[1] "Fonctions obsolètes trouvées :"
 
 msgid "Found the defunct/removed function:"
 msgid_plural "Found the defunct/removed functions:"
-msgstr[0] "Fonction obsolète ou éliminée trouvée :"
-msgstr[1] "Fonctions obsolètes ou éliminées trouvées :"
+msgstr[0] "Fonction obsolète ou supprimées trouvée :"
+msgstr[1] "Fonctions obsolètes ou supprimées trouvées :"
 
 msgid "Found the platform-specific device:"
 msgid_plural "Found the platform-specific devices:"
@@ -1704,7 +1703,7 @@ msgstr[1] "Des périphériques spécifiques à une plateforme sont rencontrés :
 msgid "Generic without any methods in %s: %s"
 msgid_plural "Generics without any methods in %s: %s"
 msgstr[0] "Fonction générique sans méthode associée dans %s:%s"
-msgstr[1] "Fonctions génériques sans méthodes associées dans %s:%s"
+msgstr[1] "Fonctions génériques sans méthode associée dans %s:%s"
 
 msgid ""
 "missing/empty \\name field in Rd file\n"
