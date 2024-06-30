@@ -289,7 +289,7 @@ msgid ""
 "Cannot debug primitive functions unless they are implicit generics (requires "
 "loading the methods package)"
 msgstr ""
-"Impossible de débogguer des fonctions primitives à moins qu’elles ne soient "
+"Impossible de débogguer des fonctions primitives à moins qu'elles ne soient "
 "implicitement des fonctions génériques (chargement du package methods "
 "nécessaire)"
 
@@ -410,11 +410,11 @@ msgstr "'n' incorrect - doit être numérique ou éventuellement NA."
 
 msgid "invalid 'n' - must have length one when dim(x) is NULL, got %d"
 msgstr ""
-"'n' incorrect - doit être de longueur unitaire lorsque dim(x) est NULL, j’ai "
+"'n' incorrect - doit être de longueur unitaire lorsque dim(x) est NULL, j'ai "
 "%d"
 
 msgid "invalid 'n' - length(n) must be <= length(dim(x)), got %d > %d"
-msgstr "’n’ incorrect - length(n) doit être <= length(dim(x)), j’ai %d > %d"
+msgstr "'n' incorrect - length(n) doit être <= length(dim(x)), j'ai %d > %d"
 
 msgid "no method found for %s(., n=%s) and class %s"
 msgstr "aucune méthode définie pour %s(., n=%s) et pour la classe %s"
@@ -500,7 +500,7 @@ msgid "Saving help page to %s"
 msgstr "Sauvegarde de la page d'aide dans %s"
 
 msgid "Cancelled by user"
-msgstr "Annulé par l’utilisateur"
+msgstr "Annulé par l'utilisateur"
 
 msgid "Unable to connect to CRAN to check R version."
 msgstr "Impossible de se connecter à CRAN pour vérifier la version de R."
@@ -600,7 +600,7 @@ msgstr "Entrer un des items du menu, ou 0 pour sortir"
 
 msgid "%d errors caught in %s.  The error messages and their frequencies are"
 msgstr ""
-"%d erreurs repérées dans %s. Les messages d’erreurs et leurs fréquences sont"
+"%d erreurs repérées dans %s. Les messages d'erreurs et leurs fréquences sont"
 
 msgid "invalid query"
 msgstr "requête incorrecte"
@@ -609,7 +609,7 @@ msgid "For SI units, specify 'standard = \"SI\"'"
 msgstr "Pour les unités SI, spécifiez 'standard = \"SI\"'"
 
 msgid "Unit \"%s\" is not part of standard \"%s\""
-msgstr "L’unité \"%s\" ne fait pas partie du standard \"%s\""
+msgstr "L'unité \"%s\" ne fait pas partie du standard \"%s\""
 
 msgid "'%s' is a formal generic function; S3 methods will not likely be found"
 msgstr ""
@@ -744,7 +744,7 @@ msgid "trying to use CRAN without setting a mirror"
 msgstr "essai d'utilisation de CRAN sans fixer un miroir"
 
 msgid "'download.file()' error code '%d'"
-msgstr "'download.file()', code d’erreur '%d'"
+msgstr "'download.file()', code d'erreur '%d'"
 
 msgid "failed to download mirrors file (%s); using local file '%s'"
 msgstr ""
@@ -792,7 +792,7 @@ msgid "'%s' must be a character string"
 msgstr "'%s' doit être une chaîne de caractères"
 
 msgid "type 'binary' is not supported on this platform"
-msgstr "le type 'binary' n’est pas supporté sur cette plateforme"
+msgstr "le type 'binary' n'est pas supporté sur cette plateforme"
 
 msgid "no packages were specified"
 msgstr "aucun package spécifié"
@@ -930,7 +930,7 @@ msgid "Edit the file and move it to the appropriate directory."
 msgstr "Éditez le fichier et déplacez-le dans le répertoire approprié."
 
 msgid "cannot determine import name"
-msgstr "impossible de déterminer le nom d’importation"
+msgstr "impossible de déterminer le nom d'importation"
 
 msgid "no documentation of type %s and topic %s (or error in processing help)"
 msgstr ""
@@ -1036,7 +1036,7 @@ msgid "'file' must be a character string or connection"
 msgstr "'file' doit être une chaîne de caractères ou une connexion"
 
 msgid "'as.is' should be specified by the caller; using TRUE"
-msgstr "'as.is' doit être spécifié par l’appelant ; utilisation de TRUE"
+msgstr "'as.is' doit être spécifié par l'appelant ; utilisation de TRUE"
 
 msgid "empty beginning of file"
 msgstr "début de fichier vide"
@@ -1082,7 +1082,7 @@ msgid "socket not established"
 msgstr "socket non connecté"
 
 msgid "argument is not a function or language object:"
-msgstr "l’argument n’est pas une fonction ou un objet de langage :"
+msgstr "l'argument n'est pas une fonction ou un objet de langage :"
 
 msgid "str.data.frame() called with non-data.frame -- coercing to one."
 msgstr "str.data.frame() appelé avec un non data.frame -- forçage du type."
@@ -1116,7 +1116,7 @@ msgid "The number of tokens != 'length(proto)'"
 msgstr "Le nombre de tokens != 'length(proto)'"
 
 msgid "The number of tokens is not consistent across 'x'"
-msgstr "Le nombre de tokens est incohérent avec 'x’"
+msgstr "Le nombre de tokens est incohérent avec 'x'"
 
 msgid "cannot coerce %s to TRUE or FALSE"
 msgstr "impossible de convertir %s en TRUE ou FALSE"
@@ -1134,7 +1134,7 @@ msgid "no events were recorded"
 msgstr "aucun événement à enregistrer"
 
 msgid "argument 'compressed' is ignored for the internal method"
-msgstr "l’argument 'compressed' est ignoré par la méthode interne"
+msgstr "l'argument 'compressed' est ignoré par la méthode interne"
 
 msgid "invalid 'tarfile' argument"
 msgstr "argument 'tarfile' incorrect"
@@ -1184,7 +1184,7 @@ msgstr "bloc incomplet dans le fichier"
 
 msgid "incomplete block: rather use gzfile(.) created connection?"
 msgstr ""
-"bloc incomplet : utilisez plutôt une connexion créée à l’aide de gzfile(.) ?"
+"bloc incomplet : utilisez plutôt une connexion créée à l'aide de gzfile(.) ?"
 
 msgid "invalid name field in tarball"
 msgstr "nom de champ incorrect dans l'archive tarball"
@@ -1298,10 +1298,10 @@ msgid "'destfile' must be a length-one character vector"
 msgstr "'destfile' doit être une chaîne de caractères de longueur 1"
 
 msgid "'wget' call had nonzero exit status"
-msgstr "l’appel de 'wget' a un statut de sortie non nul"
+msgstr "l'appel de 'wget' a un statut de sortie non nul"
 
 msgid "'curl' call had nonzero exit status"
-msgstr "l’appel de 'curl' a un statut de sortie non nul"
+msgstr "l'appel de 'curl' a un statut de sortie non nul"
 
 msgid "invalid method:"
 msgstr "méthode incorrecte :"
