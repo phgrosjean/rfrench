@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: R 4.4.0\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2024-04-15 18:10-0700\n"
-"PO-Revision-Date: 2024-06-30 17:21+0200\n"
+"PO-Revision-Date: 2024-06-30 17:42+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
@@ -31,11 +31,11 @@ msgstr "argument '%s' incorrect"
 
 #: io.c:350 io.c:841
 msgid "invalid quote symbol set"
-msgstr "set de symboles pour mettre du texte entre guillemets incorrect"
+msgstr "séquence d'apostrophes incorrecte"
 
 #: io.c:362 io.c:864 io.c:1084
 msgid "cannot open the connection"
-msgstr "impossible d’ouvrir la connection"
+msgstr "impossible d'ouvrir la connection"
 
 #: io.c:365 io.c:369
 msgid "cannot read from this connection"
@@ -62,7 +62,7 @@ msgstr "Sélection : "
 
 #: io.c:874 io.c:889
 msgid "cannot allocate buffer in 'readTableHead'"
-msgstr "impossible d’allouer un tampon pour 'readTableHead'"
+msgstr "impossible d'allouer un tampon pour 'readTableHead'"
 
 #: io.c:902
 msgid "\\ followed by EOF"
@@ -88,11 +88,11 @@ msgstr "Problème lors de la fermeture de la connexion"
 
 #: io.c:1077
 msgid "'file' is not a connection"
-msgstr "'file' n’est pas une connexion"
+msgstr "'file' n'est pas une connexion"
 
 #: io.c:1080
 msgid "cannot write to this connection"
-msgstr "impossible d’écrire dans cette connexion"
+msgstr "impossible d'écrire dans cette connexion"
 
 #: io.c:1110
 msgid "'dec' must be a single character"
@@ -106,13 +106,13 @@ msgstr ""
 "correspond pas au nombre de lignes"
 
 #: io.c:1171
-#, fuzzy, c-format
+#, c-format
 msgid "column %d claims to be a factor but does not have numeric codes"
-msgstr "la colonne %d prétend être un facteur mais n’a pas de codes numériques"
+msgstr "la colonne %d prétend être un facteur mais n'a pas de codes numériques"
 
 #: io.c:1189
 msgid "corrupt matrix -- dims do not match length"
-msgstr "matrice corrompue -- dims n’est pas compatible avec length"
+msgstr "matrice corrompue -- dims n'est pas compatible avec length"
 
 #: stubs.c:56
 msgid "'savehistory' can only be used in Rgui and Rterm"
@@ -150,7 +150,7 @@ msgstr "l'argument 'class' doit être une chaîne de caractères"
 
 #: utils.c:78
 msgid "argument 'x' must be a length-1 character vector"
-msgstr "l’argument 'x' doit être un vecteur de 1 caractère"
+msgstr "l'argument 'x' doit être un vecteur de 1 caractère"
 
 #: utils.c:81
 msgid "argument 'x' must be UTF-8 encoded (including ASCII)"
@@ -163,7 +163,7 @@ msgstr "'hostname' doit être une chaîne de caractères de longueur 1"
 #: utils.c:153
 #, c-format
 msgid "nsl() was unable to resolve host '%s'"
-msgstr "nsl() était incapable de résoudre l’hôte '%s'"
+msgstr "nsl() était incapable de résoudre l'hôte '%s'"
 
 #: utils.c:160
 msgid "unknown format returned by 'gethostbyname'"
@@ -171,7 +171,7 @@ msgstr "format inconnu renvoyé par 'gethostbyname'"
 
 #: utils.c:169
 msgid "nsl() is not supported on this platform"
-msgstr "nsl() n’est pas supporté sous cette architecture"
+msgstr "nsl() n'est pas supporté sous cette architecture"
 
 #: windows/dialogs.c:181
 msgid "unknown type"
@@ -181,7 +181,7 @@ msgstr "type inconnu"
 #: windows/dialogs.c:310
 msgid "menu functions can only be used in the GUI"
 msgstr ""
-"les fonctions de menu ne peuvent être utilisées que sous l’interface "
+"les fonctions de menu ne peuvent être utilisées que sous l'interface "
 "graphique (GUI)"
 
 #: windows/dialogs.c:245
@@ -192,21 +192,21 @@ msgstr "impossible de récupérer les items pour %s (%s)"
 #: windows/dialogs.c:283
 #, c-format
 msgid "unable to add menu (%s)"
-msgstr "impossible d’ajouter un menu (%s)"
+msgstr "impossible d'ajouter un menu (%s)"
 
 #: windows/dialogs.c:295
 #, c-format
 msgid "unable to add menu item (%s)"
-msgstr "impossible d’ajouter un élément de menu (%s)"
+msgstr "impossible d'ajouter un élément de menu (%s)"
 
 #: windows/dialogs.c:318
 msgid "menu does not exist"
-msgstr "le menu n’existe pas"
+msgstr "le menu n'existe pas"
 
 #: windows/dialogs.c:325
 #, c-format
 msgid "unable to delete menu item (%s)"
-msgstr "impossible d’éliminer un élément de menu (%s)"
+msgstr "impossible d'éliminer un élément de menu (%s)"
 
 #: windows/registry.c:67 windows/registry.c:242 windows/registry.c:245
 #: windows/registry.c:248
@@ -225,15 +225,15 @@ msgstr "version de Windows non supportée"
 
 #: windows/util.c:291
 msgid "argument must be a character vector or a raw vector"
-msgstr "l’argument doit être une chaîne de caractères ou un vecteur raw"
+msgstr "l'argument doit être une chaîne de caractères ou un vecteur raw"
 
 #: windows/util.c:330
 msgid "unable to open the clipboard"
-msgstr "impossible d’ouvrir le presse-papier"
+msgstr "impossible d'ouvrir le presse-papier"
 
 #: windows/util.c:335
 msgid "unable to write to the clipboard"
-msgstr "impossible d’écrire dans le presse-papier"
+msgstr "impossible d'écrire dans le presse-papier"
 
 #: windows/util.c:414
 msgid "'title' must be a character string"
@@ -256,7 +256,7 @@ msgstr "'%s' doit être une liste"
 #: windows/util.c:579
 #, c-format
 msgid "'%s' element %d is not a window handle"
-msgstr "'%s' élément %d n’est pas un identifiant de fenêtre (handle)"
+msgstr "'%s' élément %d n'est pas un identifiant de fenêtre (handle)"
 
 #: windows/widgets.c:110
 msgid "Select one or more"
