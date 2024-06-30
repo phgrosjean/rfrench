@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: R 4.4.0\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2024-04-15 18:10\n"
-"PO-Revision-Date: 2024-05-16 16:19+0200\n"
-"Last-Translator: Michael Chirico <michaelchirico4@gmail.com>\n"
+"PO-Revision-Date: 2024-06-30 18:08+0200\n"
+"Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 2.4.2\n"
 
 msgid ""
 "RShowDoc() should be used with a character string argument specifying\n"
@@ -35,9 +35,13 @@ msgstr "document introuvable"
 msgid ""
 "some options in argument 'restrict' were not recognized and hence ignored"
 msgstr ""
+"certaines options de l'argument 'restrict' ne sont pas reconnues et ont été "
+"ignorées"
 
 msgid "argument 'format' is deprecated and has no affect on search results"
 msgstr ""
+"l'argument 'format' est obsolète et ne modifie pas le résultat de la "
+"recherche"
 
 msgid "A search query has been submitted to %s"
 msgstr "Une requête de recherche a été soumise à %s"
@@ -150,7 +154,7 @@ msgstr ""
 "Aucun programme de vérification orthographique utilisable n'est trouvé."
 
 msgid "Performing query %s"
-msgstr ""
+msgstr "Requête en cours %s"
 
 msgid ""
 "Use <code> %s </code> \n"
@@ -242,9 +246,8 @@ msgstr "'FUN' doit être une fonction ou NULL"
 msgid "cannot handle S4 methods yet"
 msgstr "incapable de traiter les méthodes S4 actuellement"
 
-#, fuzzy
 msgid "'package' must be a character vector or NULL"
-msgstr "'package' doit être une chaîne de caratcères ou NULL"
+msgstr "'package' doit être un vecteur de caractères ou NULL"
 
 msgid "data index for package %s is invalid and will be ignored"
 msgstr "l'index de données pour le package %s est incorrect et sera ignoré"
@@ -395,18 +398,15 @@ msgid "'form' must be a two-sided formula with one term on each side"
 msgstr ""
 "'form' doit être une formule à deux membres avec un terme de chaque côté"
 
-#, fuzzy
 msgid "invalid object for 'as.environment'"
-msgstr "argument 'socket' incorrect"
+msgstr "object incorrect pour 'as.environment'"
 
-#, fuzzy
 msgid "invalid 'n' - must contain at least one non-missing element, got none."
 msgstr ""
-"'n' incorrect - doit contenir au moins un élément non manquant, j’en trouve "
-"aucun."
+"'n' incorrect - doit contenir au moins un élément non manquant, aucun trouvé."
 
 msgid "invalid 'n' - must be numeric, possibly NA."
-msgstr ""
+msgstr "'n' incorrect - doit être numérique ou éventuellement NA."
 
 msgid "invalid 'n' - must have length one when dim(x) is NULL, got %d"
 msgstr ""
@@ -505,9 +505,8 @@ msgstr "Annulé par l’utilisateur"
 msgid "Unable to connect to CRAN to check R version."
 msgstr "Impossible de se connecter à CRAN pour vérifier la version de R."
 
-#, fuzzy
 msgid "argument %s must be a character string"
-msgstr "l'argument %s doit être une seule chaîne de caractères"
+msgstr "l'argument %s doit être une chaîne de caractères"
 
 msgid "incorrect field specification"
 msgstr "spécification de champ incorrecte"
@@ -560,9 +559,8 @@ msgstr ""
 msgid "Otherwise, be patient ..."
 msgstr "Sinon, soyez patient..."
 
-#, fuzzy
 msgid "'%s' must be a non-empty character string"
-msgstr "'url' doit être une chaîne de caractères non vide"
+msgstr "'%s' doit être une chaîne de caractères non vide"
 
 msgid "no package '%s' was found"
 msgstr "le package '%s' est introuvable"
@@ -591,9 +589,8 @@ msgstr "impossible de mettre à jour l'index HTML des packages"
 msgid "done"
 msgstr "terminé"
 
-#, fuzzy
 msgid "Source must be a seekable connection"
-msgstr "'file' doit être une chaîne de caractères ou une connexion"
+msgstr "Source doit être une connexion cherchable"
 
 msgid "menu() cannot be used non-interactively"
 msgstr "menu() ne peut être utilisé en mode non interactif"
@@ -767,7 +764,7 @@ msgid "invalid options(\"pkgType\"); must be a character string"
 msgstr "options(\"pkgType\") incorrecte ; Doit être une chaîne de caractères"
 
 msgid "No matching repositories found for"
-msgstr ""
+msgstr "Pas de dépôt correspondant à"
 
 msgid ","
 msgstr ","
@@ -791,9 +788,8 @@ msgstr ""
 "Je ne sais pas dans quel élément de 'lib' installer les dépendances\n"
 "dépendances ignorées"
 
-#, fuzzy
 msgid "'%s' must be a character string"
-msgstr "'unzip' doit être une seule chaîne de caractères"
+msgstr "'%s' doit être une chaîne de caractères"
 
 msgid "type 'binary' is not supported on this platform"
 msgstr "le type 'binary' n’est pas supporté sur cette plateforme"
@@ -871,29 +867,26 @@ msgstr "fichiers : %s"
 
 msgid "Windows default 'timeout' command is not usable for parallel installs"
 msgstr ""
+"La commande 'timeout' par défaut de Windows ne peut pas être utilisée pour "
+"des installations parallèles"
 
 msgid "timeouts for parallel installs require the 'timeout' command"
 msgstr ""
 "les délais maximaux pour les installations en parallèle nécessitent la "
 "commande 'timeout'"
 
-#, fuzzy
 msgid "installation of package %s failed"
-msgstr "le téléchargement du package %s a échoué"
+msgstr "l'installation du package %s a échoué"
 
-#, fuzzy
 msgid "installation of %d packages failed:  %s"
-msgstr ""
-"l'installation de un package ou plus a échoué,\n"
-" probablement %s"
+msgstr "l'installation de %d package(s) a échoué :  %s"
 
-#, fuzzy
 msgid ""
 "installation of %d packages failed:\n"
 "  %s"
 msgstr ""
-"l'installation de un package ou plus a échoué,\n"
-" probablement %s"
+"l'installation de %d package(s) a échoué :\n"
+"  %s"
 
 msgid ""
 "The downloaded source packages are in\n"
@@ -1125,9 +1118,8 @@ msgstr "Le nombre de tokens != 'length(proto)'"
 msgid "The number of tokens is not consistent across 'x'"
 msgstr "Le nombre de tokens est incohérent avec 'x’"
 
-#, fuzzy
 msgid "cannot coerce %s to TRUE or FALSE"
-msgstr "impossible de convertir %s en booléen"
+msgstr "impossible de convertir %s en TRUE ou FALSE"
 
 msgid "no lines found in %s"
 msgstr "aucune ligne trouvée dans %s"
@@ -1311,9 +1303,8 @@ msgstr "l’appel de 'wget' a un statut de sortie non nul"
 msgid "'curl' call had nonzero exit status"
 msgstr "l’appel de 'curl' a un statut de sortie non nul"
 
-#, fuzzy
 msgid "invalid method:"
-msgstr "format incorrect"
+msgstr "méthode incorrecte :"
 
 msgid "download had nonzero exit status"
 msgstr "le téléchargement a a eu un statut de sortie non nul"
@@ -1384,13 +1375,11 @@ msgstr "impossible de copier l'installation temporaire %s vers %s"
 msgid "Only '*.zip' and '*.tar.gz' files can be installed."
 msgstr "Seulement les fichiers '*.zip' et '*.tar.gz' peuvent être installés."
 
-#, fuzzy
 msgid "'memory.size()' is no longer supported"
-msgstr "'memory.size()' est spécifique à Windows"
+msgstr "'memory.size()' n'est plus supporté"
 
-#, fuzzy
 msgid "'memory.limit()' is no longer supported"
-msgstr "'memory.limit()' est spécifique à Windows"
+msgstr "'memory.limit()' n'est plus supporté"
 
 msgid "winDialog() cannot be used non-interactively"
 msgstr "winDialog() ne peut être utilisé en mode non interactif"
@@ -1443,13 +1432,11 @@ msgid_plural "objects '%s' not found"
 msgstr[0] "objet '%s' introuvable"
 msgstr[1] "objets '%s' introuvables"
 
-#, fuzzy
 msgid "package %s is a base package, and cannot be removed"
 msgid_plural "packages %s are base packages, and cannot be removed"
-msgstr[0] ""
-"le package %s est un package de base et ne devrait pas être mis à jour"
+msgstr[0] "le package %s est un package de base et ne doit pas être supprimé"
 msgstr[1] ""
-"les packages %s sont des packages de base et ne devraient pas être mis à jour"
+"les packages %s sont des packages de base et ne doivent pas être supprimés"
 
 msgid ""
 "Removing package from %s\n"
