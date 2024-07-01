@@ -37,7 +37,7 @@ msgstr "runmed(): 'na.action' incorrecte"
 #, c-format
 msgid "na_action logic error (%d), please report!"
 msgstr ""
-"na_action erreur logique (%d), veuillez reporter l’erreur, s’il-vous-plait !"
+"na_action erreur logique (%d), veuillez reporter l'erreur, s'il-vous-plait !"
 
 #: ansari.c:118
 msgid "probabilities outside [0,1] in qansari()"
@@ -58,7 +58,7 @@ msgstr "approx() : tentative d'interpolation de valeurs NA"
 #: approx.c:128
 msgid "approx(x,y, .., na.rm=FALSE): NA values in x are not allowed"
 msgstr ""
-"approx(x,y, .., na.rm=FALSE) : valeurs manquantes sur l’axe x non autorisées"
+"approx(x,y, .., na.rm=FALSE) : valeurs manquantes sur l'axe x non autorisées"
 
 #: arima.c:81 arima.c:192 arima.c:377 arima.c:608 optim.c:39
 msgid "invalid argument type"
@@ -130,7 +130,7 @@ msgstr "La fonction '%s' n'est pas dans la table des dérivées"
 #: deriv.c:789
 #, c-format
 msgid "expression must not be type '%s'"
-msgstr "l’expression ne peut pas être de type '%s'"
+msgstr "l'expression ne peut pas être de type '%s'"
 
 #: deriv.c:792
 msgid "variable must be a character string"
@@ -196,7 +196,7 @@ msgstr "l'argument %s doit être un vecteur numérique de longueur 1 ou %d"
 #, c-format
 msgid "integer overflow would happen in 'mult * ldkey' = %g"
 msgstr ""
-"un dépassement de pile vers le haut dans un calcul d’entiers va apparaître "
+"un dépassement de pile vers le haut dans un calcul d'entiers va apparaître "
 "dans 'mult * ldkey' = %g"
 
 #: fexact.c:656
@@ -208,7 +208,7 @@ msgid ""
 msgstr ""
 "FEXACT erreur 6.  LDKEY=%d est trop petit pour ce problème,\n"
 "  (ii := key2[itp=%d] = %d, ldstp=%d)\n"
-"Essayez d’augmenter la taille de l’environnement de travail et peut-être "
+"Essayez d'augmenter la taille de l'environnement de travail et peut-être "
 "aussi 'mult'"
 
 #: fexact.c:1040
@@ -231,7 +231,7 @@ msgid ""
 msgstr ""
 "FEXACT erreur 30.  Taille de pile dépassée f3xact,\n"
 "  (ldst=%d, key=%d, ipn=%d, itp=%d, ist[ii=%d]=%d).\n"
-"Augmentez la taille de l’environnement de travail ou considérez d’utiliser "
+"Augmentez la taille de l'environnement de travail ou considérez d'utiliser "
 "'simulate.p.value=TRUE'"
 
 #: fexact.c:1407
@@ -242,7 +242,7 @@ msgid ""
 msgstr ""
 "FEXACT erreur 6 (f5xact).  LDKEY=%d est trop petit pour ce problème : kval="
 "%d.\n"
-"Essayez d’augmenter la taille de l’environnement de travail."
+"Essayez d'augmenter la taille de l'environnement de travail."
 
 #: fexact.c:1420
 #, c-format
@@ -253,8 +253,8 @@ msgid ""
 msgstr ""
 "FEXACT erreur 7(%s). LDSTP=%d est trop petit pour ce problème,\n"
 "  (kval=%d, itop-ldstp=%d).\n"
-"Augmentez la taille de l’environnement de travail ou considérez "
-"l’utilisation de 'simulate.p.value=TRUE’."
+"Augmentez la taille de l'environnement de travail ou considérez "
+"l'utilisation de 'simulate.p.value=TRUE'."
 
 #: fexact.c:1458
 #, c-format
@@ -265,8 +265,8 @@ msgid ""
 msgstr ""
 "FEXACT erreur 7(%s). LDSTP=%d est trop petit pour ce problème,\n"
 "  (pastp=%g, ipn_0:=ipoin[itp=%d]=%d, stp[ipn_0]=%g).\n"
-"Augmentez la taille de l’environnement de travail ou considérez "
-"l’utilisation de ‘simulate.p.value=TRUE’."
+"Augmentez la taille de l'environnement de travail ou considérez "
+"l'utilisation de 'simulate.p.value=TRUE'."
 
 #: fourier.c:70 fourier.c:165
 msgid "non-numeric argument"
@@ -286,14 +286,14 @@ msgid ""
 "nextn() found no solution < %d = INT_MAX (the maximal integer); pass '0+ n' "
 "instead of 'n'"
 msgstr ""
-"nextn() n’a pas trouvé de solution < %d = INT_MAX (le plus grand entier) ; "
+"nextn() n'a pas trouvé de solution < %d = INT_MAX (le plus grand entier) ; "
 "passer '0 + n' à la place de 'n'"
 
 #: fourier.c:233
 #, c-format
 msgid "nextn<64>() found no solution < %llu = UINT64_MAX (the maximal integer)"
 msgstr ""
-"nextn<64>() n’a pas trouvé de solution < %llu = UINT64_MAX (le plus grand "
+"nextn<64>() n'a pas trouvé de solution < %llu = UINT64_MAX (le plus grand "
 "entier)"
 
 #: fourier.c:249
@@ -360,7 +360,7 @@ msgstr "environnement de travail requis (%.0f) trop large %s."
 
 #: loessc.c:258
 msgid " probably because of setting 'se = TRUE'"
-msgstr " probablement à cause de l’argument 'se = TRUE'"
+msgstr " probablement à cause de l'argument 'se = TRUE'"
 
 #: loglin.c:372
 msgid "this should not happen"
@@ -404,7 +404,7 @@ msgstr "La vmethod est incorrecte"
 
 #: mAR.c:836
 msgid "Burg's algorithm failed to find partial correlation"
-msgstr "L’algorithme de Burg n'a pas trouvé la corrélation partielle"
+msgstr "L'algorithme de Burg n'a pas trouvé la corrélation partielle"
 
 #: model.c:97
 msgid "invalid variables"
