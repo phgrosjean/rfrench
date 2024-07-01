@@ -34,10 +34,10 @@ msgid "cannot fit models without level ('alpha' must not be 0 or FALSE)"
 msgstr "ajustement du modèle impossible sans un niveau ('alpha' ne doit pas être zéro ou FALSE)"
 
 msgid "'alpha', 'beta' and 'gamma' must be within the unit interval"
-msgstr "'alpha', 'beta' et 'gamma' doivent être dans un intervale d'une unité"
+msgstr "'alpha', 'beta' et 'gamma' doivent être dans un intervalle d'une unité"
 
 msgid "data must be non-zero for multiplicative Holt-Winters"
-msgstr "les données ne peuvent être négatives dans un modèle de Holt-Winters multiplicatif"
+msgstr "les données ne peuvent pas être 0 pour un modèle de Holt-Winters multiplicatif"
 
 msgid "need at least 2 periods to compute seasonal start values"
 msgstr "il faut au moins 2 périodes pour calculer les valeurs de départ saisonnières"
@@ -52,7 +52,7 @@ msgid "optimization failure"
 msgstr "échec d'optimisation"
 
 msgid "time series has no or less than 2 periods"
-msgstr "la série temporelle a moins de 2 périodes"
+msgstr "la série temporelle a moins de 2 périodes ou aucune"
 
 msgid "the series is entirely NA"
 msgstr "la série ne contient que des NAs"
@@ -152,7 +152,7 @@ msgstr ""
 " ne correspond pas à la longueur des marges, %d"
 
 msgid "no rows to aggregate"
-msgstr "pas de lignes à aggréger"
+msgstr "pas de ligne à aggréger"
 
 msgid "'by' must be a list"
 msgstr "'by' doit être une liste"
@@ -167,7 +167,7 @@ msgid "argument 'x' must be a formula"
 msgstr "l'argument 'x' doit être une formule"
 
 msgid "formula 'x' must have both left and right hand sides"
-msgstr "la formule 'x' doit avoir un membre à gauche et un membre à droite"
+msgstr "la formule 'x' doit avoir à la fois un membre gauche et un membre droit"
 
 msgid "cannot change frequency from %g to %g"
 msgstr "impossible de changer la fréquence de %g à %g"
@@ -185,13 +185,13 @@ msgid "wrong k / cs.ind"
 msgstr "k / cs.ind incorrect"
 
 msgid "option \"show.signif.stars\" is invalid: assuming TRUE"
-msgstr "l'option \"show.signif.stars\" est incorrecte : TRUE est supposée"
+msgstr "l'option \"show.signif.stars\" est incorrecte : supposée TRUE"
 
 msgid "'anova' object must have colnames"
 msgstr "l'objet 'anova' doit avoir des noms de colonnes"
 
 msgid "'conf.level' must be a single number between 0 and 1"
-msgstr "'conf.level' doit être un nombre compris entre 0 et 1"
+msgstr "'conf.level' doit être un seul nombre compris entre 0 et 1"
 
 msgid "not enough 'x' observations"
 msgstr "nombre d'observations 'x' insuffisant"
@@ -236,10 +236,10 @@ msgid "'coef' must define a contrast, i.e., sum to 0"
 msgstr "'coef' doit définir un constrate, i.e., sa somme doit être 0"
 
 msgid "'coef' must have same length as 'contrast.obj'"
-msgstr "'coef' doit être de la même longueur que 'contrast.obj'"
+msgstr "'coef' doit avoir la même longueur que 'contrast.obj'"
 
 msgid "each element of '%s' must be logical"
-msgstr "tous les éléments de '%s' doivent être des logiques"
+msgstr "tous les éléments de '%s' doivent être des booléens"
 
 msgid "the contrast defined is empty (has no TRUE elements)"
 msgstr "le contraste défini est vide (il n'a aucun élément TRUE)"
@@ -251,7 +251,7 @@ msgid "no degrees of freedom for residuals"
 msgstr "les résidus n'ont aucun degré de liberté"
 
 msgid "'object' does not include an error 'qr' component"
-msgstr "'object' ne contient pas de composante d'erreur 'qr'"
+msgstr "'object' ne contient pas de composant d'erreur 'qr'"
 
 msgid "Refitting model to allow projection"
 msgstr "Réajustement du modèle pour permettre la projection"
@@ -260,10 +260,10 @@ msgid "columns of 'contrast.obj' must define a contrast(sum to zero)"
 msgstr "les colonnes de 'contrast.obj' doivent définir un contraste (somme nulle)"
 
 msgid "'ties' is not \"ordered\", a function, or list(<string>, <function>)"
-msgstr "'ties' n’est pas \"ordered\", une function, ou une list(<string>, <function>)"
+msgstr "'ties' n'est pas \"ordered\", une function, ni une list(<string>, <function>)"
 
 msgid "collapsing to unique 'x' values"
-msgstr "suppression des ex-aequos de 'x'"
+msgstr "suppression des ex-aequos en valeurs uniques de 'x'"
 
 msgid "invalid interpolation method"
 msgstr "méthode d'interpolation incorrecte"
@@ -272,13 +272,13 @@ msgid "need at least two non-NA values to interpolate"
 msgstr "il faut au moins deux valeurs non manquantes pour interpoler"
 
 msgid "zero non-NA points"
-msgstr "zéro points non NA"
+msgstr "zéro point non NA"
 
 msgid "'approx' requires n >= 1"
 msgstr "'approx' nécessite n >= 1"
 
 msgid "NAs in 'x' must be the same row-wise"
-msgstr "L’es Nos dans 'x' doivent être les mêmes selon les lignes"
+msgstr "Les NAs dans 'x' doivent suivre les mêmes lignes"
 
 msgid "'order.max' must be >= 1"
 msgstr "'order.max' doit être >= 1"
@@ -323,7 +323,7 @@ msgid "wrong length for 'fixed'"
 msgstr "longueur de 'fixed' incorrecte"
 
 msgid "some AR parameters were fixed: setting transform.pars = FALSE"
-msgstr "certains des paramètres AR etaient fixés : transform.pars = FALSE"
+msgstr "certains des paramètres AR étaient fixés : transform.pars = FALSE"
 
 msgid "too few non-missing observations"
 msgstr "trop peu d'observations non manquantes"
@@ -368,7 +368,7 @@ msgid "some ARMA parameters were fixed: setting transform.pars = FALSE"
 msgstr "certains paramètre ARMA étaient fixés : transform.pars = FALSE"
 
 msgid "'xreg' is collinear"
-msgstr "'xreg' est collinéaire"
+msgstr "'xreg' est colinéaire"
 
 msgid "NAs present: setting 'delta' to -1"
 msgstr "Présence de NAs : 'delta' fixé à -1"
@@ -473,16 +473,16 @@ msgid "probabilities must sum to 1."
 msgstr "la somme des probabilités doit être égale à 1."
 
 msgid "Chi-squared approximation may be incorrect"
-msgstr "L’approximation du Chi-2 est peut-être incorrecte"
+msgstr "L'approximation du Chi-2 est peut-être incorrecte"
 
 msgid "NA values not allowed in 'd'"
 msgstr "NA non autorisées dans 'd'"
 
 msgid "eig=TRUE is disregarded when list.=FALSE"
-msgstr "eig=TRUE n’est pas utilisé lorsque list.=FALSE"
+msgstr "eig=TRUE n'est pas utilisé lorsque list.=FALSE"
 
 msgid "x.ret=TRUE is disregarded when list.=FALSE"
-msgstr "x.ret=TRUE n’est pas pris en compte lorsque list.=FALSE"
+msgstr "x.ret=TRUE n'est pas pris en compte lorsque list.=FALSE"
 
 msgid "distances must be result of 'dist' or a square matrix"
 msgstr "les distances doivent provenir de 'dist' ou d'une matrice carrée"
@@ -494,7 +494,7 @@ msgid "'k' must be in {1, 2, ..  n - 1}"
 msgstr "'k' doit être dans {1, 2, ..  n - 1}"
 
 msgid "only %d of the first %d eigenvalues are > 0"
-msgstr "seulement %d des premières %d valeurs propres sont positives"
+msgstr "seulement %d des %d premières valeurs propres sont positives"
 
 msgid "Waiting for profiling to be done..."
 msgstr "Attendre que le profilage s'exécute..."
@@ -509,7 +509,7 @@ msgid "initial value is not in the interior of the feasible region"
 msgstr "la valeur initiale ne se trouve pas à l'intérieur de la région admissible"
 
 msgid "Barrier algorithm ran out of iterations and did not converge"
-msgstr "L’algorithme de barrière a atteint le nombre maximal d'itérations sans avoir convergé"
+msgstr "L'algorithme de barrière a atteint le nombre maximal d'itérations sans avoir convergé"
 
 msgid "Objective function increased at outer iteration %d"
 msgstr "La fonction objective a augmenté dans l'itération externe %d"
@@ -548,7 +548,7 @@ msgid "wrong number of columns in new data:"
 msgstr "le nombre de colonnes des nouvelles données est incorrect :"
 
 msgid "contrasts apply only to factors"
-msgstr "les contrastes s'appliquent uniquement aux facteurs"
+msgstr "les contrastes ne s'appliquent qu'aux facteurs"
 
 msgid "contrasts can be applied only to factors with 2 or more levels"
 msgstr "les contrastes ne peuvent être appliqués qu'aux facteurs ayant au moins deux niveaux"
@@ -560,7 +560,7 @@ msgid "singular contrast matrix"
 msgstr "matrice de contrastes singulière"
 
 msgid "numeric contrasts or contrast name expected"
-msgstr "contrastes numérique ou nom de contraste attendu"
+msgstr "contrastes numériques ou nom de contraste attendu"
 
 msgid "%s needs package 'Matrix' correctly installed"
 msgstr "%s nécessite le package 'Matrix' correctement installé"
@@ -584,7 +584,7 @@ msgid "'x' is empty"
 msgstr "'x' est vide"
 
 msgid "both 'x' and 'y' must be non-empty"
-msgstr "'x' et 'y' ne peuvent être vides"
+msgstr "'x' et 'y' ne peuvent pas être vides simultanément"
 
 msgid "cannot handle 'pairwise.complete.obs'"
 msgstr "impossible de gérer 'pairwise.complete.obs'"
@@ -641,7 +641,7 @@ msgid "elements of 'k' must be between 1 and %d"
 msgstr "les éléments de 'k' doivent être compris entre 1 et %d"
 
 msgid "dendrogram entries must be 1,2,..,%d (in any order), to be coercible to \"hclust\""
-msgstr "les entrées du dendrogramme doivent être 1,2,..,%d (dans n’importe quel ordre), pour être convertible en “hclust”"
+msgstr "les entrées du dendrogramme doivent être 1,2,..,%d (dans n'importe quel ordre), pour être convertible en 'hclust'"
 
 msgid "dendrogram node with non-positive #{branches}"
 msgstr "un noeud du dendrogramme a un nombre de branches < 1"
@@ -785,7 +785,7 @@ msgid "some terms will have NAs due to the limits of the method"
 msgstr "certains termes auront des NAs du fait des limites de la méthode"
 
 msgid "multivariate case with missing coefficients is not yet implemented"
-msgstr "le cas multivarié avec des coefficients manquant n’est pas implémenté"
+msgstr "le cas multivarié avec des coefficients manquant n'est pas implémenté"
 
 msgid "'x' must have 1 or more non-missing values"
 msgstr "'x' doit avoir au moins une valeur non manquante"
@@ -858,7 +858,7 @@ msgid "cannot simulate from non-integer prior.weights"
 msgstr "impossible de réaliser des simulations à l'aide de prior.weights non entiers"
 
 msgid "non-positive values not allowed for the 'Gamma' family"
-msgstr "les valeurs inférieurs ou égales à zéro ne sont pas autorisées pour la famille ‘Gamma'"
+msgstr "les valeurs inférieurs ou égales à zéro ne sont pas autorisées pour la famille 'Gamma'"
 
 msgid "using weights as shape parameters"
 msgstr "utilisation des pondérations comme paramètres de forme"
@@ -1227,7 +1227,7 @@ msgid "must have same number of columns in 'x' and 'centers'"
 msgstr "'x' et 'centers' doivent avoir le même nombre de colonnes"
 
 msgid "'x' is a list, so ignoring argument 'g'"
-msgstr "'x' est une liste, donc l’argument 'g' est ignoré"
+msgstr "'x' est une liste, donc l'argument 'g' est ignoré"
 
 msgid "some elements of 'x' are not numeric and will be coerced to numeric"
 msgstr "certains éléments de 'x' sont non numériques et seront convertis en nombres"
@@ -1306,7 +1306,7 @@ msgid "residual degrees of freedom in object suggest this is not an \"lm\" fit"
 msgstr "les degrés de liberté résiduels de l'objet suggère que ce n'est pas un ajustement \"lm\""
 
 msgid "essentially perfect fit: summary may be unreliable"
-msgstr "ajustement pratiquement parfait : le résumé n’est peut-être pas fiable"
+msgstr "ajustement pratiquement parfait : le résumé n'est peut-être pas fiable"
 
 msgid ""
 "lm object does not have a proper 'qr' component.\n"
@@ -1415,7 +1415,7 @@ msgid "invalid argument 'degree'"
 msgstr "argument 'degree' incorrect"
 
 msgid "iterTrace = %d is not obeyed since iterations = %d"
-msgstr "iterTrace = %d n’est pas respecté puisque le nombre d’itérations = %d"
+msgstr "iterTrace = %d n'est pas respecté puisque le nombre d'itérations = %d"
 
 msgid "first argument must be a \"loess\" object"
 msgstr "le premier argument doit être un objet \"loess\""
@@ -1551,13 +1551,13 @@ msgid "invalid formula: %s"
 msgstr "'formula' incorrecte : %s"
 
 msgid "invalid formula %s: not a call"
-msgstr "formule %s incorrecte : ce n’est pas un appel"
+msgstr "formule %s incorrecte : ce n'est pas un appel"
 
 msgid "invalid formula %s: assignment is deprecated"
-msgstr "formule %s incorrecte : l’assignation est obsolète"
+msgstr "formule %s incorrecte : l'assignation est obsolète"
 
 msgid "invalid formula %s: extraneous call to `%s` is deprecated"
-msgstr "formule %s incorrecte : un appel externe à `%s` est obsolète"
+msgstr "formule %s incorrecte : un appel externe à '%s' est obsolète"
 
 msgid "invalid formula %s"
 msgstr "formule %s incorrecte"
@@ -1572,7 +1572,7 @@ msgid "'%s' must be a character string"
 msgstr "'%s' doit être une chaîne de caractères"
 
 msgid "Unparseable 'response' \"%s\"; use is deprecated.  Use as.name(.) or `..`!"
-msgstr "Impossible d’analyser le code de la reponse \"%s\" ; cet usage est obsolète. Utilisez as.name(.) ou `..` !"
+msgstr "Impossible d'analyser le code de la reponse \"%s\" ; cet usage est obsolète. Utilisez as.name(.) ou '..' !"
 
 msgid "'termobj' must be a object of class %s"
 msgstr "'termobj' doit être un objet de classe %s"
@@ -1608,7 +1608,7 @@ msgid "model frame and formula mismatch in model.matrix()"
 msgstr "le tableau du modèle et la formule ne correspondent pas dans model.matrix()"
 
 msgid "non-list contrasts argument ignored"
-msgstr "un argument de contrastes qui n’est pas une liste est ignoré"
+msgstr "un argument de contrastes qui n'est pas une liste est ignoré"
 
 msgid "'contrasts.arg' argument must be named"
 msgstr "l'argument 'contrasts.arg' doit être nommé"
@@ -1839,7 +1839,7 @@ msgid "No p2 in [p1, 1] can be found to achieve the desired power"
 msgstr "Aucun p2 trouvé dans [p1, 0] pour obtenir la puissance désirée"
 
 msgid "No significance level [0, 1] can be found to achieve the desired power"
-msgstr "Aucun niveau significatif [0, 1] n’est trouvé pour obtenir la puissance désirée"
+msgstr "Aucun niveau significatif [0, 1] n'est trouvé pour obtenir la puissance désirée"
 
 msgid "'%s' must be numeric in [0, 1]"
 msgstr "'%s' doit être numérique et dans [0, 1]"
@@ -1869,7 +1869,7 @@ msgid "cannot rescale a constant/zero column to unit variance"
 msgstr "impossible de standardiser une constante/une colonne nulle"
 
 msgid "PCA applies only to numerical variables"
-msgstr "L’ACP ne s'applique qu'à des valeurs numériques"
+msgstr "L'ACP ne s'applique qu'à des valeurs numériques"
 
 msgid "no scores are available: refit with 'retx=TRUE'"
 msgstr "pas de score disponible : refaites l'ajustement avec 'retx=TRUE'"
@@ -2013,7 +2013,7 @@ msgid "argument 'object' has an impossible length"
 msgstr "la longueur de l'argument 'object' est incorrecte"
 
 msgid "right-hand side of formula is not a call"
-msgstr "le membre droit de la formule n’est pas un appel"
+msgstr "le membre droit de la formule n'est pas un appel"
 
 msgid "no 'getInitial' method found for \"%s\" objects"
 msgstr "impossible de trouver une méthode 'getInitial' pour les objets \"%s\""
@@ -2094,7 +2094,7 @@ msgid "'spar' must be of length 1"
 msgstr "'spar' doit être de longueur 1"
 
 msgid "not using invalid df; must have 1 < df <= n := #{unique x} ="
-msgstr "n’utilise pas un df correct ; il faut fournir 1 < df <= n := #{unique x} ="
+msgstr "n'utilise pas un df correct ; il faut fournir 1 < df <= n := #{unique x} ="
 
 msgid "NA lev[]; probably smoothing parameter 'spar' way too large!"
 msgstr "NA lev[] ; le paramètre de lissage 'spar' est probablement beaucoup trop grand !"
