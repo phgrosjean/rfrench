@@ -2,34 +2,31 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-05-21 21:52+0200\n"
+"PO-Revision-Date: 2024-07-02 13:39+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: assign.c:7
-#, fuzzy
 msgid "Internal error: finalizer hasn't received an ExternalPtr"
-msgstr "Erreur interne : le finaliseur n'a pas reçu de ExternalPtr"
+msgstr "Erreur interne : le \\\"finalisateur\\\" n'a pas reçu de ExternalPtr"
 
 #: assign.c:9
-#, fuzzy
 msgid "Internal error: finalizer's ExternalPtr doesn't see names in tag"
 msgstr ""
-"Erreur interne : le ExternalPtr du finalizer ne voit pas les noms dans la "
-"balise"
+"Erreur interne : le ExternalPtr du \\\"finalisateur\\\" ne voit pas les noms "
+"dans la balise"
 
 #: assign.c:12
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: finalizer sees l=%d, tl=%d"
-msgstr "Erreur interne : finalizer voit l=%d, tl=%d"
+msgstr "Erreur interne : le \\\"finalisateur\\\" voit l=%d, tl=%d"
 
 #: assign.c:121
-#, fuzzy
 msgid ""
 ".internal.selfref ptr is NULL. This is expected and normal for a data.table "
 "loaded from disk. Please remember to always setDT() immediately after "
@@ -41,15 +38,13 @@ msgstr ""
 "données chargée depuis le disque. Rappelez-vous de toujours exécuter setDT() "
 "immédiatement après le chargement pour éviter tout comportement inattendu. "
 "Si cette table n'a pas été chargée depuis le disque ou si vous avez déjà "
-"exécuté setDT(), veuillez le signaler sur le data.table issue tracker.\n"
+"exécuté setDT(), veuillez le signaler sur les issues data.table.\n"
 
 #: assign.c:124
-#, fuzzy
 msgid "Internal error: .internal.selfref ptr is neither NULL nor R_NilValue"
-msgstr "Erreur interne : .internal.selfref ptr is neither NULL nor R_NilValue"
+msgstr "Erreur interne : .internal.selfref ptr n'est ni NULL ni R_NilValue"
 
 #: assign.c:126
-#, fuzzy
 msgid ""
 "Internal error: .internal.selfref tag is neither NULL nor a character vector"
 msgstr ""
@@ -57,82 +52,78 @@ msgstr ""
 "caractères"
 
 #: assign.c:179
-#, fuzzy
 msgid "Internal error: length(names)>0 but <length(dt)"
-msgstr "Erreur interne : length(names)>0 but <length(dt)"
+msgstr "Erreur interne : length(names)>0 mais <length(dt)"
 
 #: assign.c:207
-#, fuzzy
 msgid "alloccol has been passed a NULL dt"
 msgstr "alloccol a reçu un dt NULL"
 
 #: assign.c:208
-#, fuzzy
 msgid "dt passed to alloccol isn't type VECSXP"
 msgstr "dt passé à alloccol n'est pas de type VECSXP"
 
 #: assign.c:210
-#, fuzzy
 msgid ""
 "dt passed to alloccol has no class attribute. Please report result of "
 "traceback() to data.table issue tracker."
 msgstr ""
 "dt passé à alloccol n'a pas d'attribut de classe. Veuillez rapporter le "
-"résultat de traceback() à data.table issue tracker."
+"résultat de traceback() aux issues data.table."
 
 #: assign.c:215 assign.c:315
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: length of names (%d) is not length of dt (%d)"
-msgstr "Erreur interne : length of names (%d) is not length of dt (%d)"
+msgstr ""
+"Erreur interne : la longueur des noms (%d) n'est pas la longueur de dt (%d)"
 
 #: assign.c:225
-#, fuzzy
 msgid "Internal error, tl of class is marked but tl<0."
-msgstr "Erreur interne, tl de la classe est marqué mais tl<0."
+msgstr "Erreur interne, TRUELENGTH(dt) de la classe est marqué mais est < 0."
 
 #: assign.c:226
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error, please report (including result of sessionInfo()) to data."
 "table issue tracker: tl (%d) < l (%d) but tl of class is marked."
 msgstr ""
-"Internal error, please report (including result of sessionInfo()) to data."
-"table issue tracker : tl (%d) < l (%d) but tl of class is marked."
+"Erreur interne, veuillez notifier cette erreur en incluant le résultat de "
+"sessionInfo()) sur les issues de data.table  : tl (%d) < l (%d) mais "
+"TRUELENGTH(dt) de la classe est marqué."
 
 #: assign.c:227
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "tl (%d) is greater than 10,000 items over-allocated (l = %d). If you didn't "
 "set the datatable.alloccol option to be very large, please report to data."
 "table issue tracker including the result of sessionInfo()."
 msgstr ""
 "tl (%d) est supérieur à 10 000 éléments sur-alloués (l = %d). Si vous n'avez "
-"pas défini l'option datatable.alloccol comme étant très grande, merci de "
-"rapporter au data.table issue tracker en incluant le résultat de "
+"pas défini l'option datatable.alloccol comme étant très grande, merci de le "
+"notifier sur les issues de data.table en incluant le résultat de "
 "sessionInfo()."
 
 #: assign.c:229
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Attempt to reduce allocation from %d to %d ignored. Can only increase "
 "allocation via shallow copy. Please do not use DT[...]<- or DT$someCol<-. "
 "Use := inside DT[...] instead."
 msgstr ""
 "Tentative de réduction de l'allocation de %d à %d ignorée. L'allocation ne "
-"peut être augmentée que par une copie superficielle. N'utilisez pas "
-"DT[...]<- ou DT$someCol<-. Utilisez plutôt := à l'intérieur de DT[...]."
+"peut être augmentée que par une copie superficielle (shallow). N'utilisez "
+"pas DT[...]<- ou DT$someCol<-. Utilisez plutôt := à l'intérieur de DT[...]."
 
 #: assign.c:237
-#, fuzzy
 msgid ""
 "Has getOption('datatable.alloccol') somehow become unset? It should be a "
 "number, by default 1024."
 msgstr ""
-"Est-ce que getOption('datatable.alloccol') n'a pas été défini ? Il devrait "
+"Est-ce que getOption('datatable.alloccol') est devenu indéfini ? Il devrait "
 "s'agir d'un nombre, par défaut 1024."
 
 #: assign.c:239
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "getOption('datatable.alloccol') should be a number, by default 1024. But its "
 "type is '%s'."
@@ -141,7 +132,7 @@ msgstr ""
 "Mais son type est '%s'."
 
 #: assign.c:241
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "getOption('datatable.alloc') is a numeric vector ok but its length is %d. "
 "Its length should be 1."
@@ -150,29 +141,26 @@ msgstr ""
 "est %d. Sa longueur devrait être de 1."
 
 #: assign.c:244
-#, fuzzy, c-format
+#, c-format
 msgid "getOption('datatable.alloc')==%d.  It must be >=0 and not NA."
-msgstr "getOption('datatable.alloc')==%d.  Il doit être >=0 et non NA."
+msgstr "getOption('datatable.alloc')==%d.  Doit être >=0 et non NA."
 
 #: assign.c:250 between.c:16 between.c:22 forder.c:459 forder.c:462 frollR.c:40
 #: frollR.c:94 fsort.c:105 gsumm.c:343 gsumm.c:579 gsumm.c:723 gsumm.c:860
 #: gsumm.c:1016 gsumm.c:1108 openmp-utils.c:79 uniqlist.c:354 utils.c:106
-#, fuzzy, c-format
+#, c-format
 msgid "%s must be TRUE or FALSE"
-msgstr "%s doit être VRAI ou FAUX"
+msgstr "%s doit être TRUE ou FALSE"
 
 #: assign.c:298
-#, fuzzy
 msgid "assign has been passed a NULL dt"
 msgstr "assign a reçu un dt NULL"
 
 #: assign.c:299
-#, fuzzy
 msgid "dt passed to assign isn't type VECSXP"
-msgstr "le dt passé à l'assignation n'est pas du type VECSXP"
+msgstr "le dt passé à assign n'est pas du type VECSXP"
 
 #: assign.c:301
-#, fuzzy
 msgid ""
 ".SD is locked. Updating .SD by reference using := or set are reserved for "
 "future use. Use := in j directly. Or use copy(.SD) as a (slow) last resort, "
@@ -184,18 +172,15 @@ msgstr ""
 "soit exporté."
 
 #: assign.c:309
-#, fuzzy
 msgid "Internal error: dt passed to Cassign is not a data.table or data.frame"
 msgstr ""
 "Erreur interne : dt passé à Cassign n'est pas un data.table ou data.frame"
 
 #: assign.c:313
-#, fuzzy
 msgid "dt passed to assign has no names"
-msgstr "le dt transmis à l'assignation n'a pas de nom"
+msgstr "le dt passé à assign n'a pas de noms"
 
 #: assign.c:317
-#, fuzzy
 msgid ""
 "data.table is NULL; malformed. A null data.table should be an empty list. "
 "typeof() should always return 'list' for data.table."
@@ -204,54 +189,51 @@ msgstr ""
 "vide. typeof() devrait toujours retourner 'list' pour data.table."
 
 #: assign.c:326
-#, fuzzy, c-format
+#, c-format
 msgid "Assigning to all %d rows\n"
 msgstr "Affectation à toutes les lignes %d\n"
 
 #: assign.c:331
-#, fuzzy
 msgid ""
 "Coerced i from numeric to integer. Please pass integer for efficiency; e.g., "
 "2L rather than 2"
 msgstr ""
-"I forcé de numérique à entier. Par souci d'efficacité, passez un entier ; "
-"par exemple, 2L au lieu de 2"
+"I a été converti automatiquement de numérique à entier. Par souci "
+"d'efficacité, passez un entier ; par exemple, 2L au lieu de 2"
 
 #: assign.c:334
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "i is type '%s'. Must be integer, or numeric is coerced with warning. If i is "
 "a logical subset, simply wrap with which(), and take the which() outside the "
 "loop if possible for efficiency."
 msgstr ""
-"i est de type '%s'. Il doit s'agir d'un entier, ou un nombre est forcé avec "
-"un avertissement. Si i est un sous-ensemble logique, il suffit de "
-"l'envelopper avec which(), et de placer which() en dehors de la boucle si "
-"possible pour plus d'efficacité."
+"i est de type '%s'. Il doit s'agir d'un entier, ou un nombre est converti "
+"automatiquement avec un avertissement. Si i est un sous-ensemble logique, il "
+"suffit de l'envelopper avec which(), et de placer which() en dehors de la "
+"boucle si possible pour plus d'efficacité."
 
 #: assign.c:340 subset.c:165
-#, fuzzy, c-format
+#, c-format
 msgid "i[%d] is %d which is out of range [1,nrow=%d]"
 msgstr "i[%d] est %d, ce qui est en dehors de la plage [1,nrow=%d]]"
 
 #: assign.c:343
-#, fuzzy, c-format
+#, c-format
 msgid "Assigning to %d row subset of %d rows\n"
-msgstr "Affectation à %d ligne d'un sous-ensemble de %d lignes\n"
+msgstr "Affectation à un sous-ensemble de %d lignes parmi %d lignes\n"
 
 #: assign.c:351
-#, fuzzy, c-format
+#, c-format
 msgid "Added %d new column%s initialized with all-NA\n"
-msgstr "Ajout de %d nouvelle colonne %s initialisée avec all-NA\n"
+msgstr "Ajout de %d nouvelle(s) colonne(s) initialisée%s avec all-NA\n"
 
 #: assign.c:356
-#, fuzzy
 msgid "length(LHS)==0; no columns to delete or assign RHS to."
 msgstr ""
 "length(LHS)==0 ; aucune colonne à supprimer ou à laquelle assigner RHS."
 
 #: assign.c:370
-#, fuzzy
 msgid ""
 "set() on a data.frame is for changing existing columns, not adding new ones. "
 "Please use a data.table for that. data.table's are over-allocated and don't "
@@ -260,28 +242,26 @@ msgstr ""
 "set() sur un data.frame sert à modifier les colonnes existantes, pas à en "
 "ajouter de nouvelles. Veuillez utiliser un data.table pour cela. Les data."
 "table sont sur-alloués et ne permettent pas de copier les données de façon "
-"superficielle."
+"superficielle (shallow)."
 
 #: assign.c:381
-#, fuzzy
 msgid ""
 "Coerced j from numeric to integer. Please pass integer for efficiency; e.g., "
 "2L rather than 2"
 msgstr ""
-"J forcé d'une valeur numérique à une valeur entière. Par souci d'efficacité, "
+"J converti automatiquement de numérique à entier. Par souci d'efficacité, "
 "passez un entier ; par exemple, 2L au lieu de 2"
 
 #: assign.c:384
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "j is type '%s'. Must be integer, character, or numeric is coerced with "
 "warning."
 msgstr ""
-"j est de type '%s'. Must be integer, character, or numeric est contraint "
-"avec avertissement."
+"j est de type '%s'. Il doit être entier. Caractère, ou numérique sont "
+"convertis automatiquement avec un avertissement."
 
 #: assign.c:386
-#, fuzzy
 msgid ""
 "Can't assign to the same column twice in the same query (duplicates "
 "detected)."
@@ -290,54 +270,51 @@ msgstr ""
 "(détection des doublons)."
 
 #: assign.c:387
-#, fuzzy
 msgid "newcolnames is supplied but isn't a character vector"
 msgstr "newcolnames est fourni mais n'est pas un vecteur de caractères"
 
 #: assign.c:389
-#, fuzzy, c-format
+#, c-format
 msgid "RHS_list_of_columns == %s\n"
 msgstr "RHS_list_of_columns == %s\n"
 
 #: assign.c:394
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "RHS_list_of_columns revised to true because RHS list has 1 item which is "
 "NULL, or whose length %d is either 1 or targetlen (%d). Please unwrap RHS.\n"
 msgstr ""
-"RHS_list_of_columns revised to true because RHS list has 1 item which is "
-"NULL, or whose length %d is either 1 or targetlen (%d). Veuillez "
-"décompresser RHS.\n"
+"RHS_list_of_columns révisé à true car RHS list a un élement qui est NULL, ou "
+"dont la longueur %d est soit 1 soit targetlen (%d). Veuillez décompresser "
+"RHS.\n"
 
 #: assign.c:399
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Supplied %d columns to be assigned an empty list (which may be an empty data."
 "table or data.frame since they are lists too). To delete multiple columns "
 "use NULL instead. To add multiple empty list columns, use list(list())."
 msgstr ""
-"Colonnes fournies %d auxquelles sera attribuée une liste vide (qui peut être "
+"%d colonnes fournies auxquelles sera assigné une liste vide (qui peut être "
 "un data.table ou un data.frame vide puisqu'il s'agit également de listes). "
 "Pour supprimer plusieurs colonnes, utilisez NULL à la place. Pour ajouter "
 "plusieurs colonnes vides, utilisez list(list())."
 
 #: assign.c:404
-#, fuzzy, c-format
+#, c-format
 msgid "Recycling single RHS list item across %d columns. Please unwrap RHS.\n"
 msgstr ""
-"Recyclage d'un seul élément de liste RHS sur %d colonnes. Veuillez déballer "
-"le RHS.\n"
+"Recyclage d'un seul élément de liste RHS sur %d colonnes. Veuillez "
+"décomprésser le RHS.\n"
 
 #: assign.c:406
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Supplied %d columns to be assigned %d items. Please see NEWS for v1.12.2."
-msgstr ""
-"Les colonnes fournies %d doivent être associées à des éléments %d. Voir NEWS "
-"pour v1.12.2."
+msgstr "%d colonnes fournies à affecter à %d éléments. Voir NEWS pour v1.12.2."
 
 #: assign.c:414
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Item %d of column numbers in j is %d which is outside range [1,ncol=%d]. "
 "set() on a data.frame is for changing existing columns, not adding new ones. "
