@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-07-02 16:15+0200\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2024-07-02 20:39+0200\n"
+"Last-Translator: Elise Maigné <elise.maigne@inrae.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -13,18 +13,18 @@ msgstr ""
 
 #: assign.c:7
 msgid "Internal error: finalizer hasn't received an ExternalPtr"
-msgstr "Erreur interne : le \\\"finalisateur\\\" n'a pas reçu de ExternalPtr"
+msgstr "Erreur interne : le finalisateur n'a pas reçu de ExternalPtr"
 
 #: assign.c:9
 msgid "Internal error: finalizer's ExternalPtr doesn't see names in tag"
 msgstr ""
-"Erreur interne : le ExternalPtr du \\\"finalisateur\\\" ne voit pas les noms "
-"dans la balise"
+"Erreur interne : le ExternalPtr du finalisateur ne voit pas les noms dans la "
+"balise"
 
 #: assign.c:12
 #, c-format
 msgid "Internal error: finalizer sees l=%d, tl=%d"
-msgstr "Erreur interne : le \\\"finalisateur\\\" voit l=%d, tl=%d"
+msgstr "Erreur interne : le finalisateur voit l=%d, tl=%d"
 
 #: assign.c:121
 msgid ""
@@ -80,7 +80,7 @@ msgstr ""
 
 #: assign.c:225
 msgid "Internal error, tl of class is marked but tl<0."
-msgstr "Erreur interne, TRUELENGTH(dt) de la classe est marqué mais est < 0."
+msgstr "Erreur interne, tl de la classe est marqué mais tl<0."
 
 #: assign.c:226
 #, c-format
@@ -338,7 +338,7 @@ msgstr ""
 
 #: assign.c:420
 msgid "When deleting columns, i should not be provided"
-msgstr "Lors de la suppression de colonnes, i ne devrait pas être fourni"
+msgstr "Lors de la suppression de colonnes, i ne doit pas être fourni"
 
 #: assign.c:426
 #, c-format
@@ -377,7 +377,7 @@ msgstr "La colonne '%s' à supprimer n'existe pas"
 msgid "%d column matrix RHS of := will be treated as one vector"
 msgstr ""
 "%d la matrice colonne du membre de droite (RHS) de := sera traitée comme un "
-"seul vecteur"
+"vecteur"
 
 #: assign.c:446
 #, c-format
@@ -395,7 +395,7 @@ msgid ""
 "'recycle' the RHS please use rep() to make this intent clear to readers of "
 "your code."
 msgstr ""
-" %d éléments fournis à affecter à %d éléments de la colonne '%s'. Si vous "
+"%d éléments fournis à affecter à %d éléments de la colonne '%s'. Si vous "
 "souhaitez \"recycler\" le membre de droite (RHS), veuillez utiliser rep() "
 "pour indiquer clairement votre intention aux lecteurs de votre code."
 
@@ -469,7 +469,7 @@ msgid ""
 "provided' did not happen."
 msgstr ""
 "Erreur interne : l'erreur précédente 'Lors de la suppression de colonnes, i "
-"ne devrait pas être fourni' ne s'est pas produite."
+"ne doit pas être fourni' ne s'est pas produite."
 
 #: assign.c:504
 #, c-format
@@ -494,12 +494,12 @@ msgid ""
 "Dropping index '%s' as it doesn't have '__' at the beginning of its name. It "
 "was very likely created by v1.9.4 of data.table.\n"
 msgstr ""
-"Suppression de l'index '%s' car il n'a pas '__' au début de son nom. Il a "
+"Suppression de l'indice '%s' car il n'a pas '__' au début de son nom. Il a "
 "très probablement été créé par la version 1.9.4 de data.table.\n"
 
 #: assign.c:586
 msgid "Internal error: index name ends with trailing __"
-msgstr "Erreur interne : le nom de l'index se termine par un __"
+msgstr "Erreur interne : le nom de l'indice se termine par un __"
 
 #: assign.c:591
 msgid "Internal error: Couldn't allocate memory for s4."
@@ -513,13 +513,13 @@ msgstr "Erreur interne : Impossible d'allouer de la mémoire pour s5."
 #, c-format
 msgid "Dropping index '%s' due to an update on a key column\n"
 msgstr ""
-"Suppression de l'index '%s' suite à une mise à jour d'une colonne clé\n"
+"Suppression de l'indice '%s' suite à une mise à jour d'une colonne clé\n"
 
 #: assign.c:632
 #, c-format
 msgid "Shortening index '%s' to '%s' due to an update on a key column\n"
 msgstr ""
-"Raccourcissement de l'index '%s' en '%s' suite à une mise à jour d'une "
+"Raccourcissement de l'indice '%s' en '%s' suite à une mise à jour d'une "
 "colonne clé\n"
 
 #: assign.c:662
@@ -528,9 +528,9 @@ msgid ""
 "Internal error: %d column numbers to delete not now in strictly increasing "
 "order. No-dups were checked earlier."
 msgstr ""
-"Erreur interne : %d les numéros de colonnes à supprimer ne sont pas à ce "
-"moment dans un ordre strictement croissant. L'absence de doublons a été "
-"vérifiée plus tôt."
+"Erreur interne : %d numéros de colonnes à supprimer ne sont pas à ce moment "
+"dans un ordre strictement croissant. L'absence de doublons a été vérifiée "
+"plus tôt."
 
 #: assign.c:690
 #, c-format
@@ -563,7 +563,7 @@ msgstr ""
 
 #: assign.c:715
 msgid "Internal error: memrecycle has received NULL colname"
-msgstr "Erreur interne : memrecycle a reçu un nom de colonne NULL "
+msgstr "Erreur interne : memrecycle a reçu un nom de colonne NULL"
 
 #: assign.c:724
 #, c-format
@@ -571,8 +571,8 @@ msgid ""
 "Cannot assign 'factor' to '%s'. Factors can only be assigned to factor, "
 "character or list columns."
 msgstr ""
-"Impossible d'affecter 'facteur' à '%s'. Les facteurs ne peuvent être "
-"affectés qu'à des colonnes de facteurs, de caractères ou de listes."
+"Impossible d'affecter 'factor' à '%s'. Les facteurs ne peuvent être affectés "
+"qu'à des colonnes de facteurs, de caractères ou de listes."
 
 #: assign.c:738
 #, c-format
@@ -597,7 +597,7 @@ msgid ""
 "Cannot assign '%s' to 'factor'. Factor columns can be assigned factor, "
 "character, NA in any type, or level numbers."
 msgstr ""
-"Impossible d'attribuer '%s' à 'facteur'. Les colonnes de facteurs peuvent "
+"Impossible d'attribuer '%s' à 'factor'. Les colonnes de facteurs peuvent "
 "être assignées à facteur, caractère, NA dans n'importe quel type, ou numéros "
 "de niveaux."
 
@@ -1638,9 +1638,9 @@ msgstr ""
 "1 et length(vec) ; 1 <= idx <= %d"
 
 #: fmelt.c:134
-#, fuzzy, c-format
+#, c-format
 msgid "Unknown 'measure.vars' type %s at index %d of list"
-msgstr "Type inconnu 'measure.vars' %s à l'index %d de la liste"
+msgstr "Type inconnu 'measure.vars' %s à l'indice %d de la liste"
 
 #: fmelt.c:187
 #, fuzzy
