@@ -788,10 +788,9 @@ msgstr "l'objet partagé '%s' n'a pas été chargé"
 msgid "cannot allocate memory for registered native symbol (%d byte)"
 msgid_plural "cannot allocate memory for registered native symbol (%d bytes)"
 msgstr[0] ""
-"impossible d'allouer de la mémoire pour le symbole natif enregistré (%d byte)"
+"impossible d'allouer la mémoire pour le symbole natif enregistré (%d octet)"
 msgstr[1] ""
-"impossible d'allouer de la mémoire pour les symboles natifs enregistrés (%d "
-"bytes)"
+"impossible d'allouer la mémoire pour le symbole natif enregistré (%d octets)"
 
 #: src/main/Rdynload.c:1459 src/main/Rdynload.c:1658
 msgid "NULL value passed for DllInfo"
