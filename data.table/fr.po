@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-07-02 13:39+0200\n"
+"PO-Revision-Date: 2024-07-02 16:15+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -38,7 +38,8 @@ msgstr ""
 "données chargée depuis le disque. Rappelez-vous de toujours exécuter setDT() "
 "immédiatement après le chargement pour éviter tout comportement inattendu. "
 "Si cette table n'a pas été chargée depuis le disque ou si vous avez déjà "
-"exécuté setDT(), veuillez le signaler sur les issues data.table.\n"
+"exécuté setDT(), veuillez le signaler sur les tickets (\"issues\" Github) de "
+"data.table.\n"
 
 #: assign.c:124
 msgid "Internal error: .internal.selfref ptr is neither NULL nor R_NilValue"
@@ -69,7 +70,7 @@ msgid ""
 "traceback() to data.table issue tracker."
 msgstr ""
 "dt passé à alloccol n'a pas d'attribut de classe. Veuillez rapporter le "
-"résultat de traceback() aux issues data.table."
+"résultat de traceback() aux tickets (\"issues\" Github) de data.table."
 
 #: assign.c:215 assign.c:315
 #, c-format
@@ -87,9 +88,9 @@ msgid ""
 "Internal error, please report (including result of sessionInfo()) to data."
 "table issue tracker: tl (%d) < l (%d) but tl of class is marked."
 msgstr ""
-"Erreur interne, veuillez notifier cette erreur en incluant le résultat de "
-"sessionInfo()) sur les issues de data.table  : tl (%d) < l (%d) mais "
-"TRUELENGTH(dt) de la classe est marqué."
+"Erreur interne, veuillez rapporter cette erreur en incluant le résultat de "
+"sessionInfo()) sur les tickets (\"issues\" Github) de data.table  : tl (%d) "
+"< l (%d) mais TRUELENGTH(dt) de la classe est marqué."
 
 #: assign.c:227
 #, c-format
@@ -99,9 +100,9 @@ msgid ""
 "table issue tracker including the result of sessionInfo()."
 msgstr ""
 "tl (%d) est supérieur à 10 000 éléments sur-alloués (l = %d). Si vous n'avez "
-"pas défini l'option datatable.alloccol comme étant très grande, merci de le "
-"notifier sur les issues de data.table en incluant le résultat de "
-"sessionInfo()."
+"pas défini l'option datatable.alloccol comme étant très grande, merci de "
+"rapporter ce problème dans un ticket (\"issue\" Github) de data.table en "
+"incluant le résultat de sessionInfo()."
 
 #: assign.c:229
 #, c-format
@@ -326,7 +327,7 @@ msgstr ""
 "data.table pour cela."
 
 #: assign.c:415
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Item %d of column numbers in j is %d which is outside range [1,ncol=%d]. Use "
 "column names instead in j to add new columns."
@@ -336,12 +337,11 @@ msgstr ""
 "ajouter de nouvelles colonnes."
 
 #: assign.c:420
-#, fuzzy
 msgid "When deleting columns, i should not be provided"
-msgstr "Lors de la suppression de colonnes, i ne doit pas être fourni"
+msgstr "Lors de la suppression de colonnes, i ne devrait pas être fourni"
 
 #: assign.c:426
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "RHS of assignment to existing column '%s' is zero length but not NULL. If "
 "you intend to delete the column use NULL. Otherwise, the RHS must have "
@@ -350,16 +350,17 @@ msgid ""
 "full length RHS vector such as vector('list',nrow(DT)); i.e., 'plonk' in the "
 "new column."
 msgstr ""
-"L'élément RHS de l'affectation à la colonne existante '%s' est de longueur "
-"nulle mais n'est pas NULL. Si vous avez l'intention de supprimer la colonne, "
-"utilisez NULL. Sinon, le RHS doit avoir une longueur > 0 ; par exemple, "
-"NA_integer_. Si vous essayez de modifier le type de colonne pour en faire "
-"une colonne de liste vide, alors, comme pour tous les changements de type de "
-"colonne, fournissez un vecteur RHS de longueur complète tel que "
-"vector('list',nrow(DT)) ; c'est-à-dire, 'plonk' dans la nouvelle colonne."
+"Le membre de droite (RHS) de l'affectation à la colonne existante '%s' est "
+"de longueur nulle mais n'est pas NULL. Si vous voulez supprimer la colonne, "
+"utilisez NULL. Sinon, l'élément d'affectation doit avoir une longueur > 0 ; "
+"par exemple, NA_integer_. Si vous essayez de modifier le type de colonne "
+"pour en faire une colonne de liste vide, alors, comme pour tous les "
+"changements de type de colonne, fournissez un vecteur de longueur complète "
+"tel que vector('list',nrow(DT)) ; c'est-à-dire, remplacez ('plonk') la "
+"nouvelle colonne."
 
 #: assign.c:431
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error in assign.c: length(newcolnames)=%d, length(names)=%d, coln=%d"
 msgstr ""
@@ -367,17 +368,19 @@ msgstr ""
 "coln=%d"
 
 #: assign.c:433
-#, fuzzy, c-format
+#, c-format
 msgid "Column '%s' does not exist to remove"
-msgstr "La colonne '%s' n'existe pas à supprimer"
+msgstr "La colonne '%s' à supprimer n'existe pas"
 
 #: assign.c:441
-#, fuzzy, c-format
+#, c-format
 msgid "%d column matrix RHS of := will be treated as one vector"
-msgstr "%d la matrice colonne RHS de := sera traitée comme un seul vecteur"
+msgstr ""
+"%d la matrice colonne du membre de droite (RHS) de := sera traitée comme un "
+"seul vecteur"
 
 #: assign.c:446
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Can't assign to column '%s' (type 'factor') a value of type '%s' (not "
 "character, factor, integer or numeric)"
@@ -386,18 +389,17 @@ msgstr ""
 "'%s' (ni caractère, ni facteur, ni entier, ni numérique)"
 
 #: assign.c:452
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Supplied %d items to be assigned to %d items of column '%s'. If you wish to "
 "'recycle' the RHS please use rep() to make this intent clear to readers of "
 "your code."
 msgstr ""
-"Les éléments %d fournis doivent être affectés aux éléments %d de la colonne "
-"'%s'. Si vous souhaitez \"recycler\" le RHS, veuillez utiliser rep() pour "
-"indiquer clairement votre intention aux lecteurs de votre code."
+" %d éléments fournis à affecter à %d éléments de la colonne '%s'. Si vous "
+"souhaitez \"recycler\" le membre de droite (RHS), veuillez utiliser rep() "
+"pour indiquer clairement votre intention aux lecteurs de votre code."
 
 #: assign.c:462
-#, fuzzy
 msgid ""
 "This data.table has either been loaded from disk (e.g. using readRDS()/"
 "load()) or constructed manually (e.g. using structure()). Please run setDT() "
@@ -411,16 +413,17 @@ msgstr ""
 "l'assigner par référence."
 
 #: assign.c:463
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error: oldtncol(%d) < oldncol(%d). Please report to data.table "
 "issue tracker, including result of sessionInfo()."
 msgstr ""
 "Erreur interne : oldtncol(%d) < oldncol(%d). Veuillez rapporter cette erreur "
-"au data.table issue tracker, en incluant le résultat de sessionInfo()."
+"dans les tickets (\"issues\" Github) de data.table, en incluant le résultat "
+"de sessionInfo()."
 
 #: assign.c:465
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "truelength (%d) is greater than 10,000 items over-allocated (length = %d). "
 "See ?truelength. If you didn't set the datatable.alloccol option very large, "
@@ -428,21 +431,21 @@ msgid ""
 "sessionInfo()."
 msgstr ""
 "truelength (%d) est supérieur à 10 000 éléments sur-alloués (length = %d). "
-"Voir ?truelength. Si vous n'avez pas mis l'option datatable.alloccol très "
-"grande, veuillez rapporter au data.table issue tracker en incluant le "
-"résultat de sessionInfo()."
+"Voir ?truelength. Si vous n'avez pas mis une très grande valeur à l'option "
+"datatable.alloccol, veuillez rapporter ce problème dans un ticket (\"issue\" "
+"Github) de data.table en incluant le résultat de sessionInfo()."
 
 #: assign.c:467
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error: DT passed to assign has not been allocated enough column "
 "slots. l=%d, tl=%d, adding %d"
 msgstr ""
-"Erreur interne : DT passed to assign n'a pas reçu suffisamment "
-"d'emplacements de colonnes. l=%d, tl=%d, adding %d"
+"Erreur interne : le DT passé à assign ne s'est pas vu allouer suffisamment "
+"d'emplacements de colonnes. taille = %d, taille préallouée = %d, %d colonnes "
+"ajoutées"
 
 #: assign.c:469
-#, fuzzy
 msgid ""
 "It appears that at some earlier point, names of this data.table have been "
 "reassigned. Please ensure to use setnames() rather than names<- or "
@@ -450,40 +453,43 @@ msgid ""
 msgstr ""
 "Il semble qu'à un moment donné, les noms de cette table data.table aient été "
 "réattribués. Veillez à utiliser setnames() plutôt que names<- ou colnames<-. "
-"Dans le cas contraire, signalez le problème au data.table issue tracker."
+"Dans le cas contraire, signalez le problème sur un ticket (\"issue\" Github) "
+"de data.table."
 
 #: assign.c:474
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: selfrefnames is ok but tl names [%lld] != tl [%d]"
-msgstr "Erreur interne : selfrefnames est ok mais tl names [%lld] != tl [%d]"
+msgstr ""
+"Erreur interne : selfrefnames est ok mais la longueur préallouée de names "
+"[%lld] != longueur préallouée de dt [%d]"
 
 #: assign.c:493
-#, fuzzy
 msgid ""
 "Internal error: earlier error 'When deleting columns, i should not be "
 "provided' did not happen."
 msgstr ""
-"Erreur interne : l'erreur précédente 'When deleting columns, i should not be "
-"provided' ne s'est pas produite."
+"Erreur interne : l'erreur précédente 'Lors de la suppression de colonnes, i "
+"ne devrait pas être fourni' ne s'est pas produite."
 
 #: assign.c:504
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "RHS for item %d has been duplicated because NAMED==%d MAYBE_SHARED==%d, but "
 "then is being plonked. length(values)==%d; length(cols)==%d)\n"
 msgstr ""
-"Le RHS de l'élément %d a été dupliqué parce que NAMED==%d MAYBE_SHARED==%d, "
-"mais il est ensuite placé. length(values)==%d ; length(cols)==%d)\n"
+"Le membre de droite (RHS) pour l'élément %d a été dupliqué parce que "
+"NAMED==%d MAYBE_SHARED==%d, mais il est ensuite remplacé (plonk). "
+"length(values)==%d ; length(cols)==%d)\n"
 
 #: assign.c:509
-#, fuzzy, c-format
+#, c-format
 msgid "Direct plonk of unnamed RHS, no copy. NAMED==%d, MAYBE_SHARED==%d\n"
 msgstr ""
-"Plonk direct d'un RHS sans nom, pas de copie. NOMMÉ==%d, PEUT-"
-"ÊTRE_PARTAGÉ==%d\n"
+"Remplacement ('plonk') direct d'un membre de droite (RHS) sans nom, pas de "
+"copie. NAMED==%d, MAYBE_SHARED==%d\n"
 
 #: assign.c:578
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Dropping index '%s' as it doesn't have '__' at the beginning of its name. It "
 "was very likely created by v1.9.4 of data.table.\n"
@@ -492,88 +498,84 @@ msgstr ""
 "très probablement été créé par la version 1.9.4 de data.table.\n"
 
 #: assign.c:586
-#, fuzzy
 msgid "Internal error: index name ends with trailing __"
 msgstr "Erreur interne : le nom de l'index se termine par un __"
 
 #: assign.c:591
-#, fuzzy
 msgid "Internal error: Couldn't allocate memory for s4."
 msgstr "Erreur interne : Impossible d'allouer de la mémoire pour s4."
 
 #: assign.c:602
-#, fuzzy
 msgid "Internal error: Couldn't allocate memory for s5."
 msgstr "Erreur interne : Impossible d'allouer de la mémoire pour s5."
 
 #: assign.c:623 assign.c:639
-#, fuzzy, c-format
+#, c-format
 msgid "Dropping index '%s' due to an update on a key column\n"
 msgstr ""
-"Suppression de l'index '%s' suite à une mise à jour sur une colonne clé\n"
+"Suppression de l'index '%s' suite à une mise à jour d'une colonne clé\n"
 
 #: assign.c:632
-#, fuzzy, c-format
+#, c-format
 msgid "Shortening index '%s' to '%s' due to an update on a key column\n"
 msgstr ""
 "Raccourcissement de l'index '%s' en '%s' suite à une mise à jour d'une "
 "colonne clé\n"
 
 #: assign.c:662
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error: %d column numbers to delete not now in strictly increasing "
 "order. No-dups were checked earlier."
 msgstr ""
-"Erreur interne : %d les numéros de colonnes à supprimer ne sont pas "
-"maintenant dans un ordre strictement croissant. L'absence de doublons a été "
+"Erreur interne : %d les numéros de colonnes à supprimer ne sont pas à ce "
+"moment dans un ordre strictement croissant. L'absence de doublons a été "
 "vérifiée plus tôt."
 
 #: assign.c:690
-#, fuzzy, c-format
+#, c-format
 msgid "target vector"
 msgstr "vecteur cible"
 
 #: assign.c:690
-#, fuzzy, c-format
+#, c-format
 msgid "column %d named '%s'"
 msgstr "colonne %d nommée '%s'"
 
 #: assign.c:706
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error memrecycle: sourceStart=%d sourceLen=%d length(source)=%d"
 msgstr ""
 "Erreur interne memrecycle : sourceStart=%d sourceLen=%d length(source)=%d"
 
 #: assign.c:708
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error memrecycle: start=%d len=%d length(target)=%d"
 msgstr "Erreur interne memrecycle : start=%d len=%d length(target)=%d"
 
 #: assign.c:711
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: recycle length error not caught earlier. slen=%d len=%d"
 msgstr ""
 "Erreur interne : l'erreur de longueur de recyclage n'a pas été détectée plus "
 "tôt. slen=%d len=%d"
 
 #: assign.c:715
-#, fuzzy
 msgid "Internal error: memrecycle has received NULL colname"
-msgstr "Erreur interne : memrecycle a reçu NULL colname"
+msgstr "Erreur interne : memrecycle a reçu un nom de colonne NULL "
 
 #: assign.c:724
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Cannot assign 'factor' to '%s'. Factors can only be assigned to factor, "
 "character or list columns."
 msgstr ""
-"Impossible d'affecter 'factor' à '%s'. Les facteurs ne peuvent être affectés "
-"qu'à des colonnes de facteurs, de caractères ou de listes."
+"Impossible d'affecter 'facteur' à '%s'. Les facteurs ne peuvent être "
+"affectés qu'à des colonnes de facteurs, de caractères ou de listes."
 
 #: assign.c:738
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Assigning factor numbers to %s. But %d is outside the level range [1,%d]"
 msgstr ""
@@ -581,149 +583,148 @@ msgstr ""
 "de niveaux [1,%d]"
 
 #: assign.c:747
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Assigning factor numbers to %s. But %f is outside the level range [1,%d], or "
 "is not a whole number."
 msgstr ""
-"Attribution de nombres factoriels à %s. Mais %f est en dehors de la plage de "
-"niveaux [1,%d], ou n'est pas un nombre entier."
+"Attribution de numéros de facteurs à %s. Mais %f est en dehors de la plage "
+"de niveaux [1,%d], ou n'est pas un nombre entier."
 
 #: assign.c:753
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Cannot assign '%s' to 'factor'. Factor columns can be assigned factor, "
 "character, NA in any type, or level numbers."
 msgstr ""
-"Impossible d'attribuer '%s' à 'factor'. Les colonnes de facteurs peuvent "
-"être affectées de facteurs, de caractères, de NA dans n'importe quel type, "
-"ou de nombres de niveaux."
+"Impossible d'attribuer '%s' à 'facteur'. Les colonnes de facteurs peuvent "
+"être assignées à facteur, caractère, NA dans n'importe quel type, ou numéros "
+"de niveaux."
 
 #: assign.c:774
-#, fuzzy
 msgid ""
 "Internal error: levels of target are either not unique or have truelength<0"
 msgstr ""
 "Erreur interne : les niveaux de la cible ne sont pas uniques ou ont une "
-"longueur d'onde<0"
+"vraie longueur<0"
 
 #: assign.c:813
-#, fuzzy
 msgid "Unable to allocate working memory of %zu bytes to combine factor levels"
 msgstr ""
 "Impossible d'allouer une mémoire de travail de %zu octets pour combiner les "
 "niveaux de facteurs"
 
 #: assign.c:820
-#, fuzzy
 msgid "Internal error: extra level check sum failed"
-msgstr "Erreur interne : la vérification du niveau supplémentaire a échoué"
+msgstr ""
+"Erreur interne : la vérification de la somme pour des niveaux "
+"supplémentaires a échoué"
 
 #: assign.c:839
-#, fuzzy, c-format
+#, c-format
 msgid "Coercing 'character' RHS to '%s' to match the type of %s."
-msgstr "Coercing 'character' RHS to '%s' to match the type of %s."
+msgstr ""
+"Le membre de droite (RHS) 'character' a été automatiquement converti en '%s' "
+"pour qu'il corresponde au type de %s."
 
 #: assign.c:846
-#, fuzzy, c-format
+#, c-format
 msgid "Cannot coerce 'list' RHS to 'integer64' to match the type of %s."
 msgstr ""
-"Impossible de contraindre le RHS de 'list' à 'integer64' pour qu'il "
-"corresponde au type de %s."
+"Impossible de convertir le  membre de droite (RHS) de 'list' à 'integer64' "
+"pour qu'il corresponde au type de %s."
 
 #: assign.c:851
-#, fuzzy, c-format
+#, c-format
 msgid "Coercing 'list' RHS to '%s' to match the type of %s."
-msgstr "Coercing 'list' RHS to '%s' to match the type of %s."
+msgstr ""
+"Le membre de droite (RHS) 'list' a été automatiquement converti en '%s' pour "
+"qu'il corresponde au type de %s."
 
 #: assign.c:856
-#, fuzzy, c-format
+#, c-format
 msgid "Zero-copy coerce when assigning '%s' to '%s' %s.\n"
-msgstr "Coercition de la copie zéro lors de l'affectation de '%s' à '%s' %s.\n"
+msgstr "Conversion sans copie lors de l'affectation de '%s' à '%s' %s.\n"
 
 #: assign.c:958
-#, fuzzy, c-format
+#, c-format
 msgid "type '%s' cannot be coerced to '%s'"
-msgstr "le type '%s' ne peut pas être transformé en '%s'"
+msgstr "le type '%s' ne peut pas être converti automatiquement en '%s'"
 
 #: assign.c:1116
-#, fuzzy, c-format
+#, c-format
 msgid "Unsupported column type in assign.c:memrecycle '%s'"
 msgstr "Type de colonne non supporté dans assign.c:memrecycle '%s'"
 
 #: assign.c:1170
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: writeNA passed a vector of type '%s'"
 msgstr "Erreur interne : writeNA a passé un vecteur de type '%s'"
 
 #: assign.c:1201
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error: savetl_init checks failed (%d %d %p %p). please report to "
 "data.table issue tracker."
 msgstr ""
 "Erreur interne : les vérifications savetl_init ont échoué (%d %d %p %p). "
-"Veuillez signaler l'erreur à data.table issue tracker."
+"Veuillez signaler l'erreur dans les tickets (\"issues\" Github) de data."
+"table."
 
 #: assign.c:1209
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to allocate initial %d items in savetl_init"
 msgstr "Échec de l'allocation des éléments initiaux %d dans savetl_init"
 
 #: assign.c:1218
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error: reached maximum %d items for savetl. Please report to data."
 "table issue tracker."
 msgstr ""
 "Erreur interne : le nombre maximum d'éléments %d a été atteint pour savetl. "
-"Veuillez signaler l'erreur au data.table issue tracker."
+"Veuillez signaler l'erreur dans un ticket (\"issue\" Github) de data.table."
 
 #: assign.c:1225
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to realloc saveds to %d items in savetl"
-msgstr ""
-"Échec de la réaffectation des sauvegardes à %d éléments dans la liste des "
-"sauvegardes"
+msgstr "Échec de la réaffectation de saveds à %d éléments dans savetl"
 
 #: assign.c:1231
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to realloc savedtl to %d items in savetl"
 msgstr "Échec de la réaffectation de savedtl à %d éléments dans savetl"
 
 #: assign.c:1254
-#, fuzzy
 msgid "x must be a character vector"
 msgstr "x doit être un vecteur de caractères"
 
 #: assign.c:1255
-#, fuzzy
 msgid "'which' must be an integer vector"
-msgstr "\"which\" doit être un vecteur entier"
+msgstr "'which' doit être un vecteur entier"
 
 #: assign.c:1256
-#, fuzzy
 msgid "'new' must be a character vector"
-msgstr "new\" doit être un vecteur de caractères"
+msgstr "'new' doit être un vecteur de caractères"
 
 #: assign.c:1257
-#, fuzzy, c-format
+#, c-format
 msgid "'new' is length %d. Should be the same as length of 'which' (%d)"
 msgstr ""
-"la longueur de \"new\" est de %d. Elle doit être identique à la longueur de "
-"\"which\" (%d)"
+"La longueur de 'new' est de %d. Elle doit être identique à la longueur de "
+"'which' (%d)"
 
 #: assign.c:1260
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Item %d of 'which' is %d which is outside range of the length %d character "
 "vector"
 msgstr ""
-"L'élément %d de \"qui\" est %d, ce qui est en dehors de la plage du vecteur "
+"L'élément %d de 'which' est %d, ce qui est en dehors de la plage du vecteur "
 "de caractères de longueur %d"
 
 #: between.c:12
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Incompatible vector lengths: length(x)==%d length(lower)==%d "
 "length(upper)==%d. Each should be either length 1 or the length of the "
@@ -734,9 +735,8 @@ msgstr ""
 "vecteur le plus long."
 
 #: between.c:19
-#, fuzzy
 msgid "NAbounds must be TRUE or NA"
-msgstr "NAbounds doit être VRAI ou NA"
+msgstr "NAbounds doit être TRUE ou NA"
 
 #: between.c:64
 #, fuzzy, c-format
