@@ -98,7 +98,7 @@ msgstr "pas de méthode directe ou héritée pour la fonction '%s' dans cet appe
 #: methods_list_dispatch.c:584 methods_list_dispatch.c:1163
 msgid "invalid object (non-function) used as method"
 msgstr ""
-"objet incorrect (autre chose qu'une fonction) utilisé comme cette méthode"
+"objet incorrect (autre chose qu'une fonction) utilisé comme méthode"
 
 #: methods_list_dispatch.c:605
 #, c-format
