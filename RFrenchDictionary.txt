@@ -33,6 +33,7 @@ callback : rappel (procédure de, callback)
 case insensitive matching : correspondance indépendante de la casse
 channel : canal
 character : caractère (sans h)
+clipping : détourage
 closure : fermeture (closure)
 cluster : agrégation, groupe
 coerce : convertir automatiquement
@@ -54,6 +55,7 @@ device : périphérique
 dispatch: dispatcheur
 download: téléchargement client <- serveur 
 driver : pilote
+edge : côté (d'un polygone)
 eigenvalues : valeurs propres
 encoding : encodage
 environment : environnement (voir aussi workspace)
@@ -98,6 +100,7 @@ matrix is exactly singular : matrice exactement singulière
 metafile : metafile
 mirror site : site miroir
 mismatch : incohérence
+mixed : mixte (plutôt que mélangé)
 mode : mode
 modulus : modulus
 multibyte : multioctets
@@ -182,6 +185,7 @@ unmatched : déparié
 unpacking : décompaction (?)
 upload: téléversement client -> serveur 
 url : URL
+vertex : sommet (d'un polygone)
 viewport : vue
 vignette : vignette
 warning : avis (avertissement est bien aussi, mais trop long)
