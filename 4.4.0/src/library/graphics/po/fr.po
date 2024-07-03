@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: R 4.4.0\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2024-04-15 18:10-0700\n"
-"PO-Revision-Date: 2024-05-23 08:53+0200\n"
-"Last-Translator: Marcel Ramos <marcel.ramos@sph.cuny.edu>\n"
+"PO-Revision-Date: 2024-07-03 11:00+0200\n"
+"Last-Translator: Christian Wia <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -37,7 +37,7 @@ msgstr "mauvaise unité spécifiée dans '%s'"
 
 #: graphics.c:1820 graphics.c:1842
 msgid "attempt to plot on null device"
-msgstr "tentative de dessin dans un périphérique null"
+msgstr "tentative de dessin sur un périphérique null"
 
 #: graphics.c:1872
 msgid "outer margins too large (figure region too small)"
@@ -87,7 +87,7 @@ msgstr "Aucun périphérique graphique n'est actif"
 
 #: graphics.c:3127
 msgid "zero-length arrow is of indeterminate angle and so skipped"
-msgstr "un flèche de longueur nulle n'a pas d'angle déterminé et est ignorée"
+msgstr "une flèche de longueur nulle n'a pas d'angle déterminé et est ignorée"
 
 #: graphics.c:3208
 #, c-format
@@ -109,12 +109,12 @@ msgstr "le paramètre graphique 'family' a une longueur maximale de 200 octets"
 #: par.c:159
 #, c-format
 msgid "invalid value specified for graphical parameter \"%s\""
-msgstr "valeur spécifiée pour le paramètre graphique \"%s\" incorrect"
+msgstr "valeur spécifiée incorrecte pour le paramètre graphique \"%s\""
 
 #: par.c:166
 #, c-format
 msgid "graphical parameter \"%s\" has the wrong length"
-msgstr "le paramètre graphique \"%s\" est de la mauvaise longueur"
+msgstr "le paramètre graphique \"%s\" a une mauvaise longueur"
 
 #: par.c:258 par.c:665
 #, c-format
@@ -123,15 +123,15 @@ msgstr "le paramètre graphique \"%s\" ne peut être changé"
 
 #: par.c:430
 msgid "parameter \"mfg\" has the wrong length"
-msgstr "le paramètre \"mfg\" est de la mauvaise longueur"
+msgstr "le paramètre \"mfg\" a une mauvaise longueur"
 
 #: par.c:438
 msgid "parameter \"i\" in \"mfg\" is out of range"
-msgstr "le paramètre \"i\" dans \"mfg\" est hors échelle"
+msgstr "le paramètre \"i\" dans \"mfg\" est hors d'échelle"
 
 #: par.c:440
 msgid "parameter \"j\" in \"mfg\" is out of range"
-msgstr "le paramètre \"j\" dans \"mfg\" est hors échelle"
+msgstr "le paramètre \"j\" dans \"mfg\" est hors d'échelle"
 
 #: par.c:445
 msgid "value of 'nr' in \"mfg\" is wrong and will be ignored"
@@ -148,7 +148,7 @@ msgstr "appel de par(new=TRUE) sans graphe"
 #: par.c:657 par.c:1059
 #, c-format
 msgid "graphical parameter \"%s\" is obsolete"
-msgstr "paramètre graphique \"%s\" incorrect"
+msgstr "paramètre graphique \"%s\" obsolète"
 
 #: par.c:661 par.c:1063
 #, c-format
@@ -158,11 +158,11 @@ msgstr "\"%s\" n'est pas un paramètre graphique"
 #: par.c:1109
 #, c-format
 msgid "argument %d does not name a graphical parameter"
-msgstr "l’argument %d n'est pas un paramètre graphique"
+msgstr "l'argument %d n'est pas un paramètre graphique"
 
 #: par.c:1117
 msgid "invalid argument passed to par()"
-msgstr "paramètre passé à par() invalide"
+msgstr "paramètre passé à par() incorrect"
 
 #: par.c:1161
 #, c-format
@@ -181,11 +181,11 @@ msgstr "trop de cellules dans la mise en page, limité à %d"
 
 #: plot.c:60
 msgid "invalid color specification"
-msgstr "choix de couleur incorrect"
+msgstr "valeur incorrecte de couleur"
 
 #: plot.c:126
 msgid "only NA allowed in logical plotting symbol"
-msgstr "seul NA est permi dans les symboles logiques de graphes"
+msgstr "seul NA est permis dans les symboles graphiques logiques"
 
 #: plot.c:128
 msgid "invalid plotting symbol"
@@ -281,7 +281,7 @@ msgstr "'gap.axis' doit être de longueur unitaire"
 
 #: plot.c:919
 msgid "'gap.axis' must be NA or a finite number"
-msgstr "‘gap.axis’ doit être NA ou un nombre fini"
+msgstr "'gap.axis' doit être NA ou un nombre fini"
 
 #: plot.c:977
 msgid "'labels' is supplied and not 'at'"
@@ -294,7 +294,7 @@ msgstr "les longueurs de 'at' et de 'labels' diffèrent, %d != %d"
 
 #: plot.c:1001
 msgid "no locations are finite"
-msgstr "aucune localisation n'est finie"
+msgstr "aucun emplacement n'est fini"
 
 #: plot.c:1406
 msgid "invalid plotting structure"
@@ -328,7 +328,8 @@ msgstr "quatrième argument incorrect"
 
 #: plot.c:1690
 msgid "cannot mix zero-length and non-zero-length coordinates"
-msgstr "impossible de mélanger des coordonnées de longueur nulle avec des autres"
+msgstr "impossible de mélanger des coordonnées de longueur nulle avec des "
+"coordonnées de longueur différente de 0"
 
 #: plot.c:1915
 msgid "Empty raster"
@@ -336,19 +337,19 @@ msgstr "Graphique raster vide"
 
 #: plot.c:1997
 msgid "invalid arrow head length"
-msgstr "longueur incorrecte pour la pointe de flêche"
+msgstr "longueur incorrecte de la pointe de la flèche"
 
 #: plot.c:2002
 msgid "invalid arrow head angle"
-msgstr "angle incorrect pour la pointe de flêche"
+msgstr "angle incorrect de la pointe de la flèche"
 
 #: plot.c:2007
 msgid "invalid arrow head specification"
-msgstr "choix incorrect de pointe de flêche"
+msgstr "choix incorrect de la pointe de la flèche"
 
 #: plot.c:2241
 msgid "no coordinates were supplied"
-msgstr "aucunes coordonnées spécifiées"
+msgstr "aucune coordonnée spécifiée"
 
 #: plot.c:2864
 msgid "invalid a=, b= specification"
@@ -406,7 +407,7 @@ msgstr "entrée de dendrogramme incorrecte"
 
 #: plot.c:3729
 msgid "invalid symbol parameter vector"
-msgstr "vecteur de paramètre symbole incorrect"
+msgstr "vecteur incorrect des paramètres de symbole"
 
 #: plot.c:3752
 msgid "invalid symbol coordinates"
@@ -414,7 +415,7 @@ msgstr "coordonnées des symboles incorrectes"
 
 #: plot.c:3760
 msgid "x/y/parameter length mismatch"
-msgstr "les longueurs des paramètres x et y diffèrent"
+msgstr "les longueurs de x, y, et du paramètre diffèrent"
 
 #: plot.c:3779
 msgid "invalid circles data"
@@ -422,7 +423,7 @@ msgstr "données de cercles incorrectes"
 
 #: plot.c:3781 plot.c:3802 plot.c:3827 plot.c:3857
 msgid "invalid symbol parameter"
-msgstr "paramètre de symbole incorrect"
+msgstr "paramètre incorrects de symbole"
 
 #: plot.c:3800
 msgid "invalid squares data"
@@ -481,7 +482,7 @@ msgstr "valeurs 'x' ou 'y' insuffisantes"
 
 #: plot3d.c:185 plot3d.c:1935
 msgid "dimension mismatch"
-msgstr "dimensions en désaccord"
+msgstr "les dimensions ne correspondent pas"
 
 #: plot3d.c:193
 msgid "no contour values"
@@ -543,7 +544,7 @@ msgstr "contour() : seglist longue / circulaire -- est-ce que %s > %d ?"
 
 #: plot3d.c:1938
 msgid "no 'levels'"
-msgstr "pas de ‘levels'"
+msgstr "pas de 'levels'"
 
 #: plot3d.c:1942
 msgid "missing 'x' values"
@@ -568,11 +569,11 @@ msgstr "valeurs de niveaux non finis : levels[%d] = %g"
 
 #: plot3d.c:1969
 msgid "all z values are equal"
-msgstr "toutes les valeurs en z sont égales"
+msgstr "toutes les valeurs de z sont égales"
 
 #: plot3d.c:1971
 msgid "all z values are NA"
-msgstr "toutes les valeurs z sont NA"
+msgstr "toutes les valeurs de z sont NA"
 
 #: stem.c:150
 #, c-format
