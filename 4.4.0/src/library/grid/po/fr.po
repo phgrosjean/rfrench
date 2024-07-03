@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: R 4.4.0\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2024-04-15 18:10-0700\n"
-"PO-Revision-Date: 2024-07-03 08:20+0200\n"
+"PO-Revision-Date: 2024-07-03 09:20+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
@@ -25,7 +25,7 @@ msgstr "updateGContext doit être appelé après initGContext"
 #: grid.c:199
 msgid "Turning clipping on or off within a (clipping) path is no honoured"
 msgstr ""
-"L'activation ou la désactivation de l'écrêtage dans un chemin (d'écrêtage) "
+"L'activation ou la désactivation du détourage dans un chemin (de détourage) "
 "n'est pas respectée"
 
 #: grid.c:241
@@ -49,12 +49,12 @@ msgstr "Viewport '%s' non trouvé"
 #: grid.c:909 grid.c:914 grid.c:1035 grid.c:1040
 msgid "cannot pop the top-level viewport ('grid' and 'graphics' output mixed?)"
 msgstr ""
-"impossible de rendre la vue de plus haut niveau active (sorties 'grid' et "
-"'graphics' mixées ?)"
+"impossible de rendre la vue de plus haut niveau active (sorties mixtes 'grid' et "
+"'graphics' ?)"
 
 #: grid.c:1241
 msgid "attempt to plot on null device"
-msgstr "tentative de dessin dans un périphérique 'null'"
+msgstr "tentative de dessin sur un périphérique 'null'"
 
 #: grid.c:1711
 msgid "there is no layout defined"
@@ -62,11 +62,11 @@ msgstr "aucune mise en page définie"
 
 #: grid.c:1933
 msgid "polygon edge not found (zero-width or zero-height?)"
-msgstr "extrémité de polygone non trouvé (longueur ou largeur nulle?)"
+msgstr "côté de polygone non trouvé (largeur ou hauteur nulle ?)"
 
 #: grid.c:1942
 msgid "polygon edge not found"
-msgstr "extrémités de polygone non trouvés"
+msgstr "côté de polygone non trouvé"
 
 #: grid.c:2096
 msgid "require at least two points to draw arrow"
@@ -86,7 +86,7 @@ msgstr "Graphique raster vide"
 
 #: grid.c:4038 grid.c:4094
 msgid "Coordinates for text pch not yet supported"
-msgstr "les coordonnées du pch du texte ne sont pas encore acceptées"
+msgstr "Les coordonnées du pch du texte ne sont pas encore supportées"
 
 #: grid.c:4099
 #, c-format
@@ -100,7 +100,7 @@ msgstr "valeur pch '%d' non implémentée"
 
 #: grid.c:5079
 msgid "invalid plotting symbol"
-msgstr "symboles graphiques incorrects"
+msgstr "symbole graphique incorrect"
 
 #: grid.c:5197
 msgid "unable to clip to rotated rectangle"
@@ -126,12 +126,12 @@ msgstr ""
 #: unit.c:65
 msgid "Cannot create unit scalar from 0-length unit vector"
 msgstr ""
-"Impossible de créer un scalaire unitaire à partir d’un vecteur d’unité de "
+"Impossible de créer un scalaire unitaire à partir d'un vecteur unitaire de "
 "longueur nulle"
 
 #: unit.c:799 unit.c:1298
 msgid "invalid unit or unit not yet implemented"
-msgstr "unité non autorisée ou pas encore implémentée"
+msgstr "unité incorrecte ou pas encore implémentée"
 
 #: unit.c:1355 unit.c:1386
 msgid "Viewport has zero dimension(s)"
@@ -158,43 +158,43 @@ msgid ""
 "data must be either NULL, have length 1, or match the length of the final "
 "unit vector"
 msgstr ""
-"les données doivent être NULL, avoir une longueur 1, ou être de la même "
-"longueur que la vecteur unité final"
+"les données doivent soit être NULL, soit avoir une longueur 1, ou être de la même "
+"longueur que le vecteur unitaire final"
 
 #: unit.c:1596
 msgid "no string supplied for 'strwidth/height' unit"
-msgstr "pas de chaîne de caractères fournie pour l’unité 'strwidth/height'"
+msgstr "pas de chaîne de caractères fournie pour l'unité de 'strwidth/height'"
 
 #: unit.c:1600
 msgid "no 'grob' supplied for 'grobwidth/height' unit"
-msgstr "pas de 'grob' fourni pour 'grobwidth/height'"
+msgstr "pas de 'grob' fourni pour l'unté de 'grobwidth/height'"
 
 #: unit.c:1618
 msgid "'gPath' must have depth 1 in 'grobwidth/height' units"
 msgstr ""
-"'gPath' doit avoir une profondeur de 1 dans les unités 'grobwidth/height'"
+"'gPath' doit avoir une profondeur de 1 dans les unités de 'grobwidth/height'"
 
 #: unit.c:1623
 msgid "non-NULL value supplied for plain unit"
-msgstr "valeur non nulle fournie pour l’unité"
+msgstr "valeur non nulle fournie pour l'unité brute"
 
 #: unit.c:1676 unit.c:1710 unit.c:1759
 msgid "old version of unit class is no longer allowed"
-msgstr "une vieille version de la classe unité n’est plus autorisée"
+msgstr "une ancienne version de la classe unité n'est plus autorisée"
 
 #: unit.c:1682
 msgid "object is not coercible to a unit"
-msgstr "l’object n’est pas convertible en une unité"
+msgstr "l'object n'est pas convertible en unité"
 
 #: unit.c:1708
 msgid "object is not a unit"
-msgstr "l’object n’est pas une unité"
+msgstr "l'object n'est pas une unité"
 
 #: unit.c:1840
 msgid "units can only be multiplied with numerics and integers"
 msgstr ""
 "les unités ne peuvent être multipliées que par des nombres décimaux ou "
-"entiers"
+"des entiers"
 
 #: util.c:216
 msgid "Unable to calculate text width/height (using zero)"
@@ -203,11 +203,11 @@ msgstr ""
 
 #: viewport.c:56
 msgid "Mask is not logical value ('none' or 'inherit')"
-msgstr "Le masque n’est pas une valeur booléenne ('none' ou 'inherit’)"
+msgstr "Le masque n'est pas une valeur booléenne ('none' ou 'inherit')"
 
 #: viewport.c:330
 msgid "non-finite location and/or size for viewport"
-msgstr "position et / ou taille de vue non finies"
+msgstr "position et (ou) taille de la vue sont non finies"
 
 #~ msgid "unimplemented unit function"
 #~ msgstr "fonction d'unité non implémentée"
