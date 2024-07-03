@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: R 4.4.0\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2024-04-15 18:10\n"
-"PO-Revision-Date: 2024-05-16 15:52+0200\n"
-"Last-Translator: Marcel Ramos <marcel.ramos@sph.cuny.edu>\n"
+"PO-Revision-Date: 2024-07-03 08:48+0200\n"
+"Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 2.4.2\n"
 
 msgid "invalid 'at' location in 'axis'"
 msgstr "position 'at' incorrecte dans 'axis'"
@@ -32,20 +32,17 @@ msgstr "'labels' et 'at' doivent être de même longueur"
 msgid "logical 'label' supplied of length 0"
 msgstr "la valeur logique 'label' est de longueur nulle"
 
-#, fuzzy
 msgid "Invalid coordinates"
-msgstr "'order' incorrect"
+msgstr "Coordonnées incorrectes"
 
-#, fuzzy
 msgid "Invalid grob coordinates"
-msgstr "nom de 'grob' incorrect"
+msgstr "Coordonnées de 'grob' incorrectes"
 
-#, fuzzy
 msgid "Invalid gTree coordinates"
-msgstr "classe \"gTree\" incorrecte"
+msgstr "Coordonnées de 'gTree' incorrectes"
 
 msgid "Closed must not be a missing value"
-msgstr ""
+msgstr "Closed doit être une valeur présente"
 
 msgid "end points must not be identical"
 msgstr "les points extrêmes ne peuvent être identiques"
@@ -128,7 +125,7 @@ msgid "'gamma' 'gpar' element is defunct"
 msgstr "'gamma' 'gpar' n'existe plus"
 
 msgid "'fill' gpar list components must all be patterns"
-msgstr ""
+msgstr "les composants de la liste gpar 'fill' doivent tous être des modèles"
 
 msgid "invalid 'linemitre' value"
 msgstr "valeur 'linemitre' incorrecte"
@@ -191,9 +188,8 @@ msgstr "il faut naviguer dans au moins une vue"
 msgid "Invalid number of generations"
 msgstr "Nombre de générations incorrect"
 
-#, fuzzy
 msgid "Invalid 'clearGroups' argument"
-msgstr "argument 'arrow' incorrect"
+msgstr "argument de 'clearGroups' incorrect"
 
 msgid "invalid object inserted on the display list"
 msgstr "objet incorrect inséré dans la liste d'affichage"
@@ -253,8 +249,8 @@ msgstr "valeur 'grep' incorrecte"
 
 msgid "it is only valid to get a child from a \"gTree\""
 msgstr ""
-"seule la récupération d'un noeud enfant est possible depuis un objet "
-"\"gTree\""
+"seule la récupération d'un noeud enfant est possible depuis un objet \"gTree"
+"\""
 
 msgid "'gPath' does not specify a valid child"
 msgstr "'gPath' ne spécifie pas un chemin de noeud enfant valide"
@@ -320,7 +316,7 @@ msgid "Invalid 'order'"
 msgstr "'order' incorrect"
 
 msgid "Group definition failed"
-msgstr "la définition du groupe a échoué"
+msgstr "Echec dans la définition du groupe"
 
 msgid "Invalid source"
 msgstr "Source invalide"
@@ -383,9 +379,8 @@ msgstr "listing incorrect"
 msgid "invalid 'listing'"
 msgstr "'listing' incorrect"
 
-#, fuzzy
 msgid "Only a grob can be converted to a mask"
-msgstr "Seul un grob peut être converti en chemin"
+msgstr "Seul un grob peut être converti en masque"
 
 msgid "invalid 'origin'"
 msgstr "'origin' incorrecte"
@@ -393,21 +388,17 @@ msgstr "'origin' incorrecte"
 msgid "Only a grob can be converted to a path"
 msgstr "Seul un grob peut être converti en chemin"
 
-#, fuzzy
 msgid "colours and stops must be at least length 1"
-msgstr "'x' et 'y' doivent être de même longueur"
+msgstr "les couleurs et les arrêts doivent au moins être de longueur unitaire"
 
-#, fuzzy
 msgid "x1, y1, x2, and y2 must all be length 1"
-msgstr "'x1', 'y1', 'x2' et 'y2' doivent être des unités ('units')"
+msgstr "'x1', 'y1', 'x2' et 'y2' doivent tous être de longueur unitaire"
 
-#, fuzzy
 msgid "cx1, cy1, cx2, cy2, r1, and r2 must all be length 1"
-msgstr "'x1', 'y1', 'x2' et 'y2' doivent être des unités ('units')"
+msgstr "cx1, cy1, cx2, cy2, r1, et r2  doivent tous être de longueur unitaire"
 
-#, fuzzy
 msgid "x, y, width, and height must all be length 1"
-msgstr "'x', 'y', 'width' et 'height' doivent tous de longueur 1"
+msgstr "'x', 'y', 'width' et 'height' doivent tous être de longueur unitaire"
 
 msgid "Pattern must be based on grob"
 msgstr "Le modèle doit être basé sur le grob"
@@ -421,10 +412,11 @@ msgid ""
 "grob drawing produces more shapes than grob coords\n"
 "(recycling coords)"
 msgstr ""
+"le dessin grob génère plus de formes qu'il y a de coordonnées grob\n"
+"(recyclage des coordonnées)"
 
-#, fuzzy
 msgid "Pattern fill applied to object with no inside"
-msgstr "Remplissage en gradient appliqué à un objet qui n’a pas de contenu"
+msgstr "Remplissage du modèle appliqué à un objet qui n’a pas de contenu"
 
 msgid "'length' must be a 'unit' object"
 msgstr "'length' doit être un objet 'unit'"
@@ -508,33 +500,29 @@ msgstr "'r' doit être un objet 'unit'"
 msgid "'x', 'y', 'width', and 'height' must have length 1"
 msgstr "'x', 'y', 'width' et 'height' doivent tous de longueur 1"
 
-#, fuzzy
 msgid "Invalid glyph info"
-msgstr "Transformation invalide"
+msgstr "informations de glyphe incorrectes"
 
-#, fuzzy
 msgid "'x' and 'y' must have length > 0"
-msgstr "'x' et 'y' doivent être de longueur unitaire"
+msgstr "'x' et 'y' doivent avoir une longueur strictement positive"
 
 msgid "'hjust' and 'vjust' must be glyphJust() values"
-msgstr ""
+msgstr "'hjust' et 'vjust' doivent être des valeurs de glyphJust()"
 
-#, fuzzy
 msgid "'hjust' and 'vjust' must have length 1"
-msgstr "'x' et 'y' doivent être de longueur unitaire"
+msgstr "'hjust' et 'vjust'  doivent être de longueur unitaire"
 
 msgid "Unknown width; using first width"
-msgstr ""
+msgstr "Largeur inconnue; utilisation de la première largeur"
 
-#, fuzzy
 msgid "Unknown anchor; using left justification"
-msgstr "justification horizontale incorrecte"
+msgstr "Ancrage non trouvé; la justification à gauche est utilisée"
 
 msgid "Unknown height; using first height"
-msgstr ""
+msgstr "Hauteur inconnue; utilisation de la première hauteur"
 
 msgid "Unknown anchor; using bottom justification"
-msgstr ""
+msgstr "Ancrage non trouvé; la justification se fait par le bas"
 
 msgid "'x' and 'units' must have length > 0"
 msgstr "'x' et 'units' doivent avoir une longueur positive"
@@ -542,15 +530,11 @@ msgstr "'x' et 'units' doivent avoir une longueur positive"
 msgid "invalid 'axis' or 'type'"
 msgstr "'axis' ou 'type' incorrect"
 
-#, fuzzy
 msgid "'x' and 'y' must be units and 'device' must be logical"
-msgstr ""
-"'x' et 'y' doivent être des objets 'unit' et doivent avoir la même longueur"
+msgstr "'x' et 'y' doivent être des unités et 'device' doit être booléen"
 
-#, fuzzy
 msgid "'w' and 'h' must be units and 'device' must be logical"
-msgstr ""
-"'x' et 'y' doivent être des objets 'unit' et doivent avoir la même longueur"
+msgstr "'w' et 'h' doivent être des unités et 'device' doit être booléen"
 
 msgid "Not a unit object"
 msgstr "Ce n’est pas un objet 'unit'"
