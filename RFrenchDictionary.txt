@@ -31,6 +31,7 @@ cached value : valeur de la mémoire cache
 call : appel
 callback : rappel (procédure de, callback)
 case insensitive matching : correspondance indépendante de la casse
+categorical : qualitative (pour une variable)
 channel : canal
 character : caractère (sans h)
 clipping : détourage
@@ -72,6 +73,7 @@ GiB : giga octets (pour les tailles)
 handler : manipulateur de données (voir aussi interrupt handler)
 hashing : hachage
 Hessian : Hessien
+hinges : jointures
 history : historique des commandes
 image : image d'environnement (fichier image où les objets R sont sauvés)
 implemented : implémenté
@@ -109,6 +111,7 @@ named args : arguments nommés
 namespace : espace de noms
 nondecreasing vector : vecteur de valeurs non décroissantes
 non-vector type : type non vectoriel
+notches : indentations
 offset : décalage
 opcode : code d'opération
 outlier : valeur extrême
@@ -162,6 +165,7 @@ source : source (to source : sourcer, préférable à entrée par défaut)
 specified : fourni (voir choisi ou donné, selon le contexte)
 stack : pile
 standard deviation : écart-type
+stratum : strate
 subscript : indice
 subset : sous-ensemble (subsetting : indiçage, ou réalisation d'un sous-ensemble)
 supernode : super-noeud
@@ -177,7 +181,7 @@ top level : niveau le plus haut
 traceback : historique des fonctions appelées ('traceback')
 trimmed mean : moyenne tronquée
 truncation : troncature
-type : type
+type : type (par ex. d'une variable)
 unary operator : opérateur unaire
 unbind : délier
 underflow : dépassement de capacité par le bas
