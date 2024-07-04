@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: R 4.4.0\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2024-04-15 18:10\n"
-"PO-Revision-Date: 2024-07-03 13:27+0200\n"
+"PO-Revision-Date: 2024-07-04 10:30+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
@@ -122,7 +122,7 @@ msgid "cannot supply 'which' and 'device' at the same time"
 msgstr "fixer 'which' et 'device' en même temps n'est pas autorisé"
 
 msgid "cannot copy from the null device"
-msgstr "impossible de copier du périphérique null"
+msgstr "impossible de copier à partir du périphérique null"
 
 msgid "cannot copy to the null device"
 msgstr "impossible de copier vers le périphérique null"
@@ -134,7 +134,7 @@ msgid "'device' should be a function"
 msgstr "'device' doit être une fonction"
 
 msgid "no device to print from"
-msgstr "aucun périphérique d'où imprimer"
+msgstr "aucun périphérique à partir duquel imprimer"
 
 msgid "can only print from a screen device"
 msgstr "seul un périphérique écran peut être imprimé"
@@ -152,7 +152,7 @@ msgid "dev.displaylist() called without an open graphics device"
 msgstr "dev.displaylist() appelé sans périphérique graphique ouvert"
 
 msgid "invalid setting for 'getOption(\"device\")'"
-msgstr "paramètres incorrects por 'getOption(\"device\")'"
+msgstr "paramètres incorrects pour 'getOption(\"device\")'"
 
 msgid "device '%s' not found"
 msgstr "le périphérique '%s' est introuvable"
@@ -170,7 +170,7 @@ msgid "dev.new(): using postscript(file=\"%s\")"
 msgstr "dev.new() : utilisation de postscript(file=\"%s\")"
 
 msgid "Invalid capabilities - alert the device maintainer"
-msgstr "Capacités incorrectes - prévenir le mainteneur de l'appareil"
+msgstr "Capacités incorrectes - prévenir le mainteneur du périphérique"
 
 msgid "Invalid span weight"
 msgstr "Pondération incorrecte du span"
@@ -179,52 +179,52 @@ msgid "length of arguments must match (and be greater than 0)"
 msgstr "la longueur des arguments doit correspondre (et être > 0)"
 
 msgid "Invalid glyph width(s)"
-msgstr "Largeurs glyph incorrectes"
+msgstr "Largeur(s) glyph incorrecte(s)"
 
 msgid "Invalid glyph width"
 msgstr "Largeur glyph incorrecte"
 
 msgid "Unknown width; using left anchor"
-msgstr "Largeur inconnue; utilisation de l'ancrage gauche"
+msgstr "Largeur inconnue; ancrage gauche utilisé"
 
 msgid "Invalid glyph height(s)"
-msgstr "Hauteurs glyph incorrectes"
+msgstr "Hauteur(s) glyph incorrecte(s)"
 
 msgid "Invalid glyph height"
 msgstr "Hauteur glyph incorrecte"
 
 msgid "Unknown height; using bottom anchor"
-msgstr "Hauteur inconnue; ancrage par rapport au bas"
+msgstr "Hauteur inconnue; ancrage par rapport au bas utilisé"
 
 msgid "Invalid glyph anchor"
 msgstr "Ancrage glyph incorrect"
 
 msgid "Font file longer than 500 will be truncated"
-msgstr "Les familles de fontes au-delà de 500 seront tronquées"
+msgstr "Le fichier de police supérieur à 500 sera tronqué"
 
 msgid "Font family longer than 200 will be truncated"
-msgstr "Les familles de fontes au-delà de 200 seront tronquées"
+msgstr "Les familles de polices supérieures à 200 seront tronquées"
 
 msgid "PostScript font name longer than 200 will be truncated"
-msgstr "Le nom des fontes PostScript supérieur à 200 (caractères) sera tronqué"
+msgstr "Le nom des polices PostScript supérieur à 200 sera tronqué"
 
 msgid "Font information is inconsistent"
-msgstr "Les informations de fonte sont incohérentes"
+msgstr "Les informations de police sont incohérentes"
 
 msgid "List must include at least one font"
-msgstr "La liste doit contenir au moins une fonte"
+msgstr "La liste doit contenir au moins une police"
 
 msgid "Invalid glyph font"
-msgstr "Fonte incorrecte pour glyph"
+msgstr "Police incorrecte pour glyph"
 
 msgid "Invalid font list"
-msgstr "Liste incorrecte des fontes"
+msgstr "Liste incorrecte des polices"
 
 msgid "Unknown font"
-msgstr "Fonte inconnue"
+msgstr "Police inconnue"
 
 msgid "There must be anchors named \"left\" and \"bottom\""
-msgstr "Les ancres \"left\" et \"bottom\" doivent exister"
+msgstr "Les ancres nommés \"left\" et \"bottom\" doivent exister"
 
 msgid "Invalid glyph info"
 msgstr "Informations glyph incorrectes"
@@ -234,8 +234,8 @@ msgstr "Opérateur de composition incorrect"
 
 msgid "wrong 'type'; should never happen, please report!"
 msgstr ""
-"'type' incorrect ; Cela ne devrait pas se produire, veuillez reporter "
-"l’erreur, s’il-vous-plait !"
+"'type' incorrect ; cela ne doit pas se produire, veuillez reporter "
+"l'erreur, s'il-vous-plait !"
 
 msgid "Invalid mask type"
 msgstr "Type de masque incorrect"
@@ -244,7 +244,7 @@ msgid "Invalid fill rule"
 msgstr "Règle de remplissage incorrecte"
 
 msgid "Invalid pattern type"
-msgstr "Type de pattern incorrect"
+msgstr "Type de modèle incorrect"
 
 msgid "Invalid 'extend' value"
 msgstr "Valeur de 'extend' incorrecte"
@@ -257,7 +257,7 @@ msgstr "arguments incorrects dans '%s' (les arguments doivent être nommés)"
 
 msgid "'name.opt' must be character, name of an existing list"
 msgstr ""
-"'name.opt' doit être une chaîne de caractère ou le nom d'une liste existante"
+"'name.opt' doit être une chaîne de caractères ou le nom d'une liste existante"
 
 msgid "cannot reset non-existent '%s'"
 msgstr "impossible de réinitialiser '%s' car il n'existe pas"
@@ -270,8 +270,8 @@ msgstr "%s NE change(nt) PAS"
 
 msgid "argument 'append' is for back-compatibility and will be ignored"
 msgstr ""
-"l'argument 'append' est présent pour raison de compatibilité descendante "
-"mais sera ignoré"
+"l'argument 'append' est présent pour raison de compatibilité arrière "
+"et sera ignoré"
 
 msgid "unknown family '%s'"
 msgstr "famille inconnue '%s'"
@@ -280,7 +280,7 @@ msgid "invalid 'family' argument"
 msgstr "argument 'family' incorrect"
 
 msgid "'title' argument \"%s\" contains invalid characters"
-msgstr "l’argument 'title' (\"%s\") contient des caractères non autorisés"
+msgstr "l'argument 'title' (\"%s\") contient des caractères non autorisés"
 
 msgid "invalid 'file' argument '%s'"
 msgstr "argument 'file' incorrect '%s'"
@@ -313,16 +313,16 @@ msgid "invalid PDF resource in font specification"
 msgstr "ressource PDF incorrecte dans la spécification de police"
 
 msgid "Invalid font database name"
-msgstr "Nom de base de données de polices incorrect"
+msgstr "Nom de base de données des polices incorrect"
 
 msgid "font %s already in use"
 msgstr "police %s déjà utilisée"
 
 msgid "invalid arguments in '%s' (must be font names)"
-msgstr "arguments incorrects dans '%s' (il faut des noms de police)"
+msgstr "arguments incorrects dans '%s' (il faut des noms de polices)"
 
 msgid "unknown font"
-msgstr "fonte inconnue"
+msgstr "police inconnue"
 
 msgid "font encoding mismatch '%s'/'%s'"
 msgstr "incohérence d'encodage pour la police '%s/%s'"
@@ -340,19 +340,19 @@ msgid "status %d in running command '%s'"
 msgstr "statut %d dans la commande en cours d'exécution '%s'"
 
 msgid "'file' must be a non-empty character string"
-msgstr "'file' doit être une chaîne de caractère non vide"
+msgstr "'file' doit être une chaîne de caractères non vide"
 
 msgid "Invalid 'glyphInfo'"
 msgstr "'glyphInfo' incorrect"
 
 msgid "failed to add more ticks; 'min.n' too large?"
 msgstr ""
-"impossible d’ajouter des traits d’axes supplémentaires ; 'min.n' trop large ?"
+"impossible d'ajouter des traits d'axes supplémentaires ; 'min.n' trop large ?"
 
 msgid "a raster matrix must be character, or numeric, or logical"
 msgstr ""
 "une matrice de pixels doit contenir des chaînes de caractères, des nombres "
-"ou des valeurs logiques"
+"ou des booléens"
 
 msgid "a raster array must be numeric"
 msgstr "une matrice de pixels doit être numérique"
@@ -367,7 +367,7 @@ msgid "'drop' is always implicitly FALSE in '[.raster'"
 msgstr "'drop' est toujours implicitement faux (FALSE) dans '[.raster'"
 
 msgid "invalid raster subsetting"
-msgstr "indiçage d'image en mode point incorrect"
+msgstr "indiçage incorrect d'image en mode point"
 
 msgid "invalid raster subassignment"
 msgstr "sous-assignement d'image en mode point incorrect"
@@ -386,16 +386,16 @@ msgstr "\"recordedplot\" illisible :"
 
 msgid "snapshot recorded in different R version (pre 3.3.0)"
 msgstr ""
-"chargement d'un instantané graphique à partir d'une version différente de R "
-"(pré 3.3.0)"
+"instantané graphique enregistré avec une version différente de R "
+"(avant R 3.3.0)"
 
 msgid "snapshot recorded in different R version (%s)"
 msgstr ""
-"chargement d'un instantané graphique à partir d'une version différente de R "
+"instantané graphique enregistré avec une version différente de R "
 "(%s)"
 
 msgid "snapshot contains invalid graphics call"
-msgstr "appel de l’API graphique incorrect dans l’instantané graphique"
+msgstr "instantané graphique avec appel incorrect de graphics"
 
 msgid "'nbin' must be numeric of length 1 or 2"
 msgstr "'nbin' doit être numérique et de longueur 1 ou 2"
@@ -410,7 +410,7 @@ msgid "Must have the ('Recommended') package \"KernSmooth\" installed"
 msgstr "Le package ('Recommended') \"KernSmooth\" doit être installé"
 
 msgid "'r' must be a \"range\", hence of length 2"
-msgstr "'r' doit indiquer une étendue des valeurs, donc être de longueur 2"
+msgstr "'r' doit indiquer une étendue de valeurs, donc être de longueur 2"
 
 msgid "points cut off after point[%d]"
 msgstr "cut off des points après point[%d]"
@@ -440,7 +440,7 @@ msgid "'file' is missing with no default"
 msgstr "'file' est manquant sans valeur par défaut"
 
 msgid "unrecognized format of gs -help"
-msgstr "format de gs - help inconnu"
+msgstr "format de gs -help inconnu"
 
 msgid "device '%s' is not available"
 msgstr "le périphérique '%s' n'est pas disponible"
@@ -465,13 +465,13 @@ msgid "'filename' must be a non-empty character string"
 msgstr "'filename' doit être une chaîne de caractères non vide"
 
 msgid "type = \"quartz\" is unavailable. trying \"Xlib\""
-msgstr "type = \"quartz\" n’est pas disponible. Essai de \"Xlib\""
+msgstr "type = \"quartz\" n'est pas disponible. Essai de \"Xlib\""
 
 msgid "type = \"cairo\" is unavailable. trying \"Xlib\""
-msgstr "type = \"cairo\" n’est pas disponible. Essai de \"Xlib\""
+msgstr "type = \"cairo\" n'est pas disponible. Essai de \"Xlib\""
 
 msgid "type = \"cairo-png\" is unavailable. trying \"Xlib\""
-msgstr "type = \"cairo-png\" n’est pas disponible. Essai de \"Xlib\""
+msgstr "type = \"cairo-png\" n'est pas disponible. Essai de \"Xlib\""
 
 msgid "compression is not supported for type = \"quartz\""
 msgstr "compression non prise en charge pour type = \"quartz\""
@@ -486,7 +486,7 @@ msgid "invalid Quartz font:  must be 4 strings"
 msgstr "police Quartz incorrecte : doit être 4 chaînes de caractères"
 
 msgid "invalid arguments in 'quartzFonts' (must be font names)"
-msgstr "arguments incorrects dans 'quartzFonts' (il faut des noms de police)"
+msgstr "arguments incorrects dans 'quartzFonts' (il faut des noms de polices)"
 
 msgid "invalid arguments in 'quartzFonts' (need named args)"
 msgstr ""
@@ -504,7 +504,7 @@ msgid "invalid X11 font specification:"
 msgstr "spécification de police X11 incorrecte :"
 
 msgid "invalid arguments in 'X11Fonts' (must be font names)"
-msgstr "arguments incorrects dans 'X11Fonts' (il faut des noms de police)"
+msgstr "arguments incorrects dans 'X11Fonts' (il faut des noms de polices)"
 
 msgid "invalid arguments in 'X11Fonts' (need named args)"
 msgstr ""
@@ -523,7 +523,7 @@ msgstr "valeur incorrecte pour 'rescale'"
 
 msgid "Calls like '%s' are unsafe and should be replaced by '%s'"
 msgstr ""
-"Des appels comme '%s' ne sont pas sûrs et devraient être remplacés par '%s'"
+"Des appels comme '%s' ne sont pas sûrs et doivent être remplacés par '%s'"
 
 msgid "can only bring windows devices to the front"
 msgstr ""
@@ -543,10 +543,10 @@ msgid "subscript out of range"
 msgstr "indice hors plage"
 
 msgid "invalid Windows font:  must be a single font family name"
-msgstr "police Windows incorrecte : il faut un seul nom de famille de police"
+msgstr "police Windows incorrecte : il faut un seul nom de famille de polices"
 
 msgid "invalid arguments in 'windowsFonts' (must be font names)"
-msgstr "arguments incorrects dans 'windowsFonts' (il faut des noms de police)"
+msgstr "arguments incorrects dans 'windowsFonts' (il faut des noms de polices)"
 
 msgid "invalid arguments in 'windowsFonts' (need named args)"
 msgstr ""
