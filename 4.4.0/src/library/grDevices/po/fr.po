@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: R 4.4.0\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2024-04-15 18:10-0700\n"
-"PO-Revision-Date: 2024-07-04 09:45+0200\n"
+"PO-Revision-Date: 2024-07-04 21:30+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
@@ -73,7 +73,7 @@ msgstr "les entrées doivent avoir des valeurs finies"
 
 #: colors.c:128
 msgid "bad hsv to rgb color conversion"
-msgstr "conversion de couleur hsv vers rgb incorrecte"
+msgstr "conversion de couleur hsv vers rvb incorrecte"
 
 #: colors.c:220 colors.c:234
 msgid "invalid hsv color"
@@ -106,7 +106,7 @@ msgstr "chiffre hexadécimal incorrect dans 'color' ou 'lty'"
 
 #: colors.c:1353 colors.c:1371
 msgid "invalid RGB specification"
-msgstr "spécification RGB incorrecte"
+msgstr "spécification RVB incorrecte"
 
 #: colors.c:1408
 #, c-format
@@ -567,11 +567,11 @@ msgstr "la version du PDF est augmentée à 1.4"
 
 #: devPS.c:8260 devPS.c:8308
 msgid "unknown 'colormodel', using 'srgb'"
-msgstr "'colormodel' inconnu, utilisation de 'srgb'"
+msgstr "'colormodel' inconnu, utilisation de 'srvb'"
 
 #: devPS.c:8532
 msgid "failed to load sRGB colorspace file"
-msgstr "échec de chargement de l'espace de couleur sRGB"
+msgstr "échec de chargement de l'espace de couleur sRVB"
 
 #: devPS.c:8864
 msgid "corrupt encodings in PDF device"
