@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-07-02 20:39+0200\n"
+"PO-Revision-Date: 2024-07-04 10:40+0200\n"
 "Last-Translator: Elise Maigné <elise.maigne@inrae.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -38,8 +38,8 @@ msgstr ""
 "données chargée depuis le disque. Rappelez-vous de toujours exécuter setDT() "
 "immédiatement après le chargement pour éviter tout comportement inattendu. "
 "Si cette table n'a pas été chargée depuis le disque ou si vous avez déjà "
-"exécuté setDT(), veuillez le signaler sur les tickets (\"issues\" Github) de "
-"data.table.\n"
+"exécuté setDT(), veuillez le signaler dans le gestionnaire de tickets (issue "
+"tracker) de data.table.\n"
 
 #: assign.c:124
 msgid "Internal error: .internal.selfref ptr is neither NULL nor R_NilValue"
@@ -70,7 +70,8 @@ msgid ""
 "traceback() to data.table issue tracker."
 msgstr ""
 "dt passé à alloccol n'a pas d'attribut de classe. Veuillez rapporter le "
-"résultat de traceback() aux tickets (\"issues\" Github) de data.table."
+"résultat de traceback() dans le gestionnaire de tickets (issue tracker) de "
+"data.table."
 
 #: assign.c:215 assign.c:315
 #, c-format
@@ -88,9 +89,9 @@ msgid ""
 "Internal error, please report (including result of sessionInfo()) to data."
 "table issue tracker: tl (%d) < l (%d) but tl of class is marked."
 msgstr ""
-"Erreur interne, veuillez rapporter cette erreur en incluant le résultat de "
-"sessionInfo()) sur les tickets (\"issues\" Github) de data.table  : tl (%d) "
-"< l (%d) mais TRUELENGTH(dt) de la classe est marqué."
+"Erreur interne, veuillez rapporter cette erreur dans le gestionnaire de "
+"tickets (issue tracker) de data.table en incluant le résultat de "
+"sessionInfo())  : tl (%d) < l (%d) mais tl de la classe est marqué."
 
 #: assign.c:227
 #, c-format
@@ -101,8 +102,8 @@ msgid ""
 msgstr ""
 "tl (%d) est supérieur à 10 000 éléments sur-alloués (l = %d). Si vous n'avez "
 "pas défini l'option datatable.alloccol comme étant très grande, merci de "
-"rapporter ce problème dans un ticket (\"issue\" Github) de data.table en "
-"incluant le résultat de sessionInfo()."
+"rapporter ce problème dans le gestionnaire de tickets (issue tracker) de "
+"data.table en incluant le résultat de sessionInfo()."
 
 #: assign.c:229
 #, c-format
@@ -419,8 +420,8 @@ msgid ""
 "issue tracker, including result of sessionInfo()."
 msgstr ""
 "Erreur interne : oldtncol(%d) < oldncol(%d). Veuillez rapporter cette erreur "
-"dans les tickets (\"issues\" Github) de data.table, en incluant le résultat "
-"de sessionInfo()."
+"dans le gestionnaire de tickets (issue tracker) de data.table, en incluant "
+"le résultat de sessionInfo()."
 
 #: assign.c:465
 #, c-format
@@ -432,8 +433,9 @@ msgid ""
 msgstr ""
 "truelength (%d) est supérieur à 10 000 éléments sur-alloués (length = %d). "
 "Voir ?truelength. Si vous n'avez pas mis une très grande valeur à l'option "
-"datatable.alloccol, veuillez rapporter ce problème dans un ticket (\"issue\" "
-"Github) de data.table en incluant le résultat de sessionInfo()."
+"datatable.alloccol, veuillez rapporter ce problème dans le gestionnaire de "
+"tickets (issue tracker) de data.table en incluant le résultat de "
+"sessionInfo()."
 
 #: assign.c:467
 #, c-format
@@ -453,8 +455,8 @@ msgid ""
 msgstr ""
 "Il semble qu'à un moment donné, les noms de cette table data.table aient été "
 "réattribués. Veillez à utiliser setnames() plutôt que names<- ou colnames<-. "
-"Dans le cas contraire, signalez le problème sur un ticket (\"issue\" Github) "
-"de data.table."
+"Dans le cas contraire, signalez le problème dans le gestionnaire de tickets "
+"(issue tracker) de data.table."
 
 #: assign.c:474
 #, c-format
@@ -668,8 +670,8 @@ msgid ""
 "data.table issue tracker."
 msgstr ""
 "Erreur interne : les vérifications savetl_init ont échoué (%d %d %p %p). "
-"Veuillez signaler l'erreur dans les tickets (\"issues\" Github) de data."
-"table."
+"Veuillez signaler l'erreur dans le gestionnaire de tickets (issue tracker) "
+"de data.table."
 
 #: assign.c:1209
 #, c-format
@@ -683,7 +685,8 @@ msgid ""
 "table issue tracker."
 msgstr ""
 "Erreur interne : le nombre maximum d'éléments %d a été atteint pour savetl. "
-"Veuillez signaler l'erreur dans un ticket (\"issue\" Github) de data.table."
+"Veuillez signaler l'erreur dans le gestionnaire de tickets (issue tracker) "
+"de data.table."
 
 #: assign.c:1225
 #, c-format
