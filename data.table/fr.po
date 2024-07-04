@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-07-04 12:03+0200\n"
-"Last-Translator: Elise Maigné <elise.maigne@inrae.fr>\n"
+"PO-Revision-Date: 2024-07-04 17:10+0200\n"
+"Last-Translator: rochevin <vincent.rocher@inrae.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.3\n"
 
 #: assign.c:7
 msgid "Internal error: finalizer hasn't received an ExternalPtr"
@@ -479,9 +479,9 @@ msgid ""
 "RHS for item %d has been duplicated because NAMED==%d MAYBE_SHARED==%d, but "
 "then is being plonked. length(values)==%d; length(cols)==%d)\n"
 msgstr ""
-"Le membre de droite (RHS) pour l'élément %d a été dupliqué parce que "
-"NAMED==%d MAYBE_SHARED==%d, mais il est ensuite remplacé (plonk). "
-"length(values)==%d ; length(cols)==%d)\n"
+"Le membre de droite (RHS) pour l'élément %d a été dupliqué parce que NAMED=="
+"%d MAYBE_SHARED==%d, mais il est ensuite remplacé (plonk). length(values)=="
+"%d ; length(cols)==%d)\n"
 
 #: assign.c:509
 #, c-format
@@ -729,9 +729,8 @@ msgstr ""
 #: between.c:12
 #, c-format
 msgid ""
-"Incompatible vector lengths: length(x)==%d length(lower)==%d "
-"length(upper)==%d. Each should be either length 1 or the length of the "
-"longest."
+"Incompatible vector lengths: length(x)==%d length(lower)==%d length(upper)=="
+"%d. Each should be either length 1 or the length of the longest."
 msgstr ""
 "Longueurs de vecteurs incompatibles : length(x)==%d length(lower)==%d "
 "length(upper)==%d. Chaque vecteur doit avoir la longueur 1 ou la longueur du "
@@ -2600,8 +2599,8 @@ msgstr ""
 #, fuzzy, c-format
 msgid ""
 "Found and resolved improper quoting in first %d rows. If the fields are not "
-"quoted (e.g. field separator does not appear within any field), try "
-"quote=\"\" to avoid this warning."
+"quoted (e.g. field separator does not appear within any field), try quote="
+"\"\" to avoid this warning."
 msgstr ""
 "L'erreur de citation a été détectée et résolue dans les %d premières lignes. "
 "Si les champs ne sont pas entre guillemets (par exemple, le séparateur de "
@@ -2786,8 +2785,8 @@ msgid ""
 "Added %d extra default column name%s\n"
 msgstr ""
 "A détecté %d noms de colonnes mais les données ont %d colonnes (c.-à-d. "
-"fichier invalide). Ajout de %d noms de colonnes supplémentaires par "
-"défaut%s\n"
+"fichier invalide). Ajout de %d noms de colonnes supplémentaires par défaut"
+"%s\n"
 
 #: fread.c:1916
 #, fuzzy
@@ -3021,8 +3020,8 @@ msgstr ""
 #: fread.c:2436
 #, fuzzy, c-format
 msgid ""
-"Internal error: invalid head position. jump=%d, headPos=%p, "
-"thisJumpStart=%p, sof=%p"
+"Internal error: invalid head position. jump=%d, headPos=%p, thisJumpStart="
+"%p, sof=%p"
 msgstr ""
 "Erreur interne : position de la tête non valide. jump=%d, headPos=%p, "
 "thisJumpStart=%p, sof=%p"
@@ -3030,8 +3029,8 @@ msgstr ""
 #: fread.c:2509
 #, fuzzy, c-format
 msgid ""
-"  Too few rows allocated. Allocating additional %<PRIu64> rows (now "
-"nrows=%<PRIu64>) and continue reading from jump %d\n"
+"  Too few rows allocated. Allocating additional %<PRIu64> rows (now nrows="
+"%<PRIu64>) and continue reading from jump %d\n"
 msgstr ""
 "  Trop peu de lignes allouées. Allocation de %<PRIu64> lignes "
 "supplémentaires (maintenant nrows=%<PRIu64>) et poursuite de la lecture à "
@@ -3338,8 +3337,8 @@ msgstr ""
 #: freadR.c:297
 #, fuzzy, c-format
 msgid ""
-"Column number %d (select[%d]) is negative but should be in the range [1,"
-"ncol=%d]. Consider drop= for column exclusion."
+"Column number %d (select[%d]) is negative but should be in the range [1,ncol="
+"%d]. Consider drop= for column exclusion."
 msgstr ""
 "Le numéro de colonne %d (select[%d]) est négatif mais devrait être compris "
 "dans l'intervalle [1,ncol=%d]. Envisager drop= pour l'exclusion de colonnes."
@@ -3700,9 +3699,11 @@ msgid "%s: Unable to allocate memory for cumsum"
 msgstr "%s : Impossible d'allouer de la mémoire pour le cumsum"
 
 #: frolladaptive.c:71 frolladaptive.c:260
-#, fuzzy, c-format
+#, c-format
 msgid "%s: Unable to allocate memory for cum NA counter"
-msgstr "%s : Impossible d'allouer de la mémoire pour le compteur cum NA"
+msgstr ""
+"%s : Impossible d'allouer de la mémoire pour le compteur de valeurs "
+"manquantes (NA)"
 
 #: frolladaptive.c:114 frolladaptive.c:298
 #, fuzzy, c-format
@@ -3711,10 +3712,10 @@ msgstr ""
 "%s: exécution en parallèle pour la longueur de l'entrée %<PRIu64>, hasna %d, "
 "narm %d\n"
 
+# Doit-t-on traduire le currently, le test est isNumeric(x)
 #: fsort.c:107
-#, fuzzy
 msgid "x must be a vector of type double currently"
-msgstr "x doit être un vecteur de type double actuellement"
+msgstr "x doit être un vecteur de type double"
 
 #: fsort.c:118
 #, fuzzy, c-format
@@ -3722,14 +3723,13 @@ msgid "nth=%d, nBatch=%d\n"
 msgstr "nth=%d, nBatch=%d\n"
 
 #: fsort.c:152
-#, fuzzy, c-format
+#, c-format
 msgid "Range = [%g,%g]\n"
-msgstr "Plage = [%g,%g]\n"
+msgstr "Intervalle = [%g,%g]\n"
 
 #: fsort.c:153
-#, fuzzy
 msgid "Cannot yet handle negatives."
-msgstr "Ne peut pas encore gérer les négatifs."
+msgstr "Ne peux pas encore gérer les valeurs négatives."
 
 #: fsort.c:168
 #, fuzzy, c-format
@@ -3739,11 +3739,11 @@ msgstr "maxBit=%d ; MSBNbits=%d ; shift=%d ; MSBsize=%zu\n"
 #: fsort.c:174
 #, fuzzy, c-format
 msgid ""
-"counts is %dMB (%d pages per nBatch=%d, batchSize=%<PRIu64>, "
-"lastBatchSize=%<PRIu64>)\n"
+"counts is %dMB (%d pages per nBatch=%d, batchSize=%<PRIu64>, lastBatchSize="
+"%<PRIu64>)\n"
 msgstr ""
-"compte est %dMB (%d pages par nBatch=%d, batchSize=%<PRIu64>, "
-"lastBatchSize=%<PRIu64>)\n"
+"compte est %dMB (%d pages par nBatch=%d, batchSize=%<PRIu64>, lastBatchSize="
+"%<PRIu64>)\n"
 
 #: fsort.c:228
 #, fuzzy
@@ -3751,9 +3751,8 @@ msgid "Internal error: counts[nBatch-1][MSBsize-1] != length(x)"
 msgstr "Erreur interne : counts[nBatch-1][MSBsize-1] != length(x)"
 
 #: fsort.c:244
-#, fuzzy
 msgid "Top 20 MSB counts: "
-msgstr "Les 20 premiers comptages MSB :"
+msgstr "Top 20 des bits de poids fort (Most Significant Bits) : "
 
 #: fsort.c:244
 #, fuzzy, c-format
@@ -3808,9 +3807,8 @@ msgstr ""
 "est de longueur %d"
 
 #: fwrite.c:621
-#, fuzzy
 msgid "Column writers: "
-msgstr "Chroniqueurs :"
+msgstr ""
 
 #: fwrite.c:623 fwrite.c:625 fwrite.c:627
 #, fuzzy, c-format
@@ -3826,12 +3824,12 @@ msgstr "... "
 #, fuzzy, c-format
 msgid ""
 "\n"
-"args.doRowNames=%d args.rowNames=%p args.rowNameFun=%d doQuote=%d args."
-"nrow=%<PRId64> args.ncol=%d eolLen=%d\n"
+"args.doRowNames=%d args.rowNames=%p args.rowNameFun=%d doQuote=%d args.nrow="
+"%<PRId64> args.ncol=%d eolLen=%d\n"
 msgstr ""
 "\n"
-"args.doRowNames=%d args.rowNames=%p args.rowNameFun=%d doQuote=%d args."
-"nrow=%<PRId64> args.ncol=%d eolLen=%d\n"
+"args.doRowNames=%d args.rowNames=%p args.rowNameFun=%d doQuote=%d args.nrow="
+"%<PRId64> args.ncol=%d eolLen=%d\n"
 
 #: fwrite.c:664
 #, fuzzy, c-format
@@ -4104,8 +4102,8 @@ msgstr ""
 #: gsumm.c:89
 #, fuzzy, c-format
 msgid ""
-"Internal error: nrow=%d  ngrp=%d  nbit=%d  bitshift=%d  highSize=%zu  "
-"nBatch=%zu  batchSize=%zu  lastBatchSize=%zu\n"
+"Internal error: nrow=%d  ngrp=%d  nbit=%d  bitshift=%d  highSize=%zu  nBatch="
+"%zu  batchSize=%zu  lastBatchSize=%zu\n"
 msgstr ""
 "Erreur interne : nrow=%d ngrp=%d nbit=%d bitshift=%d highSize=%zu nBatch=%zu "
 "batchSize=%zu lastBatchSize=%zu\n"
