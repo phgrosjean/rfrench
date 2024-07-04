@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: R 4.4.0\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2024-04-15 18:09\n"
-"PO-Revision-Date: 2024-05-16 15:45+0200\n"
+"PO-Revision-Date: 2024-07-04 19:30+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Poedit 3.4.4\n"
 
 msgid "'%s' is defunct."
-msgstr "'%s' est obsolète et retiré de R."
+msgstr "'%s' est obsolète et a été supprimé."
 
 msgid "Use '%s' instead."
 msgstr "Utilisez plutôt ‘%s’."
@@ -83,7 +83,7 @@ msgid "'sample.kind' must be a character string of length 1"
 msgstr "'sample.kind' doit être une chaîne de caractères de longueur 1"
 
 msgid "malformed version string"
-msgstr "chaîne de caractères de version incorrecte"
+msgstr "chaîne de caractères incorrecte pour la version"
 
 msgid "target is %s, current is %s"
 msgstr "la cible est %s, l'actuel est %s"
@@ -139,7 +139,8 @@ msgstr ""
 "correctement"
 
 msgid "package %s is required by %s so will not be detached"
-msgstr "le package '%s est nécessaire pour %s et il n'est donc pas détachable"
+msgstr "le package '%s est nécessaire pour %s et ne peut donc "
+"pas être détaché"
 
 msgid ""
 "%s failed in %s() for '%s', details:\n"
@@ -258,7 +259,7 @@ msgid "invalid 'make.names'"
 msgstr "'make.names' incorrect"
 
 msgid "duplicate 'row.names' are not allowed"
-msgstr "la duplication des 'row.names' n'est sont pas autorisée"
+msgstr "la duplication des 'row.names' n'est pas autorisée"
 
 msgid "missing values in 'row.names' are not allowed"
 msgstr "les valeurs manquantes dans 'row.names' ne sont pas autorisées"
@@ -379,7 +380,7 @@ msgstr ""
 "du vecteur %d de l'argument %d"
 
 msgid "<0 rows> (or 0-length row.names)"
-msgstr "<0 lignes> (ou 'row.names' de longueur nulle)"
+msgstr "<0 ligne> (ou 'row.names' de longueur nulle)"
 
 msgid "invalid 'max' / getOption(\"max.print\"):"
 msgstr "'max' / getOption(\"max.print\") incorrect :"
@@ -427,7 +428,7 @@ msgstr ""
 
 msgid "can only subtract numbers from \"Date\" objects"
 msgstr ""
-"il est seulement possible de soustraire des nombres à partir d'objets "
+"il est seulement possible de soustraire des nombres à partir des objets "
 "\"Date\""
 
 msgid "unary %s not defined for \"Date\" objects"
@@ -533,7 +534,7 @@ msgid "need explicit units for numeric conversion"
 msgstr "unités explicites requises pour la conversion en valeur numérique"
 
 msgid "invalid units specified"
-msgstr "unités incorrectes"
+msgstr "unités incorrectes fournies"
 
 msgid "unary '%s' not defined for \"difftime\" objects"
 msgstr "l'opérateur unaire '%s' n'est pas défini pour des objets \"difftime\""
@@ -559,7 +560,7 @@ msgid "component subscript must be a character string"
 msgstr "l’indice du composant doit être une chaîne de caractères"
 
 msgid "no Olson database found"
-msgstr "aucune base de donnée Olson trouvée"
+msgstr "aucune base de données Olson trouvée"
 
 msgid "'file' must be a character string or connection"
 msgstr "'file' doit être une chaîne de caractères ou une connexion"
@@ -589,11 +590,11 @@ msgstr ""
 
 msgid "failed to load the methods package for debugging by signature"
 msgstr ""
-"impossible de charger le package methods pour le déboggage par signature"
+"impossible de charger le package methods pour le débogage par signature"
 
 msgid "failed to load methods package for undebugging by signature"
 msgstr ""
-"impossible de charger le package methods pour arrêter le déboggage par "
+"impossible de charger le package methods pour arrêter le débogage par "
 "signature"
 
 msgid "failed to load methods package for handling signature"
@@ -632,7 +633,7 @@ msgid "multiple DLLs match '%s'. Using '%s'"
 msgstr "plusieurs DLLs correspondent à '%s'. Utilisation de '%s'"
 
 msgid "must specify DLL via a %s object. See getLoadedDLLs()"
-msgstr "la DLL doit être spécifiée via un objet %s. Voyez getLoadedDLLs()"
+msgstr "la DLL doit être spécifiée via un objet %s. Voir getLoadedDLLs()"
 
 msgid "function is not in a namespace, so cannot locate associated DLL"
 msgstr ""
@@ -661,7 +662,7 @@ msgid "number of levels differs"
 msgstr "le nombre de niveaux diffère"
 
 msgid "%s not meaningful for factors"
-msgstr "%s n'est pas pertinent pour des variables facteurs"
+msgstr "%s n'est pas significatif pour des variables facteurs"
 
 msgid "level sets of factors are different"
 msgstr "les niveaux des facteurs diffèrent"
@@ -738,7 +739,7 @@ msgid "Found no format() method for class \"%s\""
 msgstr "Pas de méthode format() trouvée pour la classe \"%s\""
 
 msgid "class of 'x' was discarded"
-msgstr "la classe de 'x' avais été déchargée"
+msgstr "la classe de 'x' avait été déchargée"
 
 msgid "'flag' must be a string, i.e., of length 1"
 msgstr ""
@@ -746,11 +747,11 @@ msgstr ""
 "longueur 1"
 
 msgid "'flag' should contain only characters from [0+- #'I]"
-msgstr "'flag' ne peut contenir que des [0+- #’I]"
+msgstr "'flag' ne peut contenir que des caractères de [0+- #’I]"
 
 msgid "'mode' must be \"double\" (\"real\"), \"integer\" or \"character\""
 msgstr ""
-"'mode' doit être un de \"double\" (\"real\"), \"integer\" ou \"character\""
+"'mode' doit être une valeur parmi \"double\" (\"real\"), \"integer\" ou \"character\""
 
 msgid "coercing argument to \"character\" for format=\"s\""
 msgstr ""
@@ -758,7 +759,7 @@ msgstr ""
 
 msgid "'format' must be one of {\"f\",\"e\",\"E\",\"g\",\"G\", \"fg\", \"s\"}"
 msgstr ""
-"'format' doit être une valeur de {\"f\",\"e\",\"E\",\"g\",\"G\", \"fg\", "
+"'format' doit être une valeur parmi {\"f\",\"e\",\"E\",\"g\",\"G\", \"fg\", "
 "\"s\"}"
 
 msgid "'digits' reduced to %d"
@@ -774,7 +775,7 @@ msgstr "'zero.print' a une longueur > 1"
 
 msgid "'zero.print' must be character, logical or NULL"
 msgstr ""
-"'zero.print' doit être une chaîne de caractères, une valeur logique ou NULL"
+"'zero.print' doit être une chaîne de caractères, un booléen ou NULL"
 
 msgid ""
 "'zero.print' is truncated to fit into formatted zeros; consider "
@@ -785,14 +786,14 @@ msgstr ""
 
 msgid "'big.mark' and 'decimal.mark' are both '%s', which could be confusing"
 msgstr ""
-"'big.mark' et 'decimal.mark' sont tous deux '%s', cela peut porter à "
+"'big.mark' et 'decimal.mark' valent tous deux '%s', cela peut porter à "
 "confusion"
 
 msgid "'input.d.mark' has no characters"
 msgstr "‘input.d.mark’ ne contient aucun caractère"
 
 msgid "'subset' must be logical"
-msgstr "'subset' doit être une valeur logique"
+msgstr "'subset' doit être un booléen"
 
 msgid "value for %s not found"
 msgstr "valeur pour %s introuvable"
@@ -829,7 +830,7 @@ msgstr ""
 "des valeurs de remplacement doivent être fournies pour les correspondances"
 
 msgid "value does not provide any replacement values"
-msgstr "la valeur ne propose aucunes valeurs de remplacement"
+msgstr "la valeur ne propose aucune valeur de remplacement"
 
 msgid "must have replacements for non-matches"
 msgstr "des remplacements doivent être fournis pour les non-correspondances"
@@ -952,7 +953,7 @@ msgid "shared object %s not found"
 msgstr "objet partagé %s introuvable"
 
 msgid "DLL %s already loaded"
-msgstr "La librairie partagée %s est déjà chargée"
+msgstr "La bibliothèque partagée %s est déjà chargée"
 
 msgid "shared object '%s' already loaded"
 msgstr "l'objet partagé '%s' est déjà chargé"
@@ -991,7 +992,7 @@ msgid ""
 "package %s found more than once, using the first from\n"
 "  %s"
 msgstr ""
-"le package %s s'est retrouvé en plusieurs exemplaires, utilisation du "
+"le package %s est présent plusieurs fois, utilisation du "
 "premier de \n"
 "  %s"
 
@@ -1040,7 +1041,8 @@ msgid "'%s' must be a non-empty string"
 msgstr "'%s' doit être une chaîne de caractères non vide"
 
 msgid "'compress' must be logical or character"
-msgstr "'compress' ou une valeur logique ou une chaîne de caractères"
+msgstr "'compress' doit être une valeur booléenne ou "
+"une chaîne de caractères"
 
 msgid "'compress = \"%s\"' is invalid"
 msgstr "'compress = \"%s\"' est incorrect"
@@ -1069,7 +1071,7 @@ msgid "invalid 'category' argument"
 msgstr "argument 'category' incorrect"
 
 msgid "must specify names of formal arguments for 'vectorize'"
-msgstr "le noms des arguments formels doit être spécifié pour 'vectorize'"
+msgstr "le nom des arguments formels doit être spécifié pour 'vectorize'"
 
 msgid "FUN"
 msgstr "FUN"
@@ -1116,7 +1118,7 @@ msgstr ""
 "dimensions"
 
 msgid "argument is not numeric or logical: returning NA"
-msgstr "l'argument n'est ni numérique, ni logique : renvoi de NA"
+msgstr "l'argument n'est ni numérique, ni booléen : renvoi de NA"
 
 msgid "'trim' must be numeric of length one"
 msgstr "'trim' doit être une valeur numérique de longueur un"
@@ -1133,7 +1135,7 @@ msgstr "'by' doit correspondre au nombre de colonnes"
 msgid "'by' must specify one or more columns as numbers, names or logical"
 msgstr ""
 "'by' doit spécifier une ou plusieurs colonnes comme des entiers, des noms ou "
-"des valeurs logiques"
+"des valeurs booléennes"
 
 msgid "long vectors are not supported"
 msgstr "les vecteurs longs ne sont pas supportés"
@@ -1157,7 +1159,7 @@ msgstr ""
 "impossible de charger l'espace de noms de 'methods'"
 
 msgid "invalid to change the storage mode of a factor"
-msgstr "le mode de stockage d'un objet \"factor\" ne peut être modifié"
+msgstr "le mode de stockage d'un objet \"factor\" ne peut pas être modifié"
 
 msgid ""
 "namespace %s is not available and has been replaced\n"
@@ -1202,14 +1204,14 @@ msgid ""
 "in the %s namespace"
 msgstr ""
 "impossible d'attribuer NativeSymbolInfo pour %s à %s car %s est déjà défini "
-"dans l'espace de nom %s"
+"dans l'espace de noms %s"
 
 msgid ""
 "failed to assign NativeSymbolInfo for %s since %s is already defined in the "
 "%s namespace"
 msgstr ""
 "impossible d'attribuer NativeSymbolInfo pour %s car %s est déjà défini dans "
-"l'espace de nom %s"
+"l'espace de noms %s"
 
 msgid "package %s does not have a namespace"
 msgstr "le package %s n'a pas d'espace de noms"
@@ -1604,7 +1606,7 @@ msgid ""
 "'decreasing' must be a length-1 logical vector.\n"
 "Did you intend to set 'partial'?"
 msgstr ""
-"'decreasing' doit être un vecteur logique unitaire.\n"
+"'decreasing' doit être un vecteur booléen unitaire.\n"
 "Aviez-vous l'intention de définir 'partial'?"
 
 msgid "'partial' sorting not supported by radix method"
@@ -1648,7 +1650,7 @@ msgid "'local' must be TRUE, FALSE or an environment"
 msgstr "'local' doit être TRUE, FALSE ou un environnement"
 
 msgid "'echo' must be logical"
-msgstr "'echo' doit être une valeur logique"
+msgstr "'echo' doit être une valeur booléenne"
 
 msgid "'verbose' is TRUE, 'echo' not; ... coercing 'echo <- TRUE'"
 msgstr "'verbose' est TRUE, 'echo' non ; ... forçage 'echo <- TRUE'"
@@ -1682,16 +1684,17 @@ msgid "'formula' must be a formula"
 msgstr "'formula' doit être une formule"
 
 msgid "Unexpected LHS in 'formula' has been ignored."
-msgstr "LHS non attendu et ignoré dans 'formula'."
+msgstr "Membre gauche non attendu et ignoré dans 'formula'."
 
 msgid "Unexpected LHS in 'formula' has been combined with RHS."
-msgstr "LHS non attendu dans 'formula' a été combiné avec RHS ."
+msgstr "Le membre gauche est non attendu dans 'formula'; "
+"il a été combiné au membre droit."
 
 msgid "Timestamp of %s has changed"
 msgstr "La date d'enregistrement de %s a changé"
 
 msgid "'x' and 'to' must refer to same file"
-msgstr "'x' et 'to' doivent se référer au même fichier"
+msgstr "'x' et 'to' doivent référencer le même fichier"
 
 msgid "additional arguments ignored in stop()"
 msgstr "arguments supplémentaires ignorés dans stop()"
@@ -1728,7 +1731,7 @@ msgid "'x' and 'y' must have the same length"
 msgstr "'x' et 'y' doivent avoir la même longueur"
 
 msgid "probably wrong encoding in names(.) of column"
-msgstr "encodage probablement erroné pour les noms de colonnes 'names(.)'"
+msgstr "encodage probablement erroné dans 'names(.) pour les colonnes'"
 
 msgid "STATS is longer than the extent of 'dim(x)[MARGIN]'"
 msgstr "STATS est plus long que l'étendue de 'dim(x)[MARGIN]'"
@@ -1935,10 +1938,10 @@ msgid "ERROR: no packages specified"
 msgstr "ERREUR : aucun package spécifié"
 
 msgid "Removing from library"
-msgstr "Elimination de la bibliothèque"
+msgstr "Suppression de la bibliothèque"
 
 msgid "ERROR: cannot cd to directory"
-msgstr "ERREUR : impossible de rendre le répertoire actif"
+msgstr "ERREUR : impossible de rendre le répertoire actif (cd)"
 
 msgid "ERROR: no permission to remove from directory"
 msgstr "ERREUR : pas de droits pour supprimer dans le répertoire"
