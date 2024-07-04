@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-07-04 10:40+0200\n"
+"PO-Revision-Date: 2024-07-04 11:50+0200\n"
 "Last-Translator: Elise Maigné <elise.maigne@inrae.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -397,8 +397,8 @@ msgid ""
 "your code."
 msgstr ""
 "%d éléments fournis à affecter à %d éléments de la colonne '%s'. Si vous "
-"souhaitez \"recycler\" le membre de droite (RHS), veuillez utiliser rep() "
-"pour indiquer clairement votre intention aux lecteurs de votre code."
+"souhaitez 'recycler' le membre de droite (RHS), veuillez utiliser rep() pour "
+"indiquer clairement votre intention aux lecteurs de votre code."
 
 #: assign.c:462
 msgid ""
@@ -742,178 +742,165 @@ msgid "NAbounds must be TRUE or NA"
 msgstr "NAbounds doit être TRUE ou NA"
 
 #: between.c:64
-#, fuzzy, c-format
+#, c-format
 msgid "Item %d of lower (%d) is greater than item %d of upper (%d)"
-msgstr ""
-"L'élément %d de la partie inférieure (%d) est supérieur à l'élément %d de la "
-"partie supérieure (%d)"
+msgstr "L'élément %d de lower (%d) est supérieur à l'élément %d de upper (%d)"
 
 #: between.c:82
-#, fuzzy, c-format
+#, c-format
 msgid "between parallel processing of integer took %8.3fs\n"
-msgstr "entre le traitement parallèle des nombres entiers a pris %8.3fs\n"
+msgstr ""
+"le traitement parallèle par 'between' des nombres entiers a pris %8.3fs\n"
 
 #: between.c:88
-#, fuzzy
 msgid "x is integer64 but lower and/or upper are not."
-msgstr "x est un entier64 mais lower et/ou upper ne le sont pas."
+msgstr "x est un integer64 mais lower et/ou upper ne le sont pas."
 
 #: between.c:95
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Item %d of lower (%<PRId64>) is greater than item %d of upper (%<PRId64>)"
 msgstr ""
-"L'élément %d de la partie inférieure (%<PRId64>) est supérieur à l'élément "
-"%d de la partie supérieure (%<PRId64>)"
+"L'élément %d de lower (%<PRId64>) est supérieur à l'élément %d de upper "
+"(%<PRId64>)"
 
 #: between.c:112
-#, fuzzy, c-format
+#, c-format
 msgid "between parallel processing of integer64 took %8.3fs\n"
-msgstr "entre le traitement parallèle des entiers64 a pris %8.3fs\n"
+msgstr ""
+"le traitement parallèle par 'between' des entiers 64 bits a pris %8.3fs\n"
 
 #: between.c:115
-#, fuzzy
 msgid ""
 "x is not integer64 but lower and/or upper is integer64. Please align classes."
 msgstr ""
-"x n'est pas integer64 mais lower et/ou upper est integer64. Veuillez aligner "
-"les classes."
+"x n'est pas un entier 64 bits mais lower et/ou upper en sont un. Veuillez "
+"uniformiser les classes."
 
 #: between.c:122
-#, fuzzy, c-format
+#, c-format
 msgid "Item %d of lower (%f) is greater than item %d of upper (%f)"
-msgstr ""
-"L'élément %d de la partie inférieure (%f) est supérieur à l'élément %d de la "
-"partie supérieure (%f)"
+msgstr "L'élément %d de lower (%f) est supérieur à l'élément %d de upper (%f)"
 
 #: between.c:140
-#, fuzzy, c-format
+#, c-format
 msgid "between parallel processing of double with open bounds took %8.3fs\n"
 msgstr ""
-"entre le traitement parallèle d'un double avec des limites ouvertes a pris "
-"%8.3fs\n"
+"le traitement parallèle par 'between' des doubles avec des limites ouvertes "
+"a pris %8.3fs\n"
 
 #: between.c:157
-#, fuzzy, c-format
+#, c-format
 msgid "between parallel processing of double with closed bounds took %8.3fs\n"
 msgstr ""
-"entre le traitement parallèle d'un double avec des limites fermées a pris "
-"%8.3fs\n"
+"le traitement parallèle par 'between' des doubles avec des limites fermées a "
+"pris %8.3fs\n"
 
 #: between.c:172
-#, fuzzy, c-format
+#, c-format
 msgid "Item %d of lower ('%s') is greater than item %d of upper ('%s')"
 msgstr ""
-"L'élément %d de la partie inférieure ('%s') est supérieur à l'élément %d de "
-"la partie supérieure ('%s')"
+"L'élément %d de lower ('%s') est supérieur à l'élément %d de upper ('%s')"
 
 #: between.c:187
-#, fuzzy, c-format
+#, c-format
 msgid "between non-parallel processing of character took %8.3fs\n"
-msgstr "entre le traitement non parallèle des caractères a pris %8.3fs\n"
+msgstr ""
+"le traitement non parallèle par 'between' des caractères a pris %8.3fs\n"
 
 #: between.c:190
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error: between.c unsupported type '%s' should have been caught at R "
 "level"
 msgstr ""
-"Erreur interne : between.c unsupported type '%s' should have been caught at "
-"R level"
+"Erreur interne : between.c le type non supporté '%s' aurait dû être détecté "
+"au niveau de R"
 
 #: bmerge.c:51
-#, fuzzy
 msgid "Internal error: icols is not integer vector"
 msgstr "Erreur interne : icols n'est pas un vecteur entier"
 
 #: bmerge.c:52
-#, fuzzy
 msgid "Internal error: xcols is not integer vector"
 msgstr "Erreur interne : xcols n'est pas un vecteur entier"
 
 #: bmerge.c:54
-#, fuzzy
 msgid "Internal error: icols and xcols must be non-empty integer vectors."
 msgstr ""
 "Erreur interne : icols et xcols doivent être des vecteurs entiers non vides."
 
 #: bmerge.c:55
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: length(icols) [%d] > length(xcols) [%d]"
 msgstr "Erreur interne : length(icols) [%d] > length(xcols) [%d]"
 
 #: bmerge.c:62
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error. icols[%d] is NA"
 msgstr "Erreur interne. icols[%d] est NA"
 
 #: bmerge.c:63
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error. xcols[%d] is NA"
 msgstr "Erreur interne. xcols[%d] est NA"
 
 #: bmerge.c:64
-#, fuzzy, c-format
+#, c-format
 msgid "icols[%d]=%d outside range [1,length(i)=%d]"
 msgstr "icols[%d]=%d en dehors de l'intervalle [1,length(i)=%d]]"
 
 #: bmerge.c:65
-#, fuzzy, c-format
+#, c-format
 msgid "xcols[%d]=%d outside range [1,length(x)=%d]"
 msgstr "xcols[%d]=%d en dehors de l'intervalle [1,length(x)=%d]]"
 
 #: bmerge.c:68
-#, fuzzy, c-format
+#, c-format
 msgid "typeof x.%s (%s) != typeof i.%s (%s)"
 msgstr "typeof x.%s (%s) != typeof i.%s (%s)"
 
 #: bmerge.c:70 bmerge.c:380
-#, fuzzy, c-format
+#, c-format
 msgid "Type '%s' is not supported for joining/merging"
 msgstr "Le type '%s' n'est pas pris en charge pour la jonction/fusion"
 
 #: bmerge.c:76
-#, fuzzy
 msgid "roll is character but not 'nearest'"
-msgstr "le jet de dé est un caractère, mais pas le plus proche"
+msgstr "'roll' est un caractère, mais pas 'nearest'"
 
 #: bmerge.c:77
-#, fuzzy
 msgid "roll='nearest' can't be applied to a character column, yet."
 msgstr ""
 "roll='nearest' ne peut pas encore être appliqué à une colonne de caractères."
 
 #: bmerge.c:80
-#, fuzzy
 msgid "Internal error: roll is not character or double"
-msgstr "Erreur interne : le jet n'est pas un caractère ou un double"
+msgstr "Erreur interne : 'roll' n'est pas un caractère ou un double"
 
 #: bmerge.c:85
-#, fuzzy
 msgid "rollends must be a length 2 logical vector"
 msgstr "rollends doit être un vecteur logique de longueur 2"
 
 #: bmerge.c:92
-#, fuzzy
 msgid "Internal error: nomatchArg must be NULL or length-1 logical/integer"
-msgstr "Erreur interne : nomatchArg doit être NULL ou length-1 logical/integer"
+msgstr ""
+"Erreur interne : nomatchArg doit être NULL ou un entier ou booléen de "
+"longueur 1"
 
 #: bmerge.c:95
-#, fuzzy
 msgid "Internal error: nomatchArg must be NULL, NA, NA_integer_ or 0L"
 msgstr "Erreur interne : nomatchArg doit être NULL, NA, NA_integer_ ou 0L"
 
 #: bmerge.c:102 uniqlist.c:273
-#, fuzzy
 msgid ""
 "Internal error: invalid value for 'mult'. please report to data.table issue "
 "tracker"
 msgstr ""
-"Erreur interne : valeur invalide pour \"mult\". Veuillez signaler l'erreur à "
-"data.table issue tracker"
+"Erreur interne : valeur invalide pour 'mult'. Veuillez signaler l'erreur au "
+"gestionnaire de tickets (issue tracker) de data.table."
 
 #: bmerge.c:106
-#, fuzzy
 msgid ""
 "Internal error: opArg is not an integer vector of length equal to length(on)"
 msgstr ""
@@ -921,72 +908,66 @@ msgstr ""
 "length(on)"
 
 #: bmerge.c:111
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error in bmerge_r for x.'%s'. Unrecognized value op[col]=%d"
 msgstr ""
 "Erreur interne dans bmerge_r pour x.'%s'. Valeur non reconnue op[col]=%d"
 
 #: bmerge.c:114
-#, fuzzy
 msgid "Only '==' operator is supported for columns of type character."
 msgstr ""
 "Seul l'opérateur '==' est pris en charge pour les colonnes de type caractère."
 
 #: bmerge.c:118
-#, fuzzy
 msgid "Internal error: nqgrpArg must be an integer vector"
-msgstr "Erreur interne : nqgrpArg doit être un vecteur entier"
+msgstr "Erreur interne : nqgrpArg doit être un vecteur de nombre entiers"
 
 #: bmerge.c:124
-#, fuzzy
 msgid "Intrnal error: nqmaxgrpArg is not a positive length-1 integer vector"
 msgstr ""
-"Erreur interne : nqmaxgrpArg n'est pas un vecteur entier positif de longueur "
-"1"
+"Erreur interne : nqmaxgrpArg n'est pas un vecteur de nombres entiers positif "
+"de longueur 1"
 
 #: bmerge.c:133
-#, fuzzy
 msgid "Internal error in allocating memory for non-equi join"
 msgstr ""
-"Erreur interne lors de l'allocation de mémoire pour une jointure non "
-"équitable"
+"Erreur interne lors de l'allocation de mémoire pour une jointure non-équi"
 
 #: bmerge.c:178
-#, fuzzy
 msgid "Internal error: xoArg is not an integer vector"
-msgstr "Erreur interne : xoArg n'est pas un vecteur entier"
+msgstr "Erreur interne : xoArg n'est pas un vecteur de nombres entiers"
 
 #: chmatch.c:5
-#, fuzzy, c-format
+#, c-format
 msgid "table is type '%s' (must be 'character' or NULL)"
-msgstr "table est de type '%s' (doit être \"caractère\" ou NULL)"
+msgstr "table est de type '%s' (doit être 'character' ou NULL)"
 
 #: chmatch.c:7
-#, fuzzy
 msgid "Internal error: either chin or chmatchdup should be true not both"
-msgstr "Erreur interne : chin ou chmatchdup doit être vrai, pas les deux"
+msgstr "Erreur interne : chin ou chmatchdup doit être true, pas les deux"
 
 #: chmatch.c:12
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: length of SYMSXP is %d not 1"
 msgstr "Erreur interne : la longueur de SYMSXP est %d et non 1"
 
 #: chmatch.c:19
-#, fuzzy, c-format
+#, c-format
 msgid "x is type '%s' (must be 'character' or NULL)"
-msgstr "x est le type '%s' (doit être \"caractère\" ou NULL)"
+msgstr "x est le type '%s' (doit être 'character' ou NULL)"
 
 #: chmatch.c:71
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error: CHARSXP '%s' has a negative truelength (%d). Please file an "
 "issue on the data.table tracker."
 msgstr ""
-"Erreur interne : CHARSXP '%s' a une longueur d'onde négative (%d). Veuillez "
-"déposer un problème sur le tracker data.table."
+"Erreur interne : CHARSXP '%s' a une truelength négative (%d). Veuillez "
+"rapporter le problème sur le gestionnaire de tickets (issue tracker) de data."
+"table."
 
 #: chmatch.c:104
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Failed to allocate %<PRIu64> bytes working memory in chmatchdup: "
 "length(table)=%d length(unique(table))=%d"
@@ -995,25 +976,23 @@ msgstr ""
 "chmatchdup : length(table)=%d length(unique(table))=%d"
 
 #: cj.c:89
-#, fuzzy, c-format
+#, c-format
 msgid "Type '%s' is not supported by CJ."
 msgstr "Le type '%s' n'est pas pris en charge par CJ."
 
 #: coalesce.c:5
-#, fuzzy
 msgid "Internal error in coalesce.c: input is list(...) at R level"
-msgstr "Erreur interne dans coalesce.c : l'entrée est list(...) au niveau R"
+msgstr ""
+"Erreur interne dans coalesce.c : la valeur fournie est list(...) au niveau R"
 
 #: coalesce.c:7
-#, fuzzy
 msgid ""
 "Internal error in coalesce.c: argument 'inplaceArg' must be TRUE or FALSE"
 msgstr ""
-"Erreur interne dans coalesce.c : l'argument 'inplaceArg' doit être VRAI ou "
-"FAUX"
+"Erreur interne dans coalesce.c : l'argument 'inplaceArg' doit être TRUE ou "
+"FALSE"
 
 #: coalesce.c:16
-#, fuzzy
 msgid ""
 "The first argument is a list, data.table or data.frame. In this case there "
 "should be no other arguments provided."
@@ -1022,16 +1001,16 @@ msgstr ""
 "cas, aucun autre argument ne doit être fourni."
 
 #: coalesce.c:32
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Item 1 is a factor but item %d is not a factor. When factors are involved, "
 "all items must be factor."
 msgstr ""
-"L'élément 1 est un facteur mais l'élément %d n'est pas un facteur. Lorsqu'il "
+"L'élément 1 est un facteur mais l'élément %d n'en est pas un. Lorsqu'il "
 "s'agit de facteurs, tous les éléments doivent être des facteurs."
 
 #: coalesce.c:34
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Item %d is a factor but its levels are not identical to the first item's "
 "levels."
@@ -1040,30 +1019,30 @@ msgstr ""
 "du premier élément."
 
 #: coalesce.c:38
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Item %d is a factor but item 1 is not a factor. When factors are involved, "
 "all items must be factor."
 msgstr ""
-"L'élément %d est un facteur mais l'élément 1 n'est pas un facteur. Lorsqu'il "
+"L'élément %d est un facteur mais l'élément 1 n'en est pas un. Lorsqu'il "
 "s'agit de facteurs, tous les éléments doivent être des facteurs."
 
 #: coalesce.c:41
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Item %d is type %s but the first item is type %s. Please coerce before "
 "coalescing."
 msgstr ""
 "L'élément %d est de type %s mais le premier élément est de type %s. Veuillez "
-"coercer avant de coaliser."
+"convertir avant la consolidation."
 
 #: coalesce.c:43
-#, fuzzy, c-format
+#, c-format
 msgid "Item %d has a different class than item 1."
 msgstr "L'élément %d a une classe différente de celle de l'élément 1."
 
 #: coalesce.c:46
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Item %d is length %d but the first item is length %d. Only singletons are "
 "recycled."
@@ -1072,48 +1051,41 @@ msgstr ""
 "Seuls les singletons sont recyclés."
 
 #: coalesce.c:50
-#, fuzzy
 msgid "coalesce copied first item (inplace=FALSE)\n"
-msgstr "coalesce le premier élément copié (inplace=FALSE)\n"
+msgstr "coalesce a copié le premier élément (inplace=FALSE)\n"
 
 #: coalesce.c:166 fifelse.c:193 fifelse.c:391 shift.c:171 uniqlist.c:98
 #: uniqlist.c:130 uniqlist.c:211 uniqlist.c:248 uniqlist.c:321
-#, fuzzy, c-format
+#, c-format
 msgid "Type '%s' is not supported"
 msgstr "Le type '%s' n'est pas pris en charge"
 
 #: dogroups.c:75
-#, fuzzy
 msgid "Internal error: order not integer vector"
-msgstr "Erreur interne : l'ordre n'est pas un vecteur entier"
+msgstr "Erreur interne : order n'est pas un vecteur de nombres entiers"
 
 #: dogroups.c:76
-#, fuzzy
 msgid "Internal error: starts not integer"
-msgstr "Erreur interne : starts not integer"
+msgstr "Erreur interne : starts n'est pas un entier"
 
 #: dogroups.c:77
-#, fuzzy
 msgid "Internal error: lens not integer"
-msgstr "Erreur interne : l'objectif n'est pas entier"
+msgstr "Erreur interne : lens n'est pas un entier"
 
 #: dogroups.c:79
-#, fuzzy
 msgid "Internal error: jiscols not NULL but o__ has length"
-msgstr "Erreur interne : jiscols not NULL but o__ has length"
+msgstr "Erreur interne : jiscols n'est pas NULL mais o__ a une longueur"
 
 #: dogroups.c:80
-#, fuzzy
 msgid "Internal error: xjiscols not NULL but o__ has length"
-msgstr "Erreur interne : xjiscols not NULL but o__ has length"
+msgstr "Erreur interne : xjiscols n'est pas NULL but o__ a une longueur"
 
 #: dogroups.c:81 gsumm.c:43
-#, fuzzy
 msgid "env is not an environment"
 msgstr "env n'est pas un environnement"
 
 #: dogroups.c:100
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error: unsupported size-0 type '%s' in column %d of 'by' should "
 "have been caught earlier"
@@ -1122,17 +1094,16 @@ msgstr ""
 "%d de 'by' aurait dû être détecté plus tôt"
 
 #: dogroups.c:105
-#, fuzzy, c-format
+#, c-format
 msgid "!length(bynames)[%d]==length(groups)[%d]==length(grpcols)[%d]"
 msgstr "!length(bynames)[%d]==length(groups)[%d]==length(grpcols)[%d]"
 
 #: dogroups.c:127
-#, fuzzy
 msgid "row.names attribute of .SD not found"
 msgstr "l'attribut row.names de .SD n'a pas été trouvé"
 
 #: dogroups.c:129
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "row.names of .SD isn't integer length 2 with NA as first item; i.e., ."
 "set_row_names(). [%s %d %d]"
@@ -1141,31 +1112,29 @@ msgstr ""
 "élément ; c'est-à-dire, .set_row_names(). [%s %d %d]"
 
 #: dogroups.c:134
-#, fuzzy
 msgid "length(names)!=length(SD)"
 msgstr "length(names)!=length(SD)"
 
 #: dogroups.c:140
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error: size-0 type %d in .SD column %d should have been caught "
 "earlier"
 msgstr ""
-"Erreur interne : le type size-0 %d dans la colonne .SD %d aurait dû être "
-"détecté plus tôt"
+"Erreur interne : le type de taille 0 %d dans la colonne .SD %d aurait dû "
+"être détecté plus tôt"
 
 #: dogroups.c:142
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: SDall %d length = %d != %d"
 msgstr "Erreur interne : SDall %d length = %d != %d"
 
 #: dogroups.c:150
-#, fuzzy
 msgid "length(xknames)!=length(xSD)"
 msgstr "length(xknames)!=length(xSD)"
 
 #: dogroups.c:154
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error: type %d in .xSD column %d should have been caught by now"
 msgstr ""
@@ -1173,24 +1142,23 @@ msgstr ""
 "détecté"
 
 #: dogroups.c:158
-#, fuzzy, c-format
+#, c-format
 msgid "length(iSD)[%d] != length(jiscols)[%d]"
 msgstr "length(iSD)[%d] != length(jiscols)[%d]"
 
 #: dogroups.c:159
-#, fuzzy, c-format
+#, c-format
 msgid "length(xSD)[%d] != length(xjiscols)[%d]"
 msgstr "length(xSD)[%d] != length(xjiscols)[%d]"
 
 #: dogroups.c:271
-#, fuzzy, c-format
+#, c-format
 msgid "j evaluates to type '%s'. Must evaluate to atomic vector or list."
 msgstr ""
 "j évalue le type '%s'. Doit être évalué comme un vecteur atomique ou une "
 "liste."
 
 #: dogroups.c:279
-#, fuzzy
 msgid ""
 "All items in j=list(...) should be atomic vectors or lists. If you are "
 "trying something like j=list(.SD,newcol=mean(colA)) then use := by group "
@@ -1202,16 +1170,15 @@ msgstr ""
 "cbind ou merge ensuite."
 
 #: dogroups.c:288
-#, fuzzy
 msgid ""
 "RHS of := is NULL during grouped assignment, but it's not possible to delete "
 "parts of a column."
 msgstr ""
-"RHS de := est NULL pendant l'affectation groupée, mais il n'est pas possible "
-"de supprimer des parties d'une colonne."
+"L'élement de droite (RHS) de := est NULL pendant l'affectation groupée, mais "
+"il n'est pas possible de supprimer des parties d'une colonne."
 
 #: dogroups.c:292
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Supplied %d items to be assigned to group %d of size %d in column '%s'. The "
 "RHS length must either be 1 (single values are ok) or match the LHS length "
@@ -1219,34 +1186,33 @@ msgid ""
 "make this intent clear to readers of your code."
 msgstr ""
 "Les éléments fournis %d doivent être affectés au groupe %d de taille %d dans "
-"la colonne \"%s\". La longueur RHS doit être égale à 1 (les valeurs uniques "
-"sont acceptables) ou correspondre exactement à la longueur LHS. Si vous "
-"souhaitez \"recycler\" le RHS, utilisez explicitement rep() pour que les "
-"lecteurs de votre code comprennent bien votre intention."
+"la colonne '%s'. La longueur de l'élément de droite (RHS) doit être égale à "
+"1 (les valeurs uniques sont acceptées) ou correspondre exactement à la "
+"longueur de l'élément de gauche (LHS). Si vous souhaitez 'recycler' "
+"l'élément de droite, utilisez explicitement rep() pour que les lecteurs de "
+"votre code comprennent bien votre intention."
 
 #: dogroups.c:303
-#, fuzzy
 msgid ""
 "Internal error: Trying to add new column by reference but tl is full; "
 "setalloccol should have run first at R level before getting to this point in "
 "dogroups"
 msgstr ""
-"Erreur interne : Trying to add new column by reference but tl is full ; "
-"setalloccol should have run first at R level before getting to this point in "
-"dogroups"
+"Erreur interne : essai d'ajout de nouvelle colonne par référence mais la "
+"taille préallouée (tl) est pleine ; setalloccol aurait du être exécuté "
+"d'abord au niveau de R avant d'en arriver à ce point dans dogroups"
 
 #: dogroups.c:324
-#, fuzzy, c-format
+#, c-format
 msgid "Group %d column '%s': %s"
 msgstr "Groupe %d colonne '%s' : %s"
 
 #: dogroups.c:331
-#, fuzzy
 msgid "j doesn't evaluate to the same number of columns for each group"
 msgstr "j n'évalue pas le même nombre de colonnes pour chaque groupe"
 
 #: dogroups.c:365
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Column %d of j's result for the first group is NULL. We rely on the column "
 "types of the first result to decide the type expected for the remaining "
@@ -1259,11 +1225,10 @@ msgstr ""
 "basons sur les types de colonnes du premier résultat pour décider du type "
 "attendu pour les autres groupes (et exiger la cohérence). Les colonnes NULL "
 "sont acceptables pour les groupes suivants (et elles sont remplacées par NA "
-"de type approprié et recyclé) mais pas pour le premier. Veuillez utiliser un "
+"du type approprié et recyclé) mais pas pour le premier. Veuillez utiliser un "
 "vecteur vide typé à la place, comme integer() ou numeric()."
 
 #: dogroups.c:368
-#, fuzzy
 msgid ""
 "j appears to be a named vector. The same names will likely be created over "
 "and over again for each group and slow things down. Try and pass a named "
@@ -1275,7 +1240,7 @@ msgstr ""
 "la place.\n"
 
 #: dogroups.c:370
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Column %d of j is a named vector (each item down the rows is named, "
 "somehow). Please remove those names for efficiency (to save creating them "
@@ -1287,7 +1252,6 @@ msgstr ""
 "chaque groupe). Ils sont de toute façon ignorés.\n"
 
 #: dogroups.c:378
-#, fuzzy
 msgid ""
 "The result of j is a named list. It's very inefficient to create the same "
 "names over and over again for each group. When j=list(...), any names are "
@@ -1299,69 +1263,69 @@ msgstr ""
 "mêmes noms encore et encore pour chaque groupe. Lorsque j=list(...), tous "
 "les noms sont détectés, supprimés et remis en place une fois le regroupement "
 "terminé, pour plus d'efficacité. L'utilisation de j=transform(), par "
-"exemple, empêche cette accélération (envisagez de passer à :=). Ce message "
-"pourrait être transformé en avertissement à l'avenir.\n"
+"exemple, empêche cette accélération (envisagez de changer pour :=). Ce "
+"message pourrait être transformé en avertissement à l'avenir.\n"
 
 #: dogroups.c:390
-#, fuzzy, c-format
+#, c-format
 msgid "dogroups: growing from %d to %d rows\n"
-msgstr "dogroups : croissance de %d à %d lignes\n"
+msgstr "dogroups : augmentation de %d à %d lignes\n"
 
 #: dogroups.c:391
-#, fuzzy, c-format
+#, c-format
 msgid "dogroups: length(ans)[%d]!=ngrpcols[%d]+njval[%d]"
 msgstr "dogroups: length(ans)[%d]!=ngrpcols[%d]+njval[%d]"
 
 #: dogroups.c:409
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Item %d of j's result for group %d is zero length. This will be filled with "
 "%d NAs to match the longest column in this result. Later groups may have a "
 "similar problem but only the first is reported to save filling the warning "
 "buffer."
 msgstr ""
-"L'élément %d du résultat de j pour le groupe %d est de longueur nulle. Il "
+"L'élément %d du résultat de j pour le groupe %d est de longueur zero. Il "
 "sera rempli avec %d NA pour correspondre à la colonne la plus longue de ce "
 "résultat. Les groupes suivants peuvent avoir un problème similaire, mais "
 "seul le premier est signalé pour éviter de remplir le tampon d'avertissement."
 
 #: dogroups.c:416
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Column %d of result for group %d is type '%s' but expecting type '%s'. "
 "Column types must be consistent for each group."
 msgstr ""
-"La colonne %d du résultat pour le groupe %d est de type \"%s\" mais attend "
-"le type \"%s\". Les types de colonnes doivent être cohérents pour chaque "
-"groupe."
+"La colonne %d du résultat pour le groupe %d est de type '%s' mais attend le "
+"type '%s'. Les types de colonnes doivent être cohérents pour chaque groupe."
 
 #: dogroups.c:418
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Supplied %d items for column %d of group %d which has %d rows. The RHS "
 "length must either be 1 (single values are ok) or match the LHS length "
 "exactly. If you wish to 'recycle' the RHS please use rep() explicitly to "
 "make this intent clear to readers of your code."
 msgstr ""
-"Fourni %d éléments pour la colonne %d du groupe %d qui comporte %d lignes. "
-"La longueur RHS doit être égale à 1 (les valeurs simples sont acceptables) "
-"ou correspondre exactement à la longueur LHS. Si vous souhaitez \"recycler\" "
-"le RHS, utilisez explicitement rep() pour que les lecteurs de votre code "
-"comprennent bien votre intention."
+"%d éléments fournis pour la colonne %d du groupe %d qui comporte %d lignes. "
+"La longueur de l'élément de droite (RHS) doit être égale à 1 (les valeurs "
+"simples sont acceptables) ou correspondre exactement à la longueur de "
+"l'élément de gauche (LHS). Si vous souhaitez 'recycler' l'élément de droite, "
+"utilisez explicitement rep() pour que les lecteurs de votre code comprennent "
+"bien votre intention."
 
 #: dogroups.c:439
-#, fuzzy, c-format
+#, c-format
 msgid "Wrote less rows (%d) than allocated (%d).\n"
 msgstr "Moins de lignes écrites (%d) que de lignes allouées (%d).\n"
 
 #: dogroups.c:461
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: block 0 [%d] and block 1 [%d] have both run"
 msgstr ""
 "Erreur interne : le bloc 0 [%d] et le bloc 1 [%d] ont tous deux été exécutés"
 
 #: dogroups.c:463
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "  %s took %.3fs for %d groups\n"
@@ -1370,74 +1334,70 @@ msgstr ""
 "  %s a pris %.3fs pour %d groupes\n"
 
 #: dogroups.c:465
-#, fuzzy, c-format
+#, c-format
 msgid "  eval(j) took %.3fs for %d calls\n"
 msgstr "  eval(j) a pris %.3fs pour %d appels\n"
 
 #: dogroups.c:489
-#, fuzzy
 msgid "growVector passed NULL"
 msgstr "growVector passé NULL"
 
 #: dogroups.c:509
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: growVector doesn't support type '%s'"
-msgstr "Erreur interne : growVector ne supporte pas le type '%s'"
+msgstr "Erreur interne : growVector ne prends pas en charge le type '%s'"
 
 #: fastmean.c:39
-#, fuzzy
 msgid "narm should be TRUE or FALSE"
-msgstr "narm doit être VRAI ou FAUX"
+msgstr "narm doit être TRUE ou FALSE"
 
 #: fastmean.c:45
-#, fuzzy, c-format
+#, c-format
 msgid "fastmean was passed type %s, not numeric or logical"
-msgstr "fastmean a été passé au type %s, non numérique ou logique"
+msgstr "fastmean a été passé au type %s, non numérique ou booléen"
 
 #: fastmean.c:83 fastmean.c:111
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: type '%s' not caught earlier in fastmean"
 msgstr ""
 "Erreur interne : le type '%s' n'a pas été détecté plus tôt dans fastmean"
 
 #: fcast.c:92
-#, fuzzy, c-format
+#, c-format
 msgid "Unsupported column type in fcast val: '%s'"
 msgstr "Type de colonne non pris en charge dans fcast val : '%s'"
 
 #: fifelse.c:5
-#, fuzzy
 msgid "Argument 'test' must be logical."
-msgstr "L'argument \"test\" doit être logique."
+msgstr "L'argument 'test' doit être logique."
 
 #: fifelse.c:9
-#, fuzzy
 msgid "S4 class objects (except nanotime) are not supported."
 msgstr "Les objets de la classe S4 (sauf nanotime) ne sont pas pris en charge."
 
 #: fifelse.c:24
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Length of 'yes' is %<PRId64> but must be 1 or length of 'test' (%<PRId64>)."
 msgstr ""
-"La longueur de \"yes\" est %<PRId64> mais doit être égale à 1 ou à la "
-"longueur de \"test\" (%<PRId64>)."
+"La longueur de 'yes' est %<PRId64> mais doit être égale à 1 ou à la longueur "
+"de 'test' (%<PRId64>)."
 
 #: fifelse.c:26
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Length of 'no' is %<PRId64> but must be 1 or length of 'test' (%<PRId64>)."
 msgstr ""
-"La longueur de \"no\" est %<PRId64> mais doit être 1 ou la longueur de "
-"\"test\" (%<PRId64>)."
+"La longueur de 'no' est %<PRId64> mais doit être 1 ou la longueur de "
+"'test' (%<PRId64>)."
 
 #: fifelse.c:28
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Length of 'na' is %<PRId64> but must be 1 or length of 'test' (%<PRId64>)."
 msgstr ""
-"La longueur de \"na\" est %<PRId64> mais doit être 1 ou la longueur de "
-"\"test\" (%<PRId64>)."
+"La longueur de 'na' est %<PRId64> mais doit être 1 ou la longueur de "
+"'test' (%<PRId64>)."
 
 #: fifelse.c:46
 #, fuzzy, c-format
@@ -1488,7 +1448,7 @@ msgstr ""
 #, fuzzy
 msgid "'yes' and 'no' are both type factor but their levels are different."
 msgstr ""
-"les réponses \"oui\" et \"non\" sont toutes deux des facteurs de type, mais "
+"les réponses 'oui' et 'non' sont toutes deux des facteurs de type, mais "
 "leurs niveaux sont différents."
 
 #: fifelse.c:79
