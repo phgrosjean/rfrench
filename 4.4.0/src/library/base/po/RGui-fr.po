@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: RGui 4.4.0\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2023-11-30 16:47+0100\n"
-"PO-Revision-Date: 2024-05-16 15:45+0200\n"
+"PO-Revision-Date: 2024-07-05 11:00+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
@@ -33,7 +33,7 @@ msgstr "Impossible d'ouvrir le presse-papier"
 
 #: src/gnuwin32/console.c:1977
 msgid "Insufficient memory. Please close the console"
-msgstr "Mémoire insuffisante. Veuillez refermer la console"
+msgstr "Mémoire insuffisante. Veuillez fermer la console"
 
 #: src/gnuwin32/console.c:2033 src/gnuwin32/console.c:2087
 #: src/gnuwin32/preferences.c:342
@@ -66,7 +66,7 @@ msgid ""
 "  Mouse: use the scrollbar(s).\n"
 "\n"
 msgstr ""
-"  Souris : utilisez les barres de défilement.\n"
+"  Souris : utilisez la (les) barre(s) de défilement.\n"
 "\n"
 
 #: src/gnuwin32/console.c:2304
@@ -188,7 +188,7 @@ msgid ""
 "Use ESC to stop the interpreter.\n"
 "\n"
 msgstr ""
-"Utilisez ECHAPPE pour arrêter le calcul.\n"
+"Utilisez ECHAPPE pour arrêter l'interpréteur.\n"
 "\n"
 
 #: src/gnuwin32/console.c:2328
@@ -274,17 +274,17 @@ msgstr ""
 #: src/gnuwin32/editor.c:682
 msgid ""
 "This will copy the selected commands to the console and evaluate them.\n"
-msgstr "Cela copie le code sélectionné et l'évalue dans la console\n"
+msgstr "Cela copie les commandes sélectionnées et les évalue dans la console\n"
 
 #: src/gnuwin32/editor.c:683
 msgid ""
 "If there is no selection, this will just run the current line and advance\n"
 msgstr ""
-"S'il n'y a aucune sélection, la ligne courante est exécutée et le curseur\n"
+"S'il n'y a aucune sélection, la ligne courante est exécutée et avance\n"
 
 #: src/gnuwin32/editor.c:684
 msgid "the cursor by one line.\n"
-msgstr "avance d'une ligne.\n"
+msgstr "le curseur d'une ligne.\n"
 
 #: src/gnuwin32/editor.c:696 src/gnuwin32/editor.c:773
 #: src/gnuwin32/editor.c:831
@@ -472,10 +472,10 @@ msgid ""
 "\n"
 "Save the preferences and restart Rgui to apply them.\n"
 msgstr ""
-"Les propriétés générales de la console ne peuvent être\n"
+"Les propriétés générales de la console ne peuvent pas être\n"
 "changées lorsque la console est en cours d'exécution.\n"
 "\n"
-"Sauvez les préférences et redémarrez Rgui pour les appliquer\n"
+"Sauvez les préférences et redémarrez Rgui pour les appliquer.\n"
 
 #: src/gnuwin32/preferences.c:311
 msgid ""
@@ -492,8 +492,8 @@ msgstr ""
 #: src/gnuwin32/preferences.c:380
 msgid "Changes in pager size will not apply to any open pagers"
 msgstr ""
-"Les modifications dans la taille de l'afficheur ne seront pas appliquées aux "
-"afficheurs existants"
+"Les modifications de la taille de l'afficheur ne seront pas appliquées aux "
+"afficheurs déjà ouverts"
 
 #: src/gnuwin32/preferences.c:386
 msgid ""
@@ -576,7 +576,7 @@ msgstr "A propos"
 
 #: src/gnuwin32/rui.c:932
 msgid "Can only drag-and-drop .R, .RData and .rda files"
-msgstr "Glissez-déposez seulement des fichiers .R, .RData ou .rda"
+msgstr "Glissez-déposez seulement possibles pour les fichiers .R, .RData ou .rda"
 
 #: src/gnuwin32/rui.c:938 src/gnuwin32/rui.c:1234
 msgid "Paste commands only"
@@ -596,7 +596,7 @@ msgstr "Sorties groupées"
 
 #: src/gnuwin32/rui.c:985
 msgid "Packages"
-msgstr "Paquets"
+msgstr "Packages"
 
 #: src/gnuwin32/rui.c:986
 msgid "Load package..."
@@ -696,7 +696,7 @@ msgstr "Sauver l'environnement de travail"
 
 #: src/gnuwin32/rui.c:1188
 msgid "Stop current computation"
-msgstr "Arrêter le calcul"
+msgstr "Arrêter le calcul en cours"
 
 #: src/gnuwin32/rui.c:1211
 msgid "Source R code..."
@@ -760,7 +760,7 @@ msgstr "Arrêter tous les calculs"
 
 #: src/gnuwin32/rui.c:1255
 msgid "Break to debugger"
-msgstr "Interrompre vers le déboggeur"
+msgstr "Interrompre pour déboguer"
 
 #: src/gnuwin32/rui.c:1258
 msgid "Word completion"
@@ -962,7 +962,7 @@ msgstr "type"
 
 #: src/library/utils/src/windows/dataentry.c:1684
 msgid "Cell width(s)"
-msgstr "Largeur(s) de cellule(s)"
+msgstr "Largeur de(s) cellule(s)"
 
 #: src/library/utils/src/windows/dataentry.c:1690
 msgid "Cell width"
@@ -1078,7 +1078,7 @@ msgstr "Métafichier avancé EMF"
 #: src/library/grDevices/src/devWindows.c:1001
 #: src/library/grDevices/src/devWindows.c:3557
 msgid "file path selected is too long: only 512 bytes are allowed"
-msgstr "chemin sélectionné trop long : 512 caractères maximum"
+msgstr "chemin de fichier sélectionné trop long : 512 octets maximum"
 
 #: src/library/grDevices/src/devWindows.c:1212
 msgid "No plot to replace!"
