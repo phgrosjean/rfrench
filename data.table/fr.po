@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-07-08 11:52+0200\n"
-"Last-Translator: rochevin <vincent.rocher@inrae.fr>\n"
+"PO-Revision-Date: 2024-07-10 09:21+0200\n"
+"Last-Translator: Elise Maigné <elise.maigne@inrae.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: assign.c:7
 msgid "Internal error: finalizer hasn't received an ExternalPtr"
@@ -898,7 +898,7 @@ msgid ""
 "tracker"
 msgstr ""
 "Erreur interne : valeur invalide pour 'mult'. Veuillez signaler l'erreur au "
-"gestionnaire de tickets (issue tracker) de data.table."
+"gestionnaire de tickets (issue tracker) de data.table"
 
 #: bmerge.c:106
 msgid ""
@@ -1388,16 +1388,16 @@ msgstr ""
 msgid ""
 "Length of 'no' is %<PRId64> but must be 1 or length of 'test' (%<PRId64>)."
 msgstr ""
-"La longueur de 'no' est %<PRId64> mais doit être 1 ou la longueur de 'test' "
-"(%<PRId64>)."
+"La longueur de 'no' est %<PRId64> mais doit être 1 ou la longueur de "
+"'test' (%<PRId64>)."
 
 #: fifelse.c:28
 #, c-format
 msgid ""
 "Length of 'na' is %<PRId64> but must be 1 or length of 'test' (%<PRId64>)."
 msgstr ""
-"La longueur de 'na' est %<PRId64> mais doit être 1 ou la longueur de 'test' "
-"(%<PRId64>)."
+"La longueur de 'na' est %<PRId64> mais doit être 1 ou la longueur de "
+"'test' (%<PRId64>)."
 
 #: fifelse.c:46
 #, c-format
@@ -1409,7 +1409,7 @@ msgstr ""
 "tous les arguments aient le même type."
 
 #: fifelse.c:52
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "'na' is of type %s but '%s' is %s. Please make all arguments have the same "
 "type."
@@ -1418,7 +1418,6 @@ msgstr ""
 "tous les arguments aient le même type."
 
 #: fifelse.c:57
-#, fuzzy
 msgid ""
 "'yes' has different class than 'no'. Please make sure that both arguments "
 "have the same class."
@@ -1427,7 +1426,6 @@ msgstr ""
 "que les deux arguments ont la même classe."
 
 #: fifelse.c:62
-#, fuzzy
 msgid ""
 "'yes' has different class than 'na'. Please make sure that both arguments "
 "have the same class."
@@ -1436,7 +1434,6 @@ msgstr ""
 "que les deux arguments ont la même classe."
 
 #: fifelse.c:67
-#, fuzzy
 msgid ""
 "'no' has different class than 'na'. Please make sure that both arguments "
 "have the same class."
@@ -1445,40 +1442,36 @@ msgstr ""
 "les deux arguments ont la même classe."
 
 #: fifelse.c:74
-#, fuzzy
 msgid "'yes' and 'no' are both type factor but their levels are different."
 msgstr ""
-"les réponses 'oui' et 'non' sont toutes deux des facteurs de type, mais "
-"leurs niveaux sont différents."
+"'oui' et 'non' sont tous les deux de type facteur, mais leurs niveaux sont "
+"différents."
 
 #: fifelse.c:79
-#, fuzzy
 msgid "'yes' and 'na' are both type factor but their levels are different."
 msgstr ""
-"'oui' et 'na' sont tous deux des facteurs de type, mais leurs niveaux sont "
+"'oui' et 'na' sont tous les deux de type facteur, mais leurs niveaux sont "
 "différents."
 
 #: fifelse.c:84
-#, fuzzy
 msgid "'no' and 'na' are both type factor but their levels are different."
 msgstr ""
-"no\" et \"na\" sont tous deux des facteurs de type, mais leurs niveaux sont "
+"'no' et 'na' sont tous les deux de type facteur, mais leurs niveaux sont "
 "différents."
 
 #: fifelse.c:207
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Received %d inputs; please supply an even number of arguments in ..., "
 "consisting of logical condition, resulting value pairs (in that order). Note "
 "that the default argument must be named explicitly, e.g., default=0"
 msgstr ""
 "A reçu %d entrées ; veuillez fournir un nombre pair d'arguments dans ..., "
-"consistant en des paires de conditions logiques et de valeurs résultantes "
+"consistant en une condition logique, et des paires de valeur de résultats "
 "(dans cet ordre). Notez que l'argument par défaut doit être nommé "
 "explicitement, par exemple, default=0"
 
 #: fifelse.c:218 fifelse.c:258
-#, fuzzy
 msgid ""
 "S4 class objects (except nanotime) are not supported. Please see https://"
 "github.com/Rdatatable/data.table/issues/4131."
@@ -1487,53 +1480,50 @@ msgstr ""
 "Veuillez consulter https://github.com/Rdatatable/data.table/issues/4131."
 
 #: fifelse.c:229
-#, fuzzy
 msgid "Length of 'default' must be 1."
-msgstr "La longueur de \"default\" doit être de 1."
+msgstr "La longueur de 'default' doit être de 1."
 
 #: fifelse.c:236
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Resulting value is of type %s but 'default' is of type %s. Please make sure "
 "that both arguments have the same type."
 msgstr ""
-"La valeur résultante est de type %s mais 'default' est de type %s. Veuillez "
+"La valeur résultat est de type %s mais 'default' est de type %s. Veuillez "
 "vous assurer que les deux arguments ont le même type."
 
 #: fifelse.c:240
-#, fuzzy
 msgid ""
 "Resulting value has different class than 'default'. Please make sure that "
 "both arguments have the same class."
 msgstr ""
-"La valeur résultante a une classe différente de celle de \"default\". "
-"Veuillez vous assurer que les deux arguments ont la même classe."
+"La valeur résultat a une classe différente de celle de 'default'. Veuillez "
+"vous assurer que les deux arguments ont la même classe."
 
 #: fifelse.c:246
-#, fuzzy
 msgid ""
 "Resulting value and 'default' are both type factor but their levels are "
 "different."
 msgstr ""
-"La valeur résultante et la valeur \"par défaut\" sont toutes deux des "
-"facteurs de type, mais leurs niveaux sont différents."
+"La valeur résultat et la valeur 'default' sont toutes deux des facteurs, "
+"mais leurs niveaux sont différents."
 
 #: fifelse.c:261
-#, fuzzy, c-format
+#, c-format
 msgid "Argument #%d must be logical."
-msgstr "L'argument #%d doit être logique."
+msgstr "L'argument #%d doit être booléen."
 
 #: fifelse.c:265
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Argument #%d has a different length than argument #1. Please make sure all "
 "logical conditions have the same length."
 msgstr ""
 "L'argument #%d a une longueur différente de l'argument #1. Veillez à ce que "
-"toutes les conditions logiques aient la même longueur."
+"toutes les conditions logiques ont la même longueur."
 
 #: fifelse.c:270
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Argument #%d is of type %s, however argument #2 is of type %s. Please make "
 "sure all output values have the same type."
@@ -1542,16 +1532,16 @@ msgstr ""
 "vous assurer que toutes les valeurs de sortie ont le même type."
 
 #: fifelse.c:275
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Argument #%d has different class than argument #2, Please make sure all "
 "output values have the same class."
 msgstr ""
-"L'argument #%d a une classe différente de l'argument #2, veuillez vous "
+"L'argument #%d n'est pas de la même classe que l'argument #2, veuillez vous "
 "assurer que toutes les valeurs de sortie ont la même classe."
 
 #: fifelse.c:281
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Argument #2 and argument #%d are both factor but their levels are different."
 msgstr ""
@@ -1559,7 +1549,7 @@ msgstr ""
 "niveaux sont différents."
 
 #: fifelse.c:288
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Length of output value #%d must either be 1 or length of logical condition."
 msgstr ""
@@ -1567,32 +1557,27 @@ msgstr ""
 "la condition logique."
 
 #: fmelt.c:18
-#, fuzzy
 msgid "'x' must be an integer"
-msgstr "x\" doit être un nombre entier"
+msgstr "'x' doit être un nombre entier"
 
 #: fmelt.c:19
-#, fuzzy
 msgid "'n' must be a positive integer"
-msgstr "n doit être un nombre entier positif"
+msgstr "'n' doit être un nombre entier positif"
 
 #: fmelt.c:41
-#, fuzzy
 msgid "Argument to 'which' must be logical"
-msgstr "L'argument à \"qui\" doit être logique"
+msgstr "L'argument passé à 'which' doit être booléen"
 
 #: fmelt.c:65
-#, fuzzy
 msgid "concat: 'vec' must be a character vector"
 msgstr "concat : 'vec' doit être un vecteur de caractères"
 
 #: fmelt.c:66
-#, fuzzy
 msgid "concat: 'idx' must be an integer vector of length >= 0"
 msgstr "concat : 'idx' doit être un vecteur entier de longueur >= 0"
 
 #: fmelt.c:75
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error in concat: 'idx' must take values between 1 and length(vec); "
 "1 <= idx <= %d"
@@ -1603,34 +1588,33 @@ msgstr ""
 #: fmelt.c:134
 #, c-format
 msgid "Unknown 'measure.vars' type %s at index %d of list"
-msgstr "Type inconnu 'measure.vars' %s à l'indice %d de la liste"
+msgstr "Type inconnu de 'measure.vars' %s à l'indice %d de la liste"
 
 #: fmelt.c:187
-#, fuzzy
 msgid "One or more values in 'measure.vars' is invalid."
 msgstr "Une ou plusieurs valeurs de 'measure.vars' ne sont pas valides."
 
 #: fmelt.c:189
-#, fuzzy
 msgid "One or more values in 'id.vars' is invalid."
 msgstr "Une ou plusieurs valeurs de 'id.vars' ne sont pas valides."
 
 #: fmelt.c:212
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Unknown 'measure.vars' type %s, must be character or integer vector/list"
 msgstr ""
-"Type \"measure.vars\" inconnu %s, doit être un vecteur/liste de caractères "
-"ou d'entiers"
+"Le type de 'measure.vars' %s est inconnu, ça doit être un vecteur/list de "
+"caractères ou d'entiers"
 
 #: fmelt.c:214
-#, fuzzy, c-format
+#, c-format
 msgid "Unknown 'id.vars' type %s, must be character or integer vector"
 msgstr ""
-"Type \"id.vars\" inconnu %s, doit être un vecteur de caractères ou d'entiers"
+"Le type de 'id.vars' %s est inconnu, ça doit être un vecteur de caractères "
+"ou d'entiers"
 
 #: fmelt.c:239
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "id.vars and measure.vars are internally guessed when both are 'NULL'. All "
 "non-numeric/integer/logical type columns are considered id.vars, which in "
@@ -1638,27 +1622,25 @@ msgid ""
 "'measure' vars in future."
 msgstr ""
 "id.vars et measure.vars sont devinés en interne lorsqu'ils sont tous deux "
-"\"NULL\". Toutes les colonnes de type non numérique/entier/logique sont "
+"'NULL'. Toutes les colonnes de type non numérique/entier/booléen sont "
 "considérées comme des id.vars, qui dans ce cas sont des colonnes [%s]. "
-"Envisagez de fournir au moins l'une des variables \"id\" ou \"measure\" à "
+"Envisagez de fournir au moins l'une des variables 'id' ou 'measure' à "
 "l'avenir."
 
 #: fmelt.c:245
-#, fuzzy
 msgid ""
 "'measure.vars' is missing. Assigning all columns other than 'id.vars' "
 "columns as 'measure.vars'.\n"
 msgstr ""
 "'measure.vars' est manquant. Affectation de toutes les colonnes autres que "
-"les colonnes 'id.vars' en tant que 'measure.vars'.\n"
+"les colonnes 'id.vars' à 'measure.vars'.\n"
 
 #: fmelt.c:247
-#, fuzzy, c-format
+#, c-format
 msgid "Assigned 'measure.vars' are [%s].\n"
-msgstr "Les \"measure.vars\" attribués sont [%s].\n"
+msgstr "Les 'measure.vars' attribués sont [%s].\n"
 
 #: fmelt.c:258
-#, fuzzy
 msgid ""
 "'id.vars' is missing. Assigning all columns other than 'measure.vars' "
 "columns as 'id.vars'.\n"
@@ -1667,37 +1649,33 @@ msgstr ""
 "colonnes 'measure.vars' à 'id.vars'.\n"
 
 #: fmelt.c:259
-#, fuzzy, c-format
+#, c-format
 msgid "Assigned 'id.vars' are [%s].\n"
-msgstr "Les \"id.vars\" attribués sont [%s].\n"
+msgstr "Les 'id.vars' attribués sont [%s].\n"
 
 #: fmelt.c:311
-#, fuzzy
 msgid ""
 "When 'measure.vars' is a list, 'value.name' must be a character vector of "
 "length =1 or =length(measure.vars)."
 msgstr ""
-"Lorsque \"measure.vars\" est une liste, \"value.name\" doit être un vecteur "
-"de caractères de longueur =1 ou =length(measure.vars)."
+"Lorsque 'measure.vars' est une liste, 'value.name' doit être un vecteur de "
+"caractères de longueur =1 ou =length(measure.vars)."
 
 #: fmelt.c:312
-#, fuzzy
 msgid ""
 "When 'measure.vars' is either not specified or a character/integer vector, "
 "'value.name' must be a character vector of length =1."
 msgstr ""
-"Lorsque \"measure.vars\" n'est pas spécifié ou qu'il s'agit d'un vecteur de "
-"caractères/de nombres entiers, \"value.name\" doit être un vecteur de "
+"Lorsque 'measure.vars' n'est pas spécifié ou qu'il s'agit d'un vecteur de "
+"caractères/de nombres entiers, 'value.name' doit être un vecteur de "
 "caractères de longueur =1."
 
 #: fmelt.c:315
-#, fuzzy
 msgid "'variable.name' must be a character/integer vector of length 1."
 msgstr ""
-"variable.name\" doit être un vecteur de caractères/entiers de longueur 1."
+"'variable.name' doit être un vecteur de caractères/entiers de longueur 1."
 
 #: fmelt.c:368
-#, fuzzy
 msgid ""
 "variable_table attribute of measure.vars should be a data table with at "
 "least one column"
@@ -1706,7 +1684,7 @@ msgstr ""
 "comportant au moins une colonne"
 
 #: fmelt.c:373
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "variable_table attribute of measure.vars should be a data table with same "
 "number of rows as max length of measure.vars vectors =%d"
@@ -1716,32 +1694,30 @@ msgstr ""
 "vectors =%d"
 
 #: fmelt.c:377
-#, fuzzy
 msgid ""
 "variable_table attribute of measure.vars should be either NULL or a data "
 "table"
 msgstr ""
-"l'attribut variable_table de measure.vars doit être soit NULL, soit une "
-"table de données"
+"l'attribut variable_table de measure.vars doit être soit NULL, soit un "
+"tableau de données"
 
 #: fmelt.c:394
-#, fuzzy
 msgid ""
 "Internal error: combineFactorLevels in fmelt.c expects all-character input"
 msgstr ""
-"Erreur interne : combineFactorLevels in fmelt.c expects all-character input"
+"Erreur interne : dans fmelt.c, combineFactorLevels attend entrées "
+"entièrement composées de caractères"
 
 #: fmelt.c:397
-#, fuzzy
 msgid ""
 "Internal error: combineFactorLevels in fmelt.c expects a character target to "
 "factorize"
 msgstr ""
-"Erreur interne : combineFactorLevels in fmelt.c expects a character target "
-"to factorize"
+"Erreur interne : dans fmelt.c, combineFactorLevels attend un caractère "
+"target à factoriser"
 
 #: fmelt.c:460
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "'measure.vars' [%s] are not all of the same type. By order of hierarchy, the "
 "molten data value column will be of type '%s'. All measure variables not of "
@@ -1749,96 +1725,87 @@ msgid ""
 "coercion.\n"
 msgstr ""
 "les colonnes 'measure.vars' [%s] ne sont pas toutes du même type. Par ordre "
-"hiérarchique, la colonne de valeurs des données fondues sera de type \"%s\". "
-"Toutes les variables de mesure qui ne sont pas de type '%s' seront également "
-"contraintes. Consultez DETAILS dans ?melt.data.table pour en savoir plus sur "
-"la coercition.\n"
+"hiérarchique, la colonne de valeurs des données transformée sera de type "
+"\"%s\". Toutes les variables de mesure qui ne sont pas de type '%s' seront "
+"également converties automatiquement. Consultez DETAILS dans ?melt.data."
+"table pour en savoir plus sur la conversion automatique.\n"
 
 #: fmelt.c:572
-#, fuzzy, c-format
+#, c-format
 msgid "Unknown column type '%s' for column '%s'."
 msgstr "Type de colonne inconnu '%s' pour la colonne '%s'."
 
 #: fmelt.c:593
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: fmelt.c:getvarcols %d %d"
 msgstr "Erreur interne : fmelt.c:getvarcols %d %d"
 
 #: fmelt.c:679
-#, fuzzy, c-format
+#, c-format
 msgid "variable_table does not support column type '%s' for column '%s'."
 msgstr ""
 "variable_table ne prend pas en charge le type de colonne '%s' pour la "
 "colonne '%s'."
 
 #: fmelt.c:773
-#, fuzzy, c-format
+#, c-format
 msgid "Unknown column type '%s' for column '%s' in 'data'"
 msgstr "Type de colonne inconnu '%s' pour la colonne '%s' dans 'data'"
 
 #: fmelt.c:784
-#, fuzzy
 msgid "Input is not of type VECSXP, expected a data.table, data.frame or list"
 msgstr ""
-"L'entrée n'est pas de type VECSXP, on s'attend à un data.table, data.frame "
-"ou list"
+"L'entrée n'est pas de type VECSXP, un data.table, un data.frame ou une liste "
+"est attendu"
 
 #: fmelt.c:785
-#, fuzzy
 msgid "Argument 'value.factor' should be logical TRUE/FALSE"
-msgstr "L'argument \"value.factor\" doit être logiquement TRUE/FALSE"
+msgstr "L'argument 'value.factor' doit être booléen TRUE/FALSE"
 
 #: fmelt.c:786
-#, fuzzy
 msgid "Argument 'variable.factor' should be logical TRUE/FALSE"
-msgstr "L'argument 'variable.factor' doit être logique TRUE/FALSE"
+msgstr "L'argument 'variable.factor' doit être booléen TRUE/FALSE"
 
 #: fmelt.c:787
-#, fuzzy
 msgid "Argument 'na.rm' should be logical TRUE/FALSE."
-msgstr "L'argument \"na.rm\" doit être logiquement VRAI/FAUX."
+msgstr "L'argument 'na.rm' doit être booléen VRAI/FAUX."
 
 #: fmelt.c:788
-#, fuzzy
 msgid "Argument 'variable.name' must be a character vector"
 msgstr "L'argument 'variable.name' doit être un vecteur de caractères"
 
 #: fmelt.c:789
-#, fuzzy
 msgid "Argument 'value.name' must be a character vector"
-msgstr "L'argument \"value.name\" doit être un vecteur de caractères"
+msgstr "L'argument 'value.name' doit être un vecteur de caractères"
 
 #: fmelt.c:790
-#, fuzzy
 msgid "Argument 'verbose' should be logical TRUE/FALSE"
-msgstr "L'argument \"verbose\" doit être logiquement TRUE/FALSE"
+msgstr "L'argument 'verbose' doit être un booléen TRUE/FALSE"
 
 #: fmelt.c:794
-#, fuzzy
 msgid "ncol(data) is 0. Nothing to melt. Returning original data.table."
 msgstr ""
-"ncol(data) est 0. Rien à fondre. Renvoi du tableau de données original."
+"ncol(data) est 0. Rien à transformer. Renvoi du tableau de données original."
 
 #: fmelt.c:799
-#, fuzzy
 msgid "names(data) is NULL. Please report to data.table-help"
 msgstr "names(data) est NULL. Veuillez signaler ce problème à data.table-help"
 
 #: forder.c:107
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to realloc thread private group size buffer to %d*4bytes"
 msgstr ""
-"Échec de la réallocation du tampon de taille du groupe privé de threads à "
+"Échec de la réallocation du tampon du thread privé de la taille de groupe à "
 "%d*4 octets"
 
 #: forder.c:121
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to realloc group size result to %d*4bytes"
 msgstr ""
 "Échec de la réallocation du résultat de la taille du groupe à %d*4 octets"
 
 #: forder.c:255
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Logical error. counts[0]=%d in cradix but should have been decremented to 0. "
 "radix=%d"
@@ -1847,17 +1814,15 @@ msgstr ""
 "radix=%d"
 
 #: forder.c:270
-#, fuzzy
 msgid "Failed to alloc cradix_counts"
 msgstr "Échec de l'allocation de cradix_counts"
 
 #: forder.c:272
-#, fuzzy
 msgid "Failed to alloc cradix_tmp"
 msgstr "Échec de l'allocation de cradix_tmp"
 
 #: forder.c:283
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error: ustr isn't empty when starting range_str: ustr_n=%d, "
 "ustr_alloc=%d"
@@ -1866,31 +1831,27 @@ msgstr ""
 "ustr_alloc=%d"
 
 #: forder.c:284
-#, fuzzy
 msgid "Internal error: ustr_maxlen isn't 0 when starting range_str"
 msgstr "Erreur interne : ustr_maxlen n'est pas 0 au démarrage de range_str"
 
 #: forder.c:304
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to realloc %d * %d bytes in range_str"
 msgstr "Impossible de réallouer %d * %d octets dans range_str"
 
 #: forder.c:322
-#, fuzzy
 msgid "Failed to alloc ustr3 when converting strings to UTF8"
 msgstr ""
 "Échec de l'allocation de ustr3 lors de la conversion de chaînes de "
 "caractères en UTF8"
 
 #: forder.c:340
-#, fuzzy
 msgid "Failed to alloc tl when converting strings to UTF8"
 msgstr ""
 "Échec de l'allocation de tl lors de la conversion de chaînes de caractères "
 "en UTF8"
 
 #: forder.c:369
-#, fuzzy
 msgid "Must an integer or numeric vector length 1"
 msgstr "Doit être un entier ou un tableau numérique de longueur 1"
 
