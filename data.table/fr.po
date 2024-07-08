@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-07-04 17:10+0200\n"
+"PO-Revision-Date: 2024-07-08 11:52+0200\n"
 "Last-Translator: rochevin <vincent.rocher@inrae.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.3\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: assign.c:7
 msgid "Internal error: finalizer hasn't received an ExternalPtr"
@@ -479,9 +479,9 @@ msgid ""
 "RHS for item %d has been duplicated because NAMED==%d MAYBE_SHARED==%d, but "
 "then is being plonked. length(values)==%d; length(cols)==%d)\n"
 msgstr ""
-"Le membre de droite (RHS) pour l'élément %d a été dupliqué parce que NAMED=="
-"%d MAYBE_SHARED==%d, mais il est ensuite remplacé (plonk). length(values)=="
-"%d ; length(cols)==%d)\n"
+"Le membre de droite (RHS) pour l'élément %d a été dupliqué parce que "
+"NAMED==%d MAYBE_SHARED==%d, mais il est ensuite remplacé (plonk). "
+"length(values)==%d ; length(cols)==%d)\n"
 
 #: assign.c:509
 #, c-format
@@ -729,8 +729,9 @@ msgstr ""
 #: between.c:12
 #, c-format
 msgid ""
-"Incompatible vector lengths: length(x)==%d length(lower)==%d length(upper)=="
-"%d. Each should be either length 1 or the length of the longest."
+"Incompatible vector lengths: length(x)==%d length(lower)==%d "
+"length(upper)==%d. Each should be either length 1 or the length of the "
+"longest."
 msgstr ""
 "Longueurs de vecteurs incompatibles : length(x)==%d length(lower)==%d "
 "length(upper)==%d. Chaque vecteur doit avoir la longueur 1 ou la longueur du "
@@ -1387,19 +1388,19 @@ msgstr ""
 msgid ""
 "Length of 'no' is %<PRId64> but must be 1 or length of 'test' (%<PRId64>)."
 msgstr ""
-"La longueur de 'no' est %<PRId64> mais doit être 1 ou la longueur de "
-"'test' (%<PRId64>)."
+"La longueur de 'no' est %<PRId64> mais doit être 1 ou la longueur de 'test' "
+"(%<PRId64>)."
 
 #: fifelse.c:28
 #, c-format
 msgid ""
 "Length of 'na' is %<PRId64> but must be 1 or length of 'test' (%<PRId64>)."
 msgstr ""
-"La longueur de 'na' est %<PRId64> mais doit être 1 ou la longueur de "
-"'test' (%<PRId64>)."
+"La longueur de 'na' est %<PRId64> mais doit être 1 ou la longueur de 'test' "
+"(%<PRId64>)."
 
 #: fifelse.c:46
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "'no' is of type %s but '%s' is %s. Please make all arguments have the same "
 "type."
@@ -1894,17 +1895,14 @@ msgid "Must an integer or numeric vector length 1"
 msgstr "Doit être un entier ou un tableau numérique de longueur 1"
 
 #: forder.c:370
-#, fuzzy
 msgid "Must be 2, 1 or 0"
-msgstr "Doit être 2, 1 ou 0"
+msgstr "Doit être égal à 2, 1 ou 0"
 
 #: forder.c:404
-#, fuzzy
 msgid "Unknown non-finite value; not NA, NaN, -Inf or +Inf"
-msgstr "Valeur non finie inconnue ; pas NA, NaN, -Inf ou +Inf"
+msgstr "Valeur inconnue (non-finie) ; pas NA, NaN, -Inf ou +Inf"
 
 #: forder.c:426
-#, fuzzy
 msgid ""
 "Internal error: input is not either a list of columns, or an atomic vector."
 msgstr ""
@@ -1912,7 +1910,6 @@ msgstr ""
 "atomique."
 
 #: forder.c:428
-#, fuzzy
 msgid ""
 "Internal error: input is an atomic vector (not a list of columns) but by= is "
 "not NULL"
@@ -1921,7 +1918,6 @@ msgstr ""
 "mais by= n'est pas NULL"
 
 #: forder.c:430
-#, fuzzy
 msgid ""
 "Input is an atomic vector (not a list of columns) but order= is not a length "
 "1 integer"
@@ -2599,8 +2595,8 @@ msgstr ""
 #, fuzzy, c-format
 msgid ""
 "Found and resolved improper quoting in first %d rows. If the fields are not "
-"quoted (e.g. field separator does not appear within any field), try quote="
-"\"\" to avoid this warning."
+"quoted (e.g. field separator does not appear within any field), try "
+"quote=\"\" to avoid this warning."
 msgstr ""
 "L'erreur de citation a été détectée et résolue dans les %d premières lignes. "
 "Si les champs ne sont pas entre guillemets (par exemple, le séparateur de "
@@ -2785,8 +2781,8 @@ msgid ""
 "Added %d extra default column name%s\n"
 msgstr ""
 "A détecté %d noms de colonnes mais les données ont %d colonnes (c.-à-d. "
-"fichier invalide). Ajout de %d noms de colonnes supplémentaires par défaut"
-"%s\n"
+"fichier invalide). Ajout de %d noms de colonnes supplémentaires par "
+"défaut%s\n"
 
 #: fread.c:1916
 #, fuzzy
@@ -3020,8 +3016,8 @@ msgstr ""
 #: fread.c:2436
 #, fuzzy, c-format
 msgid ""
-"Internal error: invalid head position. jump=%d, headPos=%p, thisJumpStart="
-"%p, sof=%p"
+"Internal error: invalid head position. jump=%d, headPos=%p, "
+"thisJumpStart=%p, sof=%p"
 msgstr ""
 "Erreur interne : position de la tête non valide. jump=%d, headPos=%p, "
 "thisJumpStart=%p, sof=%p"
@@ -3029,8 +3025,8 @@ msgstr ""
 #: fread.c:2509
 #, fuzzy, c-format
 msgid ""
-"  Too few rows allocated. Allocating additional %<PRIu64> rows (now nrows="
-"%<PRIu64>) and continue reading from jump %d\n"
+"  Too few rows allocated. Allocating additional %<PRIu64> rows (now "
+"nrows=%<PRIu64>) and continue reading from jump %d\n"
 msgstr ""
 "  Trop peu de lignes allouées. Allocation de %<PRIu64> lignes "
 "supplémentaires (maintenant nrows=%<PRIu64>) et poursuite de la lecture à "
@@ -3337,8 +3333,8 @@ msgstr ""
 #: freadR.c:297
 #, fuzzy, c-format
 msgid ""
-"Column number %d (select[%d]) is negative but should be in the range [1,ncol="
-"%d]. Consider drop= for column exclusion."
+"Column number %d (select[%d]) is negative but should be in the range [1,"
+"ncol=%d]. Consider drop= for column exclusion."
 msgstr ""
 "Le numéro de colonne %d (select[%d]) est négatif mais devrait être compris "
 "dans l'intervalle [1,ncol=%d]. Envisager drop= pour l'exclusion de colonnes."
@@ -3739,11 +3735,11 @@ msgstr "maxBit=%d ; MSBNbits=%d ; shift=%d ; MSBsize=%zu\n"
 #: fsort.c:174
 #, fuzzy, c-format
 msgid ""
-"counts is %dMB (%d pages per nBatch=%d, batchSize=%<PRIu64>, lastBatchSize="
-"%<PRIu64>)\n"
+"counts is %dMB (%d pages per nBatch=%d, batchSize=%<PRIu64>, "
+"lastBatchSize=%<PRIu64>)\n"
 msgstr ""
-"compte est %dMB (%d pages par nBatch=%d, batchSize=%<PRIu64>, lastBatchSize="
-"%<PRIu64>)\n"
+"compte est %dMB (%d pages par nBatch=%d, batchSize=%<PRIu64>, "
+"lastBatchSize=%<PRIu64>)\n"
 
 #: fsort.c:228
 #, fuzzy
@@ -3824,12 +3820,12 @@ msgstr "... "
 #, fuzzy, c-format
 msgid ""
 "\n"
-"args.doRowNames=%d args.rowNames=%p args.rowNameFun=%d doQuote=%d args.nrow="
-"%<PRId64> args.ncol=%d eolLen=%d\n"
+"args.doRowNames=%d args.rowNames=%p args.rowNameFun=%d doQuote=%d args."
+"nrow=%<PRId64> args.ncol=%d eolLen=%d\n"
 msgstr ""
 "\n"
-"args.doRowNames=%d args.rowNames=%p args.rowNameFun=%d doQuote=%d args.nrow="
-"%<PRId64> args.ncol=%d eolLen=%d\n"
+"args.doRowNames=%d args.rowNames=%p args.rowNameFun=%d doQuote=%d args."
+"nrow=%<PRId64> args.ncol=%d eolLen=%d\n"
 
 #: fwrite.c:664
 #, fuzzy, c-format
@@ -4102,8 +4098,8 @@ msgstr ""
 #: gsumm.c:89
 #, fuzzy, c-format
 msgid ""
-"Internal error: nrow=%d  ngrp=%d  nbit=%d  bitshift=%d  highSize=%zu  nBatch="
-"%zu  batchSize=%zu  lastBatchSize=%zu\n"
+"Internal error: nrow=%d  ngrp=%d  nbit=%d  bitshift=%d  highSize=%zu  "
+"nBatch=%zu  batchSize=%zu  lastBatchSize=%zu\n"
 msgstr ""
 "Erreur interne : nrow=%d ngrp=%d nbit=%d bitshift=%d highSize=%zu nBatch=%zu "
 "batchSize=%zu lastBatchSize=%zu\n"
