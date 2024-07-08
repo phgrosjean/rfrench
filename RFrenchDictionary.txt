@@ -12,7 +12,7 @@ soit '' ou "", mais non transformés et sans espaces.
 ” : remplacer les guillemets doubles fermants ” par l'apostrophe simple ' 
 
 
-aborting : annulation
+aborting : annulation, interruption, abandon
 allocation : affectation mémoire
 anova : ANOVA
 argument : argument (et non paramètre)
@@ -23,30 +23,30 @@ backslash : caractère barre oblique inversée
 binary operator : opérateur binaire
 bind : lien (binding : lier)
 bitmap : bitmap
-boxplot : boîte à dispersion
-breaks : limites de classes (histogrammes, plus parlant que simplement 'limites')
+boxplot : boîte à moustaches
+breaks : bornes des classes (histogrammes)
 browser : explorateur
 bytecode : pseudo-code (code a octets est officiel mais peu utilisé)
-cached value : valeur de la mémoire cache
+cached value : valeur enregistrée en mémoire cache
 call : appel
 callback : rappel (procédure de, callback)
-case insensitive matching : correspondance indépendante de la casse
+case insensitive matching : correspondance insensible à la casse
 channel : canal
 character : caractère (sans h)
 closure : fermeture (closure)
 cluster : agrégation, groupe
 coerce : convertir automatiquement
 coercion : conversion automatique
-collation : collation
+collation : classement
 collapsing level : niveau de fusion
 colortype : colorimétrie
-computationally singular : singulière par calcul (par exemple pour une matrice)
+computationally singular : numériquement singulière (par exemple pour une matrice)
 connection : connexion
 console : console
 covariate : covariables
 database : base de données
 dataframe : tableau de données, mais on précise (data frame) si nécessaire
-dataset : ????
+dataset : jeu de données
 deparse : reconstruction de code (deparse)
 deprecated : obsolète
 deviance : déviance (en statistique)
@@ -64,12 +64,12 @@ filename : nom de fichier
 file stream : corps du fichier
 fit : ajustement ou ajuster
 flush : vider ou vidage
-formula : formule de modèle ou formule tout court
+formula : formule du modèle ou formule tout court
 frame : cadre ou trame selon le contexte; (data frame : tableau de données)
 GiB : giga octets (pour les tailles)
 handler : manipulateur de données (voir aussi interrupt handler)
 hashing : hachage
-Hessian : Hessien
+Hessian : Hessienne (se dit d'une matrice)
 history : historique des commandes
 image : image d'environnement (fichier image où les objets R sont sauvés)
 implemented : implémenté
@@ -88,13 +88,13 @@ leading minor : mineur dominant
 length : longueur (réserver taille pour size)
 LHS : membre gauche (d'une expression, d'une égalité...)
 library : bibliothèque
-likelyhood : vraisemblance
+likelihood : vraisemblance
 locale : environnement linguistique
 locator : mode de localisation à la souris (pour les graphes)
 logical : booléen
-log-likelyhood : log de vraisemblance
+log-likelihood : log de vraisemblance
 magic number : nombre magique
-matrix is exactly singular : matrice exactement singulière
+matrix is exactly singular : matrice singulière
 metafile : metafile
 mirror site : site miroir
 mismatch : incohérence
@@ -143,7 +143,7 @@ RNG : RNG ou générateur de nombres pseudo-aléatoires
 routine : sous-programme ou procédure
 scaled : standardisé, mis à l'échelle
 search path : chemin de recherche
-seed : valeurs d'initialisation d'un processus (ex: génération des nombres aléatoires)
+seed : valeurs d'initialisation d'un processus, graine aléatoire (ex: génération des nombres aléatoires)
 seek : mode d'accès aléatoire
 self-starting function : fonction auto-initialisée
 sequence : suite (selon contexte) ou séquence
@@ -179,7 +179,7 @@ unary operator : opérateur unaire
 unbind : délier
 underflow : dépassement de capacité par le bas
 unmatched : déparié
-unpacking : décompaction (?)
+unpacking : extraction
 upload: téléversement client -> serveur 
 url : URL
 viewport : vue
