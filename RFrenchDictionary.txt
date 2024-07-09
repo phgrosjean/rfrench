@@ -6,10 +6,10 @@ telles que :, ;, !, ? (sauf . et ,)
 par contre, nous conservons les conventions du langage S pour les guillements,
 soit '' ou "", mais non transformés et sans espaces.
 ’ : remplacer l'apostrophe grasse ’ par l'apostrophe simple '
-` : remplacer l'apostrophe inverse ` par l'apostrophe simple ' 
+` : remplacer l'apostrophe inverse ` par l'apostrophe simple '
 ‘ : remplacer l'apostrophe simple retournée ‘ par l'apostrophe simple '
 “ : remplacer les guillemets doubles retournés ouvrants “ par l'apostrophe simple '
-” : remplacer les guillemets doubles fermants ” par l'apostrophe simple ' 
+” : remplacer les guillemets doubles fermants ” par l'apostrophe simple '
 
 
 aborting : annulation
@@ -54,7 +54,7 @@ deprecated : obsolète
 deviance : déviance (en statistique)
 device : périphérique
 dispatch: dispatcheur
-download: téléchargement client <- serveur 
+download: téléchargement client <- serveur
 driver : pilote
 edge : côté (d'un polygone)
 eigenvalues : valeurs propres
@@ -81,6 +81,7 @@ index : indice (presque toujours, et non index)
 interrupt handler : gestionnaire d'interruptions
 invalid : incorrect (à préférer à 'non valide')
 IO : E/S (pour entrées/sorties)
+issue tracker : gestionnaire de tickets (issue tracker)
 knots : noeuds
 kriging : krigeage
 label : étiquette
@@ -187,7 +188,7 @@ unbind : délier
 underflow : dépassement de capacité par le bas
 unmatched : déparié
 unpacking : décompaction (?)
-upload: téléversement client -> serveur 
+upload: téléversement client -> serveur
 url : URL
 vertex : sommet (d'un polygone)
 viewport : vue
