@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-07-10 15:59+0200\n"
+"PO-Revision-Date: 2024-07-10 17:03+0200\n"
 "Last-Translator: Elise Maigné <elise.maigne@inrae.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -3737,7 +3737,7 @@ msgstr ""
 
 #: fsort.c:317
 msgid "Unable to allocate working memory"
-msgstr "Impossible d'allouer de la mémoire disponible"
+msgstr "Impossible d'allouer de la mémoire de travail"
 
 #: fsort.c:327
 #, c-format
@@ -4778,21 +4778,20 @@ msgstr ""
 "uniques [sum(lapply(l,ncol))]"
 
 #: rbindlist.c:101
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to allocate nuniq=%d items working memory in rbindlist.c"
 msgstr ""
-"Échec de l'allocation de la mémoire de travail de nuniq=%d éléments dans "
+"Échec de l'allocation de la mémoire de travail pour nuniq=%d éléments dans "
 "rbindlist.c"
 
 #: rbindlist.c:135
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to allocate ncol=%d items working memory in rbindlist.c"
 msgstr ""
-"Échec de l'allocation de la mémoire de travail de ncol=%d éléments dans "
+"Échec de l'allocation de la mémoire de travail pour ncol=%d éléments dans "
 "rbindlist.c"
 
 #: rbindlist.c:190
-#, fuzzy
 msgid ""
 "Internal error: usenames==NA but fill=TRUE. usenames should have been set to "
 "TRUE earlier with warning."
@@ -4801,7 +4800,6 @@ msgstr ""
 "TRUE plus tôt avec un avertissement."
 
 #: rbindlist.c:195
-#, fuzzy
 msgid ""
 " use.names='check' (default from v1.12.2) emits this message and proceeds as "
 "if use.names=FALSE for  backwards compatibility. See news item 5 in v1.12.2 "
@@ -4809,11 +4807,10 @@ msgid ""
 msgstr ""
 " use.names='check' (par défaut à partir de la version 1.12.2) émet ce "
 "message et procède comme si use.names=FALSE pour des raisons de "
-"rétrocompatibilité. Voir la nouvelle 5 dans la version 1.12.2 pour les "
-"options permettant de contrôler ce message."
+"rétrocompatibilité. Voir le point 5 dans les nouveautés de la version 1.12.2 "
+"pour les options permettant de contrôler ce message."
 
 #: rbindlist.c:205
-#, fuzzy
 msgid ""
 "Internal error: could not find the first column name not present in earlier "
 "item"
@@ -4822,7 +4819,7 @@ msgstr ""
 "l'élément précédent"
 
 #: rbindlist.c:209
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Column %d ['%s'] of item %d is missing in item %d. Use fill=TRUE to fill "
 "with NA (NULL for list columns), or use.names=FALSE to ignore column names.%s"
@@ -4832,7 +4829,7 @@ msgstr ""
 "ou use.names=FALSE pour ignorer les noms de colonnes.%s"
 
 #: rbindlist.c:217
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error: usenames==NA but an out-of-order name has been found in an "
 "item with no names or the first item. [%d]"
@@ -4841,7 +4838,7 @@ msgstr ""
 "élément sans nom ou dans le premier élément. [%d]"
 
 #: rbindlist.c:218
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Column %d ['%s'] of item %d appears in position %d in item %d. Set use."
 "names=TRUE to match by column name, or use.names=FALSE to ignore column "
@@ -4852,33 +4849,33 @@ msgstr ""
 "use.names=FALSE pour ignorer les noms de colonnes.%s"
 
 #: rbindlist.c:227
-#, fuzzy
 msgid ""
 "options()$datatable.rbindlist.check is set but is not a single string. See "
 "news item 5 in v1.12.2."
 msgstr ""
 "options()$datable.rbindlist.check est défini mais n'est pas une chaîne "
-"unique. Voir la nouvelle 5 dans la v1.12.2."
+"unique. Voir le point 5 dans les nouveautés de la v1.12.2."
 
 #: rbindlist.c:234
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "options()$datatable.rbindlist.check=='%s' which is not "
 "'message'|'warning'|'error'|'none'. See news item 5 in v1.12.2."
 msgstr ""
 "options()$datable.rbindlist.check=='%s' qui n'est pas "
-"'message'|'warning'|'error'|'none'. Voir la nouvelle 5 dans la v1.12.2."
+"'message'|'warning'|'error'|'none'. Voir le point 5 dans les nouveautés de "
+"la v1.12.2."
 
 #: rbindlist.c:297
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Column %d of item %d has type 'factor' but has no levels; i.e. malformed."
 msgstr ""
 "La colonne %d de l'élément %d est de type \"facteur\" mais n'a pas de "
-"niveau, c'est-à-dire qu'elle est malformée."
+"niveau, c'est-à-dire qu'il est malformée."
 
 #: rbindlist.c:315
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Class attribute on column %d of item %d does not match with column %d of "
 "item %d."
@@ -4887,7 +4884,7 @@ msgstr ""
 "colonne %d de l'élément %d."
 
 #: rbindlist.c:325
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error: column %d of result is determined to be integer64 but "
 "maxType=='%s' != REALSXP"
@@ -4896,16 +4893,16 @@ msgstr ""
 "integer64 mais maxType=='%s' != REALSXP"
 
 #: rbindlist.c:362
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Failed to allocate working memory for %d ordered factor levels of result "
 "column %d"
 msgstr ""
 "Échec de l'allocation de la mémoire de travail pour %d niveaux de facteurs "
-"ordonnés de la colonne de résultats %d"
+"ordonnés pour la colonne de résultats %d"
 
 #: rbindlist.c:384
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Column %d of item %d is an ordered factor but level %d ['%s'] is missing "
 "from the ordered levels from column %d of item %d. Each set of ordered "
@@ -4913,25 +4910,25 @@ msgid ""
 "factor will be created for this column."
 msgstr ""
 "La colonne %d de l'élément %d est un facteur ordonné, mais le niveau %d "
-"['%s] est absent des niveaux ordonnés de la colonne %d de l'élément %d. "
-"Chaque ensemble de niveaux de facteurs ordonnés doit être un sous-ensemble "
-"ordonné du premier plus long. Un facteur régulier sera créé pour cette "
+"['%s'] manque parmi les niveaux ordonnés de la colonne %d de l'élément %d. "
+"Chaque ensemble de niveaux de facteur ordonné doit être un sous-ensemble "
+"ordonné du premier et plus long. Un facteur régulier sera créé pour cette "
 "colonne."
 
 #: rbindlist.c:389
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Column %d of item %d is an ordered factor with '%s'<'%s' in its levels. But "
 "'%s'<'%s' in the ordered levels from column %d of item %d. A regular factor "
 "will be created for this column due to this ambiguity."
 msgstr ""
-"La colonne %d de l'item %d est un facteur ordonné dont les niveaux sont "
-"'%s'<'%s''. Mais '%s'<'%s' dans les niveaux ordonnés de la colonne %d de "
-"l'item %d. Un facteur régulier sera créé pour cette colonne en raison de "
-"cette ambiguïté."
+"La colonne %d de l'élément %d est un facteur ordonné dont les niveaux sont "
+"'%s'<'%s'. Cependant, '%s'<'%s' dans les niveaux ordonnés de la colonne %d "
+"de l'élément %d. Un facteur régulier sera créé pour cette colonne en raison "
+"de cette ambiguïté."
 
 #: rbindlist.c:434
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Failed to allocate working memory for %d factor levels of result column %d "
 "when reading item %d of item %d"
@@ -4941,57 +4938,55 @@ msgstr ""
 "l'élément %d"
 
 #: rbindlist.c:524
-#, fuzzy, c-format
+#, c-format
 msgid "Column %d of item %d: %s"
-msgstr "Colonne %d de l'article %d : %s"
+msgstr "Colonne %d de l'élément %d : %s"
 
 #: reorder.c:17
-#, fuzzy, c-format
+#, c-format
 msgid "Item %d of list is type '%s' which isn't yet supported (SIZEOF=%zu)"
 msgstr ""
 "L'élément %d de la liste est du type '%s' qui n'est pas encore pris en "
 "charge (SIZEOF=%zu)"
 
 #: reorder.c:19
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Column %d is length %d which differs from length of column 1 (%d). Invalid "
 "data.table."
 msgstr ""
 "La colonne %d est de longueur %d, ce qui diffère de la longueur de la "
-"colonne 1 (%d). Table de données invalide."
+"colonne 1 (%d). Objet data.table invalide."
 
 #: reorder.c:27
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "reorder accepts vectors but this non-VECSXP is type '%s' which isn't yet "
 "supported (SIZEOF=%zu)"
 msgstr ""
-"reorder accepte les vecteurs mais ce non VECSXP est de type '%s' qui n'est "
-"pas encore supporté (SIZEOF=%zu)"
+"reorder accepte les vecteurs mais non-VECSXP est de type '%s' qui n'est pas "
+"encore supporté (SIZEOF=%zu)"
 
 #: reorder.c:28
-#, fuzzy
 msgid ""
 "Internal error in reorder.c: cannot reorder an ALTREP vector. Please see "
 "NEWS item 2 in v1.11.4 and report this as a bug."
 msgstr ""
-"Erreur interne dans reorder.c : cannot reorder an ALTREP vector. Veuillez "
-"consulter le point 2 de NEWS dans la version 1.11.4 et signaler cette erreur "
-"comme un bogue."
+"Erreur interne dans reorder.c : impossible de réordonner un vecteur ALTREP. "
+"Veuillez consulter le point 2 des NEWS de la version 1.11.4 et signaler cela "
+"comme un bug."
 
 #: reorder.c:33
-#, fuzzy
 msgid "order must be an integer vector"
 msgstr "l'ordre doit être un vecteur entier"
 
 #: reorder.c:34
-#, fuzzy, c-format
+#, c-format
 msgid "nrow(x)[%d]!=length(order)[%d]"
 msgstr "nrow(x)[%d]!=length(order)[%d]"
 
 #: reorder.c:51
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Item %d of order (%d) is either NA, out of range [1,%d], or is duplicated. "
 "The new order must be a strict permutation of 1:n"
@@ -5000,26 +4995,25 @@ msgstr ""
 "soit dupliqué. Le nouvel ordre doit être une permutation stricte de 1:n"
 
 #: reorder.c:111
-#, fuzzy
 msgid "dt passed to setcolorder has no names"
 msgstr "dt passé à setcolorder n'a pas de nom"
 
 #: reorder.c:113
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: dt passed to setcolorder has %d columns but %d names"
-msgstr "Erreur interne : la dt passée à setcolorder a %d colonnes mais %d noms"
+msgstr ""
+"Erreur interne : l'objet dt passé à setcolorder a %d colonnes mais %d noms"
 
 #: shift.c:12
-#, fuzzy
 msgid ""
 "shift input must not be matrix or array, consider wrapping it into data."
 "table() or c()"
 msgstr ""
-"shift input ne doit pas être une matrice ou un tableau, envisagez de "
-"l'intégrer dans data.table() ou c()"
+"l'entrée de la fonction shift ne doit pas être une matrice ou un tableau, "
+"envisagez de l'intégrer dans data.table() ou c()"
 
 #: shift.c:17
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "type '%s' passed to shift(). Must be a vector, list, data.frame or data.table"
 msgstr ""
@@ -5027,16 +5021,15 @@ msgstr ""
 "data.frame ou d'un data.table"
 
 #: shift.c:24 shift.c:29
-#, fuzzy
 msgid ""
 "Internal error: invalid type for shift(), should have been caught before. "
 "please report to data.table issue tracker"
 msgstr ""
-"Erreur interne : type invalide pour shift(), aurait dû être détecté "
-"auparavant. Veuillez signaler cette erreur au data.table issue tracker"
+"Erreur interne : type invalide pour shift(). Ce problème aurait dû être "
+"détecté auparavant. Veuillez signaler ce problème au gestionnaire de tickets "
+"(issue tracker) de data.table"
 
 #: shift.c:32
-#, fuzzy
 msgid "Internal error: k must be integer"
 msgstr "Erreur interne : k doit être un entier"
 
@@ -5044,61 +5037,59 @@ msgstr "Erreur interne : k doit être un entier"
 #: snprintf.c:207 snprintf.c:210 snprintf.c:213 snprintf.c:216 snprintf.c:220
 #: snprintf.c:223 snprintf.c:226 snprintf.c:229 snprintf.c:232 snprintf.c:235
 #: snprintf.c:238 snprintf.c:241 snprintf.c:244
-#, fuzzy, c-format
+#, c-format
 msgid "dt_win_snprintf test %d failed: %s"
 msgstr "le test dt_win_snprintf %d a échoué : %s"
 
 #: snprintf.c:217
-#, fuzzy, c-format
+#, c-format
 msgid "dt_win_snprintf test %d failed: %d"
 msgstr "le test dt_win_snprintf %d a échoué : %d"
 
 #: subset.c:7
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: subsetVectorRaw length(ans)==%d n=%d"
 msgstr "Erreur interne : subsetVectorRaw length(ans)==%d n=%d"
 
 #: subset.c:101
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error: column type '%s' not supported by data.table subset. All "
 "known types are supported so please report as bug."
 msgstr ""
-"Erreur interne : le type de colonne '%s' n'est pas pris en charge par le "
-"sous-ensemble data.table. Tous les types connus sont pris en charge, "
-"veuillez donc signaler un bogue."
+"Erreur interne : le type de colonne '%s' n'est pas pris en charge par la "
+"fonction subset de data.table. Tous les types connus sont pris en charge, "
+"veuillez donc signaler ceci comme un bogue."
 
 #: subset.c:135
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error. 'idx' is type '%s' not 'integer'"
 msgstr "Erreur interne. 'idx' est de type '%s' et non 'integer'"
 
 #: subset.c:136
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error. 'maxArg' is type '%s' and length %d, should be an integer "
 "singleton"
 msgstr ""
-"Erreur interne. 'maxArg' est de type '%s' et de longueur %d, il devrait "
-"s'agir d'un singleton entier"
+"Erreur interne. 'maxArg' est de type '%s', de longueur %d, et devrait être "
+"un singleton entier."
 
 #: subset.c:137
-#, fuzzy
 msgid "Internal error: allowOverMax must be TRUE/FALSE"
 msgstr "Erreur interne : allowOverMax doit être TRUE/FALSE"
 
 #: subset.c:139
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error. max is %d, must be >= 0."
 msgstr "Erreur interne. max est %d, doit être >= 0."
 
 #: subset.c:140
-#, fuzzy
 msgid "Internal error: allowNAArg must be TRUE/FALSE"
 msgstr "Erreur interne : allowNAArg doit être TRUE/FALSE"
 
 #: subset.c:177
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Item %d of i is %d and item %d is %d. Cannot mix positives and negatives."
 msgstr ""
@@ -5106,44 +5097,44 @@ msgstr ""
 "mélanger les positifs et les négatifs."
 
 #: subset.c:187
-#, fuzzy, c-format
+#, c-format
 msgid "Item %d of i is %d and item %d is NA. Cannot mix negatives and NA."
 msgstr ""
 "L'élément %d de i est %d et l'élément %d est NA. Il n'est pas possible de "
 "mélanger des négatifs et des NA."
 
 #: subset.c:234
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Item %d of i is %d but there are only %d rows. Ignoring this and %d more "
 "like it out of %d."
 msgstr ""
-"L'élément %d de i est %d mais il n'y a que %d lignes. Ignorer ceci et %d "
-"plus comme ça de %d."
+"L'élément %d de i est %d mais il n'y a que %d lignes. Cela sera ignoré, "
+"ainsi que %d autres similaires sur un total de %d."
 
 #: subset.c:236
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Item %d of i is %d which removes that item but that has occurred before. "
 "Ignoring this dup and %d other dups."
 msgstr ""
 "L'élément %d de i est %d, ce qui supprime cet élément, mais cela s'est déjà "
-"produit auparavant. Ignorer ce doublon et %d autres doublons."
+"produit auparavant. Ce doublon sera ignoré ainsi que %d autres doublons."
 
 #: subset.c:250
-#, fuzzy, c-format
+#, c-format
 msgid "Column %d is NULL; malformed data.table."
 msgstr "La colonne %d est NULL ; data.table malformé."
 
 #: subset.c:253
-#, fuzzy, c-format
+#, c-format
 msgid "Column %d ['%s'] is a data.frame or data.table; malformed data.table."
 msgstr ""
 "La colonne %d ['%s'] est un data.frame ou un data.table ; data.table "
 "malformé."
 
 #: subset.c:258
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Column %d ['%s'] is length %d but column 1 is length %d; malformed data."
 "table."
@@ -5152,87 +5143,79 @@ msgstr ""
 "%d ; data.table malformé."
 
 #: subset.c:290
-#, fuzzy, c-format
+#, c-format
 msgid "Item %d of cols is %d which is outside the range [1,ncol(x)=%d]"
 msgstr ""
 "L'élément %d des colonnes est %d, ce qui est en dehors de l'intervalle [1,"
 "ncol(x)=%d]"
 
 #: subset.c:364
-#, fuzzy
 msgid ""
 "Internal error: NULL can not be subset. It is invalid for a data.table to "
 "contain a NULL column."
 msgstr ""
-"Erreur interne : NULL ne peut pas être sous-ensemble. Un data.table ne peut "
-"pas contenir de colonne NULL."
+"Erreur interne : un sous-ensemble de NULL ne peut pas être créé. Un data."
+"table ne peut pas contenir de colonne NULL."
 
 #: subset.c:366
-#, fuzzy
 msgid ""
 "Internal error: CsubsetVector is internal-use-only but has received "
 "negatives, zeros or out-of-range"
 msgstr ""
 "Erreur interne : CsubsetVector est à usage interne uniquement mais a reçu "
-"des négatifs, des zéros ou des valeurs hors limites"
+"des valeurs négatives, des zéros ou des valeurs hors limites"
 
 #: transpose.c:9
-#, fuzzy
 msgid "l must be a list."
 msgstr "l doit être une liste."
 
 #: transpose.c:13
-#, fuzzy
 msgid "ignore.empty should be logical TRUE/FALSE."
-msgstr "ignore.empty doit être logiquement VRAI/FAUX."
+msgstr "ignore.empty doit être de type logique VRAI/FAUX."
 
 #: transpose.c:16
-#, fuzzy
 msgid ""
 "keep.names should be either NULL, or the name of the first column of the "
 "result in which to place the names of the input"
 msgstr ""
 "keep.names doit être soit NULL, soit le nom de la première colonne du "
-"résultat dans laquelle placer les noms des données d'entrée"
+"résultat dans laquelle placer les noms de l'entrée."
 
 #: transpose.c:19
-#, fuzzy
 msgid "fill must be a length 1 vector, such as the default NA"
-msgstr "fill doit être un vecteur de longueur 1, tel que le NA par défaut"
+msgstr "fill doit être un vecteur de longueur 1, tel que NA par defaut"
 
 #: transpose.c:28
-#, fuzzy, c-format
+#, c-format
 msgid "Item %d of list input is not an atomic vector"
 msgstr "L'élément %d de la liste d'entrée n'est pas un vecteur atomique"
 
 #: types.c:55
-#, fuzzy
 msgid "internal error: status, nx, nk must be integer"
 msgstr "erreur interne : status, nx, nk must be integer"
 
 #: uniqlist.c:14
-#, fuzzy
 msgid "Internal error: uniqlist has not been passed a list of columns"
 msgstr "Erreur interne : uniqlist n'a pas reçu de liste de colonnes"
 
 #: uniqlist.c:17
-#, fuzzy
 msgid "Internal error: uniqlist has been passed a non-integer order"
-msgstr "Erreur interne : uniqlist a reçu un ordre non entier"
+msgstr ""
+"Erreur interne : uniqlist a reçu pour la variable order un autre type qu'un "
+"entier"
 
 #: uniqlist.c:18
-#, fuzzy
 msgid "Internal error: uniqlist has been passed a length-0 order"
-msgstr "Erreur interne : uniqlist a reçu un ordre de longueur 0"
+msgstr ""
+"Erreur interne : uniqlist a reçu pour la variable order un élément de "
+"longueur 0"
 
 #: uniqlist.c:19
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: uniqlist has been passed length(order)==%d but nrow==%d"
-msgstr ""
-"Erreur interne : uniqlist has been passed length(order)==%d but nrow==%d"
+msgstr "Erreur interne : uniqlist a reçu length(order)==%d but nrow==%d"
 
 #: uniqlist.c:151
-#, fuzzy
 msgid "Input argument 'x' to 'uniqlengths' must be an integer vector"
 msgstr ""
 "L'argument d'entrée 'x' de 'uniqlengths' doit être un vecteur d'entiers"
@@ -5413,14 +5396,12 @@ msgstr ""
 "conseils."
 
 #: vecseq.c:25
-#, fuzzy
 msgid "clamp must be a double vector length 1"
-msgstr "la pince doit être un vecteur double de longueur 1"
+msgstr "clamp doit être un vecteur double de longueur 1"
 
 #: vecseq.c:27
-#, fuzzy
 msgid "clamp must be positive"
-msgstr "la pince doit être positive"
+msgstr "clamp doit être positive"
 
 #: vecseq.c:28
 #, fuzzy, c-format
