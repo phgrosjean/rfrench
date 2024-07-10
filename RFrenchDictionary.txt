@@ -12,7 +12,7 @@ soit '' ou "", mais non transformés et sans espaces.
 ” : remplacer les guillemets doubles fermants ” par l'apostrophe simple ' 
 
 
-aborting : annulation, interruption, abandon
+aborting : annulation, abandon
 allocation : affectation mémoire
 anova : ANOVA
 argument : argument (et non paramètre)
