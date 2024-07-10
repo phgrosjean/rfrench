@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-07-10 11:55+0200\n"
+"PO-Revision-Date: 2024-07-10 15:59+0200\n"
 "Last-Translator: Elise Maigné <elise.maigne@inrae.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -3698,7 +3698,7 @@ msgid ""
 "counts is %dMB (%d pages per nBatch=%d, batchSize=%<PRIu64>, lastBatchSize="
 "%<PRIu64>)\n"
 msgstr ""
-"Le comptage est %dMB (%d pages par nBatch=%d, batchSize=%<PRIu64>, "
+"le comptage est %dMB (%d pages par nBatch=%d, batchSize=%<PRIu64>, "
 "lastBatchSize=%<PRIu64>)\n"
 
 #: fsort.c:228
@@ -3987,7 +3987,7 @@ msgid ""
 "input has specific integer rownames but their length (%<PRId64>) != nrow "
 "(%<PRId64>)"
 msgstr ""
-"L'entrée a des entiers comme noms de lignes mais leur longueur (%<PRId64>) !"
+"l'entrée a des entiers comme noms de lignes mais leur longueur (%<PRId64>) !"
 "= nrow (%<PRId64>)"
 
 #: fwriteR.c:282
@@ -4054,7 +4054,7 @@ msgstr ""
 #: gsumm.c:98
 #, c-format
 msgid "gforce initial population of grp took %.3f\n"
-msgstr "La population initiale de grp dans gforce a pris %.3f\n"
+msgstr "la population initiale de grp dans gforce a pris %.3f\n"
 
 #: gsumm.c:116
 msgid ""
@@ -4066,16 +4066,16 @@ msgstr ""
 #: gsumm.c:194
 #, c-format
 msgid "gforce assign high and low took %.3f\n"
-msgstr "L'assignation de high et low dans a pris %.3f\n"
+msgstr "l'assignation de high et low dans a pris %.3f\n"
 
 #: gsumm.c:200
 #, c-format
 msgid "gforce eval took %.3f\n"
-msgstr "L'évaluation de gforce a pris %.3f\n"
+msgstr "l'évaluation de gforce a pris %.3f\n"
 
 #: gsumm.c:216
 msgid "gather took ... "
-msgstr "gather a pris ..."
+msgstr "gather a pris ... "
 
 #: gsumm.c:334
 #, c-format
@@ -4127,7 +4127,7 @@ msgstr ""
 #: gsumm.c:584
 #, c-format
 msgid "This gmean took (narm=%s) ... "
-msgstr "Ce gmean a pris (narm=%s) ..."
+msgstr "Ce gmean a pris (narm=%s) ... "
 
 #: gsumm.c:619 gsumm.c:676
 #, c-format
@@ -4265,7 +4265,7 @@ msgid ""
 msgstr ""
 "Erreur interne : type invalide pour gshift(). Cela aurait dû être détecté "
 "auparavant. Veuillez signaler ce problème au gestionnaire de tickets (issue "
-"tracker) de data.table."
+"tracker) de data.table"
 
 #: gsumm.c:1207
 msgid "Internal error: n must be integer"
@@ -4299,7 +4299,7 @@ msgid ""
 msgstr ""
 "Erreur interne : type invalide pour convertDate(). Cela aurait dû être "
 "détecté auparavant. Veuillez signaler ce problème au gestionnaire de tickets "
-"(issue tracker) de data.table."
+"(issue tracker) de data.table"
 
 #: idatetime.c:142
 msgid ""
@@ -4308,7 +4308,7 @@ msgid ""
 msgstr ""
 "Erreur interne : type invalide pour convertDate. Cela aurait dû être détecté "
 "auparavant. Veuillez signaler ce problème au gestionnaire de tickets (issue "
-"tracker) de data.table."
+"tracker) de data.table"
 
 #: ijoin.c:22 ijoin.c:243
 msgid ""
@@ -4317,7 +4317,7 @@ msgid ""
 msgstr ""
 "Erreur interne : valeur invalide pour \"mult\" .  Ce problème aurait dû être "
 "détecté auparavant. Veuillez signaler ce problème au gestionnaire de tickets "
-"(issue tracker) de data.table."
+"(issue tracker) de data.table"
 
 #: ijoin.c:29 ijoin.c:250
 msgid ""
@@ -4326,7 +4326,7 @@ msgid ""
 msgstr ""
 "Erreur interne : valeur invalide pour 'type' . Ce problème aurait dû être "
 "détecté auparavant. Veuillez signaler ce problème au gestionnaire de tickets "
-"(issue tracker) de data.table."
+"(issue tracker) de data.table"
 
 #: ijoin.c:56 ijoin.c:121
 #, c-format
