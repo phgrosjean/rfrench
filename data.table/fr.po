@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-07-15 16:52+0200\n"
+"PO-Revision-Date: 2024-07-16 10:18+0200\n"
 "Last-Translator: Elise Maigné <elise.maigne@inrae.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -2454,80 +2454,76 @@ msgstr ""
 "activé après le dernier espace non blanc."
 
 #: fread.c:1575
-#, fuzzy, c-format
+#, c-format
 msgid "  Moved forward to first non-blank line (%d)\n"
-msgstr "  Avance à la première ligne non vide (%d)\n"
+msgstr "  A avancé à la première ligne non vide (%d)\n"
 
 #: fread.c:1576
-#, fuzzy, c-format
+#, c-format
 msgid "  Positioned on line %d starting: <<%s>>\n"
 msgstr "  Positionné sur la ligne %d à partir de : <<%s>>\n"
 
 #: fread.c:1594
-#, fuzzy
 msgid "[06] Detect separator, quoting rule, and ncolumns\n"
-msgstr "[06] Détecter le séparateur, la règle de citation et les ncolonnes\n"
+msgstr ""
+"[06] Détecte le séparateur, met entre guillemets de ‘rule’ et ‘ncolumns’\n"
 
 #: fread.c:1598
-#, fuzzy
 msgid "  sep='\\n' passed in meaning read lines as single character column\n"
 msgstr ""
 "  sep='\\n' passé dans le sens de lire les lignes comme une colonne d'un "
 "seul caractère\n"
 
 #: fread.c:1617
-#, fuzzy
 msgid "  Detecting sep automatically ...\n"
-msgstr "  Détection automatique de la sep ...\n"
+msgstr "  Détection automatique du séparateur ...\n"
 
 #: fread.c:1624
-#, fuzzy, c-format
+#, c-format
 msgid "  Using supplied sep '%s'\n"
 msgstr "  Utilisation de l'espacement fourni '%s'\n"
 
 #: fread.c:1658
-#, fuzzy, c-format
+#, c-format
 msgid "  with %d fields using quote rule %d\n"
-msgstr "  avec des champs %d en utilisant la règle de citation %d\n"
+msgstr "  avec des champs %d en utilisant la règle des guillemets %d\n"
 
 #: fread.c:1708
-#, fuzzy, c-format
+#, c-format
 msgid "  with %d lines of %d fields using quote rule %d\n"
 msgstr ""
 "  avec %d lignes de %d champs en utilisant la règle des guillemets %d\n"
 
 #: fread.c:1715
-#, fuzzy
 msgid ""
 "  No sep and quote rule found a block of 2x2 or greater. Single column "
 "input.\n"
 msgstr ""
-"  Aucune règle de séparation et de citation n'a été trouvée dans un bloc de "
-"2 x 2 ou plus. Saisie d'une seule colonne.\n"
+"  Aucune règle de séparateur et de guillemets n'a été trouvée dans un bloc "
+"de taille 2 x 2 ou plus. Saisie d'une seule colonne.\n"
 
 #: fread.c:1731
-#, fuzzy
 msgid ""
 "Single column input contains invalid quotes. Self healing only effective "
 "when ncol>1"
 msgstr ""
 "La saisie d'une seule colonne contient des guillemets non valides. L'auto-"
-"guérison n'est effective que lorsque ncol>1"
+"réparation n'est effective que lorsque ncol>1"
 
 #: fread.c:1736
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Found and resolved improper quoting in first %d rows. If the fields are not "
 "quoted (e.g. field separator does not appear within any field), try "
 "quote=\"\" to avoid this warning."
 msgstr ""
-"L'erreur de citation a été détectée et résolue dans les %d premières lignes. "
-"Si les champs ne sont pas entre guillemets (par exemple, le séparateur de "
-"champ n'apparaît dans aucun champ), essayez quote=\"\" pour éviter cet "
-"avertissement."
+"Une erreur de guillemets a été détectée et résolue dans les %d premières "
+"lignes. Si les champs ne sont pas entre guillemets (par exemple, le "
+"séparateur de champ n'apparaît dans aucun champ), essayez quote=\"\" pour "
+"éviter cet avertissement."
 
 #: fread.c:1752
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error: ncol==%d line==%d after detecting sep, ncol and first line"
 msgstr ""
@@ -2535,33 +2531,33 @@ msgstr ""
 "ligne"
 
 #: fread.c:1755
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: first line has field count %d but expecting %d"
 msgstr ""
-"Erreur interne : la première ligne a un nombre de champs %d mais attend %d"
+"Erreur interne : la première ligne a un nombre %d de champs mais %d est "
+"attendu"
 
 #: fread.c:1757
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  Detected %d columns on line %d. This line is either column names or first "
 "data row. Line starts as: <<%s>>\n"
 msgstr ""
 "  Détection de %d colonnes sur la ligne %d. Cette ligne est soit le nom des "
-"colonnes, soit la première ligne de données. La ligne commence comme suit : "
+"colonnes, soit la première ligne des données. La ligne commence comme suit : "
 "<<%s>>\n"
 
 #: fread.c:1759
-#, fuzzy, c-format
+#, c-format
 msgid "  Quote rule picked = %d\n"
-msgstr "  Règle de citation choisie = %d\n"
+msgstr "  Règle de guillemets choisie = %d\n"
 
 #: fread.c:1760
-#, fuzzy, c-format
+#, c-format
 msgid "  fill=%s and the most number of columns found is %d\n"
 msgstr "  fill=%s et le plus grand nombre de colonnes trouvées est %d\n"
 
 #: fread.c:1766
-#, fuzzy
 msgid ""
 "This file is very unusual: it's one single column, ends with 2 or more end-"
 "of-line (representing several NA at the end), and is a multiple of 4096, too."
@@ -2571,56 +2567,53 @@ msgstr ""
 "fin), et est également un multiple de 4096."
 
 #: fread.c:1767
-#, fuzzy, c-format
+#, c-format
 msgid "  Copying file in RAM. %s\n"
 msgstr "  Copie du fichier dans la RAM. %s\n"
 
 #: fread.c:1773
-#, fuzzy
 msgid ""
 "  1-column file ends with 2 or more end-of-line. Restoring last eol using "
 "extra byte in cow page.\n"
 msgstr ""
 "  un fichier à 1 colonne se termine par 2 fins de ligne ou plus. "
 "Restauration de la dernière ligne en utilisant un octet supplémentaire dans "
-"la page des vaches.\n"
+"la page ‘Copy-On-Write’.\n"
 
 #: fread.c:1792
-#, fuzzy
 msgid ""
 "[07] Detect column types, good nrow estimate and whether first row is column "
 "names\n"
 msgstr ""
-"[07] Détecter les types de colonnes, une bonne estimation des nrows et si la "
+"[07] Détecte les types des colonnes, une bonne estimation de nrows et si la "
 "première ligne est constituée de noms de colonnes\n"
 
 #: fread.c:1793
-#, fuzzy, c-format
+#, c-format
 msgid "  'header' changed by user from 'auto' to %s\n"
 msgstr "  'header' changé par l'utilisateur de 'auto' à %s\n"
 
 #: fread.c:1797
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to allocate 2 x %d bytes for type and tmpType: %s"
 msgstr "Échec de l'allocation de 2 x %d octets pour le type et tmpType : %s"
 
 #: fread.c:1818
-#, fuzzy, c-format
+#, c-format
 msgid "  Number of sampling jump points = %d because "
 msgstr "  Nombre de points de saut d'échantillonnage = %d car"
 
 #: fread.c:1819
-#, fuzzy, c-format
+#, c-format
 msgid "nrow limit (%<PRIu64>) supplied\n"
 msgstr "limite nrow (%<PRIu64>) fournie\n"
 
 #: fread.c:1820
-#, fuzzy
 msgid "jump0size==0\n"
 msgstr "jump0size==0\n"
 
 #: fread.c:1821
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "(%<PRIu64> bytes from row 1 to eof) / (2 * %<PRIu64> jump0size) == "
 "%<PRIu64>\n"
@@ -2629,66 +2622,62 @@ msgstr ""
 "%<PRIu64>\n"
 
 #: fread.c:1859
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  A line with too-%s fields (%d/%d) was found on line %d of sample jump %d. "
 "%s\n"
 msgstr ""
-"  Une ligne avec des champs trop %s (%d/%d) a été trouvée sur la ligne %d du "
+"  Une ligne avec trop de champs %s (%d/%d) a été trouvée sur la ligne %d du "
 "saut d'échantillon %d. %s\n"
 
 #: fread.c:1860
-#, fuzzy
 msgid "few"
 msgstr "peu"
 
 #: fread.c:1860
-#, fuzzy
 msgid "many"
 msgstr "beaucoup"
 
 #: fread.c:1860
-#, fuzzy
 msgid ""
 "Most likely this jump landed awkwardly so type bumps here will be skipped."
 msgstr ""
-"Il est probable que ce saut ait atterri maladroitement, donc les bosses de "
-"type ici seront sautées."
+"Il est probable que ce saut ait atterri maladroitement, donc le type ‘’bumps "
+"ici seront sautées."
 
 #: fread.c:1886
-#, fuzzy, c-format
+#, c-format
 msgid "  Type codes (jump %03d)    : %s  Quote rule %d\n"
-msgstr "  Codes de type (saut %03d) : %s Règle de citation %d\n"
+msgstr "  Codes de type (saut %03d) : %s  guillemets %d\n"
 
 #: fread.c:1898
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  'header' determined to be true due to column %d containing a string on row "
 "1 and a lower type (%s) in the rest of the %<PRId64> sample rows\n"
 msgstr ""
-"  la colonne %d contient une chaîne de caractères à la ligne 1 et un type "
-"inférieur (%s) dans le reste des lignes de l'échantillon %<PRId64> \n"
+"  ‘header’  est TRUE parce que la colonne %d contient une chaîne de "
+"caractères à la ligne 1 et un type inférieur (%s) dans le reste des lignes "
+"de l'échantillon %<PRId64> \n"
 
 #: fread.c:1910
-#, fuzzy
 msgid ""
 "Internal error: row before first data row has the same number of fields but "
 "we're not using it."
 msgstr ""
-"Erreur interne : la ligne précédant la première ligne de données a le même "
+"Erreur interne : la ligne précédant la première ligne des données a le même "
 "nombre de champs mais nous ne l'utilisons pas."
 
 #: fread.c:1911
-#, fuzzy
 msgid ""
 "Internal error: ch!=pos after counting fields in the line before the first "
 "data row."
 msgstr ""
 "Erreur interne : ch!=pos après avoir compté les champs de la ligne précédant "
-"la première ligne de données."
+"la première ligne des données."
 
 #: fread.c:1912
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Types in 1st data row match types in 2nd data row but previous row has %d "
 "fields. Taking previous row as column names."
@@ -2698,7 +2687,7 @@ msgstr ""
 "Prendre la ligne précédente comme nom de colonne."
 
 #: fread.c:1915
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Detected %d column names but the data has %d columns (i.e. invalid file). "
 "Added %d extra default column name%s\n"
@@ -2708,24 +2697,21 @@ msgstr ""
 "défaut%s\n"
 
 #: fread.c:1916
-#, fuzzy
 msgid ""
 " for the first column which is guessed to be row names or an index. Use "
 "setnames() afterwards if this guess is not correct, or fix the file write "
 "command that created the file to create a valid file."
 msgstr ""
-" pour la première colonne qui est supposée être un nom de ligne ou un index. "
-"Utilisez setnames() par la suite si cette supposition n'est pas correcte, ou "
-"corrigez la commande d'écriture du fichier qui a créé le fichier pour créer "
-"un fichier valide."
+" pour la première colonne qui est supposée être un nom de ligne ou un "
+"indice. Utilisez setnames() par la suite si cette supposition n'est pas "
+"correcte, ou corrigez la commande d'écriture du fichier qui a créé le "
+"fichier pour créer un fichier valide."
 
 #: fread.c:1916
-#, fuzzy
 msgid "s at the end."
-msgstr "à la fin."
+msgstr "’s’ à la fin."
 
 #: fread.c:1918
-#, fuzzy
 msgid ""
 "Internal error: fill=true but there is a previous row which should already "
 "have been filled."
@@ -2734,7 +2720,7 @@ msgstr ""
 "dû être remplie."
 
 #: fread.c:1919
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Detected %d column names but the data has %d columns. Filling rows "
 "automatically. Set fill=TRUE explicitly to avoid this warning.\n"
@@ -2744,12 +2730,12 @@ msgstr ""
 "éviter cet avertissement.\n"
 
 #: fread.c:1923
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to realloc 2 x %d bytes for type and tmpType: %s"
 msgstr "Échec de la réallocation de 2 x %d octets pour type et tmpType : %s"
 
 #: fread.c:1943
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  'header' determined to be %s because there are%s number fields in the "
 "first and only row\n"
@@ -2758,12 +2744,10 @@ msgstr ""
 "numériques %s dans la première et unique ligne\n"
 
 #: fread.c:1943
-#, fuzzy
 msgid " no"
 msgstr " non"
 
 #: fread.c:1946
-#, fuzzy
 msgid ""
 "  'header' determined to be true because all columns are type string and a "
 "better guess is not possible\n"
@@ -2772,28 +2756,27 @@ msgstr ""
 "string et qu'une meilleure estimation n'est pas possible\n"
 
 #: fread.c:1948
-#, fuzzy
 msgid ""
 "  'header' determined to be false because there are some number columns and "
 "those columns do not have a string field at the top of them\n"
 msgstr ""
 "  'header' déterminé comme étant faux parce qu'il y a des colonnes de "
-"nombres et que ces colonnes n'ont pas de champ de type 'string' au sommet de "
+"nombres et que ces colonnes n'ont pas de champ de type 'string' en haut de "
 "celles-ci\n"
 
 #: fread.c:1964
-#, fuzzy, c-format
+#, c-format
 msgid "  Type codes (first row)   : %s  Quote rule %d\n"
-msgstr "  Codes de type (première ligne) : %s Règle du devis %d\n"
+msgstr "  Codes de type (première ligne) : %s Règle du guillemets %d\n"
 
 #: fread.c:1973
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  All rows were sampled since file is small so we know nrow=%<PRIu64> "
 "exactly\n"
 msgstr ""
 "  Toutes les lignes ont été échantillonnées car le fichier est petit et nous "
-"savons donc que nrow=%<PRIu64> est exact\n"
+"savons exactement que nrow=%<PRIu64> \n"
 
 #: fread.c:1985 fread.c:1992
 #, fuzzy
