@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-07-18 09:24+0200\n"
+"PO-Revision-Date: 2024-07-18 09:27+0200\n"
 "Last-Translator: Elise Maigné <elise.maigne@inrae.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -3888,7 +3888,7 @@ msgid ""
 "can write list columns containing items which are atomic vectors of type "
 "logical, integer, integer64, double, complex and character."
 msgstr ""
-"La ligne %<PRId64> de la colonne de liste est de type '%s' - pas encore "
+"La ligne %<PRId64> de la colonne de type list est de type '%s' - pas encore "
 "implémenté. fwrite() peut écrire des colonnes de liste contenant des "
 "éléments qui sont des vecteurs atomiques de type logique, entier, integer64, "
 "double, complexe et caractère."
@@ -3899,7 +3899,7 @@ msgid ""
 "Internal error: row %<PRId64> of list column has no max length method "
 "implemented"
 msgstr ""
-"Erreur interne : la ligne %<PRId64> de la colonne de liste n'a pas de "
+"Erreur interne : la ligne %<PRId64> de la colonne de type list n'a pas de "
 "méthode implémentée pour calculer la taille maximale"
 
 #: fwriteR.c:176
@@ -3940,7 +3940,7 @@ msgid ""
 "No list columns are present. Setting sep2='' otherwise quote='auto' would "
 "quote fields containing sep2.\n"
 msgstr ""
-"Aucune colonne de liste n'est présente. Si l'on définit sep2='' ou "
+"Aucune colonne de type list n'est présente. Si l'on définit sep2='' ou "
 "quote='auto', les champs contenant sep2 seront mis entre guillemets.\n"
 
 #: fwriteR.c:286
@@ -3951,7 +3951,7 @@ msgid ""
 msgstr ""
 "Si quote='auto', les champs seront avec des guillemets si le champ contient "
 "soit sep ('%c') soit sep2 ('%c') parce que la colonne %d est une colonne de "
-"liste.\n"
+"type list.\n"
 
 #: fwriteR.c:290
 #, c-format
@@ -3960,7 +3960,7 @@ msgid ""
 "list column."
 msgstr ""
 "sep ('%c'), sep2 ('%c') et dec ('%c') doivent tous être différents. La "
-"colonne %d est une colonne de liste."
+"colonne %d est une colonne de type list."
 
 #: gsumm.c:45 gsumm.c:46 gsumm.c:47
 #, c-format
@@ -4698,7 +4698,7 @@ msgid ""
 msgstr ""
 "La colonne %d ['%s'] de l'élément %d a une longueur de 0. Cette colonne (et "
 "les %d autres %s similaires) a été remplie avec NA (NULL pour les colonnes "
-"de liste) afin d'uniformiser chaque élément."
+"de type list) afin d'uniformiser chaque élément."
 
 #: rbindlist.c:61
 #, c-format
@@ -4770,8 +4770,8 @@ msgid ""
 "with NA (NULL for list columns), or use.names=FALSE to ignore column names.%s"
 msgstr ""
 "La colonne %d ['%s'] de l'élément %d est manquante dans l'élément %d. "
-"Utilisez fill=TRUE pour remplir avec NA (NULL pour les colonnes de liste), "
-"ou use.names=FALSE pour ignorer les noms de colonnes.%s"
+"Utilisez fill=TRUE pour remplir avec NA (NULL pour les colonnes de type "
+"list), ou use.names=FALSE pour ignorer les noms de colonnes.%s"
 
 #: rbindlist.c:217
 #, c-format
