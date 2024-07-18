@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-07-16 10:18+0200\n"
+"PO-Revision-Date: 2024-07-18 09:24+0200\n"
 "Last-Translator: Elise Maigné <elise.maigne@inrae.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.4.3\n"
 
 #: assign.c:7
 msgid "Internal error: finalizer hasn't received an ExternalPtr"
@@ -479,9 +479,9 @@ msgid ""
 "RHS for item %d has been duplicated because NAMED==%d MAYBE_SHARED==%d, but "
 "then is being plonked. length(values)==%d; length(cols)==%d)\n"
 msgstr ""
-"Le membre de droite (RHS) pour l'élément %d a été dupliqué parce que "
-"NAMED==%d MAYBE_SHARED==%d, mais il est ensuite remplacé (plonk). "
-"length(values)==%d ; length(cols)==%d)\n"
+"Le membre de droite (RHS) pour l'élément %d a été dupliqué parce que NAMED=="
+"%d MAYBE_SHARED==%d, mais il est ensuite remplacé (plonk). length(values)=="
+"%d ; length(cols)==%d)\n"
 
 #: assign.c:509
 #, c-format
@@ -729,9 +729,8 @@ msgstr ""
 #: between.c:12
 #, c-format
 msgid ""
-"Incompatible vector lengths: length(x)==%d length(lower)==%d "
-"length(upper)==%d. Each should be either length 1 or the length of the "
-"longest."
+"Incompatible vector lengths: length(x)==%d length(lower)==%d length(upper)=="
+"%d. Each should be either length 1 or the length of the longest."
 msgstr ""
 "Longueurs de vecteurs incompatibles : length(x)==%d length(lower)==%d "
 "length(upper)==%d. Chaque vecteur doit avoir la longueur 1 ou la longueur du "
@@ -1388,16 +1387,16 @@ msgstr ""
 msgid ""
 "Length of 'no' is %<PRId64> but must be 1 or length of 'test' (%<PRId64>)."
 msgstr ""
-"La longueur de 'no' est %<PRId64> mais doit être 1 ou la longueur de 'test' "
-"(%<PRId64>)."
+"La longueur de 'no' est %<PRId64> mais doit être 1 ou la longueur de "
+"'test' (%<PRId64>)."
 
 #: fifelse.c:28
 #, c-format
 msgid ""
 "Length of 'na' is %<PRId64> but must be 1 or length of 'test' (%<PRId64>)."
 msgstr ""
-"La longueur de 'na' est %<PRId64> mais doit être 1 ou la longueur de 'test' "
-"(%<PRId64>)."
+"La longueur de 'na' est %<PRId64> mais doit être 1 ou la longueur de "
+"'test' (%<PRId64>)."
 
 #: fifelse.c:46
 #, c-format
@@ -1725,8 +1724,8 @@ msgid ""
 "coercion.\n"
 msgstr ""
 "les colonnes 'measure.vars' [%s] ne sont pas toutes du même type. Par ordre "
-"hiérarchique, la colonne de valeurs des données transformée sera de type "
-"\"%s\". Toutes les variables de mesure qui ne sont pas de type '%s' seront "
+"hiérarchique, la colonne de valeurs des données transformée sera de type \"%s"
+"\". Toutes les variables de mesure qui ne sont pas de type '%s' seront "
 "également converties automatiquement. Consultez DETAILS dans ?melt.data."
 "table pour en savoir plus sur la conversion automatique.\n"
 
@@ -2514,8 +2513,8 @@ msgstr ""
 #, c-format
 msgid ""
 "Found and resolved improper quoting in first %d rows. If the fields are not "
-"quoted (e.g. field separator does not appear within any field), try "
-"quote=\"\" to avoid this warning."
+"quoted (e.g. field separator does not appear within any field), try quote="
+"\"\" to avoid this warning."
 msgstr ""
 "Une erreur de guillemets a été détectée et résolue dans les %d premières "
 "lignes. Si les champs ne sont pas entre guillemets (par exemple, le "
@@ -2693,8 +2692,8 @@ msgid ""
 "Added %d extra default column name%s\n"
 msgstr ""
 "A détecté %d noms de colonnes mais les données ont %d colonnes (c.-à-d. "
-"fichier invalide). Ajout de %d noms de colonnes supplémentaires par "
-"défaut%s\n"
+"fichier invalide). Ajout de %d noms de colonnes supplémentaires par défaut"
+"%s\n"
 
 #: fread.c:1916
 msgid ""
@@ -2922,8 +2921,8 @@ msgstr ""
 #: fread.c:2436
 #, fuzzy, c-format
 msgid ""
-"Internal error: invalid head position. jump=%d, headPos=%p, "
-"thisJumpStart=%p, sof=%p"
+"Internal error: invalid head position. jump=%d, headPos=%p, thisJumpStart="
+"%p, sof=%p"
 msgstr ""
 "Erreur interne : position de la tête non valide. jump=%d, headPos=%p, "
 "thisJumpStart=%p, sof=%p"
@@ -2931,8 +2930,8 @@ msgstr ""
 #: fread.c:2509
 #, fuzzy, c-format
 msgid ""
-"  Too few rows allocated. Allocating additional %<PRIu64> rows (now "
-"nrows=%<PRIu64>) and continue reading from jump %d\n"
+"  Too few rows allocated. Allocating additional %<PRIu64> rows (now nrows="
+"%<PRIu64>) and continue reading from jump %d\n"
 msgstr ""
 "  Trop peu de lignes allouées. Allocation de %<PRIu64> lignes "
 "supplémentaires (maintenant nrows=%<PRIu64>) et poursuite de la lecture à "
@@ -3239,8 +3238,8 @@ msgstr ""
 #: freadR.c:297
 #, fuzzy, c-format
 msgid ""
-"Column number %d (select[%d]) is negative but should be in the range [1,"
-"ncol=%d]. Consider drop= for column exclusion."
+"Column number %d (select[%d]) is negative but should be in the range [1,ncol="
+"%d]. Consider drop= for column exclusion."
 msgstr ""
 "Le numéro de colonne %d (select[%d]) est négatif mais devrait être compris "
 "dans l'intervalle [1,ncol=%d]. Envisager drop= pour l'exclusion de colonnes."
@@ -3641,8 +3640,8 @@ msgstr "maxBit=%d ; MSBNbits=%d ; shift=%d ; MSBsize=%zu\n"
 #: fsort.c:174
 #, c-format
 msgid ""
-"counts is %dMB (%d pages per nBatch=%d, batchSize=%<PRIu64>, "
-"lastBatchSize=%<PRIu64>)\n"
+"counts is %dMB (%d pages per nBatch=%d, batchSize=%<PRIu64>, lastBatchSize="
+"%<PRIu64>)\n"
 msgstr ""
 "le comptage est %dMB (%d pages par nBatch=%d, batchSize=%<PRIu64>, "
 "lastBatchSize=%<PRIu64>)\n"
@@ -3720,12 +3719,12 @@ msgstr "... "
 #, c-format
 msgid ""
 "\n"
-"args.doRowNames=%d args.rowNames=%p args.rowNameFun=%d doQuote=%d args."
-"nrow=%<PRId64> args.ncol=%d eolLen=%d\n"
+"args.doRowNames=%d args.rowNames=%p args.rowNameFun=%d doQuote=%d args.nrow="
+"%<PRId64> args.ncol=%d eolLen=%d\n"
 msgstr ""
 "\n"
-"args.doRowNames=%d args.rowNames=%p args.rowNameFun=%d doQuote=%d args."
-"nrow=%<PRId64> args.ncol=%d eolLen=%d\n"
+"args.doRowNames=%d args.rowNames=%p args.rowNameFun=%d doQuote=%d args.nrow="
+"%<PRId64> args.ncol=%d eolLen=%d\n"
 
 #: fwrite.c:664
 #, c-format
@@ -3776,7 +3775,7 @@ msgstr ""
 #, c-format
 msgid "Writing bom (%s), yaml (%d characters) and column names (%s) ... "
 msgstr ""
-"Écriture de l'indicateur d'ordre des octets (bom) (%s), yaml (%d caractères) "
+"Écriture de BOM (indicateur d’ordre des octets) (%s), yaml (%d caractères) "
 "et noms de colonnes (%s) ... "
 
 #: fwrite.c:717
@@ -3991,8 +3990,8 @@ msgstr ""
 #: gsumm.c:89
 #, c-format
 msgid ""
-"Internal error: nrow=%d  ngrp=%d  nbit=%d  bitshift=%d  highSize=%zu  "
-"nBatch=%zu  batchSize=%zu  lastBatchSize=%zu\n"
+"Internal error: nrow=%d  ngrp=%d  nbit=%d  bitshift=%d  highSize=%zu  nBatch="
+"%zu  batchSize=%zu  lastBatchSize=%zu\n"
 msgstr ""
 "Erreur interne : nrow=%d ngrp=%d nbit=%d bitshift=%d highSize=%zu nBatch=%zu "
 "batchSize=%zu lastBatchSize=%zu\n"
@@ -5019,7 +5018,7 @@ msgid ""
 "singleton"
 msgstr ""
 "Erreur interne. 'maxArg' est de type '%s', de longueur %d, et devrait être "
-"un singleton entier."
+"un singleton entier"
 
 #: subset.c:137
 msgid "Internal error: allowOverMax must be TRUE/FALSE"
@@ -5125,7 +5124,7 @@ msgid ""
 "result in which to place the names of the input"
 msgstr ""
 "keep.names doit être soit NULL, soit le nom de la première colonne du "
-"résultat dans laquelle placer les noms de l'entrée."
+"résultat dans laquelle placer les noms de l'entrée"
 
 #: transpose.c:19
 msgid "fill must be a length 1 vector, such as the default NA"
@@ -5167,7 +5166,6 @@ msgstr ""
 "L'argument d'entrée 'x' de 'uniqlengths' doit être un vecteur d'entiers"
 
 #: uniqlist.c:152
-#, fuzzy
 msgid ""
 "Input argument 'n' to 'uniqlengths' must be an integer vector of length 1"
 msgstr ""
@@ -5175,19 +5173,18 @@ msgstr ""
 "longueur 1"
 
 #: uniqlist.c:170 uniqlist.c:267
-#, fuzzy
 msgid "cols must be an integer vector with length >= 1"
-msgstr "cols doit être un vecteur entier de longueur >= 1"
+msgstr "cols doit être un vecteur d'entier de longueur >= 1"
 
 #: uniqlist.c:174
-#, fuzzy, c-format
+#, c-format
 msgid "Item %d of cols is %d which is outside the range [1,length(l)=%d]"
 msgstr ""
-"L'élément %d des colonnes est %d, ce qui est en dehors de l'intervalle [1,"
+"L'élément %d de cols est %d, ce qui est en dehors de l'intervalle [1,"
 "length(l)=%d]"
 
 #: uniqlist.c:177
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "All elements to input list must be of same length. Element [%d] has length "
 "%<PRIu64> != length of first element = %<PRIu64>."
@@ -5197,133 +5194,120 @@ msgstr ""
 "%<PRIu64>."
 
 #: uniqlist.c:258
-#, fuzzy
 msgid "Internal error: nestedid was not passed a list length 1 or more"
-msgstr ""
-"Erreur interne : nestedid n'a pas été transmis à une liste de longueur 1 ou "
-"plus"
+msgstr "Erreur interne : nestedid n'a pas reçu une liste de longueur 1 ou plus"
 
 #: uniqlist.c:265
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: nrows[%d]>0 but ngrps==0"
 msgstr "Erreur interne : nrows[%d]>0 mais ngrps==0"
 
 #: uniqlist.c:352
-#, fuzzy
 msgid "x is not a logical vector"
-msgstr "x n'est pas un vecteur logique"
+msgstr "x n'est pas un vecteur de booléens"
 
 #: utils.c:85
-#, fuzzy, c-format
+#, c-format
 msgid "Unsupported type '%s' passed to allNA()"
-msgstr "Type non supporté '%s' passé à allNA()"
+msgstr "Type '%s' non supporté dans allNA()"
 
 #: utils.c:104
-#, fuzzy
 msgid "'x' argument must be data.table compatible"
 msgstr "l'argument 'x' doit être compatible avec data.table"
 
 #: utils.c:122
-#, fuzzy
 msgid ""
 "argument specifying columns is type 'double' and one or more items in it are "
 "not whole integers"
 msgstr ""
-"l'argument spécifiant les colonnes est de type \"double\" et un ou plusieurs "
-"de ses éléments ne sont pas des entiers entiers"
+"Un argument spécifiant les colonnes est de type 'double' et un ou plusieurs "
+"éléments ne sont pas des entiers"
 
 #: utils.c:128
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "argument specifying columns received non-existing column(s): cols[%d]=%d"
 msgstr ""
-"l'argument spécifiant les colonnes a reçu des colonnes inexistantes : "
+"L'argument spécifiant les colonnes a reçu des colonnes inexistantes : "
 "cols[%d]=%d"
 
 #: utils.c:133
-#, fuzzy
 msgid "'x' argument data.table has no names"
 msgstr "l'argument 'x' de data.table n'a pas de nom"
 
 #: utils.c:138
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "argument specifying columns received non-existing column(s): cols[%d]='%s'"
 msgstr ""
-"l'argument spécifiant les colonnes a reçu des colonnes inexistantes : "
+"L'argument spécifiant les colonnes a reçu des colonnes inexistantes : "
 "cols[%d]='%s'"
 
 #: utils.c:141
-#, fuzzy
 msgid "argument specifying columns must be character or numeric"
 msgstr "l'argument spécifiant les colonnes doit être un caractère ou un nombre"
 
 #: utils.c:144
-#, fuzzy
 msgid "argument specifying columns received duplicate column(s)"
-msgstr "argument spécifiant les colonnes reçues colonne(s) dupliquée(s)"
+msgstr ""
+"L'argument spécifiant les colonnes a reçu une ou plusieurs colonnes "
+"dupliquée(s)"
 
 #: utils.c:229
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: type '%s' not supported in %s"
 msgstr "Erreur interne : le type '%s' n'est pas pris en charge dans %s"
 
 #: utils.c:234
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: copyAsPlain returning ALTREP for type '%s'"
 msgstr "Erreur interne : copyAsPlain retourne ALTREP pour le type '%s'"
 
 #: utils.c:278
-#, fuzzy, c-format
+#, c-format
 msgid "Found and copied %d column%s with a shared memory address\n"
 msgstr ""
 "Trouvé et copié la colonne %d %s avec une adresse de mémoire partagée\n"
 
 #: utils.c:358
-#, fuzzy
 msgid "'x' is not atomic"
-msgstr "x\" n'est pas atomique"
+msgstr "x\" n'est pas un vecteur atomique"
 
 #: utils.c:360
-#, fuzzy
 msgid "'x' must not be matrix or array"
 msgstr "x\" ne doit pas être une matrice ou un tableau"
 
 #: utils.c:362
-#, fuzzy
 msgid "input must not be matrix or array"
 msgstr "l'entrée ne doit pas être une matrice ou un tableau"
 
 #: utils.c:366
-#, fuzzy, c-format
+#, c-format
 msgid "copy=false and input already of expected type and class %s[%s]\n"
 msgstr ""
 "copy=false et l'entrée est déjà du type et de la classe attendus %s[%s]\n"
 
 #: utils.c:373
-#, fuzzy, c-format
+#, c-format
 msgid "Coercing %s[%s] into %s[%s]\n"
-msgstr "Coercition de %s[%s] en %s[%s]\n"
+msgstr "Conversion de %s[%s] en %s[%s]\n"
 
 #: utils.c:389
-#, fuzzy, c-format
+#, c-format
 msgid "zlib header files were not found when data.table was compiled"
 msgstr ""
-"les fichiers d'en-tête zlib n'ont pas été trouvés lors de la compilation de "
-"data.table"
+"les fichiers d'en-tête de zlib n'ont pas été trouvés lors de la compilation "
+"de data.table"
 
 #: vecseq.c:14
-#, fuzzy
 msgid "len must be an integer vector"
-msgstr "len doit être un vecteur entier"
+msgstr "len doit être un vecteur d'entier"
 
 #: vecseq.c:15
-#, fuzzy
 msgid "x and len must be the same length"
 msgstr "x et len doivent être de même longueur"
 
 #: vecseq.c:21
-#, fuzzy
 msgid ""
 "Join results in more than 2^31 rows (internal vecseq reached physical "
 "limit). Very likely misspecified join. Check for duplicate key values in i "
@@ -5332,13 +5316,13 @@ msgid ""
 "Otherwise, please search for this error message in the FAQ, Wiki, Stack "
 "Overflow and data.table issue tracker for advice."
 msgstr ""
-"La jointure donne plus de 2^31 lignes (le vecseq interne a atteint la limite "
-"physique). Très probablement une mauvaise spécification de la jointure. "
-"Vérifiez s'il y a des valeurs de clés dupliquées dans i, chacune d'entre "
-"elles rejoignant le même groupe dans x, encore et encore. Si c'est le cas, "
-"essayez by=.EACHI pour exécuter j pour chaque groupe afin d'éviter "
-"l'allocation importante. Sinon, recherchez ce message d'erreur dans la FAQ, "
-"le Wiki, Stack Overflow et le data.table issue tracker pour obtenir des "
+"La jointure donne plus de 2^31 lignes (vecseq a atteint la limite physique). "
+"Très probablement une mauvaise spécification de la jointure. Vérifiez s'il y "
+"a des valeurs de clés dupliquées dans i, chacune d'entre elles rejoignant le "
+"même groupe dans x, encore et encore. Si c'est correct, essayez by=.EACHI "
+"pour exécuter j pour chaque groupe afin d'éviter une allocation importante. "
+"Sinon, recherchez ce message d'erreur dans la FAQ, le Wiki, Stack Overflow "
+"et le gestionnaire de tickets (issue tracker) de data.table pour obtenir des "
 "conseils."
 
 #: vecseq.c:25
@@ -5350,7 +5334,7 @@ msgid "clamp must be positive"
 msgstr "clamp doit être positive"
 
 #: vecseq.c:28
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Join results in %d rows; more than %d = nrow(x)+nrow(i). Check for duplicate "
 "key values in i each of which join to the same group in x over and over "
@@ -5359,21 +5343,19 @@ msgid ""
 "cartesian=TRUE. Otherwise, please search for this error message in the FAQ, "
 "Wiki, Stack Overflow and data.table issue tracker for advice."
 msgstr ""
-"La jointure donne %d lignes ; plus de %d = nrow(x)+nrow(i). Vérifier qu'il "
-"n'y a pas de valeurs de clés dupliquées dans i, chacune d'entre elles "
-"rejoignant le même groupe dans x, encore et encore. Si c'est le cas, essayez "
-"by=.EACHI pour exécuter j pour chaque groupe afin d'éviter une allocation "
-"trop importante. Si vous êtes sûr de vouloir continuer, relancez avec allow."
-"cartesian=TRUE. Sinon, recherchez ce message d'erreur dans la FAQ, le Wiki, "
-"Stack Overflow et le data.table issue tracker pour obtenir des conseils."
+"La jointure donne %d lignes ; plus de %d = nrow(x)+nrow(i). Vérifiez s'il y "
+"a des valeurs de clés dupliquées dans i, chacune d'entre elles rejoignant le "
+"même groupe dans x, encore et encore. Si c'est correct, essayez by=.EACHI "
+"pour exécuter j pour chaque groupe afin d'éviter une allocation importante. "
+"Sinon, recherchez ce message d'erreur dans la FAQ, le Wiki, Stack Overflow "
+"et le gestionnaire de tickets (issue tracker) de data.table pour obtenir des "
+"conseils."
 
 #: wrappers.c:11
-#, fuzzy
 msgid "Attribute name must be a character vector of length 1"
 msgstr "Le nom de l'attribut doit être un vecteur de caractères de longueur 1"
 
 #: wrappers.c:16
-#, fuzzy
 msgid ""
 "Internal structure doesn't seem to be a list. Can't set class to be 'data."
 "table' or 'data.frame'. Use 'as.data.table()' or 'as.data.frame()' methods "
@@ -5384,31 +5366,29 @@ msgstr ""
 "méthodes 'as.data.table()' ou 'as.data.frame()'."
 
 #: wrappers.c:66
-#, fuzzy
 msgid "First argument to setlistelt must be a list()"
-msgstr "Le premier argument de setlistelt doit être une liste()"
+msgstr "Le premier argument de setlistelt doit être de type list()"
 
 #: wrappers.c:67
-#, fuzzy
 msgid "Second argument to setlistelt must a length 1 integer vector"
 msgstr ""
-"Le deuxième argument de setlistelt doit être un vecteur entier de longueur 1"
+"Le deuxième argument de setlistelt doit être un vecteur d'entier de longueur "
+"1"
 
 #: wrappers.c:69
-#, fuzzy, c-format
+#, c-format
 msgid "i (%d) is outside the range of items [1,%d]"
-msgstr "i (%d) est en dehors de la plage des éléments [1,%d]"
+msgstr "i (%d) est en dehors de l'intervalle des éléments [1,%d]"
 
 #: wrappers.c:91
-#, fuzzy
 msgid "x isn't a VECSXP"
 msgstr "x n'est pas un VECSXP"
 
 #: wrappers.c:106
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "dim.data.table expects a data.table as input (which is a list), but seems to "
 "be of type %s"
 msgstr ""
-"dim.data.table attend un data.table en entrée (qui est une liste), mais "
+"dim.data.table attend un data.table en entrée (qui est de type liste), mais "
 "semble être de type %s"
