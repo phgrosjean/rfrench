@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-07-18 09:27+0200\n"
+"PO-Revision-Date: 2024-07-24 12:19+0200\n"
 "Last-Translator: Elise Maigné <elise.maigne@inrae.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.3\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: assign.c:7
 msgid "Internal error: finalizer hasn't received an ExternalPtr"
@@ -479,9 +479,9 @@ msgid ""
 "RHS for item %d has been duplicated because NAMED==%d MAYBE_SHARED==%d, but "
 "then is being plonked. length(values)==%d; length(cols)==%d)\n"
 msgstr ""
-"Le membre de droite (RHS) pour l'élément %d a été dupliqué parce que NAMED=="
-"%d MAYBE_SHARED==%d, mais il est ensuite remplacé (plonk). length(values)=="
-"%d ; length(cols)==%d)\n"
+"Le membre de droite (RHS) pour l'élément %d a été dupliqué parce que "
+"NAMED==%d MAYBE_SHARED==%d, mais il est ensuite remplacé (plonk). "
+"length(values)==%d ; length(cols)==%d)\n"
 
 #: assign.c:509
 #, c-format
@@ -729,8 +729,9 @@ msgstr ""
 #: between.c:12
 #, c-format
 msgid ""
-"Incompatible vector lengths: length(x)==%d length(lower)==%d length(upper)=="
-"%d. Each should be either length 1 or the length of the longest."
+"Incompatible vector lengths: length(x)==%d length(lower)==%d "
+"length(upper)==%d. Each should be either length 1 or the length of the "
+"longest."
 msgstr ""
 "Longueurs de vecteurs incompatibles : length(x)==%d length(lower)==%d "
 "length(upper)==%d. Chaque vecteur doit avoir la longueur 1 ou la longueur du "
@@ -1387,16 +1388,16 @@ msgstr ""
 msgid ""
 "Length of 'no' is %<PRId64> but must be 1 or length of 'test' (%<PRId64>)."
 msgstr ""
-"La longueur de 'no' est %<PRId64> mais doit être 1 ou la longueur de "
-"'test' (%<PRId64>)."
+"La longueur de 'no' est %<PRId64> mais doit être 1 ou la longueur de 'test' "
+"(%<PRId64>)."
 
 #: fifelse.c:28
 #, c-format
 msgid ""
 "Length of 'na' is %<PRId64> but must be 1 or length of 'test' (%<PRId64>)."
 msgstr ""
-"La longueur de 'na' est %<PRId64> mais doit être 1 ou la longueur de "
-"'test' (%<PRId64>)."
+"La longueur de 'na' est %<PRId64> mais doit être 1 ou la longueur de 'test' "
+"(%<PRId64>)."
 
 #: fifelse.c:46
 #, c-format
@@ -1724,8 +1725,8 @@ msgid ""
 "coercion.\n"
 msgstr ""
 "les colonnes 'measure.vars' [%s] ne sont pas toutes du même type. Par ordre "
-"hiérarchique, la colonne de valeurs des données transformée sera de type \"%s"
-"\". Toutes les variables de mesure qui ne sont pas de type '%s' seront "
+"hiérarchique, la colonne de valeurs des données transformée sera de type "
+"\"%s\". Toutes les variables de mesure qui ne sont pas de type '%s' seront "
 "également converties automatiquement. Consultez DETAILS dans ?melt.data."
 "table pour en savoir plus sur la conversion automatique.\n"
 
@@ -2077,7 +2078,7 @@ msgstr ""
 #: frank.c:101 frank.c:234 transpose.c:88
 #, c-format
 msgid "Unsupported column type '%s'"
-msgstr "type de colonne non supporté ‘%s’"
+msgstr "Type de colonne non supporté ‘%s’"
 
 #: frank.c:120
 msgid ""
@@ -2356,7 +2357,7 @@ msgstr ""
 msgid "Input is empty or only contains BOM or terminal control characters"
 msgstr ""
 "L'entrée est vide ou ne contient que le BOM (indicateur d’ordre des octets) "
-"ou des caractères de séquence d’échappement."
+"ou des caractères de séquence d’échappement"
 
 #: fread.c:1465
 msgid "[04] Arrange mmap to be \\0 terminated\n"
@@ -2402,7 +2403,7 @@ msgstr ""
 "Ce fichier est très inhabituel : il se termine brusquement sans nouvelle "
 "ligne finale et sa taille est un multiple de 4096 octets. Veuillez terminer "
 "correctement la dernière ligne par une nouvelle ligne en utilisant par "
-"exemple 'echo >> file’ pour éviter ce problème"
+"exemple 'echo >> file’ pour éviter ce problème "
 
 #: fread.c:1504
 #, c-format
@@ -2513,8 +2514,8 @@ msgstr ""
 #, c-format
 msgid ""
 "Found and resolved improper quoting in first %d rows. If the fields are not "
-"quoted (e.g. field separator does not appear within any field), try quote="
-"\"\" to avoid this warning."
+"quoted (e.g. field separator does not appear within any field), try "
+"quote=\"\" to avoid this warning."
 msgstr ""
 "Une erreur de guillemets a été détectée et résolue dans les %d premières "
 "lignes. Si les champs ne sont pas entre guillemets (par exemple, le "
@@ -2600,7 +2601,7 @@ msgstr "Échec de l'allocation de 2 x %d octets pour le type et tmpType : %s"
 #: fread.c:1818
 #, c-format
 msgid "  Number of sampling jump points = %d because "
-msgstr "  Nombre de points de saut d'échantillonnage = %d car"
+msgstr "  Nombre de points de saut d'échantillonnage = %d car "
 
 #: fread.c:1819
 #, c-format
@@ -2692,8 +2693,8 @@ msgid ""
 "Added %d extra default column name%s\n"
 msgstr ""
 "A détecté %d noms de colonnes mais les données ont %d colonnes (c.-à-d. "
-"fichier invalide). Ajout de %d noms de colonnes supplémentaires par défaut"
-"%s\n"
+"fichier invalide). Ajout de %d noms de colonnes supplémentaires par "
+"défaut%s\n"
 
 #: fread.c:1916
 msgid ""
@@ -2778,21 +2779,20 @@ msgstr ""
 "savons exactement que nrow=%<PRIu64> \n"
 
 #: fread.c:1985 fread.c:1992
-#, fuzzy
 msgid "  =====\n"
 msgstr "  =====\n"
 
 #: fread.c:1986
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  Sampled %<PRIu64> rows (handled \\n inside quoted fields) at %d jump "
 "points\n"
 msgstr ""
-"  Échantillonné %<PRIu64> lignes (traitées à l'intérieur de champs entre "
-"guillemets) aux points de saut %d \n"
+" %<PRIu64> lignes Échantillonnés (traitées à l'intérieur de champs entre "
+"guillemets) aux %d points de saut \n"
 
 #: fread.c:1987
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  Bytes from first data row on line %d to the end of last row: %<PRIu64>\n"
 msgstr ""
@@ -2800,17 +2800,17 @@ msgstr ""
 "dernière ligne : %<PRIu64>\n"
 
 #: fread.c:1988
-#, fuzzy, c-format
+#, c-format
 msgid "  Line length: mean=%.2f sd=%.2f min=%d max=%d\n"
-msgstr "  Longueur de la ligne : moyenne=%.2f écart-type=%.2f min=%d max=%d\n"
+msgstr "  Longueur de la ligne : mean=%.2f sd=%.2f min=%d max=%d\n"
 
 #: fread.c:1989
-#, fuzzy, c-format
+#, c-format
 msgid "  Estimated number of rows: %<PRIu64> / %.2f = %<PRIu64>\n"
 msgstr "  Nombre estimé de lignes : %<PRIu64> / %.2f = %<PRIu64>\n"
 
 #: fread.c:1990
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  Initial alloc = %<PRIu64> rows (%<PRIu64> + %d%%) using bytes/"
 "max(mean-2*sd,min) clamped between [1.1*estn, 2.0*estn]\n"
@@ -2819,215 +2819,210 @@ msgstr ""
 "octets/max(mean-2*sd,min), avec une limite entre [1.1*estn, 2.0*estn]\n"
 
 #: fread.c:1994
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: sampleLines(%<PRIu64>) > allocnrow(%<PRIu64>)"
 msgstr "Erreur interne : sampleLines(%<PRIu64>) &gt; allocnrow(%<PRIu64>)"
 
 #: fread.c:1998
-#, fuzzy, c-format
+#, c-format
 msgid "  Alloc limited to lower nrows=%<PRIu64> passed in.\n"
-msgstr "  Alloc limité aux nrows inférieurs=%<PRIu64> passé dans.\n"
+msgstr ""
+"  Allocation limitée aux nrows inférieurs=%<PRIu64> passé en argument.\n"
 
 #: fread.c:2010
-#, fuzzy
 msgid "[08] Assign column names\n"
 msgstr "[08] Attribuer des noms de colonnes\n"
 
 #: fread.c:2018
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to allocate %d*%d bytes for column name pointers: %s"
 msgstr ""
 "Impossible d'allouer %d*%d octets pour les pointeurs de noms de colonnes : %s"
 
 #: fread.c:2040
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: reading colnames ending on '%c'"
 msgstr "Erreur interne : lecture des noms de colonnes se terminant par '%c'"
 
 #: fread.c:2058
-#, fuzzy
 msgid "[09] Apply user overrides on column types\n"
 msgstr ""
 "[09] Appliquer les dérogations de l'utilisateur aux types de colonnes\n"
 
 #: fread.c:2062
-#, fuzzy
 msgid "  Cancelled by user: userOverride() returned false."
 msgstr "  Annulé par l'utilisateur : userOverride() a retourné false."
 
 #: fread.c:2072
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to allocate %d bytes for size array: %s"
 msgstr "Échec de l'allocation de %d octets pour la taille du tableau : %s"
 
 #: fread.c:2079
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Attempt to override column %d%s%.*s%s of inherent type '%s' down to '%s' "
 "ignored. Only overrides to a higher type are currently supported. If this "
 "was intended, please coerce to the lower type afterwards."
 msgstr ""
-"Tentative d'annulation de la colonne %d%s%.*s%s du type inhérent '%s' "
-"jusqu'à '%s' ignorée. Seules les dérogations vers un type supérieur sont "
-"actuellement prises en charge. Si c'est ce qui était prévu, veuillez "
-"contraindre le type inférieur par la suite."
+"Tentative de remplacer la colonne %d%s%.*s%s du type inhérent '%s' vers '%s' "
+"ignorée. Seules les remplacements vers un type supérieur sont actuellement "
+"prises en charge. Si c'est ce qui était prévu, veuillez contraindre un type "
+"inférieur par la suite."
 
 #: fread.c:2094
-#, fuzzy, c-format
+#, c-format
 msgid "  After %d type and %d drop user overrides : %s\n"
-msgstr "  Après %d le type et %d la chute, l'utilisateur a la priorité : %s\n"
+msgstr ""
+"  Après %d remplacements de type et %d suppressions par l’utilisateur : %s\n"
 
 #: fread.c:2102
-#, fuzzy
 msgid "[10] Allocate memory for the datatable\n"
 msgstr "[10] Allouer de la mémoire pour le tableau de données\n"
 
 #: fread.c:2103
-#, fuzzy, c-format
+#, c-format
 msgid "  Allocating %d column slots (%d - %d dropped) with %<PRIu64> rows\n"
 msgstr ""
-"  Attribution des emplacements de colonne %d (%d - %d abandonnés) avec % de "
-"lignes<PRIu64> \n"
+"  Attribution des emplacements de colonne %d (%d - %d abandonnés) avec "
+"lignes %<PRIu64> lignes \n"
 
 #: fread.c:2157
-#, fuzzy, c-format
+#, c-format
 msgid "Buffer size %<PRId64> is too large\n"
 msgstr "Taille de la mémoire tampon %<PRId64> est trop grande\n"
 
 #: fread.c:2160
-#, fuzzy
 msgid "[11] Read the data\n"
 msgstr "[11] Lire les données\n"
 
 #: fread.c:2163
-#, fuzzy, c-format
+#, c-format
 msgid "  jumps=[%d..%d), chunk_size=%<PRIu64>, total_size=%<PRIu64>\n"
 msgstr "  jumps=[%d..%d), chunk_size=%<PRIu64>, total_size=%<PRIu64>\n"
 
 #: fread.c:2175
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: Master thread is not thread 0 but thread %d.\n"
 msgstr ""
-"Erreur interne : Le thread maître n'est pas le thread 0 mais le thread %d.\n"
+"Erreur interne : Le thread principal n'est pas le thread 0 mais le thread "
+"%d.\n"
 
 #: fread.c:2386
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Column %d%s%.*s%s bumped from '%s' to '%s' due to <<%.*s>> on row %<PRIu64>\n"
 msgstr ""
-"Colonne %d%s%.*s%s bumped from '%s' to '%s' due to &lt;&lt;%.*s&gt;&gt; on "
-"row %<PRIu64>\n"
+"La colonne %d%s%.*s%s a été augmentée de ‘%s’ à ‘%s’ en raison de <<%.*s>> à "
+"la ligne %<PRIu64>\n"
 
 #: fread.c:2436
-#, fuzzy, c-format
+#, c-format
 msgid ""
-"Internal error: invalid head position. jump=%d, headPos=%p, thisJumpStart="
-"%p, sof=%p"
+"Internal error: invalid head position. jump=%d, headPos=%p, "
+"thisJumpStart=%p, sof=%p"
 msgstr ""
-"Erreur interne : position de la tête non valide. jump=%d, headPos=%p, "
+"Erreur interne : position de tête non valide. jump=%d, headPos=%p, "
 "thisJumpStart=%p, sof=%p"
 
 #: fread.c:2509
-#, fuzzy, c-format
+#, c-format
 msgid ""
-"  Too few rows allocated. Allocating additional %<PRIu64> rows (now nrows="
-"%<PRIu64>) and continue reading from jump %d\n"
+"  Too few rows allocated. Allocating additional %<PRIu64> rows (now "
+"nrows=%<PRIu64>) and continue reading from jump %d\n"
 msgstr ""
 "  Trop peu de lignes allouées. Allocation de %<PRIu64> lignes "
 "supplémentaires (maintenant nrows=%<PRIu64>) et poursuite de la lecture à "
 "partir du saut %d\n"
 
 #: fread.c:2516
-#, fuzzy, c-format
+#, c-format
 msgid "  Restarting team from jump %d. nSwept==%d quoteRule==%d\n"
 msgstr ""
-"  Redémarrage de l'équipe à partir du saut %d. nSwept==%d quoteRule==%d\n"
+"  Redémarrage de ‘team’ à partir du saut %d. nSwept==%d quoteRule==%d\n"
 
 #: fread.c:2536
-#, fuzzy, c-format
+#, c-format
 msgid "  %d out-of-sample type bumps: %s\n"
-msgstr "  %d bosses de type hors échantillon : %s\n"
+msgstr " %d ajustements de type hors échantillon : %s\n"
 
 #: fread.c:2571
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Read %<PRIu64> rows x %d columns from %s file in %02d:%06.3f wall clock "
 "time\n"
 msgstr ""
 "Lire %<PRIu64> lignes x %d colonnes du fichier %s dans %02d:%06.3f heure de "
-"l'horloge murale\n"
+"l'horloge\n"
 
 #: fread.c:2578
-#, fuzzy
 msgid "[12] Finalizing the datatable\n"
 msgstr "[12] Finalisation de la table de données\n"
 
 #: fread.c:2579
-#, fuzzy
 msgid "  Type counts:\n"
-msgstr "  Type de comptage :\n"
+msgstr " Comptage des type :\n"
 
 #: fread.c:2581
-#, fuzzy, c-format
+#, c-format
 msgid "%10d : %-9s '%c'\n"
 msgstr "%10d : %-9s '%c'\n"
 
 #: fread.c:2597
-#, fuzzy, c-format
+#, c-format
 msgid "Discarded single-line footer: <<%s>>"
 msgstr "Pied de page d'une seule ligne supprimé : <<%s>>"
 
 #: fread.c:2602
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Stopped early on line %<PRIu64>. Expected %d fields but found %d. Consider "
 "fill=TRUE and comment.char=. First discarded non-empty line: <<%s>>"
 msgstr ""
-"Arrêt prématuré sur la ligne %<PRIu64>. Il s'attendait à des champs %d mais "
-"a trouvé %d. Considérer fill=TRUE et comment.char=. Première ligne non vide "
-"rejetée : &lt;&lt;%s&gt;&gt"
+"Arrêt prématuré sur la ligne %<PRIu64>.  %d champs attendus mais a trouvé "
+"%d. Considérer fill=TRUE et comment.char=. Première ligne non vide "
+"supprimée : <<%s>>"
 
 #: fread.c:2608
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Found and resolved improper quoting out-of-sample. First healed line "
 "%<PRIu64>: <<%s>>. If the fields are not quoted (e.g. field separator does "
 "not appear within any field), try quote=\"\" to avoid this warning."
 msgstr ""
-"Trouvé et résolu une citation incorrecte hors de l'échantillon. Première "
-"ligne guérie %<PRIu64>: &lt;&lt;%s&gt;&gt;. Si les champs ne sont pas entre "
-"guillemets (par exemple, le séparateur de champ n'apparaît dans aucun "
-"champ), essayez quote=\"\" pour éviter cet avertissement."
+"Une recherche hors de l'échantillon a été trouvé et corrigé. Première ligne "
+"transformée %<PRIu64>: <<%s>>. Si les champs ne sont pas entre guillemets "
+"(par exemple, le séparateur de champ n'apparaît dans aucun champ), essayez "
+"quote=\"\" pour éviter ce message."
 
 #: fread.c:2612
-#, fuzzy
 msgid "=============================\n"
 msgstr "=============================\n"
 
 #: fread.c:2614
-#, fuzzy, c-format
+#, c-format
 msgid "%8.3fs (%3.0f%%) Memory map %.3fGB file\n"
 msgstr "%8.3fs (%3.0f%%) Carte mémoire Fichier de %.3fGo\n"
 
 #: fread.c:2615
-#, fuzzy, c-format
+#, c-format
 msgid "%8.3fs (%3.0f%%) sep="
 msgstr "%8.3fs (%3.0f%%) sep="
 
 #: fread.c:2617
-#, fuzzy, c-format
+#, c-format
 msgid " ncol=%d and header detection\n"
 msgstr " ncol=%d et détection de l'en-tête\n"
 
 #: fread.c:2618
-#, fuzzy, c-format
+#, c-format
 msgid "%8.3fs (%3.0f%%) Column type detection using %<PRIu64> sample rows\n"
 msgstr ""
 "%8.3fs (%3.0f%%) Détection du type de colonne à l'aide de %<PRIu64> lignes "
 "d'échantillons\n"
 
 #: fread.c:2620
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%8.3fs (%3.0f%%) Allocation of %<PRIu64> rows x %d cols (%.3fGB) of which "
 "%<PRIu64> (%3.0f%%) rows used\n"
@@ -3036,33 +3031,34 @@ msgstr ""
 "%<PRIu64> (%3.0f%%) lignes utilisées\n"
 
 #: fread.c:2624
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%8.3fs (%3.0f%%) Reading %d chunks (%d swept) of %.3fMB (each chunk %d rows) "
 "using %d threads\n"
 msgstr ""
 "%8.3fs (%3.0f%%) Lecture de %d morceaux (%d balayés) de %.3fMo (chaque "
-"morceau %d lignes) à l'aide de %d threads\n"
+"morceau comporte %d lignes) à l'aide de %d threads\n"
 
 #: fread.c:2626
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "   + %8.3fs (%3.0f%%) Parse to row-major thread buffers (grown %d times)\n"
 msgstr ""
-"   + %8.3fs (%3.0f%%) Parse to row-major thread buffers (grown %d times)\n"
+"   + %8.3fs (%3.0f%%) Analyse en tampons de threads en format ligne-major "
+"(augmenté %d fois)\n"
 
 #: fread.c:2627
-#, fuzzy, c-format
+#, c-format
 msgid "   + %8.3fs (%3.0f%%) Transpose\n"
 msgstr "   + %8.3fs (%3.0f%%) Transposition\n"
 
 #: fread.c:2628
-#, fuzzy, c-format
+#, c-format
 msgid "   + %8.3fs (%3.0f%%) Waiting\n"
 msgstr "   + %8.3fs (%3.0f%%) Attente\n"
 
 #: fread.c:2629
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%8.3fs (%3.0f%%) Rereading %d columns due to out-of-sample type exceptions\n"
 msgstr ""
@@ -3070,87 +3066,81 @@ msgstr ""
 "hors échantillon\n"
 
 #: fread.c:2631
-#, fuzzy, c-format
+#, c-format
 msgid "%8.3fs        Total\n"
 msgstr "%8.3fs Total\n"
 
 #: freadR.c:87
-#, fuzzy
 msgid ""
 "Internal error: freadR input not a single character string: a filename or "
 "the data itself. Should have been caught at R level."
 msgstr ""
-"Erreur interne : freadR input not a single character string : a filename or "
-"the data itself. Cette erreur aurait dû être détectée au niveau de R."
+"Erreur interne : l’entrée de freadR n’est pas un caractère unique: c’est un "
+"nom de fichier or les données elles-mêmes. Cette erreur aurait dû être "
+"détectée par R."
 
 #: freadR.c:90
-#, fuzzy
 msgid "Internal error: freadR isFileNameArg not TRUE or FALSE"
-msgstr "Erreur interne : freadR isFileNameArg not TRUE or FALSE"
+msgstr "Erreur interne : freadR isFileNameArg ni TRUE ou FALSE"
 
 #: freadR.c:92
-#, fuzzy, c-format
+#, c-format
 msgid "freadR.c has been passed a filename: %s\n"
 msgstr "freadR.c a reçu un nom de fichier : %s\n"
 
 #: freadR.c:96
-#, fuzzy
 msgid "freadR.c has been passed the data as text input (not a filename)\n"
 msgstr ""
-"freadR.c a reçu les données sous forme de texte (et non de nom de fichier)\n"
+"freadR.c a reçu les données sous forme de texte (et non pas un nom de "
+"fichier)\n"
 
 #: freadR.c:102
-#, fuzzy
 msgid ""
 "Internal error: freadR sep not a single character. R level catches this."
 msgstr ""
-"Erreur interne : freadR sep n'est pas un caractère unique. Le niveau R "
-"détecte cette erreur."
+"Erreur interne : freadR sep n'est pas un caractère unique. R level détecte "
+"cette erreur."
 
 #: freadR.c:106
-#, fuzzy
 msgid ""
 "Internal error: freadR dec not a single character. R level catches this."
 msgstr ""
-"Erreur interne : freadR dec not a single character. Le niveau R permet de "
-"corriger cette erreur."
+"Erreur interne : freadR dec n’est pas un caractère unique. R level détecte "
+"cette erreur."
 
 #: freadR.c:113
-#, fuzzy
 msgid "quote= must be a single character, blank \"\", or FALSE"
 msgstr "quote= doit être un caractère unique, un blanc \"\", ou FALSE"
 
 #: freadR.c:125
-#, fuzzy
 msgid "Internal error: freadR nrows not a single real. R level catches this."
 msgstr ""
-"Erreur interne : freadR nrows not a single real. Le niveau R permet de "
-"rattraper cette erreur."
+"Erreur interne : freadR nrows pas un unique réel. R level détecte cette "
+"erreur."
 
 #: freadR.c:141
-#, fuzzy
 msgid "Internal error: skip not integer or string in freadR.c"
-msgstr "Erreur interne : skip not integer or string dans freadR.c"
+msgstr ""
+"Erreur interne : skip n’est pas un entier ou une chaîne de caractère dans "
+"freadR.c"
 
 #: freadR.c:144
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: NAstringsArg is type '%s'. R level catches this"
 msgstr ""
-"Erreur interne : NAstringsArg est de type '%s'. Le niveau R détecte cette "
-"erreur"
+"Erreur interne : NAstringsArg est de type '%s'. R level détecte cette erreur"
 
 #: freadR.c:157
-#, fuzzy, c-format
+#, c-format
 msgid "nThread(%d)<1"
 msgstr "nThread(%d)<1"
 
 #: freadR.c:165
-#, fuzzy
 msgid "'integer64' must be a single character string"
 msgstr "integer64\" doit être une chaîne de caractères unique"
 
 #: freadR.c:173
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Invalid value integer64='%s'. Must be 'integer64', 'character', 'double' or "
 "'numeric'"
@@ -3159,12 +3149,10 @@ msgstr ""
 "'double' ou 'numeric'"
 
 #: freadR.c:181
-#, fuzzy
 msgid "Use either select= or drop= but not both."
 msgstr "Utilisez soit select=, soit drop=, mais pas les deux."
 
 #: freadR.c:184
-#, fuzzy
 msgid ""
 "select= is type list for specifying types in select=, but colClasses= has "
 "been provided as well. Please remove colClasses=."
@@ -3174,61 +3162,56 @@ msgstr ""
 "colClasses=."
 
 #: freadR.c:186
-#, fuzzy
 msgid ""
 "select= is type list but has no names; expecting list(type1=cols1, "
 "type2=cols2, ...)"
 msgstr ""
-"select= est un type de liste mais n'a pas de nom ; expecting "
+"select= est un type de liste mais n'a pas de nom ; il est attendu "
 "list(type1=cols1, type2=cols2, ...)"
 
 #: freadR.c:193
-#, fuzzy
 msgid ""
 "select= is a named vector specifying the columns to select and their types, "
 "but colClasses= has been provided as well. Please remove colClasses=."
 msgstr ""
-"select= est un vecteur nommé spécifiant les colonnes à sélectionner et leurs "
+"select= est un vecteur spécifiant les colonnes à sélectionner et leurs "
 "types, mais colClasses= a également été fourni. Veuillez supprimer "
 "colClasses=."
 
 #: freadR.c:201 freadR.c:367
-#, fuzzy
 msgid "colClasses is type list but has no names"
-msgstr "colClasses est un type de liste mais n'a pas de nom"
+msgstr "colClasses est de type list mais n'a pas de nom"
 
 #: freadR.c:211
-#, fuzzy, c-format
+#, c-format
 msgid "encoding='%s' invalid. Must be 'unknown', 'Latin-1' or 'UTF-8'"
 msgstr "encoding='%s' invalide. Doit être 'unknown', 'Latin-1' ou 'UTF-8'"
 
 #: freadR.c:234
-#, fuzzy, c-format
+#, c-format
 msgid "Column name '%s' (%s) not found"
 msgstr "Nom de colonne '%s' (%s) introuvable"
 
 #: freadR.c:236
-#, fuzzy, c-format
+#, c-format
 msgid "%s is NA"
 msgstr "%s est NA"
 
 #: freadR.c:238
-#, fuzzy, c-format
+#, c-format
 msgid "%s is %d which is out of range [1,ncol=%d]"
-msgstr "%s est %d, ce qui est en dehors de la plage [1,ncol=%d]]"
+msgstr "%s est %d, ce qui est en dehors de l’intervalle [1,ncol=%d]]"
 
 #: freadR.c:252
-#, fuzzy
 msgid "Internal error: typeSize[CT_BOOL8_N] != 1"
 msgstr "Erreur interne : typeSize[CT_BOOL8_N] != 1"
 
 #: freadR.c:253
-#, fuzzy
 msgid "Internal error: typeSize[CT_STRING] != 1"
 msgstr "Erreur interne : typeSize[CT_STRING] != 1"
 
 #: freadR.c:287
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Column name '%s' not found in column name header (case sensitive), skipping."
 msgstr ""
@@ -3236,16 +3219,16 @@ msgstr ""
 "(sensible à la casse), il est ignoré."
 
 #: freadR.c:297
-#, fuzzy, c-format
+#, c-format
 msgid ""
-"Column number %d (select[%d]) is negative but should be in the range [1,ncol="
-"%d]. Consider drop= for column exclusion."
+"Column number %d (select[%d]) is negative but should be in the range [1,"
+"ncol=%d]. Consider drop= for column exclusion."
 msgstr ""
 "Le numéro de colonne %d (select[%d]) est négatif mais devrait être compris "
 "dans l'intervalle [1,ncol=%d]. Envisager drop= pour l'exclusion de colonnes."
 
 #: freadR.c:298
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "select = 0 (select[%d]) has no meaning. All values of select should be in "
 "the range [1,ncol=%d]."
@@ -3254,7 +3237,7 @@ msgstr ""
 "select doivent être comprises dans l'intervalle [1,ncol=%d]."
 
 #: freadR.c:299
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Column number %d (select[%d]) is too large for this table, which only has %d "
 "columns."
@@ -3263,12 +3246,12 @@ msgstr ""
 "comporte que %d colonnes."
 
 #: freadR.c:300
-#, fuzzy, c-format
+#, c-format
 msgid "Column number %d ('%s') has been selected twice by select="
 msgstr "Le numéro de colonne %d ('%s') a été sélectionné deux fois par select="
 
 #: freadR.c:323
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "colClasses= is an unnamed vector of types, length %d, but there are %d "
 "columns in the input. To specify types for a subset of columns, you can use "
@@ -3282,12 +3265,10 @@ msgstr ""
 "exemples dans ?fread."
 
 #: freadR.c:343
-#, fuzzy
 msgid "Internal error: selectInts is NULL but selectColClasses is true"
 msgstr "Erreur interne : selectInts est NULL mais selectColClasses est true"
 
 #: freadR.c:345
-#, fuzzy
 msgid ""
 "Internal error: length(selectSxp)!=length(colClassesSxp) but "
 "selectColClasses is true"
@@ -3296,23 +3277,23 @@ msgstr ""
 "selectColClasses est vrai"
 
 #: freadR.c:365
-#, fuzzy, c-format
+#, c-format
 msgid "colClasses is type '%s' but should be list or character"
 msgstr ""
 "colClasses est de type '%s' mais devrait être une liste ou un caractère"
 
 #: freadR.c:389
-#, fuzzy, c-format
+#, c-format
 msgid "Column name '%s' (colClasses[[%d]][%d]) not found"
 msgstr "Nom de colonne '%s' (colClasses[[%d]][%d]) introuvable"
 
 #: freadR.c:391
-#, fuzzy, c-format
+#, c-format
 msgid "colClasses[[%d]][%d] is NA"
 msgstr "colClasses[[%d]][%d] est NA"
 
 #: freadR.c:395
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Column %d ('%s') appears more than once in colClasses. The second time is "
 "colClasses[[%d]][%d]."
@@ -3321,46 +3302,46 @@ msgstr ""
 "fois est colClasses[[%d]][%d]."
 
 #: freadR.c:407
-#, fuzzy, c-format
+#, c-format
 msgid "Column number %d (colClasses[[%d]][%d]) is out of range [1,ncol=%d]"
 msgstr ""
-"Le numéro de colonne %d (colClasses[[%d]][%d]) est en dehors de la plage [1,"
-"ncol=%d]"
+"Le numéro de colonne %d (colClasses[[%d]][%d]) est en dehors de l’intervalle "
+"[1,ncol=%d]"
 
 #: freadR.c:625
-#, fuzzy, c-format
+#, c-format
 msgid "Field size is 1 but the field is of type %d\n"
 msgstr "La taille du champ est de 1 mais le champ est de type %d\n"
 
 #: freadR.c:634
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: unexpected field of size %d\n"
 msgstr "Erreur interne : champ inattendu de taille %d\n"
 
 #: freadR.c:702 utils.c:376
-#, fuzzy, c-format
+#, c-format
 msgid "%s"
 msgstr "%s"
 
 #: froll.c:14 froll.c:223 froll.c:407
-#, fuzzy, c-format
+#, c-format
 msgid "%s: window width longer than input vector, returning all NA vector\n"
 msgstr ""
 "%s : la largeur de la fenêtre est supérieure au vecteur d'entrée, ce qui "
-"renvoie tout le vecteur NA\n"
+"renvoie tout le vecteur en NA\n"
 
 #: froll.c:32 froll.c:240 froll.c:456
-#, fuzzy, c-format
+#, c-format
 msgid "%s: align %d, shift answer by %d\n"
 msgstr "%s : aligner %d, décaler la réponse de %d\n"
 
 #: froll.c:39 froll.c:247 frolladaptive.c:19 frolladaptive.c:214
-#, fuzzy, c-format
+#, c-format
 msgid "%s: processing algo %u took %.3fs\n"
 msgstr "%s : le traitement de l'algo %u a pris %.3fs\n"
 
 #: froll.c:48 froll.c:251
-#, fuzzy, c-format
+#, c-format
 msgid "%s: running for input length %<PRIu64>, window %d, hasna %d, narm %d\n"
 msgstr ""
 "%s: exécution pour la longueur de l'entrée %<PRIu64>, window %d, hasna %d, "
@@ -3369,37 +3350,37 @@ msgstr ""
 #: froll.c:68 froll.c:78 froll.c:169 froll.c:271 froll.c:281 froll.c:362
 #: frolladaptive.c:58 frolladaptive.c:147 frolladaptive.c:247
 #: frolladaptive.c:326
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%s: hasNA=FALSE used but NA (or other non-finite) value(s) are present in "
 "input, use default hasNA=NA to avoid this warning"
 msgstr ""
 "%s : hasNA=FALSE utilisé mais des valeurs NA (ou autres valeurs non finies) "
 "sont présentes dans l'entrée, utiliser la valeur par défaut hasNA=NA pour "
-"éviter cet avertissement"
+"éviter ce message"
 
 #: froll.c:71 froll.c:173 froll.c:274 froll.c:366 frolladaptive.c:61
 #: frolladaptive.c:151 frolladaptive.c:250 frolladaptive.c:330
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%s: NA (or other non-finite) value(s) are present in input, re-running with "
 "extra care for NAs\n"
 msgstr ""
-"%s : NA (ou autre(s) valeur(s) non finie(s)) sont présentes dans l'entrée, "
-"réexécution avec une attention particulière pour les NA\n"
+"%s : Des NA (ou autre(s) valeur(s) non finie(s)) sont présentes dans "
+"l'entrée, réexécution avec une attention particulière pour les NA\n"
 
 #: froll.c:81 froll.c:284
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%s: NA (or other non-finite) value(s) are present in input, skip non-NA "
 "attempt and run with extra care for NAs\n"
 msgstr ""
-"%s : NA (ou autre(s) valeur(s) non finie(s)) sont présentes dans l'entrée, "
-"ignorer les tentatives non NA et exécuter avec une attention particulière "
-"pour les NA\n"
+"%s :Des  NA (ou autre(s) valeur(s) non finie(s)) sont présentes dans "
+"l'entrée, ignorer la tentative sans NA et exécuter avec une attention "
+"particulière pour les NA\n"
 
 #: froll.c:137 froll.c:335
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%s: running in parallel for input length %<PRIu64>, window %d, hasna %d, "
 "narm %d\n"
@@ -3408,41 +3389,40 @@ msgstr ""
 "hasna %d, narm %d\n"
 
 #: froll.c:175 froll.c:368 frolladaptive.c:153 frolladaptive.c:332
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%s: NA (or other non-finite) value(s) are present in input, na.rm was FALSE "
 "so in 'exact' implementation NAs were handled already, no need to re-run\n"
 msgstr ""
-"%s : NA (ou autre(s) valeur(s) non finie(s)) est présent dans l'entrée, na."
-"rm était FALSE donc dans l'implémentation \"exacte\" les NA ont déjà été "
-"traités, pas besoin de ré-exécuter\n"
+"%s : Des valeurs NA (ou autre(s) valeur(s) non finie(s)) sont présentes dans "
+"l'entrée, na.rm était FALSE donc dans l'implémentation ‘exacte’ les NA ont "
+"déjà été traités, pas besoin de ré-exécuter\n"
 
 #: froll.c:424
-#, fuzzy, c-format
+#, c-format
 msgid "%s: results from provided FUN are not length 1"
-msgstr "%s : les résultats de FUN ne sont pas longs 1"
+msgstr "%s : les résultats de FUN  obtenus ne sont pas de longueur 1"
 
 #: froll.c:431
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%s: results from provided FUN are not of type double, coercion from integer "
 "or logical will be applied on each iteration\n"
 msgstr ""
-"%s : les résultats de FUN fournis ne sont pas de type double, une coercion à "
-"partir d'un entier ou d'une logique sera appliquée à chaque itération\n"
+"%s : les résultats de FUN obtenus ne sont pas de type double, une coercion "
+"pour les types entier et logique sera appliquée à chaque itération\n"
 
 #: froll.c:434
-#, fuzzy, c-format
+#, c-format
 msgid "%s: results from provided FUN are not of type double"
-msgstr "%s : les résultats de FUN fournis ne sont pas de type double"
+msgstr "%s : les résultats de FUN obtenus ne sont pas de type double"
 
 #: froll.c:463 nafill.c:87
-#, fuzzy, c-format
+#, c-format
 msgid "%s: took %.3fs\n"
 msgstr "%s : a pris %.3fs\n"
 
 #: frollR.c:17
-#, fuzzy
 msgid ""
 "x must be of type numeric or logical, or a list, data.frame or data.table of "
 "such"
@@ -3451,37 +3431,30 @@ msgstr ""
 "data.table de ce type"
 
 #: frollR.c:37 frollR.c:242
-#, fuzzy
 msgid "n must be non 0 length"
-msgstr "n doit être de longueur différente de 0"
+msgstr "n doit pas être de longueur 0"
 
 #: frollR.c:48
-#, fuzzy
 msgid "n must be integer, list is accepted for adaptive TRUE"
-msgstr "n doit être un entier, la liste est acceptée pour l'adaptation TRUE"
+msgstr "n doit être un entier, la liste est acceptée pour avec TRUE"
 
 #: frollR.c:55 frollR.c:234 frollR.c:237
-#, fuzzy
 msgid "n must be integer"
 msgstr "n doit être un nombre entier"
 
 #: frollR.c:62
-#, fuzzy
 msgid "n must be positive integer values (> 0)"
 msgstr "n doit être un nombre entier positif (> 0)"
 
 #: frollR.c:71 frollR.c:83
-#, fuzzy
 msgid "n must be integer vector or list of integer vectors"
-msgstr "n doit être un vecteur entier ou une liste de vecteurs entiers"
+msgstr "n doit être un vecteur d’entiers ou une liste de vecteurs d’entiers"
 
 #: frollR.c:97
-#, fuzzy
 msgid "hasNA must be TRUE, FALSE or NA"
 msgstr "hasNA doit être VRAI, FAUX ou NA"
 
 #: frollR.c:99
-#, fuzzy
 msgid ""
 "using hasNA FALSE and na.rm TRUE does not make sense, if you know there are "
 "NA values use hasNA TRUE, otherwise leave it as default NA"
@@ -3490,31 +3463,29 @@ msgstr ""
 "des valeurs NA, utilisez hasNA TRUE, sinon laissez la valeur NA par défaut"
 
 #: frollR.c:109 frollR.c:141 frollR.c:163 frollR.c:253 nafill.c:170
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Internal error: invalid %s argument in %s function should have been caught "
 "earlier. Please report to the data.table issue tracker."
 msgstr ""
-"Erreur interne : un argument %s invalide dans une fonction %s aurait dû être "
-"détecté plus tôt. Veuillez signaler cette erreur sur le gestionnaire de "
-"problèmes de data.table."
+"Erreur interne : argument %s invalide dans la fonction %s qui aurait dû être "
+"détecté plus tôt. Veuillez signaler cette erreur au gestionnaire de "
+"problèmes de data.table (‘issue tracker)’."
 
 #: frollR.c:112
-#, fuzzy
 msgid ""
 "using adaptive TRUE and align argument different than 'right' is not "
 "implemented"
 msgstr ""
-"l'utilisation de TRUE adaptatif et d'un argument d'alignement différent de "
-"\"right\" n'est pas implémentée"
+"l'utilisation de TRUE adaptatif et d'un argument align différent de ‘right’ "
+"n'est pas implémentée"
 
 #: frollR.c:116 frollR.c:264 types.c:64
-#, fuzzy, c-format
+#, c-format
 msgid "%s: allocating memory for results %dx%d\n"
 msgstr "%s : allocation de mémoire pour les résultats %dx%d\n"
 
 #: frollR.c:125
-#, fuzzy
 msgid ""
 "adaptive rolling function can only process 'x' having equal length of "
 "elements, like data.table or data.frame; If you want to call rolling "
@@ -3527,31 +3498,28 @@ msgstr ""
 "d'éléments, appelez-la pour chaque champ séparément"
 
 #: frollR.c:127
-#, fuzzy
 msgid ""
 "length of integer vector(s) provided as list to 'n' argument must be equal "
 "to number of observations provided in 'x'"
 msgstr ""
-"la longueur du (des) vecteur(s) entier(s) fourni(s) sous forme de liste à "
-"l'argument \"n\" doit être égale au nombre d'observations fourni dans \"x\""
+"la longueur du (des) vecteur(s) d’entier(s) fourni(s) sous forme de liste à "
+"l'argument ’n’ doit être égale au nombre d'observations fourni dans \"x\""
 
 #: frollR.c:145 frollR.c:257 gsumm.c:1193 shift.c:21
-#, fuzzy
 msgid "fill must be a vector of length 1"
 msgstr "fill doit être un vecteur de longueur 1"
 
 #: frollR.c:147 frollR.c:259
-#, fuzzy
 msgid "fill must be numeric or logical"
-msgstr "le remplissage doit être numérique ou logique"
+msgstr "fill doit être numérique ou logique"
 
 #: frollR.c:168
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: badaptive=%d but ik is not integer"
 msgstr "Erreur interne : badaptive=%d mais ik n'est pas un entier"
 
 #: frollR.c:176
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%s: %d column(s) and %d window(s), if product > 1 then entering parallel "
 "execution\n"
@@ -3560,7 +3528,7 @@ msgstr ""
 "parallèle\n"
 
 #: frollR.c:178
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%s: %d column(s) and %d window(s), not entering parallel execution here "
 "because algo='exact' will compute results in parallel\n"
@@ -3569,35 +3537,33 @@ msgstr ""
 "algo='exact' calculera les résultats en parallèle\n"
 
 #: frollR.c:197
-#, fuzzy, c-format
+#, c-format
 msgid "Internal error: Unknown sfun value in froll: %d"
 msgstr "Erreur interne : Valeur inconnue de sfun dans froll : %d"
 
 #: frollR.c:205 frollR.c:296
-#, fuzzy, c-format
+#, c-format
 msgid "%s: processing of %d column(s) and %d window(s) took %.3fs\n"
-msgstr "%s : le traitement de %d colonne(s) et %d fenêtre(s) a pris %.3fs\n"
+msgstr "%s : le traitement de %d colonne(s) et de %d fenêtre(s) a pris %.3fs\n"
 
 #: frollR.c:216
-#, fuzzy
 msgid "internal error: 'fun' must be a function"
 msgstr "erreur interne : \"fun\" doit être une fonction"
 
 #: frollR.c:218
-#, fuzzy
 msgid "internal error: 'rho' should be an environment"
 msgstr "erreur interne : 'rho' devrait être un environnement"
 
 #: frolladaptive.c:29 frolladaptive.c:218
-#, fuzzy, c-format
+#, c-format
 msgid "%s: running for input length %<PRIu64>, hasna %d, narm %d\n"
 msgstr ""
 "%s: recherche de la longueur de l'entrée %<PRIu64>, hasna %d, narm %d\n"
 
 #: frolladaptive.c:35 frolladaptive.c:224
-#, fuzzy, c-format
+#, c-format
 msgid "%s: Unable to allocate memory for cumsum"
-msgstr "%s : Impossible d'allouer de la mémoire pour le cumsum"
+msgstr "%s : Impossible d'allouer de la mémoire pour le cumsum (somme cumulée)"
 
 #: frolladaptive.c:71 frolladaptive.c:260
 #, c-format
@@ -3640,8 +3606,8 @@ msgstr "maxBit=%d ; MSBNbits=%d ; shift=%d ; MSBsize=%zu\n"
 #: fsort.c:174
 #, c-format
 msgid ""
-"counts is %dMB (%d pages per nBatch=%d, batchSize=%<PRIu64>, lastBatchSize="
-"%<PRIu64>)\n"
+"counts is %dMB (%d pages per nBatch=%d, batchSize=%<PRIu64>, "
+"lastBatchSize=%<PRIu64>)\n"
 msgstr ""
 "le comptage est %dMB (%d pages par nBatch=%d, batchSize=%<PRIu64>, "
 "lastBatchSize=%<PRIu64>)\n"
@@ -3719,12 +3685,12 @@ msgstr "... "
 #, c-format
 msgid ""
 "\n"
-"args.doRowNames=%d args.rowNames=%p args.rowNameFun=%d doQuote=%d args.nrow="
-"%<PRId64> args.ncol=%d eolLen=%d\n"
+"args.doRowNames=%d args.rowNames=%p args.rowNameFun=%d doQuote=%d args."
+"nrow=%<PRId64> args.ncol=%d eolLen=%d\n"
 msgstr ""
 "\n"
-"args.doRowNames=%d args.rowNames=%p args.rowNameFun=%d doQuote=%d args.nrow="
-"%<PRId64> args.ncol=%d eolLen=%d\n"
+"args.doRowNames=%d args.rowNames=%p args.rowNameFun=%d doQuote=%d args."
+"nrow=%<PRId64> args.ncol=%d eolLen=%d\n"
 
 #: fwrite.c:664
 #, c-format
@@ -3990,8 +3956,8 @@ msgstr ""
 #: gsumm.c:89
 #, c-format
 msgid ""
-"Internal error: nrow=%d  ngrp=%d  nbit=%d  bitshift=%d  highSize=%zu  nBatch="
-"%zu  batchSize=%zu  lastBatchSize=%zu\n"
+"Internal error: nrow=%d  ngrp=%d  nbit=%d  bitshift=%d  highSize=%zu  "
+"nBatch=%zu  batchSize=%zu  lastBatchSize=%zu\n"
 msgstr ""
 "Erreur interne : nrow=%d ngrp=%d nbit=%d bitshift=%d highSize=%zu nBatch=%zu "
 "batchSize=%zu lastBatchSize=%zu\n"
