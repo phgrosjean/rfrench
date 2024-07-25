@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-07-24 12:19+0200\n"
+"PO-Revision-Date: 2024-07-25 11:08+0200\n"
 "Last-Translator: Elise Maigné <elise.maigne@inrae.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -1934,11 +1934,11 @@ msgstr ""
 
 #: forder.c:465
 msgid "At least one of retGrp= or sort= must be TRUE"
-msgstr "Au moins l'un des deux, retGrp= ou sort= doit être TRUE"
+msgstr "Au moins l'un des deux, retGrp= ou sort=, doit être TRUE"
 
 #: forder.c:467
 msgid "na.last must be logical TRUE, FALSE or NA of length 1"
-msgstr "na.last doit être logique TRUE, FALSE ou NA de longueur 1"
+msgstr "na.last doit être un booléen TRUE, FALSE ou NA de longueur 1"
 
 #: forder.c:495 forder.c:599
 #, c-format
@@ -1949,7 +1949,8 @@ msgstr "Impossible d'allouer %<PRIu64> octets de mémoire de travail"
 #, c-format
 msgid "Item %d of order (ascending/descending) is %d. Must be +1 or -1."
 msgstr ""
-"L'élément %d dans l’ordre (croissant/décroissant) est %d. Doit être +1 ou -1."
+"L'élément %d dans l’ordre (croissant/décroissant) est %d. Il doit être égale "
+"à +1 ou -1."
 
 #: forder.c:537
 #, c-format
@@ -1960,10 +1961,10 @@ msgid ""
 "to save space and time.\n"
 msgstr ""
 "\n"
-"*** La colonne %d transmise à forder est une date stockée sous la forme d'un "
-"‘double’ de 8 octets, mais aucune fraction n'est présente. Pour gagner du "
-"temps et de l'espace, il est préférable d'utiliser une date entière sur 4 "
-"octets, telle que IDate.\n"
+"*** La colonne %d transmise à ‘forder’ est une date stockée sous la forme "
+"d'un ‘double’ (nombre à virgule flottante) de 8 octets, mais aucune fraction "
+"n'est présente. Pour gagner du temps et de l'espace mémoire, il est "
+"préférable d'utiliser une date entière sur 4 octets, telle que IDate.\n"
 
 #: forder.c:553
 #, c-format
@@ -1975,8 +1976,7 @@ msgstr ""
 #: forder.c:706
 msgid "Internal error: column not supported, not caught earlier"
 msgstr ""
-"Erreur interne : la colonne n'est pas prise en charge, n'a pas été détectée "
-"plus tôt"
+"Erreur interne : la colonne n'est pas prise en charge, non détecté plus tôt"
 
 #: forder.c:714
 #, c-format
@@ -1994,7 +1994,8 @@ msgstr ""
 #: forder.c:727
 msgid "Could not allocate (very tiny) group size thread buffers"
 msgstr ""
-"Impossible d’allouer les tampons de thread de (très petite) taille de groupe"
+"Impossible d’allouer la mémoire tampon des thread de (très petite) taille de "
+"groupe"
 
 #: forder.c:788
 #, c-format
@@ -2042,7 +2043,7 @@ msgstr "x doit être NULL ou un vecteur entier"
 
 #: forder.c:1385
 msgid "nrow must be integer vector length 1"
-msgstr "nrow doit être un vecteur entier de longueur 1"
+msgstr "nrow doit être un vecteur d’entiers de longueur 1"
 
 #: forder.c:1387
 #, c-format
@@ -2051,20 +2052,20 @@ msgstr "nrow==%d mais doit être >=0"
 
 #: forder.c:1404
 msgid "x must be type 'double'"
-msgstr "x doit être de type \"double\""
+msgstr "x doit être de type ‘double’ (nombre à virgule flottante)"
 
 #: frank.c:9 frank.c:10 frank.c:187 frank.c:188 subset.c:110 subset.c:274
 #: subset.c:287
 #, c-format
 msgid "Internal error. Argument '%s' to %s is type '%s' not '%s'"
-msgstr "Erreur interne. L'argument '%s' à %s est de type '%s' et non '%s'"
+msgstr "Erreur interne. L'argument '%s' à %s est de type '%s' et non pas %s’"
 
 #: frank.c:14 frank.c:192
 #, c-format
 msgid "Item %d of 'cols' is %d which is outside 1-based range [1,ncol(x)=%d]"
 msgstr ""
-"L'élément %d de 'cols' est %d, ce qui est en dehors de l'intervalle basé sur "
-"1 [1,ncol(x)=%d]"
+"L'élément %d de 'cols' est %d, ce qui est en dehors de l'intervalle [1,"
+"ncol(x)=%d]"
 
 #: frank.c:24 frank.c:200
 #, c-format
@@ -2078,15 +2079,15 @@ msgstr ""
 #: frank.c:101 frank.c:234 transpose.c:88
 #, c-format
 msgid "Unsupported column type '%s'"
-msgstr "Type de colonne non supporté ‘%s’"
+msgstr "Type de colonne non prise en charge ‘%s’"
 
 #: frank.c:120
 msgid ""
 "Internal error: invalid ties.method for frankv(), should have been caught "
 "before. please report to data.table issue tracker"
 msgstr ""
-"Erreur interne : ties.method est invalide pour frankv(), aurait dû être "
-"détecté auparavant. veuillez signaler l'erreur au data.table ‘issue tracker’"
+"Erreur interne : ties.method est invalide pour frankv(), cela aurait dû être "
+"détecté auparavant. Veuillez signaler l'erreur au data.table ‘issue tracker’"
 
 #: frank.c:177
 #, c-format
@@ -2098,7 +2099,8 @@ msgstr "Erreur interne : valeur de ties inconnue dans frank : %d"
 msgid ""
 "Internal error in line %d of fread.c, please report on data.table GitHub:  "
 msgstr ""
-"Erreur interne à la ligne %d de fread.c, à signaler sur data.table GitHub :  "
+"Erreur interne à la ligne %d de fread.c, à signaler sur le GitHub de data."
+"table :  "
 
 #: fread.c:150
 #, c-format
@@ -2118,7 +2120,7 @@ msgstr "Erreur interne : NUMTYPE(%d) > nLetters(%d)"
 #: fread.c:438
 #, c-format
 msgid "Unable to allocate %s of contiguous virtual RAM. %s allocation."
-msgstr "Impossible d'allouer %s de RAM virtuelle contiguë. allocation de %s."
+msgstr "Impossible d'allouer %s de RAM virtuelle contiguë. Allocation de %s."
 
 #: fread.c:443
 #, c-format
@@ -2135,8 +2137,8 @@ msgid ""
 "Previous fread() session was not cleaned up properly. Cleaned up ok at the "
 "beginning of this fread() call.\n"
 msgstr ""
-"La session fread() précédente n'a pas été nettoyée correctement. Nettoyé "
-"correctement au début de cet appel à fread().\n"
+"La session fread() précédente n'a pas été nettoyée correctement. Elle a été "
+"correctement nettoyé au début de cet appel à fread().\n"
 
 #: fread.c:1263
 msgid "[01] Check arguments\n"
@@ -2152,8 +2154,8 @@ msgid ""
 "Internal error: NAstrings is itself NULL. When empty it should be pointer to "
 "NULL."
 msgstr ""
-"Erreur interne : NAstrings est lui-même NULL. Lorsqu'elle est vide, elle "
-"doit être un pointeur sur NULL."
+"Erreur interne : NAstrings est lui-même NULL. Lorsqu’il est vide, il doit "
+"être un pointeur sur NULL."
 
 #: fread.c:1292
 #, c-format
@@ -2188,16 +2190,16 @@ msgstr "]\n"
 
 #: fread.c:1317
 msgid "  One or more of the NAstrings looks like a number.\n"
-msgstr "  Une ou plusieurs chaînes de NAstrings ressemblent à un nombre.\n"
+msgstr "  Une ou plusieurs des NAstrings ressemblent à un nombre.\n"
 
 #: fread.c:1319
 msgid "  None of the NAstrings look like numbers.\n"
-msgstr "  Aucune des chaînes de NAstrings ne ressemble à un nombre.\n"
+msgstr "  Aucun des NAstrings ne ressemble à un nombre.\n"
 
 #: fread.c:1321
 #, c-format
 msgid "  skip num lines = %<PRId64>\n"
-msgstr "  sauter un nombre de lignes = %<PRId64>\n"
+msgstr "  saute au numéro de lignes = %<PRId64>\n"
 
 #: fread.c:1322
 #, c-format
@@ -2242,7 +2244,7 @@ msgid ""
 "  `input` argument is provided rather than a file name, interpreting as raw "
 "text to read\n"
 msgstr ""
-"  l'argument `input` est fourni au lieu d'un nom de fichier, ce qui est "
+"  l'argument ‘input’ est fourni au lieu d'un nom de fichier, ce qui est "
 "interprété comme du texte brut à lire\n"
 
 #: fread.c:1363
@@ -2327,8 +2329,8 @@ msgid ""
 "  UTF-8 byte order mark EF BB BF found at the start of the file and "
 "skipped.\n"
 msgstr ""
-"  UTF-8 BOM (indicateur d’ordre des octets) EF BB BF trouvée au début du "
-"fichier et ignorée.\n"
+"  UTF-8 BOM (indicateur d’ordre des octets) EF BB BF trouvé au début du "
+"fichier et ignoré.\n"
 
 #: fread.c:1447
 msgid ""
@@ -2369,10 +2371,10 @@ msgid ""
 "one line ending. This is unusual but will happen normally when there is no "
 "\\r either; e.g. a single line missing its end of line.\n"
 msgstr ""
-"  Il n'y a pas de \\n dans le fichier du tout, de sorte qu'un \\r seul (s'il "
-"y en a un) sera considéré comme une fin de ligne. Ceci est inhabituel mais "
-"se produit normalement lorsqu'il n'y a pas non plus de \\r ; par exemple, "
-"une seule ligne qui n'a pas de fin de ligne.\n"
+"  Il n'y a aucun \\n dans le fichier, de sorte qu'un \\r seul (s'il y en a "
+"un) sera considéré comme une fin de ligne. Ceci est inhabituel mais se "
+"produit normalement lorsqu'il n'y a pas non plus de \\r ; par exemple, une "
+"seule ligne qui n'a pas de fin de ligne.\n"
 
 #: fread.c:1473
 msgid ""
@@ -2432,13 +2434,13 @@ msgid ""
 "Found skip='%s' on line %<PRIu64>. Taking this to be header row or first row "
 "of data.\n"
 msgstr ""
-"Trouvé skip='%s' sur la ligne %<PRIu64>. Il s'agit de la ligne d'en-tête ou "
-"de la première ligne de données.\n"
+"A trouvé skip='%s' sur la ligne %<PRIu64>. Il s'agit de la ligne d'en-tête "
+"ou de la première ligne de données.\n"
 
 #: fread.c:1563
 #, c-format
 msgid "  Skipped to line %<PRIu64> in the file"
-msgstr "  Saut à la ligne %<PRIu64> dans le fichier"
+msgstr " A Sauté à la ligne %<PRIu64> dans le fichier"
 
 #: fread.c:1564
 #, c-format
@@ -2465,14 +2467,13 @@ msgstr "  Positionné sur la ligne %d à partir de : <<%s>>\n"
 
 #: fread.c:1594
 msgid "[06] Detect separator, quoting rule, and ncolumns\n"
-msgstr ""
-"[06] Détecte le séparateur, met entre guillemets de ‘rule’ et ‘ncolumns’\n"
+msgstr "[06] Détecte le séparateur, la règle des guillemets et ‘ncolumns’\n"
 
 #: fread.c:1598
 msgid "  sep='\\n' passed in meaning read lines as single character column\n"
 msgstr ""
-"  sep='\\n' passé dans le sens de lire les lignes comme une colonne d'un "
-"seul caractère\n"
+"  sep='\\n' passé en argument, ce qui signifie que les lignes sont lus comme "
+"une colonne d'un seul caractère\n"
 
 #: fread.c:1617
 msgid "  Detecting sep automatically ...\n"
@@ -2481,7 +2482,7 @@ msgstr "  Détection automatique du séparateur ...\n"
 #: fread.c:1624
 #, c-format
 msgid "  Using supplied sep '%s'\n"
-msgstr "  Utilisation de l'espacement fourni '%s'\n"
+msgstr "  Utilisation du séparateur fourni '%s'\n"
 
 #: fread.c:1658
 #, c-format
@@ -2606,7 +2607,7 @@ msgstr "  Nombre de points de saut d'échantillonnage = %d car "
 #: fread.c:1819
 #, c-format
 msgid "nrow limit (%<PRIu64>) supplied\n"
-msgstr "limite nrow (%<PRIu64>) fournie\n"
+msgstr "limite pour nrow (%<PRIu64>) fournie\n"
 
 #: fread.c:1820
 msgid "jump0size==0\n"
