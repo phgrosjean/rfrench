@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-07-25 11:08+0200\n"
+"PO-Revision-Date: 2024-07-25 15:18+0200\n"
 "Last-Translator: Elise Maigné <elise.maigne@inrae.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -2643,8 +2643,8 @@ msgstr "beaucoup"
 msgid ""
 "Most likely this jump landed awkwardly so type bumps here will be skipped."
 msgstr ""
-"Il est probable que ce saut ait atterri maladroitement, donc le type ‘’bumps "
-"ici seront sautées."
+"Il est probable que ce saut soit présent par erreur, les changements de type "
+"seront donc ignorés."
 
 #: fread.c:1886
 #, c-format
@@ -2657,7 +2657,7 @@ msgid ""
 "  'header' determined to be true due to column %d containing a string on row "
 "1 and a lower type (%s) in the rest of the %<PRId64> sample rows\n"
 msgstr ""
-"  ‘header’  est TRUE parce que la colonne %d contient une chaîne de "
+"  ‘header’ est égal à TRUE parce que la colonne %d contient une chaîne de "
 "caractères à la ligne 1 et un type inférieur (%s) dans le reste des lignes "
 "de l'échantillon %<PRId64> \n"
 
@@ -2684,8 +2684,8 @@ msgid ""
 "fields. Taking previous row as column names."
 msgstr ""
 "Les types de la première ligne de données correspondent aux types de la "
-"deuxième ligne de données, mais la ligne précédente comporte des champs %d. "
-"Prendre la ligne précédente comme nom de colonne."
+"deuxième ligne de données, mais la ligne précédente comporte %d champs. "
+"Prendre la ligne précédente comme celle des noms de colonne."
 
 #: fread.c:1915
 #, c-format
@@ -2704,9 +2704,9 @@ msgid ""
 "command that created the file to create a valid file."
 msgstr ""
 " pour la première colonne qui est supposée être un nom de ligne ou un "
-"indice. Utilisez setnames() par la suite si cette supposition n'est pas "
+"indice. Utilisez setnames() par la suite si cette proposition n'est pas "
 "correcte, ou corrigez la commande d'écriture du fichier qui a créé le "
-"fichier pour créer un fichier valide."
+"fichier afin de créer un fichier valide."
 
 #: fread.c:1916
 msgid "s at the end."
@@ -2726,9 +2726,9 @@ msgid ""
 "Detected %d column names but the data has %d columns. Filling rows "
 "automatically. Set fill=TRUE explicitly to avoid this warning.\n"
 msgstr ""
-"Détection de %d noms de colonnes mais les données ont %d colonnes. "
-"Remplissage automatique des lignes. Définir explicitement fill=TRUE pour "
-"éviter cet avertissement.\n"
+"A détecté %d noms de colonnes mais les données ont %d colonnes. Remplissage "
+"automatique des lignes. Définir explicitement fill=TRUE pour éviter ce "
+"message.\n"
 
 #: fread.c:1923
 #, c-format
@@ -2753,22 +2753,21 @@ msgid ""
 "  'header' determined to be true because all columns are type string and a "
 "better guess is not possible\n"
 msgstr ""
-"  'header' déterminé comme vrai parce que toutes les colonnes sont de type "
-"string et qu'une meilleure estimation n'est pas possible\n"
+"  'header' choisi comme vrai parce que toutes les colonnes sont de type "
+"string et un meilleur choix n'est pas possible\n"
 
 #: fread.c:1948
 msgid ""
 "  'header' determined to be false because there are some number columns and "
 "those columns do not have a string field at the top of them\n"
 msgstr ""
-"  'header' déterminé comme étant faux parce qu'il y a des colonnes de "
-"nombres et que ces colonnes n'ont pas de champ de type 'string' en haut de "
-"celles-ci\n"
+"  'header' choisi comme faux parce qu'il y a des colonnes de nombres et que "
+"ces colonnes n'ont pas de champ de type 'string' en haut de celles-ci\n"
 
 #: fread.c:1964
 #, c-format
 msgid "  Type codes (first row)   : %s  Quote rule %d\n"
-msgstr "  Codes de type (première ligne) : %s Règle du guillemets %d\n"
+msgstr "  Codes de type (première ligne) : %s Règle des guillemets %d\n"
 
 #: fread.c:1973
 #, c-format
@@ -2789,7 +2788,7 @@ msgid ""
 "  Sampled %<PRIu64> rows (handled \\n inside quoted fields) at %d jump "
 "points\n"
 msgstr ""
-" %<PRIu64> lignes Échantillonnés (traitées à l'intérieur de champs entre "
+" %<PRIu64> lignes échantillonnés (traitées à l'intérieur de champs entre "
 "guillemets) aux %d points de saut \n"
 
 #: fread.c:1987
@@ -2817,7 +2816,7 @@ msgid ""
 "max(mean-2*sd,min) clamped between [1.1*estn, 2.0*estn]\n"
 msgstr ""
 "  Allocation initiale = %<PRIu64> lignes (%<PRIu64> + %d%%) en utilisant des "
-"octets/max(mean-2*sd,min), avec une limite entre [1.1*estn, 2.0*estn]\n"
+"octets/max(mean-2*sd,min), restreint à l’intervalle [1.1*estn, 2.0*estn]\n"
 
 #: fread.c:1994
 #, c-format
@@ -2832,13 +2831,14 @@ msgstr ""
 
 #: fread.c:2010
 msgid "[08] Assign column names\n"
-msgstr "[08] Attribuer des noms de colonnes\n"
+msgstr "[08] Attribuez des noms de colonnes\n"
 
 #: fread.c:2018
 #, c-format
 msgid "Unable to allocate %d*%d bytes for column name pointers: %s"
 msgstr ""
-"Impossible d'allouer %d*%d octets pour les pointeurs de noms de colonnes : %s"
+"Impossible d'allouer %d*%d octets pour les pointeurs des noms de colonnes : "
+"%s"
 
 #: fread.c:2040
 #, c-format
@@ -2848,7 +2848,7 @@ msgstr "Erreur interne : lecture des noms de colonnes se terminant par '%c'"
 #: fread.c:2058
 msgid "[09] Apply user overrides on column types\n"
 msgstr ""
-"[09] Appliquer les dérogations de l'utilisateur aux types de colonnes\n"
+"[09] Appliquer les substitutions de l'utilisateur aux types de colonnes\n"
 
 #: fread.c:2062
 msgid "  Cancelled by user: userOverride() returned false."
@@ -2886,12 +2886,12 @@ msgstr "[10] Allouer de la mémoire pour le tableau de données\n"
 msgid "  Allocating %d column slots (%d - %d dropped) with %<PRIu64> rows\n"
 msgstr ""
 "  Attribution des emplacements de colonne %d (%d - %d abandonnés) avec "
-"lignes %<PRIu64> lignes \n"
+"%<PRIu64> lignes \n"
 
 #: fread.c:2157
 #, c-format
 msgid "Buffer size %<PRId64> is too large\n"
-msgstr "Taille de la mémoire tampon %<PRId64> est trop grande\n"
+msgstr "La taille de la mémoire tampon %<PRId64> est trop grande\n"
 
 #: fread.c:2160
 msgid "[11] Read the data\n"
@@ -2945,7 +2945,7 @@ msgstr ""
 #: fread.c:2536
 #, c-format
 msgid "  %d out-of-sample type bumps: %s\n"
-msgstr " %d ajustements de type hors échantillon : %s\n"
+msgstr " %d changement de type hors échantillon : %s\n"
 
 #: fread.c:2571
 #, c-format
@@ -2962,7 +2962,7 @@ msgstr "[12] Finalisation de la table de données\n"
 
 #: fread.c:2579
 msgid "  Type counts:\n"
-msgstr " Comptage des type :\n"
+msgstr " Comptage des types :\n"
 
 #: fread.c:2581
 #, c-format
@@ -2980,9 +2980,9 @@ msgid ""
 "Stopped early on line %<PRIu64>. Expected %d fields but found %d. Consider "
 "fill=TRUE and comment.char=. First discarded non-empty line: <<%s>>"
 msgstr ""
-"Arrêt prématuré sur la ligne %<PRIu64>.  %d champs attendus mais a trouvé "
-"%d. Considérer fill=TRUE et comment.char=. Première ligne non vide "
-"supprimée : <<%s>>"
+"Arrêt prématuré à la ligne %<PRIu64>.  %d champs attendus mais a trouvé %d. "
+"Considérer fill=TRUE et comment.char=. Première ligne non vide supprimée : "
+"<<%s>"
 
 #: fread.c:2608
 #, c-format
@@ -3003,7 +3003,7 @@ msgstr "=============================\n"
 #: fread.c:2614
 #, c-format
 msgid "%8.3fs (%3.0f%%) Memory map %.3fGB file\n"
-msgstr "%8.3fs (%3.0f%%) Carte mémoire Fichier de %.3fGo\n"
+msgstr "%8.3fs (%3.0f%%) nappage de mémoire du fichier %.3fGo\n"
 
 #: fread.c:2615
 #, c-format
@@ -3077,7 +3077,7 @@ msgid ""
 "the data itself. Should have been caught at R level."
 msgstr ""
 "Erreur interne : l’entrée de freadR n’est pas un caractère unique: c’est un "
-"nom de fichier or les données elles-mêmes. Cette erreur aurait dû être "
+"nom de fichier ou les données elles-mêmes. Cette erreur aurait dû être "
 "détectée par R."
 
 #: freadR.c:90
@@ -3087,27 +3087,27 @@ msgstr "Erreur interne : freadR isFileNameArg ni TRUE ou FALSE"
 #: freadR.c:92
 #, c-format
 msgid "freadR.c has been passed a filename: %s\n"
-msgstr "freadR.c a reçu un nom de fichier : %s\n"
+msgstr "freadR.c a reçu pour argument un nom de fichier : %s\n"
 
 #: freadR.c:96
 msgid "freadR.c has been passed the data as text input (not a filename)\n"
 msgstr ""
-"freadR.c a reçu les données sous forme de texte (et non pas un nom de "
-"fichier)\n"
+"freadR.c a reçu pour argument les données sous forme de texte (et non pas un "
+"nom de fichier)\n"
 
 #: freadR.c:102
 msgid ""
 "Internal error: freadR sep not a single character. R level catches this."
 msgstr ""
-"Erreur interne : freadR sep n'est pas un caractère unique. R level détecte "
-"cette erreur."
+"Erreur interne : freadR sep n'est pas un caractère unique. Le code R associé "
+"détecte cette erreur."
 
 #: freadR.c:106
 msgid ""
 "Internal error: freadR dec not a single character. R level catches this."
 msgstr ""
-"Erreur interne : freadR dec n’est pas un caractère unique. R level détecte "
-"cette erreur."
+"Erreur interne : freadR dec n’est pas un caractère unique. Le code R associé "
+"détecte cette erreur."
 
 #: freadR.c:113
 msgid "quote= must be a single character, blank \"\", or FALSE"
@@ -3116,8 +3116,8 @@ msgstr "quote= doit être un caractère unique, un blanc \"\", ou FALSE"
 #: freadR.c:125
 msgid "Internal error: freadR nrows not a single real. R level catches this."
 msgstr ""
-"Erreur interne : freadR nrows pas un unique réel. R level détecte cette "
-"erreur."
+"Erreur interne : freadR nrows pas un unique réel. Le code R associé détecte "
+"cette erreur."
 
 #: freadR.c:141
 msgid "Internal error: skip not integer or string in freadR.c"
@@ -3129,7 +3129,8 @@ msgstr ""
 #, c-format
 msgid "Internal error: NAstringsArg is type '%s'. R level catches this"
 msgstr ""
-"Erreur interne : NAstringsArg est de type '%s'. R level détecte cette erreur"
+"Erreur interne : NAstringsArg est de type '%s'. Le code R associé détecte "
+"cette erreur"
 
 #: freadR.c:157
 #, c-format
@@ -3158,16 +3159,15 @@ msgid ""
 "select= is type list for specifying types in select=, but colClasses= has "
 "been provided as well. Please remove colClasses=."
 msgstr ""
-"select= est une liste de types permettant de spécifier des types dans "
-"select=, mais colClasses= a également été fourni. Veuillez supprimer "
-"colClasses=."
+"select= est de type list permettant de spécifier des types dans select=, "
+"mais colClasses= a également été fourni. Veuillez supprimer colClasses=."
 
 #: freadR.c:186
 msgid ""
 "select= is type list but has no names; expecting list(type1=cols1, "
 "type2=cols2, ...)"
 msgstr ""
-"select= est un type de liste mais n'a pas de nom ; il est attendu "
+"select= est de type list mais n'a pas de nom ; il est attendu "
 "list(type1=cols1, type2=cols2, ...)"
 
 #: freadR.c:193
@@ -3243,7 +3243,7 @@ msgid ""
 "Column number %d (select[%d]) is too large for this table, which only has %d "
 "columns."
 msgstr ""
-"Le numéro de colonne %d (select[%d]) est trop grand pour ce tableau, qui ne "
+"Le numéro de colonne %d (select[%d]) est trop grand pour ce tableau, il ne "
 "comporte que %d colonnes."
 
 #: freadR.c:300
@@ -3275,7 +3275,7 @@ msgid ""
 "selectColClasses is true"
 msgstr ""
 "Erreur interne : length(selectSxp)!=length(colClassesSxp) mais "
-"selectColClasses est vrai"
+"selectColClasses est true"
 
 #: freadR.c:365
 #, c-format
@@ -3368,7 +3368,7 @@ msgid ""
 "extra care for NAs\n"
 msgstr ""
 "%s : Des NA (ou autre(s) valeur(s) non finie(s)) sont présentes dans "
-"l'entrée, réexécution avec une attention particulière pour les NA\n"
+"l'entrée, ré-exécution avec une attention particulière pour les NA\n"
 
 #: froll.c:81 froll.c:284
 #, c-format
@@ -3402,7 +3402,7 @@ msgstr ""
 #: froll.c:424
 #, c-format
 msgid "%s: results from provided FUN are not length 1"
-msgstr "%s : les résultats de FUN  obtenus ne sont pas de longueur 1"
+msgstr "%s : les résultats de FUN obtenus ne sont pas de longueur 1"
 
 #: froll.c:431
 #, c-format
@@ -3410,13 +3410,13 @@ msgid ""
 "%s: results from provided FUN are not of type double, coercion from integer "
 "or logical will be applied on each iteration\n"
 msgstr ""
-"%s : les résultats de FUN obtenus ne sont pas de type double, une coercion "
-"pour les types entier et logique sera appliquée à chaque itération\n"
+"%s : les résultats de FUN obtenus ne sont pas de type ‘double’, un forçage "
+"pour les types entier et booléen sera appliquée à chaque itération\n"
 
 #: froll.c:434
 #, c-format
 msgid "%s: results from provided FUN are not of type double"
-msgstr "%s : les résultats de FUN obtenus ne sont pas de type double"
+msgstr "%s : les résultats de FUN obtenus ne sont pas de type ‘double’"
 
 #: froll.c:463 nafill.c:87
 #, c-format
@@ -3428,7 +3428,7 @@ msgid ""
 "x must be of type numeric or logical, or a list, data.frame or data.table of "
 "such"
 msgstr ""
-"x doit être de type numérique ou logique, ou une liste, un data.frame ou un "
+"x doit être de type numérique ou booléen, ou une liste, un data.frame ou un "
 "data.table de ce type"
 
 #: frollR.c:37 frollR.c:242
@@ -3437,7 +3437,7 @@ msgstr "n doit pas être de longueur 0"
 
 #: frollR.c:48
 msgid "n must be integer, list is accepted for adaptive TRUE"
-msgstr "n doit être un entier, la liste est acceptée pour avec TRUE"
+msgstr "n doit être un entier, la liste est acceptée pour adaptative TRUE"
 
 #: frollR.c:55 frollR.c:234 frollR.c:237
 msgid "n must be integer"
@@ -3453,7 +3453,7 @@ msgstr "n doit être un vecteur d’entiers ou une liste de vecteurs d’entiers
 
 #: frollR.c:97
 msgid "hasNA must be TRUE, FALSE or NA"
-msgstr "hasNA doit être VRAI, FAUX ou NA"
+msgstr "hasNA doit être TRUE, FALSE ou NA"
 
 #: frollR.c:99
 msgid ""
@@ -3471,14 +3471,14 @@ msgid ""
 msgstr ""
 "Erreur interne : argument %s invalide dans la fonction %s qui aurait dû être "
 "détecté plus tôt. Veuillez signaler cette erreur au gestionnaire de "
-"problèmes de data.table (‘issue tracker)’."
+"problèmes de data.table (‘issue tracker’)."
 
 #: frollR.c:112
 msgid ""
 "using adaptive TRUE and align argument different than 'right' is not "
 "implemented"
 msgstr ""
-"l'utilisation de TRUE adaptatif et d'un argument align différent de ‘right’ "
+"l'utilisation de adaptative TRUE et d'un argument align différent de ‘right’ "
 "n'est pas implémentée"
 
 #: frollR.c:116 frollR.c:264 types.c:64
@@ -3512,7 +3512,7 @@ msgstr "fill doit être un vecteur de longueur 1"
 
 #: frollR.c:147 frollR.c:259
 msgid "fill must be numeric or logical"
-msgstr "fill doit être numérique ou logique"
+msgstr "fill doit être numérique ou booléen"
 
 #: frollR.c:168
 #, c-format

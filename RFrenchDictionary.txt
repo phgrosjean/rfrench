@@ -23,6 +23,7 @@ backslash : caractère barre oblique inversée
 binary operator : opérateur binaire
 bind : lien (binding : lier)
 bitmap : bitmap
+BOM : "BOM (indicateur d’ordre des octets)"
 boxplot : boîte à moustaches
 breaks : bornes des classes (histogrammes)
 browser : explorateur
@@ -44,6 +45,7 @@ computationally singular : numériquement singulière (par exemple pour une matr
 connection : connexion
 console : console
 covariate : covariables
+cow page : page ‘Copy-On-Write’
 database : base de données
 dataframe : tableau de données, mais on précise (data frame) si nécessaire
 dataset : jeu de données
@@ -52,6 +54,7 @@ deprecated : obsolète
 deviance : déviance (en statistique)
 device : périphérique
 dispatch: dispatcheur
+double : ‘double’ (nombre à virgule flottante)
 download: téléchargement client <- serveur 
 driver : pilote
 eigenvalues : valeurs propres
@@ -89,6 +92,7 @@ length : longueur (réserver taille pour size)
 LHS : membre gauche (d'une expression, d'une égalité...)
 library : bibliothèque
 likelihood : vraisemblance
+list column : colonne de type liste
 locale : environnement linguistique
 locator : mode de localisation à la souris (pour les graphes)
 logical : booléen
@@ -109,12 +113,14 @@ non-vector type : type non vectoriel
 offset : décalage
 opcode : code d'opération
 outlier : valeur extrême
+out of range : en dehors de l’intervalle
 overflow : débordement au dépassement de capacité par le haut
 package : package (non traduit cf. significations pour paquet ou paquetage)
 pager : afficheur
 pair list : liste appairée
 parse : analyse syntaxique du code (to parse : analyser le code)
 parser : analyseur syntaxique
+passed in : passé en argument
 path : chemin d'accès (d'un fichier...)
 pattern : motif
 pipe : conduite, caractère barre verticale '|'
@@ -128,6 +134,7 @@ prompt : invite ou invite de commande
 proxy : proxy
 push back : repoussage
 quote symbol : symbole de chaîne de caractères (et non de citation)
+quote rule : règle des guillemets
 raw : raw, si c'est le type de données, sinon brut
 range : plage, étendue ou intervalle, selon le contexte
 redraw : retraçage (des affichages), rafraichissement
@@ -166,6 +173,7 @@ table : tableau de contingence
 tag : marque
 thermometer : jauge (contexte de graphes)
 thread :  contexte (threaded code : code contextuel)
+thread buffers : mémoire tampon des thread
 timeout : délai maximal
 timer : horloge ou temporisation, selon le contexte
 timezone : fuseau horaire
@@ -175,16 +183,19 @@ traceback : historique des fonctions appelées ('traceback')
 trimmed mean : moyenne tronquée
 truncation : troncature
 type : type
+type bumps : collision / changement de type
 unary operator : opérateur unaire
 unbind : délier
 underflow : dépassement de capacité par le bas
 unmatched : déparié
 unpacking : extraction
+unmapping view of file : annulation du mappage / démappage de la vue du fichier
 upload: téléversement client -> serveur 
 url : URL
+unsupported : non pris en charge
 viewport : vue
 vignette : vignette
-warning : avis (avertissement est bien aussi, mais trop long)
+warning : avis (avertissement est bien aussi, mais trop long), message
 weight : pondération
 working directory : répertoire de travail
 workspace : environnement de travail (workspace = environment dans R)
