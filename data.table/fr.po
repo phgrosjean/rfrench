@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-07-25 15:18+0200\n"
+"PO-Revision-Date: 2024-07-26 09:26+0200\n"
 "Last-Translator: Elise Maigné <elise.maigne@inrae.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: assign.c:7
 msgid "Internal error: finalizer hasn't received an ExternalPtr"
@@ -1388,16 +1388,16 @@ msgstr ""
 msgid ""
 "Length of 'no' is %<PRId64> but must be 1 or length of 'test' (%<PRId64>)."
 msgstr ""
-"La longueur de 'no' est %<PRId64> mais doit être 1 ou la longueur de 'test' "
-"(%<PRId64>)."
+"La longueur de 'no' est %<PRId64> mais doit être 1 ou la longueur de "
+"'test' (%<PRId64>)."
 
 #: fifelse.c:28
 #, c-format
 msgid ""
 "Length of 'na' is %<PRId64> but must be 1 or length of 'test' (%<PRId64>)."
 msgstr ""
-"La longueur de 'na' est %<PRId64> mais doit être 1 ou la longueur de 'test' "
-"(%<PRId64>)."
+"La longueur de 'na' est %<PRId64> mais doit être 1 ou la longueur de "
+"'test' (%<PRId64>)."
 
 #: fifelse.c:46
 #, c-format
@@ -5187,7 +5187,7 @@ msgid ""
 "argument specifying columns is type 'double' and one or more items in it are "
 "not whole integers"
 msgstr ""
-"Un argument spécifiant les colonnes est de type 'double' et un ou plusieurs "
+"l'argument spécifiant les colonnes est de type 'double' et un ou plusieurs "
 "éléments ne sont pas des entiers"
 
 #: utils.c:128
@@ -5195,7 +5195,7 @@ msgstr ""
 msgid ""
 "argument specifying columns received non-existing column(s): cols[%d]=%d"
 msgstr ""
-"L'argument spécifiant les colonnes a reçu des colonnes inexistantes : "
+"l'argument spécifiant les colonnes a reçu des colonnes inexistantes : "
 "cols[%d]=%d"
 
 #: utils.c:133
@@ -5207,7 +5207,7 @@ msgstr "l'argument 'x' de data.table n'a pas de nom"
 msgid ""
 "argument specifying columns received non-existing column(s): cols[%d]='%s'"
 msgstr ""
-"L'argument spécifiant les colonnes a reçu des colonnes inexistantes : "
+"l'argument spécifiant les colonnes a reçu des colonnes inexistantes : "
 "cols[%d]='%s'"
 
 #: utils.c:141
@@ -5217,7 +5217,7 @@ msgstr "l'argument spécifiant les colonnes doit être un caractère ou un nombr
 #: utils.c:144
 msgid "argument specifying columns received duplicate column(s)"
 msgstr ""
-"L'argument spécifiant les colonnes a reçu une ou plusieurs colonnes "
+"l'argument spécifiant les colonnes a reçu une ou plusieurs colonnes "
 "dupliquée(s)"
 
 #: utils.c:229
