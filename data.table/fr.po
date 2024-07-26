@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-07-26 11:31+0200\n"
+"PO-Revision-Date: 2024-07-26 11:41+0200\n"
 "Last-Translator: Elise Maigné <elise.maigne@inrae.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -482,15 +482,15 @@ msgid ""
 "then is being plonked. length(values)==%d; length(cols)==%d)\n"
 msgstr ""
 "Le membre de droite (RHS) pour l'élément %d a été dupliqué parce que "
-"NAMED==%d MAYBE_SHARED==%d, mais il est ensuite remplacé (plonk). "
+"NAMED==%d MAYBE_SHARED==%d, mais il est ensuite remplacé ('plonk'). "
 "length(values)==%d ; length(cols)==%d)\n"
 
 #: assign.c:509
 #, c-format
 msgid "Direct plonk of unnamed RHS, no copy. NAMED==%d, MAYBE_SHARED==%d\n"
 msgstr ""
-"Remplacement ('plonk') direct d'un membre de droite (RHS) sans nom, pas de "
-"copie. NAMED==%d, MAYBE_SHARED==%d\n"
+"Remplacement ('plonk') du membre de droite (RHS) sans nom, pas de copie. "
+"NAMED==%d, MAYBE_SHARED==%d\n"
 
 #: assign.c:578
 #, c-format
@@ -1800,7 +1800,7 @@ msgstr "names(data) est NULL. Veuillez signaler ce problème à data.table-help"
 msgid "Failed to realloc thread private group size buffer to %d*4bytes"
 msgstr ""
 "Échec de la réallocation à %d*4 octets de la mémoire tampon du thread du "
-"groupe privé "
+"groupe privé"
 
 #: forder.c:121
 #, c-format
