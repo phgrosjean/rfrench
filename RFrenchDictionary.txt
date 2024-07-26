@@ -3,7 +3,7 @@ Traduction de R en français, minidictionnaire:
 Rem : respectons la syntaxe française. plaçons un espace devant les ponctuations
 telles que :, ;, !, ? (sauf . et ,)
 / : espace avant / après (sauf si c'est un chemin d'accès, par exemple, c:/temp)
-par contre, nous conservons les conventions du langage S pour les guillements,
+par contre, nous conservons les conventions du langage S pour les guillemets,
 soit '' ou "", mais non transformés et sans espaces.
 ’ : remplacer l'apostrophe grasse ’ par l'apostrophe simple '
 ` : remplacer l'apostrophe inverse ` par l'apostrophe simple ' 
@@ -24,6 +24,7 @@ binary operator : opérateur binaire
 bind : lien (binding : lier)
 bitmap : bitmap
 BOM : "BOM (indicateur d’ordre des octets)"
+bounds : bornes
 boxplot : boîte à moustaches
 breaks : bornes des classes (histogrammes)
 browser : explorateur
@@ -45,7 +46,7 @@ computationally singular : numériquement singulière (par exemple pour une matr
 connection : connexion
 console : console
 covariate : covariables
-cow page : page ‘Copy-On-Write’
+cow page : page ‘Copy-On-Write’, page COW
 database : base de données
 dataframe : tableau de données, mais on précise (data frame) si nécessaire
 dataset : jeu de données
@@ -80,6 +81,7 @@ index : indice (presque toujours, et non index)
 interrupt handler : gestionnaire d'interruptions
 invalid : incorrect (à préférer à 'non valide')
 IO : E/S (pour entrées/sorties)
+issue tracker : gestionnaire de tickets (issue tracker)
 knots : noeuds
 kriging : krigeage
 label : étiquette
@@ -98,6 +100,7 @@ locator : mode de localisation à la souris (pour les graphes)
 logical : booléen
 log-likelihood : log de vraisemblance
 magic number : nombre magique
+pap (to map) : mapper (anglicisme d'usage courant)
 matrix is exactly singular : matrice singulière
 metafile : metafile
 mirror site : site miroir
@@ -120,6 +123,7 @@ pager : afficheur
 pair list : liste appairée
 parse : analyse syntaxique du code (to parse : analyser le code)
 parser : analyseur syntaxique
+passed : transmis
 passed in : passé en argument
 path : chemin d'accès (d'un fichier...)
 pattern : motif
@@ -189,6 +193,7 @@ unbind : délier
 underflow : dépassement de capacité par le bas
 unmatched : déparié
 unpacking : extraction
+unwrap columns : déplier les colonnes
 unmapping view of file : annulation du mappage / démappage de la vue du fichier
 upload: téléversement client -> serveur 
 url : URL
