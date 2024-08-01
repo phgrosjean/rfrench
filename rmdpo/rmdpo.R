@@ -1,6 +1,7 @@
 # Create .po files from R Markdown or Quarto documents an build translated
 # versions of these documents. Internally uses {reticulate} and Python's mdpo.
-# Copyright (c) 2024, Philippe Grosjean (phgrosjean@sciviews.org)
+# Copyright (c) 2024, Philippe Grosjean <phgrosjean@sciviews.org> and
+#                     Christian Wiat <w9204-r@yahoo.com>
 # (probably to be released as the {rmdpo} R package under MIT license)
 
 #' Create a poEdit file from an R Markdown or Quarto document
@@ -80,12 +81,12 @@ rmd2po <- function(rmdfile, lang = "fr", podir = "po",
   tmpfile <- file.path(lang, paste0(basename(rmdfile), ".tmp"))
   rmddata <- readLines(rmdfile)
   rmddata <- sub("^---$", "~~~", rmddata)
-  rmddata <- sub("^```\\{([a-zA-Z]+[ ,][^}]+)\\}$",
-    "```{chunk_with_args}\n# Chunk args: \\1", rmddata)
+  rmddata <- sub("^( *)```\\{([a-zA-Z]+[ ,][^}]+)\\}$",
+    "\\1```{chunk_with_args}\n\\1# Chunk args: \\2", rmddata)
   writeLines(rmddata, tmpfile)
 
   # Create the .po file
-  pofile <- file.path(lang, podir, paste0(rmdfilename, ".po"))
+  pofile <- file.path(lang, podir, paste0(rmdfilename, "-", lang, ".po"))
   cmd <- paste0('"', md2po, '" --quiet --metadata "Language: ', lang,
     '" --include-codeblocks --merge-pofiles --remove-not-found ',
     '--save --po-filepath ', pofile)
@@ -152,14 +153,14 @@ po2rmd <- function(rmdfile, lang = "fr", podir = "po",
   if (!file.exists(tmpfile)) {
     rmddata <- readLines(rmdfile)
     rmddata <- sub("^---$", "~~~", rmddata)
-    rmddata <- sub("^```\\{([a-zA-Z]+[ ,][^}]+)\\}$",
-      "```{chunk_with_args}\n# Chunk args: \\1", rmddata)
+    rmddata <- sub("^( *)```\\{([a-zA-Z]+[ ,][^}]+)\\}$",
+      "\\1```{chunk_with_args}\n\\1# Chunk args: \\2", rmddata)
     writeLines(rmddata, tmpfile)
   }
 
   # Create translated .Rmd or .qmd file using original .Rmd/.qmd and .po file
   rmd2file <- file.path(lang, rmdfilename)
-  pofile <- file.path(lang, podir, paste0(rmdfilename, ".po"))
+  pofile <- file.path(lang, podir, paste0(rmdfilename, "-", lang, ".po"))
   cmd <- paste0('"', po2md, '" --quiet --pofiles ', pofile,
     ' --wrapwidth 0 --save ', rmd2file)
   if (isTRUE(verbose))
@@ -175,16 +176,70 @@ po2rmd <- function(rmdfile, lang = "fr", podir = "po",
   # Now, we have to rework a little bit the produced .Rmd/.qmd file to make sure
   # the YAML header and the R chunks headers are correct
   rmd2data <- readLines(rmd2file)
+  # Restore the YAML header markers
   rmd2data <- sub("~~~", "---", rmd2data, fixed = TRUE)
-  rmd2data <- sub("^# Chunk args: (.+)$", "```{\\1}", rmd2data)
+  # Restore the R chunks headers
+  rmd2data <- sub("^( *)# Chunk args: (.+)$", "\\1```{\\2}", rmd2data)
   rmd2data <- rmd2data[!grepl("```{chunk_with_args}", rmd2data, fixed = TRUE)]
+  # Indent code correctly in indented code chunks
+  # po2md indents tags and sometimes first line, but not the remaining lines
+  # This produces incorrect results => indent all lines now inside the chunk
+  inchunks <- grepl("^ +```", rmd2data)
+  if (any(inchunks)) {
+    # Verification: should be an even number
+    if ((sum(inchunks) %% 2) != 0)
+      stop("Incorrect number of indented code chunks markers in ", rmd2file)
+    inchunklines <- (1:length(rmd2data))[inchunks]
+    # Odd lines are start markers, even lines are end markers
+    starts <- inchunklines[c(TRUE, FALSE)]
+    ends <- inchunklines[c(FALSE, TRUE)]
+    # Process each chunk in turn
+    for (i in seq_along(starts)) {
+      chunk_range <- starts[i]:ends[i]
+      chunk_header <- rmd2data[starts[i]]
+      # Number of space to use for indentation (seems to be always 3, but we
+      # prefer to get it from the start header)
+      spaces <- sub("^( +)`.*$", "\\1", chunk_header)
+      # If we have a complex chunk header we also have to indent first line,
+      # otherwise, not
+      indent_first_line <- 3 # First code line is already correctly indented
+      is_complex <- grepl("^( *)```\\{([a-zA-Z]+[ ,][^}]+)\\}$", chunk_header)
+      if (is_complex) indent_first_line <- 2 # but not in this case
+      # Are there remaining lines to indent?
+      if (length(chunk_range) - indent_first_line > 0) {
+        # Indent all remaining lines
+        indent_range <- chunk_range[indent_first_line:(length(chunk_range) - 1)]
+        rmd2data[indent_range] <- paste0(spaces, rmd2data[indent_range])
+      }
+    }
+  }
   writeLines(rmd2data, rmd2file)
 
   file.path(rmddir, rmd2file)
 }
 
+# Usage:
+# 1. Define the path for md2po and po2md programs
 options(mdpodir = "~/miniconda3/bin")
-rmd2po("~/Downloads/data.table-master/vignettes/datatable-secondary-indices-and-auto-indexing.Rmd", verbose = TRUE, , keep.tmpfile = TRUE)
+
+# 2. Indicate the directory where the vignettes reside (absolute or relative)
+vigdir <- "data.table/vignettes" # Suppose that the current dir is rfrench
+vigdir <- normalizePath(vigdir) # Absolute path (required by md2po and po2md)
+
+# 3. Translate the vignettes
+
+## datatable-intro.Rmd
+rmd2po(file.path(vigdir, "datatable-intro.Rmd"), verbose = TRUE, , keep.tmpfile = TRUE)
 # Translate strings using poEdit, then...
-po2rmd("~/Downloads/data.table-master/vignettes/datatable-secondary-indices-and-auto-indexing.Rmd", verbose = TRUE)
+po2rmd(file.path(vigdir, "datatable-intro.Rmd"), verbose = TRUE)
+
+## datatable-sd-usage.Rmd
+rmd2po(file.path(vigdir, "datatable-sd-usage.Rmd"), verbose = TRUE, , keep.tmpfile = TRUE)
+# Translate strings using poEdit, then...
+po2rmd(file.path(vigdir, "datatable-sd-usage.Rmd"), verbose = TRUE)
+
+## datatable-secondary-indices-and-auto-indexing.Rmd
+rmd2po(file.path(vigdir, "datatable-secondary-indices-and-auto-indexing.Rmd"), verbose = TRUE, , keep.tmpfile = TRUE)
+# Translate strings using poEdit, then...
+po2rmd(file.path(vigdir, "datatable-secondary-indices-and-auto-indexing.Rmd"), verbose = TRUE)
 
