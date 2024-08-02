@@ -42,9 +42,11 @@ dim(flights)
 
 Dans cette vignette, nous allons
 
-* discuter des *indices secondaires* et justifier leur nécessité en citant des cas où l'établissement de clés n'est pas nécessairement idéal,
-* réaliser un sous-ensemble rapide, une fois de plus, mais en utilisant le nouvel argument `on`, qui calcule des indices secondaires en interne pour la tâche (temporairement), et les réutilise s'il y en a déjà un,
-* et enfin, examiner l’*auto-indexation* qui va plus loin et crée des index secondaires automatiquement, mais en utilisant la syntaxe native de R pour le sous-ensemble.
+* discuter des *indices secondaires* et justifie leur nécessité en citant des cas où l'établissement de clés n'est pas nécessairement idéal,
+
+* effectuer un sous-ensemble rapide, une fois de plus, mais en utilisant le nouvel argument `on`, qui calcule des indices secondaires en interne pour la tâche (temporairement), et les réutilise s'il en existe déjà un,
+
+* et enfin, explorer l’*auto-indexation* qui va plus loin et crée des indices secondaires automatiquement, mais en utilisant la syntaxe native de R pour le sous-ensemble.
 
 ## 1. Indices secondaires
 
@@ -52,8 +54,9 @@ Dans cette vignette, nous allons
 
 Les indices secondaires sont similaires aux `clés` dans *data.table*, à l'exception de deux différences majeures :
 
-* Il ne réorganise pas physiquement l'ensemble de la table de données en RAM. Au lieu de cela, il calcule seulement l'ordre pour l'ensemble des colonnes fournies et stocke ce *vecteur d'ordre* dans un attribut supplémentaire appelé `index`.
-* Il peut y avoir plus d'un indice secondaire pour une table data.table (comme nous le verrons plus loin).
+* Il ne réorganise pas physiquement l'ensemble de la table de données en RAM. Au lieu de cela, il calcule uniquement l'ordre pour l'ensemble des colonnes fournies et stocke ce *vecteur d'ordre* dans un attribut supplémentaire appelé `index`.
+
+* Il peut y avoir plus d'un index secondaire pour une table de données (comme nous le verrons plus loin).
 
 ### b) Définir et obtenir des indices secondaires
 
@@ -71,9 +74,12 @@ names(attributes(flights))
 ```
 
 * `setindex` et `setindexv()` permettent d'ajouter un index secondaire à data.table.
+
 * Notez que `flights` n'est **pas** physiquement réordonné dans l'ordre croissant de `origin`, comme cela aurait été le cas avec `setkey()`.
+
 * Notez également que l'attribut `index` a été ajouté à `flights`.
-* `setindex(flights, NULL)` supprimerait tous les index secondaires.
+
+* `setindex(flights, NULL)` supprimerait tous les indices secondaires.
 
 #### -- Comment obtenir tous les indices secondaires définis jusqu'à présent dans `flights` ?
 
@@ -84,7 +90,8 @@ setindex(flights, origin, dest)
 indices(flights)
 ```
 
-* La fonction `indices()` renvoie tous les indices secondaires actuels dans data.table. Si aucun n'existe, `NULL` est retourné.
+* La fonction `indices()` renvoie tous les indices secondaires actuels dans la table data.table. Si aucun n'existe, `NULL` est retourné.
+
 * Notez qu'en créant un autre index sur les colonnes `origin, dest`, nous ne perdons pas le premier index créé sur la colonne `origin`, c'est-à-dire que nous pouvons avoir plusieurs index secondaires.
 
 ### c) Pourquoi avons-nous besoin d'indices secondaires ?
@@ -135,11 +142,13 @@ Comme nous le verrons dans la section suivante, l'argument `on` présente plusie
 
 #### Argument `on`
 
-* permet de réaliser un sous-ensemble en calculant les indices secondaires à la volée. Cela évite d'avoir à faire `setindex()` à chaque fois.
-* permet de réutiliser facilement les indices existants en vérifiant simplement les attributs.
-* permet une syntaxe plus propre, car les colonnes sur lesquelles le sous-ensemble est effectué font partie de la syntaxe. Le code est ainsi plus facile à suivre lorsqu'on le consulte ultérieurement.
+* permet d’effectuer des sous-ensembles en calculant les indices secondaires à la volée. Cela évite d'avoir à faire `setindex()` à chaque fois.
 
-   Notez que l'argument `on` peut également être utilisé pour les sous-ensembles à clés. En fait, nous encourageons à fournir l'argument `on` même lorsque le sous-ensemble utilise des clés pour une meilleure lisibilité.
+* permet de réutiliser facilement les indices existants en vérifiant simplement les attributs.
+
+* permet une syntaxe plus propre en intégrant dans la syntaxe les colonnes sur lesquelles le sous-ensemble est effectué. Le code est ainsi plus facile à suivre lorsqu'on le consulte ultérieurement.
+
+    Notez que l'argument `on` peut également être utilisé pour les sous-ensembles à clés. En fait, nous encourageons à fournir l'argument `on` même lorsque le sous-ensemble utilise des clés pour une meilleure lisibilité.
 
 # 
 
@@ -157,12 +166,14 @@ flights["JFK", on = "origin"]
 # flights[list("JFK"), on = "origin"]
 ```
 
-* Cette instruction effectue également une recherche binaire rapide basée sur le sous-ensemble, en calculant l'indice à la volée. Cependant, notez qu'elle n'enregistre pas automatiquement l'indice en tant qu'attribut. Cela pourrait changer à l'avenir.
-* Si nous avions déjà créé un indice secondaire en utilisant `setindex()`, alors `on` le réutiliserait au lieu de le (re)calculer. Nous pouvons le voir en utilisant `verbose = TRUE` :
-   ```{r}
-   setindex(flights, origin)
-flights["JFK", on = "origin", verbose = TRUE][1:5]
-   ```
+* Cette instruction effectue également une recherche binaire rapide basée sur le sous-ensemble, en calculant l'index à la volée. Cependant, notez qu'elle n'enregistre pas automatiquement l'index en tant qu'attribut. Cela pourrait changer à l'avenir.
+
+* Si nous avions déjà créé un index secondaire en utilisant `setindex()`, alors `on` le réutiliserait au lieu de le (re)calculer. Nous pouvons le voir en utilisant `verbose = TRUE`:
+
+    ```{r}
+    setindex(flights, origin)
+    flights["JFK", on = "origin", verbose = TRUE][1:5]
+    ```
 
 #### -- Comment puis-je faire un sous-ensemble basé sur les colonnes `origin` *et* `dest` ?
 
@@ -172,8 +183,9 @@ Par exemple, si nous voulons un sous-ensemble combinant `"JFK" et "LAX"`, alors 
 flights[.("JFK", "LAX"), on = c("origin", "dest")][1:5]
 ```
 
-* l'argument `on` accepte un vecteur de caractères de noms de colonnes correspondant à l'ordre fourni à `i-argument`.
-* Comme le temps de calcul de l'indice secondaire est assez faible, il n'est pas nécessaire d'utiliser `setindex()`, sauf si, une fois de plus, la tâche implique un sous-ensemble répété sur la même colonne.
+* l’argument `on` accepte un vecteur de caractères de noms de colonnes correspondant à l'ordre fourni à `i-argument`.
+
+* Comme le temps de calcul de l'index secondaire est assez faible, nous n'avons pas besoin d'utiliser `setindex()`, sauf si, une fois de plus, la tâche implique un sous-ensemble répété sur la même colonne.
 
 ### b) Sélection dans `j`
 
@@ -222,7 +234,7 @@ Maintenant, vérifions si `24` est remplacé par `0` dans la colonne `hour`.
 flights[, sort(unique(hour))]
 ```
 
-* C'est en particulier un énorme avantage des indices secondaires. Auparavant, pour mettre à jour quelques lignes de `hour`, nous devions utiliser `setkey()` sur celui-ci, ce qui réorganisait inévitablement l'ensemble de la data.table. Avec `on`, l'ordre est préservé, et l'opération est beaucoup plus rapide ! En inspectant le code, la tâche que nous voulions effectuer est également très claire.
+* C'est notamment un énorme avantage des index secondaires. Auparavant, pour mettre à jour quelques lignes de `hour`, nous devions utiliser `setkey()` sur celui-ci, ce qui réorganisait inévitablement l'ensemble de la data.table. Avec `on`, l'ordre est préservé, et l'opération est beaucoup plus rapide ! En inspectant le code, la tâche que nous voulions effectuer est également assez claire.
 
 ### f) Agrégation à l'aide de `by`
 
@@ -233,7 +245,7 @@ ans <- flights["JFK", max(dep_delay), keyby = month, on = "origin"]
 head(ans)
 ```
 
-* Nous aurions dû remettre le `key` à `origin, dest`, si nous n'avions pas utilisé `on` qui construit en interne des indices secondaires à la volée.
+* Nous aurions dû remettre `key` à `origin, dest`, si nous n'avions pas utilisé `on` qui construit en interne des index secondaires à la volée.
 
 ### g) L'argument *mult*
 
@@ -261,7 +273,7 @@ Nous pouvons choisir si les requêtes qui ne correspondent pas doivent retourner
 flights[.(c("LGA", "JFK", "EWR"), "XNA"), mult = "last", on = c("origin", "dest"), nomatch = NULL]
 ```
 
-* Il n'y a pas de vols reliant "JFK" et "XNA". Par conséquent, cette ligne est ignorée dans le résultat.
+* Aucun vol ne relie "JFK" à "XNA". Par conséquent, cette ligne est ignorée dans le résultat.
 
 ## 3. Indexation automatique
 
@@ -301,9 +313,11 @@ Le temps nécessaire pour créer un sous-ensemble la première fois est égal au
 system.time(dt[x %in% 1989:2012])
 ```
 
-* L'exécution du code la première fois a nécessité `r sprintf("%.3f", t1["elapsed"])` secondes tandis que la seconde exécution a pris `r sprintf("%.3f", t2["elapsed"])` secondes.
+* L'exécution la première fois a pris `r sprintf("%.3f", t1["elapsed"])` secondes tandis que la deuxième fois, elle a pris `r sprintf("%.3f", t2["elapsed"])` secondes.
+
 * L'indexation automatique peut être désactivée en définissant l'argument global `options(datatable.auto.index = FALSE)`.
-* Désactiver l'indexation automatique permet toujours d'utiliser les indices créés explicitement avec `setindex` ou `setindexv`. Vous pouvez désactiver complètement les indices en définissant l'argument global `options(datatable.use.index = FALSE)`.
+
+* Désactiver l'indexation automatique permet toujours d'utiliser les index créés explicitement avec `setindex` ou `setindexv`. Vous pouvez désactiver complètement les index en définissant l'argument global `options(datatable.use.index = FALSE)`.
 
 # 
 
