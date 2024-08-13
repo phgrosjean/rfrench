@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: data.table 1.14.99\n"
 "POT-Creation-Date: 2023-12-28 12:46+0000\n"
-"PO-Revision-Date: 2024-07-29 10:17+0200\n"
+"PO-Revision-Date: 2024-08-13 11:01+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: AllS4.R:2
 #, c-format
@@ -436,8 +436,8 @@ msgstr "'%s' n'est pas visible dans le contexte de l'appelant et ce n'est pas no
 #, c-format
 msgid ""
 "'%s' is not found in calling scope, but it is a column of type %s. If you wish to select rows where that "
-"column contains TRUE, or perhaps that column contains row numbers of itself to select, try DT[(col)], DT[DT"
-"$col], or DT[col==TRUE} is particularly clear and is optimized"
+"column contains TRUE, or perhaps that column contains row numbers of itself to select, try DT[(col)], "
+"DT[DT$col], or DT[col==TRUE} is particularly clear and is optimized"
 msgstr ""
 "'%s' n'est pas visible dans le contexte de l'appelant, mais c'est une colonne de type %s. Si vous "
 "souhaitez sélectionner des lignes pour lesquelles cette colonne vaut TRUE, ou peut-être que cette colonne "
