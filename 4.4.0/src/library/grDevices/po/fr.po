@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: R 4.4.0\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2024-04-15 18:10-0700\n"
-"PO-Revision-Date: 2024-07-04 21:30+0200\n"
+"PO-Revision-Date: 2024-08-13 11:05+0200\n"
 "Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: axis_scales.c:37 axis_scales.c:38 axis_scales.c:50
 #, c-format
@@ -161,8 +161,7 @@ msgstr "argument chaîne de caractère incorrect dans '%s'"
 #: devPS.c:811
 #, c-format
 msgid "font width unknown for character 0x%02x in encoding %s"
-msgstr ""
-"largeur de police inconnue pour le caractère 0x%02x dans l'encodage %s"
+msgstr "largeur de police inconnue pour le caractère 0x%02x dans l'encodage %s"
 
 #: devPS.c:872
 #, c-format
@@ -191,8 +190,8 @@ msgid ""
 "invalid character (%04X) sent to 'PostScriptCIDMetricInfo' in a single-byte "
 "locale"
 msgstr ""
-"caractère incorrect (%04x) envoyé à 'PostScriptCIDMetricInfo' dans une "
-"locale à un octet"
+"caractère incorrect (%04X) envoyé à 'PostScriptCIDMetricInfo' dans une locale "
+"à un octet"
 
 #: devPS.c:996
 msgid ""
@@ -290,8 +289,8 @@ msgstr "jointure de ligne incorrecte"
 msgid "invalid line mitre"
 msgstr "mitre (jointure pointue) de ligne incorrecte"
 
-#: devPS.c:3011 devPS.c:3947 devPS.c:4396 devPS.c:4423 devPS.c:5633
-#: devPS.c:10043 devPS.c:10114
+#: devPS.c:3011 devPS.c:3947 devPS.c:4396 devPS.c:4423 devPS.c:5633 devPS.c:10043
+#: devPS.c:10114
 #, c-format
 msgid "attempt to use invalid font %d replaced by font 1"
 msgstr "tentative d'utiliser la police incorrecte %d remplacée par police 1"
@@ -347,8 +346,7 @@ msgstr "type de page incorrect '%s' (postscript)"
 
 #: devPS.c:3627 devPS.c:4930 devWindows.c:2345
 msgid ""
-"semi-transparency is not supported on this device: reported only once per "
-"page"
+"semi-transparency is not supported on this device: reported only once per page"
 msgstr ""
 "la semi-transparence n'est pas supportée sur ce périphérique : reporté "
 "seulement une fois par page"
@@ -602,11 +600,11 @@ msgstr ""
 #: devPS.c:9258
 #, c-format
 msgid ""
-"Cannot open temporary file '%s' for compression (reason: %s); compression "
-"has been turned off for this device"
+"Cannot open temporary file '%s' for compression (reason: %s); compression has "
+"been turned off for this device"
 msgstr ""
-"Impossible d'ouvrir le fichier temporaire de compression '%s' (raison : "
-"%s) ; la compression a été désactivée pour ce périphérique"
+"Impossible d'ouvrir le fichier temporaire de compression '%s' (raison : %s) ; "
+"la compression a été désactivée pour ce périphérique"
 
 #: devPS.c:9867 devPS.c:10371 devPS.c:10418
 msgid "failed to find or load PDF font"
@@ -635,9 +633,9 @@ msgstr "paramètre 'family' incorrect dans %s"
 msgid "invalid 'fonts' parameter in %s"
 msgstr "paramètre 'fonts' incorrect dans %s"
 
-#: devPS.c:10861 devPS.c:11027 devPS.c:11030 devWindows.c:3761
-#: devWindows.c:3765 devWindows.c:3773 devWindows.c:3784 devWindows.c:3790
-#: devWindows.c:3797 devWindows.c:3804 devWindows.c:3808
+#: devPS.c:10861 devPS.c:11027 devPS.c:11030 devWindows.c:3761 devWindows.c:3765
+#: devWindows.c:3773 devWindows.c:3784 devWindows.c:3790 devWindows.c:3797
+#: devWindows.c:3804 devWindows.c:3808
 #, c-format
 msgid "invalid value of '%s'"
 msgstr "valeur incorrecte de '%s'"
@@ -671,8 +669,7 @@ msgstr "Echec à la création du gradient"
 #: devQuartz.c:653 devQuartz.c:686
 msgid "Unsupported gradient fill extend type; using 'pad'"
 msgstr ""
-"Le type d'extension du remplissage gradient est non supporté; 'pad' est "
-"utilisé"
+"Le type d'extension du remplissage gradient est non supporté; 'pad' est utilisé"
 
 #: devQuartz.c:729 devQuartz.c:762
 msgid "Failed to create pattern"
@@ -774,11 +771,10 @@ msgid "unable to create device description"
 msgstr "impossible de créer une description du périphérique"
 
 #: devQuartz.c:3245
-msgid ""
-"unable to create quartz() device target, given type may not be supported"
+msgid "unable to create quartz() device target, given type may not be supported"
 msgstr ""
-"impossible de créer le périphérique cible quartz(), le type fourni n'est "
-"peut-être pas supporté"
+"impossible de créer le périphérique cible quartz(), le type fourni n'est peut-"
+"être pas supporté"
 
 #: devQuartz.c:3375
 msgid "Quartz device is not available on this platform"
@@ -991,8 +987,7 @@ msgstr "Modèles du Cairo épuisés"
 #: cairo/cairoFns.c:392
 msgid "Cairo clipping paths exhausted (failed to increase maxClipPaths)"
 msgstr ""
-"Chemins de détourage du Cairo épuisés (échec de l'augmentation de "
-"maxClipPaths)"
+"Chemins de détourage du Cairo épuisés (échec de l'augmentation de maxClipPaths)"
 
 #: cairo/cairoFns.c:439
 msgid "Cairo clipping paths exhausted"

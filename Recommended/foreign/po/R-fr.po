@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: foreign 0.8-86\n"
 "Report-Msgid-Bugs-To: bugs@r-project.org\n"
 "POT-Creation-Date: 2021-02-12 09:19\n"
-"PO-Revision-Date: 2024-06-27 19:00+0200\n"
+"PO-Revision-Date: 2024-08-13 11:12+0200\n"
 "Last-Translator: Christian Wia <w9204-rs@yahoocom>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
@@ -34,7 +34,7 @@ msgid "S mode %s (near byte offset %s) not supported"
 msgstr "Mode S %s (dans les environs du décalage d'octet %s) non supporté"
 
 msgid "Argument 'file' must be a character string or connection."
-msgstr "L’argument 'file' doit être une chaîne de caractères ou une connexion"
+msgstr "L’argument 'file' doit être une chaîne de caractères ou une connexion."
 
 msgid "Invalid attribute specification."
 msgstr "Spécification d'attribut incorrect."
@@ -106,8 +106,8 @@ msgstr "l'argument 'file' doit être une chaîne de caractères ou une connexion
 
 msgid "file has zero or fewer variables: probably not an EpiInfo file"
 msgstr ""
-"le fichier a zéro variable ou moins : ce n'est probablement pas un "
-"fichier EpiInfo"
+"le fichier a zéro variable ou moins : ce n'est probablement pas un fichier "
+"EpiInfo"
 
 msgid "no records in file"
 msgstr "aucun enregistrement dans le fichier"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: foreign 0.8-86\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-12 09:19+0000\n"
-"PO-Revision-Date: 2024-06-27 18:26+0200\n"
+"PO-Revision-Date: 2024-08-13 11:11+0200\n"
 "Last-Translator: Christian Wia <w9204-rs@yahoo.com>\n"
 "Language-Team: French <R-core@r-project.org>\n"
 "Language: fr\n"
@@ -110,8 +110,7 @@ msgstr "getlab : octet nv$ = %o octal"
 
 #: R_systat.c:496
 msgid "file has more variables than this function can read"
-msgstr ""
-"le fichier possède plus de variables que cette fonction ne peut en lire"
+msgstr "le fichier possède plus de variables que cette fonction ne peut en lire"
 
 #: R_systat.c:503
 #, c-format
@@ -153,8 +152,8 @@ msgstr "le premier argument doit être un nom de fichier"
 msgid "unable to open file"
 msgstr "impossible d'ouvrir le fichier"
 
-#: Rdbfwrite.c:97 Rdbfwrite.c:135 stataread.c:304 stataread.c:325
-#: stataread.c:816 stataread.c:846
+#: Rdbfwrite.c:97 Rdbfwrite.c:135 stataread.c:304 stataread.c:325 stataread.c:816
+#: stataread.c:846
 msgid "unknown data type"
 msgstr "type de donnée inconnu"
 
@@ -196,8 +195,7 @@ msgstr "problème à la lecture d'un fichier SAS transport"
 #: file-handle.c:115
 #, c-format
 msgid "file handle `%s' has not been previously declared on FILE HANDLE"
-msgstr ""
-"le handle du fichier '%s' n'a pas été préalablement déclaré dans FILE HANDLE"
+msgstr "le handle du fichier '%s' n'a pas été préalablement déclaré dans FILE HANDLE"
 
 #: format.c:108
 #, c-format
@@ -207,72 +205,69 @@ msgstr "le format %s ne peut être utilisé comme format d'entrée"
 #: format.c:113
 #, c-format
 msgid ""
-"input format %s specifies a bad width %d.  Format %s requires a width "
-"between %d and %d"
+"input format %s specifies a bad width %d.  Format %s requires a width between %d and %d"
 msgstr ""
-"le format d'entrée %s spécifie une mauvaise largeur %d. Le format %s "
-"nécessite une largeur comprise entre %d et %d"
+"le format d'entrée %s spécifie une mauvaise largeur %d. Le format %s nécessite une "
+"largeur comprise entre %d et %d"
 
 #: format.c:119
 #, c-format
 msgid ""
-"input format %s specifies an odd width %d, but format %s requires an even "
-"width between %d and %d"
+"input format %s specifies an odd width %d, but format %s requires an even width "
+"between %d and %d"
 msgstr ""
-"le format d'entrée %s spécifie une largeur %d impaire, mais le format %s "
-"nécessite une largeur paire comprise entre %d et %d"
+"le format d'entrée %s spécifie une largeur %d impaire, mais le format %s nécessite une "
+"largeur paire comprise entre %d et %d"
 
 #: format.c:125
 #, c-format
 msgid ""
-"Input format %s specifies a bad number of implied decimal places %d.  Input "
-"format %s allows up to 16 implied decimal places"
+"Input format %s specifies a bad number of implied decimal places %d.  Input format %s "
+"allows up to 16 implied decimal places"
 msgstr ""
-"Le format d'entrée %s spécifie un mauvais nombre de décimales implicites %d. "
-"Le format d'entrée %s ne permet pas plus de 16 décimales implicites"
+"Le format d'entrée %s spécifie un mauvais nombre de décimales implicites %d. Le format "
+"d'entrée %s ne permet pas plus de 16 décimales implicites"
 
 #: format.c:144
 #, c-format
 msgid ""
-"output format %s specifies a bad width %d.  Format %s requires a width "
-"between %d and %d"
+"output format %s specifies a bad width %d.  Format %s requires a width between %d and "
+"%d"
 msgstr ""
-"le format de sortie %s spécifie une mauvaise largeur %d. Le format %s "
-"nécessite une largeur comprise entre %d et %d"
+"le format de sortie %s spécifie une mauvaise largeur %d. Le format %s nécessite une "
+"largeur comprise entre %d et %d"
 
 #: format.c:153
 #, c-format
 msgid ""
-"output format %s requires minimum width %d to allow %d decimal places.  Try "
-"%s%d.%d instead of %s"
+"output format %s requires minimum width %d to allow %d decimal places.  Try %s%d.%d "
+"instead of %s"
 msgstr ""
-"le format de sortie %s nécessite une largeur minimum %d pour permettre %d "
-"décimales. Essayez %s%d.%d à la place de %s"
+"le format de sortie %s nécessite une largeur minimum %d pour permettre %d décimales. "
+"Essayez %s%d.%d à la place de %s"
 
 #: format.c:160
 #, c-format
 msgid ""
-"output format %s specifies an odd width %d, but output format %s requires an "
-"even width between %d and %d"
+"output format %s specifies an odd width %d, but output format %s requires an even "
+"width between %d and %d"
 msgstr ""
-"le format de sortie %s spécifie une largeur %d impaire, mais le format de "
-"sortie %s nécessite une largeur paire comprise entre %d et %d"
+"le format de sortie %s spécifie une largeur %d impaire, mais le format de sortie %s "
+"nécessite une largeur paire comprise entre %d et %d"
 
 #: format.c:166
 #, c-format
 msgid ""
-"Output format %s specifies a bad number of implied decimal places %d.  "
-"Output format %s allows a number of implied decimal places between 1 and 16"
+"Output format %s specifies a bad number of implied decimal places %d.  Output format "
+"%s allows a number of implied decimal places between 1 and 16"
 msgstr ""
-"Le format de sortie %s spécifie un mauvais nombre de décimales implicites "
-"%d. Le format de sortie %s autorise seulement entre 1 et 16 décimales "
-"implicites"
+"Le format de sortie %s spécifie un mauvais nombre de décimales implicites %d. Le "
+"format de sortie %s autorise seulement entre 1 et 16 décimales implicites"
 
 #: format.c:181
 #, c-format
 msgid "cannot display a string variable of width %d with format specifier %s"
-msgstr ""
-"impossible d'afficher une variable caractère de largeur %d avec le format %s"
+msgstr "impossible d'afficher une variable caractère de largeur %d avec le format %s"
 
 #: minitab.c:92 minitab.c:158
 msgid "non-numeric data types are not yet implemented"
@@ -313,17 +308,14 @@ msgstr "Mauvaise fin de ligne"
 #: pfm-read.c:227
 #, c-format
 msgid "cannot read file %s as portable file: already opened for %s"
-msgstr ""
-"impossible de lire le fichier %s comme un fichier portable : déjà ouvert "
-"pour %s"
+msgstr "impossible de lire le fichier %s comme un fichier portable : déjà ouvert pour %s"
 
 #: pfm-read.c:243
 #, c-format
-msgid ""
-"an error occurred while opening \"%s\" for reading as a portable file: %s"
+msgid "an error occurred while opening \"%s\" for reading as a portable file: %s"
 msgstr ""
-"une erreur s'est produite lors de l'ouverture de \"%s\" en lecture comme "
-"fichier portable : %s"
+"une erreur s'est produite lors de l'ouverture de \"%s\" en lecture comme fichier "
+"portable : %s"
 
 #: pfm-read.c:275
 msgid "Data record expected"
@@ -428,15 +420,12 @@ msgstr "position %d : le nom de variable commence avec une lettre minuscule %c"
 #: pfm-read.c:774
 #, c-format
 msgid "position %d: Variable name character %d is lowercase letter %c"
-msgstr ""
-"position %d : le caractère %d du nom de variable est une lettre minuscule %c"
+msgstr "position %d : le caractère %d du nom de variable est une lettre minuscule %c"
 
 #: pfm-read.c:783
 #, c-format
 msgid "position %d: character `\\%03o' is not valid in a variable name"
-msgstr ""
-"position %d : le caractère '\\%03o' n'est pas acceptable dans un nom de "
-"variable"
+msgstr "position %d : le caractère '\\%03o' n'est pas acceptable dans un nom de variable"
 
 #: pfm-read.c:789
 #, c-format
@@ -466,11 +455,10 @@ msgstr "Variable %s inconnue lors de la lecture des étiquettes de valeurs"
 #: pfm-read.c:935
 #, c-format
 msgid ""
-"Cannot assign value labels to %s and %s, which have different variable types "
-"or widths"
+"Cannot assign value labels to %s and %s, which have different variable types or widths"
 msgstr ""
-"Impossible d'assigner les étiquettes de valeurs à %s et %s, parce qu'elles ont "
-"des types ou des longueurs de variables différents"
+"Impossible d'assigner les étiquettes de valeurs à %s et %s, parce qu'elles ont des "
+"types ou des longueurs de variables différents"
 
 #: pfm-read.c:981
 #, c-format
@@ -494,47 +482,42 @@ msgstr "%s : fermeture du fichier système : %s"
 #: sfm-read.c:299
 #, c-format
 msgid "cannot read file %s as system file: already opened for %s"
-msgstr ""
-"impossible de lire le fichier %s comme un fichier système : déjà ouvert pour "
-"%s"
+msgstr "impossible de lire le fichier %s comme un fichier système : déjà ouvert pour %s"
 
 #: sfm-read.c:314
 #, c-format
 msgid "An error occurred while opening '%s' for reading as a system file: %s"
 msgstr ""
-"Une erreur s'est produite lors de l'ouverture de '%s' en lecture comme "
-"fichier système : %s"
+"Une erreur s'est produite lors de l'ouverture de '%s' en lecture comme fichier "
+"système : %s"
 
 #: sfm-read.c:345
 #, c-format
-msgid ""
-"%s: Weighting variable may not be a continuation of a long string variable"
+msgid "%s: Weighting variable may not be a continuation of a long string variable"
 msgstr ""
-"%s : la variable de pondération ne peut continuer une variable de longue "
-"chaîne de caractères"
+"%s : la variable de pondération ne peut continuer une variable de longue chaîne de "
+"caractères"
 
 #: sfm-read.c:347
 #, c-format
 msgid "%s: Weighting variable may not be a string variable"
 msgstr ""
-"%s : la variable de pondération ne peut être une variable de type chaîne de "
-"caractères"
+"%s : la variable de pondération ne peut être une variable de type chaîne de caractères"
 
 #: sfm-read.c:372
 #, c-format
 msgid ""
-"%s: Orphaned variable index record (type 4).  Type 4 records must always "
-"immediately follow type 3 records"
+"%s: Orphaned variable index record (type 4).  Type 4 records must always immediately "
+"follow type 3 records"
 msgstr ""
-"%s : enregistrement d'index de variable orphelin (type 4). Les "
-"enregistrements  de type 4 doivent toujours suivre immédiatement des "
-"enregistrements de type 3"
+"%s : enregistrement d'index de variable orphelin (type 4). Les enregistrements  de "
+"type 4 doivent toujours suivre immédiatement des enregistrements de type 3"
 
 #: sfm-read.c:452
 #, c-format
 msgid ""
-"%s: Very long string record(s) found (record type 7, subtype %d), each will "
-"be imported in consecutive separate variables"
+"%s: Very long string record(s) found (record type 7, subtype %d), each will be "
+"imported in consecutive separate variables"
 msgstr ""
 "%s : enregistrement(s) de chaîne(s) de caractères très long(s) (type 7, sous-type %d), "
 "chacun d’eux sera importé dans des variables séparées consécutives"
@@ -542,27 +525,24 @@ msgstr ""
 #: sfm-read.c:477
 #, c-format
 msgid ""
-"%s: Long string value labels record found (record type 7, subtype %d), but "
-"ignored"
+"%s: Long string value labels record found (record type 7, subtype %d), but ignored"
 msgstr ""
-"%s : labels d’enregistrement de chaîne longue (type 7, sous-type %d), mais "
-"ignorés"
+"%s : labels d’enregistrement de chaîne longue (type 7, sous-type %d), mais ignorés"
 
 #: sfm-read.c:482
 #, c-format
 msgid ""
-"%s: Long string missing values record found (record type 7, subtype %d), but "
-"ignored"
+"%s: Long string missing values record found (record type 7, subtype %d), but ignored"
 msgstr ""
-"%s : valeurs manquantes d’enregistrement de chaîne longue (type 7, sous-type "
-"%d), mais ignorées"
+"%s : valeurs manquantes d’enregistrement de chaîne longue (type 7, sous-type %d), mais "
+"ignorées"
 
 #: sfm-read.c:491
 #, c-format
 msgid "%s: Unrecognized record type 7, subtype %d encountered in system file"
 msgstr ""
-"%s : type 7 d'enregistrement inconnu, le sous-type %d est trouvé dans le "
-"fichier système"
+"%s : type 7 d'enregistrement inconnu, le sous-type %d est trouvé dans le fichier "
+"système"
 
 #: sfm-read.c:514
 #, c-format
@@ -576,83 +556,79 @@ msgstr "erreur à la lecture de l'entête du fichier système"
 #: sfm-read.c:554
 #, c-format
 msgid ""
-"%s: Bad size (%d) or count (%d) field on record type 7, subtype 3.\tExpected "
-"size %d, count 8"
+"%s: Bad size (%d) or count (%d) field on record type 7, subtype 3.\tExpected size %d, "
+"count 8"
 msgstr ""
-"%s : mauvaise taille (%d) ou dénombrement (%d) de champs dans les "
-"enregistrement de type 7, sous-type 3.\tUne taille %d et un dénombrement de "
-"8 sont attendus"
+"%s : mauvaise taille (%d) ou dénombrement (%d) de champs dans les enregistrement de "
+"type 7, sous-type 3.\tUne taille %d et un dénombrement de 8 sont attendus"
 
 #: sfm-read.c:567
 #, c-format
 msgid ""
-"%s: Floating-point representation in system file is not IEEE-754.  read.spss "
-"cannot convert between floating-point formats"
+"%s: Floating-point representation in system file is not IEEE-754.  read.spss cannot "
+"convert between floating-point formats"
 msgstr ""
-"%s : la représentation en virgule flottante n'est pas IEEE-754 dans le "
-"fichier système. read.spss ne peut convertir entre les formats en virgule "
-"flottante"
+"%s : la représentation en virgule flottante n'est pas IEEE-754 dans le fichier "
+"système. read.spss ne peut convertir entre les formats en virgule flottante"
 
 #: sfm-read.c:586
 #, c-format
 msgid ""
-"%s: File-indicated endianness (%s) does not match endianness intuited from "
-"file header (%s)"
+"%s: File-indicated endianness (%s) does not match endianness intuited from file header "
+"(%s)"
 msgstr ""
-"%s : représentations 'big/little endian' incompatibles entre le fichier (%s) "
-"et son entête (%s)"
+"%s : représentations 'big/little endian' incompatibles entre le fichier (%s) et son "
+"entête (%s)"
 
 #: sfm-read.c:598
 #, c-format
 msgid "%s: File-indicated character representation code (%s) is not ASCII"
 msgstr ""
-"%s : le code de représentation des caractères (%s) dans le fichier n'est pas "
-"ASCII"
+"%s : le code de représentation des caractères (%s) dans le fichier n'est pas ASCII"
 
 #: sfm-read.c:603
 #, c-format
 msgid "%s: File-indicated character representation code (%d) is unknown"
 msgstr ""
-"%s : Le code de représentation des caractères indiqué dans le fichier (%d) "
-"est inconnu"
+"%s : Le code de représentation des caractères indiqué dans le fichier (%d) est inconnu"
 
 #: sfm-read.c:621
 #, c-format
 msgid ""
-"%s: Bad size (%d) or count (%d) field on record type 7, subtype 4.\tExpected "
-"size %d, count 8"
+"%s: Bad size (%d) or count (%d) field on record type 7, subtype 4.\tExpected size %d, "
+"count 8"
 msgstr ""
-"%s : mauvaise taille (%d) ou dénombrement (%d) de champ d'enregistrement de "
-"type 7, sous-type 4.\tUne taille %d et un dénombrement de 8 étaient attendus"
+"%s : mauvaise taille (%d) ou dénombrement (%d) de champ d'enregistrement de type 7, "
+"sous-type 4.\tUne taille %d et un dénombrement de 8 étaient attendus"
 
 #: sfm-read.c:635
 #, c-format
 msgid ""
-"%s: File-indicated value is different from internal value for at least one "
-"of the three system values.  SYSMIS: indicated %g, expected %g; HIGHEST: %g, "
-"%g; LOWEST: %g, %g"
+"%s: File-indicated value is different from internal value for at least one of the "
+"three system values.  SYSMIS: indicated %g, expected %g; HIGHEST: %g, %g; LOWEST: %g, "
+"%g"
 msgstr ""
-"%s : une valeur indiquée dans le fichier est différente d'une valeur interne "
-"pour au moins une des trois valeurs système. SYSMIS: indiqué %g, attendu %g ; "
-"LA PLUS ELEVEE : %g, %g ; LA PLUS FAIBLE : %g, %g"
+"%s : une valeur indiquée dans le fichier est différente d'une valeur interne pour au "
+"moins une des trois valeurs système. SYSMIS: indiqué %g, attendu %g ; LA PLUS ELEVEE : "
+"%g, %g ; LA PLUS FAIBLE : %g, %g"
 
 #: sfm-read.c:745
 #, c-format
 msgid ""
-"%s: Bad magic.  Proper system files begin with the four characters `$FL2'. "
-"This file will not be read"
+"%s: Bad magic.  Proper system files begin with the four characters `$FL2'. This file "
+"will not be read"
 msgstr ""
-"%s : mauvais nombre magique. Un fichier système correct commence avec les 4 "
-"caractères `$FL2'. Impossible de lire ce fichier"
+"%s : mauvais nombre magique. Un fichier système correct commence avec les 4 caractères "
+"`$FL2'. Impossible de lire ce fichier"
 
 #: sfm-read.c:787
 #, c-format
 msgid ""
-"%s: File layout code has unexpected value %d.  Value should be 2 or 3, in "
-"big-endian or little-endian format"
+"%s: File layout code has unexpected value %d.  Value should be 2 or 3, in big-endian "
+"or little-endian format"
 msgstr ""
-"%s : le squelette du fichier a une valeur inattendue %d. La valeur doit être "
-"2 ou 3, en format 'big endian' ou 'little endian'"
+"%s : le squelette du fichier a une valeur inattendue %d. La valeur doit être 2 ou 3, "
+"en format 'big endian' ou 'little endian'"
 
 #: sfm-read.c:802
 #, c-format
@@ -662,46 +638,39 @@ msgstr "%s : le nombre d'éléments par cas (%d) n'est pas compris entre 1 et %d
 #: sfm-read.c:809
 #, c-format
 msgid ""
-"%s: Index of weighting variable (%d) is not between 0 and number of elements "
-"per case (%d)"
+"%s: Index of weighting variable (%d) is not between 0 and number of elements per case "
+"(%d)"
 msgstr ""
-"%s : l'index d'une variable de pondération (%d) n'est pas compris entre 0 et "
-"le nombre d'éléments par cas (%d)"
+"%s : l'index d'une variable de pondération (%d) n'est pas compris entre 0 et le nombre "
+"d'éléments par cas (%d)"
 
 #: sfm-read.c:814
 #, c-format
 msgid "%s: Number of cases in file (%d) is not between -1 and %d"
-msgstr ""
-"%s : le nombre de cas dans le fichier (%d) n'est pas compris entre -1 et %d"
+msgstr "%s : le nombre de cas dans le fichier (%d) n'est pas compris entre -1 et %d"
 
 #: sfm-read.c:819
 #, c-format
 msgid "%s: Compression bias (%g) is not the usual value of 100"
-msgstr ""
-"%s : le biais de compression (%g) n'est pas la valeur habituelle de 100"
+msgstr "%s : le biais de compression (%g) n'est pas la valeur habituelle de 100"
 
 #: sfm-read.c:921
 #, c-format
 msgid "%s: position %d: Bad record type (%d); the expected value was 2"
-msgstr ""
-"%s : position %d : mauvais type d'enregistrement (%d) ; la valeur attendue "
-"est 2"
+msgstr "%s : position %d : mauvais type d'enregistrement (%d) ; la valeur attendue est 2"
 
 #: sfm-read.c:930
 #, c-format
 msgid ""
-"%s: position %d: String variable does not have proper number of continuation "
-"records"
+"%s: position %d: String variable does not have proper number of continuation records"
 msgstr ""
-"%s : position %d : la variable chaîne de caractères n'a pas un nombre "
-"correct d'enregistrements de continuation"
+"%s : position %d : la variable chaîne de caractères n'a pas un nombre correct "
+"d'enregistrements de continuation"
 
 #: sfm-read.c:938
 #, c-format
 msgid "%s: position %d: Superfluous long string continuation record"
-msgstr ""
-"%s : position %d : enregistrement de continuation d'une longue chaîne "
-"superflu"
+msgstr "%s : position %d : enregistrement de continuation d'une longue chaîne superflu"
 
 #: sfm-read.c:943
 #, c-format
@@ -712,69 +681,62 @@ msgstr "%s : position %d : mauvais code de type de variable %d"
 #, c-format
 msgid "%s: position %d: Variable label indicator field is not 0 or 1"
 msgstr ""
-"%s : position %d : le champ indicateur d'étiquette de la variable n'est ni "
-"0, ni 1"
+"%s : position %d : le champ indicateur d'étiquette de la variable n'est ni 0, ni 1"
 
 #: sfm-read.c:950
 #, c-format
-msgid ""
-"%s: position %d: Missing value indicator field is not -3, -2, 0, 1, 2, or 3"
+msgid "%s: position %d: Missing value indicator field is not -3, -2, 0, 1, 2, or 3"
 msgstr ""
-"%s : position %d : le champ indicateur de valeur manquante n'est pas -3, -2, "
-"0, 1, 2 ou 3"
+"%s : position %d : le champ indicateur de valeur manquante n'est pas -3, -2, 0, 1, 2 "
+"ou 3"
 
 #: sfm-read.c:972
 #, c-format
 msgid ""
-"%s: position %d: Variable name begins with octothorpe ('#').  Scratch "
-"variables should not appear in system files"
+"%s: position %d: Variable name begins with octothorpe ('#').  Scratch variables should "
+"not appear in system files"
 msgstr ""
-"%s : position %d : le nom de la variable commence avec un dièse ('#'). Les "
-"variables \"scratch\" ne devraient pas apparaître dans les fichiers systèmes"
+"%s : position %d : le nom de la variable commence avec un dièse ('#'). Les variables "
+"\"scratch\" ne devraient pas apparaître dans les fichiers systèmes"
 
 #: sfm-read.c:994
 #, c-format
-msgid ""
-"%s: position %d: character `\\%03o' (%c) is not valid in a variable name"
+msgid "%s: position %d: character `\\%03o' (%c) is not valid in a variable name"
 msgstr ""
-"%s : position %d : le caractère '\\%03o' (%c) n'est pas autorisé dans le nom "
-"d'une variable"
+"%s : position %d : le caractère '\\%03o' (%c) n'est pas autorisé dans le nom d'une "
+"variable"
 
 #: sfm-read.c:1036
 #, c-format
 msgid "%s: Variable %s indicates variable label of invalid length %d"
 msgstr ""
-"%s : la variable %s indique une étiquette de variable d'une longueur %d "
-"incorrecte"
+"%s : la variable %s indique une étiquette de variable d'une longueur %d incorrecte"
 
 #: sfm-read.c:1052
 #, c-format
 msgid "%s: Long string variable %s may not have missing values"
-msgstr ""
-"%s : la variable de type longue chaîne %s ne peut avoir de valeurs manquantes"
+msgstr "%s : la variable de type longue chaîne %s ne peut avoir de valeurs manquantes"
 
 #: sfm-read.c:1075
 #, c-format
 msgid "%s: String variable %s may not have missing values specified as a range"
 msgstr ""
-"%s : la variable de chaîne %s ne peut avoir des valeurs manquantes "
-"spécifiées dans une plage"
+"%s : la variable de chaîne %s ne peut avoir des valeurs manquantes spécifiées dans une "
+"plage"
 
 #: sfm-read.c:1118
 #, c-format
 msgid "%s: Long string continuation records omitted at end of dictionary"
 msgstr ""
-"%s : les enregistrements de continuation de longues chaînes sont omis à la "
-"fin du dictionnaire"
+"%s : les enregistrements de continuation de longues chaînes sont omis à la fin du "
+"dictionnaire"
 
 #: sfm-read.c:1121
 #, c-format
-msgid ""
-"%s: System file header indicates %d variable positions but %d were read from "
-"file"
+msgid "%s: System file header indicates %d variable positions but %d were read from file"
 msgstr ""
-"%s : l'entête du fichier système indique %d positions de variables mais "
-"seulement %d sont lues depuis le fichier"
+"%s : l'entête du fichier système indique %d positions de variables mais seulement %d "
+"sont lues depuis le fichier"
 
 #: sfm-read.c:1130
 #, c-format
@@ -789,70 +751,67 @@ msgstr "%s : %s variable %s a %s spécificateur de format %s"
 #: sfm-read.c:1249
 #, c-format
 msgid ""
-"%s: Variable index record (type 4) does not immediately follow value label "
-"record (type 3) as it ought"
+"%s: Variable index record (type 4) does not immediately follow value label record "
+"(type 3) as it ought"
 msgstr ""
-"%s : l'enregistrement d'index de variable (type 4) ne suit pas directement "
-"un enregistrement étiquette de valeur (type 3), comme il devrait le faire"
+"%s : l'enregistrement d'index de variable (type 4) ne suit pas directement un "
+"enregistrement étiquette de valeur (type 3), comme il devrait le faire"
 
 #: sfm-read.c:1258
 #, c-format
 msgid ""
-"%s: Number of variables associated with a value label (%d) is not between 1 "
-"and the number of variables (%d)"
+"%s: Number of variables associated with a value label (%d) is not between 1 and the "
+"number of variables (%d)"
 msgstr ""
-"%s : le nombre de variables associées a une étiquette de valeur (%d) n'est "
-"pas compris entre 1 et le nombre de variables (%d)"
+"%s : le nombre de variables associées a une étiquette de valeur (%d) n'est pas compris "
+"entre 1 et le nombre de variables (%d)"
 
 #: sfm-read.c:1275
 #, c-format
 msgid ""
-"%s: Variable index associated with value label (%d) is not between 1 and the "
-"number of values (%d)"
+"%s: Variable index associated with value label (%d) is not between 1 and the number of "
+"values (%d)"
 msgstr ""
-"%s : l'index de variable associé à une étiquette de valeur (%d) n'est pas "
-"compris entre 1 et le nombre de valeurs (%d)"
+"%s : l'index de variable associé à une étiquette de valeur (%d) n'est pas compris "
+"entre 1 et le nombre de valeurs (%d)"
 
 #: sfm-read.c:1281
 #, c-format
 msgid ""
-"%s: Variable index associated with value label (%d) refers to a continuation "
-"of a string variable, not to an actual variable"
+"%s: Variable index associated with value label (%d) refers to a continuation of a "
+"string variable, not to an actual variable"
 msgstr ""
-"%s : l'index de variable associé à une étiquette de valeur (%d) se réfère à "
-"la continuation d'une variable chaîne de caractères, pas à la variable elle-"
-"même"
+"%s : l'index de variable associé à une étiquette de valeur (%d) se réfère à la "
+"continuation d'une variable chaîne de caractères, pas à la variable elle-même"
 
 #: sfm-read.c:1284
 #, c-format
 msgid "%s: Value labels are not allowed on long string variables (%s)"
 msgstr ""
-"%s : les étiquettes de valeurs ne sont pas permises pour les variables de "
-"longues chaînes (%s)"
+"%s : les étiquettes de valeurs ne sont pas permises pour les variables de longues "
+"chaînes (%s)"
 
 #: sfm-read.c:1293
 #, c-format
 msgid ""
-"%s: Variables associated with value label are not all of identical type.  "
-"Variable %s has %s type, but variable %s has %s type"
+"%s: Variables associated with value label are not all of identical type.  Variable %s "
+"has %s type, but variable %s has %s type"
 msgstr ""
-"%s : les variables associées avec des étiquettes de valeurs ne sont pas "
-"toutes du même type. La variable %s a le type %s, mais la variable %s a le "
-"type %s"
+"%s : les variables associées avec des étiquettes de valeurs ne sont pas toutes du même "
+"type. La variable %s a le type %s, mais la variable %s a le type %s"
 
 #: sfm-read.c:1335
 #, c-format
 msgid "%s: File contains duplicate label for value %g for variable %s"
 msgstr ""
-"%s : le fichier contient des étiquettes dupliquées pour la valeur %g de la "
-"variable %s"
+"%s : le fichier contient des étiquettes dupliquées pour la valeur %g de la variable %s"
 
 #: sfm-read.c:1338
 #, c-format
 msgid "%s: File contains duplicate label for value `%.*s' for variable %s"
 msgstr ""
-"%s : le fichier contient des étiquettes dupliquées pour la valeur `%.*s' de "
-"la variable %s"
+"%s : le fichier contient des étiquettes dupliquées pour la valeur `%.*s' de la "
+"variable %s"
 
 #: sfm-read.c:1378 sfm-read.c:1656
 #, c-format
@@ -868,8 +827,7 @@ msgstr "%s : fin de fichier inattendue"
 #, c-format
 msgid "%s: System file contains multiple type 6 (document) records"
 msgstr ""
-"%s : le fichier système contient des enregistrements multiples de type 6 "
-"(document)"
+"%s : le fichier système contient des enregistrements multiples de type 6 (document)"
 
 #: sfm-read.c:1407
 #, c-format
@@ -885,8 +843,8 @@ msgstr "%s : erreur lors de la lecture du fichier : %s"
 #, c-format
 msgid "%s: Compressed data is corrupted.  Data ends partway through a case"
 msgstr ""
-"%s : les données compressées sont corrompues. Les données se terminent au "
-"milieu d'un cas"
+"%s : les données compressées sont corrompues. Les données se terminent au milieu d'un "
+"cas"
 
 #: sfm-read.c:1658
 #, c-format
@@ -905,11 +863,10 @@ msgstr "problème lors de la lecture du fichier '%s'"
 #: spss.c:683
 #, c-format
 msgid "file '%s' is not in any supported SPSS format"
-msgstr ""
-"le fichier '%s' n'est enregistré dans aucun des formats supportés de SPSS"
+msgstr "le fichier '%s' n'est enregistré dans aucun des formats supportés de SPSS"
 
-#: stataread.c:95 stataread.c:105 stataread.c:113 stataread.c:140
-#: stataread.c:153 stataread.c:163 stataread.c:520
+#: stataread.c:95 stataread.c:105 stataread.c:113 stataread.c:140 stataread.c:153
+#: stataread.c:163 stataread.c:520
 msgid "a binary read error occurred"
 msgstr "une erreur de lecture binaire s'est produite"
 
@@ -928,25 +885,24 @@ msgstr ""
 #: stataread.c:584
 msgid "can not yet read Stata .dta on this platform"
 msgstr ""
-"la lecture des fichiers Stata .dta n'est pas encore possible sur cette "
-"architecture"
+"la lecture des fichiers Stata .dta n'est pas encore possible sur cette architecture"
 
 #: stataread.c:588 stataread.c:1044
 msgid "first argument must be a file name\n"
 msgstr "le premier argument doit être un nom de fichier\n"
 
-#: stataread.c:606 stataread.c:613 stataread.c:619 stataread.c:634
-#: stataread.c:636 stataread.c:644 stataread.c:652
+#: stataread.c:606 stataread.c:613 stataread.c:619 stataread.c:634 stataread.c:636
+#: stataread.c:644 stataread.c:652
 msgid "a binary write error occurred"
 msgstr "une erreur d'écriture binaire s'est produite"
 
 #: stataread.c:722
 msgid "this should happen: overrun"
-msgstr "Ceci devrait se produire : dépassement par le haut."
+msgstr "ceci devrait se produire : dépassement par le haut"
 
 #: stataread.c:724
 msgid "this should happen: underrun"
-msgstr "Ceci devrait se produire : dépassement par le bas"
+msgstr "ceci devrait se produire : dépassement par le bas"
 
 #: stataread.c:983
 msgid "this should not happen."
@@ -955,13 +911,12 @@ msgstr "ceci ne devrait pas se produire."
 #: stataread.c:1040
 msgid "cannot yet read write .dta on this platform"
 msgstr ""
-"la lecture ou l'écriture de fichiers .dta n'est pas encore possible "
-"sur cette architecture"
+"la lecture ou l'écriture de fichiers .dta n'est pas encore possible sur cette "
+"architecture"
 
 #: stataread.c:1048
 msgid "data to be saved must be in a data frame"
-msgstr ""
-"les données à sauvegarder doivent être contenues dans un objet \"data frame\""
+msgstr "les données à sauvegarder doivent être contenues dans un objet \"data frame\""
 
 #: stataread.c:1051
 #, c-format
@@ -970,20 +925,16 @@ msgstr "impossible d'ouvrir le fichier '%s' en écriture"
 
 #: stataread.c:1056
 msgid "can only write version 6-10 formats"
-msgstr ""
-"il est seulement possible d'écrire des fichiers aux formats version 6-10"
+msgstr "il est seulement possible d'écrire des fichiers aux formats version 6-10"
 
 #~ msgid "%s: position %d: Variable name begins with invalid character"
 #~ msgstr ""
-#~ "%s : position %d : le nom de la variable commence avec un caractère non "
-#~ "autorisé"
+#~ "%s : position %d : le nom de la variable commence avec un caractère non autorisé"
 
 #~ msgid "%s: position %d: Variable name begins with lowercase letter %c"
 #~ msgstr ""
-#~ "%s : position %d : le nom de la variable commence avec une lettre "
-#~ "minuscule %c"
+#~ "%s : position %d : le nom de la variable commence avec une lettre minuscule %c"
 
 #~ msgid "%s: position %d: Variable name character %d is lowercase letter %c"
 #~ msgstr ""
-#~ "%s : position %d : le caractère %d du nom de la variable est une lettre "
-#~ "minuscule %c"
+#~ "%s : position %d : le caractère %d du nom de la variable est une lettre minuscule %c"
