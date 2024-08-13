@@ -3,7 +3,7 @@ Traduction de R en français, minidictionnaire:
 Rem : respectons la syntaxe française. plaçons un espace devant les ponctuations
 telles que :, ;, !, ? (sauf . et ,)
 / : espace avant / après (sauf si c'est un chemin d'accès, par exemple, c:/temp)
-par contre, nous conservons les conventions du langage S pour les guillements,
+par contre, nous conservons les conventions du langage S pour les guillemets,
 soit '' ou "", mais non transformés et sans espaces.
 ’ : remplacer l'apostrophe grasse ’ par l'apostrophe simple '
 ` : remplacer l'apostrophe inverse ` par l'apostrophe simple '
@@ -12,7 +12,7 @@ soit '' ou "", mais non transformés et sans espaces.
 ” : remplacer les guillemets doubles fermants ” par l'apostrophe simple '
 
 
-aborting : annulation
+aborting : annulation, abandon
 allocation : affectation mémoire
 anova : ANOVA
 argument : argument (et non paramètre)
@@ -23,14 +23,15 @@ backslash : caractère barre oblique inversée
 binary operator : opérateur binaire
 bind : lien (binding : lier)
 bitmap : bitmap
-boxplot : boîte à dispersion
-breaks : limites de classes (histogrammes, plus parlant que simplement 'limites')
+BOM : BOM (indicateur d'ordre d'octets)
+boxplot : boîte à moustaches
+breaks : borne des classes (histogrammes)
 browser : explorateur
 bytecode : pseudo-code (code a octets est officiel mais peu utilisé)
-cached value : valeur de la mémoire cache
+cached value : valeur enregistrée en mémoire cache
 call : appel
 callback : rappel (procédure de, callback)
-case insensitive matching : correspondance indépendante de la casse
+case insensitive matching : correspondance insensible à la casse
 categorical : qualitative (pour une variable)
 channel : canal
 character : caractère (sans h)
@@ -39,21 +40,22 @@ closure : fermeture (closure)
 cluster : agrégation, groupe
 coerce : convertir automatiquement
 coercion : conversion automatique
-collation : collation
+collation : classement
 collapsing level : niveau de fusion
 colortype : colorimétrie
-computationally singular : singulière par calcul (par exemple pour une matrice)
+computationally singular : numériquement singulière (par exemple pour une matrice)
 connection : connexion
 console : console
 covariate : covariables
 database : base de données
 dataframe : tableau de données, mais on précise (data frame) si nécessaire
-dataset : ????
+dataset : jeu de données
 deparse : reconstruction de code (deparse)
 deprecated : obsolète
 deviance : déviance (en statistique)
 device : périphérique
 dispatch: dispatcheur
+double : ‘double’ (nombre à virgule flottante)
 download: téléchargement client <- serveur
 driver : pilote
 edge : côté (d'un polygone)
@@ -67,12 +69,12 @@ filename : nom de fichier
 file stream : corps du fichier
 fit : ajustement ou ajuster
 flush : vider ou vidage
-formula : formule de modèle ou formule tout court
+formula : formule du modèle ou formule tout court
 frame : cadre ou trame selon le contexte; (data frame : tableau de données)
 GiB : giga octets (pour les tailles)
 handler : manipulateur de données (voir aussi interrupt handler)
 hashing : hachage
-Hessian : Hessien
+Hessian : Hessienne (se dit d'une matrice)
 hinges : jointures
 history : historique des commandes
 image : image d'environnement (fichier image où les objets R sont sauvés)
@@ -93,13 +95,15 @@ leading minor : mineur dominant
 length : longueur (réserver taille pour size)
 LHS : membre gauche (d'une expression, d'une égalité...)
 library : bibliothèque
-likelyhood : vraisemblance
+likelihood : vraisemblance
+list column : colonne de type liste
 locale : environnement linguistique
 locator : mode de localisation à la souris (pour les graphes)
 logical : booléen
-log-likelyhood : log de vraisemblance
+log-likelihood : log de vraisemblance
 magic number : nombre magique
-matrix is exactly singular : matrice exactement singulière
+map (to map) : mapper (anglicisme d'usage courant)
+matrix is exactly singular : matrice singulière
 metafile : metafile
 mirror site : site miroir
 mismatch : incohérence
@@ -116,12 +120,15 @@ notches : indentations
 offset : décalage
 opcode : code d'opération
 outlier : valeur extrême
+out of range : en dehors de l’intervalle
 overflow : débordement au dépassement de capacité par le haut
 package : package (non traduit cf. significations pour paquet ou paquetage)
 pager : afficheur
 pair list : liste appairée
 parse : analyse syntaxique du code (to parse : analyser le code)
 parser : analyseur syntaxique
+passed : transmis
+passed in : passé en argument
 path : chemin d'accès (d'un fichier...)
 pattern : motif
 pipe : conduite, caractère barre verticale '|'
@@ -135,6 +142,7 @@ prompt : invite ou invite de commande
 proxy : proxy
 push back : repoussage
 quote symbol : symbole de chaîne de caractères (et non de citation)
+quote rule : règle des guillemets
 raw : raw, si c'est le type de données, sinon brut
 range : plage, étendue ou intervalle, selon le contexte
 redraw : retraçage (des affichages), rafraichissement
@@ -150,7 +158,7 @@ RNG : RNG ou générateur de nombres pseudo-aléatoires
 routine : sous-programme ou procédure
 scaled : standardisé, mis à l'échelle
 search path : chemin de recherche
-seed : valeurs d'initialisation d'un processus (ex: génération des nombres aléatoires)
+seed : valeurs d'initialisation d'un processus, graine aléatoire (ex: génération des nombres aléatoires)
 seek : mode d'accès aléatoire
 self-starting function : fonction auto-initialisée
 sequence : suite (selon contexte) ou séquence
@@ -174,22 +182,27 @@ table : tableau de contingence
 tag : marque
 thermometer : jauge (contexte de graphes)
 thread :  contexte (threaded code : code contextuel)
+thread buffers : mémoire tampon des thread
 timeout : délai maximal
 timer : horloge ou temporisation, selon le contexte
 timezone : fuseau horaire
-tl : en général taille préallouée (mis pour true length). Compléter avec un texte ex: "...différent de la taille préallouée tl de l'objet DT..."
+tl : en général taille préallouée (pour true length) ; Compléter avec le texte ex: "...différent de la taille préallouée tl de l'objet DT..."
 top level : niveau le plus haut
 traceback : historique des fonctions appelées ('traceback')
 trimmed mean : moyenne tronquée
 truncation : troncature
-type : type (par ex. d'une variable)
+type : type
+type bumps : collision / changement de type
 unary operator : opérateur unaire
 unbind : délier
 underflow : dépassement de capacité par le bas
 unmatched : déparié
-unpacking : décompaction (?)
+unpacking : extraction
+unwrap columns : déplier les colonnes
+unmapping view of file : annulation du mappage / démappage de la vue du fichier
 upload: téléversement client -> serveur
 url : URL
+unsupported : non pris en charge
 vertex : sommet (d'un polygone)
 viewport : vue
 vignette : vignette
