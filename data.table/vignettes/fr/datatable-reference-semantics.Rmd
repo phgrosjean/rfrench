@@ -1,0 +1,386 @@
+---
+title: "Sémantique de référence"
+date: "`r Sys.Date()`"
+output:
+  markdown::html_format
+vignette: >
+  %\VignetteIndexEntry{Sémantique de référence}
+  %\VignetteEngine{knitr::knitr}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r, echo = FALSE, message = FALSE}
+require(data.table)
+knitr::opts_chunk$set(
+  comment = "#",
+    error = FALSE,
+     tidy = FALSE,
+    cache = FALSE,
+ collapse = TRUE)
+.old.th = setDTthreads(1)
+```
+
+Cette vignette traite de la sémantique de référence de *data.table* qui permet d'ajouter/mettre à jour/supprimer des colonnes d'un *data.table par référence*, et aussi de les combiner avec `i` et `by`. Il s'adresse à ceux qui sont déjà familiers avec la syntaxe de *data.table*, sa forme générale, la façon de sous-sélectionner des lignes dans `i`, de sélectionner et de calculer sur des colonnes, et d'effectuer des agrégations par groupe. Si vous n'êtes pas familier avec ces concepts, veuillez d'abord lire la vignette *"Introduction à data.table "*.
+
+***
+
+## Données {#data}
+
+Nous utiliserons les mêmes données `flights` que dans la vignette *"Introduction à data.table"*.
+
+```{r echo = FALSE}
+options(with = 100L)
+```
+
+```{r}
+flights <- fread("../flights14.csv")
+flights
+dim(flights)
+```
+
+## Introduction
+
+Dans cette vignette, nous allons
+
+1. abordez d'abord brièvement la sémantique des références et examinez les deux formes différentes dans lesquelles l'opérateur `:=` peut être utilisé
+
+2. Ensuite, nous verrons comment ajouter/mettre à jour/supprimer des colonnes *par référence* dans `j` en utilisant l'opérateur `:=` et comment combiner avec `i` et `by`.
+
+3. Enfin, nous examinerons l'utilisation de `:=` pour ses *effets secondaires* et la façon dont nous pouvons éviter les effets secondaires en utilisant `copy()`.
+
+## 1. Sémantique de référence
+
+Toutes les opérations que nous avons vues jusqu'à présent dans la vignette précédente ont abouti à un nouvel ensemble de données. Nous allons voir comment *ajouter* de nouvelles colonnes, *mettre à jour* ou *supprimer* des colonnes existantes sur les données originales.
+
+### a) Contexte
+
+Avant d'examiner la *sémantique de référence*, considérons le *cadre de données* ci-dessous :
+
+```{r}
+DF = data.frame(ID = c("b", "b", "b", "a", "a", "c"), a = 1:6, b = 7:12, c = 13:18)
+DF
+```
+
+Quand nous l'avons fait :
+
+```{r eval = FALSE}
+DF$c <- 18:13 # (1) -- remplacer la colonne entière
+# ou
+DF$c[DF$ID == "b"] <- 15:13 # (2) -- sous-assignation dans la colonne 'c'
+```
+
+les deux (1) et (2) ont entraîné une copie profonde de l'ensemble du data.frame dans les versions de `R` < 3.1`. [Il a été copié plus d'une fois] (https://stackoverflow.com/q/23898969/559784). Pour améliorer les performances en évitant ces copies redondantes, *data.table* a utilisé l'opérateur [disponible mais inutilisé `:=` dans R](https://stackoverflow.com/q/7033106/559784).
+
+De grandes améliorations de performance ont été faites dans `R v3.1` grâce auxquelles seule une copie *shallow* est faite pour (1) et non une copie *deep*. Cependant, pour (2), la colonne entière est *copiée en profondeur* même dans `R v3.1+`. Cela signifie que plus il y a de colonnes dans la *même requête*, plus R fait de *copies profondes*.
+
+#### *copie superficielle* ou profonde
+
+Une copie *shallow* est simplement une copie du vecteur de pointeurs de colonnes (correspondant aux colonnes d'un *data.frame* ou d'un *data.table*). Les données réelles ne sont pas physiquement copiées en mémoire.
+
+Une copie *profonde*, en revanche, copie l'intégralité des données à un autre endroit de la mémoire.
+
+Lorsque l'on utilise `i` (par exemple, `DT[1:10]`) pour sous-dimensionner une *table de données, une copie *profonde* est effectuée. Cependant, lorsque `i` n'est pas fourni ou est égal à `TRUE`, une copie *shallow* est faite.
+
+# 
+
+Avec l'opérateur `:=` de *data.table, absolument aucune copie n'est faite dans *les deux (1) et (2), quelle que soit la version de R que vous utilisez. C'est parce que l'opérateur `:=` met à jour les colonnes de *data.table* *en place* (par référence).
+
+### b) L'opérateur `:='
+
+Il peut être utilisé dans `j` de deux façons :
+
+(a) La forme "LHS := RHS
+
+```{r eval = FALSE}
+DT[, c("colA", "colB", ...) := list(valA, valB, ...)]
+
+# lorsque vous n'avez qu'une seule colonne à assigner
+# vous pouvez supprimer les guillemets et list(), pour plus de commodité
+DT[, colA := valA]
+```
+
+(b) La forme fonctionnelle
+
+```{r eval = FALSE}
+DT[, `:=`(colA = valA, # valA est assigné à colA
+          colB = valB, # valB est assigné à colB
+          ...
+)]
+```
+
+Notez que le code ci-dessus explique comment `:=` peut être utilisé. Il ne s'agit pas d'exemples pratiques. Nous commencerons à les utiliser sur `flights` *data.table* à partir de la section suivante.
+
+# 
+
+* Dans (a), `LHS` prend un vecteur de caractères de noms de colonnes et `RHS` une *liste de valeurs*. `RHS` doit juste être une `liste`, indépendamment de la façon dont elle est générée (par exemple, en utilisant `lapply()`, `list()`, `mget()`, `mapply()`, etc.) Cette forme est généralement facile à programmer et est particulièrement utile lorsque vous ne connaissez pas à l'avance les colonnes auxquelles attribuer des valeurs.
+
+* En revanche, le point b) est pratique si vous souhaitez noter quelques commentaires pour plus tard.
+
+* Le résultat est renvoyé de manière *invisible*.
+
+* Puisque `:=` est disponible dans `j`, nous pouvons le combiner avec les opérations `i` et `by` tout comme les opérations d'agrégation que nous avons vues dans la vignette précédente.
+
+# 
+
+Dans les deux formes de `:=` présentées ci-dessus, notez que nous n'assignons pas le résultat à une variable. Parce que nous n'en avons pas besoin. L'entrée *data.table* est modifiée par référence. Prenons des exemples pour comprendre ce que nous entendons par là.
+
+Pour le reste de la vignette, nous travaillerons avec `flights` *data.table*.
+
+## 2. Ajouter/mettre à jour/supprimer des colonnes *par référence*
+
+### a) Ajouter des colonnes par référence {#ref-j}
+
+#### -- Comment ajouter les colonnes *speed* et *total delay* de chaque vol à `flights` *data.table* ?
+
+```{r}
+flights[, `:=`(speed = distance / (air_time/60), # vitesse en mph (mi/h)
+               delay = arr_delay + dep_delay)]   # délai en minutes
+head(flights)
+
+## ou alors, en utilisant la forme 'LHS := RHS'
+# flights[, c("speed", "delay") := list(distance/(air_time/60), arr_delay + dep_delay)]
+```
+
+#### Notez que
+
+* Nous n'avons pas eu à réaffecter le résultat à `flights`.
+
+* Le *data.table* `flights` contient maintenant les deux colonnes nouvellement ajoutées. C'est ce que nous entendons par *ajouté par référence*.
+
+* Nous avons utilisé la forme fonctionnelle pour pouvoir ajouter des commentaires sur le côté afin d'expliquer ce que fait le calcul. Vous pouvez également voir la forme `LHS := RHS` (commentée).
+
+### b) Mettre à jour certaines lignes de colonnes par référence - *sous-assignation* par référence {#ref-i-j}
+
+Examinons toutes les `heures` disponibles dans le *data.table* des `volées` :
+
+```{r}
+# récupère toutes les heures de flights
+flights[, sort(unique(hour))]
+```
+
+Nous constatons qu'il y a au total `25` valeurs uniques dans les données. Les heures *0* et *24* semblent être présentes. Remplaçons *24* par *0*, mais cette fois-ci en utilisant `on` au lieu de définir des clés.
+
+#### -- Remplacer les lignes où `hour == 24` par la valeur `0`
+
+```{r}
+# sous-assignation par référence
+flights[hour == 24L, hour := 0L]
+```
+
+* Nous pouvons utiliser `i` avec `:=` dans `j` de la même manière que nous l'avons déjà vu dans la vignette *"Introduction à data.table "*.
+
+* La colonne `hour` est remplacée par `0` uniquement sur les *indices de ligne* où la condition `hour == 24L` spécifiée dans `i` est évaluée à `TRUE`.
+
+* `:=` renvoie le résultat de manière invisible. Parfois, il peut être nécessaire de voir le résultat après l'affectation. Nous pouvons y parvenir en ajoutant un `[]` vide à la fin de la requête, comme indiqué ci-dessous:
+
+    ```{r}
+    flights[hour == 24L, hour := 0L][]
+    ```
+
+# 
+
+Regardons toutes les heures pour vérifier.
+
+```{r}
+# vérifier à nouveau la présence de '24'
+flights[, sort(unique(hour))]
+```
+
+#### Exercice : {#update-by-reference-question}
+
+Quelle est la différence entre `vol[heure == 24L, heure := 0L]` et `vol[heure == 24L][, heure := 0L]` ? Indice : le dernier a besoin d'une affectation (`<-`) si vous voulez utiliser le résultat plus tard.
+
+Si vous n'y arrivez pas, jetez un coup d'œil à la section `Note` de ` ?":="`.
+
+### c) Supprimer une colonne par référence
+
+#### -- Supprimer la colonne `delay` (délai)
+
+```{r}
+flights[, c("delay") := NULL]
+head(flights)
+
+## ou en utilisant la forme fonctionnelle
+# flights[, `:=`(delay = NULL)]
+```
+
+#### {#delete-convenience}
+
+* Assigner `NULL` à une colonne *supprime* cette colonne. Et cela se produit *instantanément*.
+
+* Nous pouvons également passer des numéros de colonnes au lieu de noms dans le `LHS`, bien qu'il soit de bonne pratique de programmation d'utiliser des noms de colonnes.
+
+* Lorsqu'il n'y a qu'une seule colonne à supprimer, nous pouvons laisser tomber le `c()` et les guillemets doubles et utiliser simplement le nom de la colonne *sans guillemets*, pour plus de commodité. C'est-à-dire:
+
+    ```{r eval = FALSE}
+    flights[, delay := NULL]
+    ```
+    
+    est équivalent au code ci-dessus.
+
+### d) `:=` et le regroupement avec `by` {#ref-j-by}
+
+Nous avons déjà vu l'utilisation de `i` avec `:=` dans la [Section 2b] (#ref-i-j). Voyons maintenant comment nous pouvons utiliser `:=` avec `by`.
+
+#### -- Comment ajouter une nouvelle colonne qui contienne pour chaque paire `orig,dest` la vitesse maximale ?
+
+```{r}
+flights[, max_speed := max(speed), by = .(origin, dest)]
+head(flights)
+```
+
+* Nous ajoutons une nouvelle colonne `max_speed` en utilisant l'opérateur `:=` par référence.
+
+* Nous fournissons les colonnes à grouper de la même manière que dans la vignette *Introduction à data.table*. Pour chaque groupe, `max(speed)` est calculé, ce qui renvoie une seule valeur. Cette valeur est recyclée pour s'adapter à la longueur du groupe. Encore une fois, aucune copie n'est faite. `flights` *data.table* est modifié *in-place*.
+
+* Nous aurions également pu fournir à `by` un *vecteur de caractères* comme nous l'avons vu dans la vignette *Introduction à data.table*, par exemple, `by = c("origin", "dest")`.
+
+# 
+
+### e) Colonnes multiples et `:=`
+
+#### -- Comment ajouter deux colonnes supplémentaires calculant `max()` de `dep_delay` et `arr_delay` pour chaque mois, en utilisant `.SD` ?
+
+```{r}
+in_cols = c("dep_delay", "arr_delay")
+out_cols = c("max_dep_delay", "max_arr_delay")
+flights[, c(out_cols) := lapply(.SD, max), by = month, .SDcols = in_cols]
+head(flights)
+```
+
+* Nous utilisons la forme `LHS := RHS`. Nous stockons les noms des colonnes d'entrée et les nouvelles colonnes à ajouter dans des variables séparées et les fournissons à `.SDcols` et à `LHS` (pour une meilleure lisibilité).
+
+* Notez que puisque nous autorisons l'assignation par référence sans citer les noms de colonnes lorsqu'il n'y a qu'une seule colonne comme expliqué dans [Section 2c](#delete-convenience), nous ne pouvons pas faire `out_cols := lapply(.SD, max)`. Cela résulterait en l'ajout d'une nouvelle colonne nommée `out_col`. A la place, nous devrions faire soit `c(out_cols)` soit simplement `(out_cols)`. Le fait d'entourer le nom de la variable avec `(` est suffisant pour différencier les deux cas.
+
+* La forme `LHS := RHS` nous permet d'opérer sur plusieurs colonnes. Dans le RHS, pour calculer le `max` sur les colonnes spécifiées dans `.SDcols`, nous utilisons la fonction de base `lapply()` avec `.SD` de la même manière que nous l'avons vu précédemment dans la vignette *"Introduction to data.table "*. Elle renvoie une liste de deux éléments, contenant la valeur maximale correspondant à `dep_delay` et `arr_delay` pour chaque groupe.
+
+# 
+
+Avant de passer à la section suivante, nettoyons les colonnes nouvellement créées `speed`, `max_speed`, `max_dep_delay` et `max_arr_delay`.
+
+```{r}
+# RHS est automatiquement recyclé à la longueur de LHS
+flights[, c("speed", "max_speed", "max_dep_delay", "max_arr_delay") := NULL]
+head(flights)
+```
+
+#### -- Comment mettre à jour plusieurs colonnes existantes en utilisant `.SD` ?
+
+```{r}
+flights[, names(.SD) := lapply(.SD, as.factor), .SDcols = is.character]
+```
+
+Nettoyons à nouveau et convertissons nos colonnes de facteurs nouvellement créées en colonnes de caractères. Cette fois, nous utiliserons `.SDcols` en acceptant une fonction pour décider quelles colonnes inclure. Dans ce cas, `is.factor()` retournera les colonnes qui sont des facteurs. Pour en savoir plus sur le **S**ubset of the **D**ata, il y a aussi une [SD Usage vignette] (https://cran.r-project.org/web/packages/data.table/vignettes/datatable-sd-usage.html).
+
+Parfois, il est également utile de garder une trace des colonnes que nous transformons. Ainsi, même après avoir converti nos colonnes, nous pourrons appeler les colonnes spécifiques que nous avons mises à jour.
+
+```{r}
+factor_cols <- sapply(flights, is.factor)
+flights[, names(.SD) := lapply(.SD, as.character), .SDcols = factor_cols]
+str(flights[, ..factor_cols])
+```
+
+#### {.bs-callout .bs-callout-info}
+
+* Nous aurions également pu utiliser `(factor_cols)` sur `LHS` au lieu de `names(.SD)`.
+
+## 3. `:=` et `copy()`
+
+`:=` modifie l'objet d'entrée par référence. En dehors des fonctionnalités que nous avons déjà discutées, nous pouvons parfois vouloir utiliser la fonctionnalité de mise à jour par référence pour son effet secondaire. Et dans d'autres cas, il n'est pas souhaitable de modifier l'objet original, auquel cas nous pouvons utiliser la fonction `copy()`, comme nous le verrons dans un instant.
+
+### a) `:=` pour son effet secondaire
+
+Supposons que nous voulions créer une fonction qui renvoie la *vitesse maximale* pour chaque mois. Mais en même temps, nous aimerions aussi ajouter la colonne `vitesse` à *flights*. Nous pourrions écrire une petite fonction comme suit :
+
+```{r}
+foo <- function(DT) {
+  DT[, speed := distance / (air_time/60)]
+  DT[, .(max_speed = max(speed)), by = month]
+}
+ans = foo(flights)
+head(flights)
+head(ans)
+```
+
+* Notez que la nouvelle colonne `speed` a été ajoutée à `flights` *data.table*. C'est parce que `:=` effectue des opérations par référence. Puisque `DT` (l'argument de la fonction) et `vols` font référence au même objet en mémoire, la modification de `DT` se répercute également sur `vols`.
+
+* Et `ans` contient la vitesse maximale pour chaque mois.
+
+### b) La fonction `copy()
+
+Dans la section précédente, nous avons utilisé `:=` pour son effet de bord. Mais bien sûr, ce n'est pas toujours souhaitable. Parfois, nous voudrions passer un objet *data.table* à une fonction, et nous pourrions vouloir utiliser l'opérateur `:=`, mais *ne voudrions pas* mettre à jour l'objet original. Nous pouvons accomplir cela en utilisant la fonction `copy()`.
+
+La fonction `copy()` *deep* copie l'objet d'entrée et donc toutes les opérations de mise à jour par référence effectuées sur l'objet copié n'affecteront pas l'objet d'origine.
+
+# 
+
+Il y a deux endroits particuliers où la fonction `copy()` est essentielle :
+
+1. Contrairement à ce que nous avons vu au point précédent, nous pouvons ne pas vouloir que le tableau de données d'entrée d'une fonction soit modifié *par référence*. A titre d'exemple, considérons la tâche de la section précédente, sauf que nous ne voulons pas modifier `flights` par référence.
+
+    Supprimons d'abord la colonne `speed` que nous avons générée dans la section précédente.
+    
+    ```{r}
+    flights[, vitesse := NULL]
+    ```
+    Maintenant, nous pourrions accomplir la tâche comme suit :
+    
+    ```{r}
+    foo <- function(DT) {
+      DT <- copy(DT) ## copie profonde
+      DT[, speed := distance / (air_time/60)] ## n'affecte pas les vols
+      DT[, .(max_speed = max(speed)), by = month]
+    }
+    ans <- foo(flights)
+    head(flights)
+    head(ans)
+    ```
+
+* L'utilisation de la fonction `copy()` n'a pas mis à jour `flights` *data.table* par référence. Elle ne contient pas la colonne `speed`.
+
+* Et `ans` contient la vitesse maximale correspondant à chaque mois.
+
+Cependant, nous pourrions encore améliorer cette fonctionnalité en faisant une copie *shallow* au lieu d'une copie *deep*. En fait, nous aimerions beaucoup [fournir cette fonctionnalité pour `v1.9.8`] (https://github.com/Rdatatable/data.table/issues/617). Nous reviendrons sur ce point dans la vignette *data.table design*.
+
+# 
+
+2. Lorsque nous stockons les noms de colonnes dans une variable, par exemple, `DT_n = names(DT)`, puis *ajoute/mise à jour/supprime* la/les colonne(s) *par référence*. Cela modifierait également `DT_n`, à moins que nous ne fassions `copy(names(DT))`.
+
+    ```{r}
+    DT = data.table(x = 1L, y = 2L)
+    DT_n = names(DT)
+    DT_n
+    
+    ## ajouter une nouvelle colonne par référence
+    DT[, z := 3L]
+    
+    ## DT_n est également mis à jour
+    DT_n
+    
+    ## utiliser `copy()`
+    DT_n = copy(names(DT))
+    DT[, w := 4L]
+    
+    ## DT_n n'est pas mis à jour
+    DT_n
+    ```
+
+## Résumé
+
+#### L'opérateur `:=`
+
+* Il est utilisé pour *ajouter/mettre à jour/supprimer* des colonnes par référence.
+
+* Nous avons aussi vu comment utiliser `:=` avec `i` et `by` de la même manière que nous l'avons vu dans la vignette *Introduction à data.table*. Nous pouvons de la même manière utiliser `keyby`, enchaîner des opérations, et passer des expressions à `by` de la même manière. La syntaxe est *consistante*.
+
+* Nous pouvons utiliser `:=` pour son effet secondaire ou utiliser `copy()` pour ne pas modifier l'objet original lors de la mise à jour par référence.
+
+```{r, echo=FALSE}
+setDTthreads(.old.th)
+```
+
+# 
+
+Jusqu'à présent, nous avons vu beaucoup de choses dans `j`, et comment le combiner avec `by` et peu de choses dans `i`. Tournons notre attention vers `i` dans la prochaine vignette *"Keys and fast binary search based subset "* pour réaliser des *sous-ensembles ultra-rapides* en *utilisant des clés dans data.tables*.
+
+***

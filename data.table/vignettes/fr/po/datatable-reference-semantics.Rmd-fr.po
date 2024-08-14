@@ -1,0 +1,1224 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 1 (code)
+msgid ""
+"title: \"Reference semantics\"\n"
+"date: \"`r Sys.Date()`\"\n"
+"output:\n"
+"  markdown::html_format\n"
+"vignette: >\n"
+"  %\\VignetteIndexEntry{Reference semantics}\n"
+"  %\\VignetteEngine{knitr::knitr}\n"
+"  \\usepackage[utf8]{inputenc}\n"
+msgstr ""
+"title: \"Sémantique de référence\"\n"
+"date: \"`r Sys.Date()`\"\n"
+"output:\n"
+"  markdown::html_format\n"
+"vignette: >\n"
+"  %\\VignetteIndexEntry{Sémantique de référence}\n"
+"  %\\VignetteEngine{knitr::knitr}\n"
+"  \\usepackage[utf8]{inputenc}\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 2 (code)
+#, fuzzy
+msgid ""
+"#===== r, echo = FALSE, message = FALSE\n"
+"require(data.table)\n"
+"knitr::opts_chunk$set(\n"
+"  comment = \"#\",\n"
+"    error = FALSE,\n"
+"     tidy = FALSE,\n"
+"    cache = FALSE,\n"
+" collapse = TRUE)\n"
+".old.th = setDTthreads(1)\n"
+msgstr ""
+"#===== r, echo = FALSE, message = FALSE\n"
+"require(data.table)\n"
+"knitr::opts_chunk$set(\n"
+"  comment = \"#\",\n"
+"    error = FALSE,\n"
+"     tidy = FALSE,\n"
+"    cache = FALSE,\n"
+" collapse = TRUE)\n"
+".old.th = setDTthreads(1)\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 3 (paragraph)
+#, fuzzy
+msgid ""
+"This vignette discusses *data.table*'s reference semantics which allows to "
+"*add/update/delete* columns of a *data.table by reference*, and also "
+"combine them with `i` and `by`. It is aimed at those who are already "
+"familiar with *data.table* syntax, its general form, how to subset rows in "
+"`i`, select and compute on columns, and perform aggregations by group. If "
+"you're not familiar with these concepts, please read the *\"Introduction to "
+"data.table\"* vignette first."
+msgstr ""
+"Cette vignette traite de la sémantique de référence de *data.table* qui "
+"permet d'ajouter/mettre à jour/supprimer des colonnes d'un *data.table par "
+"référence*, et aussi de les combiner avec `i` et `by`. Il s'adresse à ceux "
+"qui sont déjà familiers avec la syntaxe de *data.table*, sa forme générale, "
+"la façon de sous-sélectionner des lignes dans `i`, de sélectionner et de "
+"calculer sur des colonnes, et d'effectuer des agrégations par groupe. Si "
+"vous n'êtes pas familier avec ces concepts, veuillez d'abord lire la "
+"vignette *\"Introduction à data.table \"*."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 4 (header)
+#, fuzzy
+msgid "Data {#data}"
+msgstr "Données {#data}"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 5 (paragraph)
+#, fuzzy
+msgid ""
+"We will use the same `flights` data as in the *\"Introduction to data."
+"table\"* vignette."
+msgstr ""
+"Nous utiliserons les mêmes données `flights` que dans la vignette "
+"*\"Introduction à data.table\"*."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 6 (code)
+#, fuzzy
+msgid ""
+"#===== r echo = FALSE\n"
+"options(width = 100L)\n"
+msgstr ""
+"#===== r echo = FALSE\n"
+"options(with = 100L)\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 7 (code)
+msgid ""
+"flights <- fread(\"flights14.csv\")\n"
+"flights\n"
+"dim(flights)\n"
+msgstr ""
+"flights <- fread(\"../flights14.csv\")\n"
+"flights\n"
+"dim(flights)\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 8 (header)
+#, fuzzy
+msgid "Introduction"
+msgstr "Introduction"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 9 (paragraph)
+#, fuzzy
+msgid "In this vignette, we will"
+msgstr "Dans cette vignette, nous allons"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 10 (paragraph)
+#, fuzzy
+msgid ""
+"=====1. first discuss reference semantics briefly and look at the two "
+"different forms in which the `:=` operator can be used====="
+msgstr ""
+"=====1. abordez d'abord brièvement la sémantique des références et examinez "
+"les deux formes différentes dans lesquelles l'opérateur `:=` peut être "
+"utilisé====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 11 (paragraph)
+msgid ""
+"=====2. then see how we can *add/update/delete* columns *by reference* in "
+"`j` using the `:=` operator and how to combine with `i` and `by`.====="
+msgstr ""
+"=====2. Ensuite, nous verrons comment ajouter/mettre à jour/supprimer des "
+"colonnes *par référence* dans `j` en utilisant l'opérateur `:=` et comment "
+"combiner avec `i` et `by`.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 12 (paragraph)
+msgid ""
+"=====3. and finally we will look at using `:=` for its *side-effect* and "
+"how we can avoid the side effects using `copy()`.====="
+msgstr ""
+"=====3. Enfin, nous examinerons l'utilisation de `:=` pour ses *effets "
+"secondaires* et la façon dont nous pouvons éviter les effets secondaires en "
+"utilisant `copy()`.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 13 (header)
+#, fuzzy
+msgid "1. Reference semantics"
+msgstr "1. Sémantique de référence"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 14 (paragraph)
+#, fuzzy
+msgid ""
+"All the operations we have seen so far in the previous vignette resulted in "
+"a new data set. We will see how to *add* new column(s), *update* or "
+"*delete* existing column(s) on the original data."
+msgstr ""
+"Toutes les opérations que nous avons vues jusqu'à présent dans la vignette "
+"précédente ont abouti à un nouvel ensemble de données. Nous allons voir "
+"comment *ajouter* de nouvelles colonnes, *mettre à jour* ou *supprimer* des "
+"colonnes existantes sur les données originales."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 15 (header)
+#, fuzzy
+msgid "a) Background"
+msgstr "a) Contexte"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 16 (paragraph)
+#, fuzzy
+msgid ""
+"Before we look at *reference semantics*, consider the *data.frame* shown "
+"below:"
+msgstr ""
+"Avant d'examiner la *sémantique de référence*, considérons le *cadre de "
+"données* ci-dessous :"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 17 (code)
+#, fuzzy
+msgid ""
+"DF = data.frame(ID = c(\"b\",\"b\",\"b\",\"a\",\"a\",\"c\"), a = 1:6, b = "
+"7:12, c = 13:18)\n"
+"DF\n"
+msgstr ""
+"DF = data.frame(ID = c(\"b\", \"b\", \"b\", \"a\", \"a\", \"c\"), a = 1:6, "
+"b = 7:12, c = 13:18)\n"
+"DF\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 18 (paragraph)
+#, fuzzy
+msgid "When we did:"
+msgstr "Quand nous l'avons fait :"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 19 (code)
+#, fuzzy
+msgid ""
+"#===== r eval = FALSE\n"
+"DF$c <- 18:13               # (1) -- replace entire column\n"
+"# or\n"
+"DF$c[DF$ID == \"b\"] <- 15:13 # (2) -- subassign in column 'c'\n"
+msgstr ""
+"#===== r eval = FALSE\n"
+"DF$c <- 18:13 # (1) -- remplacer la colonne entière\n"
+"# ou\n"
+"DF$c[DF$ID == \"b\"] <- 15:13 # (2) -- sous-assignation dans la colonne "
+"'c'\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 20 (paragraph)
+#, fuzzy
+msgid ""
+"both (1) and (2) resulted in deep copy of the entire data.frame in versions "
+"of `R` versions `< 3.1`. [It copied more than once](https://stackoverflow."
+"com/q/23898969/559784). To improve performance by avoiding these redundant "
+"copies, *data.table* utilised the [available but unused `:=` operator in R]"
+"(https://stackoverflow.com/q/7033106/559784)."
+msgstr ""
+"les deux (1) et (2) ont entraîné une copie profonde de l'ensemble du data."
+"frame dans les versions de `R` < 3.1`. [Il a été copié plus d'une fois] "
+"(https://stackoverflow.com/q/23898969/559784). Pour améliorer les "
+"performances en évitant ces copies redondantes, *data.table* a utilisé "
+"l'opérateur [disponible mais inutilisé `:=` dans R](https://stackoverflow."
+"com/q/7033106/559784)."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 21 (paragraph)
+#, fuzzy
+msgid ""
+"Great performance improvements were made in `R v3.1` as a result of which "
+"only a *shallow* copy is made for (1) and not *deep* copy. However, for (2) "
+"still, the entire column is *deep* copied even in `R v3.1+`. This means the "
+"more columns one subassigns to in the *same query*, the more *deep* copies "
+"R does."
+msgstr ""
+"De grandes améliorations de performance ont été faites dans `R v3.1` grâce "
+"auxquelles seule une copie *shallow* est faite pour (1) et non une copie "
+"*deep*. Cependant, pour (2), la colonne entière est *copiée en profondeur* "
+"même dans `R v3.1+`. Cela signifie que plus il y a de colonnes dans la "
+"*même requête*, plus R fait de *copies profondes*."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 22 (header)
+#, fuzzy
+msgid "*shallow* vs *deep* copy"
+msgstr "*copie superficielle* ou profonde"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 23 (paragraph)
+#, fuzzy
+msgid ""
+"A *shallow* copy is just a copy of the vector of column pointers "
+"(corresponding to the columns in a *data.frame* or *data.table*). The "
+"actual data is not physically copied in memory."
+msgstr ""
+"Une copie *shallow* est simplement une copie du vecteur de pointeurs de "
+"colonnes (correspondant aux colonnes d'un *data.frame* ou d'un *data."
+"table*). Les données réelles ne sont pas physiquement copiées en mémoire."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 24 (paragraph)
+#, fuzzy
+msgid ""
+"A *deep* copy on the other hand copies the entire data to another location "
+"in memory."
+msgstr ""
+"Une copie *profonde*, en revanche, copie l'intégralité des données à un "
+"autre endroit de la mémoire."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 25 (paragraph)
+#, fuzzy
+msgid ""
+"When subsetting a *data.table* using `i` (e.g., `DT[1:10]`), a *deep* copy "
+"is made. However, when `i` is not provided or equals `TRUE`, a *shallow* "
+"copy is made."
+msgstr ""
+"Lorsque l'on utilise `i` (par exemple, `DT[1:10]`) pour sous-dimensionner "
+"une *table de données, une copie *profonde* est effectuée. Cependant, "
+"lorsque `i` n'est pas fourni ou est égal à `TRUE`, une copie *shallow* est "
+"faite."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 27 (paragraph)
+#, fuzzy
+msgid ""
+"With *data.table's* `:=` operator, absolutely no copies are made in *both* "
+"(1) and (2), irrespective of R version you are using. This is because `:=` "
+"operator updates *data.table* columns *in-place* (by reference)."
+msgstr ""
+"Avec l'opérateur `:=` de *data.table, absolument aucune copie n'est faite "
+"dans *les deux (1) et (2), quelle que soit la version de R que vous "
+"utilisez. C'est parce que l'opérateur `:=` met à jour les colonnes de *data."
+"table* *en place* (par référence)."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 28 (header)
+#, fuzzy
+msgid "b) The `:=` operator"
+msgstr "b) L'opérateur `:='"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 29 (paragraph)
+#, fuzzy
+msgid "It can be used in `j` in two ways:"
+msgstr "Il peut être utilisé dans `j` de deux façons :"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 30 (paragraph)
+#, fuzzy
+msgid "(a) The `LHS := RHS` form"
+msgstr "(a) La forme \"LHS := RHS"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 31 (code)
+msgid ""
+"#===== r eval = FALSE\n"
+"DT[, c(\"colA\", \"colB\", ...) := list(valA, valB, ...)]\n"
+"\n"
+"# when you have only one column to assign to you\n"
+"# can drop the quotes and list(), for convenience\n"
+"DT[, colA := valA]\n"
+msgstr ""
+"#===== r eval = FALSE\n"
+"DT[, c(\"colA\", \"colB\", ...) := list(valA, valB, ...)]\n"
+"\n"
+"# lorsque vous n'avez qu'une seule colonne à assigner\n"
+"# vous pouvez supprimer les guillemets et list(), pour plus de commodité\n"
+"DT[, colA := valA]\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 32 (paragraph)
+#, fuzzy
+msgid "(b) The functional form"
+msgstr "(b) La forme fonctionnelle"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 33 (code)
+#, fuzzy
+msgid ""
+"#===== r eval = FALSE\n"
+"DT[, `:=`(colA = valA, # valA is assigned to colA\n"
+"          colB = valB, # valB is assigned to colB\n"
+"          ...\n"
+")]\n"
+msgstr ""
+"#===== r eval = FALSE\n"
+"DT[, `:=`(colA = valA, # valA est assigné à colA\n"
+"          colB = valB, # valB est assigné à colB\n"
+"          ...\n"
+")]\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 34 (paragraph)
+#, fuzzy
+msgid ""
+"Note that the code above explains how `:=` can be used. They are not "
+"working examples. We will start using them on `flights` *data.table* from "
+"the next section."
+msgstr ""
+"Notez que le code ci-dessus explique comment `:=` peut être utilisé. Il ne "
+"s'agit pas d'exemples pratiques. Nous commencerons à les utiliser sur "
+"`flights` *data.table* à partir de la section suivante."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 36 (paragraph)
+#, fuzzy
+msgid ""
+"=====* In (a), `LHS` takes a character vector of column names and `RHS` a "
+"*list of values*. `RHS` just needs to be a `list`, irrespective of how its "
+"generated (e.g., using `lapply()`, `list()`, `mget()`, `mapply()` etc.). "
+"This form is usually easy to program with and is particularly useful when "
+"you don't know the columns to assign values to in advance.====="
+msgstr ""
+"=====* Dans (a), `LHS` prend un vecteur de caractères de noms de colonnes "
+"et `RHS` une *liste de valeurs*. `RHS` doit juste être une `liste`, "
+"indépendamment de la façon dont elle est générée (par exemple, en utilisant "
+"`lapply()`, `list()`, `mget()`, `mapply()`, etc.) Cette forme est "
+"généralement facile à programmer et est particulièrement utile lorsque vous "
+"ne connaissez pas à l'avance les colonnes auxquelles attribuer des valeurs."
+"====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 37 (paragraph)
+#, fuzzy
+msgid ""
+"=====* On the other hand, (b) is handy if you would like to jot some "
+"comments down for later.====="
+msgstr ""
+"=====* En revanche, le point b) est pratique si vous souhaitez noter "
+"quelques commentaires pour plus tard.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 38 (paragraph)
+#, fuzzy
+msgid "=====* The result is returned *invisibly*.====="
+msgstr "=====* Le résultat est renvoyé de manière *invisible*.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 39 (paragraph)
+#, fuzzy
+msgid ""
+"=====* Since `:=` is available in `j`, we can combine it with `i` and `by` "
+"operations just like the aggregation operations we saw in the previous "
+"vignette.====="
+msgstr ""
+"=====* Puisque `:=` est disponible dans `j`, nous pouvons le combiner avec "
+"les opérations `i` et `by` tout comme les opérations d'agrégation que nous "
+"avons vues dans la vignette précédente.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 41 (paragraph)
+#, fuzzy
+msgid ""
+"In the two forms of `:=` shown above, note that we don't assign the result "
+"back to a variable. Because we don't need to. The input *data.table* is "
+"modified by reference. Let's go through examples to understand what we mean "
+"by this."
+msgstr ""
+"Dans les deux formes de `:=` présentées ci-dessus, notez que nous "
+"n'assignons pas le résultat à une variable. Parce que nous n'en avons pas "
+"besoin. L'entrée *data.table* est modifiée par référence. Prenons des "
+"exemples pour comprendre ce que nous entendons par là."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 42 (paragraph)
+#, fuzzy
+msgid ""
+"For the rest of the vignette, we will work with `flights` *data.table*."
+msgstr ""
+"Pour le reste de la vignette, nous travaillerons avec `flights` *data."
+"table*."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 43 (header)
+#, fuzzy
+msgid "2. Add/update/delete columns *by reference*"
+msgstr "2. Ajouter/mettre à jour/supprimer des colonnes *par référence*"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 44 (header)
+#, fuzzy
+msgid "a) Add columns by reference {#ref-j}"
+msgstr "a) Ajouter des colonnes par référence {#ref-j}"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 45 (header)
+#, fuzzy
+msgid ""
+"-- How can we add columns *speed* and *total delay* of each flight to "
+"`flights` *data.table*?"
+msgstr ""
+"-- Comment ajouter les colonnes *speed* et *total delay* de chaque vol à "
+"`flights` *data.table* ?"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 46 (code)
+msgid ""
+"flights[, `:=`(speed = distance / (air_time/60), # speed in mph (mi/h)\n"
+"               delay = arr_delay + dep_delay)]   # delay in minutes\n"
+"head(flights)\n"
+"\n"
+"## alternatively, using the 'LHS := RHS' form\n"
+"# flights[, c(\"speed\", \"delay\") := list(distance/(air_time/60), "
+"arr_delay + dep_delay)]\n"
+msgstr ""
+"flights[, `:=`(speed = distance / (air_time/60), # vitesse en mph (mi/h)\n"
+"               delay = arr_delay + dep_delay)]   # délai en minutes\n"
+"head(flights)\n"
+"\n"
+"## ou alors, en utilisant la forme 'LHS := RHS'\n"
+"# flights[, c(\"speed\", \"delay\") := list(distance/(air_time/60), "
+"arr_delay + dep_delay)]\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 47 (header)
+msgid "Note that"
+msgstr "Notez que"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 48 (paragraph)
+#, fuzzy
+msgid "=====* We did not have to assign the result back to `flights`.====="
+msgstr "=====* Nous n'avons pas eu à réaffecter le résultat à `flights`.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 49 (paragraph)
+#, fuzzy
+msgid ""
+"=====* The `flights` *data.table* now contains the two newly added columns. "
+"This is what we mean by *added by reference*.====="
+msgstr ""
+"=====* Le *data.table* `flights` contient maintenant les deux colonnes "
+"nouvellement ajoutées. C'est ce que nous entendons par *ajouté par "
+"référence*.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 50 (paragraph)
+#, fuzzy
+msgid ""
+"=====* We used the functional form so that we could add comments on the "
+"side to explain what the computation does. You can also see the `LHS := "
+"RHS` form (commented).====="
+msgstr ""
+"=====* Nous avons utilisé la forme fonctionnelle pour pouvoir ajouter des "
+"commentaires sur le côté afin d'expliquer ce que fait le calcul. Vous "
+"pouvez également voir la forme `LHS := RHS` (commentée).====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 51 (header)
+#, fuzzy
+msgid ""
+"b) Update some rows of columns by reference - *sub-assign* by reference "
+"{#ref-i-j}"
+msgstr ""
+"b) Mettre à jour certaines lignes de colonnes par référence - *sous-"
+"assignation* par référence {#ref-i-j}"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 52 (paragraph)
+#, fuzzy
+msgid ""
+"Let's take a look at all the `hours` available in the `flights` *data."
+"table*:"
+msgstr ""
+"Examinons toutes les `heures` disponibles dans le *data.table* des "
+"`volées` :"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 53 (code)
+msgid ""
+"# get all 'hours' in flights\n"
+"flights[, sort(unique(hour))]\n"
+msgstr ""
+"# récupère toutes les heures de flights\n"
+"flights[, sort(unique(hour))]\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 54 (paragraph)
+#, fuzzy
+msgid ""
+"We see that there are totally `25` unique values in the data. Both *0* and "
+"*24* hours seem to be present. Let's go ahead and replace *24* with *0*."
+msgstr ""
+"Nous constatons qu'il y a au total `25` valeurs uniques dans les données. "
+"Les heures *0* et *24* semblent être présentes. Remplaçons *24* par *0*, "
+"mais cette fois-ci en utilisant `on` au lieu de définir des clés."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 55 (header)
+#, fuzzy
+msgid "-- Replace those rows where `hour == 24` with the value `0`"
+msgstr "-- Remplacer les lignes où `hour == 24` par la valeur `0`"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 56 (code)
+msgid ""
+"# subassign by reference\n"
+"flights[hour == 24L, hour := 0L]\n"
+msgstr ""
+"# sous-assignation par référence\n"
+"flights[hour == 24L, hour := 0L]\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 57 (paragraph)
+#, fuzzy
+msgid ""
+"=====* We can use `i` along with `:=` in `j` the very same way as we have "
+"already seen in the *\"Introduction to data.table\"* vignette.====="
+msgstr ""
+"=====* Nous pouvons utiliser `i` avec `:=` dans `j` de la même manière que "
+"nous l'avons déjà vu dans la vignette *\"Introduction à data.table \"*.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 58 (paragraph)
+#, fuzzy
+msgid ""
+"=====* Column `hour` is replaced with `0` only on those *row indices* where "
+"the condition `hour == 24L` specified in `i` evaluates to `TRUE`.====="
+msgstr ""
+"=====* La colonne `hour` est remplacée par `0` uniquement sur les *indices "
+"de ligne* où la condition `hour == 24L` spécifiée dans `i` est évaluée à "
+"`TRUE`.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 59 (paragraph)
+#, fuzzy
+msgid ""
+"=====* `:=` returns the result invisibly. Sometimes it might be necessary "
+"to see the result after the assignment. We can accomplish that by adding an "
+"empty `[]` at the end of the query as shown below:====="
+msgstr ""
+"=====* `:=` renvoie le résultat de manière invisible. Parfois, il peut être "
+"nécessaire de voir le résultat après l'affectation. Nous pouvons y parvenir "
+"en ajoutant un `[]` vide à la fin de la requête, comme indiqué ci-dessous:"
+"====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 60 (code)
+msgid ""
+"```{r}\n"
+"flights[hour == 24L, hour := 0L][]\n"
+"```\n"
+msgstr ""
+"```{r}\n"
+"flights[hour == 24L, hour := 0L][]\n"
+"```\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 62 (paragraph)
+msgid "Let's look at all the `hours` to verify."
+msgstr "Regardons toutes les heures pour vérifier."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 63 (code)
+msgid ""
+"# check again for '24'\n"
+"flights[, sort(unique(hour))]\n"
+msgstr ""
+"# vérifier à nouveau la présence de '24'\n"
+"flights[, sort(unique(hour))]\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 64 (header)
+#, fuzzy
+msgid "Exercise: {#update-by-reference-question}"
+msgstr "Exercice : {#update-by-reference-question}"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 65 (paragraph)
+#, fuzzy
+msgid ""
+"What is the difference between `flights[hour == 24L, hour := 0L]` and "
+"`flights[hour == 24L][, hour := 0L]`? Hint: The latter needs an assignment "
+"(`<-`) if you would want to use the result later."
+msgstr ""
+"Quelle est la différence entre `vol[heure == 24L, heure := 0L]` et "
+"`vol[heure == 24L][, heure := 0L]` ? Indice : le dernier a besoin d'une "
+"affectation (`<-`) si vous voulez utiliser le résultat plus tard."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 66 (paragraph)
+#, fuzzy
+msgid ""
+"If you can't figure it out, have a look at the `Note` section of `?\":=\"`."
+msgstr ""
+"Si vous n'y arrivez pas, jetez un coup d'œil à la section `Note` de ` ?\":"
+"=\"`."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 67 (header)
+#, fuzzy
+msgid "c) Delete column by reference"
+msgstr "c) Supprimer une colonne par référence"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 68 (header)
+#, fuzzy
+msgid "-- Remove `delay` column"
+msgstr "-- Supprimer la colonne `delay` (délai)"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 69 (code)
+msgid ""
+"flights[, c(\"delay\") := NULL]\n"
+"head(flights)\n"
+"\n"
+"## or using the functional form\n"
+"# flights[, `:=`(delay = NULL)]\n"
+msgstr ""
+"flights[, c(\"delay\") := NULL]\n"
+"head(flights)\n"
+"\n"
+"## ou en utilisant la forme fonctionnelle\n"
+"# flights[, `:=`(delay = NULL)]\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 70 (header)
+#, fuzzy
+msgid "{#delete-convenience}"
+msgstr "{#delete-convenience}"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 71 (paragraph)
+#, fuzzy
+msgid ""
+"=====* Assigning `NULL` to a column *deletes* that column. And it happens "
+"*instantly*.====="
+msgstr ""
+"=====* Assigner `NULL` à une colonne *supprime* cette colonne. Et cela se "
+"produit *instantanément*.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 72 (paragraph)
+#, fuzzy
+msgid ""
+"=====* We can also pass column numbers instead of names in the `LHS`, "
+"although it is good programming practice to use column names.====="
+msgstr ""
+"=====* Nous pouvons également passer des numéros de colonnes au lieu de "
+"noms dans le `LHS`, bien qu'il soit de bonne pratique de programmation "
+"d'utiliser des noms de colonnes.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 73 (paragraph)
+#, fuzzy
+msgid ""
+"=====* When there is just one column to delete, we can drop the `c()` and "
+"double quotes and just use the column name *unquoted*, for convenience. "
+"That is:====="
+msgstr ""
+"=====* Lorsqu'il n'y a qu'une seule colonne à supprimer, nous pouvons "
+"laisser tomber le `c()` et les guillemets doubles et utiliser simplement le "
+"nom de la colonne *sans guillemets*, pour plus de commodité. C'est-à-dire:"
+"====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 74 (code)
+#, fuzzy
+msgid ""
+"```{chunk_with_args}\n"
+"#===== r eval = FALSE\n"
+"flights[, delay := NULL]\n"
+"```\n"
+"\n"
+"is equivalent to the code above.\n"
+msgstr ""
+"```{chunk_with_args}\n"
+"#===== r eval = FALSE\n"
+"flights[, delay := NULL]\n"
+"```\n"
+"\n"
+"est équivalent au code ci-dessus.\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 75 (header)
+#, fuzzy
+msgid "d) `:=` along with grouping using `by` {#ref-j-by}"
+msgstr "d) `:=` et le regroupement avec `by` {#ref-j-by}"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 76 (paragraph)
+#, fuzzy
+msgid ""
+"We have already seen the use of `i` along with `:=` in [Section 2b](#ref-i-"
+"j). Let's now see how we can use `:=` along with `by`."
+msgstr ""
+"Nous avons déjà vu l'utilisation de `i` avec `:=` dans la [Section 2b] "
+"(#ref-i-j). Voyons maintenant comment nous pouvons utiliser `:=` avec `by`."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 77 (header)
+#, fuzzy
+msgid ""
+"-- How can we add a new column which contains for each `orig,dest` pair the "
+"maximum speed?"
+msgstr ""
+"-- Comment ajouter une nouvelle colonne qui contienne pour chaque paire "
+"`orig,dest` la vitesse maximale ?"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 78 (code)
+msgid ""
+"flights[, max_speed := max(speed), by = .(origin, dest)]\n"
+"head(flights)\n"
+msgstr ""
+"flights[, max_speed := max(speed), by = .(origin, dest)]\n"
+"head(flights)\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 79 (paragraph)
+#, fuzzy
+msgid ""
+"=====* We add a new column `max_speed` using the `:=` operator by reference."
+"====="
+msgstr ""
+"=====* Nous ajoutons une nouvelle colonne `max_speed` en utilisant "
+"l'opérateur `:=` par référence.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 80 (paragraph)
+#, fuzzy
+msgid ""
+"=====* We provide the columns to group by the same way as shown in the "
+"*Introduction to data.table* vignette. For each group, `max(speed)` is "
+"computed, which returns a single value. That value is recycled to fit the "
+"length of the group. Once again, no copies are being made at all. `flights` "
+"*data.table* is modified *in-place*.====="
+msgstr ""
+"=====* Nous fournissons les colonnes à grouper de la même manière que dans "
+"la vignette *Introduction à data.table*. Pour chaque groupe, `max(speed)` "
+"est calculé, ce qui renvoie une seule valeur. Cette valeur est recyclée "
+"pour s'adapter à la longueur du groupe. Encore une fois, aucune copie n'est "
+"faite. `flights` *data.table* est modifié *in-place*.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 81 (paragraph)
+#, fuzzy
+msgid ""
+"=====* We could have also provided `by` with a *character vector* as we saw "
+"in the *Introduction to data.table* vignette, e.g., `by = c(\"origin\", "
+"\"dest\")`.====="
+msgstr ""
+"=====* Nous aurions également pu fournir à `by` un *vecteur de caractères* "
+"comme nous l'avons vu dans la vignette *Introduction à data.table*, par "
+"exemple, `by = c(\"origin\", \"dest\")`.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 83 (header)
+#, fuzzy
+msgid "e) Multiple columns and `:=`"
+msgstr "e) Colonnes multiples et `:=`"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 84 (header)
+#, fuzzy
+msgid ""
+"-- How can we add two more columns computing `max()` of `dep_delay` and "
+"`arr_delay` for each month, using `.SD`?"
+msgstr ""
+"-- Comment ajouter deux colonnes supplémentaires calculant `max()` de "
+"`dep_delay` et `arr_delay` pour chaque mois, en utilisant `.SD` ?"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 85 (code)
+msgid ""
+"in_cols  = c(\"dep_delay\", \"arr_delay\")\n"
+"out_cols = c(\"max_dep_delay\", \"max_arr_delay\")\n"
+"flights[, c(out_cols) := lapply(.SD, max), by = month, .SDcols = in_cols]\n"
+"head(flights)\n"
+msgstr ""
+"in_cols = c(\"dep_delay\", \"arr_delay\")\n"
+"out_cols = c(\"max_dep_delay\", \"max_arr_delay\")\n"
+"flights[, c(out_cols) := lapply(.SD, max), by = month, .SDcols = in_cols]\n"
+"head(flights)\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 86 (paragraph)
+#, fuzzy
+msgid ""
+"=====* We use the `LHS := RHS` form. We store the input column names and "
+"the new columns to add in separate variables and provide them to `.SDcols` "
+"and for `LHS` (for better readability).====="
+msgstr ""
+"=====* Nous utilisons la forme `LHS := RHS`. Nous stockons les noms des "
+"colonnes d'entrée et les nouvelles colonnes à ajouter dans des variables "
+"séparées et les fournissons à `.SDcols` et à `LHS` (pour une meilleure "
+"lisibilité).====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 87 (paragraph)
+#, fuzzy
+msgid ""
+"=====* Note that since we allow assignment by reference without quoting "
+"column names when there is only one column as explained in [Section 2c]"
+"(#delete-convenience), we can not do `out_cols := lapply(.SD, max)`. That "
+"would result in adding one new column named `out_col`. Instead we should do "
+"either `c(out_cols)` or simply `(out_cols)`. Wrapping the variable name "
+"with `(` is enough to differentiate between the two cases.====="
+msgstr ""
+"=====* Notez que puisque nous autorisons l'assignation par référence sans "
+"citer les noms de colonnes lorsqu'il n'y a qu'une seule colonne comme "
+"expliqué dans [Section 2c](#delete-convenience), nous ne pouvons pas faire "
+"`out_cols := lapply(.SD, max)`. Cela résulterait en l'ajout d'une nouvelle "
+"colonne nommée `out_col`. A la place, nous devrions faire soit "
+"`c(out_cols)` soit simplement `(out_cols)`. Le fait d'entourer le nom de la "
+"variable avec `(` est suffisant pour différencier les deux cas.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 88 (paragraph)
+#, fuzzy
+msgid ""
+"=====* The `LHS := RHS` form allows us to operate on multiple columns. In "
+"the RHS, to compute the `max` on columns specified in `.SDcols`, we make "
+"use of the base function `lapply()` along with `.SD` in the same way as we "
+"have seen before in the *\"Introduction to data.table\"* vignette. It "
+"returns a list of two elements, containing the maximum value corresponding "
+"to `dep_delay` and `arr_delay` for each group.====="
+msgstr ""
+"=====* La forme `LHS := RHS` nous permet d'opérer sur plusieurs colonnes. "
+"Dans le RHS, pour calculer le `max` sur les colonnes spécifiées dans `."
+"SDcols`, nous utilisons la fonction de base `lapply()` avec `.SD` de la "
+"même manière que nous l'avons vu précédemment dans la vignette "
+"*\"Introduction to data.table \"*. Elle renvoie une liste de deux éléments, "
+"contenant la valeur maximale correspondant à `dep_delay` et `arr_delay` "
+"pour chaque groupe.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 90 (paragraph)
+#, fuzzy
+msgid ""
+"Before moving on to the next section, let's clean up the newly created "
+"columns `speed`, `max_speed`, `max_dep_delay` and `max_arr_delay`."
+msgstr ""
+"Avant de passer à la section suivante, nettoyons les colonnes nouvellement "
+"créées `speed`, `max_speed`, `max_dep_delay` et `max_arr_delay`."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 91 (code)
+#, fuzzy
+msgid ""
+"# RHS gets automatically recycled to length of LHS\n"
+"flights[, c(\"speed\", \"max_speed\", \"max_dep_delay\", "
+"\"max_arr_delay\") := NULL]\n"
+"head(flights)\n"
+msgstr ""
+"# RHS est automatiquement recyclé à la longueur de LHS\n"
+"flights[, c(\"speed\", \"max_speed\", \"max_dep_delay\", "
+"\"max_arr_delay\") := NULL]\n"
+"head(flights)\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 92 (header)
+#, fuzzy
+msgid "-- How can we update multiple existing columns in place using `.SD`?"
+msgstr ""
+"-- Comment mettre à jour plusieurs colonnes existantes en utilisant `.SD` ?"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 93 (code)
+msgid ""
+"flights[, names(.SD) := lapply(.SD, as.factor), .SDcols = is.character]\n"
+msgstr ""
+"flights[, names(.SD) := lapply(.SD, as.factor), .SDcols = is.character]\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 94 (paragraph)
+#, fuzzy
+msgid ""
+"Let's clean up again and convert our newly-made factor columns back into "
+"character columns. This time we will make use of `.SDcols` accepting a "
+"function to decide which columns to include. In this case, `is.factor()` "
+"will return the columns which are factors. For more on the **S**ubset of "
+"the **D**ata, there is also an [SD Usage vignette](https://cran.r-project."
+"org/web/packages/data.table/vignettes/datatable-sd-usage.html)."
+msgstr ""
+"Nettoyons à nouveau et convertissons nos colonnes de facteurs nouvellement "
+"créées en colonnes de caractères. Cette fois, nous utiliserons `.SDcols` en "
+"acceptant une fonction pour décider quelles colonnes inclure. Dans ce cas, "
+"`is.factor()` retournera les colonnes qui sont des facteurs. Pour en savoir "
+"plus sur le **S**ubset of the **D**ata, il y a aussi une [SD Usage "
+"vignette] (https://cran.r-project.org/web/packages/data.table/vignettes/"
+"datatable-sd-usage.html)."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 95 (paragraph)
+#, fuzzy
+msgid ""
+"Sometimes, it is also nice to keep track of columns that we transform. That "
+"way, even after we convert our columns we would be able to call the "
+"specific columns we were updating."
+msgstr ""
+"Parfois, il est également utile de garder une trace des colonnes que nous "
+"transformons. Ainsi, même après avoir converti nos colonnes, nous pourrons "
+"appeler les colonnes spécifiques que nous avons mises à jour."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 96 (code)
+msgid ""
+"factor_cols <- sapply(flights, is.factor)\n"
+"flights[, names(.SD) := lapply(.SD, as.character), .SDcols = factor_cols]\n"
+"str(flights[, ..factor_cols])\n"
+msgstr ""
+"factor_cols <- sapply(flights, is.factor)\n"
+"flights[, names(.SD) := lapply(.SD, as.character), .SDcols = factor_cols]\n"
+"str(flights[, ..factor_cols])\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 97 (header)
+#, fuzzy
+msgid "{.bs-callout .bs-callout-info}"
+msgstr "{.bs-callout .bs-callout-info}"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 98 (paragraph)
+#, fuzzy
+msgid ""
+"=====* We also could have used `(factor_cols)` on the `LHS` instead of "
+"`names(.SD)`.====="
+msgstr ""
+"=====* Nous aurions également pu utiliser `(factor_cols)` sur `LHS` au lieu "
+"de `names(.SD)`.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 99 (header)
+#, fuzzy
+msgid "3. `:=` and `copy()`"
+msgstr "3. `:=` et `copy()`"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 100 (paragraph)
+#, fuzzy
+msgid ""
+"`:=` modifies the input object by reference. Apart from the features we "
+"have discussed already, sometimes we might want to use the update by "
+"reference feature for its side effect. And at other times it may not be "
+"desirable to modify the original object, in which case we can use `copy()` "
+"function, as we will see in a moment."
+msgstr ""
+"`:=` modifie l'objet d'entrée par référence. En dehors des fonctionnalités "
+"que nous avons déjà discutées, nous pouvons parfois vouloir utiliser la "
+"fonctionnalité de mise à jour par référence pour son effet secondaire. Et "
+"dans d'autres cas, il n'est pas souhaitable de modifier l'objet original, "
+"auquel cas nous pouvons utiliser la fonction `copy()`, comme nous le "
+"verrons dans un instant."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 101 (header)
+#, fuzzy
+msgid "a) `:=` for its side effect"
+msgstr "a) `:=` pour son effet secondaire"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 102 (paragraph)
+msgid ""
+"Let's say we would like to create a function that would return the *maximum "
+"speed* for each month. But at the same time, we would also like to add the "
+"column `speed` to *flights*. We could write a simple function as follows:"
+msgstr ""
+"Supposons que nous voulions créer une fonction qui renvoie la *vitesse "
+"maximale* pour chaque mois. Mais en même temps, nous aimerions aussi "
+"ajouter la colonne `vitesse` à *flights*. Nous pourrions écrire une petite "
+"fonction comme suit :"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 103 (code)
+msgid ""
+"foo <- function(DT) {\n"
+"  DT[, speed := distance / (air_time/60)]\n"
+"  DT[, .(max_speed = max(speed)), by = month]\n"
+"}\n"
+"ans = foo(flights)\n"
+"head(flights)\n"
+"head(ans)\n"
+msgstr ""
+"foo <- function(DT) {\n"
+"  DT[, speed := distance / (air_time/60)]\n"
+"  DT[, .(max_speed = max(speed)), by = month]\n"
+"}\n"
+"ans = foo(flights)\n"
+"head(flights)\n"
+"head(ans)\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 104 (paragraph)
+#, fuzzy
+msgid ""
+"=====* Note that the new column `speed` has been added to `flights` *data."
+"table*. This is because `:=` performs operations by reference. Since `DT` "
+"(the function argument) and `flights` refer to the same object in memory, "
+"modifying `DT` also reflects on `flights`.====="
+msgstr ""
+"=====* Notez que la nouvelle colonne `speed` a été ajoutée à `flights` "
+"*data.table*. C'est parce que `:=` effectue des opérations par référence. "
+"Puisque `DT` (l'argument de la fonction) et `vols` font référence au même "
+"objet en mémoire, la modification de `DT` se répercute également sur `vols`."
+"====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 105 (paragraph)
+#, fuzzy
+msgid "=====* And `ans` contains the maximum speed for each month.====="
+msgstr "=====* Et `ans` contient la vitesse maximale pour chaque mois.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 106 (header)
+#, fuzzy
+msgid "b) The `copy()` function"
+msgstr "b) La fonction `copy()"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 107 (paragraph)
+#, fuzzy
+msgid ""
+"In the previous section, we used `:=` for its side effect. But of course "
+"this may not be always desirable. Sometimes, we would like to pass a *data."
+"table* object to a function, and might want to use the `:=` operator, but "
+"*wouldn't* want to update the original object. We can accomplish this using "
+"the function `copy()`."
+msgstr ""
+"Dans la section précédente, nous avons utilisé `:=` pour son effet de bord. "
+"Mais bien sûr, ce n'est pas toujours souhaitable. Parfois, nous voudrions "
+"passer un objet *data.table* à une fonction, et nous pourrions vouloir "
+"utiliser l'opérateur `:=`, mais *ne voudrions pas* mettre à jour l'objet "
+"original. Nous pouvons accomplir cela en utilisant la fonction `copy()`."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 108 (paragraph)
+#, fuzzy
+msgid ""
+"The `copy()` function *deep* copies the input object and therefore any "
+"subsequent update by reference operations performed on the copied object "
+"will not affect the original object."
+msgstr ""
+"La fonction `copy()` *deep* copie l'objet d'entrée et donc toutes les "
+"opérations de mise à jour par référence effectuées sur l'objet copié "
+"n'affecteront pas l'objet d'origine."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 110 (paragraph)
+#, fuzzy
+msgid "There are two particular places where `copy()` function is essential:"
+msgstr ""
+"Il y a deux endroits particuliers où la fonction `copy()` est essentielle :"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 111 (paragraph)
+#, fuzzy
+msgid ""
+"=====1. Contrary to the situation we have seen in the previous point, we "
+"may not want the input data.table to a function to be modified *by "
+"reference*. As an example, let's consider the task in the previous section, "
+"except we don't want to modify `flights` by reference.====="
+msgstr ""
+"=====1. Contrairement à ce que nous avons vu au point précédent, nous "
+"pouvons ne pas vouloir que le tableau de données d'entrée d'une fonction "
+"soit modifié *par référence*. A titre d'exemple, considérons la tâche de la "
+"section précédente, sauf que nous ne voulons pas modifier `flights` par "
+"référence.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 112 (code)
+msgid ""
+"Let's first delete the `speed` column we generated in the previous "
+"section.\n"
+"\n"
+"```{r}\n"
+"flights[, speed := NULL]\n"
+"```\n"
+"Now, we could accomplish the task as follows:\n"
+"\n"
+"```{r}\n"
+"foo <- function(DT) {\n"
+"  DT <- copy(DT)                              ## deep copy\n"
+"  DT[, speed := distance / (air_time/60)]     ## doesn't affect 'flights'\n"
+"  DT[, .(max_speed = max(speed)), by = month]\n"
+"}\n"
+"ans <- foo(flights)\n"
+"head(flights)\n"
+"head(ans)\n"
+"```\n"
+msgstr ""
+"Supprimons d'abord la colonne `speed` que nous avons générée dans la "
+"section précédente.\n"
+"\n"
+"```{r}\n"
+"flights[, vitesse := NULL]\n"
+"```\n"
+"Maintenant, nous pourrions accomplir la tâche comme suit :\n"
+"\n"
+"```{r}\n"
+"foo <- function(DT) {\n"
+"  DT <- copy(DT) ## copie profonde\n"
+"  DT[, speed := distance / (air_time/60)] ## n'affecte pas les vols\n"
+"  DT[, .(max_speed = max(speed)), by = month]\n"
+"}\n"
+"ans <- foo(flights)\n"
+"head(flights)\n"
+"head(ans)\n"
+"```\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 113 (paragraph)
+#, fuzzy
+msgid ""
+"=====* Using `copy()` function did not update `flights` *data.table* by "
+"reference. It doesn't contain the column `speed`.====="
+msgstr ""
+"=====* L'utilisation de la fonction `copy()` n'a pas mis à jour `flights` "
+"*data.table* par référence. Elle ne contient pas la colonne `speed`.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 114 (paragraph)
+#, fuzzy
+msgid ""
+"=====* And `ans` contains the maximum speed corresponding to each month."
+"====="
+msgstr ""
+"=====* Et `ans` contient la vitesse maximale correspondant à chaque mois."
+"====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 115 (paragraph)
+#, fuzzy
+msgid ""
+"However we could improve this functionality further by *shallow* copying "
+"instead of *deep* copying. In fact, we would very much like to [provide "
+"this functionality for `v1.9.8`](https://github.com/Rdatatable/data.table/"
+"issues/617). We will touch up on this again in the *data.table design* "
+"vignette."
+msgstr ""
+"Cependant, nous pourrions encore améliorer cette fonctionnalité en faisant "
+"une copie *shallow* au lieu d'une copie *deep*. En fait, nous aimerions "
+"beaucoup [fournir cette fonctionnalité pour `v1.9.8`] (https://github.com/"
+"Rdatatable/data.table/issues/617). Nous reviendrons sur ce point dans la "
+"vignette *data.table design*."
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 117 (paragraph)
+#, fuzzy
+msgid ""
+"=====2. When we store the column names on to a variable, e.g., `DT_n = "
+"names(DT)`, and then *add/update/delete* column(s) *by reference*. It would "
+"also modify `DT_n`, unless we do `copy(names(DT))`.====="
+msgstr ""
+"=====2. Lorsque nous stockons les noms de colonnes dans une variable, par "
+"exemple, `DT_n = names(DT)`, puis *ajoute/mise à jour/supprime* la/les "
+"colonne(s) *par référence*. Cela modifierait également `DT_n`, à moins que "
+"nous ne fassions `copy(names(DT))`.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 118 (code)
+msgid ""
+"```{r}\n"
+"DT = data.table(x = 1L, y = 2L)\n"
+"DT_n = names(DT)\n"
+"DT_n\n"
+"\n"
+"## add a new column by reference\n"
+"DT[, z := 3L]\n"
+"\n"
+"## DT_n also gets updated\n"
+"DT_n\n"
+"\n"
+"## use `copy()`\n"
+"DT_n = copy(names(DT))\n"
+"DT[, w := 4L]\n"
+"\n"
+"## DT_n doesn't get updated\n"
+"DT_n\n"
+"```\n"
+msgstr ""
+"```{r}\n"
+"DT = data.table(x = 1L, y = 2L)\n"
+"DT_n = names(DT)\n"
+"DT_n\n"
+"\n"
+"## ajouter une nouvelle colonne par référence\n"
+"DT[, z := 3L]\n"
+"\n"
+"## DT_n est également mis à jour\n"
+"DT_n\n"
+"\n"
+"## utiliser `copy()`\n"
+"DT_n = copy(names(DT))\n"
+"DT[, w := 4L]\n"
+"\n"
+"## DT_n n'est pas mis à jour\n"
+"DT_n\n"
+"```\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 119 (header)
+#, fuzzy
+msgid "Summary"
+msgstr "Résumé"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 120 (header)
+#, fuzzy
+msgid "The `:=` operator"
+msgstr "L'opérateur `:=`"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 121 (paragraph)
+#, fuzzy
+msgid "=====* It is used to *add/update/delete* columns by reference.====="
+msgstr ""
+"=====* Il est utilisé pour *ajouter/mettre à jour/supprimer* des colonnes "
+"par référence.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 122 (paragraph)
+#, fuzzy
+msgid ""
+"=====* We have also seen how to use `:=` along with `i` and `by` the same "
+"way as we have seen in the *Introduction to data.table* vignette. We can in "
+"the same way use `keyby`, chain operations together, and pass expressions "
+"to `by` as well all in the same way. The syntax is *consistent*.====="
+msgstr ""
+"=====* Nous avons aussi vu comment utiliser `:=` avec `i` et `by` de la "
+"même manière que nous l'avons vu dans la vignette *Introduction à data."
+"table*. Nous pouvons de la même manière utiliser `keyby`, enchaîner des "
+"opérations, et passer des expressions à `by` de la même manière. La syntaxe "
+"est *consistante*.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 123 (paragraph)
+#, fuzzy
+msgid ""
+"=====* We can use `:=` for its side effect or use `copy()` to not modify "
+"the original object while updating by reference.====="
+msgstr ""
+"=====* Nous pouvons utiliser `:=` pour son effet secondaire ou utiliser "
+"`copy()` pour ne pas modifier l'objet original lors de la mise à jour par "
+"référence.====="
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 124 (code)
+#, fuzzy
+msgid ""
+"#===== r, echo=FALSE\n"
+"setDTthreads(.old.th)\n"
+msgstr ""
+"#===== r, echo=FALSE\n"
+"setDTthreads(.old.th)\n"
+
+#: fr/datatable-reference-semantics.Rmd.tmp:block 126 (paragraph)
+#, fuzzy
+msgid ""
+"So far we have seen a whole lot in `j`, and how to combine it with `by` and "
+"little of `i`. Let's turn our attention back to `i` in the next vignette "
+"*\"Keys and fast binary search based subset\"* to perform *blazing fast "
+"subsets* by *keying data.tables*."
+msgstr ""
+"Jusqu'à présent, nous avons vu beaucoup de choses dans `j`, et comment le "
+"combiner avec `by` et peu de choses dans `i`. Tournons notre attention vers "
+"`i` dans la prochaine vignette *\"Keys and fast binary search based subset "
+"\"* pour réaliser des *sous-ensembles ultra-rapides* en *utilisant des clés "
+"dans data.tables*."
