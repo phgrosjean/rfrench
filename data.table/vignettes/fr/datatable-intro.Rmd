@@ -127,13 +127,13 @@ ans <- flights[origin == "JFK" & month == 6L]
 head(ans)
 ```
 
-* Dans le cadre d'un `data.table`, on peut se référer aux colonnes *comme s'il s'agissait de variables*, un peu comme dans SQL ou Stata. Par conséquent, nous nous référons simplement à `origin` et `month` comme s'il s'agissait de variables. Nous n'avons pas besoin d'ajouter le préfixe `flights$` à chaque fois. Néanmoins, l'utilisation de `flights$origin` et `flights$month` fonctionnerait parfaitement.
+* Dans le cadre d'un `data.table`, on peut se référer aux colonnes *comme s'il s'agissait de variables*, un peu comme dans SQL ou Stata. Par conséquent, nous nous référons simplement à `origin` et `month` comme s'il s'agissait de variables. Nous n'avons pas besoin d'ajouter le préfixe `vol$` à chaque fois. Néanmoins, l'utilisation de `flights$origin` et `flights$month` fonctionnerait parfaitement.
 
 * Les *indices de ligne* qui satisfont la condition `origin == "JFK" & month == 6L` sont calculés, et puisqu'il n'y a rien d'autre à faire, toutes les colonnes de `flights` aux lignes correspondant à ces *indices de ligne* sont simplement renvoyées sous forme d’un `data.table`.
 
 * Une virgule après la condition dans `i` n'est pas nécessaire. Mais `flights[origin == "JFK" & month == 6L, ]` fonctionnerait parfaitement. Avec un `data.frame`, cependant, la virgule est indispensable.
 
-#### -- Récupérer les deux premières lignes de 'flights'. {#subset-rows-integer}
+#### -- Récupérer les deux premières lignes de `flights`. {#subset-rows-integer}
 
 ```{r}
 ans <- flights[1:2]
@@ -151,7 +151,7 @@ ans <- flights[order(origin, -dest)]
 head(ans)
 ```
 
-#### 'order()' est optimisé en interne
+#### `order()` est optimisé en interne
 
 * Nous pouvons utiliser "-" sur les colonnes `character` dans le cadre d'un `data.table` pour trier par ordre décroissant.
 
@@ -159,9 +159,9 @@ head(ans)
 
 Nous discuterons de l'ordonnancement rapide de la `data.table` plus en détails dans la vignette *fonctionnement interne de `data.table` internals*.
 
-### d) Sélection de colonne(s) dans 'j' {#select-j-1d}
+### d) Sélection de colonne(s) dans `j` {#select-j-1d}
 
-#### -- Sélectionner la colonne 'arr_delay', mais la renvoyer en tant que *vector*.
+#### -- Sélectionner la colonne `arr_delay`, mais la renvoyer en tant que *vector*.
 
 ```{r}
 ans <- flights[, arr_delay]
@@ -172,7 +172,7 @@ head(ans)
 
 * Il renvoie *toutes* les lignes de la colonne `arr_delay`.
 
-#### -- Sélectionner la colonne 'arr_delay', mais la renvoyer en tant que 'data.table'.
+#### -- Sélectionner la colonne `arr_delay`, mais la renvoyer en tant que `data.table`.
 
 ```{r}
 ans <- flights[, list(arr_delay)]
@@ -183,7 +183,7 @@ head(ans)
 
 * `data.table` permet aussi d'envelopper les colonnes avec `.()` au lieu de `list()`. C'est un *alias* de `list()` ; les deux signifient la même chose. N'hésitez pas à utiliser ce que vous préférez ; nous avons remarqué que la plupart des utilisateurs semblent préférer `.()` pour la concision, donc nous continuerons à utiliser `.()` par la suite.
 
-Une `data.table` (et également une `data.frame`) est aussi en interne une `list` , avec la caractéristique que chaque élément a la même longueur et que la `list` possède un attribut `class`. En permettant à `j` de renvoyer une `list` cela permet de convertir et de renvoyer des `data.table` très efficacement.
+Un `data.table` (et également un `data.frame`) est aussi en interne une `list` , avec la caractéristique que chaque élément a la même longueur et que la `list` possède un attribut `class`. En permettant à `j` de renvoyer une `list` cela permet de convertir et de renvoyer des `data.table` très efficacement.
 
 #### Conseil : {#tip-1}
 
@@ -649,15 +649,15 @@ DT[i, j, by]
 
 Jusqu'ici nous avons vu que,
 
-#### En utilisant 'i' :
+#### En utilisant `i` :
 
-* Nous pouvons subdiviser les lignes comme dans un `data.frame` - sauf que vous n'avez pas besoin d'utiliser `DT$` de façon répétitive puisque les colonnes dans le cadre d'un `data.table` sont vues comme si elles étaient des *variables*.
+* Nous pouvons subdiviser les lignes comme dans un `data.frame` - sauf que vous n'avez pas besoin d'utiliser `DT$` de façon répétitive puisque les colonnes dans le contexte d'un `data.table` sont vues comme si elles étaient des *variables*.
 
 * Nous pouvons également trier un `data.table` en utilisant `order()`, qui utilise en interne l’algorithme de tri rapide de data.table pour de meilleures performances.
 
 Nous pouvons faire beaucoup plus dans `i` en créant une `data.table` avec clés, ce qui permet de réaliser rapidement les sous-ensembles et les jointures. Nous verrons cela dans les vignettes *"Clés et sous-ensembles basés sur la recherche binaire rapide"* et *"Jointures et jointures liées au temps"*.
 
-#### En utilisant 'j' :
+#### En utilisant `j` :
 
 1. Sélectionner les colonnes à la manière de `data.table` : `DT[, .(colA, colB)]`.
 
@@ -669,7 +669,7 @@ Nous pouvons faire beaucoup plus dans `i` en créant une `data.table` avec clés
 
 5. Combiner avec `i` : `DT[colA > valeur, sum(colB)]`.
 
-#### En utilisant 'by' :
+#### En utilisant `by` :
 
 * En utilisant `by`, nous pouvons grouper par colonnes en spécifiant une *liste de colonnes* ou un *vecteur de caractères de noms de colonnes* ou même des *expressions*. La flexibilité de `j`, combinée à `by` et `i`, en fait une syntaxe très puissante.
 
@@ -687,9 +687,9 @@ Nous pouvons faire beaucoup plus dans `i` en créant une `data.table` avec clés
 
 #### Et souvenez-vous du conseil :
 
-Tant que 'j renvoie une 'liste', chaque élément de la liste va devenir une colonne de la 'data.table' résultante.
+Tant que `j` renvoie un objet `list`, chaque élément de la liste va devenir une colonne du `data.table` résultant.
 
-Nous verrons dans la vignette suivante comment *ajouter / mettre à jour / supprimer* des colonnes *par référence* et comment les combiner avec 'i' et 'by' .
+Nous verrons dans la vignette suivante comment *ajouter / mettre à jour / supprimer* des colonnes *par référence* et comment les combiner avec `i` et `by` .
 
 ***
 

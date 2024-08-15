@@ -34,52 +34,52 @@ vigdir <- normalizePath(vigdir) # Absolute path (required by md2po and po2md)
 library(rmdpo)
 
 ## datatable-intro.Rmd
-#rmd2po(file.path(vigdir, "datatable-intro.Rmd"), verbose = TRUE, , keep.tmpfile = TRUE)
+#rmd2po(file.path(vigdir, "datatable-intro.Rmd"), verbose = TRUE, keep.tmpfile = TRUE)
 # Translate strings using poEdit, then...
 #po2rmd(file.path(vigdir, "datatable-intro.Rmd"), verbose = TRUE)
 
 ## datatable-sd-usage.Rmd
-#rmd2po(file.path(vigdir, "datatable-sd-usage.Rmd"), verbose = TRUE, , keep.tmpfile = TRUE)
+#rmd2po(file.path(vigdir, "datatable-sd-usage.Rmd"), verbose = TRUE, keep.tmpfile = TRUE)
 # Translate strings using poEdit, then...
 #po2rmd(file.path(vigdir, "datatable-sd-usage.Rmd"), verbose = TRUE)
 
 ## datatable-secondary-indices-and-auto-indexing.Rmd
-#rmd2po(file.path(vigdir, "datatable-secondary-indices-and-auto-indexing.Rmd"), verbose = TRUE, , keep.tmpfile = TRUE)
+#rmd2po(file.path(vigdir, "datatable-secondary-indices-and-auto-indexing.Rmd"), verbose = TRUE, keep.tmpfile = TRUE)
 # Translate strings using poEdit, then...
 #po2rmd(file.path(vigdir, "datatable-secondary-indices-and-auto-indexing.Rmd"), verbose = TRUE)
 
 ## datatable-benchmarking.Rmd
-#rmd2po(file.path(vigdir, "datatable-benchmarking.Rmd"), verbose = TRUE, , keep.tmpfile = TRUE)
+#rmd2po(file.path(vigdir, "datatable-benchmarking.Rmd"), verbose = TRUE, keep.tmpfile = TRUE)
 # Translate strings using poEdit, then...
 po2rmd(file.path(vigdir, "datatable-benchmarking.Rmd"), verbose = TRUE)
 
 ## datatable-faq.Rmd
-#rmd2po(file.path(vigdir, "datatable-faq.Rmd"), verbose = TRUE, , keep.tmpfile = TRUE)
+#rmd2po(file.path(vigdir, "datatable-faq.Rmd"), verbose = TRUE, keep.tmpfile = TRUE)
 # Translate strings using poEdit, then...
 po2rmd(file.path(vigdir, "datatable-faq.Rmd"), verbose = TRUE)
 
 ## datatable-importing.Rmd
-#rmd2po(file.path(vigdir, "datatable-importing.Rmd"), verbose = TRUE, , keep.tmpfile = TRUE)
+#rmd2po(file.path(vigdir, "datatable-importing.Rmd"), verbose = TRUE, keep.tmpfile = TRUE)
 # Translate strings using poEdit, then...
 po2rmd(file.path(vigdir, "datatable-importing.Rmd"), verbose = TRUE)
 
 ## datatable-keys-fast-subset.Rmd
-#rmd2po(file.path(vigdir, "datatable-keys-fast-subset.Rmd"), verbose = TRUE, , keep.tmpfile = TRUE)
+#rmd2po(file.path(vigdir, "datatable-keys-fast-subset.Rmd"), verbose = TRUE, keep.tmpfile = TRUE)
 # Translate strings using poEdit, then...
 po2rmd(file.path(vigdir, "datatable-keys-fast-subset.Rmd"), verbose = TRUE)
 
 ## datatable-programming.Rmd
-#rmd2po(file.path(vigdir, "datatable-programming.Rmd"), verbose = TRUE, , keep.tmpfile = TRUE)
+#rmd2po(file.path(vigdir, "datatable-programming.Rmd"), verbose = TRUE, keep.tmpfile = TRUE)
 # Translate strings using poEdit, then...
 po2rmd(file.path(vigdir, "datatable-programming.Rmd"), verbose = TRUE)
 
 ## datatable-reference-semantics.Rmd
-#rmd2po(file.path(vigdir, "datatable-reference-semantics.Rmd"), verbose = TRUE, , keep.tmpfile = TRUE)
+#rmd2po(file.path(vigdir, "datatable-reference-semantics.Rmd"), verbose = TRUE, keep.tmpfile = TRUE)
 # Translate strings using poEdit, then...
 po2rmd(file.path(vigdir, "datatable-reference-semantics.Rmd"), verbose = TRUE)
 
 ## datatable-reshape.Rmd
-#rmd2po(file.path(vigdir, "datatable-reshape.Rmd"), verbose = TRUE, , keep.tmpfile = TRUE)
+#rmd2po(file.path(vigdir, "datatable-reshape.Rmd"), verbose = TRUE, keep.tmpfile = TRUE)
 # Translate strings using poEdit, then...
 po2rmd(file.path(vigdir, "datatable-reshape.Rmd"), verbose = TRUE)
 

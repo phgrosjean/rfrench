@@ -90,10 +90,10 @@ my_subset(iris, Species, "setosa")
 Nous devons utiliser `deparse(substitute(...))` pour récupérer les noms réels des objets passés à la fonction, afin de pouvoir construire l'appel à la fonction `subset` en utilisant ces noms originaux. Bien que cela offre une flexibilité illimitée avec une complexité relativement faible, **l'utilisation de `eval(parse(...))` devrait être évitée**. Les raisons principales sont les suivantes :
 
 - absence de validation syntaxique
-- [vulnérabilité à l'injection de code] (https://github.com/Rdatatable/data.table/issues/2655#issuecomment-376781159)
+- [vulnérabilité à l'injection de code](https://github.com/Rdatatable/data.table/issues/2655#issuecomment-376781159)
 - existence de meilleures alternatives
 
-Martin Machler, R Project Core Developer, [a dit] (https://stackoverflow.com/a/40164111/2490497) :
+Martin Machler, R Project Core Developer, [a dit](https://stackoverflow.com/a/40164111/2490497) :
 
 > Désolé, mais je ne comprends pas pourquoi tant de gens pensent qu'une chaîne de caractères est quelque chose qui peut être évalué. Il faut vraiment changer d'état d'esprit. Oubliez toutes les connexions entre les chaînes d'un côté et les expressions, les appels, l'évaluation de l'autre côté. La (possible) seule connexion est via `parse(text = ....)` et tous les bons programmeurs R devraient savoir que c'est rarement un moyen efficace ou sûr de construire des expressions (ou des appels). Apprenez plutôt à connaître `substitute()`, `quote()`, et peut-être la puissance de l'utilisation de `do.call(substitute, ......)`.
 
@@ -126,7 +126,7 @@ A partir de la version 1.15.0, data.table fournit un mécanisme robuste pour par
 
 Disons que nous voulons une fonction générale qui applique une fonction à la somme de deux arguments auxquels une autre fonction a été appliquée. Comme exemple concret, nous avons ci-dessous une fonction qui calcule la longueur de l'hypoténuse dans un triangle droit, connaissant la longueur de ses pattes.
 
-{\displaystyle c = \sqrt{a^2 + b^2}}
+${\displaystyle c = \sqrt{a^2 + b^2}}$
 
 ```{r hypotenuse}
 square = function(x) x^2
@@ -309,7 +309,7 @@ Pour une explication plus détaillée à ce sujet, veuillez consulter les exempl
 
 Prenons l'exemple d'une fonction plus complexe, le calcul de la moyenne quadratique.
 
-{\displaystyle x_{\text{RMS}}={\sqrt{{\frac{1}{n}}\left(x_{1}^{2}+x_{2}^{2}+\cdots +x_{n}^{2}\right)}}}
+${\displaystyle x_{\text{RMS}}={\sqrt{{\frac{1}{n}}\left(x_{1}^{2}+x_{2}^{2}+\cdots +x_{n}^{2}\right)}}}$
 
 Il prend un nombre arbitraire de variables en entrée, mais maintenant nous ne pouvons pas simplement *splice* une liste d'arguments dans un appel de liste parce que chacun de ces arguments doit être enveloppé dans un appel `square`. Dans ce cas, nous devons *splice* à la main plutôt que de compter sur la *enlist* automatique de data.table.
 

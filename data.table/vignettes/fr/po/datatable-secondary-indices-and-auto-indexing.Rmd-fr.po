@@ -969,3 +969,5 @@ msgid ""
 msgstr ""
 "#===== r, echo=FALSE\n"
 "setDTthreads(.old.th)\n"
+
+#: fr/datatable-secondary-indices-and-auto-indexing.Rmd.tmp:block 115

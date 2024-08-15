@@ -208,7 +208,6 @@ msgstr ""
 "'c'\n"
 
 #: fr/datatable-reference-semantics.Rmd.tmp:block 20 (paragraph)
-#, fuzzy
 msgid ""
 "both (1) and (2) resulted in deep copy of the entire data.frame in versions "
 "of `R` versions `< 3.1`. [It copied more than once](https://stackoverflow."
@@ -216,8 +215,8 @@ msgid ""
 "copies, *data.table* utilised the [available but unused `:=` operator in R]"
 "(https://stackoverflow.com/q/7033106/559784)."
 msgstr ""
-"les deux (1) et (2) ont entraîné une copie profonde de l'ensemble du data."
-"frame dans les versions de `R` < 3.1`. [Il a été copié plus d'une fois] "
+"(1) et (2) ont tous deux entraîné une copie profonde de l'ensemble du `data."
+"frame` dans les versions de R < 3.1. [Il a été copié plus d'une fois]"
 "(https://stackoverflow.com/q/23898969/559784). Pour améliorer les "
 "performances en évitant ces copies redondantes, *data.table* a utilisé "
 "l'opérateur [disponible mais inutilisé `:=` dans R](https://stackoverflow."
@@ -611,9 +610,8 @@ msgid "c) Delete column by reference"
 msgstr "c) Supprimer une colonne par référence"
 
 #: fr/datatable-reference-semantics.Rmd.tmp:block 68 (header)
-#, fuzzy
 msgid "-- Remove `delay` column"
-msgstr "-- Supprimer la colonne `delay` (délai)"
+msgstr "-- Supprimer la colonne `delay`"
 
 #: fr/datatable-reference-semantics.Rmd.tmp:block 69 (code)
 msgid ""
@@ -870,9 +868,9 @@ msgstr ""
 "créées en colonnes de caractères. Cette fois, nous utiliserons `.SDcols` en "
 "acceptant une fonction pour décider quelles colonnes inclure. Dans ce cas, "
 "`is.factor()` retournera les colonnes qui sont des facteurs. Pour en savoir "
-"plus sur le **S**ubset of the **D**ata, il y a aussi une [SD Usage "
-"vignette] (https://cran.r-project.org/web/packages/data.table/vignettes/"
-"datatable-sd-usage.html)."
+"plus sur le **S**ubset of the **D**ata, il y a aussi une [SD Usage vignette]"
+"(https://cran.r-project.org/web/packages/data.table/vignettes/datatable-sd-"
+"usage.html)."
 
 #: fr/datatable-reference-semantics.Rmd.tmp:block 95 (paragraph)
 #, fuzzy
@@ -984,9 +982,8 @@ msgid "=====* And `ans` contains the maximum speed for each month.====="
 msgstr "=====* Et `ans` contient la vitesse maximale pour chaque mois.====="
 
 #: fr/datatable-reference-semantics.Rmd.tmp:block 106 (header)
-#, fuzzy
 msgid "b) The `copy()` function"
-msgstr "b) La fonction `copy()"
+msgstr "b) La fonction `copy()`"
 
 #: fr/datatable-reference-semantics.Rmd.tmp:block 107 (paragraph)
 #, fuzzy
@@ -1103,7 +1100,7 @@ msgid ""
 msgstr ""
 "Cependant, nous pourrions encore améliorer cette fonctionnalité en faisant "
 "une copie *shallow* au lieu d'une copie *deep*. En fait, nous aimerions "
-"beaucoup [fournir cette fonctionnalité pour `v1.9.8`] (https://github.com/"
+"beaucoup [fournir cette fonctionnalité pour `v1.9.8`](https://github.com/"
 "Rdatatable/data.table/issues/617). Nous reviendrons sur ce point dans la "
 "vignette *data.table design*."
 

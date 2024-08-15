@@ -1,17 +1,17 @@
 ---
-title : "Foire aux questions sur data.table"
-date : "`r Sys.Date()`"
-output :
+title: "Foire aux questions sur data.table"
+date: "`r Sys.Date()`"
+output:
   markdown::html_format :
-    options :
-      toc : true
-      number_sections : true
-    meta :
-      css : [default, ../css/toc.css]
-vignette : >
+    options:
+      toc: true
+      number_sections: true
+    meta:
+      css: [default, ../css/toc.css]
+vignette: >
   %\VignetteIndexEntry{Foire aux questions sur data.table}
   %\VignetteEngine{knitr::knitr}
-  \N-usepackage[utf8]{inputenc}
+  \usepackage[utf8]{inputenc}
 ---
 
 <style>
@@ -130,7 +130,7 @@ Cela a été modifié dans la version 1.5.3 (février 2011). Depuis lors, `X[Y]`
 
 *MAIS* cela ne tient pas compte de l'essentiel. La plupart des tâches exigent que l'on fasse quelque chose sur les données après une jointure ou une fusion. Pourquoi fusionner toutes les colonnes de données pour n'en utiliser qu'un petit sous-ensemble par la suite ? Vous pouvez suggérer `merge(X[ , ColsNeeded1], Y[ , ColsNeed2])`, mais cela demande au programmeur de déterminer quelles colonnes sont nécessaires. `X[Y, j]` dans data.table fait tout cela en une seule étape pour vous. Quand vous écrivez `X[Y, sum(foo*bar)]`, data.table inspecte automatiquement l'expression `j` pour voir quelles colonnes elle utilise. Il ne sous-ensemble que ces colonnes ; les autres sont ignorées. La mémoire n'est créée que pour les colonnes que `j` utilise et les colonnes `Y` bénéficient des règles de recyclage standard de R dans le contexte de chaque groupe. Disons que `foo` est dans `X` et `bar` est dans `Y` (avec 20 autres colonnes dans `Y`). Est-ce que `X[Y, sum(foo*bar)]` n'est pas plus rapide à programmer et à exécuter qu'une `fusion` de tout ce qui est suivi par un `subset` ?
 
-[^1] : Il s'agit ici de la méthode `merge` *method* pour data.table ou de la méthode `merge` pour `data.frame` puisque les deux méthodes fonctionnent de la même manière à cet égard. Voir `?merge.data.table` et [below](#r-dispatch) pour plus d'informations sur la répartition des méthodes.
+[^1]: Il s'agit ici de la méthode `merge` *method* pour data.table ou de la méthode `merge` pour `data.frame` puisque les deux méthodes fonctionnent de la même manière à cet égard. Voir `?merge.data.table` et [below](#r-dispatch) pour plus d'informations sur la répartition des méthodes.
 
 ## Autre chose à propos de `X[Y, sum(foo*bar)]` ?
 
@@ -247,7 +247,7 @@ Considérez le sous-ensemble comme un environnement où tous les noms de colonne
  4. Exercice pour le lecteur : est-ce que cela se répercute ensuite sur les cadres d'appel ou est-ce que cela va directement à `globalenv()` ? 
  5. L'environnement global
 
-Il s'agit d'un *cadrage logique* comme expliqué dans [R FAQ 3.3.1] (https://cran.r-project.org/doc/FAQ/R-FAQ.html#Lexical-scoping). L'environnement dans lequel la fonction a été créée n'est pas pertinent, cependant, parce qu'il n'y a *pas de fonction*. Aucune *fonction* anonyme n'est passée à `j`. Au lieu de cela, un *corps* anonyme est passé à `j` ; par exemple,
+Il s'agit d'un *cadrage logique* comme expliqué dans [R FAQ 3.3.1](https://cran.r-project.org/doc/FAQ/R-FAQ.html#Lexical-scoping). L'environnement dans lequel la fonction a été créée n'est pas pertinent, cependant, parce qu'il n'y a *pas de fonction*. Aucune *fonction* anonyme n'est passée à `j`. Au lieu de cela, un *corps* anonyme est passé à `j` ; par exemple,
 
 ```{r}
 DT = data.table(x = rep(c("a", "b"), c(2, 3)), y = 1:5)
@@ -362,16 +362,16 @@ En outre, les matrices, en particulier les matrices peu denses, sont souvent sto
 
 Oui :
 
- - `i` \Leftrightarrow where
- - `j` \Leftrightarrow select
- - `:=` \Leftrightarrow update
- - `by` \Leftrightarrow group by
- - `i` \Leftrightarrow order by (in compound syntax)
- - `i` \Leftrightarrow having (in compound syntax)
- - `nomatch = NA` \Leftrightarrow outer join
- - `nomatch = NULL` \Leftrightarrow inner join
- - `mult = "first"|"last"` \Leftrightarrow N/A because SQL is inherently unordered
- - `roll = TRUE` \Leftrightarrow N/A because SQL is inherently unordered
+ - `i` $\Leftrightarrow$ where
+ - `j` $\Leftrightarrow$ select
+ - ` :=` $\Leftrightarrow$ update
+ - `by` $\Leftrightarrow$ group by
+ - `i` $\Leftrightarrow$ order by (en syntaxe composée)
+ - `i` $\Leftrightarrow$ having (en syntaxe composée)
+ - `nomatch = NA` $\Leftrightarrow$ outer join
+ - `nomatch = NULL` $\Leftrightarrow$ inner join
+ - `mult = "first"|"last"` $\Leftrightarrow$ N/A parce que SQL est intrinsèquement non ordonné
+ - `roll = TRUE` $\Leftrightarrow$ N/A parce que SQL est intrinsèquement non ordonné
 
 La forme générale est la suivante :
 
@@ -381,7 +381,7 @@ DT[where, select|update, group by][order by][...] ... [...]
 
 L'un des principaux avantages des vecteurs colonnes dans R est qu'ils sont *ordonnés*, contrairement à SQL[^2]. Nous pouvons utiliser des fonctions ordonnées dans les requêtes `data.table` telles que `diff()` et nous pouvons utiliser *n'importe quelle fonction R de n'importe quel package, pas seulement les fonctions qui sont définies dans SQL. L'inconvénient est que les objets R doivent tenir dans la mémoire, mais avec plusieurs paquets R tels que `ff`, `bigmemory`, `mmap` et `indexing`, cela est en train de changer.
 
-[^2] : Il peut être surprenant d'apprendre que `select top 10 * from ...` ne renvoie pas de manière fiable les mêmes lignes dans le temps en SQL. Vous devez inclure une clause `order by`, ou utiliser un index en grappe pour garantir l'ordre des lignes ; *i.e.*, SQL est intrinsèquement non ordonné.
+[^2]: Il peut être surprenant d'apprendre que `select top 10 * from ...` ne renvoie pas de manière fiable les mêmes lignes dans le temps en SQL. Vous devez inclure une clause `order by`, ou utiliser un index en grappe pour garantir l'ordre des lignes ; *i.e.*, SQL est intrinsèquement non ordonné.
 
 ## Quelles sont les petites différences de syntaxe entre `data.frame` et data.table {#SmallerDiffs}
 
@@ -410,7 +410,7 @@ Lorsqu'un data.table est transmis à un paquetage ne prenant pas en compte data.
 
 Dans ce cas, `j` peut être entouré de `invisible()` ; par exemple, `DT[ , invisible(hist(colB)), by = colA]`[^3]
 
-[^3] : *e.g.*, `hist()` renvoie les points d'arrêt en plus du tracé sur le périphérique graphique.
+[^3]: *e.g.*, `hist()` renvoie les points d'arrêt en plus du tracé sur le périphérique graphique.
 
 ## Pourquoi `[.data.table` a maintenant un argument `drop` depuis la v1.5 ?
 
@@ -474,7 +474,7 @@ Plusieurs raisons à cela :
 
 ## Je n'ai pas de `key` sur une grande table, mais le regroupement est toujours très rapide. Comment cela se fait-il ?
 
-data.table utilise le tri radix. Il est nettement plus rapide que les autres algorithmes de tri. Voir [nos présentations] (https://github.com/Rdatatable/data.table/wiki/Presentations) pour plus d'informations, en particulier sur useR!2015 Danemark.
+data.table utilise le tri radix. Il est nettement plus rapide que les autres algorithmes de tri. Voir [nos présentations](https://github.com/Rdatatable/data.table/wiki/Presentations) pour plus d'informations, en particulier sur useR!2015 Danemark.
 
 C'est aussi l'une des raisons pour lesquelles `setkey()` est rapide.
 
@@ -506,7 +506,7 @@ Cette erreur est générée par `DT[ , MySum = sum(v)]`. `DT[ , .(MySum = sum(v)
 
 ## "`translateCharUTF8` doit être appelé sur un `CHARSXP`"
 
-Cette erreur (et d'autres similaires, *e.g.*, "`getCharCE` must be called on a `CHARSXP`") peut n'avoir rien à voir avec les données de caractères ou la locale. Au lieu de cela, cela peut être le symptôme d'une corruption de mémoire antérieure. Jusqu'à présent, ces problèmes ont pu être reproduits et corrigés (rapidement). Merci de le signaler sur notre [issues tracker] (https://github.com/Rdatatable/data.table/issues).
+Cette erreur (et d'autres similaires, *e.g.*, "`getCharCE` must be called on a `CHARSXP`") peut n'avoir rien à voir avec les données de caractères ou la locale. Au lieu de cela, cela peut être le symptôme d'une corruption de mémoire antérieure. Jusqu'à présent, ces problèmes ont pu être reproduits et corrigés (rapidement). Merci de le signaler sur notre [gestionnaire de tickets (issues tracker)](https://github.com/Rdatatable/data.table/issues).
 
 ## `cbind(DT, DF)` renvoie un format étrange, *e.g.* `Integer,5` {#cbinderror}
 
@@ -601,11 +601,11 @@ Oui, à la fois pour 32-bit et 64-bit sur toutes les plateformes. Merci au CRAN.
 
 ## Je pense que c'est très bien. Qu'est-ce que je peux faire ?
 
-Veuillez déposer des suggestions, des rapports de bogues et des demandes d'amélioration sur notre [issues tracker] (https://github.com/Rdatatable/data.table/issues). Cela permet d'améliorer le paquetage.
+Veuillez déposer des suggestions, des rapports de bogues et des demandes d'amélioration sur notre [gestionnaire de tickets (issues tracker)](https://github.com/Rdatatable/data.table/issues). Cela permet d'améliorer le package.
 
-Merci d'ajouter le paquet sur [GitHub] (https://github.com/Rdatatable/data.table/wiki). Cela permet d'encourager les développeurs et d'aider les autres utilisateurs de R à trouver le paquet.
+Merci d'ajouter le paquet sur [GitHub](https://github.com/Rdatatable/data.table/wiki). Cela permet d'encourager les développeurs et d'aider les autres utilisateurs de R à trouver le paquet.
 
-Vous pouvez soumettre des demandes d'extraction pour modifier le code et/ou la documentation vous-même ; voir nos [Directives de contribution] (https://github.com/Rdatatable/data.table/blob/master/.github/CONTRIBUTING.md).
+Vous pouvez soumettre des demandes d'extraction pour modifier le code et/ou la documentation vous-même ; voir nos [Directives de contribution](https://github.com/Rdatatable/data.table/blob/master/.github/CONTRIBUTING.md).
 
 ## Je pense que ce n'est pas génial. Comment puis-je informer les autres de mon expérience ?
 
@@ -613,11 +613,11 @@ Nous ajoutons tous les articles dont nous avons connaissance (qu'ils soient posi
 
 ## J'ai une question à poser. Je sais que le guide d'affichage de r-help me dit de contacter le mainteneur (pas r-help), mais y a-t-il un groupe plus large de personnes à qui je peux demander ?
 
-Veuillez consulter le [guide d'assistance] (https://github.com/Rdatatable/data.table/wiki/Support) sur la page d'accueil du projet, qui contient des liens actualisés.
+Veuillez consulter le [guide d'assistance](https://github.com/Rdatatable/data.table/wiki/Support) sur la page d'accueil du projet, qui contient des liens actualisés.
 
 ## Où sont les archives de datatable-help ?
 
-La [page d'accueil] (https://github.com/Rdatatable/data.table/wiki) contient des liens vers les archives en plusieurs formats.
+La [page d'accueil](https://github.com/Rdatatable/data.table/wiki) contient des liens vers les archives en plusieurs formats.
 
 ## Je préférerais ne pas publier sur la page "Questions". Puis-je envoyer un courrier privé à une ou deux personnes ?
 
@@ -625,12 +625,8 @@ Bien sûr, mais il est plus probable que vous obteniez une réponse plus rapide 
 
 ## J'ai créé un package qui utilise data.table. Comment puis-je m'assurer que mon paquetage est compatible avec data.table pour que l'héritage de `data.frame` fonctionne ?
 
-Voir [cette réponse] (https://stackoverflow.com/a/10529888/403310).
+Voir [cette réponse](https://stackoverflow.com/a/10529888/403310).
 
 ```{r, echo=FALSE}
 setDTthreads(.old.th)
 ```
-
-[^1]: Here "we mean either the `merge` _method_ for data.table or the `merge` method for `data.frame` since both methods work in the same way in this respect. See `?merge.data.table` and [below](#r-dispatch"
-[^2]: It "may be a surprise to learn that `select top 10 * from ...` does _not_ reliably return the same rows over time in SQL. You do need to include an `order by` clause, or use a clustered index to guarantee row order; _i.e._, SQL is inherently unordered."
-[^3]: _e.g._, "`hist("

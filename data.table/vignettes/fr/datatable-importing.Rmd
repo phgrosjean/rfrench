@@ -19,7 +19,7 @@ Ce document se concentre sur l'utilisation de `data.table` comme dépendance dan
 
 Importer `data.table` n'est pas différent d'importer d'autres paquets R. Cette vignette a pour but de répondre aux questions les plus courantes à ce sujet. Cette vignette a pour but de répondre aux questions les plus courantes à ce sujet ; les leçons présentées ici peuvent être appliquées à d'autres paquets R.
 
-## Pourquoi importer `data.table` ?
+## Pourquoi importer `data.table`
 
 L'une des principales caractéristiques de `data.table` est sa syntaxe concise qui rend l'analyse exploratoire plus rapide et plus facile à écrire et à percevoir ; cette commodité peut pousser les auteurs de paquets à utiliser `data.table`. Une autre raison, peut-être plus importante, est la haute performance. Lorsque vous confiez des tâches de calcul lourdes de votre paquet à `data.table`, vous obtenez généralement de très bonnes performances sans avoir besoin de réinventer vous-même ces astuces d'optimisation numérique.
 
@@ -197,7 +197,7 @@ Certaines routines C utilisées en interne sont maintenant exportées au niveau 
 
 Certaines petites parties du code C de `data.table` ont été isolées de l'API C de R et peuvent maintenant être utilisées à partir d'applications non-R en liant les fichiers .so / .dll. Des détails plus concrets seront fournis ultérieurement ; pour l'instant, vous pouvez étudier le code C qui a été isolé de l'API C de R dans [src/fread.c](https://github.com/Rdatatable/data.table/blob/master/src/fread.c) et [src/fwrite.c](https://github.com/Rdatatable/data.table/blob/master/src/fwrite.c).
 
-## Comment convertir votre dépendance Depends sur data.table en importation ?
+## Comment convertir votre dépendance Depends sur data.table en importation
 
 Pour convertir une dépendance `Depends` sur `data.table` en une dépendance `Imports` dans votre paquet, suivez ces étapes :
 
@@ -205,7 +205,7 @@ Pour convertir une dépendance `Depends` sur `data.table` en une dépendance `Im
 
 ### Étape 1. Mettre à jour le fichier DESCRIPTION pour placer data.table dans Imports, et non dans Depends
 
-* C'est tout. Aucune syntaxe particulière n'est requise. Tout ce que nous avons besoin de connaître est la fonction de base `c()` qui concatène des vecteurs, ainsi que [l'astuce de tout à l'heure](#tip-1).
+**Avant :**
 
 ```dcf
 Dépend :
@@ -247,8 +247,9 @@ Vous pouvez également importer toutes les fonctions de `data.table` en une seul
 import(data.table)
 ```
 
-**Justification pour éviter les importations globales:** =====1. **Documentation** : Le fichier NAMESPACE peut servir de bonne documentation sur la façon dont vous dépendez de certains paquets.
-. **Éviter les conflits** : Les importations générales vous exposent à des ruptures subtiles. Par exemple, si vous `import(pkgA)` et `import(pkgB)`, mais que plus tard pkgB exporte une fonction également exportée par pkgA, cela cassera votre paquetage à cause de conflits dans votre espace de noms, ce qui est interdit par `R CMD check` et CRAN.=====
+**Justification pour éviter les importations globales:**
+1. **Documentation** : le fichier NAMESPACE peut servir de bonne documentation sur la façon dont vous dépendez de certains packages.
+2. **Éviter les conflits** : les importations générales vous exposent à des cassures subtiles. Par exemple, si vous faites `import(pkgA)` et `import(pkgB)`, mais que plus tard pkgB exporte une fonction également exportée par pkgA, cela cassera votre package à cause de conflits dans votre espace de noms, ce qui est interdit par `R CMD check` et CRAN.
 
 ### Étape 3 : Mettre à jour vos fichiers de code R en dehors du répertoire R/ du paquetage
 
@@ -277,7 +278,7 @@ result <- merge(dt, other_dt, by = "x")
 
 ### Avantages de l'utilisation de `Imports`
 
-- **Convivialité* : `Depends` modifie le chemin `search()` de vos utilisateurs, éventuellement sans qu'ils le veuillent.
+- **Convivialité** : `Depends` modifie le chemin `search()` de vos utilisateurs, éventuellement sans qu'ils le veuillent.
 - **Gestion de l'espace de noms** : Seules les fonctions que votre paquet importe explicitement sont disponibles, ce qui réduit le risque de conflit de noms de fonctions.
 - **Charge de paquet plus propre** : Les dépendances de votre paquetage ne sont pas attachées au chemin de recherche, ce qui rend le processus de chargement plus propre et potentiellement plus rapide.
 - **Maintenance plus facile** : Il simplifie les tâches de maintenance au fur et à mesure que les API des dépendances en amont évoluent. Trop dépendre de `Depends` peut conduire à des conflits et des problèmes de compatibilité au fil du temps.

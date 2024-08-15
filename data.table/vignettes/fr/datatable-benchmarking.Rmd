@@ -1,17 +1,17 @@
 ---
-title : "Analyse comparative (benchmark) de data.table"
-date : "`r Sys.Date()`"
-output :
+title: "Analyse comparative (benchmark) de data.table"
+date: "`r Sys.Date()`"
+output:
   markdown::html_format :
-    options :
-      toc : true
-      number_sections : true
-    meta :
-      css : [default, ../css/toc.css]
-vignette : >
+    options:
+      toc: true
+      number_sections: true
+    meta:
+      css: [default, ../css/toc.css]
+vignette: >
   %\VignetteIndexEntry{Analyse comparative (benchmark) de data.table}
   %\VignetteEngine{knitr::knitr}
-  \N-usepackage[utf8]{inputenc}
+  \usepackage[utf8]{inputenc}
 ---
 
 <style>

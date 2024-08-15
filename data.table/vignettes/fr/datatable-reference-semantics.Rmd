@@ -69,7 +69,7 @@ DF$c <- 18:13 # (1) -- remplacer la colonne entière
 DF$c[DF$ID == "b"] <- 15:13 # (2) -- sous-assignation dans la colonne 'c'
 ```
 
-les deux (1) et (2) ont entraîné une copie profonde de l'ensemble du data.frame dans les versions de `R` < 3.1`. [Il a été copié plus d'une fois] (https://stackoverflow.com/q/23898969/559784). Pour améliorer les performances en évitant ces copies redondantes, *data.table* a utilisé l'opérateur [disponible mais inutilisé `:=` dans R](https://stackoverflow.com/q/7033106/559784).
+(1) et (2) ont tous deux entraîné une copie profonde de l'ensemble du `data.frame` dans les versions de R < 3.1. [Il a été copié plus d'une fois](https://stackoverflow.com/q/23898969/559784). Pour améliorer les performances en évitant ces copies redondantes, *data.table* a utilisé l'opérateur [disponible mais inutilisé `:=` dans R](https://stackoverflow.com/q/7033106/559784).
 
 De grandes améliorations de performance ont été faites dans `R v3.1` grâce auxquelles seule une copie *shallow* est faite pour (1) et non une copie *deep*. Cependant, pour (2), la colonne entière est *copiée en profondeur* même dans `R v3.1+`. Cela signifie que plus il y a de colonnes dans la *même requête*, plus R fait de *copies profondes*.
 
@@ -194,7 +194,7 @@ Si vous n'y arrivez pas, jetez un coup d'œil à la section `Note` de ` ?":="`.
 
 ### c) Supprimer une colonne par référence
 
-#### -- Supprimer la colonne `delay` (délai)
+#### -- Supprimer la colonne `delay`
 
 ```{r}
 flights[, c("delay") := NULL]
@@ -270,7 +270,7 @@ head(flights)
 flights[, names(.SD) := lapply(.SD, as.factor), .SDcols = is.character]
 ```
 
-Nettoyons à nouveau et convertissons nos colonnes de facteurs nouvellement créées en colonnes de caractères. Cette fois, nous utiliserons `.SDcols` en acceptant une fonction pour décider quelles colonnes inclure. Dans ce cas, `is.factor()` retournera les colonnes qui sont des facteurs. Pour en savoir plus sur le **S**ubset of the **D**ata, il y a aussi une [SD Usage vignette] (https://cran.r-project.org/web/packages/data.table/vignettes/datatable-sd-usage.html).
+Nettoyons à nouveau et convertissons nos colonnes de facteurs nouvellement créées en colonnes de caractères. Cette fois, nous utiliserons `.SDcols` en acceptant une fonction pour décider quelles colonnes inclure. Dans ce cas, `is.factor()` retournera les colonnes qui sont des facteurs. Pour en savoir plus sur le **S**ubset of the **D**ata, il y a aussi une [SD Usage vignette](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-sd-usage.html).
 
 Parfois, il est également utile de garder une trace des colonnes que nous transformons. Ainsi, même après avoir converti nos colonnes, nous pourrons appeler les colonnes spécifiques que nous avons mises à jour.
 
@@ -306,7 +306,7 @@ head(ans)
 
 * Et `ans` contient la vitesse maximale pour chaque mois.
 
-### b) La fonction `copy()
+### b) La fonction `copy()`
 
 Dans la section précédente, nous avons utilisé `:=` pour son effet de bord. Mais bien sûr, ce n'est pas toujours souhaitable. Parfois, nous voudrions passer un objet *data.table* à une fonction, et nous pourrions vouloir utiliser l'opérateur `:=`, mais *ne voudrions pas* mettre à jour l'objet original. Nous pouvons accomplir cela en utilisant la fonction `copy()`.
 
@@ -340,7 +340,7 @@ Il y a deux endroits particuliers où la fonction `copy()` est essentielle :
 
 * Et `ans` contient la vitesse maximale correspondant à chaque mois.
 
-Cependant, nous pourrions encore améliorer cette fonctionnalité en faisant une copie *shallow* au lieu d'une copie *deep*. En fait, nous aimerions beaucoup [fournir cette fonctionnalité pour `v1.9.8`] (https://github.com/Rdatatable/data.table/issues/617). Nous reviendrons sur ce point dans la vignette *data.table design*.
+Cependant, nous pourrions encore améliorer cette fonctionnalité en faisant une copie *shallow* au lieu d'une copie *deep*. En fait, nous aimerions beaucoup [fournir cette fonctionnalité pour `v1.9.8`](https://github.com/Rdatatable/data.table/issues/617). Nous reviendrons sur ce point dans la vignette *data.table design*.
 
 # 
 

@@ -285,7 +285,6 @@ msgstr ""
 "principales sont les suivantes :"
 
 #: fr/datatable-programming.Rmd.tmp:block 22 (paragraph)
-#, fuzzy
 msgid ""
 "=====- lack of syntax validation===== =====- [vulnerability to code "
 "injection](https://github.com/Rdatatable/data.table/"
@@ -293,18 +292,17 @@ msgid ""
 "alternatives====="
 msgstr ""
 "=====- absence de validation syntaxique===== =====- [vulnérabilité à "
-"l'injection de code] (https://github.com/Rdatatable/data.table/"
+"l'injection de code](https://github.com/Rdatatable/data.table/"
 "issues/2655#issuecomment-376781159)===== =====- existence de meilleures "
 "alternatives====="
 
 #: fr/datatable-programming.Rmd.tmp:block 23 (paragraph)
-#, fuzzy
 msgid ""
 "Martin Machler, R Project Core Developer, [once said](https://stackoverflow."
 "com/a/40164111/2490497):"
 msgstr ""
-"Martin Machler, R Project Core Developer, [a dit] (https://stackoverflow."
-"com/a/40164111/2490497) :"
+"Martin Machler, R Project Core Developer, [a dit](https://stackoverflow.com/"
+"a/40164111/2490497) :"
 
 #: fr/datatable-programming.Rmd.tmp:block 24 (quote)
 #, fuzzy
@@ -471,11 +469,6 @@ msgstr ""
 "Comme exemple concret, nous avons ci-dessous une fonction qui calcule la "
 "longueur de l'hypoténuse dans un triangle droit, connaissant la longueur de "
 "ses pattes."
-
-#: fr/datatable-programming.Rmd.tmp:block 37 (paragraph)
-#, fuzzy
-msgid "${\\displaystyle c = \\sqrt{a^2 + b^2}}$"
-msgstr "${{displaystyle c = \\sqrt{a^2 + b^2}}$"
 
 #: fr/datatable-programming.Rmd.tmp:block 38 (code)
 msgid ""
@@ -1010,15 +1003,6 @@ msgstr ""
 "Prenons l'exemple d'une fonction plus complexe, le calcul de la moyenne "
 "quadratique."
 
-#: fr/datatable-programming.Rmd.tmp:block 72 (paragraph)
-#, fuzzy
-msgid ""
-"${\\displaystyle x_{\\text{RMS}}={\\sqrt{{\\frac{1}{n}}\\left(x_{1}"
-"^{2}+x_{2}^{2}+\\cdots +x_{n}^{2}\\right)}}}$"
-msgstr ""
-"${\\displaystyle x_{\\text{RMS}}={\\sqrt{{\\frac{1}{n}}\\left(x_{1}"
-"^{2}+x_{2}^{2}+\\cdots +x_{n}^{2}\\right)}}}$"
-
 #: fr/datatable-programming.Rmd.tmp:block 73 (paragraph)
 #, fuzzy
 msgid ""
@@ -1287,3 +1271,15 @@ msgstr ""
 "#===== r cleanup, echo=FALSE\n"
 "options(.opts)\n"
 "registerS3method(\"print\", \"data.frame\", base::print.data.frame)\n"
+
+#: fr/datatable-programming.Rmd.tmp:block 37 (paragraph)
+msgid "`$$${\\displaystyle c = \\sqrt{a^2 + b^2}}$$$`"
+msgstr "`$$${\\displaystyle c = \\sqrt{a^2 + b^2}}$$$`"
+
+#: fr/datatable-programming.Rmd.tmp:block 72 (paragraph)
+msgid ""
+"`$$${\\displaystyle x_{\\text{RMS}}={\\sqrt{{\\frac{1}{n}}\\left(x_{1}"
+"^{2}+x_{2}^{2}+\\cdots +x_{n}^{2}\\right)}}}$$$`"
+msgstr ""
+"`$$${\\displaystyle x_{\\text{RMS}}={\\sqrt{{\\frac{1}{n}}\\left(x_{1}"
+"^{2}+x_{2}^{2}+\\cdots +x_{n}^{2}\\right)}}}$$$`"
