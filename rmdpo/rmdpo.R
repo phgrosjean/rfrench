@@ -51,7 +51,7 @@ library(rmdpo)
 ## datatable-benchmarking.Rmd
 #rmd2po(file.path(vigdir, "datatable-benchmarking.Rmd"), verbose = TRUE, keep.tmpfile = TRUE)
 # Translate strings using poEdit, then...
-po2rmd(file.path(vigdir, "datatable-benchmarking.Rmd"), verbose = TRUE)
+#po2rmd(file.path(vigdir, "datatable-benchmarking.Rmd"), verbose = TRUE)
 
 ## datatable-faq.Rmd
 #rmd2po(file.path(vigdir, "datatable-faq.Rmd"), verbose = TRUE, keep.tmpfile = TRUE)
