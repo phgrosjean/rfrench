@@ -80,7 +80,7 @@ str(DT.m1)
 
 * `measure.vars` spécifie l'ensemble des colonnes que nous souhaitons fusionner (ou combiner).
 
-* Nous pouvons également spécifier des *indices* au lieu des *noms* de colonne .
+* Nous pouvons également spécifier des *indices* au lieu des *noms* de colonne.
 
 * Par défaut, la colonne `variable` est de type `facteur`. Mettez l'argument `variable.factor` à `FALSE` si vous souhaitez retourner un vecteur de type *`caractère`* à la place.
 
@@ -114,7 +114,7 @@ En d'autres termes, nous aimerions fusionner toutes les observations *enfants* c
 dcast(DT.m1, family_id + age_mother ~ child, value.var = "dob")
 ```
 
-* `dcast` utilise la notation *formule*. Les variables du côté gauche (*LHS*) de la formule correspondent aux variables *id* et sur le côté droit (*RHS*) aux variables *measure*.
+* `dcast` utilise la notation *formule* ( *formula* ). Les variables du côté gauche (*LHS*) de la formule correspondent aux variables *id* et sur le côté droit (*RHS*) aux variables *measure*.
 
 * `value.var` indique la colonne à remplir lors du passage au format large.
 

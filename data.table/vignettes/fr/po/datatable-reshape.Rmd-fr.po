@@ -224,7 +224,7 @@ msgstr ""
 msgid "=====* We can also specify column *indices* instead of *names*.====="
 msgstr ""
 "=====* Nous pouvons également spécifier des *indices* au lieu des *noms* de "
-"colonne .====="
+"colonne.====="
 
 #: fr/datatable-reshape.Rmd.tmp:block 23 (paragraph)
 msgid ""
@@ -331,9 +331,9 @@ msgid ""
 "=====* `dcast` uses *formula* interface. The variables on the *LHS* of "
 "formula represents the *id* vars and *RHS* the *measure* vars.====="
 msgstr ""
-"=====* `dcast` utilise la notation *formule*. Les variables du côté gauche "
-"(*LHS*) de la formule correspondent aux variables *id* et sur le côté droit "
-"(*RHS*) aux variables *measure*.====="
+"=====* `dcast` utilise la notation *formule* ( *formula* ). Les variables "
+"du côté gauche (*LHS*) de la formule correspondent aux variables *id* et "
+"sur le côté droit (*RHS*) aux variables *measure*.====="
 
 #: fr/datatable-reshape.Rmd.tmp:block 37 (paragraph)
 msgid ""
