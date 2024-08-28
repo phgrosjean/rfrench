@@ -842,7 +842,7 @@ msgstr ""
 
 #: fr/datatable-importing.Rmd.tmp:block 65 (paragraph)
 msgid "**Before:**"
-msgstr "**Avant**"
+msgstr "**Avant :**"
 
 #: fr/datatable-importing.Rmd.tmp:block 66 (code)
 msgid ""
@@ -858,7 +858,7 @@ msgstr ""
 
 #: fr/datatable-importing.Rmd.tmp:block 67 (paragraph)
 msgid "**After:**"
-msgstr "**Après:**"
+msgstr "**Après :**"
 
 #: fr/datatable-importing.Rmd.tmp:block 68 (code)
 msgid ""
@@ -963,7 +963,7 @@ msgid ""
 "this will break your package due to conflicts in your namespace, which is "
 "disallowed by `R CMD check` and CRAN.====="
 msgstr ""
-"**Justification Pour Eviter Les Importations Globales:** =====1. "
+"**Justification Pour Eviter Les Importations Globales :** =====1. "
 "**Documentation** : Le fichier NAMESPACE peut servir de bonne documentation "
 "sur la façon dont vous dépendez de certains packages.===== =====. **Éviter "
 "Les Conflits** : Les importations générales vous exposent à des ruptures "
@@ -992,7 +992,7 @@ msgstr ""
 
 #: fr/datatable-importing.Rmd.tmp:block 82 (paragraph)
 msgid "**Before (with `Depends`):**"
-msgstr "**Avant (avec `Depends`):**"
+msgstr "**Avant (avec `Depends`) :**"
 
 #: fr/datatable-importing.Rmd.tmp:block 83 (code)
 msgid ""
@@ -1010,7 +1010,7 @@ msgstr ""
 
 #: fr/datatable-importing.Rmd.tmp:block 84 (paragraph)
 msgid "**After (with `Imports`):**"
-msgstr "**Après (avec `Imports`):**"
+msgstr "**Après (avec `Imports`) :**"
 
 #: fr/datatable-importing.Rmd.tmp:block 85 (code)
 msgid ""

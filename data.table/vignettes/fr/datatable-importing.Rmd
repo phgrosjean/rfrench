@@ -205,7 +205,7 @@ Pour convertir une dépendance `Depends` sur `data.table` en une dépendance `Im
 
 ### Étape 1. Mettre à jour le fichier DESCRIPTION pour placer data.table dans Imports, et non dans Depends
 
-**Avant**
+**Avant :**
 
 ```dcf
 Depends:
@@ -214,7 +214,7 @@ Depends:
 Imports:
 ```
 
-**Après:**
+**Après :**
 
 ```dcf
 Depends:
@@ -247,14 +247,14 @@ Vous pouvez également importer toutes les fonctions de `data.table` en une seul
 import(data.table)
 ```
 
-**Justification Pour Eviter Les Importations Globales:** =====1. **Documentation** : Le fichier NAMESPACE peut servir de bonne documentation sur la façon dont vous dépendez de certains packages.
+**Justification Pour Eviter Les Importations Globales :** =====1. **Documentation** : Le fichier NAMESPACE peut servir de bonne documentation sur la façon dont vous dépendez de certains packages.
 . **Éviter Les Conflits** : Les importations générales vous exposent à des ruptures subtiles. Par exemple, si vous importez deux packages avec `import(pkgA)` et `import(pkgB)`, mais que plus tard pkgB exporte une fonction également exportée par pkgA, cela cassera votre package à cause de conflits dans votre espace de noms, ce qui est interdit par `R CMD check` et CRAN.=====
 
 ### Étape 3 : Mettre à jour vos fichiers de code R en dehors du répertoire R/ du package
 
 Lorsque vous déplacez un package de `Depends` vers `Imports`, il ne sera plus automatiquement attaché lorsque votre package sera chargé. Cela peut être important pour les exemples, les tests, les vignettes et les démos, où les packages `Imports` doivent être attachés explicitement.
 
-**Avant (avec `Depends`):**
+**Avant (avec `Depends`) :**
 
 ```r
 # les fonctions de data.table sont directement disponibles
@@ -264,7 +264,7 @@ setDT(dt)
 result <- merge(dt, other_dt, by = "x")
 ```
 
-**Après (avec `Imports`):**
+**Après (avec `Imports`) :**
 
 ```r
 # Charger explicitement data.table dans les scripts utilisateurs ou les vignettes
