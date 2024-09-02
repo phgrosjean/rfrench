@@ -178,6 +178,7 @@ stratum : strate
 subscript : indice
 subset : sous-ensemble (subsetting : indiçage, ou réalisation d'un sous-ensemble)
 supernode : super-noeud
+supported: pris en charge (pas supporté, qui est un anglicisme)
 table : tableau de contingence
 tag : marque
 thermometer : jauge (contexte de graphes)
