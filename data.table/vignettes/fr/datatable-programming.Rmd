@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 
 ## Introduction
 
-`data.table`, dès ses premières versions, a permis l'utilisation des fonctions `subset` et `with` (ou `within`) en définissant la méthode `[.data.table`. `subset` et `with` sont des fonctions de base de R qui sont utiles pour réduire les répétitions dans le code, améliorer la lisibilité, et réduire le nombre total de caractères que l'utilisateur doit taper. Cette fonctionnalité est possible dans R grâce à une fonction unique appelée *évaluation paresseuse* ('lazy evaluation'). Cette fonctionnalité permet à une fonction d'attraper ses arguments, avant qu'ils ne soient évalués, et de les évaluer dans une portée différente de celle dans laquelle ils ont été appelés. Récapitulons l'utilisation de la fonction `subset`.
+`data.table`, dès ses premières versions, a permis l'utilisation des fonctions `subset` et `with` (ou `within`) en définissant la méthode `[.data.table`. `subset` et `with` sont des fonctions de base de R qui sont utiles pour réduire les répétitions dans le code, améliorer la lisibilité, et réduire le nombre total de caractères que l'utilisateur doit taper. Cette fonctionnalité est possible dans R grâce à une fonction unique appelée *évaluation paresseuse* ('lazy evaluation'). Cette fonctionnalité permet à une fonction de récupérer ses arguments, avant qu'ils ne soient évalués, et de les évaluer dans un cadre différente de celle dans laquelle ils ont été appelés. Récapitulons l'utilisation de la fonction `subset`.
 
 ```{r df_print, echo=FALSE}
 registerS3method("print", "data.frame", function(x, ...) {
@@ -40,7 +40,7 @@ registerS3method("print", "data.frame", function(x, ...) {
 subset(iris, Species == "setosa")
 ```
 
-Ici, `subset` prend le second argument et l'évalue dans la portée du `data.frame` donné comme premier argument. Cela supprime le besoin de répéter les variables, ce qui réduit le risque d'erreurs et rend le code plus lisible.
+Ici, `subset` prend le second argument et l'évalue dans le cadre du `data.frame` donné comme premier argument. Cela supprime le besoin de répéter les variables, ce qui réduit le risque d'erreurs et rend le code plus lisible.
 
 ## Description du problème
 
@@ -99,7 +99,7 @@ Martin Machler, R Project Core Developer, [a dit](https://stackoverflow.com/a/40
 
 #### Calculs sur le langage
 
-Les fonctions mentionnées ci-dessus, ainsi que quelques autres (y compris `as.call`, `as.name`/`as.symbol`, `bquote`, et `eval`), peuvent être catégorisées comme des fonctions pour *calculer sur le langage*, puisqu'elles opèrent sur des objets du* langage* (par exemple `call`, `name`/`symbol`).
+Les fonctions mentionnées ci-dessus, ainsi que quelques autres (y compris `as.call`, `as.name`/`as.symbol`, `bquote`, et `eval`), peuvent être catégorisées comme des fonctions pour *calculer sur le langage*, puisqu'elles opèrent sur des objets du *langage* (par exemple `call`, `name`/`symbol`).
 
 ```{r subset_substitute}
 my_subset = function(data, col, val) {
@@ -201,7 +201,7 @@ DT[filter_col %in% filter_val,
 
 ### Remplacer des variables et des valeurs de caractères
 
-Dans l'exemple ci-dessus, nous avons vu une fonctionnalité pratique de `substitute2` : la conversion automatique de chaînes de caractères en noms/symboles. Une question évidente se pose : que se passe-t-il si nous voulons substituer un paramètre par une valeur *caractère*, afin d'avoir le comportement `substitute` de R de base. Nous fournissons un mécanisme pour échapper à la conversion automatique en enveloppant les éléments dans l'appel de base R `I()`. La fonction `I' marque un objet comme *AsIs*, empêchant ses arguments d'être convertis automatiquement de caractère à symbole. (Lisez la documentation `?AsIs` pour plus de détails.) Si le comportement de R de base est souhaité pour l'ensemble de l'argument `env`, alors il est préférable d'envelopper l'ensemble de l'argument dans `I()`. Alternativement, chaque élément de la liste peut être enveloppé dans `I()` individuellement. Explorons les deux cas ci-dessous.
+Dans l'exemple ci-dessus, nous avons vu une fonctionnalité pratique de `substitute2` : la conversion automatique de chaînes de caractères en noms/symboles. Une question évidente se pose : que se passe-t-il si nous voulons substituer un paramètre par une valeur *caractère*, afin d'avoir le comportement `substitute` de R de base. Nous fournissons un mécanisme pour échapper à la conversion automatique en enveloppant les éléments dans l'appel de base R `I()`. La fonction `I` marque un objet comme *AsIs*, empêchant ses arguments d'être convertis automatiquement de caractère à symbole. (Lisez la documentation `?AsIs` pour plus de détails.) Si le comportement de R de base est souhaité pour l'ensemble de l'argument `env`, alors il est préférable d'envelopper l'ensemble de l'argument dans `I()`. Alternativement, chaque élément de la liste peut être enveloppé dans `I()` individuellement. Explorons les deux cas ci-dessous.
 
 ```{r rank}
 substitute( # comportement de base de R
