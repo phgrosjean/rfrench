@@ -48,7 +48,7 @@ Les fonctionnalités étendues sont conformes à la philosophie de `data.table` 
 
 ## 1. Fonctionnalité par défaut
 
-### a) Transformation (`melt`) des colonnes dans un `data.table` (format large vers long)
+### a) Transformation (`melt`) des colonnes dans une `data.table` (format large vers long)
 
 Supposons que nous ayons un `data.table` (données artificielles) comme indiqué ci-dessous :
 

@@ -102,7 +102,7 @@ rownames(DT)
 
 * Notez que les noms des lignes ont été réinitialisés.
 
-* *data.tables* n'utilise jamais de noms de ligne. Puisque *data.tables* **hérite** de *data.frames*, ils possèdent toujours l'attribut des noms de lignes (`row names`). Mais il ne les utilise jamais. Nous verrons dans un instant pourquoi.
+* Les *data.tables* n'utilisent jamais de noms de ligne. Puisque les *data.tables* **héritent** des *data.frames*, ils possèdent toujours l'attribut des noms de lignes (`row names`). Mais ils ne les utilisent jamais. Nous verrons dans un instant pourquoi.
 
     Si vous souhaitez conserver les noms des lignes, utilisez `keep.rownames = TRUE` dans `as.data.table()` - cela créera une nouvelle colonne appelée `rn` et attribuera les noms des lignes à cette colonne.
 
@@ -110,23 +110,23 @@ Au lieu de cela, dans les *data.tables*, nous définissons et utilisons des `cl�
 
 #### Les clés et leurs propriétés {#key-properties}
 
-1. Nous pouvons définir des clés sur *plusieurs colonnes* et les colonnes peuventt être de *différents types* -- *entier*, *numérique*, *caractère*, *facteur*, *entier64* etc. Les types *liste* et *complexe* ne sont pas encore supportés.
+1. Nous pouvons définir des clés sur *plusieurs colonnes* et les colonnes peuvent être de *différents types* -- *entier*, *numérique*, *caractère*, *facteur*, *entier64* etc. Les types *liste* et *complexe* ne sont pas encore supportés.
 
 2. L'unicité n'est pas requise, c'est-à-dire que les valeurs de clé dupliquées sont autorisées. Les lignes étant triées par clé, tout doublon dans les colonnes de la clé apparaîtra consécutivement.
 
 3. Définir une `clé` fait *deux* choses : 
 
-    a. les lignes du *data.table* sont réorganisées physiquement en fonction des colonnes fournies *par référence*, toujours dans un ordre *incrémentiel*.
+    a. les lignes de la *data.table* sont réorganisées physiquement en fonction des colonnes fournies *par référence*, toujours dans un ordre *incrémentiel*.
     
     b. ces colonnes sont marquées comme des colonnes de *clés* en définissant un attribut appelé `sorted` à *data.table*.
     
-    Puisque les lignes sont réordonnées, un *data.table* ne peut avoir qu'une seule clé car il ne peut pas être trié de plusieurs façons simultanément.
+    Puisque les lignes sont réordonnées, une *data.table* ne peut avoir qu'une seule clé car elle ne peut pas être triée de plusieurs façons simultanément.
 
 Pour le reste de la vignette, nous travaillerons avec le jeu de données `flights`.
 
-### b) Définir, obtenir et utiliser des clés sur un *data.table*
+### b) Définir, obtenir et utiliser des clés sur une *data.table*
 
-#### -- Comment définir la colonne `origin` comme clé dans le *data.table* `flights` ?
+#### -- Comment définir la colonne `origin` comme clé dans la *data.table* `flights` ?
 
 ```{r}
 setkey(flights, origin)
@@ -142,7 +142,7 @@ head(flights)
 
 * Notez que nous n'avons pas eu besoin d'assigner le résultat à une variable. C'est parce que, comme la fonction `:=` que nous avons vue dans la vignette *"Sémantique de référence"*, `setkey()` et `setkeyv()` modifient l'entrée *data.table* *par référence*. Elles renvoient le résultat de manière invisible.
 
-* Le *data.table* est maintenant réordonné (ou trié) par la colonne que nous avons fournie - `origin`. Comme nous réorganisons par référence, nous n'avons besoin que de la mémoire supplémentaire d'une colonne dont la longueur est égale au nombre de lignes du *data.table*, ce qui est donc très efficace en termes de mémoire.
+* La *data.table* est maintenant réordonnée (ou triée) par la colonne que nous avons fournie - `origin`. Comme nous réorganisons par référence, nous n'avons besoin que de la mémoire supplémentaire d'une colonne dont la longueur est égale au nombre de lignes de la *data.table*, ce qui est donc très efficace en termes de mémoire.
 
 * Vous pouvez également définir les clés directement lors de la création de *data.tables* en utilisant la fonction `data.table()` avec l'argument `key`. Elle prend un vecteur de caractères de noms de colonnes.
 
@@ -150,7 +150,7 @@ head(flights)
 
 Dans *data.table*, l'opérateur `:=` et toutes les fonctions `set*` (par exemple, `setkey`, `setorder`, `setnames`, etc.) sont les seules qui modifient l'objet d'entrée *par référence*.
 
-Une fois que vous avez défini une *clé* pour un *data.table* par certaines colonnes, vous pouvez sous-sélectionner en interrogeant ces colonnes clés en utilisant la notation `.()` dans `i`. Rappelez-vous que `.()` est un *alias de* `list()`.
+Une fois que vous avez défini une *clé* pour une *data.table* par certaines colonnes, vous pouvez sous-sélectionner en interrogeant ces colonnes clés en utilisant la notation `.()` dans `i`. Rappelez-vous que `.()` est un *alias de* `list()`.
 
 #### -- Utilisez la colonne `origin` définie comme clé pour extraire toutes les lignes dont l'aéroport d'origine correspond à *"JFK"*
 
@@ -180,7 +180,7 @@ flights[.("JFK")]
     
     Ceci renvoie toutes les colonnes correspondant aux lignes où la colonne `origin` correspond à *"JFK"* ou *"LGA"*.
 
-#### -- Comment obtenir la (les) colonne(s) d'un *data.table* définie(s) par une clé ?
+#### -- Comment obtenir la (les) colonne(s) d'une *data.table* définie(s) par une clé ?
 
 En utilisant la fonction `key()`.
 
@@ -208,7 +208,7 @@ head(flights)
 key(flights)
 ```
 
-* Cela trie le *data.table* d'abord par la colonne `origin` et ensuite par `dest` *par référence*.
+* Cela trie la *data.table* d'abord par la colonne `origin` et ensuite par `dest` *par référence*.
 
 #### -- Extraire toutes les lignes en utilisant les colonnes définies comme clés où la première clé `origin` correspond à *"JFK"* et la deuxième clé `dest` correspond à *"MIA"*
 
@@ -287,7 +287,7 @@ flights[.("LGA", "TPA"), max(arr_delay)]
 
 ### d) *sous-affectation* par référence en utilisant `:=` dans `j`
 
-Nous avons déjà vu cet exemple dans la vignette *Sémantique de référence*. Jetons un coup d'œil à toutes les heures (`hour`) disponibles dans le *data.table* `flights` :
+Nous avons déjà vu cet exemple dans la vignette *Sémantique de référence*. Jetons un coup d'œil à toutes les heures (`hour`) disponibles dans la *data.table* `flights` :
 
 ```{r}
 # récupère toutes les 'hours' de flights
@@ -444,7 +444,7 @@ identical(ans1$val, ans2$val)
 
 * Le gain de vitesse est d'envrion **~`r round(t1[3]/max(t2[3], .001))`x**!
 
-### b)  Pourquoi le fait de définir une clé pour un *data.table* permet-il d'obtenir des sous-ensembles extrêmement rapides ?
+### b)  Pourquoi le fait de définir une clé pour une *data.table* permet-il d'obtenir des sous-ensembles extrêmement rapides ?
 
 Pour comprendre cela, examinons d'abord ce que fait l'approche par *balayage vectoriel* (méthode 1).
 
@@ -458,7 +458,7 @@ Pour comprendre cela, examinons d'abord ce que fait l'approche par *balayage vec
 
 C'est ce que nous appelons une *approche par balayage vectoriel*. Cette méthode est assez inefficace, en particulier pour les tableaux volumineux ou lorsque des sous-ensembles doivent être créés de manière répétée, car elle doit parcourir toutes les lignes à chaque fois.
 
-Examinons maintenant l'approche de la recherche binaire (méthode 2). Rappelons que dans [Les clés et leurs propriétés](#key-properties) - *lorsque l’on définit des clés, cela réorganise la data.table selon les colonnes clés*. Étant donné que les données sont triées, nous n'avons pas besoin de *parcourir toute la longueur de la colonne* ! Nous pouvons utiliser *la recherche binaire* pour rechercher une valeur en `O(log n)` au lieu de `O(n)` dans le cas de *l'approche par balayage vectoriel*, où `n` est le nombre de lignes dans le *data.table*.
+Examinons maintenant l'approche de la recherche binaire (méthode 2). Rappelons que dans [Les clés et leurs propriétés](#key-properties) - *lorsque l’on définit des clés, cela réorganise la data.table selon les colonnes clés*. Étant donné que les données sont triées, nous n'avons pas besoin de *parcourir toute la longueur de la colonne* ! Nous pouvons utiliser *la recherche binaire* pour rechercher une valeur en `O(log n)` au lieu de `O(n)` dans le cas de *l'approche par balayage vectoriel*, où `n` est le nombre de lignes dans la *data.table*.
 
 #### Approche par recherche binaire
 
@@ -486,15 +486,15 @@ De plus, comme nous obtenons directement les indices des lignes correspondantes 
 
 ## Résumé
 
-Dans cette vignette, nous avons appris une autre méthode pour subdiviser les lignes dans `i` en utilisant les clés d'un *data.table*. Définir des clés nous permet de créer des sous-ensembles extrêmement rapidement en utilisant la *recherche binaire*. En particulier, nous avons vu comment
+Dans cette vignette, nous avons appris une autre méthode pour subdiviser les lignes dans `i` en utilisant les clés d'une *data.table*. Définir des clés nous permet de créer des sous-ensembles extrêmement rapidement en utilisant la *recherche binaire*. En particulier, nous avons vu comment
 
-* définir une clé et utiliser cette clé pour créer des sous-ensembles dans un *data.table*.
+* définir une clé et utiliser cette clé pour créer des sous-ensembles dans une *data.table*.
 
 * utiliser les clés pour obtenir des *indices de lignes* en `i`, mais beaucoup plus rapidement.
 
 * combiner les sous-ensembles basés sur les clés avec `j` et `by`. Notez que les opérations `j` et `by` sont exactement les mêmes que précédemment.
 
-La création de sous-ensembles basés sur les clés est **incroyablement rapide** et particulièrement utile lorsque la tâche implique de créer des *sous-ensembles de manière répété*. Cependant, il peut ne pas toujours être souhaitable de définir une clé et de réorganiser physiquement le *data.table*. Dans la prochaine vignette, nous aborderons ce problème en utilisant une *nouvelle* fonctionnalité -- les *indices secondaires*.
+La création de sous-ensembles basés sur les clés est **incroyablement rapide** et particulièrement utile lorsque la tâche implique de créer des *sous-ensembles de manière répété*. Cependant, il peut ne pas toujours être souhaitable de définir une clé et de réorganiser physiquement la *data.table*. Dans la prochaine vignette, nous aborderons ce problème en utilisant une *nouvelle* fonctionnalité -- les *indices secondaires*.
 
 ```{r, echo=FALSE}
 setDTthreads(.old.th)
