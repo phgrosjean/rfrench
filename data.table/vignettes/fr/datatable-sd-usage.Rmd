@@ -112,7 +112,7 @@ head(unique(Teams[[fkt[1L]]]))
 
 Note :
 
-1. Le `:=` est un opérateur d'affectation qui permet de mettre à jour `data.table` sans faire de copie. Voir [reference semantics](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-reference-semantics.html) pour plus d'informations. 
+1. Le `:=` est un opérateur d'affectation qui permet de mettre à jour `data.table` sans faire de copie. Voir [reference semantics](https://cran.r-project.org/package=data.table/vignettes/datatable-reference-semantics.html) pour plus d'informations. 
 2. Le membre de gauche, `names(.SD)`, indique quelles colonnes nous mettons à jour - dans ce cas, nous mettons à jour l'intégralité de `.SD`.
 3. Le membre de droite, `lapply()`, parcourt chaque colonne du `.SD` et convertit la colonne en un facteur.
 4. Nous utilisons `.SDcols` pour sélectionner uniquement les colonnes qui ont le motif `teamID`.

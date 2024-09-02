@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.5\n"
 
 #: fr/datatable-reference-semantics.Rmd.tmp:block 1 (code)
 msgid ""
@@ -33,7 +33,6 @@ msgstr ""
 "  \\usepackage[utf8]{inputenc}\n"
 
 #: fr/datatable-reference-semantics.Rmd.tmp:block 2 (code)
-#, fuzzy
 msgid ""
 "#===== r, echo = FALSE, message = FALSE\n"
 "require(data.table)\n"
@@ -862,15 +861,15 @@ msgid ""
 "function to decide which columns to include. In this case, `is.factor()` "
 "will return the columns which are factors. For more on the **S**ubset of "
 "the **D**ata, there is also an [SD Usage vignette](https://cran.r-project."
-"org/web/packages/data.table/vignettes/datatable-sd-usage.html)."
+"org/package=data.table/vignettes/datatable-sd-usage.html)."
 msgstr ""
 "Nettoyons à nouveau et convertissons nos colonnes de facteurs nouvellement "
 "créées en colonnes de caractères. Cette fois, nous utiliserons `.SDcols` en "
 "acceptant une fonction pour décider quelles colonnes inclure. Dans ce cas, "
 "`is.factor()` retournera les colonnes qui sont des facteurs. Pour en savoir "
 "plus sur le **S**ubset of the **D**ata, il y a aussi une [SD Usage vignette]"
-"(https://cran.r-project.org/web/packages/data.table/vignettes/datatable-sd-"
-"usage.html)."
+"(https://cran.r-project.org/package=data.table/vignettes/datatable-sd-usage."
+"html)."
 
 #: fr/datatable-reference-semantics.Rmd.tmp:block 95 (paragraph)
 #, fuzzy
