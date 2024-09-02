@@ -42,7 +42,7 @@ dim(flights)
 
 Dans cette vignette, nous allons
 
-* introduire le concept de `clé` dans un *data.table*, définir et utiliser des clés pour extraire des sous-ensembles basés sur une *recherche binaire rapide* dans `i`,
+* introduire le concept de `clé` dans une *data.table*, définir et utiliser des clés pour extraire des sous-ensembles basés sur une *recherche binaire rapide* dans `i`,
 
 * voir que nous pouvons combiner des sous-ensembles basés sur les clés avec `j` et `by` exactement de la même manière que précédemment,
 

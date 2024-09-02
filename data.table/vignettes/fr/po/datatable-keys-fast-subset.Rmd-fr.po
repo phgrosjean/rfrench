@@ -116,7 +116,7 @@ msgid ""
 "=====* first introduce the concept of `key` in *data.table*, and set and "
 "use keys to perform *fast binary search* based subsets in `i`,====="
 msgstr ""
-"=====* introduire le concept de `clé` dans un *data.table*, définir et "
+"=====* introduire le concept de `clé` dans une *data.table*, définir et "
 "utiliser des clés pour extraire des sous-ensembles basés sur une *recherche "
 "binaire rapide* dans `i`,====="
 
