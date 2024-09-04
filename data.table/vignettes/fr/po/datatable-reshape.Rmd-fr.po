@@ -739,12 +739,12 @@ msgstr ""
 
 #: fr/datatable-reshape.Rmd.tmp:block 78 (code)
 msgid ""
-"DT.m3 = melt(DT, measure = measure(value.name, child=as.integer, sep="
-"\"_child\"))\n"
+"DT.m3 = melt(DT, measure = measure(value.name, child=as.integer, "
+"sep=\"_child\"))\n"
 "DT.m3\n"
 msgstr ""
-"DT.m3 = melt(DT, measure = measure(value.name, child=as.integer, sep="
-"\"_child\"))\n"
+"DT.m3 = melt(DT, measure = measure(value.name, child=as.integer, "
+"sep=\"_child\"))\n"
 "DT.m3\n"
 
 #: fr/datatable-reshape.Rmd.tmp:block 79 (paragraph)
@@ -767,7 +767,7 @@ msgid ""
 "Finally we consider an example (borrowed from tidyr package) where we need "
 "to define the groups using a regular expression rather than a separator."
 msgstr ""
-"Enfin, nous considérons un exemple (emprunté au paquet tidyr) où nous "
+"Enfin, nous considérons un exemple (emprunté au package tidyr) où nous "
 "devons définir les groupes à l'aide d'une expression régulière plutôt qu'un "
 "séparateur."
 
@@ -854,13 +854,13 @@ msgstr ""
 #: fr/datatable-reshape.Rmd.tmp:block 89 (code)
 msgid ""
 "## new 'cast' functionality - multiple value.vars\n"
-"DT.c2 = dcast(DT.m2, family_id + age_mother ~ variable, value.var = c(\"dob"
-"\", \"gender\"))\n"
+"DT.c2 = dcast(DT.m2, family_id + age_mother ~ variable, value.var = "
+"c(\"dob\", \"gender\"))\n"
 "DT.c2\n"
 msgstr ""
 "## nouvelle fonctionnalité 'cast' - plusieurs value.vars\n"
-"DT.c2 = dcast(DT.m2, family_id + age_mother ~ variable, value.var = c(\"dob"
-"\", \"gender\"))\n"
+"DT.c2 = dcast(DT.m2, family_id + age_mother ~ variable, value.var = "
+"c(\"dob\", \"gender\"))\n"
 "DT.c2\n"
 
 #: fr/datatable-reshape.Rmd.tmp:block 90 (paragraph)
