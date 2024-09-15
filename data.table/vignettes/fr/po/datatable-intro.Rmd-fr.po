@@ -80,17 +80,17 @@ msgid ""
 "We can use `data.table`'s fast-and-friendly file reader `fread` to load "
 "`flights` directly as follows:"
 msgstr ""
-"Vous pouvez utiliser le lecteur de fichiers rapide et convivial 'fread' de "
-"'data.table' pour charger 'flights' ditectement ainsi :"
+"Vous pouvez utiliser le lecteur de fichiers rapide et convivial `fread` de "
+"`data.table` pour charger `flights` ditectement ainsi :"
 
 #: d.Rmd:block 13 (paragraph)
 msgid ""
 "Aside: `fread` accepts `http` and `https` URLs directly, as well as operating "
 "system commands such as `sed` and `awk` output. See `?fread` for examples."
 msgstr ""
-"A noter : 'fread' accepte directement les URLS 'http' et 'https', ainsi que "
-"les commandes système opérationnelles telles que les sorties de 'sed' et "
-"'awk'. Voir '?fread' pour les exemples."
+"A noter : `fread` accepte directement les URLS `http` et `https`, ainsi que "
+"les commandes système opérationnelles telles que les sorties de `sed` et "
+"`awk`. Voir `?fread` pour les exemples."
 
 #: d.Rmd:block 14 (header)
 msgid "Introduction"
@@ -106,7 +106,7 @@ msgstr "1. Les bases {#basics-1}"
 
 #: d.Rmd:block 18 (header)
 msgid "a) What is `data.table`? {#what-is-datatable-1a}"
-msgstr "a) 'data.table' c'est quoi ? {#what-is-datatable-1a}"
+msgstr "a) `data.table` c'est quoi ? {#what-is-datatable-1a}"
 
 #: d.Rmd:block 19 (paragraph)
 msgid ""
@@ -116,11 +116,11 @@ msgid ""
 "`fread()`, but alternatively we can also create one using the `data.table()` "
 "function. Here is an example:"
 msgstr ""
-"'data.table' est un package R qui fournit **une version étendue** d'un 'data."
-"frame', qui est la structure de données standard pour stocker des données "
-"dans la 'base' R. Dans la [Data](#data) section ci-dessus, nous avons vu "
-"comment créer une 'data.table' avec 'fread()', mais on peut aussi en créer "
-"une en utilisant la fonction 'data.table()' . Voici un exemple :"
+"`data.table` est un package R qui fournit **une version étendue** d'un `data."
+"frame`, qui est la structure de données standard pour stocker des données "
+"dans la `base` R. Dans la [Data](#data) section ci-dessus, nous avons vu "
+"comment créer une `data.table` avec `fread()`, mais on peut aussi en créer "
+"une en utilisant la fonction `data.table()` . Voici un exemple :"
 
 #: d.Rmd:block 21 (paragraph)
 msgid ""
@@ -143,7 +143,7 @@ msgstr "Notez que :"
 msgid ""
 "b) General form - in what way is a `data.table` *enhanced*? {#enhanced-1b}"
 msgstr ""
-"b) Forme générale - dans quel sens la 'data.table' est-elle *étendue* ? "
+"b) Forme générale - dans quel sens la `data.table` est-elle *étendue* ? "
 "{#enhanced-1b}"
 
 #: d.Rmd:block 25 (paragraph)
@@ -186,12 +186,12 @@ msgid ""
 "Let's begin by looking at `i` and `j` first - subsetting rows and operating "
 "on columns."
 msgstr ""
-"Commençons par voir 'i' et 'j' d'abord - en indiçant les lignes et en "
+"Commençons par voir `i` et `j` d'abord - en indiçant les lignes et en "
 "travaillant sur les colonnes."
 
 #: d.Rmd:block 31 (header)
 msgid "c) Subset rows in `i` {#subset-i-1c}"
-msgstr "c) Regrouper les lignes en 'i' {#subset-i-1c}"
+msgstr "c) Regrouper les lignes en `i` {#subset-i-1c}"
 
 #: d.Rmd:block 32 (header)
 msgid ""
@@ -216,7 +216,7 @@ msgstr ""
 
 #: d.Rmd:block 39 (paragraph)
 msgid "We can use the R function `order()` to accomplish this."
-msgstr "Nous pouvons utiliser la fonction R 'order()' pour faire cela."
+msgstr "Nous pouvons utiliser la fonction R `order()` pour faire cela."
 
 #: d.Rmd:block 41 (header)
 msgid "`order()` is internally optimised"
@@ -297,7 +297,7 @@ msgstr ""
 
 #: d.Rmd:block 60 (header)
 msgid "e) Compute or *do* in `j`"
-msgstr "e) Calcul ou *do* dans 'j'"
+msgstr "e) Calcul ou *do* dans `j`"
 
 #: d.Rmd:block 61 (header)
 msgid "-- How many trips have had total delay < 0?"
@@ -828,7 +828,7 @@ msgstr "f) Extraire `.SD` pour chaque groupe :"
 
 #: d.Rmd:block 160 (header)
 msgid "-- How can we return the first two rows for each `month`?"
-msgstr "-- Comment renvoyer les deux premières lignes de chque 'month`?"
+msgstr "-- Comment renvoyer les deux premières lignes de chaque `month`?"
 
 #: d.Rmd:block 163 (header)
 msgid "g) Why keep `j` so flexible?"
@@ -1870,7 +1870,7 @@ msgid ""
 msgstr ""
 "=====* En utilisant ces *index de ligne*, nous obtenons le nombre de lignes "
 "groupées par `origine`. Une fois de plus, aucune colonne n'est matérialisée "
-"ici, car l'expression `j' ne nécessite aucune colonne pour définir le sous-"
+"ici, car l'expression `j` ne nécessite aucune colonne pour définir le sous-"
 "ensemble et le calcul est donc rapide et peu gourmand en mémoire.====="
 
 #: fr/datatable-intro.Rmd.tmp:block 145 (paragraph)
@@ -2139,7 +2139,7 @@ msgid ""
 "=====* We can `keyby` grouping columns to automatically sort the grouped "
 "result.====="
 msgstr ""
-"=====* Nous pouvons regrouper les colonnes par 'keyby' pour trier "
+"=====* Nous pouvons regrouper les colonnes par `keyby` pour trier "
 "automatiquement les résultats groupés.====="
 
 #: fr/datatable-intro.Rmd.tmp:block 237 (paragraph)
