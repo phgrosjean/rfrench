@@ -1,0 +1,918 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Christian Wiat <w9204-rs@yahoo.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: datatable-joinsMA695.Rmd:block 1 (header)
+msgid ""
+"title: \"Joins in data.table\"\n"
+"date: \"`r Sys.Date()`\"\n"
+"output:\n"
+"markdown::html_format\n"
+"vignette: >\n"
+"%\\VignetteIndexEntry{Joins in data.table}\n"
+"%\\VignetteEngine{knitr::knitr}\n"
+"\\usepackage[utf8]{inputenc}\n"
+"editor_options:\n"
+"chunk_output_type: console"
+msgstr ""
+"title: \"Jointures avec data.table\"\n"
+"date: \"`r Sys.Date()`\"\n"
+"output:\n"
+"markdown::html_format\n"
+"vignette: >\n"
+"%\\VignetteIndexEntry{Joins in data.table}\n"
+"%\\VignetteEngine{knitr::knitr}\n"
+"\\usepackage[utf8]{inputenc}\n"
+"editor_options:\n"
+"chunk_output_type: console"
+
+#: datatable-joinsMA695.Rmd:block 3 (paragraph)
+msgid ""
+"In this vignette you will learn how to perform any join operation using "
+"resources available in the `data.table` syntax."
+msgstr ""
+"Dans cette vignette nous apprendrons à réaliser les opérations de jointure "
+"en utilisant les ressources de la syntaxe `data.table`."
+
+#: datatable-joinsMA695.Rmd:block 4 (paragraph)
+msgid ""
+"It assumes familiarity with the `data.table` syntax. If that is not the "
+"case, please read the following vignettes:"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 5 (unordered list)
+msgid "`vignette(\"datatable-intro\", package=\"data.table\")`"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 5 (unordered list)
+msgid "`vignette(\"datatable-reference-semantics\", package=\"data.table\")`"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 5 (unordered list)
+msgid "`vignette(\"datatable-keys-fast-subset\", package=\"data.table\")`"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 6 (header)
+msgid "1. Defining example data"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 7 (paragraph)
+msgid ""
+"To illustrate how to use the method available with real life examples, "
+"let's simulate a **normalized database** from a little supermarket by "
+"performing the following steps:"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 8 (ordered list)
+msgid ""
+"Defining a `data.table` where each product is represented by a row with "
+"some qualities, but leaving one product without `id` to show how the "
+"framework deals with ***missing values***."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 10 (ordered list)
+msgid ""
+"Defining a `data.table` showing the proportion of taxes to be applied for "
+"processed products based on their units."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 12 (ordered list)
+msgid ""
+"Defining a `data.table` simulating the products received every Monday with "
+"a `product_id` that is not present in the `Products` table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 14 (ordered list)
+msgid ""
+"Defining a `data.table` to show some sales that can take place on weekdays "
+"with another `product_id` that is not present in the `Products` table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 16 (header)
+msgid "2. `data.table` joining syntax"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 17 (paragraph)
+msgid ""
+"Before taking advantage of the `data.table` syntax to perform join "
+"operations we need to know which arguments can help us to perform "
+"successful joins."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 18 (paragraph)
+msgid ""
+"The next diagram shows a description for each basic argument. In the "
+"following sections we will show how to use each of them and add more "
+"complexity little by little."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 20 (quote)
+msgid ""
+"Please keep in mind that the standard argument order in data.table is "
+"`dt[i, j, by]`. For join operations, it is recommended to pass the `on` and "
+"`nomatch` arguments by name to avoid using `j` and `by` when they are not "
+"needed."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 21 (header)
+msgid "3. Equi joins"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 22 (paragraph)
+msgid ""
+"This the most common and simple case as we can find common elements between "
+"tables to combine."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 23 (paragraph)
+msgid "The relationship between tables can be:"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 24 (unordered list)
+msgid "**One to one**: When each matching value is unique on each table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 24 (unordered list)
+msgid ""
+"**One to many**: When some matching values are repeated in one of the table "
+"both unique in the other one."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 24 (unordered list)
+msgid ""
+"**Many to many**: When the matching values are repeated several times on "
+"each table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 25 (paragraph)
+msgid ""
+"In most of the following examples we will perform *one to many* matches, "
+"but we are also going to take the time to explain the resources available "
+"to perform *many to many* matches."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 26 (header)
+msgid "3.1. Right join"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 27 (paragraph)
+msgid ""
+"Use this method if you need to combine columns from 2 tables based on one "
+"or more references but ***keeping all rows present in the table located on "
+"the right (in the the square brackets)***."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 28 (paragraph)
+msgid ""
+"In our supermarket context, we can perform a right join to see more details "
+"about the products received as this is relation *one to many* by passing a "
+"vector to the `on` argument."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 30 (paragraph)
+msgid ""
+"As many things have changed, let's explain the new characteristics in the "
+"following groups:"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 31 (unordered list)
+msgid "**Column level**"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 31 (unordered list)
+msgid ""
+"The *first group* of columns in the new data.table comes from the `x` table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 31 (unordered list)
+msgid ""
+"The *second group* of columns in the new data.table comes from the `i` "
+"table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 31 (unordered list)
+msgid ""
+"If the join operation presents a present any **name conflict** (both table "
+"have same column name) the ***prefix*** `i.` is added to column names from "
+"the **right-hand table** (table on `i` position)."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 31 (unordered list)
+msgid "**Row level**"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 31 (unordered list)
+msgid ""
+"The missing `product_id` present on the `ProductReceived` table in row 1 "
+"was successfully matched with missing `id` of the `Products` table, so `NA` "
+"***values are treated as any other value***."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 31 (unordered list)
+msgid "All rows from in the `i` table were kept including:"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 31 (unordered list)
+msgid "Not matching rows like the one with `product_id = 6`."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 31 (unordered list)
+msgid "Rows that repeat the same `product_id` several times."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 32 (header)
+msgid "3.1.1. Joining by a list argument"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 33 (paragraph)
+msgid ""
+"If you are following the vignette, you might have found out that we used a "
+"vector to define the relations between tables in the `on` argument, that is "
+"really useful if you are **creating your own functions**, but another "
+"alternative is to use a **list** to define the columns to match."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 34 (paragraph)
+msgid "To use this capacity, we have 2 equivalent alternatives:"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 35 (unordered list)
+msgid "Wrapping the related columns in the base R `list` function."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 37 (unordered list)
+msgid "Wrapping the related columns in the data.table `list`alias `.`."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 39 (header)
+msgid "3.1.2. Alternatives to define the `on` argument"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 40 (paragraph)
+msgid ""
+"In all the prior example we have pass the column names we want to match to "
+"the `on` argument but `data.table` also have alternatives to that syntax."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 41 (unordered list)
+msgid ""
+"**Natural join**: Selects the columns to perform the match based on common "
+"column names. To illustrate this method, let's change the column of "
+"`Products` table from `id` to `product_id` and use the keyword `.NATURAL`."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 43 (unordered list)
+msgid ""
+"**Keyed join**: Selects the columns to perform the match based on keyed "
+"columns regardless of their names.To illustrate this method, we need to "
+"define keys in the same order for both tables."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 45 (header)
+msgid "3.1.3. Operations after joining"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 46 (paragraph)
+msgid ""
+"Most of the time after a join is complete we need to make some additional "
+"transformations. To make so we have the following alternatives:"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 47 (unordered list)
+msgid "Chaining a new instruction by adding a pair of brakes `[]`."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 47 (unordered list)
+msgid ""
+"Passing a list with the columns that we want to keep or create to the `j` "
+"argument."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 48 (paragraph)
+msgid ""
+"Our recommendation is to use the second alternative if possible, as it is "
+"**faster** and uses **less memory** than the first one."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 49 (header)
+msgid "Managing shared column Names with the j argument"
+msgstr "Gestion de la colonne partagée Names avec l'argument j"
+
+#: datatable-joinsMA695.Rmd:block 50 (paragraph)
+msgid ""
+"The `j` argument has great alternatives to manage joins with tables "
+"**sharing the same names for several columns**. By default all columns are "
+"taking their source from the the `x` table, but we can also use the `x.` "
+"prefix to make clear the source and use the prefix `i.` to use any column "
+"form the table declared in the `i` argument of the `x` table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 51 (paragraph)
+msgid ""
+"Going back to the little supermarket, after updating the `ProductReceived` "
+"table with the `Products` table, it seems convenient apply the following "
+"changes:"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 52 (unordered list)
+msgid ""
+"Changing the columns names from `id` to `product_id` and from `i.id` to "
+"`received_id`."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 52 (unordered list)
+msgid "Adding the `total_value`."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 54 (header)
+msgid "Summarizing with on in data.table"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 55 (paragraph)
+msgid ""
+"We can also use this alternative to return aggregated results based columns "
+"present in the `x` table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 56 (paragraph)
+msgid ""
+"For example, we might interested in how much money we expend buying "
+"products each date regardless the products."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 58 (header)
+msgid "3.1.4. Joining based on several columns"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 59 (paragraph)
+msgid ""
+"So far we have just joined `data.table` base on 1 column, but it's "
+"important to know that the package can join tables matching several columns."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 60 (paragraph)
+msgid ""
+"To illustrate this, let's assume that we want to add the `tax_prop` from "
+"`NewTax` to **update** the `Products` table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 62 (header)
+msgid "3.2. Inner join"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 63 (paragraph)
+msgid ""
+"Use this method if you need to combine columns from 2 tables based on one "
+"or more references but ***keeping only rows matched in both tables***."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 64 (paragraph)
+msgid ""
+"To perform this operation we just need to add `nomatch = NULL` or `nomatch "
+"= 0` to any of the prior join operations to return the same results."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 66 (paragraph)
+msgid ""
+"Despite both tables have the same information, they present some relevant "
+"differences:"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 67 (unordered list)
+msgid "They present different order for their columns"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 67 (unordered list)
+msgid "They have some name differences on their columns names:"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 67 (unordered list)
+msgid ""
+"The `id` column of first table has the same information as the `product_id` "
+"in the second table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 67 (unordered list)
+msgid ""
+"The `i.id` column of first table has the same information as the `id` in "
+"the second table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 68 (header)
+msgid "3.3. Not join"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 69 (paragraph)
+msgid ""
+"This method **keeps only the rows that don't match with any row of a second "
+"table**."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 70 (paragraph)
+msgid ""
+"To apply this technique we just need to negate (`!`) the table located on "
+"the `i` argument."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 72 (paragraph)
+msgid ""
+"As you can see, the result only has 'banana', as it was the only product "
+"that is not present in the `ProductReceived` table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 74 (paragraph)
+msgid ""
+"In this case, the operation returns the row with `product_id = 6,` as it is "
+"not present on the `Products` table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 75 (header)
+msgid "3.4. Semi join"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 76 (paragraph)
+msgid ""
+"This method extract **keeps only the rows that match with any row in a "
+"second table** without combining the column of the tables."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 77 (paragraph)
+msgid ""
+"It's very similar to subset as join, but as in this time we are passing a "
+"complete table to the `i` we need to ensure that:"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 78 (unordered list)
+msgid ""
+"Any row in the `x` table is duplicated due row duplication in the table "
+"passed to the `i` argument."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 78 (unordered list)
+msgid "All the renaming rows from `x` should keep the original row order."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 79 (paragraph)
+msgid "To make this, you can apply the following steps:"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 80 (ordered list)
+msgid ""
+"Perform a **inner join** with `which = TRUE` to save the row numbers "
+"related to each matching row of the `x` table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 82 (ordered list)
+msgid "Select and sort the unique rows ids."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 84 (ordered list)
+msgid "Selecting the `x` rows to keep."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 86 (header)
+msgid "3.5. Left join"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 87 (paragraph)
+msgid ""
+"Use this method if you need to combine columns from 2 tables based on one "
+"or more references but ***keeping all rows present in the table located on "
+"the left***."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 88 (paragraph)
+msgid ""
+"To perform this operation, we just need to **exchange the order between "
+"both tables** and the columns names in the `on` argument."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 90 (paragraph)
+msgid "Here some important considerations:"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 91 (unordered list)
+msgid ""
+"The *first group* of columns now comes from the `ProductReceived` table as "
+"it is the `x` table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 91 (unordered list)
+msgid ""
+"The *second group* of columns now comes from the `Products` table as it is "
+"the `i` table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 91 (unordered list)
+msgid "It didn't add the prefix `i.` to any column."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 91 (unordered list)
+msgid ""
+"All rows from in the `i` table were kept as we never received any banana "
+"but row is still part of the results."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 91 (unordered list)
+msgid ""
+"The row related to `product_id = 6` is no part of the results any more as "
+"it is not present in the `Products` table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 92 (header)
+msgid "3.5.1. Joining after chain operations"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 93 (paragraph)
+msgid ""
+"One of the key features of `data.table` is that we can apply several "
+"operations before saving our final results by chaining brackets."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 95 (paragraph)
+msgid ""
+"So far, if after applying all that operations **we want to join new columns "
+"without removing any row**, we would need to stop the chaining process, "
+"save a temporary table and later apply the join operation."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 96 (paragraph)
+msgid ""
+"To avoid that situation, we can use special symbols `.SD`, to apply a "
+"**right join based on the changed table**."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 98 (header)
+msgid "3.6. Many to many join"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 99 (paragraph)
+msgid ""
+"Sometimes we want to join tables based on columns with **duplicated `id` "
+"values** to later perform some transformations later."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 100 (paragraph)
+msgid ""
+"To illustrate this situation let's take as an example the `product_id == "
+"1L`, which have 4 rows in our `ProductReceived` table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 102 (paragraph)
+msgid "And 4 rows in our `ProductSales` table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 104 (paragraph)
+msgid ""
+"To perform this join we just need to filter `product_id == 1L` in the `i` "
+"table to limit the join just to that product and set the argument `allow."
+"cartesian = TRUE` to allow combining each row from one table with every row "
+"from the other table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 106 (paragraph)
+msgid ""
+"Once we understand the result, we can apply the same process for **all "
+"products**."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 108 (quote)
+msgid ""
+"`allow.cartesian` is defaulted to FALSE as this is seldom what the user "
+"wants, and such a cross join can lead to a very large number of rows in the "
+"result. For example, if Table A has 100 rows and Table B has 50 rows, their "
+"Cartesian product would result in 5000 rows (100 * 50). This can quickly "
+"become memory-intensive for large datasets."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 109 (header)
+msgid "3.6.1. Selecting one match"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 110 (paragraph)
+msgid ""
+"After joining the table we might find out that we just need to return a "
+"single join to extract the information we need. In this case we have 2 "
+"alternatives:"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 111 (unordered list)
+msgid ""
+"We can select the **first match**, represented in the next example by `id = "
+"2`."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 113 (unordered list)
+msgid ""
+"We can select the **last match**, represented in the next example by `id = "
+"9`."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 115 (header)
+msgid "3.6.2. Cross join"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 116 (paragraph)
+msgid ""
+"If you want to get **all possible row combinations** regardless of any "
+"particular id column we can follow the next process:"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 117 (ordered list)
+msgid "Create a new column in both tables with a constant."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 119 (ordered list)
+msgid ""
+"Join both table based on the new column and remove it after ending the "
+"process, as it doesn't have reason to stay after joining."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 121 (header)
+msgid "3.7. Full join"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 122 (paragraph)
+msgid ""
+"Use this method if you need to combine columns from 2 tables based on one "
+"or more references ***without removing any row***."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 123 (paragraph)
+msgid ""
+"As we saw in the previous section, any of the prior operations can keep the "
+"missing `product_id = 6` and the **soda** (`product_id = 4`) as part of the "
+"results."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 124 (paragraph)
+msgid ""
+"To save this problem, we can use the `merge` function even thought it is "
+"lower than using the native `data.table`'s joining syntax."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 126 (header)
+msgid "4. Non-equi join"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 127 (paragraph)
+msgid ""
+"A non-equi join is a type of join where the condition for matching rows is "
+"not based on equality, but on other comparison operators like <, >, <=, or "
+">=. This allows for **more flexible joining criteria**. In `data.table`, "
+"non-equi joins are particularly useful for operations like:"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 128 (unordered list)
+msgid "Finding the nearest match"
+msgstr "Recherche de la correspondance la plus proche"
+
+#: datatable-joinsMA695.Rmd:block 128 (unordered list)
+msgid "Comparing ranges of values between tables"
+msgstr "Comparaison d'intervalles de valeurs entre deux tables"
+
+#: datatable-joinsMA695.Rmd:block 129 (paragraph)
+msgid "It's a great alternative if after applying a right of inner join:"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 130 (unordered list)
+msgid ""
+"You want to decrease the number of returned rows based on comparing numeric "
+"columns of different table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 130 (unordered list)
+msgid ""
+"You don't need to keep the columns from table `x`*(secondary data.table)* "
+"in the final table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 131 (paragraph)
+msgid ""
+"To illustrate how this work, let's center over attention on how are the "
+"sales and receives for product 2."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 133 (paragraph)
+msgid ""
+"If want to know, for example, if can find any receive that took place "
+"before a sales date, we can apply the next code."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 135 (paragraph)
+msgid ""
+"What does happen if we just apply the same logic on the list passed to `on`?"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 136 (unordered list)
+msgid ""
+"As this opperation it's still a right join, it returns all rows from the "
+"`i` table, but only shows the values for `id` and `count` when the rules "
+"are met."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 136 (unordered list)
+msgid ""
+"The date related `ProductReceivedProd2` was omited from this new table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 138 (paragraph)
+msgid ""
+"Now, after applying the join, we can limit the results only show the cases "
+"that meet all joining criteria."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 140 (header)
+msgid "5. Rolling join"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 141 (paragraph)
+msgid ""
+"Rolling joins are particularly useful in time-series data analysis. They "
+"allow you to **match rows based on the nearest value** in a sorted column, "
+"typically a date or time column."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 142 (paragraph)
+msgid ""
+"This is valuable when you need to align data from different sources **that "
+"may not have exactly matching timestamps**, or when you want to carry "
+"forward the most recent value."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 143 (paragraph)
+msgid ""
+"For example, in financial data, you might use a rolling join to assign the "
+"most recent stock price to each transaction, even if the price updates and "
+"transactions don't occur at the exact same times."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 144 (paragraph)
+msgid ""
+"In our supermarket example, we can use a rolling join to match sales with "
+"the most recent product information."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 145 (paragraph)
+msgid ""
+"Let's assume that the price for Bananas and Carrots changes at the first "
+"date of each month."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 147 (paragraph)
+msgid ""
+"Now, we can perform a right join giving a different prices for each product "
+"based on the sale date."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 149 (paragraph)
+msgid ""
+"If we just want to see the matching cases we just need to add the argument "
+"`nomatch = NULL` to perform an inner rolling join."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 151 (header)
+msgid "7. Taking advange of joining speed"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 152 (header)
+msgid "7.1. Subsets as joins"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 153 (paragraph)
+msgid ""
+"As we just saw in the prior section the `x` table gets filtered by the "
+"values available in the `i` table. Actually, that process is faster than "
+"passing a Boolean expression to the `i` argument."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 154 (paragraph)
+msgid ""
+"To filter the `x` table at speed we don't to pass a complete `data.table`, "
+"we can pass a `list()` of vectors with the values that we want to keep or "
+"omit from the original table."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 155 (paragraph)
+msgid ""
+"For example, to filter dates where the market received 100 units of bananas "
+"(`product_id = 1`) or popcorn (`product_id = 3`) we can use the following:"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 157 (paragraph)
+msgid ""
+"As at the end, we are filtering based on a join operation the code returned "
+"a **row that was not present in original table**. To avoid that behavior, "
+"it is recommended to always to add the argument `nomatch = NULL`."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 159 (paragraph)
+msgid ""
+"We can also use this technique to filter out any combination of values by "
+"prefixing them with `!` to negate the expression in the `i` argument and "
+"keeping the `nomatch` with its default value. For example, we can filter "
+"out the 2 rows we filtered before."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 161 (paragraph)
+msgid ""
+"If you just want to filter a value for a single **character column**, you "
+"can omit calling the `list()` function pass the value to been filtered in "
+"the `i` argument."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 163 (header)
+msgid "7.2. Updating by reference"
+msgstr "7.2. Mise à jour par référence"
+
+#: datatable-joinsMA695.Rmd:block 164 (paragraph)
+msgid ""
+"The `:=` operator in data.table is used for updating or adding columns by "
+"reference. This means it modifies the original data.table without creating "
+"a copy, which is very memory-efficient, especially for large datasets. When "
+"used inside a data.table, `:=` allows you to **add new columns** or "
+"**modify existing ones** as part of your query."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 165 (paragraph)
+msgid ""
+"Let's update our `Products` table with the latest price from "
+"`ProductPriceHistory`:"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 167 (paragraph)
+msgid "In this operation:"
+msgstr "Dans cette opération :"
+
+#: datatable-joinsMA695.Rmd:block 168 (unordered list)
+msgid ""
+"The function `copy` prevent that `:=` changes by reference the `Products` "
+"table.s"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 168 (unordered list)
+msgid ""
+"We join `Products` with `ProductPriceHistory` based on `id` and "
+"`product_id`."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 168 (unordered list)
+msgid ""
+"We update the `price` column with the latest price from "
+"`ProductPriceHistory`."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 168 (unordered list)
+msgid ""
+"We add a new `last_updated` column to track when the price was last changed."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 168 (unordered list)
+msgid ""
+"The `by = .EACHI` ensures that the `tail` function is applied for each "
+"product in `ProductPriceHistory`."
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 169 (header)
+msgid "Reference"
+msgstr "Référence"
+
+#: datatable-joinsMA695.Rmd:block 170 (unordered list)
+msgid ""
+"*Understanding data.table Rolling Joins*: https://www.r-bloggers."
+"com/2016/06/understanding-data-table-rolling-joins/"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 170 (unordered list)
+msgid ""
+"*Semi-join with data.table*: https://stackoverflow.com/questions/18969420/"
+"perform-a-semi-join-with-data-table"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 170 (unordered list)
+msgid ""
+"*Cross join with data.table*: https://stackoverflow.com/questions/10600060/"
+"how-to-do-cross-join-in-r"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 170 (unordered list)
+msgid ""
+"*How does one do a full join using data.table?*: https://stackoverflow.com/"
+"questions/15170741/how-does-one-do-a-full-join-using-data-table"
+msgstr ""
+
+#: datatable-joinsMA695.Rmd:block 170 (unordered list)
+msgid ""
+"*Enhanced data.frame*: https://rdatatable.gitlab.io/data.table/reference/"
+"data.table.html"
+msgstr ""
